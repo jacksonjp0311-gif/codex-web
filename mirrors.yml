@@ -1,0 +1,9 @@
+# mirrors.yml
+mirrors:
+  - name: github
+    type: github
+    repo: your-org/your-repo        # e.g. "jacks/codex-web"
+    path: stones                     # folder in the repo containing .json/.txt
+  - name: substack
+    type: rss
+    url: https://yourpublication.substack.com/feed

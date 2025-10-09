@@ -1,0 +1,22 @@
+[
+  {
+    "canonical": "seed=codex-web-launch-span4-header;prev=e024d55b2591e147eaacbee48e21dee95b92f151a742279c90f4245957039435;axis=CodexWebGenesis;charter=v1;scope=interlinked-digests-for-auditable-knowledge;invites=humans,AIs,communities;routes=hash-addresses;mirrors=x,github,substack;trials=1",
+    "digest": "716ca6878eed87c3d4edc5a83a2e4161a109786b7be0f9093745139a6150710b"
+  },
+  {
+    "canonical": "seed=my-second-stone;prev=716ca6878eed87c3d4edc5a83a2e4161a109786b7be0f9093745139a6150710b;axis=CodexWeb;data=example-payload;method=python-sha256;metrics=n/a;notes=auto-chained stone;trials=1",
+    "digest": "d1284fa75f250c88f7121c9bc826ea06758ea11f42ee0c29e246c9ef3d6b9c57"
+  },
+  {
+    "canonical": "seed=First Stone;prev=d1284fa75f250c88f7121c9bc826ea06758ea11f42ee0c29e246c9ef3d6b9c57;axis=codex-first-stone;data=span4-initiation;method=python-sha256;metrics=n/a;notes=first intentional continuation stone;trials=1",
+    "digest": "44eef725cbc65983a6d8fd5cd76ff16b665b4fd6f42430baa24539bc5af898dd"
+  },
+  {
+    "canonical": "seed=inbox-test-001;prev=44eef725cbc65983a6d8fd5cd76ff16b665b4fd6f42430baa24539bc5af898dd;axis=CodexWeb;data=inbox-pipeline-check;method=python-sha256;metrics=n/a;notes=testing inbox auto-append;trials=1",
+    "digest": "968a048a13fdef436c0286bd7937f539f7bca06d235a0895244626fff900ab47"
+  },
+  {
+    "canonical": "seed=inbox-test-002;prev=968a048a13fdef436c0286bd7937f539f7bca06d235a0895244626fff900ab47;axis=CodexWeb;data=validation-check;method=python-sha256;metrics=n/a;notes=valid stone from helper;trials=1;author=James",
+    "digest": "ce1a55d1a0670d68fb53aac020ab851e4b6e370f3b6652b006cd76f34cca10ca"
+  }
+]
