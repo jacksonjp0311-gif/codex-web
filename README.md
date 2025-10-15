@@ -12,3 +12,5 @@
 # Ultimate hook test
 
 # Hook finale
+
+# Final full-hook test
