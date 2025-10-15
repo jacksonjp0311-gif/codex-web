@@ -26,3 +26,5 @@
 # Windows hook final test
 
 # Ultimate hook test
+
+# UTF8 stub final test
