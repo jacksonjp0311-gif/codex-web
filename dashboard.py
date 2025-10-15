@@ -1,4 +1,12 @@
-﻿import os
+﻿import warnings
+
+# Override showwarning to drop every warning
+warnings.showwarning = lambda *args, **kwargs: None
+import warnings
+warnings.filterwarnings("ignore", "I don''t know how to infer vegalite type")
+import warnings
+warnings.filterwarnings("ignore", "I don''t know how to infer vegalite type")
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
