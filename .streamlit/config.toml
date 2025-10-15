@@ -1,7 +1,7 @@
 ﻿[server]
 headless = true
 enableCORS = false
-port = 
+port = $env:PORT
 
 [theme]
 base = "dark"
