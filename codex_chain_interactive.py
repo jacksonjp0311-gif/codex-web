@@ -1,4 +1,4 @@
-import hashlib
+﻿import hashlib
 import json
 from pathlib import Path
 
@@ -18,15 +18,39 @@ GENESIS_STRING = (
 )
 
 def load_ledger():
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     if LEDGER_FILE.exists():
         return json.loads(LEDGER_FILE.read_text(encoding="utf-8"))
     else:
         return [{"canonical": GENESIS_STRING, "digest": GENESIS_DIGEST}]
 
 def save_ledger(ledger):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     LEDGER_FILE.write_text(json.dumps(ledger, indent=2), encoding="utf-8")
 
 def make_stone(seed, axis, data, method, metrics, notes, trials=1):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     ledger = load_ledger()
     prev_digest = ledger[-1]["digest"]
     canonical = (
@@ -45,7 +69,7 @@ def make_stone(seed, axis, data, method, metrics, notes, trials=1):
     return canonical, digest
 
 if __name__ == "__main__":
-    print("🔹 Mint a new Codex stone 🔹")
+    print("ðŸ”¹ Mint a new Codex stone ðŸ”¹")
     seed = input("Seed (short unique name): ")
     axis = input("Axis (domain/scope): ")
     data = input("Data (payload or reference): ")
@@ -55,6 +79,6 @@ if __name__ == "__main__":
     trials = input("Trials (default=1): ") or "1"
 
     canonical, digest = make_stone(seed, axis, data, method, metrics, notes, trials)
-    print("\n✅ New stone minted!")
+    print("\nâœ… New stone minted!")
     print("Canonical string:\n", canonical)
     print("\nDigest:\n", digest)

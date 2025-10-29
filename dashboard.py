@@ -20,6 +20,11 @@ st.title("🔮 Codex Web Real-Time Dashboard")
 
 @st.cache_data
 def load_ledger():
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     path = "codex_ledger.json"
     # if file is missing or empty, return empty DataFrame
     if not os.path.exists(path) or os.stat(path).st_size == 0:

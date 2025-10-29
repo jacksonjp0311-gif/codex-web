@@ -1,4 +1,4 @@
-import hashlib
+﻿import hashlib
 import json
 from pathlib import Path
 
@@ -18,15 +18,39 @@ GENESIS_STRING = (
 )
 
 def load_ledger():
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     if LEDGER_FILE.exists():
         return json.loads(LEDGER_FILE.read_text())
     else:
         return [{"canonical": GENESIS_STRING, "digest": GENESIS_DIGEST}]
 
 def save_ledger(ledger):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     LEDGER_FILE.write_text(json.dumps(ledger, indent=2))
 
 def make_stone(seed, axis, data, method, metrics, notes, trials=1):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     ledger = load_ledger()
     prev_digest = ledger[-1]["digest"]  # always chain to latest
     canonical = (

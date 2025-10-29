@@ -1,4 +1,4 @@
-# codex_fetcher/fetcher.py
+﻿# codex_fetcher/fetcher.py
 
 import json
 import yaml
@@ -11,15 +11,30 @@ INBOX_DIR   = Path("inbox")
 STATE_FILE  = Path(".fetcher_state.json")
 
 def load_state():
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     if STATE_FILE.exists():
         text = STATE_FILE.read_text(encoding="utf-8").strip()
         return json.loads(text) if text else {}
     return {}
 
 def save_state(state):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     STATE_FILE.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
 def fetch_github(repo, path, seen_files):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     """
     repo: "org/repo"
     path: subfolder in that repo
@@ -45,6 +60,11 @@ def fetch_github(repo, path, seen_files):
     return new_files
 
 def fetch_rss(mirror_name, feed_url, seen_ids):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     """
     mirror_name: used to prefix filenames
     feed_url: RSS/Atom feed URL
@@ -66,6 +86,11 @@ def fetch_rss(mirror_name, feed_url, seen_ids):
     return new_ids
 
 def main():
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     INBOX_DIR.mkdir(exist_ok=True)
     cfg = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
     state = load_state()
@@ -82,7 +107,7 @@ def main():
         elif mtype == "rss":
             added = fetch_rss(name, mirror["url"], seen)
         else:
-            print(f"⚠️  Unknown mirror type: {mtype}")
+            print(f"âš ï¸  Unknown mirror type: {mtype}")
             continue
 
         # update state only if there are new items

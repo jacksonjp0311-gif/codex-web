@@ -1,4 +1,4 @@
-# make_inbox_stone.py
+﻿# make_inbox_stone.py
 import hashlib, json
 from pathlib import Path
 

@@ -1,4 +1,4 @@
-import json
+﻿import json
 
 LEDGER_PATH = 'codex_ledger.json'
 INBOX_PATH  = 'inbox/github/stone_009.json'
@@ -14,5 +14,5 @@ ledger.append(stone)
 with open(LEDGER_PATH, 'w', encoding='utf-8') as f:
     json.dump(ledger, f, ensure_ascii=False, indent=2)
 
-print(f"✅ Stone 009 appended. New ledger length: {len(ledger)}")
+print(f"âœ… Stone 009 appended. New ledger length: {len(ledger)}")
 print(f"New tip: {ledger[-1]['digest']}")

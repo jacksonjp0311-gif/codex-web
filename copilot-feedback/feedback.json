@@ -1,0 +1,32 @@
+{
+    "time":  "2025-10-20T20:32:26.1432693-04:00",
+    "line":  {
+                 "value":  "node : G¥î JSON parse error: Here are some suggested API endpoints for your approval-ui flows, represented as a JSON array:",
+                 "PSPath":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\copilot-feedback\\orchestrator.log",
+                 "PSParentPath":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\copilot-feedback",
+                 "PSChildName":  "orchestrator.log",
+                 "PSDrive":  {
+                                 "CurrentLocation":  "Users\\jacks\\OneDrive\\Documents",
+                                 "Name":  "C",
+                                 "Provider":  "Microsoft.PowerShell.Core\\FileSystem",
+                                 "Root":  "C:\\",
+                                 "Description":  "Windows",
+                                 "MaximumSize":  null,
+                                 "Credential":  "System.Management.Automation.PSCredential",
+                                 "DisplayRoot":  null
+                             },
+                 "PSProvider":  {
+                                    "ImplementingType":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                    "HelpFile":  "System.Management.Automation.dll-Help.xml",
+                                    "Name":  "FileSystem",
+                                    "PSSnapIn":  "Microsoft.PowerShell.Core",
+                                    "ModuleName":  "Microsoft.PowerShell.Core",
+                                    "Module":  null,
+                                    "Description":  "",
+                                    "Capabilities":  52,
+                                    "Home":  "C:\\Users\\jacks",
+                                    "Drives":  "C"
+                                },
+                 "ReadCount":  6
+             }
+}

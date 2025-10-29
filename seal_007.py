@@ -1,4 +1,4 @@
-import json
+﻿import json
 
 LEDGER_PATH = 'codex_ledger.json'
 INBOX_PATH  = 'inbox/github/stone_007.json'

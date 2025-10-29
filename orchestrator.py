@@ -1,4 +1,4 @@
-"""
+﻿"""
 orchestrator.py
 Runs the full Codex cycle:
 1. Fetch new stones from mirrors into inbox/
@@ -12,6 +12,13 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).parent
 
 def run_step(module_name: str, label: str):
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     """Run a Python module as a subprocess and log outcome."""
     print(f"\n=== {label} ===")
     result = subprocess.run(
@@ -21,10 +28,17 @@ def run_step(module_name: str, label: str):
     if result.returncode == 0:
         print(f"{label} completed successfully.")
     else:
-        print(f"⚠️ {label} failed with code {result.returncode}")
+        print(f"âš ï¸ {label} failed with code {result.returncode}")
     return result.returncode
 
 def main():
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
+@smart_suggest
     # Step 1: Fetch new stones
     run_step("codex_fetcher.fetcher", "Fetcher")
 

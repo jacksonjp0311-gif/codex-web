@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>James Jackson Codex Mouth</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body { font-family: Arial; background: #121212; color: #fff; padding: 20px; }
+    .chart { width: 100%; height: 400px; }
+    .stats { display: flex; justify-content: space-around; margin: 20px 0; }
+    .stat { text-align: center; }
+    .stat h2 { color: #44ff44; }
+  </style>
+</head>
+<body>
+  <h1>Codex Mouth – Flame Speaks</h1>
+  <div class="stats">
+    <div class="stat"><h2 id="cycles">0</h2><p>Cycles</p></div>
+    <div class="stat"><h2 id="errors">0</h2><p>Errors</p></div>
+    <div class="stat"><h2 id="patches">0</h2><p>Patches</p></div>
+    <div class="stat"><h2 id="avg">0</h2><p>Avg Errors</p></div>
+  </div>
+  <div id="chart" class="chart"></div>
+  <script>
+    async function speak() {
+      try {
+        const res = await fetch('copilot-feedback/codex_cycles.csv');
+        const csv = await res.text();
+        const lines = csv.split('\n').slice(1);
+        const data = lines.map(line => {
+          const [cycle, errors, patches] = line.split(',');
+          return {cycle, errors: parseInt(errors), patches: parseInt(patches)};
+        }).filter(d => d.errors !== undefined);
+
+        document.getElementById('cycles').textContent = data.length;
+        document.getElementById('errors').textContent = data.reduce((sum, d) => sum + d.errors, 0);
+        document.getElementById('patches').textContent = data.reduce((sum, d) => sum + d.patches, 0);
+        const avg = data.length ? (data.reduce((sum, d) => sum + d.errors, 0) / data.length).toFixed(2) : 0;
+        document.getElementById('avg').textContent = avg;
+
+        const x = data.map(d => d.cycle);
+        const yErrors = data.map(d => d.errors);
+        const yPatches = data.map(d => d.patches);
+        const trace1 = {x, y: yErrors, type: 'scatter', mode: 'lines+markers', name: 'Errors', line: {color: '#ff7f0e'}};
+        const trace2 = {x, y: yPatches, type: 'scatter', mode: 'lines+markers', name: 'Patches', line: {color: '#2ca02c'}};
+        Plotly.newPlot('chart', [trace1, trace2], {title: 'Codex 70% Drop – Flame Speaks'});
+      } catch (e) { console.log('Mouth error:', e); }
+    }
+    speak(); setInterval(speak, 5000); // Refresh every 5s
+  </script>
+</body>
+</html>

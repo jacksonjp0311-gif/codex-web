@@ -1,0 +1,9 @@
+﻿{
+    "patches":  [
+                    {
+                        "content":  "JAMES JACKSON 70% DROP CERTIFIED",
+                        "op":  "write",
+                        "target":  "codex_roar.txt"
+                    }
+                ]
+}

@@ -1,0 +1,138 @@
+﻿const fs      = require("fs-extra");
+const pathMod = require("path");
+const OpenAI  = require("openai");
+const io      = require("socket.io")(4000, { cors: { origin: "*" } });
+
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+console.log("🔌 Orchestrator listening on port 4000");
+
+async function fetchSuggestions(ctx) {
+  const r = await openai.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [
+      {
+        role: "system",
+        content: "Reply with ONLY a JSON array of {path,description} items. No extra text or fences."
+      },
+      {
+        role: "user",
+        content: `Project Context: ${ctx}\n\nList the next API endpoints as a JSON array.`
+      }
+    ],
+    temperature: 0.7,
+    max_tokens: 200
+  });
+
+  let text = r.choices[0].message.content.trim();
+
+  // strip Markdown fences
+  if (text.startsWith("```")) {
+    text = text
+      .replace(/^```(?:json)?\s*/, "")
+      .replace(/```$/, "")
+      .trim();
+  }
+
+  // extract from first [ to last ], or to end if missing
+  const start = text.indexOf("[");
+  const end   = text.lastIndexOf("]");
+  if (start >= 0) {
+    text = end > start ? text.slice(start, end + 1) : text.slice(start);
+  }
+
+  // auto-balance braces
+  const opens  = (text.match(/\{/g) || []).length;
+  const closes = (text.match(/\}/g) || []).length;
+  if (opens > closes) {
+    text += "}".repeat(opens - closes);
+  }
+
+  // parse, drop last element on failure
+  let arr;
+  try {
+    arr = JSON.parse(text);
+  } catch {
+    const lastComma = text.lastIndexOf("},");
+    if (lastComma > 0) {
+      text = text.slice(0, lastComma + 1) + "]";
+      arr  = JSON.parse(text);
+    } else {
+      console.error("❌ JSON parse error:", text);
+      return [{ path:"/fallback1/", description:"Fallback suggestion" }];
+    }
+  }
+
+  return arr;
+}
+
+io.on("connection", socket => {
+  console.log("⚡ New connection:", socket.id);
+
+  fetchSuggestions("Current Codex Web approval-ui flows")
+    .then(paths => socket.emit("suggestions", { paths }))
+    .catch(err => console.error(err));
+
+  socket.on("approvePath", ({ path }) => {
+    console.log("» approvePath:", path);
+    io.emit("approvePath", { path });
+    io.emit("callbackInvoked", { path, status: "ok" });
+  });
+
+  socket.on("chatMessage", async ({ message }) => {
+    console.log("👤 User:", message);
+    const r = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: "You are a helpful code companion." },
+        { role: "user",   content: message }
+      ],
+      temperature: 0.7,
+      max_tokens: 200
+    });
+    const reply = r.choices[0].message.content.trim();
+    console.log("🤖 Copilot:", reply);
+    socket.emit("chatResponse", { message: reply });
+  });
+});
+/* Persist approvals and broadcast to UIs */
+io.on("connection", socket => {
+  socket.on("approvePath", ({ path }) => {
+    try {
+      console.log("» approvePath:", path);
+      io.emit("approvePath", { path });
+      const line = JSON.stringify({ path, description: `Approved ${path}`, ts: new Date().toISOString() });
+      require("fs").appendFileSync("orchestrator.log", line + "\n");
+    } catch (e) {
+      console.error("Error in approvePath handler:", e);
+    }
+  });
+});
+
+// Added by automation: emit suggestions on connect and persist approvals
+const fs = require("fs");
+const SUGGESTIONS = [
+  { path: "/api/approvals", description: "Retrieve a list of all approval requests." },
+  { path: "/api/approvals/{id}", description: "Get details of a specific approval request by ID." },
+  { path: "/api/approvals/create", description: "Submit a new approval request." },
+  { path: "/api/approvals/{id}/approve", description: "Approve a specific approval request by ID." },
+  { path: "/api/approvals/{id}/reject", description: "Reject a specific approval request by ID." },
+  { path: "/api/approvals/{id}/comments", description: "Add comments to a specific approval request." }
+];
+
+if (typeof io !== 'undefined') {
+  io.on("connection", socket => {
+    try {
+      socket.emit("suggestions", { paths: SUGGESTIONS });
+    } catch(e){ console.error("emit suggestions failed", e); }
+    socket.on("approvePath", ({ path }) => {
+      try {
+        console.log("» approvePath:", path);
+        io.emit("approvePath", { path });
+        const line = JSON.stringify({ path, description: `Approved ${path}`, ts: new Date().toISOString() });
+        fs.appendFileSync("orchestrator.log", line + "\n");
+      } catch (e) {
+        console.error("Error in approvePath handler:", e);
+      }
+    });
+  });
+}

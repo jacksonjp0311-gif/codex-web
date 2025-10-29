@@ -1,0 +1,21 @@
+{
+  "name": "copilot-feedback",
+  "version": "0.1.0",
+  "main": "orchestrator/engine.js",
+  "scripts": {
+    "start": "node orchestrator/engine.js workflows/feedback-loop.yaml"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.2",
+    "openai": "^4.104.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "yaml": "^2.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
