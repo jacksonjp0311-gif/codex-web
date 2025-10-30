@@ -1,0 +1,8 @@
+﻿{
+    "agent_spawn":  true,
+    "seal_format":  "seal_00X.json",
+    "drift_threshold":  0.618,
+    "chronicle_template":  "aura+shadow+artifact+handoff",
+    "glyph_protocol":  "entropy+paradox",
+    "sigil_seed":  "CodexGenesis"
+}
