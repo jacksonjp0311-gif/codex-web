@@ -1,30 +1,34 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+﻿# ---- Codex Project Ignore ----
 
-# Virtual environment
+# Virtual environments
 .venv/
-env/
 venv/
+env/
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Logs
+# Python cache and logs
+__pycache__/
+*.pyc
+*.pyo
 *.log
 
-# IDE / editor settings
+# VS Code and editor settings
 .vscode/
 .idea/
 
-# OS-specific
-.DS_Store
+# OneDrive metadata
+*.tmp
+*.lnk
+*.DS_Store
+~$*
 Thumbs.db
+desktop.ini
 
-# Codex-specific
-inbox/
-codex_watcher.log
+# Alignment outputs
+codex_alignment_summary.json
+codex_alignment_insights.json
+codex/tools/__pycache__/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
