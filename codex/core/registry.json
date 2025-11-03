@@ -1,39 +1,46 @@
-﻿{
-    "ledger":  [
-                   {
-                       "status":  "verified",
-                       "seal_path":  "codex/core/_codex_alignment_seal.json",
-                       "timestamp":  "2025-11-03 08:30:23",
-                       "seal_hash":  null,
-                       "note":  "Codex Alignment Seal registration complete"
-                   },
-                   {
-                       "status":  "verified",
-                       "seal_path":  "codex/core/_codex_alignment_seal.json",
-                       "timestamp":  "2025-11-03 08:40:40",
-                       "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
-                       "note":  "Codex Alignment Seal registration complete"
-                   },
-                   {
-                       "status":  "verified",
-                       "seal_path":  "codex/core/_codex_alignment_seal.json",
-                       "timestamp":  "2025-11-03 08:43:11",
-                       "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
-                       "note":  "Codex Alignment Seal registration complete"
-                   },
-                   {
-                       "status":  "verified",
-                       "seal_path":  "codex/core/_codex_alignment_seal.json",
-                       "timestamp":  "2025-11-03 08:50:47",
-                       "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
-                       "note":  "Codex Alignment Seal registration complete"
-                   },
-                   {
-                       "status":  "verified",
-                       "seal_path":  "codex/core/_codex_alignment_seal.json",
-                       "timestamp":  "2025-11-03 08:53:42",
-                       "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
-                       "note":  "Codex Alignment Seal registration complete"
-                   }
-               ]
-}
+﻿[
+    {
+        "ledger":  [
+                       {
+                           "status":  "verified",
+                           "seal_path":  "codex/core/_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 08:30:23",
+                           "seal_hash":  null,
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  "codex/core/_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 08:40:40",
+                           "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  "codex/core/_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 08:43:11",
+                           "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  "codex/core/_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 08:50:47",
+                           "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  "codex/core/_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 08:53:42",
+                           "seal_hash":  "5BDD865BB8CD9B26FAAA9F1D996E5EBBE52A923CFF12C6B5791C0DE9BDB8B190",
+                           "note":  "Codex Alignment Seal registration complete"
+                       }
+                   ]
+    },
+    {
+        "timestamp":  "2025-11-03T09:00:52.5022580-05:00",
+        "seal_hash":  "E6902556A590A67488B86278F3B76B03BDE65833E9C1286CD508811316D21338",
+        "file":  "_codex_alignment_seal.json"
+    }
+]
