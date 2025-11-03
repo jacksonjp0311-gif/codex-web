@@ -145,3 +145,9 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 © 2025 James Paul Jackson — *The Codex Project*
 
 ---
+
+### 🧩 Codex Integrity Seal — v0.8.6
+- Verified clean repository state after structural reorganization.
+- All recursive backups detached from Git tracking.
+- Performance and synchronization restored.
+- Timestamp: 2025-11-03 17:00:00
