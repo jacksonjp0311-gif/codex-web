@@ -1,4 +1,5 @@
-﻿# ===============================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# ===============================================
 # Codex Ledger Sync v0.7 — Grok & Quantum Merge
 # ===============================================
 # UTF-8
@@ -29,3 +30,4 @@ def sync_ledger(alignment_path="codex/core/alignment_output.json", registry_path
 
 if __name__ == "__main__":
     sync_ledger()
+

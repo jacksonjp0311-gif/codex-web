@@ -1,4 +1,5 @@
-﻿# codex/core/alignment_helper.py
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# codex/core/alignment_helper.py
 # Helper utilities for the Codex Alignment OS bootstrapper.
 import os, json, time
 from codex.core.seal_protocol import SealController
@@ -73,3 +74,4 @@ def run_audit_on_repo(root_dir, ref_vectors=None, limit=None):
         r = run_audit_on_file(f, ref_vectors)
         results.append(r)
     return results
+

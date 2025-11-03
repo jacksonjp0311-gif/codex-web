@@ -1,4 +1,5 @@
-﻿from setuptools import setup, find_packages
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+from setuptools import setup, find_packages
 
 setup(
     name="codex-watcher",
@@ -13,3 +14,4 @@ setup(
     install_requires=[],
     python_requires=">=3.7",
 )
+

@@ -1,4 +1,5 @@
-﻿<#
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+<#
 .SYNOPSIS
   Activates .venv, parses codex.crl (including multi-line Handshake),
   writes a LF-only UTF-8 pre-commit hook, then re-activates .venv.
@@ -115,3 +116,4 @@ if (-not (Test-Path $hookDir)) {
   New-Item -ItemType Directory -Path $hookDir | Out-Null
 }
 Set-Content -Path $HookPath -Value $stub
+

@@ -1,4 +1,5 @@
-﻿const { app, BrowserWindow } = require('electron');
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { spawn } = require('child_process');
 
@@ -16,3 +17,4 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
+

@@ -1,4 +1,5 @@
-﻿"""
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+"""
 orchestrator.py
 Runs the full Codex cycle:
 1. Fetch new stones from mirrors into inbox/
@@ -47,3 +48,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

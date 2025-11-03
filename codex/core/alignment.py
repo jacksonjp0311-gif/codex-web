@@ -1,4 +1,5 @@
-﻿# ===============================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# ===============================================
 # Codex Alignment Engine v0.7 — Grok Integration
 # ===============================================
 # UTF-8
@@ -34,3 +35,4 @@ def compute_alignment(payload_path="codex/data/quantum_state.json"):
 
 if __name__ == "__main__":
     compute_alignment()
+

@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# ============================================================
 # Codex Orchestrator v0.7 — Unified Seal Registration & Ledger Sync
 # Author: James Paul Jackson — The Codex Project
 # ============================================================
@@ -77,3 +78,4 @@ Write-Host "✅ CRS Protocol successfully injected into orchestrator." -Foregrou
 # Return to root
 Set-Location $root
 Write-Host "`n🏁 Orchestrator run complete. Alignment stable." -ForegroundColor Cyan
+

@@ -1,1 +1,3 @@
-﻿# Core package initializer
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# Core package initializer
+

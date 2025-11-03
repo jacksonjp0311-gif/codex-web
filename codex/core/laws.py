@@ -1,4 +1,5 @@
-﻿# codex/core/laws.py
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# codex/core/laws.py
 """
 Codex — Seven Quantum Laws (numeric implementations)
 Version: v0.6 → numeric grounding for the Codex Project
@@ -147,3 +148,4 @@ if __name__ == "__main__":
     }
     comp, per, diag = evaluate_payload(test)
     print(json.dumps({"composite": comp, "per_law": per, "diagnostics": diag}, indent=2))
+

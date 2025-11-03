@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# ============================================================
 # Codex Quantum Validator v0.6
 # Validates the Seven Quantum Laws within Codex framework
 # ============================================================
@@ -23,3 +24,4 @@ def validate_quantum_laws():
 
 if __name__ == "__main__":
     validate_quantum_laws()
+

@@ -1,4 +1,5 @@
-﻿const ioClient = require("socket.io-client");
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+const ioClient = require("socket.io-client");
 const socket   = ioClient("http://localhost:4000");
 
 socket.on("connect", () => console.log("🔌 Test client connected"));
@@ -22,3 +23,4 @@ socket.on("done", payload => {
   console.log("🎉 Workflow complete", payload);
   process.exit(0);
 });
+

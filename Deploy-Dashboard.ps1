@@ -1,4 +1,5 @@
-﻿# Deploy-Dashboard.ps1
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# Deploy-Dashboard.ps1
 
 Push-Location (Resolve-Path .)
 
@@ -44,3 +45,4 @@ git push origin main
 Write-Host "✅ Pushed and triggered Streamlit Cloud rebuild."
 
 Pop-Location
+

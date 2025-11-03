@@ -1,4 +1,5 @@
-﻿param(
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+param(
   [string]$Root    = ".",
   [string]$OutFile = "code-structure.md"
 )
@@ -17,3 +18,4 @@ function Get-Tree($Path, $Indent="") {
 "# Code Structure for $Root`n" | Out-File $OutFile
 Get-Tree -Path $Root
 Write-Host "Code map → $OutFile"
+

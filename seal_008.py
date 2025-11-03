@@ -1,4 +1,5 @@
-﻿import json
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+import json
 
 LEDGER_PATH = 'codex_ledger.json'
 INBOX_PATH  = 'inbox/github/stone_008.json'
@@ -16,3 +17,4 @@ with open(LEDGER_PATH, 'w', encoding='utf-8') as f:
 
 print(f"âœ… Stone 008 appended. New ledger length: {len(ledger)}")
 print(f"New tip: {ledger[-1]['digest']}")
+

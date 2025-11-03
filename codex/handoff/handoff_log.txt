@@ -8,3 +8,4 @@
 [2025-11-03T13:47:30] ?? Codex v0.7 — README Integration Cycle logged and lineage confirmed.
 [2025-11-03T13:51:37] handoff_state.json refreshed — v0.7.1
 [2025-11-03T13:51:37] codex_handoff_v0.7.1.ps1 written.
+[2025-11-03T13:51:37] Git commit/push/tag attempted: v0.7.1-handoff-20251103-135138

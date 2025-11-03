@@ -1,4 +1,5 @@
-﻿import warnings
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+import warnings
 
 # Override showwarning to drop every warning
 warnings.showwarning = lambda *args, **kwargs: None
@@ -73,3 +74,4 @@ if not df.empty:
     st.table(df.sort_values("timestamp", ascending=False).head(10))
 else:
     st.write("Ledger is empty.")
+

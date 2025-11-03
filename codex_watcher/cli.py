@@ -1,4 +1,5 @@
-﻿# codex_watcher/cli.py
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# codex_watcher/cli.py
 
 import hashlib
 import json
@@ -217,3 +218,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# ============================================================
 # Codex Integrity Sentinel — Autonomous Alignment Watcher
 # ============================================================
 param([string]$Root = "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web")
@@ -33,3 +34,4 @@ foreach ($M in $Manifests) {
     Write-Host "📜 $($M.Name) → hash: $H" -ForegroundColor Gray
 }
 Write-Host "`n🔒 Sentinel verification complete — all layers coherent." -ForegroundColor Cyan
+

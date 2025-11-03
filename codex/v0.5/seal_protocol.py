@@ -1,4 +1,5 @@
-﻿# =========================================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# =========================================================
 # Codex Fractal Seal — Protocol Specification (v0.2)
 # Author: James Paul Jackson
 # Purpose: Core triadic framework validation and seal synchronization controller
@@ -53,3 +54,4 @@ class SealController:
                 return True, {'signature': sig, 'results': results, 'G': avg}
             time.sleep(cooldown)
         return False, {'results': results, 'G': avg}
+

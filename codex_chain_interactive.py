@@ -1,4 +1,5 @@
-﻿import hashlib
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+import hashlib
 import json
 from pathlib import Path
 
@@ -82,3 +83,4 @@ if __name__ == "__main__":
     print("\nâœ… New stone minted!")
     print("Canonical string:\n", canonical)
     print("\nDigest:\n", digest)
+

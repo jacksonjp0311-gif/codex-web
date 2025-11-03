@@ -1,4 +1,5 @@
-﻿const fs    = require("fs")
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+const fs    = require("fs")
 const YAML  = require("yaml")
 const EventBus = require("../orchestrator/eventBus")
 
@@ -23,3 +24,4 @@ class Engine {
 }
 
 module.exports = Engine
+

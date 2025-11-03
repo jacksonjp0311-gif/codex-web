@@ -1,4 +1,5 @@
-﻿# =========================================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# =========================================================
 # Codex Gate Audit System — v0.2
 # Author: James Paul Jackson
 # Purpose: Evaluate triadic symmetry and signal alignment for Codex OS
@@ -58,3 +59,4 @@ class AlignmentGate(BaseGate):
         # slight stochastic resonance factor
         jitter = random.uniform(-0.02, 0.02)
         return max(0, min(1, score + jitter))
+

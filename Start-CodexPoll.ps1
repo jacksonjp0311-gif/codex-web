@@ -1,4 +1,5 @@
-﻿function Start-CodexPoll {
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+function Start-CodexPoll {
   param(
     [string] $Path     = '.\codex_ledger.json',
     [int]    $Interval = 2
@@ -39,3 +40,4 @@
     }
   }
 }
+

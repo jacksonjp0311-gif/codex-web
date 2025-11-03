@@ -1,4 +1,5 @@
-﻿# Requires -Module Pester -MinimumVersion 5.0
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# Requires -Module Pester -MinimumVersion 5.0
 Import-Module "$PSScriptRoot/../../src/Codex.Parser.psm1" -Force
 
 Describe "Parse-CodexDsl" {
@@ -83,3 +84,4 @@ Describe "Parse-CodexDsl" {
   }
 
 }
+

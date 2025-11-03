@@ -1,4 +1,5 @@
-﻿# codex/alignment_os.py
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# codex/alignment_os.py
 # Alignment OS bootstrapper for Codex Fractal Seal (v0.1)
 # Usage: python -m codex.alignment_os   OR   python codex/alignment_os.py
 
@@ -27,3 +28,4 @@ if __name__ == '__main__':
     args = ap.parse_args()
     rc = main(root_dir=args.root, out_path=args.out, limit=args.limit)
     exit(rc)
+

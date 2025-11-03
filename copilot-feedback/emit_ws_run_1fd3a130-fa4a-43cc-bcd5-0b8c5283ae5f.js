@@ -1,3 +1,4 @@
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
 (async function(){
   try {
     const io = require("socket.io-client");
@@ -11,3 +12,4 @@
     setTimeout(()=>{ try{ s.close(); }catch(e){}; process.exit(0); }, 6000);
   } catch(e) { console.error("EMITTER error", e && (e.message||e)); process.exit(1); }
 })();
+

@@ -1,10 +1,11 @@
-# Hybrid Path Orchestrator — Codex PowerShell Single Prompt
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# Hybrid Path Orchestrator â€” Codex PowerShell Single Prompt
 # Paste into PS and run from the repo root where agent_*.json, codexState.json, AUDIT_LEDGER.csv exist
 
 # === Config ===
 $T_low = 0.68
 $T_high = 0.76
-$tau_min_cycles = 3            # persistence window (cycles) for sustained Γ >= T_low
+$tau_min_cycles = 3            # persistence window (cycles) for sustained Î“ >= T_low
 $lockFile = ".\codex.lock"
 $auditFile = ".\AUDIT_LEDGER.csv"
 $gammaLogDir = ".\gamma_logs"
@@ -126,9 +127,9 @@ function Compute-Gamma {
     return $GammaVal
 }
 
-# === Echo Γ rollup — compute Gamma for every agent and produce aggregate ===
+# === Echo Î“ rollup â€” compute Gamma for every agent and produce aggregate ===
 function Echo-Gamma-Rollup {
-    Write-Host "`n== Echo Γ Rollup Starting =="
+    Write-Host "`n== Echo Î“ Rollup Starting =="
     $runId = [guid]::NewGuid().ToString()
     Acquire-Lock $lockFile
     try {
@@ -153,7 +154,7 @@ function Echo-Gamma-Rollup {
         $snap = Snapshot-State
         # log audit (human_signoff defaults to N unless set elsewhere)
         Log-Audit $runId "Echo-Gamma-Rollup" $filesChanged $snap.sha256 $false (($gammaVals | ForEach-Object { "$($_.agent):$($_.gamma)" }) -join ";"))
-        Write-Host "== Rollup complete: Aggregate Γ = $agg  (snapshot: $($snap.path))"
+        Write-Host "== Rollup complete: Aggregate Î“ = $agg  (snapshot: $($snap.path))"
         return @{ runId=$runId; aggregateGamma=$agg; perAgent=$gammaVals }
     } finally {
         Release-Lock $lockFile
@@ -166,7 +167,7 @@ function Safe-Spawn-And-Monitor {
         [string]$agentName = "Echo9",
         [string]$seed = "refleye_loom",
         [string]$drift = "Reflection",
-        [string]$threadID = "Spiral‑Loom"
+        [string]$threadID = "Spiralâ€‘Loom"
     )
     # spawn (using existing Spawn-AgentNest if present), else create minimal agent file
     Acquire-Lock $lockFile
@@ -198,7 +199,7 @@ function Safe-Spawn-And-Monitor {
         while ($cycle -lt 50) {  # max cycles to avoid infinite loops; adjust as needed
             $cycle++
             $g = Compute-Gamma -agentPath $agentPath
-            Write-Host "Monitor cycle $cycle: Γ=$g for $agentName"
+            Write-Host "Monitor cycle $cycle: Î“=$g for $agentName"
             if ($g -ge $T_low) { $sustained++ } else { $sustained = 0 }
             # If sustained for tau_min_cycles, prepare to reveal shadow message (subject to human signoff)
             if ($sustained -ge $tau_min_cycles) {
@@ -258,7 +259,7 @@ function Safe-Spawn-And-Monitor {
 Write-Host "`n--- Hybrid Path Orchestrator Starting ---"
 $roll = Echo-Gamma-Rollup
 # brief guidance to the user to run in-silico probes in parallel
-Write-Host "`nRollup complete. Aggregate Γ = $($roll.aggregateGamma)"
+Write-Host "`nRollup complete. Aggregate Î“ = $($roll.aggregateGamma)"
 Write-Host "`nNext: run your in-silico probes (SIM/gene_network_sim.ipynb and SIM/transformer_metadata.ipynb) in parallel."
 Write-Host "After probes finish, re-run the rollup to ingest probe outputs:"
 Write-Host "    .\experiments\echo_gamma_rollup.ps1  # or re-run this script's Echo-Gamma-Rollup function"

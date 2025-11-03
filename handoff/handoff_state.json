@@ -1,9 +1,10 @@
 ﻿{
-    "author":  "James Paul Jackson",
-    "version":  "0.7",
-    "payload_ref":  "codex/data/quantum_state.json",
-    "registry_ref":  "codex/core/registry.json",
-    "last_run":  "2025-11-03T13:10:04",
-    "framework":  "The Codex Project — Triadic Framework",
-    "log_latest":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\codex_run_20251103_130836.log"
+    "Log":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex_alignment_log.txt",
+    "Timestamp":  "2025-11-03 14:52:12",
+    "TotalFiles":  85,
+    "User":  "jacks",
+    "AutoRepaired":  82,
+    "AlignmentStatus":  "All aligned",
+    "System":  "JAMES",
+    "AlignedFiles":  85
 }

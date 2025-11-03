@@ -1,4 +1,5 @@
-﻿& {
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+& {
     $root = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
     Set-Location $root
     Write-Host "🧭 Codex Handoff Protocol v0.7 — Initiating AI Resume Bridge" -ForegroundColor Cyan
@@ -38,3 +39,4 @@
     Write-Host "`n🏁 Handoff sequence complete — aligned to Codex v0.7 root path" -ForegroundColor Green
     Set-Location $root
 }
+

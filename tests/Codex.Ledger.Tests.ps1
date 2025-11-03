@@ -1,4 +1,5 @@
-﻿Describe "Codex Ledger Schema" {
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+Describe "Codex Ledger Schema" {
   It "parses every line as valid JSON" {
     $errs = 0
     Get-Content codex_ledger.json | ForEach-Object {
@@ -7,3 +8,4 @@
     $errs | Should Be 0
   }
 }
+

@@ -1,4 +1,5 @@
-﻿import json, os, statistics, math
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+import json, os, statistics, math
 from datetime import datetime
 
 SUMMARY_FILE = os.path.join(os.getcwd(), 'codex_alignment_summary.json')
@@ -57,3 +58,4 @@ if __name__ == '__main__':
         analyze(data)
     else:
         print("⚠️ codex_alignment_summary.json not found.")
+

@@ -1,4 +1,5 @@
-﻿# make_inbox_stone.py
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# make_inbox_stone.py
 import hashlib, json
 from pathlib import Path
 
@@ -34,3 +35,4 @@ outfile.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 print("Wrote:", outfile.name)
 print("Canonical:", canonical)
 print("Digest:   ", digest)
+

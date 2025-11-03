@@ -1,4 +1,5 @@
-﻿# -*- coding: utf-8 -*-
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# -*- coding: utf-8 -*-
 import json, os, numpy as np, matplotlib.pyplot as plt
 
 def toroidal_projection(index, total, radius=1.0):
@@ -44,3 +45,4 @@ def plot_codex_coherence(insights_path="codex_alignment_insights.json", out_path
 
 if __name__ == "__main__":
     plot_codex_coherence()
+

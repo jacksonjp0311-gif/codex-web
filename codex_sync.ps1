@@ -1,4 +1,5 @@
-﻿# ============================================
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# ============================================
 # Codex Project Git Sync Automation Script
 # Author: James Paul Jackson
 # Project: The Codex Project
@@ -29,3 +30,4 @@ if (-not (git tag --list $tagName)) {
 }
 
 Write-Host "`n✅ Codex repository successfully synchronized!" -ForegroundColor Green
+

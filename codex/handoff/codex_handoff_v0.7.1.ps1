@@ -1,4 +1,5 @@
-﻿# Codex Handoff Script v0.7.1
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+# Codex Handoff Script v0.7.1
 # Single-file handoff bridge (generated)
 $root = 'C:\Users\jacks\OneDrive\Desktop\Codex Web'
 Set-Location $root
@@ -14,3 +15,4 @@ try {
 }
 Write-Host 'Handoff bridge complete.'
 Set-Location $root
+

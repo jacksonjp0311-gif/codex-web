@@ -1,4 +1,5 @@
-﻿<#
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+<#
   Generate-CodexHook.ps1
   Activates .venv, parses codex.crl, writes .git/hooks/pre-commit,
   then re-activates .venv so you stay in the venv.
@@ -115,4 +116,5 @@ Write-Host "Hook generated at $HookPath" -ForegroundColor Green
 
 # 4) Re-activate venv if we did above
 if ($activated) { . $activate }
+
 
