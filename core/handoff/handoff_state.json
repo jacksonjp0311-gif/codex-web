@@ -1,0 +1,16 @@
+﻿{
+    "root_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+    "timestamp":  "2025-11-03T13:51:37",
+    "laws_hash":  "decf9636aa96af7457322b96c22597c451f973f2e524680367aab448b1e4e5ca",
+    "modules":  [
+                    "orchestrator",
+                    "alignment",
+                    "ledger_sync",
+                    "laws",
+                    "handoff"
+                ],
+    "version":  "0.7.1",
+    "readme_updated":  false,
+    "notes":  "Auto-refreshed by Codex Handoff Protocol v0.7.1",
+    "last_commit_short":  "23e35d6"
+}
