@@ -1,0 +1,5 @@
+{
+  "symbolic_pattern": "lotus-torus",
+  "phase": "late",
+  "timestamp": "'$(Get-Date -Format "s")'"
+}
