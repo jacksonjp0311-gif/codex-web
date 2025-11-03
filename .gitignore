@@ -32,3 +32,6 @@ codex/tools/__pycache__/
 dist/
 build/
 *.egg-info/
+
+# Ignore environment secrets
+copilot-feedback/.env
