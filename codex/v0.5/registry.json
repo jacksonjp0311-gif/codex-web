@@ -14,15 +14,6 @@
                        "seal_hash":  "071718CC4A271E400A2F18226A4BBA3FC142AB2853110BE76363227FEB8547F2",
                        "tag":  "v0.4-final-2025-11-03-09-45-31",
                        "note":  "Seal and Ledger cryptographically realigned in v0.4-final synchronization"
-                   },
-                   {
-                       "status":  "initialized",
-                       "phase":  "synthesis",
-                       "version":  "v0.5-init",
-                       "timestamp":  "2025-11-03 09:47:35",
-                       "derived_from":  "v0.4-final",
-                       "seal_hash":  "1A1920205DBAE7A47C8901C1A41ACCD12588C86FC2A2DE411843112C688618B9",
-                       "note":  "Codex Synthesis Layer (v0.5-init) alignment embedding active"
                    }
                ]
 }
