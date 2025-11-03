@@ -1,10 +1,4 @@
 {
-  "timestamp": "2025-11-02",
-  "message": "Codex Alignment Seal \u2014 Baseline Equilibrium",
-  "results": [
-    0,
-    0,
-    0
-  ],
-  "G": 0
+  "codex_seal": "alignment_integrity",
+  "timestamp": "2025-11-03T08:56:07.1368338-05:00"
 }
