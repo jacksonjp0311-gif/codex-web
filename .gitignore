@@ -35,3 +35,5 @@ build/
 
 # Ignore environment secrets
 copilot-feedback/.env
+
+# Codex backups (ignore)\nbackups_reorg/
