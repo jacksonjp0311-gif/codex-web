@@ -1,0 +1,25 @@
+﻿
+                <div>
+          <div style={{ marginBottom: 12, display: "flex", gap: 8, alignItems: "center" }}>
+            <button
+              onClick={emitRunSmartCycle}
+              disabled={runningSmart}
+              style={{ padding: "8px 12px", background: "#0b5fff", color: "white", border: "none", borderRadius: 4, cursor: "pointer" }}
+              >
+              {runningSmart ? "Running..." : "Run Smart Cycle"}
+            </button>
+            <div style={{ fontSize: 12, color: "#666" }}>
+              <strong>Smart</strong> results panel
+            </div>
+          </div>
+
+          <div style={{ border: "1px solid #eee", padding: 10, borderRadius: 6, background: "#fafafa", maxHeight: 240, overflow: "auto" }}>
+            <div style={{ marginBottom: 8 }}><strong>Last smartCycleComplete</strong></div>
+            <pre style={{ fontSize: 12, whiteSpace: "pre-wrap" }}>{smartResult ? JSON.stringify(smartResult, null, 2) : "No results yet"}</pre>
+            <div style={{ marginTop: 8 }}><strong>Latest suggestions</strong></div>
+            <ul>
+              {smartSuggestions && smartSuggestions.length ? smartSuggestions.map((p, i) => <li key={i}><strong>{p.path}</strong>: {p.description}</li>) : <li>None</li>}
+            </ul>
+          </div>
+        </div>
+

@@ -1,0 +1,19 @@
+﻿{
+    "ledger":  [
+                   {
+                       "status":  "verified",
+                       "seal_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\core\\_codex_alignment_seal.json",
+                       "timestamp":  "2025-11-03 09:42:10",
+                       "seal_hash":  "B58C4EE2A6084B119B5939EB3EA12A148F8B80E9F21DDD32C97D5D7C1A08BFEB",
+                       "note":  "Codex Alignment Seal registration complete"
+                   },
+                   {
+                       "status":  "finalized",
+                       "seal_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\core\\_codex_alignment_seal.json",
+                       "timestamp":  "2025-11-03 09:45:31",
+                       "seal_hash":  "071718CC4A271E400A2F18226A4BBA3FC142AB2853110BE76363227FEB8547F2",
+                       "tag":  "v0.4-final-2025-11-03-09-45-31",
+                       "note":  "Seal and Ledger cryptographically realigned in v0.4-final synchronization"
+                   }
+               ]
+}

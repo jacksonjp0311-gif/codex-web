@@ -1,0 +1,9 @@
+﻿{
+    "codex_seal":  "alignment_integrity",
+    "timestamp":  "2025-11-03T09:45:31",
+    "ledger":  {
+                   "last_sync":  "2025-11-03 09:45:31",
+                   "registry":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\core\\registry.json",
+                   "status":  "initialized"
+               }
+}

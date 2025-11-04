@@ -1,0 +1,8 @@
+setup.py
+codex_watcher/__init__.py
+codex_watcher/cli.py
+codex_watcher.egg-info/PKG-INFO
+codex_watcher.egg-info/SOURCES.txt
+codex_watcher.egg-info/dependency_links.txt
+codex_watcher.egg-info/entry_points.txt
+codex_watcher.egg-info/top_level.txt

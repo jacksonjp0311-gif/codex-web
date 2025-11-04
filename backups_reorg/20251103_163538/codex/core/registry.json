@@ -1,0 +1,87 @@
+﻿[
+    {
+        "ledger":  [
+                       {
+                           "status":  "verified",
+                           "seal_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\core\\_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 09:42:10",
+                           "seal_hash":  "B58C4EE2A6084B119B5939EB3EA12A148F8B80E9F21DDD32C97D5D7C1A08BFEB",
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "finalized",
+                           "seal_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\core\\_codex_alignment_seal.json",
+                           "timestamp":  "2025-11-03 09:45:31",
+                           "seal_hash":  "071718CC4A271E400A2F18226A4BBA3FC142AB2853110BE76363227FEB8547F2",
+                           "tag":  "v0.4-final-2025-11-03-09-45-31",
+                           "note":  "Seal and Ledger cryptographically realigned in v0.4-final synchronization"
+                       },
+                       {
+                           "status":  "initialized",
+                           "phase":  "synthesis",
+                           "version":  "v0.5-init",
+                           "timestamp":  "2025-11-03 09:47:35",
+                           "derived_from":  "v0.4-final",
+                           "seal_hash":  "1A1920205DBAE7A47C8901C1A41ACCD12588C86FC2A2DE411843112C688618B9",
+                           "note":  "Codex Synthesis Layer (v0.5-init) alignment embedding active"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  null,
+                           "timestamp":  "2025-11-03 10:12:00",
+                           "seal_hash":  null,
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  null,
+                           "timestamp":  "2025-11-03 10:12:42",
+                           "seal_hash":  null,
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  null,
+                           "timestamp":  "2025-11-03 10:13:30",
+                           "seal_hash":  null,
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  null,
+                           "timestamp":  "2025-11-03 10:14:23",
+                           "seal_hash":  null,
+                           "note":  "Codex Alignment Seal registration complete"
+                       },
+                       {
+                           "status":  "verified",
+                           "seal_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\core\\orchestrator\\codex_seal.json",
+                           "timestamp":  "2025-11-03 10:14:56",
+                           "seal_hash":  "D5A6E1A7BA0F9ADF2495356688B54BC9A679A753884CDA5E99E82C1BDB83B21B",
+                           "note":  "Codex Alignment Seal registration complete"
+                       }
+                   ]
+    },
+    {
+        "timestamp":  "2025-11-03 10:16:13",
+        "tag":  "v0.3-seal-2025-11-03-10-16-13",
+        "version":  "v0.3-seal",
+        "hash":  "D5A6E1A7BA0F9ADF2495356688B54BC9A679A753884CDA5E99E82C1BDB83B21B"
+    },
+    {
+        "created":  "2025-11-03 10:19:50",
+        "pattern":  "lotus:torus",
+        "author":  "James Paul Jackson",
+        "version":  "v0.7",
+        "validated":  true,
+        "hash":  "87EA1346B8BA68E24540CC4DF043F9B190B0BEA8BB5B869F18E8FEF35D390D78"
+    },
+    {
+        "created":  "2025-11-03 10:20:59",
+        "pattern":  "lotus:torus",
+        "author":  "James Paul Jackson",
+        "version":  "v0.7",
+        "validated":  true,
+        "hash":  "003E24D4AEC66F6C7490EDCF4F1AC5733B045221B19ABA1202F676841F6428A3"
+    }
+]

@@ -1,0 +1,18 @@
+﻿{
+  "run_id": "rec_009",
+  "prioritized_fixes": [
+    {
+      "id": "dedupe_ledger",
+      "description": "Remove duplicate entries from codex_ledger.json based on the digest field",
+      "command": "Get-Content .\\codex_ledger.json -Raw | ConvertFrom-Json | Sort-Object digest -Unique | ConvertTo-Json -Depth 10 | Set-Content .\\codex_ledger.json -Encoding UTF8"
+    },
+    {
+      "id": "guard_duplicate_append",
+      "description": "Add a check in seal_009.py to skip appending if the new digest already exists",
+      "command": "(Get-Content .\\codex_ledger.json -Raw | ConvertFrom-Json).digest -contains $new_digest || (Add-Content codex_ledger.json $new_entry)"
+    }
+  ],
+  "rationale": "Multiple identical entries for stone_006 have been appended, polluting the ledger and undermining audit integrity. Deduplicating the ledger and guarding the seal script against reappending the same digest will restore a clean chain and prevent future duplicates.",
+  "dry_run_ok": true,
+  "rollback_hook": "Copy-Item .\\codex_ledger.json .\\codex_ledger.bak.json -Force"
+}

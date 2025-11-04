@@ -1,0 +1,3 @@
+[console_scripts]
+codex-fetcher = codex_fetcher.fetcher:main
+codex-watcher = codex_watcher.cli:main

@@ -1,0 +1,4 @@
+﻿streamlit>=1.0
+pandas
+plotly
+streamlit-autorefresh

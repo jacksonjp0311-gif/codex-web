@@ -1,0 +1,37 @@
+﻿# ---- Codex Project Ignore ----
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and logs
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# VS Code and editor settings
+.vscode/
+.idea/
+
+# OneDrive metadata
+*.tmp
+*.lnk
+*.DS_Store
+~$*
+Thumbs.db
+desktop.ini
+
+# Alignment outputs
+codex_alignment_summary.json
+codex_alignment_insights.json
+codex/tools/__pycache__/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Ignore environment secrets
+copilot-feedback/.env

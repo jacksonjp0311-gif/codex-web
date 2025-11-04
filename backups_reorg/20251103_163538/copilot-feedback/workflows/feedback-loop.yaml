@@ -1,0 +1,55 @@
+﻿id: feedback-loop
+steps:
+  - name: assembleChunks
+    node: assembleChunks
+    args:
+      chunksDir: "ara_chunks"
+      outputPath: "ara_core.txt"
+
+  - name: loadMath
+    node: mathContext
+    args:
+      mathPath: "codex-engine/codex-math.md"
+
+  - name: loadAraSeed
+    node: araSeed
+    args:
+      seedPath: "ara_core.txt"
+
+  - name: loadPersona
+    node: araPersona
+    args:
+      seedText: "{{steps.loadAraSeed.outputs.seedText}}"
+      mathRules: "{{steps.loadMath.outputs.mathRules}}"
+
+  - name: runCommand
+    node: powershell
+    args:
+      command: "{{payload.command}}"
+
+  - name: codeScan
+    node: codeScan
+    args:
+      sourceDir: "src"
+
+  - name: generatePatches
+    node: copilot
+    args:
+      seedPrompt: "{{steps.loadPersona.outputs.seedPrompt}}"
+      reportPath: "{{steps.codeScan.outputs.reportPath}}"
+      parallel: "{{payload.parallel}}"
+
+  - name: approvalGate
+    node: userApproval
+    args:
+      suggestions: "{{steps.generatePatches.outputs.patches}}"
+
+  - name: applyPatches
+    node: applyPatch
+    args:
+      patches: "{{steps.approvalGate.outputs.approvedPatches}}"
+
+  - name: verify
+    node: powershell
+    args:
+      command: "Invoke-Pester"

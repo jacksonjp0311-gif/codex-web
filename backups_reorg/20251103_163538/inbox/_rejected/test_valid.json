@@ -1,0 +1,4 @@
+{
+ "canonical": "seed=test-001;prev=<TIP_DIGEST>;axis=CodexWeb;data=validation-check;method=python-sha256;metrics=n/a;notes=valid stone;trials=1;author=James",
+ "digest": "<COMPUTED_SHA256>"
+}

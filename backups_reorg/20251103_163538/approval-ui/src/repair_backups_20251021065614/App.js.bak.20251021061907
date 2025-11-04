@@ -1,0 +1,83 @@
+import React, { useEffect, useState } from "react";
+import io from "socket.io-client";
+import "./App.css";
+
+const socket = io("http://localhost:4000", { transports: ["websocket","polling"] });
+
+function App() {
+  const [suggestions, setSuggestions] = useState([]);
+  const [logs, setLogs] = useState([]);
+  const [removing, setRemoving] = useState({});
+
+  useEffect(() => {
+    socket.on("connect", () => {
+      console.debug("socket connected", socket.id);
+    });
+    socket.on("suggestions", ({ paths }) => setSuggestions(paths || []));
+    socket.on("approvePath", ({ path }) => {
+      setRemoving(r => ({ ...r, [path]: true }));
+      setTimeout(() => {
+        setSuggestions(s => s.filter(item => (item.path || item) !== path));
+        setRemoving(r => { const c = { ...r }; delete c[path]; return c; });
+        setLogs(l => [...l, { path, description: `Approved ${path}`, ts: new Date().toISOString() }]);
+      }, 360);
+    });
+    socket.on("disconnect", () => console.warn("socket disconnected"));
+    return () => {
+      socket.off("suggestions");
+      socket.off("approvePath");
+    };
+  }, []);
+
+  return (
+    <div className="copilot-ui">
+      <header className="hero">
+        <div className="brand">
+          <h1>Codex Approval Console</h1>
+          <p className="muted">Live suggestions · Audit logs · Approve to commit</p>
+        </div>
+      </header>
+
+      <main className="panel-grid">
+        <aside className="panel suggestions">
+          <h2>Path Suggestions</h2>
+          <ul>
+            {suggestions.map(s => {
+              const key = s.path || s;
+              const cls = removing[key] ? "suggestion item-exit" : "suggestion";
+              return (
+                <li key={key} className={cls}>
+                  <div className="meta">
+                    <code className="path">{key}</code>
+                    <div className="desc">{s.description || ""}</div>
+                  </div>
+                  <div className="actions">
+                    <button className="approve" onClick={() => socket.emit("approvePath", { path: key })}>Approve</button>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
+
+        <section className="panel logs">
+          <h2>Live Logs</h2>
+          <div className="log-stream">
+            {logs.length === 0 && <div className="empty">No live logs yet</div>}
+            <ul>
+              {logs.map((l, i) => (
+                <li key={i} className="log-line">
+                  <span className="ts">{new Date(l.ts).toLocaleTimeString()}</span>
+                  <code className="log-path">{l.path}</code>
+                  <span className="log-desc">{l.description}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+export default App;

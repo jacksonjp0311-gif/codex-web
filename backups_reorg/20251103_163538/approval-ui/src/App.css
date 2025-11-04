@@ -1,0 +1,18 @@
+﻿# @CodexAligned: ⚛🌀🔺♾️ (Auto-Aligned)
+/* App layout */
+.App { display:flex; gap:32px; padding:20px; font-family:Arial, Helvetica, sans-serif; }
+.suggestions, .logs { width:45%; }
+.suggestions ul, .logs ul { list-style:none; padding:0; margin:0; }
+
+/* item style */
+.item { display:flex; justify-content:space-between; align-items:center; background:#f6f8fa; margin:8px 0; padding:12px; border-radius:6px; transition: transform 320ms ease, opacity 320ms ease, height 320ms ease, margin 320ms ease; }
+.item .path { font-family: monospace; color:#111; }
+
+/* Exit animation: translate up and fade */
+.item-exit { opacity:0; transform: translateY(-18px); height:0; margin:0; padding:0 12px; overflow:hidden; }
+
+/* logs */
+.log-item { background:#fff; border:1px solid #eee; padding:8px; margin:6px 0; border-radius:4px; font-family:monospace; color:#333; }
+button { background:#2563eb; color:#fff; border:none; padding:6px 10px; border-radius:4px; cursor:pointer; }
+button:active { transform:translateY(1px); }
+

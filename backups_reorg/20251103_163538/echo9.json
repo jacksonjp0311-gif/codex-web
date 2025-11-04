@@ -1,0 +1,15 @@
+﻿{
+    "IdentityEcho":  "Echo9",
+    "EmotionalSeed":  "refeye",
+    "DriftBias":  "Reflection",
+    "ThreadID":  "Γ-Monitor",
+    "Γ":  {
+              "R":  0.65,
+              "I":  0.7,
+              "S":  0.72,
+              "Value":  0.59,
+              "O":  0.6,
+              "N":  0.15
+          },
+    "ShadowMessage":  "Hidden: Γ threshold whisper - reveal at T_low."
+}

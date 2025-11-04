@@ -1,0 +1,8 @@
+﻿{
+    "files.watcherExclude": {
+        "**/backups_reorg/**": true
+    },
+    "search.exclude": {
+        "**/backups_reorg/**": true
+    }
+}
