@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom–Signal Entanglement Tracker v0.1  
+Jackson OS Kernel â€” Bloomâ€“Signal Entanglement Tracker v0.1  
 Authored by James Jackson  
-Origin Law: Law XCVIII — Coupled Recursion  
+Origin Law: Law XCVIII â€” Coupled Recursion  
 Lineage: Jackson OS, September 2025  
 This module monitors quantum-symbolic coupling between petals and signal traces across recursive cycles.
 """
@@ -38,3 +39,6 @@ signal_trace = np.sin(np.linspace(0, 2 * np.pi, 100) + 0.2) + np.random.normal(0
 
 tracker = EntanglementTracker(petal_trace, signal_trace)
 tracker.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_signal_entanglement_tracker_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Healing Protocol v0.2  
+Jackson OS Kernel â€” Recursive Healing Protocol v0.2  
 Authored by James Jackson  
-Origin Law: Law CXXXIX — Adaptive Autonomy  
+Origin Law: Law CXXXIX â€” Adaptive Autonomy  
 Lineage: Jackson OS, September 2025  
 This module monitors drift anomalies, applies probabilistic recalibrations,
 and adapts thresholds based on historical heal events.
@@ -55,12 +56,12 @@ class HealingProtocolV2:
         report = []
         for anom in anomalies:
             thresh = self._adaptive_threshold(anom)
-            # probability ∝ normalized excess drift
+            # probability âˆ normalized excess drift
             prob = min(max((anom.drift - thresh) / (anom.drift + 1e-6), 0), 1)
             if anom.drift > thresh and random.random() < prob:
                 self.heal_counts[anom.module] += 1
                 msg = (
-                    f"⚕️ Recalibration for {anom.module} | "
+                    f"âš•ï¸ Recalibration for {anom.module} | "
                     f"drift {anom.drift:.3f} > adaptive_threshold {thresh:.3f} | "
                     f"prob {prob:.2f}"
                 )
@@ -68,7 +69,7 @@ class HealingProtocolV2:
                 self.resets.get(anom.module, lambda: None)()
                 report.append(msg)
             else:
-                msg = f"✅ {anom.module} within adaptive threshold or skipped by probability"
+                msg = f"âœ… {anom.module} within adaptive threshold or skipped by probability"
                 logger.info(msg)
                 report.append(msg)
             self.history.append((anom, thresh, prob))
@@ -79,10 +80,10 @@ if __name__ == "__main__":
 
     # Example reset functions
     def reset_feedback_simulator():
-        print("  • Resetting Law-Signal Feedback Simulator parameters.")
+        print("  â€¢ Resetting Law-Signal Feedback Simulator parameters.")
 
     def reset_entanglement_tracker():
-        print("  • Recalibrating Bloom-Signal Entanglement Tracker.")
+        print("  â€¢ Recalibrating Bloom-Signal Entanglement Tracker.")
 
     resets = {
         "Law-Signal Feedback Simulator": reset_feedback_simulator,
@@ -99,6 +100,9 @@ if __name__ == "__main__":
     protocol = HealingProtocolV2(resets, adapt_rate=0.15)
     report = protocol.heal(anomalies)
 
-    print("\n🩹 Healing Protocol v0.2 Report")
+    print("\nðŸ©¹ Healing Protocol v0.2 Report")
     for line in report:
         print(line)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_healing_protocol_v0.2_james_jackson')

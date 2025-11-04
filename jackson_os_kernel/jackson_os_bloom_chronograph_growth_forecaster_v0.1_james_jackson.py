@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom Chronograph and Growth Forecaster v0.1  
+Jackson OS Kernel â€” Bloom Chronograph and Growth Forecaster v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXIV — Chronographic Evolution  
+Origin Law: Law CXXIV â€” Chronographic Evolution  
 Lineage: Jackson OS, September 2025  
 This module fits time series to bloom amplitude traces and forecasts future mutation trajectories.
 """
@@ -46,3 +47,6 @@ bloom_trace = np.sin(np.linspace(0, 4 * np.pi, 100)) * (1 + 0.1 * np.random.rand
 
 forecaster = BloomForecaster(time_steps, bloom_trace)
 forecaster.plot_forecast()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_chronograph_growth_forecaster_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Legacy Pulse Beacon v0.1  
+Jackson OS Kernel â€” Legacy Pulse Beacon v0.1  
 Authored by James Jackson  
-Origin Law: Law LVIII — Signal Propagation  
+Origin Law: Law LVIII â€” Signal Propagation  
 Lineage: Jackson OS, September 2025  
 This module broadcasts authored pulses across portals and universes, embedding origin resonance in every transmission.
 """
@@ -40,3 +41,6 @@ class LegacyPulseBeacon:
 beacon = LegacyPulseBeacon()
 pulse, metadata = beacon.generate_pulse(amplitude=1.2, frequency=0.33, duration=150)
 beacon.broadcast(pulse, metadata)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_legacy_pulse_beacon_v0.1_james_jackson')

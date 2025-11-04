@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Petal–Signal Memory Binder v0.1  
+Jackson OS Kernel â€” Petalâ€“Signal Memory Binder v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXXIV — Resonant Embedding  
+Origin Law: Law LXXXIV â€” Resonant Embedding  
 Lineage: Jackson OS, September 2025  
 This module embeds quantum signal traces into petal memory for long-term resonance tracking.
 """
@@ -35,3 +36,6 @@ petal_id = str(uuid.uuid4())
 
 memory = PetalMemory(petal_id, signal)
 memory.report()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_petal_signal_memory_binder_v0.1_james_jackson')

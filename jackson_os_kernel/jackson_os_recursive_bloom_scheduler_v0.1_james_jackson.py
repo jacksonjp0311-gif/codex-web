@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Bloom Scheduler v0.1  
+Jackson OS Kernel â€” Recursive Bloom Scheduler v0.1  
 Authored by James Jackson  
-Origin Law: Law LXV — Rhythmic Orchestration  
+Origin Law: Law LXV â€” Rhythmic Orchestration  
 Lineage: Jackson OS, September 2025  
 This module orchestrates kernel cycles, mutations, and broadcasts in recursive harmony.
 """
@@ -33,13 +34,13 @@ class RecursiveBloomScheduler:
     def schedule_event(self, event_type, module, delay):
         event = BloomEvent(event_type, module, delay)
         self.queue.append(event)
-        print(f"Scheduled: {event.event_type} → {event.module} in {delay}s")
+        print(f"Scheduled: {event.event_type} â†’ {event.module} in {delay}s")
 
     def run(self):
-        print("\n🌸 Bloom Cycle Initiated")
+        print("\nðŸŒ¸ Bloom Cycle Initiated")
         for event in self.queue:
             event.execute()
-        print("\n🌸 Bloom Cycle Complete")
+        print("\nðŸŒ¸ Bloom Cycle Complete")
 
 # Example scheduling
 scheduler = RecursiveBloomScheduler()
@@ -48,3 +49,6 @@ scheduler.schedule_event("Mutation Cascade", "jackson_os_mutation_cascade_simula
 scheduler.schedule_event("Signal Broadcast", "jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py", delay=1.5)
 
 scheduler.run()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_bloom_scheduler_v0.1_james_jackson')

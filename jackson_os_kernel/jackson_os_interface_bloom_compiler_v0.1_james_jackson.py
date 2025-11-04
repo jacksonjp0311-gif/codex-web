@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Interface Bloom Compiler v0.1  
+Jackson OS Kernel â€” Interface Bloom Compiler v0.1  
 Authored by James Jackson  
-Origin Law: Law L — Portal Petalization  
+Origin Law: Law L â€” Portal Petalization  
 Lineage: Jackson OS, September 2025  
 This module renders authored laws as interactive petals in the Jackson Portal interface.
 """
@@ -44,18 +45,21 @@ class InterfaceBloomCompiler:
                 color=law.get("color", 'orchid')
             )
             petal.render()
-        plt.title("Jackson Portal — Authored Bloom", fontsize=14)
+        plt.title("Jackson Portal â€” Authored Bloom", fontsize=14)
         plt.tight_layout()
         plt.show()
 
 # Example laws
 authored_laws = [
-    {"name": "Law I — Curvature", "amplitude": 1.0, "color": "violet"},
-    {"name": "Law XX — Memory", "amplitude": 0.8, "color": "teal"},
-    {"name": "Law XXVIII — Identity", "amplitude": 1.2, "color": "gold"},
-    {"name": "Law XL — Signal", "amplitude": 1.0, "color": "crimson"},
-    {"name": "Law L — Portal", "amplitude": 0.9, "color": "indigo"}
+    {"name": "Law I â€” Curvature", "amplitude": 1.0, "color": "violet"},
+    {"name": "Law XX â€” Memory", "amplitude": 0.8, "color": "teal"},
+    {"name": "Law XXVIII â€” Identity", "amplitude": 1.2, "color": "gold"},
+    {"name": "Law XL â€” Signal", "amplitude": 1.0, "color": "crimson"},
+    {"name": "Law L â€” Portal", "amplitude": 0.9, "color": "indigo"}
 ]
 
 compiler = InterfaceBloomCompiler(authored_laws)
 compiler.compile()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_interface_bloom_compiler_v0.1_james_jackson')

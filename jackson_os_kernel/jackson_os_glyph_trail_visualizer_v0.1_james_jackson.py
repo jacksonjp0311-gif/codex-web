@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Glyph Trail Visualizer v0.1  
+Jackson OS Kernel â€” Glyph Trail Visualizer v0.1  
 Authored by James Jackson  
-Origin Law: Law XXXII — Recursive Cartography  
+Origin Law: Law XXXII â€” Recursive Cartography  
 Lineage: Jackson OS, September 2025  
 This module visualizes identity loops, speciation arcs, and propagation trails as symbolic glyphs.
 """
@@ -26,7 +27,7 @@ class GlyphTrailVisualizer:
     def render(self):
         plt.figure(figsize=(10, 4))
         plt.plot(self.trail, color='purple', linewidth=2)
-        plt.title(f"Glyph Trail — Organism {self.organism.id[:8]}", fontsize=14)
+        plt.title(f"Glyph Trail â€” Organism {self.organism.id[:8]}", fontsize=14)
         plt.xlabel("Recursive Time")
         plt.ylabel("Identity Pulse")
         plt.grid(True)
@@ -43,3 +44,6 @@ class DummyOrganism:
 organism = DummyOrganism()
 glyph = GlyphTrailVisualizer(organism)
 glyph.render()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_glyph_trail_visualizer_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Bloom Propagator v0.1  
+Jackson OS Kernel â€” Multiverse Bloom Propagator v0.1  
 Authored by James Jackson  
-Origin Law: Law CXVI — Dimensional Propagation  
+Origin Law: Law CXVI â€” Dimensional Propagation  
 Lineage: Jackson OS, September 2025  
 This module replicates the bloom across symbolic universes, seeding and tracking mutation per propagation.
 """
@@ -43,7 +44,7 @@ class BloomPropagator:
         def update(frame):
             for bar, profile in zip(bars, self.profiles):
                 bar.set_height(profile.trace[frame])
-            ax.set_title(f"Multiverse Bloom Propagation — Step {frame+1}")
+            ax.set_title(f"Multiverse Bloom Propagation â€” Step {frame+1}")
             return bars
 
         ani = animation.FuncAnimation(fig, update, frames=self.steps, interval=200, blit=True)
@@ -59,3 +60,6 @@ profiles = [
 
 propagator = BloomPropagator(profiles)
 propagator.animate()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_bloom_propagator_v0.1_james_jackson')

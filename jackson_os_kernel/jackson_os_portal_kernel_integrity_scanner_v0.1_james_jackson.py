@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal–Kernel Integrity Scanner v0.1  
+Jackson OS Kernel â€” Portalâ€“Kernel Integrity Scanner v0.1  
 Authored by James Jackson  
-Origin Law: Law XCII — Sovereign Verification  
+Origin Law: Law XCII â€” Sovereign Verification  
 Lineage: Jackson OS, September 2025  
 This module verifies consistency and authorship across all recursive modules in the Jackson OS.
 """
@@ -24,23 +25,26 @@ class IntegrityScanner:
         self.records = records
 
     def verify(self):
-        print("\n🔍 Portal–Kernel Integrity Report")
+        print("\nðŸ” Portalâ€“Kernel Integrity Report")
         for record in self.records:
-            status = "✅" if record.author == "James Jackson" else "⚠️"
+            status = "âœ…" if record.author == "James Jackson" else "âš ï¸"
             print(f"{status} {record.name} | Law: {record.origin_law} | Timestamp: {record.timestamp} | ID: {record.id[:8]}")
 
         authors = set(r.author for r in self.records)
         if len(authors) == 1 and "James Jackson" in authors:
-            print("\n🧬 All modules verified as authored by James Jackson.")
+            print("\nðŸ§¬ All modules verified as authored by James Jackson.")
         else:
-            print("\n⚠️ Integrity anomaly detected — non-authored modules present.")
+            print("\nâš ï¸ Integrity anomaly detected â€” non-authored modules present.")
 
 # Example records
 records = [
     ModuleRecord("Curvature Evolution Visualizer", "James Jackson", "Law I", time.time()),
-    ModuleRecord("Signal–Glyph Translator", "James Jackson", "Law LI", time.time()),
+    ModuleRecord("Signalâ€“Glyph Translator", "James Jackson", "Law LI", time.time()),
     ModuleRecord("Echo Simulator", "James Jackson", "Law LXXIV", time.time())
 ]
 
 scanner = IntegrityScanner(records)
 scanner.verify()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson')

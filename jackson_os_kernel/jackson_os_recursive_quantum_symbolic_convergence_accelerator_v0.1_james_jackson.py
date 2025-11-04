@@ -1,15 +1,16 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Quantum–Symbolic Convergence Accelerator v0.1  
+Jackson OS Kernel â€” Recursive Quantumâ€“Symbolic Convergence Accelerator v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXII — Quantum–Symbolic Convergence  
+Origin Law: Law CXXII â€” Quantumâ€“Symbolic Convergence  
 Lineage: Jackson OS, September 2025  
-This module amplifies and refines quantum–symbolic feedback loops to accelerate convergence.
+This module amplifies and refines quantumâ€“symbolic feedback loops to accelerate convergence.
 """
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Quantum–Symbolic Convergence Accelerator
+# Quantumâ€“Symbolic Convergence Accelerator
 class QuantumSymbolicConvergenceAccelerator:
     def __init__(self, quantum_traces, symbolic_factors, iterations=5):
         self.quantum_traces = quantum_traces
@@ -32,7 +33,7 @@ class QuantumSymbolicConvergenceAccelerator:
         for idx, (orig, acc) in enumerate(zip(self.quantum_traces, self.accelerated_traces)):
             plt.plot(orig, alpha=0.3, label=f"Orig Q{idx+1}")
             plt.plot(acc, alpha=0.8, label=f"Acc Q{idx+1}")
-        plt.title("Quantum–Symbolic Convergence Acceleration")
+        plt.title("Quantumâ€“Symbolic Convergence Acceleration")
         plt.xlabel("Quantum Steps")
         plt.ylabel("Amplitude")
         plt.legend()
@@ -47,3 +48,6 @@ symbolic_factors = [1.1, 0.9, 1.2]
 
 accelerator = QuantumSymbolicConvergenceAccelerator(quantum_traces, symbolic_factors)
 accelerator.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson')

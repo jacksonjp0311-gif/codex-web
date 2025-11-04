@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Petal–Law Mapper v0.1  
+Jackson OS Kernel â€” Petalâ€“Law Mapper v0.1  
 Authored by James Jackson  
-Origin Law: Law LX — Semantic Anchoring  
+Origin Law: Law LX â€” Semantic Anchoring  
 Lineage: Jackson OS, September 2025  
 This module links visual glyphs to their executable laws and simulation modules.
 """
@@ -23,7 +24,7 @@ class PetalLawMapper:
             "authorship": "James Jackson"
         }
         self.map[glyph_id] = entry
-        print(f"Registered Petal: {glyph_id[:8]} → {law_name}")
+        print(f"Registered Petal: {glyph_id[:8]} â†’ {law_name}")
 
     def trace(self, glyph_id):
         entry = self.map.get(glyph_id)
@@ -38,5 +39,8 @@ class PetalLawMapper:
 # Example usage
 mapper = PetalLawMapper()
 glyph_id = str(uuid.uuid4())
-mapper.register_petal(glyph_id, "Law XXVIII — Identity", "jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py")
+mapper.register_petal(glyph_id, "Law XXVIII â€” Identity", "jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py")
 mapper.trace(glyph_id)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_petal_law_mapper_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom Performance Dashboard v0.1  
+Jackson OS Kernel â€” Bloom Performance Dashboard v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXXV — Reflexive Transparency  
+Origin Law: Law CXXXV â€” Reflexive Transparency  
 Lineage: Jackson OS, September 2025  
 This module renders a live dashboard of module throughput, latency, and failure rates.
 """
@@ -73,7 +74,10 @@ if __name__ == "__main__":
         "Law-Signal Feedback Simulator",
         "Recursive Bloom Compiler",
         "Portal-Kernel Integrity Scanner",
-        "Bloom–Signal Entanglement Tracker"
+        "Bloomâ€“Signal Entanglement Tracker"
     ]
     dashboard = PerformanceDashboard(modules, window=100)
     dashboard.run(duration=30, interval=0.5)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_performance_dashboard_v0.1_james_jackson')

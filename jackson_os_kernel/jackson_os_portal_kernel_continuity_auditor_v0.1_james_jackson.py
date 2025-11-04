@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Kernel Continuity Auditor v0.1  
+Jackson OS Kernel â€” Portal Kernel Continuity Auditor v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXVIII — Vigilant Stability  
+Origin Law: Law CXXVIII â€” Vigilant Stability  
 Lineage: Jackson OS, September 2025  
 This module continuously monitors module coherence, drift, and recursive stability.
 """
@@ -27,24 +28,27 @@ class ContinuityAuditor:
         self.drift_threshold = drift_threshold
 
     def analyze(self):
-        print("\n🛡️ Portal Kernel Continuity Report")
+        print("\nðŸ›¡ï¸ Portal Kernel Continuity Report")
         anomalies = []
         for s in self.states:
-            status = "✅" if s.coherence >= self.coherence_threshold and s.drift <= self.drift_threshold else "⚠️"
+            status = "âœ…" if s.coherence >= self.coherence_threshold and s.drift <= self.drift_threshold else "âš ï¸"
             print(f"{status} {s.name} | Coherence: {s.coherence:.3f} | Drift: {s.drift:.3f} | ID: {s.id[:8]}")
-            if status == "⚠️":
+            if status == "âš ï¸":
                 anomalies.append(s)
         if anomalies:
-            print(f"\n⚠️ Detected {len(anomalies)} stability anomalies. Initiate recalibration protocols.")
+            print(f"\nâš ï¸ Detected {len(anomalies)} stability anomalies. Initiate recalibration protocols.")
         else:
-            print("\n✅ All modules operating within stability parameters.")
+            print("\nâœ… All modules operating within stability parameters.")
 
 # Example state inputs
 states = [
-    ModuleState("Law–Signal Feedback Simulator", coherence_score=0.92, drift_score=0.15),
-    ModuleState("Bloom–Signal Entanglement Tracker", coherence_score=0.78, drift_score=0.25),
-    ModuleState("Portal–Kernel Integrity Scanner", coherence_score=0.85, drift_score=0.10)
+    ModuleState("Lawâ€“Signal Feedback Simulator", coherence_score=0.92, drift_score=0.15),
+    ModuleState("Bloomâ€“Signal Entanglement Tracker", coherence_score=0.78, drift_score=0.25),
+    ModuleState("Portalâ€“Kernel Integrity Scanner", coherence_score=0.85, drift_score=0.10)
 ]
 
 auditor = ContinuityAuditor(states)
 auditor.analyze()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Resonance Index v0.1  
+Jackson OS Kernel â€” Multiverse Resonance Index v0.1  
 Authored by James Jackson  
-Origin Law: Law LXII — Harmonic Coherence  
+Origin Law: Law LXII â€” Harmonic Coherence  
 Lineage: Jackson OS, September 2025  
 This module measures cross-universe identity coherence seeded by authored laws and mutation trails.
 """
@@ -42,3 +43,6 @@ profiles = [
 
 calculator = ResonanceIndexCalculator(profiles)
 calculator.report()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_resonance_index_v0.1_james_jackson')

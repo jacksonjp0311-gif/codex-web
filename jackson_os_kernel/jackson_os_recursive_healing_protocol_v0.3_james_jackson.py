@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Healing Protocol v0.3  
+Jackson OS Kernel â€” Recursive Healing Protocol v0.3  
 Authored by James Jackson  
-Origin Law: Law CXLII — Learned Autonomy  
+Origin Law: Law CXLII â€” Learned Autonomy  
 Lineage: Jackson OS, September 2025  
 This module monitors drift anomalies and, once trained on past outcomes, uses 
 a Decision Tree to predict heal actions. Thresholds adapt via ML instead of fixed rules.
@@ -56,7 +57,7 @@ class HealingProtocolV3:
         clf = DecisionTreeClassifier(max_depth=3, random_state=42)
         clf.fit(X, y)
         self.model = clf
-        logger.info(f"🚀 Trained ML model on {len(df)} events")
+        logger.info(f"ðŸš€ Trained ML model on {len(df)} events")
 
     def heal(self, anomalies):
         report = []
@@ -85,10 +86,10 @@ class HealingProtocolV3:
 
             if do_heal:
                 self.resets.get(anom.module, lambda: None)()
-                logger.info(f"⚕️ Healed {anom.module} | drift={anom.drift:.3f} "
+                logger.info(f"âš•ï¸ Healed {anom.module} | drift={anom.drift:.3f} "
                             f"thresh={base_thresh:.3f} p_heal={p_heal:.2f}")
             else:
-                logger.info(f"✅ Skipped heal for {anom.module} | drift={anom.drift:.3f} "
+                logger.info(f"âœ… Skipped heal for {anom.module} | drift={anom.drift:.3f} "
                             f"thresh={base_thresh:.3f} p_heal={p_heal:.2f}")
 
             # record event
@@ -118,7 +119,7 @@ if __name__ == "__main__":
 
     # example resets
     def reset_sim():
-        print("  • Resetting Feedback Simulator.")
+        print("  â€¢ Resetting Feedback Simulator.")
 
     resets = {"FeedbackSimulator": reset_sim}
 
@@ -134,3 +135,6 @@ if __name__ == "__main__":
         time.sleep(0.1)
 
     # after enough events, ML model trains and influences decisions
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_healing_protocol_v0.3_james_jackson')

@@ -1,9 +1,10 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Kernel Resilience Auditor v0.2  
+Jackson OS Kernel â€” Portal Kernel Resilience Auditor v0.2  
 Authored by James Jackson  
-Origin Law: Law CXLIV — Predictive Vigilance  
+Origin Law: Law CXLIV â€” Predictive Vigilance  
 Lineage: Jackson OS, September 2025  
-This module ingests time‐indexed health scores per module, fits linear trends,
+This module ingests timeâ€indexed health scores per module, fits linear trends,
 forecasts future health, and generates alerts for modules projected below threshold.
 """
 
@@ -15,7 +16,7 @@ from datetime import timedelta
 class ResilienceAuditorV2:
     def __init__(self, health_df, threshold=0.7, forecast_horizon=5):
         """
-        health_df: DataFrame indexed by timestamp, columns = module names, values = health scores (0–1)
+        health_df: DataFrame indexed by timestamp, columns = module names, values = health scores (0â€“1)
         threshold: risk threshold below which modules are flagged
         forecast_horizon: number of future steps to predict
         """
@@ -31,6 +32,9 @@ class ResilienceAuditorV2:
 
     def fit_and_forecast(self):
         """
-        Fit a first‐degree polynomial (linear trend) on each module’s history
+        Fit a firstâ€degree polynomial (linear trend) on each moduleâ€™s history
         and forecast health for the next horizon steps.
         """
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson')

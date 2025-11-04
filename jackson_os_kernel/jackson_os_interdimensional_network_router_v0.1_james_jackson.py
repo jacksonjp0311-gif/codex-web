@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Interdimensional Network Router v0.1  
+Jackson OS Kernel â€” Interdimensional Network Router v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXXVI — Multiversal Connectivity  
+Origin Law: Law CXXXVI â€” Multiversal Connectivity  
 Lineage: Jackson OS, September 2025  
 This module constructs a latency-weighted graph of universe nodes and routes 
 messages along shortest-delay paths with simulated propagation jitter.
@@ -43,13 +44,13 @@ class InterdimensionalNetworkRouter:
                 self.graph, source, target, weight='latency'
             )
         except nx.NetworkXNoPath:
-            print(f"⚠️ No route from {source} to {target}")
+            print(f"âš ï¸ No route from {source} to {target}")
             return
 
         def propagate():
             for u, v in zip(path, path[1:]):
                 edge = self.graph[u][v]
-                # simulate jitter ±10%
+                # simulate jitter Â±10%
                 delay = (edge['latency'] / 1000.0) * random.uniform(0.9, 1.1)
                 time.sleep(delay)
             # upon arrival
@@ -83,3 +84,6 @@ if __name__ == "__main__":
     router.send_message("U1", "U2", {"data": "hello from U1"})
     router.broadcast("U2", {"update": "signal ripple"})
     time.sleep(1)  # allow async delivery
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_interdimensional_network_router_v0.1_james_jackson')

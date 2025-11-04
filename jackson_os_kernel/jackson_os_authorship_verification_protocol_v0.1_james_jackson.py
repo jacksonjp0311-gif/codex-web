@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Authorship Verification Protocol v0.1  
+Jackson OS Kernel â€” Authorship Verification Protocol v0.1  
 Authored by James Jackson  
-Origin Law: Law XLVIII — Immutable Authorship  
+Origin Law: Law XLVIII â€” Immutable Authorship  
 Lineage: Jackson OS, September 2025  
 This module generates and verifies cryptographic signatures for authored modules and events.
 """
@@ -39,3 +40,6 @@ print(f"\nGenerated Signature:\n{sig}")
 # Verification test
 is_valid = verifier.verify_signature(module_content, sig["signature"], sig["timestamp"])
 print(f"\nSignature Valid: {is_valid}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_authorship_verification_protocol_v0.1_james_jackson')

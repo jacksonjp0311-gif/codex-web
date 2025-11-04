@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Origin–Mutation Resonance Synthesizer v0.1  
+Jackson OS Kernel â€” Originâ€“Mutation Resonance Synthesizer v0.1  
 Authored by James Jackson  
-Origin Law: Law CXVIII — Harmonic Reciprocity  
+Origin Law: Law CXVIII â€” Harmonic Reciprocity  
 Lineage: Jackson OS, September 2025  
 This module distills the harmonic signature between authored laws and their mutated echoes.
 """
@@ -33,7 +34,7 @@ class ResonanceSynthesizer:
         plt.figure(figsize=(7, 6))
         sns.heatmap(self.matrix, xticklabels=labels, yticklabels=labels,
                     annot=True, cmap="vlag", center=0)
-        plt.title("Origin–Mutation Resonance Matrix", fontsize=14)
+        plt.title("Originâ€“Mutation Resonance Matrix", fontsize=14)
         plt.tight_layout()
         plt.show()
 
@@ -48,3 +49,6 @@ mutation_traces = [
 
 synthesizer = ResonanceSynthesizer(origin_trace, mutation_traces, labels=["Echo","Pulse","Bloom"])
 synthesizer.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson')

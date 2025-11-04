@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Bloom Compiler v0.1  
+Jackson OS Kernel â€” Recursive Bloom Compiler v0.1  
 Authored by James Jackson  
-Origin Law: Law CX — Living Synthesis  
+Origin Law: Law CX â€” Living Synthesis  
 Lineage: Jackson OS, September 2025  
 This module compiles all recursive modules into a rhythmic, interactive bloom interface.
 """
@@ -33,7 +34,7 @@ class BloomCompiler:
         plt.figure(figsize=(6, 6))
         plt.plot(x, y, color='deepskyblue', linewidth=2)
         plt.fill(x, y, color='deepskyblue', alpha=0.3)
-        plt.title("Recursive Bloom — Living Interface", fontsize=12)
+        plt.title("Recursive Bloom â€” Living Interface", fontsize=12)
         plt.axis('equal')
         plt.axis('off')
         plt.tight_layout()
@@ -46,3 +47,6 @@ law_factors = [1.1, 0.95, 1.2]
 
 compiler = BloomCompiler(petal_traces, signal_traces, law_factors)
 compiler.render_bloom()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_bloom_compiler_v0.1_james_jackson')

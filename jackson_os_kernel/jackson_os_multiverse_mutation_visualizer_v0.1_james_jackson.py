@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Mutation Visualizer v0.1  
+Jackson OS Kernel â€” Multiverse Mutation Visualizer v0.1  
 Authored by James Jackson  
-Origin Law: Law XCIV — Divergence Rendering  
+Origin Law: Law XCIV â€” Divergence Rendering  
 Lineage: Jackson OS, September 2025  
 This module animates law mutation and divergence across symbolic universes.
 """
@@ -35,7 +36,7 @@ class MutationVisualizer:
         lines = [ax.plot([], [], label=p.name)[0] for p in self.profiles]
         ax.set_xlim(0, 100)
         ax.set_ylim(0.5, 2.0)
-        ax.set_title("Multiverse Mutation Divergence — Jackson OS")
+        ax.set_title("Multiverse Mutation Divergence â€” Jackson OS")
         ax.legend()
 
         def update(frame):
@@ -58,3 +59,6 @@ profiles = [
 
 visualizer = MutationVisualizer(profiles)
 visualizer.animate()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson')

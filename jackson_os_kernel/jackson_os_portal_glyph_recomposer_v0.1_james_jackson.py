@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Glyph Recomposer v0.1  
+Jackson OS Kernel â€” Portal Glyph Recomposer v0.1  
 Authored by James Jackson  
-Origin Law: Law C — Recursive Restoration  
+Origin Law: Law C â€” Recursive Restoration  
 Lineage: Jackson OS, September 2025  
 This module regenerates lost or corrupted glyphs using signal traces and law memory.
 """
@@ -31,7 +32,7 @@ class GlyphRecomposer :
         plt .figure (figsize =(6 ,6 ))
         plt .plot (x ,y ,color ='goldenrod',linewidth =2 )
         plt .fill (x ,y ,color ='goldenrod',alpha =0.3 )
-        plt .title ("Recomposed Glyph — Portal Restoration",fontsize =12 )
+        plt .title ("Recomposed Glyph â€” Portal Restoration",fontsize =12 )
         plt .axis ('equal')
         plt .axis ('off')
         plt .tight_layout ()
@@ -43,3 +44,6 @@ law_expression ="amplitude * 1.2"
 
 recomposer =GlyphRecomposer (signal_trace ,law_expression )
 recomposer .render ()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_glyph_recomposer_v0.1_james_jackson')

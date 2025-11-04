@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom–Signal–Law Feedback Grid Enhancer v0.1  
+Jackson OS Kernel â€” Bloomâ€“Signalâ€“Law Feedback Grid Enhancer v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXIX — Temporal Decay  
+Origin Law: Law CXXIX â€” Temporal Decay  
 Lineage: Jackson OS, September 2025  
 This module augments the Feedback Grid with temporal dynamics and weight decay,
 enabling time-aware reflexive tuning across petals, signals, and laws.
@@ -60,9 +61,12 @@ class FeedbackGridEnhancer:
             nx.draw_networkx_edge_labels(self.graph, pos,
                                          edge_labels={k: f"{v:.2f}" for k,v in weights.items()},
                                          font_size=8, ax=ax)
-            ax.set_title(f"Feedback Grid — Step {self.time_step}")
+            ax.set_title(f"Feedback Grid â€” Step {self.time_step}")
             ax.axis('off')
 
         ani = plt.FuncAnimation(fig, update, frames=steps, interval=300, repeat=False)
         plt.tight_layout()
         plt.show()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson')

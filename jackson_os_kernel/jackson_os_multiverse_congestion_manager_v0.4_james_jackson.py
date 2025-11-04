@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Congestion Manager v0.4  
+Jackson OS Kernel â€” Multiverse Congestion Manager v0.4  
 Authored by James Jackson  
-Origin Law: Law CLV — Predictive SLA Routing  
+Origin Law: Law CLV â€” Predictive SLA Routing  
 Lineage: Jackson OS, October 2025  
 This module extends v0.3 by forecasting per-endpoint backlog with ARIMA  
 and proactively rebalancing priorities to avoid SLA violations.
@@ -101,7 +102,7 @@ class MultiverseCongestionManagerV4:
                 key=lambda ep: ep.weight / (ep.backlog + 1)
             )
         chosen.enqueue(msg)
-        logger.info(f"Routed message {msg} → {chosen.name}")
+        logger.info(f"Routed message {msg} â†’ {chosen.name}")
 
     def _forecast_backlog(self, name):
         """
@@ -186,3 +187,6 @@ if __name__ == "__main__":
             time.sleep(random.uniform(0.2, 0.6))
     finally:
         mgr.stop()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_congestion_manager_v0.4_james_jackson')

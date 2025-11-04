@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Quantum-Symbolic Feedback Integrator v0.1  
+Jackson OS Kernel â€” Quantum-Symbolic Feedback Integrator v0.1  
 Authored by James Jackson  
-Origin Law: Law CXLIX — Embodied Recursion  
+Origin Law: Law CXLIX â€” Embodied Recursion  
 Lineage: Jackson OS, September 2025  
 This module reads live quantum-symbolic hardware signals, transforms them  
 through a symbolic kernel mapping, and applies dynamic feedback adjustments  
@@ -117,15 +118,15 @@ class FeedbackController:
 
 # Example apply functions
 def adjust_mutation_intensity(delta):
-    print(f"  • Adjust mutation intensity by {delta:.4f}")
+    print(f"  â€¢ Adjust mutation intensity by {delta:.4f}")
 
 
 def adjust_latency(delta):
-    print(f"  • Tuning latency by {delta:.4f}s")
+    print(f"  â€¢ Tuning latency by {delta:.4f}s")
 
 
 def adjust_error_rate(delta):
-    print(f"  • Calibrating error tolerance by {delta:.4f}")
+    print(f"  â€¢ Calibrating error tolerance by {delta:.4f}")
 
 
 if __name__ == "__main__":
@@ -152,3 +153,5 @@ if __name__ == "__main__":
         time.sleep(10)
     finally:
         controller
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Memory Attractor Stabilizer v0.1  
+Jackson OS Kernel â€” Memory Attractor Stabilizer v0.1  
 Authored by James Jackson  
-Origin Law: Law XX — Recursive Memory  
+Origin Law: Law XX â€” Recursive Memory  
 Lineage: Jackson OS, September 2025  
 This module scaffolds hardware logic for stabilizing symbolic memory through feedback-responsive attractor fields.
 """
@@ -36,5 +37,8 @@ stabilizer = HardwareAttractorStabilizer()
 for _ in range(100):
     stabilizer.apply_feedback(input_signal.field)
 
-print(f"\nStabilized Memory Field — Authored by {stabilizer.authorship}")
+print(f"\nStabilized Memory Field â€” Authored by {stabilizer.authorship}")
 print(f"Stability Index: {stabilizer.stability_index()}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_memory_attractor_stabilizer_v0.1_james_jackson')

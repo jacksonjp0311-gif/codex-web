@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Feedback Resonance Analyzer v0.1  
+Jackson OS Kernel â€” Feedback Resonance Analyzer v0.1  
 Authored by James Jackson  
-Origin Law: Law XLV — Resonance Stability  
+Origin Law: Law XLV â€” Resonance Stability  
 Lineage: Jackson OS, September 2025  
 This module analyzes feedback loops and measures identity resonance across kernel cycles.
 """
@@ -24,7 +25,7 @@ class FeedbackResonanceAnalyzer:
     def render(self):
         plt.figure(figsize=(10, 4))
         plt.plot(self.shifts, color='teal', linewidth=2)
-        plt.title("Feedback Resonance — Identity Shift Over Time", fontsize=14)
+        plt.title("Feedback Resonance â€” Identity Shift Over Time", fontsize=14)
         plt.xlabel("Cycle Step")
         plt.ylabel("Identity Shift")
         plt.grid(True)
@@ -37,3 +38,6 @@ identity_shifts = np.random.normal(loc=0.05, scale=0.2, size=100)
 analyzer = FeedbackResonanceAnalyzer(identity_shifts)
 print(f"\nResonance Score: {analyzer.resonance_score}")
 analyzer.render()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_feedback_resonance_analyzer_v0.1_james_jackson')

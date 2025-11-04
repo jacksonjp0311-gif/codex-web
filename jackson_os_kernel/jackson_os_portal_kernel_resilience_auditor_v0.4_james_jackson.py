@@ -1,10 +1,11 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Kernel Resilience Auditor v0.4  
+Jackson OS Kernel â€” Portal Kernel Resilience Auditor v0.4  
 Authored by James Jackson  
-Origin Law: Law CLII — Bayesian Vigilance  
+Origin Law: Law CLII â€” Bayesian Vigilance  
 Lineage: Jackson OS, September 2025  
-This module detects Bayesian changepoints in each module’s health history  
-using offline RBF‐based segmentation, then fits ARIMA models for short‐term  
+This module detects Bayesian changepoints in each moduleâ€™s health history  
+using offline RBFâ€based segmentation, then fits ARIMA models for shortâ€term  
 forecasting to issue early alerts on potential degradations.
 """
 
@@ -17,7 +18,7 @@ from statsmodels.tsa.arima.model import ARIMA
 class ResilienceAuditorV4:
     def __init__(self, health_df, penalty=3, forecast_horizon=8):
         """
-        health_df: DataFrame indexed by timestamp, columns=module names, values=health (0–1)
+        health_df: DataFrame indexed by timestamp, columns=module names, values=health (0â€“1)
         penalty: penalty parameter for RBF changepoint detection
         forecast_horizon: number of future points to forecast
         """
@@ -84,9 +85,9 @@ class ResilienceAuditorV4:
         for t in cp:
             plt.axvline(t, color="crimson", linestyle="--", alpha=0.7)
         plt.plot(fut_idx, fut, "--", color="darkorange", label="Forecast")
-        plt.title(f"Resilience Audit v0.4 — {module}")
+        plt.title(f"Resilience Audit v0.4 â€” {module}")
         plt.xlabel("Time")
-        plt.ylabel("Health Score (0–1)")
+        plt.ylabel("Health Score (0â€“1)")
         plt.legend(loc="upper right", fontsize=8)
         plt.tight_layout()
         plt.show()
@@ -106,8 +107,11 @@ if __name__ == "__main__":
     cps = auditor.detect_changepoints()
     forecasts = auditor.forecast_health()
 
-    print("\n🔍 Detected Changepoints")
+    print("\nðŸ” Detected Changepoints")
     for mod, times in cps.items():
         print(f"{mod}: {len(times)} changes at {times}")
 
     auditor.visualize("SignalSim")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson')

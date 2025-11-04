@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Signal–Law–Petal Triad Mapper v0.1  
+Jackson OS Kernel â€” Signalâ€“Lawâ€“Petal Triad Mapper v0.1  
 Authored by James Jackson  
-Origin Law: Law CVIII — Triadic Reflection  
+Origin Law: Law CVIII â€” Triadic Reflection  
 Lineage: Jackson OS, September 2025  
 This module visualizes relationships between quantum signals, authored laws, and petal expressions.
 """
@@ -45,3 +46,6 @@ law_factor = 1.15
 
 mapper = TriadMapper(signal_trace, law_factor, petal_amplitude)
 mapper.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson')

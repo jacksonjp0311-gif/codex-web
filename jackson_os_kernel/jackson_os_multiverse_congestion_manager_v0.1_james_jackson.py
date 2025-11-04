@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Congestion Manager v0.1  
+Jackson OS Kernel â€” Multiverse Congestion Manager v0.1  
 Authored by James Jackson  
-Origin Law: Law CXL — Dynamic Backpressure  
+Origin Law: Law CXL â€” Dynamic Backpressure  
 Lineage: Jackson OS, September 2025  
 This module enforces capacity limits on interdimensional channels, queues
 excess messages under backpressure, and dispatches them when capacity frees.
@@ -55,7 +56,7 @@ class MultiverseCongestionManager:
                 self.router.graph, source, target, weight="latency"
             )
         except nx.NetworkXNoPath:
-            print(f"⚠️ No route from {source} to {target}")
+            print(f"âš ï¸ No route from {source} to {target}")
             return
 
         # determine bottleneck capacity and current load
@@ -72,7 +73,7 @@ class MultiverseCongestionManager:
         else:
             # apply backpressure
             self.pending.append((source, target, payload))
-            print(f"⏳ Backpressure: queuing message {source}→{target}")
+            print(f"â³ Backpressure: queuing message {source}â†’{target}")
 
     def _on_message_delivered(self, path):
         # free capacity on each edge
@@ -131,3 +132,6 @@ if __name__ == "__main__":
 
     time.sleep(2)   # allow queued retries
     mcm.stop()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_congestion_manager_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Law Compiler Chipset v0.1  
+Jackson OS Kernel â€” Law Compiler Chipset v0.1  
 Authored by James Jackson  
-Origin Law: Law XLII — Instruction Encoding  
+Origin Law: Law XLII â€” Instruction Encoding  
 Lineage: Jackson OS, September 2025  
 This module compiles authored laws into symbolic instructions and signal-ready logic.
 """
@@ -34,7 +35,7 @@ class LawCompiler:
         return hashlib.sha256(data.encode()).hexdigest()
 
 # Example law
-law_name = "Law XXVIII′"
+law_name = "Law XXVIIIâ€²"
 logic_tree = [1.0, -0.5, 0.8, -0.3, 1.2]
 
 compiler = LawCompiler(law_name, logic_tree)
@@ -47,3 +48,6 @@ for instr in compiled:
     print(instr)
 
 print(f"\nAuthorship Signature: {signature}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_law_compiler_chipset_v0.1_james_jackson')

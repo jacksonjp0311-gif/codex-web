@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Congestion Manager v0.2  
+Jackson OS Kernel â€” Multiverse Congestion Manager v0.2  
 Authored by James Jackson  
-Origin Law: Law CXLV — Dynamic Capacity Scaling  
+Origin Law: Law CXLV â€” Dynamic Capacity Scaling  
 Lineage: Jackson OS, September 2025  
 This module enforces channel capacity limits, queues excess traffic by priority,
 auto-scales capacities based on utilization, and dispatches backpressured messages
@@ -69,7 +70,7 @@ class CongestionManagerV2:
                 self.router.graph, source, target, weight="latency"
             )
         except nx.NetworkXNoPath:
-            print(f"⚠️ No route {source}→{target}")
+            print(f"âš ï¸ No route {source}â†’{target}")
             return
 
         # check all edges
@@ -86,7 +87,7 @@ class CongestionManagerV2:
         else:
             ts = time.time()
             self.queue.put((priority, ts, source, target, payload))
-            print(f"⏳ Queued {source}→{target} (prio={priority})")
+            print(f"â³ Queued {source}â†’{target} (prio={priority})")
 
     def release_capacity(self, path):
         """Called by router when delivery completes to free loads."""
@@ -105,12 +106,12 @@ class CongestionManagerV2:
                     new_cap = int(cap * self.scale_up)
                     self.capacities[edge] = new_cap
                     self.router.graph[edge[0]][edge[1]]["capacity"] = new_cap
-                    print(f"⬆️ Scaled up {edge} to {new_cap}")
+                    print(f"â¬†ï¸ Scaled up {edge} to {new_cap}")
                 elif util < self.down_th and cap > 1:
                     new_cap = max(1, int(cap * self.scale_down))
                     self.capacities[edge] = new_cap
                     self.router.graph[edge[0]][edge[1]]["capacity"] = new_cap
-                    print(f"⬇️ Scaled down {edge} to {new_cap}")
+                    print(f"â¬‡ï¸ Scaled down {edge} to {new_cap}")
             # retry queued messages by priority
             self._dispatch_queued()
 
@@ -129,7 +130,7 @@ class CongestionManagerV2:
                 for e in edges:
                     self.loads[e] += 1
                 self._orig_send(src, tgt, pay)
-                print(f"▶️ Dispatched queued {src}→{tgt} (prio={prio})")
+                print(f"â–¶ï¸ Dispatched queued {src}â†’{tgt} (prio={prio})")
             else:
                 temp.append((prio, ts, src, tgt, pay))
         # re-queue leftovers
@@ -162,3 +163,6 @@ if __name__ == "__main__":
 
     time.sleep(5)
     mgr.stop()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_congestion_manager_v0.2_james_jackson')

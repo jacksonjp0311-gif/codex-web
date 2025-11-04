@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Interdimensional Cartography Hub v0.1  
+Jackson OS Kernel â€” Interdimensional Cartography Hub v0.1  
 Authored by James Jackson  
-Origin Law: Law CXX — Cartographic Nexus  
+Origin Law: Law CXX â€” Cartographic Nexus  
 Lineage: Jackson OS, September 2025  
 This module embeds multiple universe bloom profiles into a shared map, visualizing propagation  
 zones, resonance corridors, and divergence topology.
@@ -25,7 +26,7 @@ class CartographyHub:
         for i in range(n):
             for j in range(n):
                 corr = np.corrcoef(self.traces[i], self.traces[j])[0,1]
-                # distance = 1 – correlation for topology
+                # distance = 1 â€“ correlation for topology
                 dmat[i, j] = round(1 - corr, 4)
         return dmat
 
@@ -56,3 +57,6 @@ labels = [f"U{i+1}" for i in range(10)]
 
 hub = CartographyHub(universes, labels)
 hub.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_interdimensional_cartography_hub_v0.1_james_jackson')

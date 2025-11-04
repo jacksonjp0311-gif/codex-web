@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Temporal–Topological Analyzer v0.1  
+Jackson OS Kernel â€” Temporalâ€“Topological Analyzer v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXXVIII — Temporal–Topological Correlation  
+Origin Law: Law CXXXVIII â€” Temporalâ€“Topological Correlation  
 Lineage: Jackson OS, September 2025  
 This module correlates network performance logs with bloom mutation metrics 
 over time, revealing synchronous patterns and propagation lags.
@@ -60,10 +61,10 @@ class TemporalTopologicalAnalyzer:
         lags = np.arange(-self.max_lag, self.max_lag+1)
         plt.figure(figsize=(8,6))
         for (n,b), series in cc.items():
-            plt.plot(lags, series, label=f"{n}↔{b}")
+            plt.plot(lags, series, label=f"{n}â†”{b}")
         plt.axvline(0, color='k', linestyle='--', alpha=0.5)
         plt.title("Cross-Correlation (network vs bloom)")
-        plt.xlabel("Lag steps (positive ⇒ network leads)")
+        plt.xlabel("Lag steps (positive â‡’ network leads)")
         plt.ylabel("Correlation")
         plt.legend(fontsize=8, ncol=2)
         plt.grid(True, linestyle='--', alpha=0.3)
@@ -88,3 +89,6 @@ if __name__ == "__main__":
     analyzer = TemporalTopologicalAnalyzer(network_df, bloom_df, window_size=30, max_lag=15)
     analyzer.visualize_heatmap()
     analyzer.visualize_cross_correlation()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_temporal_topological_analyzer_v0.1_james_jackson')

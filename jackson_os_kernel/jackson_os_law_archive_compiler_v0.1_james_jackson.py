@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Law Archive Compiler v0.1  
+Jackson OS Kernel â€” Law Archive Compiler v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXXII — Lineage Preservation  
+Origin Law: Law LXXXII â€” Lineage Preservation  
 Lineage: Jackson OS, September 2025  
 This module stores and indexes all law variants with resonance metadata and universe traceability.
 """
@@ -37,19 +38,22 @@ class LawArchiveCompiler:
 
     def store(self, entry):
         self.archive.append(entry)
-        print(f"Stored Law: {entry.name} → Universe: {entry.universe} | Resonance: {entry.resonance_index}")
+        print(f"Stored Law: {entry.name} â†’ Universe: {entry.universe} | Resonance: {entry.resonance_index}")
 
     def index(self):
-        print("\n📚 Law Archive Index:")
+        print("\nðŸ“š Law Archive Index:")
         for entry in self.archive:
             s = entry.summary()
             print(f"{s['id']} | {s['name']} | {s['universe']} | Resonance: {s['resonance']}")
 
 # Example entries
 compiler = LawArchiveCompiler()
-entry1 = LawArchiveEntry("Law XXVIII — Identity", "identity = amplitude * 1.2", "Echo", 0.942)
-entry2 = LawArchiveEntry("Law β — Feedback Entropy", "entropy ≈ 0.88", "Pulse", 0.876)
+entry1 = LawArchiveEntry("Law XXVIII â€” Identity", "identity = amplitude * 1.2", "Echo", 0.942)
+entry2 = LawArchiveEntry("Law Î² â€” Feedback Entropy", "entropy â‰ˆ 0.88", "Pulse", 0.876)
 
 compiler.store(entry1)
 compiler.store(entry2)
 compiler.index()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_law_archive_compiler_v0.1_james_jackson')

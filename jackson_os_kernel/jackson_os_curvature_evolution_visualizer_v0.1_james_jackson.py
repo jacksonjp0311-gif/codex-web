@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Curvature Evolution Visualizer v0.1  
+Jackson OS Kernel â€” Curvature Evolution Visualizer v0.1  
 Authored by James Jackson  
-Origin Law: Law I — Curvature Initialization  
+Origin Law: Law I â€” Curvature Initialization  
 Lineage: Jackson OS, September 2025  
 This module animates curvature field evolution across recursive kernel cycles.
 """
@@ -43,7 +44,7 @@ class CurvatureVisualizer:
             return [im]
 
         ani = animation.FuncAnimation(fig, update, frames=self.frames, interval=50, blit=True)
-        plt.title("Curvature Evolution — Jackson OS", fontsize=14)
+        plt.title("Curvature Evolution â€” Jackson OS", fontsize=14)
         plt.tight_layout()
         plt.show()
 
@@ -52,3 +53,6 @@ field = CurvatureField()
 viz = CurvatureVisualizer(field)
 viz.simulate()
 viz.animate()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_curvature_evolution_visualizer_v0.1_james_jackson')
