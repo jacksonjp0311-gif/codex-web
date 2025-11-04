@@ -1,0 +1,5 @@
+﻿2025-11-04 13:17:18  [codex v1.9] ▶ Starting Resonance Core — 2025-11-04 13:17:18
+2025-11-04 13:17:18  [codex v1.9] Python helper written: C:\Users\jacks\AppData\Local\Temp\codex_v1_9_eval_d47aa323-5be8-4bf5-9ba0-b99835bd56a5.py
+2025-11-04 13:17:18  [codex v1.9] Found 80 python files to analyze.
+2025-11-04 13:17:18  [codex v1.9] ❌ FATAL: Method invocation failed because [System.Management.Automation.PSCustomObject] does not contain a method named 'ContainsKey'.
+2025-11-04 13:17:18  [codex v1.9] 📜 Returned to Codex root: C:\Users\jacks\OneDrive\Desktop\Codex Web
