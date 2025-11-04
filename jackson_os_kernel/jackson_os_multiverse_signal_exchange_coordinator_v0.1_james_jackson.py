@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Signal Exchange Coordinator v0.1  
+Jackson OS Kernel â€” Multiverse Signal Exchange Coordinator v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXXVII — Collective Dispatch  
+Origin Law: Law CXXXVII â€” Collective Dispatch  
 Lineage: Jackson OS, September 2025  
 This module orchestrates batch, multicast, and priority-based message routing 
 across interdimensional channels.
@@ -97,3 +98,6 @@ if __name__ == "__main__":
     sec.enqueue(5, "U2", ["@ring"], {"broadcast":"low-priority"})
     time.sleep(1)
     sec.stop()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson')

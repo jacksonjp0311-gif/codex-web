@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Congestion Manager v0.3  
+Jackson OS Kernel â€” Multiverse Congestion Manager v0.3  
 Authored by James Jackson  
-Origin Law: Law CLI — Adaptive Throughput  
+Origin Law: Law CLI â€” Adaptive Throughput  
 Lineage: Jackson OS, September 2025  
 This module routes messages across multiple kernel endpoints,  
 honors per-endpoint SLAs, and dynamically rebalances priorities  
@@ -154,3 +155,6 @@ if __name__ == "__main__":
             time.sleep(random.uniform(0.2, 0.7))
     finally:
         mgr.stop()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_congestion_manager_v0.3_james_jackson')

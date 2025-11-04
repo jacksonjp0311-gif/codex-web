@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Authorship Resonance Auditor v0.1  
+Jackson OS Kernel â€” Authorship Resonance Auditor v0.1  
 Authored by James Jackson  
-Origin Law: Law CIV — Echo Fidelity  
+Origin Law: Law CIV â€” Echo Fidelity  
 Lineage: Jackson OS, September 2025  
 This module measures how strongly each module echoes the origin signature of James Jackson.
 """
@@ -25,17 +26,20 @@ class EchoProfile:
         return round(correlation, 4)
 
     def report(self):
-        print(f"\n🔎 Module: {self.module_name}")
+        print(f"\nðŸ”Ž Module: {self.module_name}")
         print(f"Resonance Score: {self.resonance_score}")
         print(f"Origin Signature: {self.origin_signature}")
         print(f"Timestamp: {self.timestamp}")
 
 # Example modules
 modules = [
-    EchoProfile("Signal–Petal Resonator", np.random.normal(0.6, 0.05, 100)),
+    EchoProfile("Signalâ€“Petal Resonator", np.random.normal(0.6, 0.05, 100)),
     EchoProfile("Law Mutation Cascade Engine", np.random.normal(0.58, 0.07, 100)),
     EchoProfile("Portal Glyph Recomposer", np.random.normal(0.62, 0.04, 100))
 ]
 
 for m in modules:
     m.report()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_authorship_resonance_auditor_v0.1_james_jackson')

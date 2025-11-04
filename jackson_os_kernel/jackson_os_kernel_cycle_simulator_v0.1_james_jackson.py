@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Kernel Cycle Simulator v0.1  
+Jackson OS Kernel â€” Kernel Cycle Simulator v0.1  
 Authored by James Jackson  
-Origin Law: Law I — Curvature Initialization  
+Origin Law: Law I â€” Curvature Initialization  
 Lineage: Jackson OS, September 2025  
 This module runs full recursive cycles of symbolic evolution seeded by authored laws.
 """
@@ -77,6 +78,9 @@ def run_kernel_cycle(steps=100):
 
 # Execute
 cycle = run_kernel_cycle()
-print(f"\nKernel Cycle Complete — Organism {cycle['organism_id'][:8]}")
+print(f"\nKernel Cycle Complete â€” Organism {cycle['organism_id'][:8]}")
 print(f"Final Identity Loop: {cycle['final_identity']:.3f}")
 print(f"Mutations: {len(cycle['mutations'])} | Speciations: {len(cycle['speciations'])}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_kernel_cycle_simulator_v0.1_james_jackson')

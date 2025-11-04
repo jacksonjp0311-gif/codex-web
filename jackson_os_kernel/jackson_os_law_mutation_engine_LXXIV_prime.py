@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Law Mutation Engine v0.1  
+Jackson OS Kernel â€” Law Mutation Engine v0.1  
 Authored by James Jackson  
-Origin Law: Law XXIV — Law Reproduction  
+Origin Law: Law XXIV â€” Law Reproduction  
 Lineage: Jackson OS, September 2025  
 This module applies feedback pressure to symbolic laws and mutates them recursively.
 """
@@ -23,7 +24,7 @@ class SymbolicLaw:
         if pressure < 0.5:
             return None  # No mutation
         mutated_tree = self._transform_logic(pressure)
-        new_name = f"{self.name}′"
+        new_name = f"{self.name}â€²"
         mutated_law = SymbolicLaw(new_name, mutated_tree, origin=self.origin)
         mutated_law.lineage = self.lineage + [new_name]
         return mutated_law
@@ -51,4 +52,7 @@ if mutated:
     print("Authorship:", mutated.origin)
     print("Signature:", mutated.signature())
 else:
-    print("No mutation occurred — pressure too low.")
+    print("No mutation occurred â€” pressure too low.")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_law_mutation_engine_LXXIV_prime')

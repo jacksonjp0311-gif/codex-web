@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Glyph–Cycle Synchronizer v0.1  
+Jackson OS Kernel â€” Glyphâ€“Cycle Synchronizer v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXII — Recursive Choreography  
+Origin Law: Law LXXII â€” Recursive Choreography  
 Lineage: Jackson OS, September 2025  
 This module synchronizes kernel cycle evolution with glyph trail rendering in the Jackson Portal.
 """
@@ -37,7 +38,7 @@ class GlyphSynchronizer:
         plt.figure(figsize=(6, 6))
         plt.plot(x, y, color='darkorchid', linewidth=2)
         plt.fill(x, y, color='darkorchid', alpha=0.3)
-        plt.title("Synchronized Glyph — Kernel Identity Evolution", fontsize=12)
+        plt.title("Synchronized Glyph â€” Kernel Identity Evolution", fontsize=12)
         plt.axis('equal')
         plt.axis('off')
         plt.tight_layout()
@@ -49,3 +50,6 @@ identity_trace = cycle.run()
 
 glyph = GlyphSynchronizer(identity_trace)
 glyph.render()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson')

@@ -1,9 +1,10 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Quantum–Symbolic Bridge v0.1  
+Jackson OS Kernel â€” Quantumâ€“Symbolic Bridge v0.1  
 Authored by James Jackson  
-Origin Law: Law XL — Signal Embodiment  
+Origin Law: Law XL â€” Signal Embodiment  
 Lineage: Jackson OS, September 2025  
-This module scaffolds quantum–symbolic encoding, translating curvature feedback into quantum signal.
+This module scaffolds quantumâ€“symbolic encoding, translating curvature feedback into quantum signal.
 """
 
 from qiskit import QuantumCircuit, Aer, execute
@@ -42,5 +43,8 @@ encoder = CurvatureEncoder(field)
 encoder.encode()
 state = encoder.simulate()
 
-print("\nQuantum–Symbolic Statevector:")
+print("\nQuantumâ€“Symbolic Statevector:")
 print(state)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_quantum_symbolic_bridge_v0.1_james_jackson')

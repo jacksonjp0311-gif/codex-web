@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal–Kernel Stress Tester v0.1  
+Jackson OS Kernel â€” Portalâ€“Kernel Stress Tester v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXXI — Stress Resilience  
+Origin Law: Law CXXXI â€” Stress Resilience  
 Lineage: Jackson OS, September 2025  
 This module simulates extreme mutation loads on kernel components,
 measures performance metrics, and reports stability under duress.
@@ -67,7 +68,7 @@ class StressTester:
                 entry["failures"] += 1
             entry["latencies"].append(r["latency"])
 
-        print("\n🛠️ Portal–Kernel Stress Test Report")
+        print("\nðŸ› ï¸ Portalâ€“Kernel Stress Test Report")
         for mod, stats in summary.items():
             avg_lat = sum(stats["latencies"]) / stats["count"]
             fail_rate = stats["failures"] / stats["count"]
@@ -76,10 +77,13 @@ class StressTester:
 # Example setup
 if __name__ == "__main__":
     modules = [
-        ModuleSimulator("Law–Signal Feedback Simulator", base_latency=0.02, failure_rate=0.01),
+        ModuleSimulator("Lawâ€“Signal Feedback Simulator", base_latency=0.02, failure_rate=0.01),
         ModuleSimulator("Recursive Bloom Compiler",        base_latency=0.03, failure_rate=0.02),
-        ModuleSimulator("Portal–Kernel Integrity Scanner", base_latency=0.015, failure_rate=0.005),
+        ModuleSimulator("Portalâ€“Kernel Integrity Scanner", base_latency=0.015, failure_rate=0.005),
     ]
     tester = StressTester(modules, max_load=5.0, tasks_per_module=100)
     results = tester.run()
     tester.report(results)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_stress_tester_v0.1_james_jackson')

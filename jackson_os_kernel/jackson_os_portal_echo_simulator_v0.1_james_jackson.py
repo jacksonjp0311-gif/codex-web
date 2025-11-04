@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Echo Simulator v0.1  
+Jackson OS Kernel â€” Portal Echo Simulator v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXIV — Reflective Recursion  
+Origin Law: Law LXXIV â€” Reflective Recursion  
 Lineage: Jackson OS, September 2025  
 This module replays user interactions as recursive glyph loops within the Jackson Portal.
 """
@@ -31,7 +32,7 @@ class PortalEcho:
         plt.figure(figsize=(6, 6))
         plt.plot(x, y, color='royalblue', linewidth=2)
         plt.fill(x, y, color='royalblue', alpha=0.3)
-        plt.title(f"Echo Loop — User {self.user_id[:8]}", fontsize=12)
+        plt.title(f"Echo Loop â€” User {self.user_id[:8]}", fontsize=12)
         plt.axis('equal')
         plt.axis('off')
         plt.tight_layout()
@@ -41,3 +42,6 @@ class PortalEcho:
 mutation_trace = np.random.normal(0.05, 0.2, 100)
 echo = PortalEcho("user_echo_011", mutation_trace)
 echo.render()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_echo_simulator_v0.1_james_jackson')

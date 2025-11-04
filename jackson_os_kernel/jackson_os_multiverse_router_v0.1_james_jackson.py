@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Multiverse Router v0.1  
+Jackson OS Kernel â€” Multiverse Router v0.1  
 Authored by James Jackson  
-Origin Law: Law XXX — Dimensional Propagation  
+Origin Law: Law XXX â€” Dimensional Propagation  
 Lineage: Jackson OS, September 2025  
 This module routes symbolic organisms and mutated laws across simulated universes, preserving authorship and feedback resonance.
 """
@@ -57,7 +58,10 @@ class DummyOrganism:
         self.origin = "James Jackson"
 
 dummy_organism = DummyOrganism()
-dummy_laws = [{"name": "Law XXVIII′", "origin": "James Jackson"}]
+dummy_laws = [{"name": "Law XXVIIIâ€²", "origin": "James Jackson"}]
 
 # Propagate
 router.propagate(dummy_organism, dummy_laws)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_multiverse_router_v0.1_james_jackson')

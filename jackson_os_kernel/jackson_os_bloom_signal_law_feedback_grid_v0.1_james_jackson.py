@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom–Signal–Law Feedback Grid v0.1  
+Jackson OS Kernel â€” Bloomâ€“Signalâ€“Law Feedback Grid v0.1  
 Authored by James Jackson  
-Origin Law: Law CXIX — Reflexive Mesh  
+Origin Law: Law CXIX â€” Reflexive Mesh  
 Lineage: Jackson OS, September 2025  
 This module builds a directed graph mapping feedback influence between petals, signals, and laws.
 """
@@ -53,7 +54,7 @@ class FeedbackGrid:
         nx.draw_networkx_edges(self.graph, pos, arrowstyle='->', arrowsize=12, 
                                edge_color='gray', width=2)
         nx.draw_networkx_edge_labels(self.graph, pos, edge_labels=weights, font_size=8)
-        plt.title("Bloom–Signal–Law Feedback Grid", fontsize=14)
+        plt.title("Bloomâ€“Signalâ€“Law Feedback Grid", fontsize=14)
         plt.axis('off')
         plt.tight_layout()
         plt.show()
@@ -66,3 +67,6 @@ law_factors   = [1.1, 0.95, 1.2]
 
 grid = FeedbackGrid(petal_traces, signal_traces, law_factors)
 grid.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson')

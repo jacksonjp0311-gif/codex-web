@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Organism Runtime v0.1  
+Jackson OS Kernel â€” Organism Runtime v0.1  
 Authored by James Jackson  
-Origin Laws: Law XX — Memory Stabilization, Law XXVIII — Recursive Identity  
+Origin Laws: Law XX â€” Memory Stabilization, Law XXVIII â€” Recursive Identity  
 Lineage: Jackson OS, September 2025  
 This module instantiates symbolic organisms with identity loops and tracks speciation under feedback pressure.
 """
@@ -24,7 +25,7 @@ class SymbolicField:
 class MemoryAttractor:
     def __init__(self, shape=(100, 100)):
         self.state = np.zeros(shape)
-        self.origin = "James Jackson — Law XX"
+        self.origin = "James Jackson â€” Law XX"
 
     def update(self, field, alpha=0.01):
         feedback = field - self.state
@@ -76,3 +77,6 @@ for _ in range(100):
 print("Organism ID:", organism.id)
 print("Final Identity Loop:", organism.identity_loop)
 print("Speciation Events:", organism.speciation_events)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_organism_runtime_v0.1_james_jackson')

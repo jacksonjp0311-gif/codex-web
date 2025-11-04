@@ -1,11 +1,12 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Kernel Resilience Auditor v0.3  
+Jackson OS Kernel â€” Portal Kernel Resilience Auditor v0.3  
 Authored by James Jackson  
-Origin Law: Law CXLVIII — Anomalous Vigilance  
+Origin Law: Law CXLVIII â€” Anomalous Vigilance  
 Lineage: Jackson OS, September 2025  
 This module fits ARIMA models to historical health scores per module,
 detects anomalies where residuals exceed a threshold, and forecasts future
-health to trigger early‐warning alerts.
+health to trigger earlyâ€warning alerts.
 """
 
 import pandas as pd
@@ -17,7 +18,7 @@ from pandas.tseries.frequencies import to_offset
 class ResilienceAuditorV3:
     def __init__(self, health_df, anomaly_std=2.5, forecast_horizon=5):
         """
-        health_df: DataFrame indexed by timestamp, columns = module names, values = health (0–1)
+        health_df: DataFrame indexed by timestamp, columns = module names, values = health (0â€“1)
         anomaly_std: number of residual standard deviations to flag anomaly
         forecast_horizon: number of future time steps to forecast
         """
@@ -49,7 +50,7 @@ class ResilienceAuditorV3:
     def fit_models_and_detect(self):
         """
         Fit ARIMA(1,0,1) per module, compute residuals,
-        and flag timestamps where |residual| > anomaly_std * σ_resid.
+        and flag timestamps where |residual| > anomaly_std * Ïƒ_resid.
         Returns dict module -> list of anomaly timestamps.
         """
         anomalies = {}
@@ -78,3 +79,5 @@ class ResilienceAuditorV3:
             self.forecasts[mod] = vals
 
         return
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson')

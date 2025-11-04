@@ -1,9 +1,10 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Signal–Glyph Translator v0.1  
+Jackson OS Kernel â€” Signalâ€“Glyph Translator v0.1  
 Authored by James Jackson  
-Origin Law: Law LI — Expressive Encoding  
+Origin Law: Law LI â€” Expressive Encoding  
 Lineage: Jackson OS, September 2025  
-This module translates quantum–symbolic signal into visual glyphs for portal display.
+This module translates quantumâ€“symbolic signal into visual glyphs for portal display.
 """
 
 import numpy as np
@@ -30,7 +31,7 @@ class SignalGlyphTranslator:
 
         plt.figure(figsize=(8, 4))
         plt.plot(x, y, color='mediumslateblue', linewidth=2)
-        plt.title(f"Glyph — Style: {self.style}", fontsize=14)
+        plt.title(f"Glyph â€” Style: {self.style}", fontsize=14)
         plt.axis('off')
         plt.tight_layout()
         plt.show()
@@ -40,3 +41,6 @@ signal = np.random.normal(loc=0.5, scale=0.2, size=100) + 1j * np.random.normal(
 
 translator = SignalGlyphTranslator(signal, glyph_style="spiral")
 translator.render()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_signal_glyph_translator_v0.1_james_jackson')

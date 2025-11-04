@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Legacy Archive Compiler v0.1  
+Jackson OS Kernel â€” Legacy Archive Compiler v0.1  
 Authored by James Jackson  
-Origin Law: Law XXXV — Immutable Ledger  
+Origin Law: Law XXXV â€” Immutable Ledger  
 Lineage: Jackson OS, September 2025  
 This module compiles authored events into a recursive archive, preserving lineage, mutation, and propagation history.
 """
@@ -25,7 +26,7 @@ class LegacyArchive:
             "authorship": self.author
         }
         self.entries.append(entry)
-        print(f"Archived: {event_type} — {entry['id']}")
+        print(f"Archived: {event_type} â€” {entry['id']}")
 
     def export(self):
         archive = {
@@ -62,3 +63,6 @@ archive.log_event("propagation", {
 compiled = archive.export()
 print("\nCompiled Legacy Archive:\n")
 print(compiled)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_legacy_archive_compiler_v0.1_james_jackson')

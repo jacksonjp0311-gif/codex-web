@@ -1,10 +1,11 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Healing Protocol v0.6  
+Jackson OS Kernel â€” Recursive Healing Protocol v0.6  
 Authored by James Jackson  
-Origin Law: Law CLIV — Traced Planning  
+Origin Law: Law CLIV â€” Traced Planning  
 Lineage: Jackson OS, October 2025  
-This module extends v0.5 with multi‐step temporal‐difference learning  
-and eligibility traces (SARSA(λ)) to accelerate convergence on good heal thresholds.
+This module extends v0.5 with multiâ€step temporalâ€difference learning  
+and eligibility traces (SARSA(Î»)) to accelerate convergence on good heal thresholds.
 """
 
 import time
@@ -45,7 +46,7 @@ class HealingProtocolV6:
         actions: tuple of threshold multipliers  
         alpha: learning rate  
         gamma: discount factor  
-        lamda: eligibility‐trace decay  
+        lamda: eligibilityâ€trace decay  
         epsilon: exploration probability  
         """
         self.resets = reset_functions
@@ -70,7 +71,7 @@ class HealingProtocolV6:
         return np.array([anomaly.drift, anomaly.base_threshold, count], dtype=float)
 
     def _select_action(self, module, feats):
-        """ε-greedy policy."""
+        """Îµ-greedy policy."""
         if random.random() < self.epsilon:
             return random.choice(self.actions)
         qvals = {
@@ -82,7 +83,7 @@ class HealingProtocolV6:
     def heal(self, anomalies):
         """
         anomalies: list of DriftAnomaly  
-        Processes each anomaly sequentially, updating weights via SARSA(λ).
+        Processes each anomaly sequentially, updating weights via SARSA(Î»).
         Returns list of decision reports.
         """
         reports = []
@@ -101,7 +102,7 @@ class HealingProtocolV6:
                 if idx > 0
                 else self._select_action(anom.module, feats)
             )
-            # Q-value for current state‐action
+            # Q-value for current stateâ€action
             Q_curr = np.dot(self.weights[anom.module][action], feats)
 
             # decision & reward
@@ -118,12 +119,12 @@ class HealingProtocolV6:
                 self.heal_counts[anom.module] += 1
                 logger.info(
                     f"Healed {anom.module} | drift={anom.drift:.3f} "
-                    f"thresh={thresh:.3f}×{action:.1f} | reward={reward:.1f}"
+                    f"thresh={thresh:.3f}Ã—{action:.1f} | reward={reward:.1f}"
                 )
             else:
                 logger.info(
                     f"Skipped {anom.module} | drift={anom.drift:.3f} "
-                    f"thresh={thresh:.3f}×{action:.1f} | reward={reward:.1f}"
+                    f"thresh={thresh:.3f}Ã—{action:.1f} | reward={reward:.1f}"
                 )
 
             # select next action & features for SARSA
@@ -168,7 +169,7 @@ class HealingProtocolV6:
 if __name__ == "__main__":
     # example reset function
     def reset_simulator():
-        print("  • Resetting Feedback Simulator.")
+        print("  â€¢ Resetting Feedback Simulator.")
 
     resets = {"FeedbackSimulator": reset_simulator}
 
@@ -190,3 +191,6 @@ if __name__ == "__main__":
     for i, rep in enumerate(reports, 1):
         print(f"Step {i}: {rep}")
         time.sleep(0.1)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_healing_protocol_v0.6_james_jackson')

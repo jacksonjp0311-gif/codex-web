@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Healing Protocol v0.5  
+Jackson OS Kernel â€” Recursive Healing Protocol v0.5  
 Authored by James Jackson  
-Origin Law: Law CL — Function-Approximated Autonomy  
+Origin Law: Law CL â€” Function-Approximated Autonomy  
 Lineage: Jackson OS, September 2025  
 This module uses a linear value-function approximator (weights per action)  
 to select heal-threshold multipliers, updating weights via temporal-difference  
@@ -63,7 +64,7 @@ class HealingProtocolV5:
         return np.array([anomaly.drift, anomaly.base_threshold, count], dtype=float)
 
     def _select_action(self, module, feats):
-        """Epsilon-greedy: explore with prob ε, else pick highest Q."""
+        """Epsilon-greedy: explore with prob Îµ, else pick highest Q."""
         if random.random() < self.epsilon:
             return random.choice(self.actions)
         qvals = {
@@ -73,7 +74,7 @@ class HealingProtocolV5:
         return max(qvals, key=qvals.get)
 
     def _update_weights(self, module, action, reward, feats):
-        """TD update: w ← w + α·(reward − Q)·features."""
+        """TD update: w â† w + Î±Â·(reward âˆ’ Q)Â·features."""
         w = self.weights[module][action]
         q_old = float(np.dot(w, feats))
         td_err = reward - q_old
@@ -102,12 +103,12 @@ class HealingProtocolV5:
                 self.heal_counts[anom.module] += 1
                 logger.info(
                     f"Healed {anom.module} | drift={anom.drift:.3f} "
-                    f"thresh={thresh:.3f}×{mult:.1f} | reward={reward:.1f}"
+                    f"thresh={thresh:.3f}Ã—{mult:.1f} | reward={reward:.1f}"
                 )
             else:
                 logger.info(
                     f"Skipped {anom.module} | drift={anom.drift:.3f} "
-                    f"thresh={thresh:.3f}×{mult:.1f} | reward={reward:.1f}"
+                    f"thresh={thresh:.3f}Ã—{mult:.1f} | reward={reward:.1f}"
                 )
 
             self._update_weights(anom.module, mult, reward, feats)
@@ -127,7 +128,7 @@ class HealingProtocolV5:
 if __name__ == "__main__":
     # example reset functions
     def reset_simulator():
-        print("  • Resetting Feedback Simulator.")
+        print("  â€¢ Resetting Feedback Simulator.")
 
     resets = {"FeedbackSimulator": reset_simulator}
 
@@ -150,3 +151,6 @@ if __name__ == "__main__":
         print(f"Step {step}: {report[-1]}")
         time.sleep(0.2)
 
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_healing_protocol_v0.5_james_jackson')

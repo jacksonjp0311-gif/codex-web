@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Performance Regression Tester v0.1  
+Jackson OS Kernel â€” Performance Regression Tester v0.1  
 Authored by James Jackson  
-Origin Law: Law CXLI — Comparative Transparency  
+Origin Law: Law CXLI â€” Comparative Transparency  
 Lineage: Jackson OS, September 2025  
 This module compares baseline vs tuned performance logs, quantifies metric shifts,
 identifies regressions, and renders comparative visualizations.
@@ -15,7 +16,7 @@ class PerformanceRegressionTester:
     def __init__(self, baseline_logs, tuned_logs, metrics=None):
         """
         baseline_logs, tuned_logs: list of dicts 
-            e.g. [{"module":"X","throughput":…,"latency":…,"error_rate":…}, …]
+            e.g. [{"module":"X","throughput":â€¦,"latency":â€¦,"error_rate":â€¦}, â€¦]
         metrics: list of metric names to compare; defaults to all numeric keys except "module"
         """
         self.baseline = pd.DataFrame(baseline_logs)
@@ -60,7 +61,7 @@ class PerformanceRegressionTester:
     def report(self):
         """Print tabular summary of deltas and regression flags."""
         df = self.results.join(self.regressions)
-        print("\n🛠️ Performance Regression Report")
+        print("\nðŸ› ï¸ Performance Regression Report")
         print(df.style.format("{:.2f}").to_string())
 
     def visualize(self):
@@ -97,3 +98,6 @@ if __name__ == "__main__":
     tester.identify_regressions({"throughput":5,"latency":5,"error_rate":2})
     tester.report()
     tester.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_performance_regression_tester_v0.1_james_jackson')

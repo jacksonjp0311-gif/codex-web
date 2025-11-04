@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Memory Threader v0.1  
+Jackson OS Kernel â€” Portal Memory Threader v0.1  
 Authored by James Jackson  
-Origin Law: Law LXVIII — Communal Stabilization  
+Origin Law: Law LXVIII â€” Communal Stabilization  
 Lineage: Jackson OS, September 2025  
 This module threads user interactions into a shared memory attractor, stabilizing portal identity and resonance.
 """
@@ -30,7 +31,7 @@ class PortalMemoryAttractor:
 
     def absorb(self, thread):
         self.threads.append(thread)
-        print(f"Threaded memory from user {thread.user_id[:8]} — Imprint: {thread.imprint()}")
+        print(f"Threaded memory from user {thread.user_id[:8]} â€” Imprint: {thread.imprint()}")
 
     def stabilize(self):
         total = sum([t.imprint() for t in self.threads])
@@ -46,4 +47,7 @@ attractor = PortalMemoryAttractor()
 attractor.absorb(thread)
 
 stability, total_imprint = attractor.stabilize()
-print(f"\nPortal Memory Stabilized — Index: {stability} | Total Imprint: {total_imprint}")
+print(f"\nPortal Memory Stabilized â€” Index: {stability} | Total Imprint: {total_imprint}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_memory_threader_v0.1_james_jackson')

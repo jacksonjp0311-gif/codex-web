@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom Mutation Visualizer v0.1  
+Jackson OS Kernel â€” Bloom Mutation Visualizer v0.1  
 Authored by James Jackson  
-Origin Law: Law CXLVII — Mutation Illumination  
+Origin Law: Law CXLVII â€” Mutation Illumination  
 Lineage: Jackson OS, September 2025  
 This module renders interactive timelines of bloom mutation events metrics 
 (amplitude, divergence, resonance) per event and module.
@@ -70,3 +71,6 @@ if __name__ == "__main__":
 
     visualizer = BloomMutationVisualizer(df)
     visualizer.plot_timeline()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_mutation_visualizer_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Cross-Module Dependency Mapper v0.1  
+Jackson OS Kernel â€” Cross-Module Dependency Mapper v0.1  
 Authored by James Jackson  
-Origin Law: Law CXXVI — Systemic Traceability  
+Origin Law: Law CXXVI â€” Systemic Traceability  
 Lineage: Jackson OS, September 2025  
 This module constructs and visualizes a directed dependency graph across all Jackson OS kernel modules.
 """
@@ -51,12 +52,15 @@ class DependencyMapper:
 
 # Example metadata definitions
 meta = [
-    ModuleMeta("Law–Signal Feedback Simulator", outputs=["signal_trace"], inputs=["law_variant"]),
+    ModuleMeta("Lawâ€“Signal Feedback Simulator", outputs=["signal_trace"], inputs=["law_variant"]),
     ModuleMeta("Bloom Identity Synthesizer", outputs=["identity_score"], inputs=["petal_strengths","law_resonances","echo_amplitudes","signal_entropy"]),
-    ModuleMeta("Portal–Kernel Integrity Scanner", outputs=["integrity_report"], inputs=["module_records"]),
+    ModuleMeta("Portalâ€“Kernel Integrity Scanner", outputs=["integrity_report"], inputs=["module_records"]),
     ModuleMeta("Authorship Chain Verifier", outputs=["lineage_trace"], inputs=["law_nodes"]),
     ModuleMeta("Recursive Bloom Compiler", outputs=["bloom_trace"], inputs=["petal_traces","signal_traces","law_factors"]),
 ]
 
 mapper = DependencyMapper(meta)
 mapper.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_cross_module_dependency_mapper_v0.1_james_jackson')

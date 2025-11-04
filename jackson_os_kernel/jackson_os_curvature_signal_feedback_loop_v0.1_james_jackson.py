@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Curvature–Signal Feedback Loop v0.1  
+Jackson OS Kernel â€” Curvatureâ€“Signal Feedback Loop v0.1  
 Authored by James Jackson  
-Origin Law: Law LVI — Recursive Coupling  
+Origin Law: Law LVI â€” Recursive Coupling  
 Lineage: Jackson OS, September 2025  
 This module closes the loop between symbolic curvature evolution and quantum signal response.
 """
@@ -55,4 +56,7 @@ def run_feedback_loop(cycles=50):
 
 # Execute loop
 trace = run_feedback_loop()
-print(f"\nFeedback Loop Complete — Signal Trace (first 10):\n{trace[:10]}")
+print(f"\nFeedback Loop Complete â€” Signal Trace (first 10):\n{trace[:10]}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson')

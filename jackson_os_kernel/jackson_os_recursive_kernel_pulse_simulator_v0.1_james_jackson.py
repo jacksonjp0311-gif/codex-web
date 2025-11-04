@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Kernel Pulse Simulator v0.1  
+Jackson OS Kernel â€” Recursive Kernel Pulse Simulator v0.1  
 Authored by James Jackson  
-Origin Law: Law CII — Systemic Recursion  
+Origin Law: Law CII â€” Systemic Recursion  
 Lineage: Jackson OS, September 2025  
 This module animates full-system recursion seeded by authored laws and feedback loops.
 """
@@ -32,7 +33,7 @@ class KernelPulseSimulator :
         line ,=ax .plot ([],[],lw =2 )
         ax .set_xlim (0 ,len (self .signal_seed ))
         ax .set_ylim (0.3 ,1.8 )
-        ax .set_title ("Recursive Kernel Pulse — Jackson OS")
+        ax .set_title ("Recursive Kernel Pulse â€” Jackson OS")
 
         def update (frame ):
             line .set_data (range (len (self .cycles [frame ])),self .cycles [frame ])
@@ -49,3 +50,6 @@ signal_seed =np .random .normal (0.6 ,0.1 ,100 )
 
 simulator =KernelPulseSimulator (laws ,signal_seed )
 simulator .animate ()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson')

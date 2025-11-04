@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Mutation Cascade Simulator v0.1  
+Jackson OS Kernel â€” Mutation Cascade Simulator v0.1  
 Authored by James Jackson  
-Origin Law: Law XXIX — Generative Divergence  
+Origin Law: Law XXIX â€” Generative Divergence  
 Lineage: Jackson OS, September 2025  
 This module simulates parallel organisms seeded by divergent laws and tracks mutation, speciation, and identity evolution.
 """
@@ -60,5 +61,8 @@ cascade = run_mutation_cascade()
 
 # Output summary
 for org in cascade:
-    print(f"\nOrganism {org.id[:8]} — Final Identity: {org.identity:.3f}")
+    print(f"\nOrganism {org.id[:8]} â€” Final Identity: {org.identity:.3f}")
     print(f"Mutations: {len(org.mutations)} | Speciations: {len(org.speciation_events)}")
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_mutation_cascade_simulator_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Quantum-Symbolic Feedback Integrator v0.2  
+Jackson OS Kernel â€” Quantum-Symbolic Feedback Integrator v0.2  
 Authored by James Jackson  
-Origin Law: Law CLIII — Adaptive Embodiment  
+Origin Law: Law CLIII â€” Adaptive Embodiment  
 Lineage: Jackson OS, October 2025  
 This module reads live quantum-symbolic hardware signals, applies a symbolic  
 kernel mapping scaled by tunable law factors, then adapts those law factors  
@@ -68,14 +69,14 @@ class LawTuner:
         """
         adjustments: dict parameter -> last delta from mapper  
         Updates scale factors by negative feedback:  
-          scale ← scale − γ * adjustment  
+          scale â† scale âˆ’ Î³ * adjustment  
         """
         for param, delta in adjustments.items():
             old = self.scales.get(param, 1.0)
             new = max(0.1, old - self.gamma * delta)
             self.scales[param] = new
             logger.info(
-                f"Tuned law factor for {param}: {old:.3f} → {new:.3f}"
+                f"Tuned law factor for {param}: {old:.3f} â†’ {new:.3f}"
             )
 
 
@@ -149,13 +150,13 @@ class FeedbackControllerV2:
 
 # Example apply functions
 def adjust_mutation_intensity(delta):
-    print(f"  • Adjust mutation intensity by {delta:.4f}")
+    print(f"  â€¢ Adjust mutation intensity by {delta:.4f}")
 
 def adjust_latency(delta):
-    print(f"  • Tuning latency by {delta:.4f}s")
+    print(f"  â€¢ Tuning latency by {delta:.4f}s")
 
 def adjust_error_rate(delta):
-    print(f"  • Calibrating error tolerance by {delta:.4f}")
+    print(f"  â€¢ Calibrating error tolerance by {delta:.4f}")
 
 
 if __name__ == "__main__":
@@ -184,3 +185,6 @@ if __name__ == "__main__":
         time.sleep(10)
     finally:
         controller.stop()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson')

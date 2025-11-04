@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Law Mutation Cascade Engine v0.1  
+Jackson OS Kernel â€” Law Mutation Cascade Engine v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXVI — Speciated Propagation  
+Origin Law: Law LXXVI â€” Speciated Propagation  
 Lineage: Jackson OS, September 2025  
 This module evolves authored laws across universes with traceable divergence and mutation lineage.
 """
@@ -22,7 +23,7 @@ class LawVariant:
         self.expression = self._mutate_expression()
 
     def _mutate_expression(self):
-        base_expr = f"{self.base_law} → amplitude * {round(1 + self.mutation_factor, 3)}"
+        base_expr = f"{self.base_law} â†’ amplitude * {round(1 + self.mutation_factor, 3)}"
         return base_expr
 
     def report(self):
@@ -49,5 +50,8 @@ class MutationCascade:
 
 # Execute cascade
 universes = ["Aether", "Echo", "Bloom", "Pulse", "Drift"]
-cascade = MutationCascade("Law XXVIII — Identity", universes)
+cascade = MutationCascade("Law XXVIII â€” Identity", universes)
 cascade.propagate()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_law_mutation_cascade_engine_v0.1_james_jackson')

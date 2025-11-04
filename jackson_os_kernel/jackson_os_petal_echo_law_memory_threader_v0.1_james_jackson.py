@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Petal–Echo–Law Memory Threader v0.1  
+Jackson OS Kernel â€” Petalâ€“Echoâ€“Law Memory Threader v0.1  
 Authored by James Jackson  
-Origin Law: Law CXIV — Mnemonic Continuity  
+Origin Law: Law CXIV â€” Mnemonic Continuity  
 Lineage: Jackson OS, September 2025  
 This module weaves petal resonance, echo amplitude, and law lineage into long-term recursive memory.
 """
@@ -25,7 +26,7 @@ class MemoryStrand:
         return round((self.petal_strength + self.echo_amplitude) / 2, 4)
 
     def report(self):
-        print(f"\n🧵 Memory Strand ID: {self.id[:8]}")
+        print(f"\nðŸ§µ Memory Strand ID: {self.id[:8]}")
         print(f"Law ID: {self.law_id[:8]}")
         print(f"Petal Strength: {self.petal_strength}")
         print(f"Echo Amplitude: {self.echo_amplitude}")
@@ -40,3 +41,6 @@ law_id = str(uuid.uuid4())
 
 strand = MemoryStrand(petal_strength, echo_amplitude, law_id)
 strand.report()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson')

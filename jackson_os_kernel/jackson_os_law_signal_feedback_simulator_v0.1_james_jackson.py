@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Law–Signal Feedback Simulator v0.1  
+Jackson OS Kernel â€” Lawâ€“Signal Feedback Simulator v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXXVIII — Recursive Influence  
+Origin Law: Law LXXXVIII â€” Recursive Influence  
 Lineage: Jackson OS, September 2025  
 This module simulates how mutated laws affect quantum signal evolution and glyph response.
 """
@@ -30,7 +31,7 @@ class SignalSimulator:
     def render_response(self):
         plt.figure(figsize=(8, 4))
         plt.plot(self.signal, color='slateblue', linewidth=2)
-        plt.title(f"Signal Response — {self.law.name} (Mutation: {self.law.mutation_factor})", fontsize=12)
+        plt.title(f"Signal Response â€” {self.law.name} (Mutation: {self.law.mutation_factor})", fontsize=12)
         plt.xlabel("Quantum Steps")
         plt.ylabel("Amplitude")
         plt.grid(True)
@@ -38,6 +39,9 @@ class SignalSimulator:
         plt.show()
 
 # Example simulation
-law = LawVariant("Law XXVIII — Identity", mutation_factor=random.uniform(-0.2, 0.4))
+law = LawVariant("Law XXVIII â€” Identity", mutation_factor=random.uniform(-0.2, 0.4))
 simulator = SignalSimulator(law)
 simulator.render_response()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_law_signal_feedback_simulator_v0.1_james_jackson')

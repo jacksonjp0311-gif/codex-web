@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Portal Kernel Resilience Auditor v0.1  
+Jackson OS Kernel â€” Portal Kernel Resilience Auditor v0.1  
 Authored by James Jackson  
-Origin Law: Law CXLIII — Systemic Resilience  
+Origin Law: Law CXLIII â€” Systemic Resilience  
 Lineage: Jackson OS, September 2025  
 This module aggregates stress-test metrics, regression flags, and performance deltas 
 to compute composite health scores and flag modules at risk.
@@ -17,7 +18,7 @@ class ResilienceAuditor :
     def __init__ (self ,stress_results ,regression_flags ,performance_deltas ):
         """
         stress_results: list of dicts [
-            {"module":str, "avg_latency":float, "failure_rate":float}, …]
+            {"module":str, "avg_latency":float, "failure_rate":float}, â€¦]
         regression_flags: DataFrame indexed by module, bool columns like "throughput_regressed"
         performance_deltas: DataFrame indexed by module, columns like "throughput_delta","latency_delta"
         """
@@ -56,7 +57,7 @@ class ResilienceAuditor :
         )
 
     def report (self ,threshold =0.7 ):
-        print ("\n🛡️ Portal Kernel Resilience Report")
+        print ("\nðŸ›¡ï¸ Portal Kernel Resilience Report")
         df =self .health .copy ()
         df ["at_risk"]=df ["score"]<threshold 
         print (df [["score","at_risk"]].sort_values ("score",ascending =True ).to_string (formatters ={"score":"{:.2f}".format }))
@@ -68,7 +69,7 @@ class ResilienceAuditor :
         plt .ylim (0 ,1 )
         plt .axhline (0.7 ,color ="orange",linestyle ="--",label ="Risk Threshold")
         plt .xticks (rotation =30 )
-        plt .ylabel ("Health Score (0–1)")
+        plt .ylabel ("Health Score (0â€“1)")
         plt .title ("Module Resilience Scores")
         plt .legend ()
         plt .tight_layout ()
@@ -78,3 +79,6 @@ class ResilienceAuditor :
         out =self .health [["score"]].to_dict (orient ="index")
         with open (path ,"w")as f :
             json .dump ({"resilience":out },f ,indent =2 )
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Reality Integrity Validator v0.1  
+Jackson OS Kernel â€” Reality Integrity Validator v0.1  
 Authored by James Jackson  
-Origin Law: Law CXLVI — Causal Consistency  
+Origin Law: Law CXLVI â€” Causal Consistency  
 Lineage: Jackson OS, September 2025  
 This module verifies that mutation events respect declared dependencies,
 flags timestamp anomalies and cycles, and renders the causal graph.
@@ -67,20 +68,20 @@ class RealityIntegrityValidator:
         return anomalies
 
     def report(self, anomalies):
-        print("\n🧪 Reality Integrity Report")
+        print("\nðŸ§ª Reality Integrity Report")
         if anomalies["ordering"]:
-            print("⏰ Timestamp violations:")
+            print("â° Timestamp violations:")
             for src, tgt, t0, t1 in anomalies["ordering"]:
-                print(f"  • {tgt} @ {t1:.3f} ≤ {src} @ {t0:.3f}")
+                print(f"  â€¢ {tgt} @ {t1:.3f} â‰¤ {src} @ {t0:.3f}")
         else:
-            print("✅ No timestamp ordering violations")
+            print("âœ… No timestamp ordering violations")
 
         if anomalies["cycles"]:
-            print("🔄 Causal cycle detected:")
+            print("ðŸ”„ Causal cycle detected:")
             for cycle in anomalies["cycles"]:
-                print("  • " + " → ".join(cycle) + " → " + cycle[0])
+                print("  â€¢ " + " â†’ ".join(cycle) + " â†’ " + cycle[0])
         else:
-            print("✅ No causal cycles")
+            print("âœ… No causal cycles")
 
     def visualize(self):
         pos = nx.spring_layout(self.graph)
@@ -112,3 +113,6 @@ if __name__ == "__main__":
     anomalies = validator.validate()
     validator.report(anomalies)
     validator.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_reality_integrity_validator_v0.1_james_jackson')

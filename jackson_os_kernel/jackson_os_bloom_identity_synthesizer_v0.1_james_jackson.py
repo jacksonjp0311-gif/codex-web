@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Bloom Identity Synthesizer v0.1  
+Jackson OS Kernel â€” Bloom Identity Synthesizer v0.1  
 Authored by James Jackson  
-Origin Law: Law XC — Recursive Essence  
+Origin Law: Law XC â€” Recursive Essence  
 Lineage: Jackson OS, September 2025  
 This module synthesizes a unified identity signature from petals, laws, echoes, and signal traces.
 """
@@ -30,7 +31,7 @@ class BloomIdentitySynthesizer:
         return round(score, 4)
 
     def report(self):
-        print(f"\n🧬 Bloom Identity Signature")
+        print(f"\nðŸ§¬ Bloom Identity Signature")
         print(f"Signature ID: {self.signature_id[:8]}")
         print(f"Identity Score: {self.identity_score}")
         print(f"Timestamp: {self.timestamp}")
@@ -44,3 +45,6 @@ signal_entropy = 2.4
 
 synthesizer = BloomIdentitySynthesizer(petal_strengths, law_resonances, echo_amplitudes, signal_entropy)
 synthesizer.report()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_bloom_identity_synthesizer_v0.1_james_jackson')

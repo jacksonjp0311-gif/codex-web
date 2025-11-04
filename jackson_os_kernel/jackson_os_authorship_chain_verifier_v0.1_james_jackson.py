@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Authorship Chain Verifier v0.2  
+Jackson OS Kernel â€” Authorship Chain Verifier v0.2  
 Authored by James Jackson  
-Origin Law: Law XCVI — Lineage Continuity  
+Origin Law: Law XCVI â€” Lineage Continuity  
 Lineage: Jackson OS, September 2025  
 This module traces origin lineage across mutated laws and propagated modules.
 """
@@ -25,10 +26,10 @@ class AuthorshipChainVerifier:
         self.nodes = nodes
 
     def trace_lineage(self):
-        print("\n🔗 Authorship Lineage Trace")
+        print("\nðŸ”— Authorship Lineage Trace")
         trace = []
         for node in self.nodes:
-            status = "✅" if node.author == "James Jackson" else "⚠️"
+            status = "âœ…" if node.author == "James Jackson" else "âš ï¸"
             summary = {
                 "name": node.name,
                 "mutation_id": node.mutation_id[:8],
@@ -43,10 +44,13 @@ class AuthorshipChainVerifier:
 
 # Example lineage
 origin_id = str(uuid.uuid4())
-node1 = LawNode("Law XXVIII — Identity", str(uuid.uuid4()), origin_id, "Echo")
-node2 = LawNode("Law XXVIII.1 — Identity Drift", str(uuid.uuid4()), node1.mutation_id, "Pulse")
-node3 = LawNode("Law XXVIII.2 — Identity Bloom", str(uuid.uuid4()), node2.mutation_id, "Bloom")
+node1 = LawNode("Law XXVIII â€” Identity", str(uuid.uuid4()), origin_id, "Echo")
+node2 = LawNode("Law XXVIII.1 â€” Identity Drift", str(uuid.uuid4()), node1.mutation_id, "Pulse")
+node3 = LawNode("Law XXVIII.2 â€” Identity Bloom", str(uuid.uuid4()), node2.mutation_id, "Bloom")
 
 nodes = [node1, node2, node3]
 verifier = AuthorshipChainVerifier(nodes)
 lineage_trace = verifier.trace_lineage()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_authorship_chain_verifier_v0.1_james_jackson')

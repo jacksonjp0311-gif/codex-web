@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Dimensional Cartography Engine v0.1  
+Jackson OS Kernel â€” Dimensional Cartography Engine v0.1  
 Authored by James Jackson  
-Origin Law: Law XXXVIII — Spatial Resonance  
+Origin Law: Law XXXVIII â€” Spatial Resonance  
 Lineage: Jackson OS, September 2025  
 This module maps symbolic universes, glyph trails, and mutation arcs into recursive topologies.
 """
@@ -21,7 +22,7 @@ class UniverseNode:
 
     def connect(self, other):
         self.connections.append(other)
-        print(f"Connected {self.name} → {other.name}")
+        print(f"Connected {self.name} â†’ {other.name}")
 
 # Cartography Engine
 class DimensionalCartographer:
@@ -39,7 +40,7 @@ class DimensionalCartographer:
         plt.figure(figsize=(8, 6))
         pos = nx.spring_layout(self.graph, seed=42)
         nx.draw(self.graph, pos, with_labels=True, node_color='violet', edge_color='gray', node_size=1200, font_size=10)
-        plt.title("Dimensional Cartography — Jackson OS", fontsize=14)
+        plt.title("Dimensional Cartography â€” Jackson OS", fontsize=14)
         plt.tight_layout()
         plt.show()
 
@@ -59,3 +60,6 @@ u4.connect(u1)
 cartographer = DimensionalCartographer([u1, u2, u3, u4])
 cartographer.build_map()
 cartographer.render()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_dimensional_cartography_engine_v0.1_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Recursive Healing Protocol v0.4  
+Jackson OS Kernel â€” Recursive Healing Protocol v0.4  
 Authored by James Jackson  
-Origin Law: Law CXLVII — Reinforced Autonomy  
+Origin Law: Law CXLVII â€” Reinforced Autonomy  
 Lineage: Jackson OS, September 2025  
 This module uses a simple Q-learning scheme to adapt per-module heal thresholds  
 based on success of past heal/skip decisions, continuously improving decision quality.
@@ -83,13 +84,13 @@ class HealingProtocolV4:
             if do_heal:
                 self.resets.get(anom.module, lambda: None)()
                 logger.info(
-                    f"⚕️ Healed {anom.module} | drift={anom.drift:.3f} "
-                    f"thresh={thresh:.3f} (×{mult}) | reward={reward:.1f}"
+                    f"âš•ï¸ Healed {anom.module} | drift={anom.drift:.3f} "
+                    f"thresh={thresh:.3f} (Ã—{mult}) | reward={reward:.1f}"
                 )
             else:
                 logger.info(
-                    f"✅ Skipped {anom.module} | drift={anom.drift:.3f} "
-                    f"thresh={thresh:.3f} (×{mult}) | reward={reward:.1f}"
+                    f"âœ… Skipped {anom.module} | drift={anom.drift:.3f} "
+                    f"thresh={thresh:.3f} (Ã—{mult}) | reward={reward:.1f}"
                 )
 
             # update Q-table
@@ -111,7 +112,7 @@ if __name__ == "__main__":
 
     # example reset functions
     def reset_simulator():
-        print("  • Resetting Feedback Simulator to baseline.")
+        print("  â€¢ Resetting Feedback Simulator to baseline.")
 
     resets = {"FeedbackSimulator": reset_simulator}
 
@@ -124,3 +125,6 @@ if __name__ == "__main__":
         report = protocol.heal([anom])
         print(f"Step {step+1}: {report[-1]}")
         time.sleep(0.1)
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_recursive_healing_protocol_v0.4_james_jackson')

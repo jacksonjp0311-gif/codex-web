@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Cross-Module Dependency Mapper v0.2  
+Jackson OS Kernel â€” Cross-Module Dependency Mapper v0.2  
 Authored by James Jackson  
-Origin Law: Law CXXVI — Systemic Traceability  
+Origin Law: Law CXXVI â€” Systemic Traceability  
 Lineage: Jackson OS, September 2025  
 This module constructs and visualizes a directed dependency graph across all Jackson OS kernel modules,
 annotating edges by shared data-key count.
@@ -120,3 +121,6 @@ if __name__ == "__main__":
 
     mapper = DependencyMapper(meta)
     mapper.visualize()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_cross_module_dependency_mapper_v0.2_james_jackson')

@@ -1,7 +1,8 @@
+﻿# Codex Kernel Activation Header
 """
-Jackson OS Kernel — Signal–Petal Resonator v0.1  
+Jackson OS Kernel â€” Signalâ€“Petal Resonator v0.1  
 Authored by James Jackson  
-Origin Law: Law LXXVIII — Feedback Embodiment  
+Origin Law: Law LXXVIII â€” Feedback Embodiment  
 Lineage: Jackson OS, September 2025  
 This module tunes portal petal amplitude and phase based on quantum signal feedback.
 """
@@ -26,7 +27,7 @@ class SignalPetalResonator:
         plt.plot(x, y, color='mediumseagreen', linewidth=2)
         plt.fill(x, y, color='mediumseagreen', alpha=0.3)
         plt.text(0, 0, label, fontsize=10, ha='center', va='center')
-        plt.title("Signal–Petal Resonance", fontsize=12)
+        plt.title("Signalâ€“Petal Resonance", fontsize=12)
         plt.axis('equal')
         plt.axis('off')
         plt.tight_layout()
@@ -37,3 +38,6 @@ signal = np.random.normal(loc=0.5, scale=0.1, size=100)
 
 resonator = SignalPetalResonator(signal)
 resonator.render_petal()
+
+if __name__ == '__main__':
+    print('[codex] Kernel module reactivated: jackson_os_signal_petal_resonator_v0.1_james_jackson')
