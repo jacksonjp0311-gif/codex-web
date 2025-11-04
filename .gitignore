@@ -1,39 +1,36 @@
-ï»¿# ---- Codex Project Ignore ----
+# ============================================================
+# ?? Codex .gitignore — v0.9
+# Ensures clean repository alignment
+# ============================================================
 
-# Virtual environments
+# System and environment
+.vscode/
 .venv/
-venv/
-env/
-
-# Python cache and logs
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 *.log
-
-# VS Code and editor settings
-.vscode/
-.idea/
-
-# OneDrive metadata
 *.tmp
-*.lnk
-*.DS_Store
-~$*
+*.bak
+*.swp
+
+# Backups and archives
+backups_reorg/
+*.zip
+*.tar
+*.gz
+
+# OS and OneDrive artifacts
 Thumbs.db
 desktop.ini
+~$*
+*.lnk
 
-# Alignment outputs
-codex_alignment_summary.json
-codex_alignment_insights.json
-codex/tools/__pycache__/
+# Local test output
+*.csv
+*.json
+*.cache
+*.dat
 
-# Build artifacts
-dist/
-build/
-*.egg-info/
-
-# Ignore environment secrets
-copilot-feedback/.env
-
-# Codex backups (ignore)\nbackups_reorg/
+# End of Codex .gitignore
