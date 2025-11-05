@@ -1,0 +1,7 @@
+﻿[Codex Root Runner - Stability Mode]
+Timestamp: 20251105_171108
+Root: C:\Users\jacks\OneDrive\Desktop\Codex Web
+Kernel: Found
+Orchestrator: Found
+Latest Scan: codex_repo_scan_20251105_165312.json
+Status: Dry verification complete.
