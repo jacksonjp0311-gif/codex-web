@@ -1,0 +1,16 @@
+﻿{
+    "lotus":  {
+                  "symmetry":  "octadic",
+                  "seed":  0.92163,
+                  "petals":  8
+              },
+    "created":  "20251105_180921",
+    "description":  "Triadic geometry scaffold for Codex v2 — symbolic lotus and torus matrices",
+    "torus":  {
+                  "minor_radius":  0.5,
+                  "seed":  0.984879,
+                  "major_radius":  1,
+                  "twist":  7
+              },
+    "geometry":  "lotus-torus"
+}
