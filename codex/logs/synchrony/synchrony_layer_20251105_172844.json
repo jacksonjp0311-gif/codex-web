@@ -1,0 +1,11 @@
+﻿{
+    "timestamp":  "20251105_172844",
+    "codex_version":  "v1.0",
+    "kernel_ref":  "kernel_validation_20251105_171212.json",
+    "dual_ref":  "dual_verification_20251105_172304.json",
+    "continuity_ref":  "continuity_validation_20251105_172608.json",
+    "recalibration_ref":  "resonance_recalibration_20251105_172721.json",
+    "unified_synchrony_index":  0.59261,
+    "symbolic_resonance_map":  "∞-ΔI-Σ-ΔE",
+    "synchrony_status":  "codex unified"
+}
