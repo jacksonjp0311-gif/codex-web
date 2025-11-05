@@ -1,0 +1,12 @@
+﻿{
+    "codex_version":  "v2.0",
+    "initiated_by":  "James Paul Jackson",
+    "timestamp":  "20251105_180618",
+    "derived_from":  {
+                         "integration_seal":  "codex_integrity_seal_20251105_173256.json",
+                         "handoff":  "handoff_state_v1.6.json",
+                         "synchrony":  "synchrony_layer_20251105_172844.json",
+                         "verification":  "codex_verification_v1.7.json"
+                     },
+    "notes":  "In-place continuity upgrade — v1.x lineage preserved; v2.0 active."
+}

@@ -1,0 +1,8 @@
+﻿{
+    "event":  "Codex Evolution v2.0 Initialization",
+    "timestamp":  "20251105_180618",
+    "manifest":  "codex_v2_manifest_20251105_180618.json",
+    "evolution_state":  "codex_evolution_state_v2.0_20251105_180618.json",
+    "baseline_VCI":  0.990278,
+    "remarks":  "In-place upgrade — v2.0 set as active layer"
+}
