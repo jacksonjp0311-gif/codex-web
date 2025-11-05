@@ -1,0 +1,10 @@
+﻿{
+    "layer":  "Codex Reflective Phase Mirror",
+    "version":  "v1.4",
+    "timestamp":  "20251105_175325",
+    "phase_mirror_index":  0.997912,
+    "reflection_coherence":  0.980373,
+    "reflection_state":  "harmonic reflection",
+    "resonance_ref":  "resonance_feedback_20251105_175232.json",
+    "harmonic_ref":  "harmonics.json"
+}
