@@ -1233,3 +1233,782 @@ Processing -File 'C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\ja
 - Average composite resonance: 0.1334
 - Max composite resonance: 0.2
 - Min composite resonance: 0.0663
+
+### Live Kernel Update — 2025-11-04 13:18:51
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:18:51
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:18:52
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:18:52
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:19:52
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:19:53
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:19:53
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:19:54
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:20:54
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_evolution_visualizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:20:54
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_evolution_visualizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:20:55
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:20:55
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:21:56
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_dimensional_cartography_engine_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:21:57
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_dimensional_cartography_engine_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:21:57
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_feedback_resonance_analyzer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:21:58
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_feedback_resonance_analyzer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:22:58
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:22:59
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:22:59
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_trail_visualizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:23:00
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_trail_visualizer_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR 
+- The term 'Run-PythonAnalyze' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+
+### Live Kernel Update — 2025-11-04 13:24:00
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_cartography_hub_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:24:00
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_cartography_hub_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:24:01
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_network_router_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:24:01
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_network_router_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:25:02
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interface_bloom_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:25:02
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interface_bloom_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:25:02
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:25:03
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:26:03
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_interface_feedback_loop_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:26:04
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_interface_feedback_loop_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:26:04
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_archive_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:26:04
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_archive_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- The term 'Run-PythonAnalyze' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+
+### Live Kernel Update — 2025-11-04 13:27:05
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_compiler_chipset_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:27:05
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_compiler_chipset_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:27:06
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_cascade_engine_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:27:06
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_cascade_engine_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:28:06
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_engine_LXXIV_prime.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:28:07
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_engine_LXXIV_prime.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:28:07
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_signal_feedback_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:28:08
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_signal_feedback_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:29:08
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_archive_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:29:08
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_archive_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:29:09
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:29:09
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:30:10
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_memory_attractor_stabilizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:30:10
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_memory_attractor_stabilizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:30:10
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_bloom_propagator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:30:11
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_bloom_propagator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:31:11
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:31:11
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:31:12
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:31:12
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:32:12
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.3_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:32:13
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.3_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:32:13
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.4_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:32:13
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.4_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:33:14
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:33:14
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:33:15
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_resonance_index_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:33:15
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_resonance_index_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:34:16
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_router_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:34:16
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_router_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:34:16
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:34:17
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:35:17
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_mutation_cascade_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:35:17
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_mutation_cascade_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:35:18
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_organism_runtime_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:35:18
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_organism_runtime_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:36:19
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:36:19
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:36:19
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_performance_regression_tester_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:36:20
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_performance_regression_tester_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:37:20
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:37:21
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:37:21
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_law_mapper_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:37:21
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_law_mapper_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:38:22
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_signal_memory_binder_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:38:22
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_echo_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:38:22
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_echo_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:38:23
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_signal_memory_binder_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:39:23
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_glyph_recomposer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:39:23
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_glyph_recomposer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:39:24
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:39:24
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:40:25
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:40:25
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:40:25
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:40:26
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:41:26
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:41:26
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:41:27
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:41:27
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:42:27
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:42:28
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:42:28
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_stress_tester_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:42:28
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_stress_tester_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:43:29
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_memory_threader_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:43:29
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_memory_threader_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:43:29
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_pulse_harmonizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:43:30
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_pulse_harmonizer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:44:30
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_reflection_engine_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:44:31
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_reflection_engine_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:44:31
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_bridge_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:44:31
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_bridge_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:45:32
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:45:32
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:45:32
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:45:33
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:46:33
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_reality_integrity_validator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:46:33
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_reality_integrity_validator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:46:34
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:46:34
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:47:34
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_scheduler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:47:35
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_scheduler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:47:35
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:47:36
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:48:36
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:48:36
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.2_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:48:37
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.3_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:48:37
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.3_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:49:38
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.4_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:49:38
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.4_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:49:38
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.5_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:49:39
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.5_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:50:39
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.6_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:50:40
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.6_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:50:40
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:50:40
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson.py
+- Type: Changed
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:51:41
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:51:41
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:51:42
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_glyph_translator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:51:42
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_glyph_translator_v0.1_james_jackson.py
+- Type: Changed
+
+### ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 13:52:42
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:52:43
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_compiler_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:52:43
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:52:43
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:53:44
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_petal_resonator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:53:44
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_petal_resonator_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:53:45
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_temporal_topological_analyzer_v0.1_james_jackson.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 13:53:45
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_temporal_topological_analyzer_v0.1_james_jackson.py
+- Type: Changed
+
+### ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+### Temporal Resonance Bridge — ERROR
+- Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+
+
+### Live Kernel Update — 2025-11-04 15:37:56
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_scan.py
+- Type: Created
+
+
+### Live Kernel Update — 2025-11-04 15:37:57
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_main.py
+- Type: Created
+
+
+### Live Kernel Update — 2025-11-04 15:37:57
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_main.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 15:37:58
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_scan.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 15:40:58
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_scan.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 15:40:58
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_scan.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 15:40:59
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_main.py
+- Type: Changed
+
+
+### Live Kernel Update — 2025-11-04 15:40:59
+- File: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_main.py
+- Type: Changed
+
