@@ -157,5 +157,13 @@
         "version":  "v0.7",
         "validated":  true,
         "hash":  "6A66597D1FE743DF7B09738969A0697B4EAB7F541BB43221F3B63157734020F9"
+    },
+    {
+        "created":  "2025-11-05 17:23:05",
+        "pattern":  "lotus:torus",
+        "author":  "James Paul Jackson",
+        "version":  "v0.7",
+        "validated":  true,
+        "hash":  "5614A5AC4EC971444F00A95298FEB6D1C31945D0A9AA87972A2BFD85DF983811"
     }
 ]
