@@ -1,0 +1,25 @@
+﻿{
+    "version":  "3.3",
+    "phase":  "Harmonic Resonance Equilibrium (HRE)",
+    "timestamp":  "20251105_185317",
+    "baseline_manifest":  "codex_v3_2_rcb_manifest_20251105_184254.json",
+    "seed":  "HRE-64fcb3c2",
+    "iterations":  50,
+    "final":  {
+                  "continuity":  0.221599,
+                  "C":  -0.005837,
+                  "I":  -0.00613,
+                  "cycle":  50,
+                  "activation":  0.221599,
+                  "mean":  -0.005568,
+                  "H":  -0.004737,
+                  "variance":  0.000554
+              },
+    "mean_drift":  -0.005635,
+    "max_variance":  null,
+    "stability":  "sustained",
+    "history_sample":  [
+
+                       ],
+    "note":  "Automated HRE run — Codex v3.3"
+}
