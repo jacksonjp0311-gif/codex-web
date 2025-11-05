@@ -1,0 +1,9 @@
+﻿{
+    "layer":  "Codex Resonance Feedback Loop",
+    "version":  "v1.3",
+    "timestamp":  "20251105_175232",
+    "rfq":  0.995622,
+    "harmonic_ref":  "harmonics.json",
+    "continuity_ref":  "continuity_layer_20251105_172503.json",
+    "resonance_status":  "stable"
+}
