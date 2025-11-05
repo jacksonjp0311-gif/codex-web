@@ -319,3 +319,6 @@ if __name__ == "__main__":
     }
     comp, per, diag = evaluate_payload(test)
     print(json.dumps({"composite": comp, "per_law": per, "diagnostics": diag}, indent=2))
+
+**Codex Active Version:** v2.0 — Initialized 20251105_180618
+

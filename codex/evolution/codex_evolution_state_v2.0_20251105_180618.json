@@ -1,0 +1,12 @@
+﻿{
+    "codex_version":  "v2.0",
+    "timestamp":  "20251105_180618",
+    "seed_VCI":  0.990278,
+    "rebirth_mirror_index":  0.995139,
+    "source_manifest":  "codex_v2_manifest_20251105_180618.json",
+    "ancestry":  {
+                     "verification":  "codex_verification_v1.7.json",
+                     "integration":  "codex_integrity_seal_20251105_173256.json"
+                 },
+    "status":  "v2 seed generated — awaiting harmonics initialization"
+}
