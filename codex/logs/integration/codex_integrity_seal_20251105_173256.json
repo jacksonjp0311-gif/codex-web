@@ -1,0 +1,12 @@
+﻿{
+    "timestamp":  "20251105_173256",
+    "codex_version":  "v1.1",
+    "kernel_ref":  "kernel_validation_20251105_171212.json",
+    "dual_ref":  "dual_verification_20251105_172304.json",
+    "continuity_ref":  "continuity_validation_20251105_172608.json",
+    "recalibration_ref":  "resonance_recalibration_20251105_172721.json",
+    "synchrony_ref":  "synchrony_layer_20251105_172844.json",
+    "continuum_integrity_index":  0.98955,
+    "codex_seal_hash":  "9C4533F8D0DD376240B510854EF205372B4902EF5CA1525F82339ECBB714166B",
+    "seal_status":  "integration complete — codex baseline established"
+}
