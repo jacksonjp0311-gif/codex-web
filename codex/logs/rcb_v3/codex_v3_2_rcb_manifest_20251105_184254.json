@@ -1,0 +1,13 @@
+﻿{
+    "symbolic_seed":  "RCB-f57a26c6",
+    "version":  "3.2",
+    "activated":  true,
+    "timestamp":  "20251105_184254",
+    "baseline":  "codex_v3_1_2_tce_manifest_20251105_184115.json",
+    "metrics":  {
+                    "stability_index":  0.98064,
+                    "recursion_factor":  0.964097,
+                    "binding_coherence":  0.979399
+                },
+    "phase":  "Recursive Continuum Binding (RCB-Stable)"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "symbolic_seed":  "TCE-6162bc28",
+    "version":  "3.1",
+    "activated":  false,
+    "timestamp":  "20251105_183748",
+    "baseline":  [
+                     "codex_v3_0_hta_manifest_20251105_183342.json",
+                     "codex_v3_0_hta_manifest_20251105_183500.json"
+                 ],
+    "metrics":  {
+                    "continuum_coupling":  0,
+                    "activation":  0,
+                    "mean":  0.5,
+                    "dispersion":  0
+                },
+    "phase":  "Triadic Continuum Expansion"
+}
