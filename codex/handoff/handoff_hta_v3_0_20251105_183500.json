@@ -1,0 +1,15 @@
+﻿{
+    "handoff_version":  "v3.0",
+    "timestamp":  "20251105_183500",
+    "activated":  true,
+    "seed":  "HTA-d5e0e134",
+    "triadic":  {
+                    "ARI":  0.982112,
+                    "TCC":  0.982575
+                },
+    "artifacts":  [
+                      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\v3\\hta_triad_coupler_20251105_183500.json",
+                      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\v3\\hta_symbolic_mapper_20251105_183500.json",
+                      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\v3\\hta_self_reference_20251105_183500.json"
+                  ]
+}

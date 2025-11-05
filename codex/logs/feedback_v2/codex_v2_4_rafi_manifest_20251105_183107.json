@@ -1,0 +1,16 @@
+﻿{
+    "Codex_Version":  "v2.4",
+    "Phase":  "RAFI — Resonance-Aware Feedback Integration",
+    "Timestamp":  "20251105_183107",
+    "Metrics":  {
+                    "Feedback_Index":  0,
+                    "Coherence":  1,
+                    "RMI":  0,
+                    "Mean":  0,
+                    "CII":  0,
+                    "Status":  "Recalibration Suggested",
+                    "Hphi":  0
+                },
+    "Previous_Manifest":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\harmonics_v2\\codex_v2_3_hfe_manifest_20251105_182852.json",
+    "Root_Path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web"
+}

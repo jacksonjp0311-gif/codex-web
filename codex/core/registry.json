@@ -1,4 +1,9 @@
 ﻿{
     "last_evolution":  "20251105_180618",
-    "active_version":  "v2.0"
+    "active_version":  "v2.0",
+    "hre_snapshot":  {
+                         "timestamp":  "20251105_185317",
+                         "handoff":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\handoff\\handoff_v3_3_hre_20251105_185317.json",
+                         "manifest":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\hre_v3\\codex_v3_3_hre_manifest_20251105_185317.json"
+                     }
 }

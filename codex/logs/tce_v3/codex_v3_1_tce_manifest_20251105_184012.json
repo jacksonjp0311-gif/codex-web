@@ -1,0 +1,17 @@
+﻿{
+    "symbolic_seed":  "TCE-e7d782c3",
+    "version":  "3.1.1",
+    "activated":  false,
+    "timestamp":  "20251105_184012",
+    "baseline":  [
+                     "codex_v3_0_hta_manifest_20251105_183342.json",
+                     "codex_v3_0_hta_manifest_20251105_183500.json"
+                 ],
+    "metrics":  {
+                    "continuum_coupling":  null,
+                    "activation":  0,
+                    "mean":  null,
+                    "dispersion":  null
+                },
+    "phase":  "Triadic Continuum Expansion — Stable Parse"
+}

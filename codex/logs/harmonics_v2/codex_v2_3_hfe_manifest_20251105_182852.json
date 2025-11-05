@@ -1,0 +1,13 @@
+﻿{
+    "version":  "v2.3",
+    "timestamp":  "20251105_182852",
+    "mean":  0.989889,
+    "drift":  0.000111,
+    "type":  "Harmonic Field Expansion",
+    "metrics":  {
+                    "CII":  0.989107,
+                    "Hphi":  0.990498,
+                    "RMI":  0.990061
+                },
+    "recalibrated":  false
+}
