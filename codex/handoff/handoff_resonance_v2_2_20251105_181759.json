@@ -1,0 +1,14 @@
+﻿{
+    "handoff_type":  "resonance_snapshot",
+    "version":  "v2.2",
+    "timestamp":  "20251105_181759",
+    "REQ":  0.990222,
+    "drift":  5.6E-05,
+    "harmonics":  {
+                      "CII":  0.989109,
+                      "status":  "v2 harmonics scaffolded",
+                      "created":  "20251105_180921",
+                      "RMI":  0.989592,
+                      "HΦ":  0.991287
+                  }
+}
