@@ -1,0 +1,14 @@
+﻿{
+    "phase":  "v2.2 Resonance Initialization",
+    "version":  "v2.2",
+    "timestamp":  "20251105_181759",
+    "seed_VCI":  0.990278,
+    "initial_mean":  0.990198,
+    "micro_variance":  2.4E-05,
+    "REQ":  0.990222,
+    "drift":  5.6E-05,
+    "threshold":  0.002,
+    "recalibrated":  false,
+    "recalibration_log":  null,
+    "harmonics_file":  "harmonics.json"
+}
