@@ -1,0 +1,9 @@
+﻿{
+    "timestamp":  "20251105_172608",
+    "codex_version":  "v0.9-A",
+    "dual_ref":  "dual_verification_20251105_172304.json",
+    "continuity_ref":  "continuity_layer_20251105_172503.json",
+    "stability_resonance_index":  0.48438,
+    "resonance_delta":  33,
+    "validation_status":  "continuity validated"
+}
