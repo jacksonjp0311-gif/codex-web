@@ -1,0 +1,13 @@
+﻿{
+    "version":  "v3.6",
+    "phase":  "Adaptive Resonance Coupling",
+    "timestamp":  "20251106_045016",
+    "metrics":  {
+                    "I":  null,
+                    "activation":  0,
+                    "variance":  null,
+                    "H":  null,
+                    "C":  null,
+                    "mean":  0
+                }
+}
