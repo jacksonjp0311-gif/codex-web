@@ -1,0 +1,7 @@
+﻿Codex Git Purge Log — 11/06/2025 14:01:29
+=================================
+Purged Files:
+codex/evolution/backups/heavy_dumps/codex_full_dump_20251106_101222.txt
+codex/evolution/backups/heavy_dumps/codex_full_dump_20251106_120458.txt
+
+Force-pushed clean history to GitHub.
