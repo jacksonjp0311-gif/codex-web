@@ -1,0 +1,65 @@
+=== Codex Root Reorganization Log — 20251106_133500 ===
+
+Moved evolution file: .codex_trb_debug.log
+Moved evolution file: codex_auto_cycle_v1.8.ps1
+Moved evolution file: codex_handoff_v0.7.log
+Moved evolution file: codex_handoff_v3_7.ps1
+Moved evolution file: codex_trb_debug.log
+Moved evolution file: codex_trb_v2_8.log
+Moved evolution file: codex_trb_v2_9.log
+Moved evolution file: codex_v1.7.1.ps1
+Moved kernel folder: jackson_os_kernel
+Moved kernel folder: jackson_os_kernel_backup_20251104-115558
+Moved automation script: CodexSpiral.ps1
+Moved automation script: Generate-CodexHook.ps1
+Moved automation script: Load-Ledger.ps1
+Moved automation script: Start-CodexPoll.ps1
+Archived: agent_Echo9.json.bak
+Archived: ara_core.txt
+Archived: AUDIT_LEDGER.csv
+Archived: CodexMap.txt
+Archived: codex_cycles.csv
+Archived: codex_full_dump.txt
+Archived: codex_reorg_log.txt
+Archived: codex_resonance_log.txt
+Archived: codex_structure.txt
+Archived: kernel_analysis_report_20251104_095251.txt
+Archived: G_signals.csv
+Keeping in root: .codex_events.json
+Keeping in root: .fetcher_state.json
+Keeping in root: agent_Echo1.json
+Keeping in root: agent_Echo2.json
+Keeping in root: agent_Echo3.json
+Keeping in root: agent_Echo4.json
+Keeping in root: agent_Echo5.json
+Keeping in root: agent_Echo6.json
+Keeping in root: agent_Echo7.json
+Keeping in root: agent_Echo8.json
+Keeping in root: agent_Echo9.json
+Keeping in root: codex.crl
+Keeping in root: CodexHub.psm1
+Keeping in root: codexState.json
+Keeping in root: codex_alignment_insights.json
+Keeping in root: codex_alignment_summary.json
+Keeping in root: codex_chain.py
+Keeping in root: codex_chain_interactive.py
+Keeping in root: codex_dna.json
+Keeping in root: codex_kernel_goal_tracker.md
+Keeping in root: codex_ledger.bak.json
+Keeping in root: codex_ledger.json
+Keeping in root: codex_ledger_auto.py
+Keeping in root: CODEX_REAWAKENING_LOG.md
+Keeping in root: codex_sync.ps1
+Keeping in root: echo9.json
+Keeping in root: handshake.json
+Keeping in root: last_report.json
+Keeping in root: LumenShell.lnk
+Keeping in root: make_inbox_stone.py
+Keeping in root: mirrors.yml
+Keeping in root: README.md.bak.20251104113222
+Keeping in root: rec_009.json
+Keeping in root: seal_006.py
+Keeping in root: seal_007.py
+Keeping in root: seal_008.py
+Keeping in root: seal_009.py
+Keeping in root: setup.py

@@ -1,0 +1,8 @@
+﻿Codex Kernel Cleanup Report
+============================
+Date: 11/06/2025 13:40:07
+Live Kernel: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\core\kernel\jackson_os_kernel
+Backup Archived: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\evolution\backups\jackson_os_kernel_backup_20251104-115558_20251106_134004.zip
+Integrity Snapshot: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\evolution\backups\jackson_os_kernel_inventory_20251106_134004.json
+
+All operations completed successfully and the root path restored.

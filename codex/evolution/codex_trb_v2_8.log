@@ -1,0 +1,330 @@
+﻿[2025-11-04 14:01:17] TRB v2.8 START
+[2025-11-04 14:01:17] Python helper written: C:\Users\jacks\AppData\Local\Temp\codex_trb_helper_v2_8_1ad33db3-dda1-44f9-a36e-97a73d5ac00e.py
+[2025-11-04 14:01:17] Found 80 python files.
+[2025-11-04 14:01:17] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_authorship_chain_verifier_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_authorship_chain_verifier_v0.1_james_jackson.py","lines":56,"complexity":7,"composite":0.125}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_authorship_resonance_auditor_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_authorship_resonance_auditor_v0.1_james_jackson.py","lines":45,"complexity":7,"composite":0.15555555555555556}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_authorship_verification_protocol_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_authorship_verification_protocol_v0.1_james_jackson.py","lines":45,"complexity":6,"composite":0.13333333333333333}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_chronograph_growth_forecaster_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_chronograph_growth_forecaster_v0.1_james_jackson.py","lines":52,"complexity":7,"composite":0.1346153846153846}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_identity_synthesizer_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_identity_synthesizer_v0.1_james_jackson.py","lines":50,"complexity":7,"composite":0.14}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_mutation_editor_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_mutation_editor_v0.1_james_jackson.py","lines":52,"complexity":8,"composite":0.15384615384615385}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_mutation_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:18] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_mutation_visualizer_v0.1_james_jackson.py","lines":76,"complexity":7,"composite":0.09210526315789473}
+[2025-11-04 14:01:18] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_performance_dashboard_v0.1_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_performance_dashboard_v0.1_james_jackson.py","lines":83,"complexity":9,"composite":0.10843373493975904}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_portal_synchronization_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_portal_synchronization_engine_v0.1_james_jackson.py","lines":43,"complexity":6,"composite":0.13953488372093023}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_entanglement_tracker_v0.1_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_signal_entanglement_tracker_v0.1_james_jackson.py","lines":44,"complexity":6,"composite":0.13636363636363635}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson.py","lines":72,"complexity":9,"composite":0.125}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson.py","lines":72,"complexity":7,"composite":0.09722222222222222}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.1_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_cross_module_dependency_mapper_v0.1_james_jackson.py","lines":66,"complexity":8,"composite":0.12121212121212122}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.2_james_jackson.py
+[2025-11-04 14:01:19] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_cross_module_dependency_mapper_v0.2_james_jackson.py","lines":126,"complexity":9,"composite":0.07142857142857142}
+[2025-11-04 14:01:19] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_evolution_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_curvature_evolution_visualizer_v0.1_james_jackson.py","lines":58,"complexity":11,"composite":0.1896551724137931}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson.py","lines":62,"complexity":10,"composite":0.16129032258064516}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_dimensional_cartography_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_dimensional_cartography_engine_v0.1_james_jackson.py","lines":65,"complexity":11,"composite":0.16923076923076924}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_feedback_resonance_analyzer_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_feedback_resonance_analyzer_v0.1_james_jackson.py","lines":43,"complexity":6,"composite":0.13953488372093023}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson.py","lines":55,"complexity":8,"composite":0.14545454545454545}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_trail_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_glyph_trail_visualizer_v0.1_james_jackson.py","lines":49,"complexity":9,"composite":0.1836734693877551}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_cartography_hub_v0.1_james_jackson.py
+[2025-11-04 14:01:20] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_interdimensional_cartography_hub_v0.1_james_jackson.py","lines":62,"complexity":8,"composite":0.12903225806451613}
+[2025-11-04 14:01:20] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_network_router_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_interdimensional_network_router_v0.1_james_jackson.py","lines":89,"complexity":13,"composite":0.14606741573033707}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interface_bloom_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_interface_bloom_compiler_v0.1_james_jackson.py","lines":65,"complexity":8,"composite":0.12307692307692308}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py","lines":86,"complexity":15,"composite":0.1744186046511628}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_interface_feedback_loop_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_kernel_interface_feedback_loop_v0.1_james_jackson.py","lines":42,"complexity":7,"composite":0.16666666666666666}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_archive_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_archive_compiler_v0.1_james_jackson.py","lines":59,"complexity":9,"composite":0.15254237288135594}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_compiler_chipset_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_compiler_chipset_v0.1_james_jackson.py","lines":53,"complexity":6,"composite":0.11320754716981132}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_cascade_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:21] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_mutation_cascade_engine_v0.1_james_jackson.py","lines":57,"complexity":10,"composite":0.17543859649122806}
+[2025-11-04 14:01:21] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_engine_LXXIV_prime.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_mutation_engine_LXXIV_prime.py","lines":58,"complexity":8,"composite":0.13793103448275862}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_signal_feedback_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_signal_feedback_simulator_v0.1_james_jackson.py","lines":47,"complexity":9,"composite":0.19148936170212766}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_archive_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_legacy_archive_compiler_v0.1_james_jackson.py","lines":68,"complexity":7,"composite":0.10294117647058823}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py","lines":46,"complexity":7,"composite":0.15217391304347827}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_memory_attractor_stabilizer_v0.1_james_jackson.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_memory_attractor_stabilizer_v0.1_james_jackson.py","lines":44,"complexity":7,"composite":0.1590909090909091}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_bloom_propagator_v0.1_james_jackson.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_bloom_propagator_v0.1_james_jackson.py","lines":65,"complexity":10,"composite":0.15384615384615385}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.1_james_jackson.py
+[2025-11-04 14:01:22] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.1_james_jackson.py","lines":137,"complexity":13,"composite":0.0948905109489051}
+[2025-11-04 14:01:22] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.2_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.2_james_jackson.py","lines":168,"complexity":13,"composite":0.07738095238095238}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.3_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.3_james_jackson.py","lines":160,"complexity":19,"composite":0.11875}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.4_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.4_james_jackson.py","lines":192,"complexity":22,"composite":0.11458333333333333}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson.py","lines":64,"complexity":10,"composite":0.15625}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_resonance_index_v0.1_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_resonance_index_v0.1_james_jackson.py","lines":48,"complexity":7,"composite":0.14583333333333334}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_router_v0.1_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_router_v0.1_james_jackson.py","lines":67,"complexity":11,"composite":0.16417910447761194}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson.py","lines":103,"complexity":15,"composite":0.14563106796116504}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_mutation_cascade_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:23] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_mutation_cascade_simulator_v0.1_james_jackson.py","lines":68,"complexity":10,"composite":0.14705882352941177}
+[2025-11-04 14:01:23] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_organism_runtime_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_organism_runtime_v0.1_james_jackson.py","lines":82,"complexity":15,"composite":0.18292682926829268}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson.py","lines":54,"complexity":7,"composite":0.12962962962962962}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_performance_regression_tester_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_performance_regression_tester_v0.1_james_jackson.py","lines":103,"complexity":10,"composite":0.0970873786407767}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson.py","lines":46,"complexity":7,"composite":0.15217391304347827}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_law_mapper_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_petal_law_mapper_v0.1_james_jackson.py","lines":46,"complexity":6,"composite":0.13043478260869565}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_signal_memory_binder_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_petal_signal_memory_binder_v0.1_james_jackson.py","lines":41,"complexity":7,"composite":0.17073170731707318}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_echo_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:24] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_echo_simulator_v0.1_james_jackson.py","lines":47,"complexity":8,"composite":0.1702127659574468}
+[2025-11-04 14:01:24] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_glyph_recomposer_v0.1_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_glyph_recomposer_v0.1_james_jackson.py","lines":93,"complexity":7,"composite":0.07526881720430108}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson.py","lines":54,"complexity":7,"composite":0.12962962962962962}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson.py","lines":50,"complexity":7,"composite":0.14}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson.py","lines":163,"complexity":11,"composite":0.06748466257668712}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson.py","lines":40,"complexity":8,"composite":0.2}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson.py","lines":83,"complexity":10,"composite":0.12048192771084337}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson.py","lines":117,"complexity":11,"composite":0.09401709401709402}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_stress_tester_v0.1_james_jackson.py
+[2025-11-04 14:01:25] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_stress_tester_v0.1_james_jackson.py","lines":89,"complexity":10,"composite":0.11235955056179775}
+[2025-11-04 14:01:25] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_memory_threader_v0.1_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_memory_threader_v0.1_james_jackson.py","lines":53,"complexity":10,"composite":0.18867924528301888}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_pulse_harmonizer_v0.1_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_pulse_harmonizer_v0.1_james_jackson.py","lines":53,"complexity":9,"composite":0.16981132075471697}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_reflection_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_reflection_engine_v0.1_james_jackson.py","lines":47,"complexity":6,"composite":0.1276595744680851}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_bridge_v0.1_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_quantum_symbolic_bridge_v0.1_james_jackson.py","lines":50,"complexity":8,"composite":0.16}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson.py","lines":157,"complexity":21,"composite":0.1337579617834395}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson.py","lines":190,"complexity":24,"composite":0.12631578947368421}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_reality_integrity_validator_v0.1_james_jackson.py
+[2025-11-04 14:01:26] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_reality_integrity_validator_v0.1_james_jackson.py","lines":118,"complexity":11,"composite":0.09322033898305085}
+[2025-11-04 14:01:26] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_bloom_compiler_v0.1_james_jackson.py","lines":52,"complexity":6,"composite":0.11538461538461539}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_scheduler_v0.1_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_bloom_scheduler_v0.1_james_jackson.py","lines":54,"complexity":10,"composite":0.18518518518518517}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.1_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.1_james_jackson.py","lines":70,"complexity":10,"composite":0.14285714285714285}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.2_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.2_james_jackson.py","lines":108,"complexity":13,"composite":0.12037037037037036}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.3_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.3_james_jackson.py","lines":140,"complexity":18,"composite":0.12857142857142856}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.4_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.4_james_jackson.py","lines":130,"complexity":14,"composite":0.1076923076923077}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.5_james_jackson.py
+[2025-11-04 14:01:27] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.5_james_jackson.py","lines":156,"complexity":14,"composite":0.08974358974358974}
+[2025-11-04 14:01:27] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.6_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.6_james_jackson.py","lines":196,"complexity":13,"composite":0.0663265306122449}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson.py","lines":105,"complexity":9,"composite":0.08571428571428572}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson.py","lines":53,"complexity":6,"composite":0.11320754716981132}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_glyph_translator_v0.1_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_glyph_translator_v0.1_james_jackson.py","lines":46,"complexity":5,"composite":0.10869565217391304}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_law_compiler_v0.1_james_jackson.py","lines":54,"complexity":7,"composite":0.12962962962962962}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson.py","lines":51,"complexity":6,"composite":0.11764705882352941}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_petal_resonator_v0.1_james_jackson.py
+[2025-11-04 14:01:28] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_petal_resonator_v0.1_james_jackson.py","lines":43,"complexity":5,"composite":0.11627906976744186}
+[2025-11-04 14:01:28] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_temporal_topological_analyzer_v0.1_james_jackson.py
+[2025-11-04 14:01:29] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_temporal_topological_analyzer_v0.1_james_jackson.py","lines":94,"complexity":10,"composite":0.10638297872340426}
+[2025-11-04 14:01:29] FATAL: Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+[2025-11-04 14:01:29] TRB v2.8 END - duration_seconds=11.8
+[2025-11-04 14:01:33] TRB v2.8 START
+[2025-11-04 14:01:34] Python helper written: C:\Users\jacks\AppData\Local\Temp\codex_trb_helper_v2_8_b1e33cb9-1fe6-4c31-bd50-99582b628544.py
+[2025-11-04 14:01:34] Found 80 python files.
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_authorship_chain_verifier_v0.1_james_jackson.py
+[2025-11-04 14:01:34] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_authorship_chain_verifier_v0.1_james_jackson.py","lines":56,"complexity":7,"composite":0.125}
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_authorship_resonance_auditor_v0.1_james_jackson.py
+[2025-11-04 14:01:34] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_authorship_resonance_auditor_v0.1_james_jackson.py","lines":45,"complexity":7,"composite":0.15555555555555556}
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_authorship_verification_protocol_v0.1_james_jackson.py
+[2025-11-04 14:01:34] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_authorship_verification_protocol_v0.1_james_jackson.py","lines":45,"complexity":6,"composite":0.13333333333333333}
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_chronograph_growth_forecaster_v0.1_james_jackson.py
+[2025-11-04 14:01:34] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_chronograph_growth_forecaster_v0.1_james_jackson.py","lines":52,"complexity":7,"composite":0.1346153846153846}
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_identity_synthesizer_v0.1_james_jackson.py
+[2025-11-04 14:01:34] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_identity_synthesizer_v0.1_james_jackson.py","lines":50,"complexity":7,"composite":0.14}
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_mutation_editor_v0.1_james_jackson.py
+[2025-11-04 14:01:34] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_mutation_editor_v0.1_james_jackson.py","lines":52,"complexity":8,"composite":0.15384615384615385}
+[2025-11-04 14:01:34] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_mutation_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_mutation_visualizer_v0.1_james_jackson.py","lines":76,"complexity":7,"composite":0.09210526315789473}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_performance_dashboard_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_performance_dashboard_v0.1_james_jackson.py","lines":83,"complexity":9,"composite":0.10843373493975904}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_portal_synchronization_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_portal_synchronization_engine_v0.1_james_jackson.py","lines":43,"complexity":6,"composite":0.13953488372093023}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_entanglement_tracker_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_signal_entanglement_tracker_v0.1_james_jackson.py","lines":44,"complexity":6,"composite":0.13636363636363635}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_signal_law_feedback_grid_enhancer_v0.1_james_jackson.py","lines":72,"complexity":9,"composite":0.125}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_bloom_signal_law_feedback_grid_v0.1_james_jackson.py","lines":72,"complexity":7,"composite":0.09722222222222222}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.1_james_jackson.py
+[2025-11-04 14:01:35] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_cross_module_dependency_mapper_v0.1_james_jackson.py","lines":66,"complexity":8,"composite":0.12121212121212122}
+[2025-11-04 14:01:35] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_cross_module_dependency_mapper_v0.2_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_cross_module_dependency_mapper_v0.2_james_jackson.py","lines":126,"complexity":9,"composite":0.07142857142857142}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_evolution_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_curvature_evolution_visualizer_v0.1_james_jackson.py","lines":58,"complexity":11,"composite":0.1896551724137931}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_curvature_signal_feedback_loop_v0.1_james_jackson.py","lines":62,"complexity":10,"composite":0.16129032258064516}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_dimensional_cartography_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_dimensional_cartography_engine_v0.1_james_jackson.py","lines":65,"complexity":11,"composite":0.16923076923076924}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_feedback_resonance_analyzer_v0.1_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_feedback_resonance_analyzer_v0.1_james_jackson.py","lines":43,"complexity":6,"composite":0.13953488372093023}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_glyph_cycle_synchronizer_v0.1_james_jackson.py","lines":55,"complexity":8,"composite":0.14545454545454545}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_glyph_trail_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:36] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_glyph_trail_visualizer_v0.1_james_jackson.py","lines":49,"complexity":9,"composite":0.1836734693877551}
+[2025-11-04 14:01:36] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_cartography_hub_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_interdimensional_cartography_hub_v0.1_james_jackson.py","lines":62,"complexity":8,"composite":0.12903225806451613}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interdimensional_network_router_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_interdimensional_network_router_v0.1_james_jackson.py","lines":89,"complexity":13,"composite":0.14606741573033707}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_interface_bloom_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_interface_bloom_compiler_v0.1_james_jackson.py","lines":65,"complexity":8,"composite":0.12307692307692308}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_kernel_cycle_simulator_v0.1_james_jackson.py","lines":86,"complexity":15,"composite":0.1744186046511628}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_kernel_interface_feedback_loop_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_kernel_interface_feedback_loop_v0.1_james_jackson.py","lines":42,"complexity":7,"composite":0.16666666666666666}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_archive_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_archive_compiler_v0.1_james_jackson.py","lines":59,"complexity":9,"composite":0.15254237288135594}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_compiler_chipset_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_compiler_chipset_v0.1_james_jackson.py","lines":53,"complexity":6,"composite":0.11320754716981132}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_cascade_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:37] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_mutation_cascade_engine_v0.1_james_jackson.py","lines":57,"complexity":10,"composite":0.17543859649122806}
+[2025-11-04 14:01:37] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_mutation_engine_LXXIV_prime.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_mutation_engine_LXXIV_prime.py","lines":58,"complexity":8,"composite":0.13793103448275862}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_law_signal_feedback_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_law_signal_feedback_simulator_v0.1_james_jackson.py","lines":47,"complexity":9,"composite":0.19148936170212766}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_archive_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_legacy_archive_compiler_v0.1_james_jackson.py","lines":68,"complexity":7,"composite":0.10294117647058823}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_legacy_pulse_beacon_v0.1_james_jackson.py","lines":46,"complexity":7,"composite":0.15217391304347827}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_memory_attractor_stabilizer_v0.1_james_jackson.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_memory_attractor_stabilizer_v0.1_james_jackson.py","lines":44,"complexity":7,"composite":0.1590909090909091}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_bloom_propagator_v0.1_james_jackson.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_bloom_propagator_v0.1_james_jackson.py","lines":65,"complexity":10,"composite":0.15384615384615385}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.1_james_jackson.py
+[2025-11-04 14:01:38] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.1_james_jackson.py","lines":137,"complexity":13,"composite":0.0948905109489051}
+[2025-11-04 14:01:38] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.2_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.2_james_jackson.py","lines":168,"complexity":13,"composite":0.07738095238095238}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.3_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.3_james_jackson.py","lines":160,"complexity":19,"composite":0.11875}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_congestion_manager_v0.4_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_congestion_manager_v0.4_james_jackson.py","lines":192,"complexity":22,"composite":0.11458333333333333}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_mutation_visualizer_v0.1_james_jackson.py","lines":64,"complexity":10,"composite":0.15625}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_resonance_index_v0.1_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_resonance_index_v0.1_james_jackson.py","lines":48,"complexity":7,"composite":0.14583333333333334}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_router_v0.1_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_router_v0.1_james_jackson.py","lines":67,"complexity":11,"composite":0.16417910447761194}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson.py
+[2025-11-04 14:01:39] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_multiverse_signal_exchange_coordinator_v0.1_james_jackson.py","lines":103,"complexity":15,"composite":0.14563106796116504}
+[2025-11-04 14:01:39] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_mutation_cascade_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_mutation_cascade_simulator_v0.1_james_jackson.py","lines":68,"complexity":10,"composite":0.14705882352941177}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_organism_runtime_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_organism_runtime_v0.1_james_jackson.py","lines":82,"complexity":15,"composite":0.18292682926829268}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_origin_mutation_resonance_synthesizer_v0.1_james_jackson.py","lines":54,"complexity":7,"composite":0.12962962962962962}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_performance_regression_tester_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_performance_regression_tester_v0.1_james_jackson.py","lines":103,"complexity":10,"composite":0.0970873786407767}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_petal_echo_law_memory_threader_v0.1_james_jackson.py","lines":46,"complexity":7,"composite":0.15217391304347827}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_law_mapper_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_petal_law_mapper_v0.1_james_jackson.py","lines":46,"complexity":6,"composite":0.13043478260869565}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_petal_signal_memory_binder_v0.1_james_jackson.py
+[2025-11-04 14:01:40] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_petal_signal_memory_binder_v0.1_james_jackson.py","lines":41,"complexity":7,"composite":0.17073170731707318}
+[2025-11-04 14:01:40] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_echo_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_echo_simulator_v0.1_james_jackson.py","lines":47,"complexity":8,"composite":0.1702127659574468}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_glyph_recomposer_v0.1_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_glyph_recomposer_v0.1_james_jackson.py","lines":93,"complexity":7,"composite":0.07526881720430108}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_continuity_auditor_v0.1_james_jackson.py","lines":54,"complexity":7,"composite":0.12962962962962962}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_integrity_scanner_v0.1_james_jackson.py","lines":50,"complexity":7,"composite":0.14}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.1_james_jackson.py","lines":163,"complexity":11,"composite":0.06748466257668712}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.2_james_jackson.py","lines":40,"complexity":8,"composite":0.2}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.3_james_jackson.py","lines":83,"complexity":10,"composite":0.12048192771084337}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson.py
+[2025-11-04 14:01:41] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_resilience_auditor_v0.4_james_jackson.py","lines":117,"complexity":11,"composite":0.09401709401709402}
+[2025-11-04 14:01:41] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_kernel_stress_tester_v0.1_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_kernel_stress_tester_v0.1_james_jackson.py","lines":89,"complexity":10,"composite":0.11235955056179775}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_memory_threader_v0.1_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_memory_threader_v0.1_james_jackson.py","lines":53,"complexity":10,"composite":0.18867924528301888}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_pulse_harmonizer_v0.1_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_pulse_harmonizer_v0.1_james_jackson.py","lines":53,"complexity":9,"composite":0.16981132075471697}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_portal_reflection_engine_v0.1_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_portal_reflection_engine_v0.1_james_jackson.py","lines":47,"complexity":6,"composite":0.1276595744680851}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_bridge_v0.1_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_quantum_symbolic_bridge_v0.1_james_jackson.py","lines":50,"complexity":8,"composite":0.16}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_quantum_symbolic_feedback_integrator_v0.1_james_jackson.py","lines":157,"complexity":21,"composite":0.1337579617834395}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson.py
+[2025-11-04 14:01:42] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_quantum_symbolic_feedback_integrator_v0.2_james_jackson.py","lines":190,"complexity":24,"composite":0.12631578947368421}
+[2025-11-04 14:01:42] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_reality_integrity_validator_v0.1_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_reality_integrity_validator_v0.1_james_jackson.py","lines":118,"complexity":11,"composite":0.09322033898305085}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_bloom_compiler_v0.1_james_jackson.py","lines":52,"complexity":6,"composite":0.11538461538461539}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_bloom_scheduler_v0.1_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_bloom_scheduler_v0.1_james_jackson.py","lines":54,"complexity":10,"composite":0.18518518518518517}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.1_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.1_james_jackson.py","lines":70,"complexity":10,"composite":0.14285714285714285}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.2_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.2_james_jackson.py","lines":108,"complexity":13,"composite":0.12037037037037036}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.3_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.3_james_jackson.py","lines":140,"complexity":18,"composite":0.12857142857142856}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.4_james_jackson.py
+[2025-11-04 14:01:43] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.4_james_jackson.py","lines":130,"complexity":14,"composite":0.1076923076923077}
+[2025-11-04 14:01:43] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.5_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.5_james_jackson.py","lines":156,"complexity":14,"composite":0.08974358974358974}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_healing_protocol_v0.6_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_healing_protocol_v0.6_james_jackson.py","lines":196,"complexity":13,"composite":0.0663265306122449}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_kernel_pulse_simulator_v0.1_james_jackson.py","lines":105,"complexity":9,"composite":0.08571428571428572}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_recursive_quantum_symbolic_convergence_accelerator_v0.1_james_jackson.py","lines":53,"complexity":6,"composite":0.11320754716981132}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_glyph_translator_v0.1_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_glyph_translator_v0.1_james_jackson.py","lines":46,"complexity":5,"composite":0.10869565217391304}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_compiler_v0.1_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_law_compiler_v0.1_james_jackson.py","lines":54,"complexity":7,"composite":0.12962962962962962}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson.py
+[2025-11-04 14:01:44] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_law_petal_triad_mapper_v0.1_james_jackson.py","lines":51,"complexity":6,"composite":0.11764705882352941}
+[2025-11-04 14:01:44] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_signal_petal_resonator_v0.1_james_jackson.py
+[2025-11-04 14:01:45] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_signal_petal_resonator_v0.1_james_jackson.py","lines":43,"complexity":5,"composite":0.11627906976744186}
+[2025-11-04 14:01:45] Processing: C:\Users\jacks\OneDrive\Desktop\Codex Web\jackson_os_kernel\jackson_os_temporal_topological_analyzer_v0.1_james_jackson.py
+[2025-11-04 14:01:45] Python output: {"file":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\jackson_os_kernel\\jackson_os_temporal_topological_analyzer_v0.1_james_jackson.py","lines":94,"complexity":10,"composite":0.10638297872340426}
+[2025-11-04 14:01:45] FATAL: Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'FilePath'. Specified method is not supported.
+[2025-11-04 14:01:45] TRB v2.8 END - duration_seconds=11.6
