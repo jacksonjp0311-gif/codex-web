@@ -1,0 +1,27 @@
+﻿{
+    "version":  "3.6",
+    "type":  "Adaptive Resonance Calibration",
+    "timestamp":  "20251106_043930",
+    "priorVersion":  "3.5",
+    "alignmentScore":  99.946,
+    "avgMean":  0.025116549099384138,
+    "varianceSpread":  0.00053930079114590838,
+    "stability":  "harmonized",
+    "layers":  [
+                   {
+                       "layer":  "low",
+                       "finalMean":  0.025116549099384138,
+                       "finalVariance":  0.00015656048703979503
+                   },
+                   {
+                       "layer":  "mid",
+                       "finalMean":  0.025116549099384138,
+                       "finalVariance":  0.00058706627603219
+                   },
+                   {
+                       "layer":  "high",
+                       "finalMean":  0.025116549099384138,
+                       "finalVariance":  4.7765484886281545E-05
+                   }
+               ]
+}
