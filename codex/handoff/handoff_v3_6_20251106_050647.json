@@ -1,0 +1,15 @@
+﻿{
+    "version":  "v3.6",
+    "author":  "James Paul Jackson",
+    "origin":  "Codex root",
+    "manifest_ref":  "codex_v3_6_manifest_20251106_050647.json",
+    "metrics":  {
+                    "I":  0.991752,
+                    "activation":  0.989685,
+                    "variance":  1.2E-05,
+                    "H":  0.997962,
+                    "C":  0.989733,
+                    "mean":  0.993149
+                },
+    "timestamp":  "20251106_050647"
+}
