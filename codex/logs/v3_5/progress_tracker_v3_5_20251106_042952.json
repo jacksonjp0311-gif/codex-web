@@ -1,0 +1,13 @@
+﻿{
+    "run":  "v3.5",
+    "timestamp":  "20251106_042952",
+    "steps":  [
+
+              ],
+    "overall":  {
+                    "activationIndex":  0,
+                    "status":  "emergent",
+                    "mean":  0,
+                    "dispersion":  0
+                }
+}

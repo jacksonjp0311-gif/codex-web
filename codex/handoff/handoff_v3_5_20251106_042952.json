@@ -1,0 +1,24 @@
+﻿{
+    "handoff_version":  "v3.5",
+    "timestamp":  "20251106_042952",
+    "manifest_ref":  "codex_v3_5_manifest_20251106_042952.json",
+    "manifest":  {
+                     "version":  "v3.5",
+                     "phase":  "Resonant Integration",
+                     "timestamp":  "20251106_042952",
+                     "metrics":  {
+                                     "I":  null,
+                                     "dispersion":  0,
+                                     "H":  null,
+                                     "C":  null,
+                                     "mean":  0,
+                                     "continuumCoupling":  0,
+                                     "activationIndex":  0
+                                 },
+                     "notes":  "Automated v3.5 integration snapshot"
+                 },
+    "provenance":  {
+                       "author":  "James Paul Jackson",
+                       "origin":  "codex root runner"
+                   }
+}
