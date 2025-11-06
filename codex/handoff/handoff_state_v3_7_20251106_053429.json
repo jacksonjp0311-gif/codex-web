@@ -1,0 +1,76 @@
+﻿{
+    "latest_evolution":  null,
+    "registry":  {
+                     "last_evolution":  "20251105_180618",
+                     "active_version":  "v2.0",
+                     "hre_snapshot":  {
+                                          "timestamp":  "20251105_185317",
+                                          "handoff":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\handoff\\handoff_v3_3_hre_20251105_185317.json",
+                                          "manifest":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\hre_v3\\codex_v3_3_hre_manifest_20251105_185317.json"
+                                      }
+                 },
+    "meta":  {
+                 "codex_phase":  "Handoff Synchronization Point",
+                 "timestamp":  "20251106_053429",
+                 "author":  "James Paul Jackson",
+                 "version":  "v3.7",
+                 "origin":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web"
+             },
+    "harmonics":  {
+                      "CII":  0.990963,
+                      "status":  "stabilized",
+                      "HΦ":  0.99771
+                  },
+    "latest_logs":  [
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_6\\progress_v3_6_20251106_050647.json",
+                            "name":  "progress_v3_6_20251106_050647.json",
+                            "modified":  "\/Date(1762423607925)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_6\\codex_v3_6_manifest_20251106_050647.json",
+                            "name":  "codex_v3_6_manifest_20251106_050647.json",
+                            "modified":  "\/Date(1762423607905)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_6\\progress_v3_6_20251106_045016.json",
+                            "name":  "progress_v3_6_20251106_045016.json",
+                            "modified":  "\/Date(1762422617165)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_6\\codex_v3_6_manifest_20251106_045016.json",
+                            "name":  "codex_v3_6_manifest_20251106_045016.json",
+                            "modified":  "\/Date(1762422617145)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_6\\codex_v3_6_manifest_20251106_043930.json",
+                            "name":  "codex_v3_6_manifest_20251106_043930.json",
+                            "modified":  "\/Date(1762421976930)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_5\\codex_v3_5_manifest_20251106_043547.json",
+                            "name":  "codex_v3_5_manifest_20251106_043547.json",
+                            "modified":  "\/Date(1762421748734)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_5\\progress_tracker_v3_5_20251106_042952.json",
+                            "name":  "progress_tracker_v3_5_20251106_042952.json",
+                            "modified":  "\/Date(1762421392610)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\v3_5\\codex_v3_5_manifest_20251106_042952.json",
+                            "name":  "codex_v3_5_manifest_20251106_042952.json",
+                            "modified":  "\/Date(1762421392229)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\rrb_v3\\codex_v3_4_rrb_manifest_20251105_190831.json",
+                            "name":  "codex_v3_4_rrb_manifest_20251105_190831.json",
+                            "modified":  "\/Date(1762387711236)\/"
+                        },
+                        {
+                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\logs\\hre_v3\\codex_v3_3_hre_manifest_20251105_185317.json",
+                            "name":  "codex_v3_3_hre_manifest_20251105_185317.json",
+                            "modified":  "\/Date(1762386798104)\/"
+                        }
+                    ]
+}
