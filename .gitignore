@@ -34,3 +34,8 @@ desktop.ini
 *.dat
 
 # End of Codex .gitignore
+
+# Allow Codex logs and handoffs to be tracked
+!codex/logs/**
+!codex/handoff/**
+!codex/evolution/**
