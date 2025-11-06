@@ -1,0 +1,8 @@
+﻿Codex Git Cleanup Log — 11/06/2025 13:51:44
+==================================
+Root Path: C:\Users\jacks\OneDrive\Desktop\Codex Web
+Moved Files: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\handoff\codex_full_dump_20251106_101222.txt
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\handoff\codex_full_dump_20251106_120458.txt
+Backup Directory: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\evolution\backups\heavy_dumps
+Log Path: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\handoff\codex_git_cleanup_log_20251106_134758.txt
+Git Push: Completed (pending verification)
