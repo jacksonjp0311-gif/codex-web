@@ -1,0 +1,10 @@
+﻿{
+    "stability":  "sustained",
+    "timestamp":  "20251105_190831",
+    "maxVariance":  6.8012016653846154E-06,
+    "finalMean":  -0.00021246028650744722,
+    "meanDrift":  -0.00021246028650744722,
+    "codexVersion":  "v3.4",
+    "mode":  "RRB",
+    "seed":  "RRB-4def13e9"
+}
