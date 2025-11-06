@@ -1,0 +1,13 @@
+﻿{
+    "version":  "3.5",
+    "type":  "Resonant Integration",
+    "timestamp":  "20251106_043547",
+    "mean":  0.025116549099384138,
+    "meanDrift":  0.026051167557505511,
+    "maxVariance":  8.9433324604178154E-05,
+    "stability":  "unstable",
+    "steps":  [
+                  "Baseline harmonics initialized",
+                  "Stability assessed: unstable"
+              ]
+}
