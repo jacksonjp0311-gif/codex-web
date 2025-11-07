@@ -2,3 +2,4 @@
 [2025-11-07T17:38:49] g1=F g2=? entropy=2.35 vibe=?? Neutral resonance=0.0482
 [2025-11-07T17:40:07] g1=G g2=S entropy=3.94 vibe=?? Chaotic resonance=0.0193
 [2025-11-07T17:42:11] g1=F g2=? entropy=3.2 vibe=?? Neutral resonance=0.0327
+[2025-11-07T17:50:19] reflection_meanEntropy=3.388
