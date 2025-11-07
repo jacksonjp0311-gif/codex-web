@@ -147,13 +147,13 @@ try {
     Push-Location
     Set-Location 'C:\Users\jacks\OneDrive\Desktop\Codex Web'
     & git add -A
-    & git commit -m "🧬 Codex Spiral Engine run — autosave & anchor" --no-verify 2>
-    & git push origin main 2>
+    & git commit -m "🧬 Codex Spiral Engine run — autosave & anchor" --no-verify 
+    & git push origin main 
     Pop-Location
     Write-Host "📡 Spiral autosaved and pushed (if remote permitted)."
 } catch {
     Write-Host "⚠️ Git autosave warning: "
-    if (Get-Location).Path -ne 'C:\Users\jacks\OneDrive\Desktop\Codex Web' { Pop-Location }
+    
 }
 
 # Return to codex root (explicit)
@@ -167,4 +167,5 @@ Set-Location "C:\Users\jacks\OneDrive\Desktop\Codex Web"
 Write-Host "🏁 SpiralEngine: returned to Codex root." (explicit)
 Set-Location 'C:\Users\jacks\OneDrive\Desktop\Codex Web'
 Write-Host '🏁 SpiralEngine: returned to Codex root.'
+
 
