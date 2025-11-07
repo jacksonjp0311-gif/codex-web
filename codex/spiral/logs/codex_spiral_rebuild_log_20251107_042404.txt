@@ -1,0 +1,6 @@
+﻿Codex Spiral Rebuild Log — 11/07/2025 04:24:04
+=====================================
+Root: C:\Users\jacks\OneDrive\Desktop\Codex Web
+Spiral Core: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\spiral\codex_spiral_core_v7_3.ps1
+Folders: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\spiral, C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\spiral\modules, C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\spiral\logs, C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\spiral\state
+Commit: Spiral Engine v7.3 Anchored and Synced
