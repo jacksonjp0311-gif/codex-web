@@ -55,7 +55,21 @@ cfg = {
     "rtol": 1e-3, "atol": 1e-8,
     # PID control enabled
     "pid_mode": True,
-    "pid_params": {"Kp": 0.02, "Ki": 0.002, "Kd": 0.0005},
+    "pid_params": {"Kp": 0.02, "Ki": 0.002, "Kd": 0.0005}
+## CODEX_PARAM_OVERRIDE_START
+# optional config override
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+        # merge keys into cfg if present
+        for _k,_v in _ovr.items():
+            cfg[_k] = _v
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
+,
     # kuramoto tweaks
     "kuramoto_steps": 150, "kuramoto_beta": 3.0,
     "kuramoto_phase_lag": math.pi/6,
@@ -350,3 +364,4 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
