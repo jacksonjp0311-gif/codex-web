@@ -62,7 +62,7 @@ def _last_increase(seq, k=8):
     return float(np.nanmean(diffs)) if len(diffs)>0 else 0.0
 
 def load_handoff(path):
-    with open(path,"r",encoding="utf-8") as f:
+    with open(path,"r",encoding="utf-8-sig") as f:
         return json.load(f)
 
 def extract_traces(handoff):
@@ -128,7 +128,7 @@ def plot_forecast(name, hist, fut, h7, out_png):
     plt.close()
 
 def main():
-    stamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    stamp = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     if not os.path.exists(HANDOFF):
         raise FileNotFoundError(f"handoff_state.json not found at {HANDOFF}")
     h = load_handoff(HANDOFF)
@@ -199,3 +199,5 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
