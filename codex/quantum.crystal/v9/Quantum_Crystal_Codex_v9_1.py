@@ -193,11 +193,11 @@ def kuramoto_quantum(psi, K_base=1.0, steps=150, dt_k=0.02, beta=3.0, phase_lag=
     omega = np.random.normal(0, 0.1, N)
     r_hist = []
     for _ in range(steps):
-    sin_terms = np.sin(theta[None,:] - theta[:,None] - phase_lag)
+        sin_terms = np.sin(theta[None,:] - theta[:,None] - phase_lag)
         coupling = np.sum(K_mat * sin_terms, axis=1)
         theta += dt_k * (omega + coupling)
         r_hist.append(float(np.abs(np.mean(np.exp(1j*theta)))))
-    return np.array(r_hist)
+        return np.array(r_hist)
 
 # ---------------------------
 # Alpha adapters (PID with smoothing)
@@ -454,6 +454,8 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
 
 
 
