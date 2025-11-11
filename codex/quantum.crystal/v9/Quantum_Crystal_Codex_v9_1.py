@@ -260,26 +260,27 @@ def run_single(seed:int, run_id:int, save_png=True):
     t=0.0; dt_local = cfg["dt"]; start_time = time.time()
     for step_idx in range(cfg["timesteps"]):
         if cfg["max_runtime_seconds"] and (time.time()-start_time) > cfg["max_runtime_seconds"]:
-        break
+            break
     Wt_val = cfg["W_base"] + cfg["W_amp"]*math.sin(2.0*math.pi*(t/cfg["W_period"]))
-        H = build_H_dense(cfg["t_hop"], cfg["t_z"], Wt_val)
-        psi, (E_n,I_n,C_n,Phi_n) = if_rk4_step(psi, H, dt_local, alpha_total)
-        T.append(t); Wt.append(Wt_val); E_t.append(E_n); I_t.append(I_n); C_t.append(C_n); Phi_t.append(Phi_n)
-        aE_t.append(alpha_E); aI_t.append(alpha_I); aC_t.append(alpha_C); aTot_t.append(alpha_total)
-        r_hist = kuramoto_quantum(psi, K_base=1.0, steps=min(cfg["kuramoto_steps"],80),
-                                  dt_k=0.02,beta=cfg["kuramoto_beta"],
+    H = build_H_dense(cfg["t_hop"], cfg["t_z"], Wt_val)
+    psi, (E_n,I_n,C_n,Phi_n) = if_rk4_step(psi, H, dt_local, alpha_total)
+    T.append(t); Wt.append(Wt_val); E_t.append(E_n); I_t.append(I_n); C_t.append(C_n); Phi_t.append(Phi_n)
+    aE_t.append(alpha_E); aI_t.append(alpha_I); aC_t.append(alpha_C); aTot_t.append(alpha_total)
+    r_hist = kuramoto_quantum(psi, K_base=1.0, steps=min(cfg["kuramoto_steps"],80),
+    dt_k=0.02,beta=cfg["kuramoto_beta"],
                                   phase_lag=cfg["kuramoto_phase_lag"],
                                   jitter=cfg["initial_phase_jitter"])
-        r_t.append(float(np.mean(r_hist[-10:])))
-        Phi_recent = float(np.mean(Phi_t[-8:])) if len(Phi_t)>0 else Phi_n
-        C_recent = float(np.mean(C_t[-8:])) if len(C_t)>0 else C_n
-        alpha_E, alpha_I, alpha_C = adapt_alphas_PID(alpha_E, alpha_I, alpha_C, Phi_recent, C_recent, pid_state)
-        alpha_total = combine_alpha(alpha_E, alpha_I, alpha_C)
-        cfg["eta_E"] *= cfg["alpha_anneal_factor"]; cfg["eta_I"] *= cfg["alpha_anneal_factor"]; cfg["eta_C"] *= cfg["alpha_anneal_factor"]
-        if len(aTot_t)>0 and abs(alpha_total - aTot_t[-1]) > 0.12:
+    r_t.append(float(np.mean(r_hist[-10:])))
+    Phi_recent = float(np.mean(Phi_t[-8:])) if len(Phi_t)>0 else Phi_n
+    C_recent = float(np.mean(C_t[-8:])) if len(C_t)>0 else C_n
+    alpha_E, alpha_I, alpha_C = adapt_alphas_PID(alpha_E, alpha_I, alpha_C, Phi_recent, C_recent, pid_state)
+    alpha_total = combine_alpha(alpha_E, alpha_I, alpha_C)
+    cfg["eta_E"] *= cfg["alpha_anneal_factor"]; cfg["eta_I"] *= cfg["alpha_anneal_factor"]; cfg["eta_C"] *= cfg["alpha_anneal_factor"]
+    if len(aTot_t)>0 and abs(alpha_total - aTot_t[-1]) > 0.12:
+    pass  # placeholder for empty if-body
     alpha_total = max(min(alpha_total, cfg["alpha_max"]), cfg["alpha_min"])
-            cfg["eta_E"] *= 0.5; cfg["eta_I"] *= 0.5; cfg["eta_C"] *= 0.5
-        t += dt_local
+    cfg["eta_E"] *= 0.5; cfg["eta_I"] *= 0.5; cfg["eta_C"] *= 0.5
+    t += dt_local
     # summary + save
     Phi_mean = float(np.mean(Phi_t)) if len(Phi_t)>0 else 0.0
     C_mean   = float(np.mean(C_t))   if len(C_t)>0 else 0.0
@@ -454,6 +455,16 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
+
+
+
+
+
+
+
+
 
 
 
