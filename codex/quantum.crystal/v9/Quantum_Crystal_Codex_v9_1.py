@@ -113,7 +113,7 @@ def neighbors_3d(i):
     x = rem % Lx
     nbrs=[]
     for dx,dy,dz in ((1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)):
-    nx,ny,nz = x+dx, y+dy, z+dz
+        nx,ny,nz = x+dx, y+dy, z+dz
         nx%=Lx; ny%=Ly; nz%=Lz
         nbrs.append(idx3(nx,ny,nz))
     return nbrs
@@ -454,6 +454,10 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
+
+
 
 
 
