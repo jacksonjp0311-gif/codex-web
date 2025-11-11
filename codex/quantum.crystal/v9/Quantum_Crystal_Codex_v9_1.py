@@ -158,8 +158,8 @@ def expL_action(evals, evecs, tau, vec):
     return evecs @ (np.exp(-1j * evals * tau) * (evecs.conj().T @ vec))
 
 def if_rk4_step(psi, H, dt, alpha_total):
-    evals, evecs = compute_eig(H)
-    V = evecs; Vh = V.conj().T
+        evals, evecs = compute_eig(H)
+        V = evecs; Vh = V.conj().T
     def expL(tau, v):
         return V @ (np.exp(-1j * evals * tau) * (Vh @ v))
         def N(vec):
@@ -169,22 +169,22 @@ def if_rk4_step(psi, H, dt, alpha_total):
         Phi_loc = resonance_phi_direct(E_loc, I_loc, C_loc, vec)
         return -1j * alpha_total * Phi_loc * vec, (E_loc, I_loc, C_loc, Phi_loc)
         N1, m1 = N(psi)
-    a = expL(dt/2.0, psi + (dt/2.0) * N1)
-    N2, m2 = N(a)
-    b = expL(dt/2.0, psi + (dt/2.0) * N2)
-    N3, m3 = N(b)
-    c = expL(dt, psi + dt * N3)
-    N4, m4 = N(c)
-    psi_next = expL(dt, psi) + (dt/6.0) * (expL(dt, N1) + 2*expL(dt, N2) + 2*expL(dt, N3) + expL(dt, N4))
-    psi_next = psi_next / np.linalg.norm(psi_next)
-    E_next = float(np.real(np.vdot(psi_next, H.dot(psi_next))))
-    I_next = shannon_entropy(psi_next)
-    C_next = coherence_metric(psi_next)
-    Phi_next = resonance_phi_direct(E_next, I_next, C_next, psi_next)
-    return psi_next, (E_next, I_next, C_next, Phi_next)
-# ---------------------------
-# Kuramoto mirror with phase lag + initial jitter
-# ---------------------------
+        a = expL(dt/2.0, psi + (dt/2.0) * N1)
+        N2, m2 = N(a)
+        b = expL(dt/2.0, psi + (dt/2.0) * N2)
+        N3, m3 = N(b)
+        c = expL(dt, psi + dt * N3)
+        N4, m4 = N(c)
+        psi_next = expL(dt, psi) + (dt/6.0) * (expL(dt, N1) + 2*expL(dt, N2) + 2*expL(dt, N3) + expL(dt, N4))
+        psi_next = psi_next / np.linalg.norm(psi_next)
+        E_next = float(np.real(np.vdot(psi_next, H.dot(psi_next))))
+        I_next = shannon_entropy(psi_next)
+        C_next = coherence_metric(psi_next)
+        Phi_next = resonance_phi_direct(E_next, I_next, C_next, psi_next)
+        return psi_next, (E_next, I_next, C_next, Phi_next)
+        # ---------------------------
+        # Kuramoto mirror with phase lag + initial jitter
+        # ---------------------------
 def kuramoto_quantum(psi, K_base=1.0, steps=150, dt_k=0.02, beta=3.0, phase_lag=0.0, jitter=0.0):
     w = np.abs(np.outer(psi, psi.conj()))
     wmax = np.max(w) if np.max(w)>0 else 1.0
@@ -454,6 +454,8 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
 
 
 
