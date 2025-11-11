@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251111071410
+Username: JAMES\jacks
+RunAs User: JAMES\jacks
+Configuration Name: 
+Machine: JAMES (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7352
+PSVersion: 5.1.26100.7019
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7019
+BuildVersion: 10.0.26100.7019
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+🚀 Building Codex Handoff State v0.8 — 2025-11-11_07-14-10
+🧩 Handoff state assembled → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\handoff\handoff_state.json
+
+✅ Handoff committed → 🧠 Codex Handoff State v0.8 — Quantum↔ThirdEye Merge ∿ 2025-11-11_07-14-10
+PS C:\Users\jacks\OneDrive\Desktop\Codex Web> finally {
+    Stop-Transcript | Out-Null
+    try { Set-Location $CodexRoot } catch {}
+    Write-Host "`n🏁 Returned to Codex root: $CodexRoot"
+    Write-Host "📜 Log saved → $logFile"
+}
+finally : The term 'finally' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ finally {
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (finally:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+finally : The term 'finally' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ finally {
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (finally:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jacks\OneDrive\Desktop\Codex Web> # ════════════════════════════════════════════════════════════════
+PS C:\Users\jacks\OneDrive\Desktop\Codex Web> # End of Codex Handoff State Builder v0.8
+PS C:\Users\jacks\OneDrive\Desktop\Codex Web> # ════════════════════════════════════════════════════════════════
