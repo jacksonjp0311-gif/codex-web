@@ -58,19 +58,9 @@ cfg = {
     # PID control enabled
     "pid_mode": True,
     "pid_params": {"Kp": 0.02, "Ki": 0.002, "Kd": 0.0005}
-## CODEX_PARAM_OVERRIDE_START
-# Optional Codex param override (safe)
-try:
-    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
-    if os.path.exists(_PFILE):
-        with open(_PFILE, "r", encoding="utf-8") as _f:
-        _ovr = json.load(_f)
-            for _k, _v in _ovr.items():
-        cfg[_k] = _v
-    print("[v9.1] Codex param override applied.")
-except Exception as _e:
-    print("[v9.1] Param override failed:", _e)
-## CODEX_PARAM_OVERRIDE_END
+
+
+
 
 
 
@@ -93,7 +83,19 @@ except Exception as _e:
     "ensemble_parallel": False,
     "max_runtime_seconds": None
 }
-
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
 np.random.seed(cfg["seed_base"])
 Lx, Ly, Lz = cfg["Lx"], cfg["Ly"], cfg["Lz"]
 N = Lx * Ly * Lz
@@ -302,13 +304,52 @@ def run_single(seed:int, run_id:int, save_png=True):
         "C_recent":   C_t[-20:],
         "alpha_history": {
             "E": aE_t[-50:], "I": aI_t[-50:], "C": aC_t[-50:], "total": aTot_t[-50:]
-        }
-    }
+}
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
+}
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
     meta = {
         "version": cfg["version"], "seed": seed, "run_id": run_id,
         "Lx": Lx, "Ly": Ly, "Lz": Lz, "N": N,
         "timestamp": datetime.datetime.utcnow().isoformat()+"Z"
-    }
+}
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
     trace = {
         "meta": meta, "times": T, "W_t": Wt,
         "E_t": E_t, "I_t": I_t, "C_t": C_t, "Phi_t": Phi_t,
@@ -316,7 +357,20 @@ def run_single(seed:int, run_id:int, save_png=True):
         "r_t": r_t,
         "summary": {"Phi_mean": Phi_mean, "C_mean": C_mean, "gap": gap, "r_mean": r_mean, "recommendation": rec},
         "tcl_snapshot": tcl
-    }
+}
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
     h = hashlib.md5(json.dumps(meta).encode()).hexdigest()[:8]
     fname = os.path.join(STATE_DIR, f"qcx_v9_1_{h}_seed{seed}.json")
     with open(fname, "w") as f:
@@ -358,8 +412,34 @@ def run_ensemble():
             "C_mean_ensemble": float(np.mean(C_means)),
             "C_std": float(np.std(C_means)),
             "seeds": [t["meta"]["seed"] for t in ensemble]
-        }
-    }
+}
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
+}
+## CODEX_PARAM_OVERRIDE_START
+# Optional Codex param override (safe)
+try:
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
+    if os.path.exists(_PFILE):
+        with open(_PFILE, "r", encoding="utf-8") as _f:
+            _ovr = json.load(_f)
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
+        print("[v9.1] Codex param override applied.")
+except Exception as _e:
+    print("[v9.1] Param override failed:", _e)
+## CODEX_PARAM_OVERRIDE_END
     sumfile = os.path.join(OUT_ROOT, "qcx_v9_1_ensemble_summary.json")
     with open(sumfile, "w") as f:
     json.dump(out, f, indent=2)
@@ -374,6 +454,9 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
+
 
 
 
