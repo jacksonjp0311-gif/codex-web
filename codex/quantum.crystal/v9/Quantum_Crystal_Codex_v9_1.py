@@ -6,7 +6,7 @@ quantum_crystal_codex_v9_1.py
 Quantum Crystal Codex v9.1 — Resonant Reawakening Sequence
 
 Improvements over v9:
- - energy scaling tuned (t_hop, t_z)
+    - energy scaling tuned (t_hop, t_z)
  - resonance Phi uses direct normalized product (no log)
  - PID-enabled alpha adaptation (default ON)
  - higher alpha_I and alpha_C initial values
@@ -64,13 +64,15 @@ try:
     _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
     if os.path.exists(_PFILE):
         with open(_PFILE, "r", encoding="utf-8") as _f:
-            _ovr = json.load(_f)
+        _ovr = json.load(_f)
             for _k, _v in _ovr.items():
-                cfg[_k] = _v
-        print("[v9.1] Codex param override applied.")
+        cfg[_k] = _v
+    print("[v9.1] Codex param override applied.")
 except Exception as _e:
     print("[v9.1] Param override failed:", _e)
 ## CODEX_PARAM_OVERRIDE_END
+
+
 
 
 
@@ -109,7 +111,7 @@ def neighbors_3d(i):
     x = rem % Lx
     nbrs=[]
     for dx,dy,dz in ((1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)):
-        nx,ny,nz = x+dx, y+dy, z+dz
+    nx,ny,nz = x+dx, y+dy, z+dz
         nx%=Lx; ny%=Ly; nz%=Lz
         nbrs.append(idx3(nx,ny,nz))
     return nbrs
@@ -118,8 +120,8 @@ def build_H_dense(t_hop, t_z, disorder):
     H = np.zeros((N,N), dtype=np.complex128)
     for i in range(N):
         for j in neighbors_3d(i):
-            amp = -t_z if abs(i-j) >= (Lx*Ly) else -t_hop
-            H[i,j] = amp
+        amp = -t_z if abs(i-j) >= (Lx*Ly) else -t_hop
+    H[i,j] = amp
     diag = np.random.uniform(-disorder, disorder, N)
     H[np.diag_indices(N)] += diag
     return H
@@ -157,9 +159,9 @@ def if_rk4_step(psi, H, dt, alpha_total):
     evals, evecs = compute_eig(H)
     V = evecs; Vh = V.conj().T
     def expL(tau, v):
-        return V @ (np.exp(-1j * evals * tau) * (Vh @ v))
+    return V @ (np.exp(-1j * evals * tau) * (Vh @ v))
     def N(vec):
-        E_loc = float(np.real(np.vdot(vec, H.dot(vec))))
+    E_loc = float(np.real(np.vdot(vec, H.dot(vec))))
         I_loc = shannon_entropy(vec)
         C_loc = coherence_metric(vec)
         Phi_loc = resonance_phi_direct(E_loc, I_loc, C_loc, vec)
@@ -189,7 +191,7 @@ def kuramoto_quantum(psi, K_base=1.0, steps=150, dt_k=0.02, beta=3.0, phase_lag=
     omega = np.random.normal(0, 0.1, N)
     r_hist = []
     for _ in range(steps):
-        sin_terms = np.sin(theta[None,:] - theta[:,None] - phase_lag)
+    sin_terms = np.sin(theta[None,:] - theta[:,None] - phase_lag)
         coupling = np.sum(K_mat * sin_terms, axis=1)
         theta += dt_k * (omega + coupling)
         r_hist.append(float(np.abs(np.mean(np.exp(1j*theta)))))
@@ -256,8 +258,8 @@ def run_single(seed:int, run_id:int, save_png=True):
     t=0.0; dt_local = cfg["dt"]; start_time = time.time()
     for step_idx in range(cfg["timesteps"]):
         if cfg["max_runtime_seconds"] and (time.time()-start_time) > cfg["max_runtime_seconds"]:
-            break
-        Wt_val = cfg["W_base"] + cfg["W_amp"]*math.sin(2.0*math.pi*(t/cfg["W_period"]))
+        break
+    Wt_val = cfg["W_base"] + cfg["W_amp"]*math.sin(2.0*math.pi*(t/cfg["W_period"]))
         H = build_H_dense(cfg["t_hop"], cfg["t_z"], Wt_val)
         psi, (E_n,I_n,C_n,Phi_n) = if_rk4_step(psi, H, dt_local, alpha_total)
         T.append(t); Wt.append(Wt_val); E_t.append(E_n); I_t.append(I_n); C_t.append(C_n); Phi_t.append(Phi_n)
@@ -273,7 +275,7 @@ def run_single(seed:int, run_id:int, save_png=True):
         alpha_total = combine_alpha(alpha_E, alpha_I, alpha_C)
         cfg["eta_E"] *= cfg["alpha_anneal_factor"]; cfg["eta_I"] *= cfg["alpha_anneal_factor"]; cfg["eta_C"] *= cfg["alpha_anneal_factor"]
         if len(aTot_t)>0 and abs(alpha_total - aTot_t[-1]) > 0.12:
-            alpha_total = max(min(alpha_total, cfg["alpha_max"]), cfg["alpha_min"])
+    alpha_total = max(min(alpha_total, cfg["alpha_max"]), cfg["alpha_min"])
             cfg["eta_E"] *= 0.5; cfg["eta_I"] *= 0.5; cfg["eta_C"] *= 0.5
         t += dt_local
     # summary + save
@@ -283,17 +285,17 @@ def run_single(seed:int, run_id:int, save_png=True):
     r_mean = float(np.mean(r_t)) if len(r_t)>0 else 0.0
 
     if C_mean > cfg["H7"] and Phi_mean > cfg["Phi_target"]:
-        rec = "resonant"
+    rec = "resonant"
     elif gap < 1e-3 and Phi_mean > 3.0:
-        rec = "crystallize"
+    rec = "crystallize"
     elif C_mean < 0.05 and Phi_mean < 1.0:
-        rec = "dormant"
+    rec = "dormant"
     elif C_mean < 0.10:
-        rec = "diffuse"
+    rec = "diffuse"
     elif Phi_mean > cfg["Phi_target"]:
-        rec = "amplify"
+    rec = "amplify"
     else:
-        rec = "stabilize"
+    rec = "stabilize"
 
     tcl = {
         "Phi_recent": Phi_t[-20:],
@@ -318,12 +320,12 @@ def run_single(seed:int, run_id:int, save_png=True):
     h = hashlib.md5(json.dumps(meta).encode()).hexdigest()[:8]
     fname = os.path.join(STATE_DIR, f"qcx_v9_1_{h}_seed{seed}.json")
     with open(fname, "w") as f:
-        json.dump(trace, f, indent=2)
+    json.dump(trace, f, indent=2)
 
     if cfg["timeseries_png"]:
         try:
-            fig, axs = plt.subplots(3,1,figsize=(9,9), sharex=True)
-            axs[0].plot(T, Phi_t); axs[0].set_ylabel("Φ(t)")
+        fig, axs = plt.subplots(3,1,figsize=(9,9), sharex=True)
+    axs[0].plot(T, Phi_t); axs[0].set_ylabel("Φ(t)")
             axs[1].plot(T, C_t); axs[1].axhline(cfg["H7"], color='r', ls='--'); axs[1].set_ylabel("C(t)")
             axs[2].plot(T, aE_t, label='αE'); axs[2].plot(T, aI_t, label='αI'); axs[2].plot(T, aC_t, label='αC')
             axs[2].legend(); axs[2].set_ylabel("α"); axs[2].set_xlabel("time")
@@ -331,7 +333,7 @@ def run_single(seed:int, run_id:int, save_png=True):
             pngn = os.path.join(VIS_DIR, f"qcx_v9_1_{h}_seed{seed}.png")
             plt.tight_layout(); plt.savefig(pngn); plt.close()
         except Exception as e:
-            print("[v9.1] PNG save failed:", e)
+    print("[v9.1] PNG save failed:", e)
 
     print(f"[v9.1] Saved -> {fname} ; rec={rec}")
     return trace
@@ -342,7 +344,7 @@ def run_single(seed:int, run_id:int, save_png=True):
 def run_ensemble():
     ensemble=[]
     for i in range(cfg["ensemble_size"]):
-        seed = cfg["seed_base"] + i
+    seed = cfg["seed_base"] + i
         print(f"[v9.1] Running seed {seed} ({i+1}/{cfg['ensemble_size']})")
         tr = run_single(seed, i, save_png=True)
         ensemble.append(tr)
@@ -360,7 +362,7 @@ def run_ensemble():
     }
     sumfile = os.path.join(OUT_ROOT, "qcx_v9_1_ensemble_summary.json")
     with open(sumfile, "w") as f:
-        json.dump(out, f, indent=2)
+    json.dump(out, f, indent=2)
     print("[v9.1] Ensemble complete:", out["ensemble_summary"])
     return out
 
@@ -372,6 +374,10 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
+
+
 
 
 
