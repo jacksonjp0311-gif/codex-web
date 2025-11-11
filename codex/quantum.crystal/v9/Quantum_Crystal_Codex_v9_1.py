@@ -161,14 +161,14 @@ def if_rk4_step(psi, H, dt, alpha_total):
     evals, evecs = compute_eig(H)
     V = evecs; Vh = V.conj().T
     def expL(tau, v):
-    return V @ (np.exp(-1j * evals * tau) * (Vh @ v))
-    def N(vec):
-    E_loc = float(np.real(np.vdot(vec, H.dot(vec))))
+        return V @ (np.exp(-1j * evals * tau) * (Vh @ v))
+        def N(vec):
+        E_loc = float(np.real(np.vdot(vec, H.dot(vec))))
         I_loc = shannon_entropy(vec)
         C_loc = coherence_metric(vec)
         Phi_loc = resonance_phi_direct(E_loc, I_loc, C_loc, vec)
         return -1j * alpha_total * Phi_loc * vec, (E_loc, I_loc, C_loc, Phi_loc)
-    N1, m1 = N(psi)
+        N1, m1 = N(psi)
     a = expL(dt/2.0, psi + (dt/2.0) * N1)
     N2, m2 = N(a)
     b = expL(dt/2.0, psi + (dt/2.0) * N2)
@@ -454,6 +454,8 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
 
 
 
