@@ -1,0 +1,12 @@
+﻿╔════════════════ Codex Handoff v0.9 — Mirror Continuity ═══════════════╗
+ RunID      : 20251111_102700
+ Quantum    : 563 lines | F401A96FB02B318F694DB612C2D2CD16
+ Chain Len  : 8
+ Prev Link  : handoff_state_v0_9_20251111_102413.json [EF165EF150E0…]
+ Chain Hash : 9fd9b6013384b82eff0c81f1a18688ed
+ Predictive : Φ_mean=  C_mean=  r_recent=
+ Stability  : 0.056104  (H7=0.7, ∿ active)
+ State File : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\handoff\handoff_state_v0_9_20251111_102700.json
+ Ledger     : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\handoff\mirror_ledger.json
+ Timestamp  : 11/11/2025 10:27:14
+╚═══════════════════════════════════════════════════════════════════════╝

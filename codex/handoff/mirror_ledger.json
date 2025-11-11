@@ -1,0 +1,13 @@
+﻿{
+    "run_id":  "20251111_103258",
+    "state_file":  "handoff_state_v0_9_20251111_103258.json",
+    "state_sha256":  "FC5FF089F9025AFC01311CA2DCE7FCA6103FD024FF1D49C4A795F9625F60546F",
+    "chain_prev_hash":  "50a84f28090a9147177651c7e1c75fa9d4c8ad23c6de638e98297cb9cbd33651",
+    "prev_ref":  {
+                     "name":  "handoff_state_v0_9_20251111_103031.json",
+                     "sha256":  "481A92932C1BC04D6A38AED53C14B5D2F4A0367C033FC0857E21FE71C93C2CC2",
+                     "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\handoff\\handoff_state_v0_9_20251111_103031.json"
+                 },
+    "stability_index":  0.048505,
+    "created":  "2025-11-11T10:33:11"
+}

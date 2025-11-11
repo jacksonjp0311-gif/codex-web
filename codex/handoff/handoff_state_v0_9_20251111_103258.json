@@ -1,0 +1,29 @@
+﻿{
+    "version":  "Codex-Handoff-v0.9",
+    "timestamp":  "20251111_103258",
+    "author":  "James Paul Jackson",
+    "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+    "quantum":  {
+                    "file":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v9\\Quantum_Crystal_Codex_v9_1.py",
+                    "lines":  563,
+                    "sha256":  "F401A96FB02B318F694DB612C2D2CD1697FC31DFEA2E1723AE57B0740205C479"
+                },
+    "mirror_continuity":  {
+                              "chain_prev_hash":  "50a84f28090a9147177651c7e1c75fa9d4c8ad23c6de638e98297cb9cbd33651",
+                              "prev_ref":  {
+                                               "name":  "handoff_state_v0_9_20251111_103031.json",
+                                               "sha256":  "481A92932C1BC04D6A38AED53C14B5D2F4A0367C033FC0857E21FE71C93C2CC2",
+                                               "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\handoff\\handoff_state_v0_9_20251111_103031.json"
+                                           },
+                              "chain_length":  10
+                          },
+    "predictive_alignment":  {
+                                 "H7":  0.7,
+                                 "phi_mean":  null,
+                                 "C_mean":  null,
+                                 "r_recent":  null,
+                                 "stability_index":  0.048505,
+                                 "status":  "absent"
+                             },
+    "placidity":  "∿ active"
+}

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import matplotlib.pyplot as plt
 import os
 import json
@@ -321,8 +321,8 @@ def run_single(seed: int, run_id: int, save_png=True):
     alpha_total = combine_alpha(alpha_E, alpha_I, alpha_C)
     cfg["eta_E"] *= cfg["alpha_anneal_factor"]; cfg["eta_I"] *= cfg["alpha_anneal_factor"]; cfg["eta_C"] *= cfg["alpha_anneal_factor"]
     if len(aTot_t) > 0 and abs(alpha_total - aTot_t[-1]) > 0.12:
-    pass  # placeholder for empty if-body
-    alpha_total = max(min(alpha_total, cfg["alpha_max"]), cfg["alpha_min"])
+        pass
+        pass  # fixed indentation under if
     cfg["eta_E"] *= 0.5; cfg["eta_I"] *= 0.5; cfg["eta_C"] *= 0.5
     t += dt_local
     # summary + save
@@ -516,6 +516,9 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
+
 
 
 

@@ -1,0 +1,41 @@
+﻿Python 3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\readline.py", line 390, in multiline_input
+    return reader.readline()
+           ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\reader.py", line 744, in readline
+    self.prepare()
+    ~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\historical_reader.py", line 306, in prepare
+    super().prepare()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\reader.py", line 584, in prepare
+    self.console.prepare()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\windows_console.py", line 348, in prepare
+    self.height, self.width = self.getheightwidth()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\windows_console.py", line 399, in getheightwidth
+    raise WinError(GetLastError())
+OSError: [WinError 6] The handle is invalid.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\readline.py", line 390, in multiline_input
+    return reader.readline()
+           ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\reader.py", line 744, in readline
+    self.prepare()
+    ~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\historical_reader.py", line 306, in prepare
+    super().prepare()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\reader.py", line 584, in prepare
+    self.console.prepare()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\windows_console.py", line 348, in prepare
+    self.height, self.width = self.getheightwidth()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\_pyrepl\windows_console.py", line 399, in getheightwidth
+    raise WinError(GetLastError())
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect.
+
