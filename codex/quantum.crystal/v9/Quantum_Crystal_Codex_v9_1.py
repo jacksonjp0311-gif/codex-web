@@ -122,8 +122,8 @@ def build_H_dense(t_hop, t_z, disorder):
     H = np.zeros((N,N), dtype=np.complex128)
     for i in range(N):
         for j in neighbors_3d(i):
-        amp = -t_z if abs(i-j) >= (Lx*Ly) else -t_hop
-    H[i,j] = amp
+            amp = -t_z if abs(i-j) >= (Lx*Ly) else -t_hop
+            H[i,j] = amp
     diag = np.random.uniform(-disorder, disorder, N)
     H[np.diag_indices(N)] += diag
     return H
@@ -454,6 +454,8 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
 
 
 
