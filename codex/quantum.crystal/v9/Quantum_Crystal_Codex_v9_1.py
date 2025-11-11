@@ -61,16 +61,18 @@ cfg = {
 ## CODEX_PARAM_OVERRIDE_START
 # Optional Codex param override (safe)
 try:
-    _PFILE = r"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex\ Web\\codex\\config\\codex_params\.json"
+    _PFILE = r"C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\config\codex_params.json"
     if os.path.exists(_PFILE):
         with open(_PFILE, "r", encoding="utf-8") as _f:
             _ovr = json.load(_f)
-        for _k, _v in _ovr.items():
-            cfg[_k] = _v
+            for _k, _v in _ovr.items():
+                cfg[_k] = _v
         print("[v9.1] Codex param override applied.")
 except Exception as _e:
     print("[v9.1] Param override failed:", _e)
 ## CODEX_PARAM_OVERRIDE_END
+
+
 
 
 
@@ -370,6 +372,8 @@ if __name__ == "__main__":
     print("Quantum Crystal Codex v9.1 — Resonant Reawakening starting")
     ensemble_out = run_ensemble()
     print("v9.1 done. Elapsed: {:.2f}s".format(time.time()-t0))
+
+
 
 
 
