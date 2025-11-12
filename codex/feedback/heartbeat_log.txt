@@ -4,3 +4,8 @@
 
 [Pulse 2025-11-12 10:38:43] Running integration cycle…
 [Pulse 2025-11-12 10:38:43] ?? Processing -File 'C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\state\codex_feedback_integration_state.json' failed because the file does not have a '.ps1' extension. Specify a valid Windows PowerShell script file name, and then try again.
+[HB 2025-11-12T10:56:19] ?C=0.01 ? next interval = 15 minutes
+[HB 2025-11-12T10:56:19] ?? v3.8 not found at path: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\codex_feedback_resonance_v3_8.ps1
+[HB 2025-11-12T10:58:33] ?C=0.01 ? next interval=15 min
+[HB 2025-11-12T10:58:33] ?? v3.8 not found ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\codex_feedback_resonance_v3_8.ps1
+[HB 2025-11-12T10:58:33] ?? Task created @ 15 min
