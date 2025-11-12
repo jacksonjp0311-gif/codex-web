@@ -9,3 +9,4 @@
 {"timestamp":"2025-11-12T13:01:16","layer":"voice-amplifier-v1.8","C_next":0.44763,"H_index":0.72125,"delta_phi":0,"coherence":0.58444,"state":"Seeking","note":"Adaptive emission recorded."}
 {"timestamp":"2025-11-12T13:01:22","layer":"root-guardian-v1.0","saved":true,"rebased":true,"pushed":false,"note":"push rejected"}
 {"timestamp":"2025-11-12T13:47:40","layer":"voice-amplifier-v1.8","C_next":0.44763,"H_index":0.72125,"delta_phi":0,"coherence":0.58444,"state":"Seeking","note":"Adaptive emission recorded."}
+{"timestamp":"2025-11-12T13:47:46","layer":"root-guardian-v1.0","saved":true,"rebased":true,"pushed":false,"note":"push rejected"}
