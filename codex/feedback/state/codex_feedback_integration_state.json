@@ -1,0 +1,19 @@
+﻿{
+    "codex_feedback_integration":  {
+                                       "version":  "v3.7",
+                                       "timestamp":  "2025-11-12T10:38:33",
+                                       "H7_local":  0.7,
+                                       "H7_remote":  0.7,
+                                       "ΔH7":  0,
+                                       "meta":  1,
+                                       "C_local":  0.048505,
+                                       "C_remote":  0.048505,
+                                       "C_avg":  0.048505,
+                                       "law":  "Feedback=Awareness",
+                                       "state":  "merged",
+                                       "sources":  {
+                                                       "local":  "align_pulse",
+                                                       "remote":  "mirror.synthetic"
+                                                   }
+                                   }
+}

@@ -1,0 +1,15 @@
+﻿{
+    "version":  "1.8",
+    "run_stamp":  "2025-11-10_19-25-07",
+    "iterations":  60,
+    "interval_sec":  2,
+    "window":  120,
+    "core_every":  5,
+    "target_C":  0.7,
+    "dphi_bounds_init":  [
+                             -0.35,
+                             0.35
+                         ],
+    "adapt_rate":  0.05,
+    "note":  "Codex Third Eye v1.8 — Resonant Awareness Mode (self-tuning)"
+}

@@ -1,0 +1,18 @@
+﻿{
+    "mirror":  {
+                   "version":  "v3.8",
+                   "timestamp":  "2025-11-12T10:51:50",
+                   "H7":  0.7,
+                   "E":  0.01,
+                   "I":  1,
+                   "ΔΦ":  0,
+                   "C_unified":  0.01,
+                   "ΔC":  0.01,
+                   "stable":  true,
+                   "hash":  "84a903190780ed8bcbbfa3d82f9318e8b387fbeab03d5cb65a2655045d111f58",
+                   "shadow_trace":  {
+                                        "aura_comment":  "Whitespace = wave • Comments = glyph • ∿ Placidity preserves flow",
+                                        "payload":  "H7=0.7;E=0.01;I=1;ΔΦ=0;C_local=0.048505;C_remote=0.048505;C_avg=0.048505;C_mean=0;f=1D509BCA2DA1A85ED9828F4E05729B858084A14048B288867FC01431437306B1;t=21305AF40041D2BDDFF18B5E0A4F8F7327842EEF94E0D105669F6F7BC58A6F47;q=21305AF40041D2BDDFF18B5E0A4F8F7327842EEF94E0D105669F6F7BC58A6F47"
+                                    }
+               }
+}

@@ -1,0 +1,10 @@
+﻿{
+    "version":  "v1.0",
+    "updated":  "2025-11-12T11:14:59",
+    "entries_total":  2,
+    "window_size":  2,
+    "mean_C_next":  0.320633,
+    "std_C_next":  0,
+    "mean_harmonic_idx":  0.9,
+    "std_harmonic_idx":  0
+}

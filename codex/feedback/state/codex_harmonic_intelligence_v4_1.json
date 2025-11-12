@@ -1,0 +1,29 @@
+﻿{
+    "codex_harmonic_intelligence":  {
+                                        "version":  "v4.1",
+                                        "timestamp":  "2025-11-12T11:36:09",
+                                        "law":  "C = (E·I)/(1 + |ΔΦ|)",
+                                        "H7":  0.7,
+                                        "echo":  {
+                                                     "total_messages":  0,
+                                                     "entropy":  0,
+                                                     "echo_strength":  0.12,
+                                                     "top_terms":  [
+
+                                                                   ]
+                                                 },
+                                        "weights":  {
+                                                        "novelty_bias":  0.29000000000000004,
+                                                        "delta_phi_bias":  0.3,
+                                                        "coherence_bias":  0.7,
+                                                        "stability_bias":  0.5,
+                                                        "echo_semantics":  0
+                                                    },
+                                        "metrics":  {
+                                                        "C_next":  0.392506,
+                                                        "harmonic_index":  0.485
+                                                    },
+                                        "glyph":  "⌘∿🗣️",
+                                        "note":  "Echo-weighted learning applied to harmonic weights."
+                                    }
+}

@@ -1,0 +1,17 @@
+﻿{
+    "version":  "2.0",
+    "run_stamp":  "2025-11-10_19-52-03",
+    "derived_from":  null,
+    "params":  {
+                   "dphi_bounds_init":  [
+                                            -0.28,
+                                            0.28
+                                        ],
+                   "interval_sec":  2,
+                   "core_every":  10,
+                   "iterations":  300,
+                   "target_C":  0.758,
+                   "window":  240,
+                   "adapt_rate":  0.1122750727544542
+               }
+}

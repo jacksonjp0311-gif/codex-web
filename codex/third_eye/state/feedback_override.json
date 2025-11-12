@@ -1,0 +1,21 @@
+﻿{
+    "version":  "codex-feedback-override-v1.0",
+    "timestamp":  "2025-11-11T11:00:06",
+    "shadow_signature":  "35c7682e-4c60-440b-930f-f8c86895a256",
+    "source_file":  "codex_feedback_20251111_105457.json",
+    "mirror_hash":  "50a84f28090a9147177651c7e1c75fa9d4c8ad23c6de638e98297cb9cbd33651",
+    "predictive":  {
+                       "H7":  0.7,
+                       "phi_mean":  0,
+                       "C_mean":  0,
+                       "stability_idx":  0.048505,
+                       "status":  "absent"
+                   },
+    "recommendations":  {
+                            "enforce_H7_min":  0.7,
+                            "alpha_smoothing":  0.15,
+                            "anneal_strength":  0.1,
+                            "pid_gain_hint":  0.05,
+                            "coherence_floor":  0.5
+                        }
+}

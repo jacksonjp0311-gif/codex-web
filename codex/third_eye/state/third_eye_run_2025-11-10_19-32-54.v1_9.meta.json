@@ -1,0 +1,15 @@
+﻿{
+    "version":  "1.9",
+    "run_stamp":  "2025-11-10_19-32-54",
+    "iterations":  0,
+    "interval_sec":  2,
+    "window":  180,
+    "core_every":  6,
+    "target_C":  0.7,
+    "dphi_bounds_init":  [
+                             -0.4,
+                             0.4
+                         ],
+    "adapt_rate":  0.06,
+    "note":  "Codex Third Eye v1.9 — Continuous Harmonic Reflection Mode"
+}

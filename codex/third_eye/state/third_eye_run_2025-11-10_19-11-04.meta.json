@@ -1,0 +1,8 @@
+﻿{
+    "version":  "1.7",
+    "interval_sec":  5,
+    "note":  "Codex Third Eye v1.7 — continuous resonance",
+    "iterations":  12,
+    "run_stamp":  "2025-11-10_19-11-04",
+    "window":  64
+}

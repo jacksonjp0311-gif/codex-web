@@ -1,0 +1,18 @@
+﻿{
+    "updated_at":  "2025-11-11T11:18:44",
+    "shadow_sig":  null,
+    "module":  "Quantum Crystal v9.1 / Mirror Continuity Bridge",
+    "metrics":  {
+                    "H7":  0.7,
+                    "E_phi_mean":  0,
+                    "I_C_mean":  0,
+                    "C_index":  0.048505,
+                    "status":  "absent"
+                },
+    "chain_hash":  "50a84f28090a9147177651c7e1c75fa9d4c8ad23c6de638e98297cb9cbd33651",
+    "source_file":  "codex_feedback_20251111_105457.json"
+}
+
+
+
+

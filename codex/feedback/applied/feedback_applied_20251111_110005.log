@@ -1,0 +1,13 @@
+﻿╔════════════════ Codex Feedback Integrator v1.0 ════════════════╗
+ Applied    : 2025-11-11T11:00:06
+ Feedback   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\codex_feedback_20251111_105457.json
+ Shadow Sig : 35c7682e-4c60-440b-930f-f8c86895a256
+ H7         : 0.7
+ Φ_mean(E)  : 0
+ C_mean(I)  : 0
+ Stability  : 0.048505
+ Targets    :
+   - C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\third_eye\state\feedback_override.json
+   - C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v9\state\feedback_override.json
+ Status     : absent
+╚════════════════════════════════════════════════════════════════╝

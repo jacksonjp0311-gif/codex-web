@@ -1,0 +1,35 @@
+﻿{
+    "version":  "codex-feedback-v1",
+    "module":  "Quantum Crystal Codex v9.1",
+    "run_id":  "qcx_v9_feedback_20251111_093946",
+    "started_at":  "2025-11-11T09:39:48",
+    "duration_sec":  0,
+    "paths":  {
+                  "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+                  "module_dir":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v9",
+                  "py_file":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v9\\Quantum_Crystal_Codex_v9_1.py",
+                  "log":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v9\\logs\\qcx_v9_feedback_20251111_093946.log",
+                  "compile":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v9\\state\\qcx_v9_feedback_20251111_093946.compile.txt"
+              },
+    "source":  {
+                   "sha256":  "2D4E316A74C88B9979334950E9E805425E079ED0487EECCC922FBC275A534AA4",
+                   "line_count":  560,
+                   "autopep8":  true
+               },
+    "checks":  {
+                   "syntax_pass":  false,
+                   "engine_exit":  -1
+               },
+    "signals":  {
+                    "Phi_mean":  null,
+                    "C_mean":  null,
+                    "gap":  null,
+                    "r_recent":  null
+                },
+    "tail":  {
+                 "compile_tail":  {
+
+                                  },
+                 "output_tail":  "Skipped run due to syntax failure. See compile log."
+             }
+}

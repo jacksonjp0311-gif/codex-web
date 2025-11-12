@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "version": "v2.0B",
+    "timestamp": "2025-11-11T12:53:52Z",
+    "source": "codex_third_eye_v2_0b",
+    "handoff_hash": null
+  },
+  "inputs": {
+    "C_mean_ensemble": NaN,
+    "Phi_mean_ensemble": NaN,
+    "C_hist_len": 0,
+    "Phi_hist_len": 0
+  },
+  "recent": {
+    "C_median_last12": NaN,
+    "C_drift_last8": 0.0
+  },
+  "forecast": {
+    "C_blend": [],
+    "Phi_blend": [],
+    "horizon": 32
+  },
+  "thresholds": {
+    "H7": 0.7
+  },
+  "recommendation": "stabilize"
+}

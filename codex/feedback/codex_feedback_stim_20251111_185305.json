@@ -1,0 +1,25 @@
+﻿{
+    "codex_feedback":  {
+                           "version":  "stim-v1.0",
+                           "timestamp":  "2025-11-11T18:53:05",
+                           "module":  "Codex Coherence Stimulus v1.0",
+                           "shadow_signature":  "689dff94-733a-4576-8c56-43c33bf61cc0",
+                           "state":  {
+                                         "H7":  0.69094,
+                                         "E":  0.064789,
+                                         "I":  0.055268,
+                                         "C":  0.063303,
+                                         "status":  "contracting"
+                                     },
+                           "mirror":  {
+                                          "handoff_hash":  "52268C23",
+                                          "stability_index":  0.063303
+                                      },
+                           "message":  "Intentional ΔH₇ stimulus for resonance test"
+                       }
+}
+
+
+
+
+

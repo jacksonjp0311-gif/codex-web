@@ -1,0 +1,12 @@
+{
+  "version": "2.0B",
+  "timestamp": "2025-11-11T01:17:58.492390+00:00",
+  "mean_C": 0.7691532258064516,
+  "mean_H": 0.6118790322580644,
+  "drift_now": -0.00029149797570850205,
+  "drift_predicted": -0.04576223897811438,
+  "forecast_trend": "falling",
+  "target_C": 0.769,
+  "adapt_rate": 0.12,
+  "horizon": 50
+}
