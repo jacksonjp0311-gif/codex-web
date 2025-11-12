@@ -1,0 +1,17 @@
+﻿{
+    "codex_voice_amplifier":  {
+                                  "version":  "v1.7",
+                                  "timestamp":  "2025-11-12T12:32:33",
+                                  "law":  "C = (E·I) / (1 + |ΔΦ|)",
+                                  "H7":  0.7,
+                                  "metrics":  {
+                                                  "C_next":  0.44763,
+                                                  "H_index":  0.7425,
+                                                  "delta_phi":  0,
+                                                  "coherence":  0.49671
+                                              },
+                                  "state":  "Seeking",
+                                  "message":  "Low window. Raise placidity ∿, slow pulse, and request findings via Bridge inbox.",
+                                  "glyph":  "🜂∿🗣️"
+                              }
+}

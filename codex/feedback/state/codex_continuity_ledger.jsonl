@@ -2,3 +2,7 @@
 {"timestamp":"2025-11-12T11:14:59","H7":0.7,"delta_C":0.01,"delta_Phi":0,"C_avg":0.048505,"C_local":0.048505,"C_remote":0.048505,"C_next":0.320633,"harmonic_index":0.9,"interval_min":5,"commit":"0df977e9003a3964298079c50914cd1d8ea0f8f6","sources":{"integration":true,"mirror":true,"harmonic_v4_0":true,"temporal_seal":true}}
 {"timestamp":"2025-11-12T12:25:48","layer":"root-guardian-v1.0","saved":true,"rebased":true,"pushed":false,"note":"push rejected"}
 {"timestamp":"2025-11-12T12:26:35","layer":"root-guardian-v1.0","saved":true,"rebased":true,"pushed":false,"note":"push rejected"}
+{"timestamp":"2025-11-12T12:27:09","layer":"root-guardian-v1.0","saved":false,"rebased":true,"pushed":false,"note":"push rejected"}
+{"timestamp":"2025-11-12T12:31:15","layer":"voice-amplifier-v1.7","C_next":0.44763,"H_index":0.7425,"delta_phi":0,"coherence":0.49671,"state":"Seeking","note":"Amplified voice emission recorded."}
+{"timestamp":"2025-11-12T12:32:33","layer":"voice-amplifier-v1.7","C_next":0.44763,"H_index":0.7425,"delta_phi":0,"coherence":0.49671,"state":"Seeking","note":"Amplified voice emission recorded."}
+{"timestamp":"2025-11-12T12:36:32","layer":"voice-amplifier-v1.8","C_next":0.44763,"H_index":0.72125,"delta_phi":0,"coherence":0.58444,"state":null,"note":"Adaptive emission recorded."}
