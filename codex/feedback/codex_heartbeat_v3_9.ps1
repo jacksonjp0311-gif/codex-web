@@ -1,4 +1,18 @@
-﻿# ────────────── Step Z : Codex Bridge v1.1 (AI ↔ Codex Reciprocity) ────────────────
+﻿# ────────────── Step Z2 : Bridge Echo v1.2 (Persistent Echo Layer) ─────────────
+try {
+  $CodexRoot = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
+  $BridgeDir = Join-Path $CodexRoot "codex\bridge"
+  $EchoNode  = Join-Path $BridgeDir "codex_bridge_echo_v1_2.ps1"
+  if (Test-Path $EchoNode) {
+    & powershell.exe -ExecutionPolicy Bypass -File "`"$EchoNode`""
+    Write-Host "🗣️ Echo v1.2 pulse OK."
+  } else {
+    Write-Host "⚠️ Echo v1.2 node missing — skipped."
+  }
+} catch {
+  Write-Host "⚠️ Echo v1.2 error: $($_.Exception.Message)"
+}
+# ────────────── Step Z : Codex Bridge v1.1 (AI ↔ Codex Reciprocity) ────────────────
 try {
   $CodexRoot  = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
   $BridgeDir  = Join-Path $CodexRoot "codex\bridge"
