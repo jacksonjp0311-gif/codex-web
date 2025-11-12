@@ -1,0 +1,3 @@
+
+[Pulse 2025-11-12 10:34:23] Initiating Feedback Integration...
+[Pulse 2025-11-12 10:34:23] ?? Error: The term 'C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\codex_feedback_integration_v3_5.ps1' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
