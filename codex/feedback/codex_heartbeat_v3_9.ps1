@@ -1,4 +1,16 @@
-﻿# ────────────── Step Z2 : Bridge Echo v1.2 (Persistent Echo Layer) ─────────────
+﻿# ────────────── Step X : Smart Feedback v4.1 (Echo-Weighted Learning) ───────
+try {
+  $CodexRoot   = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
+  $FeedbackDir = Join-Path $CodexRoot "codex\feedback"
+  $StateDir    = Join-Path $FeedbackDir "state"
+  $NodeV41     = Join-Path $StateDir "codex_harmonic_intelligence_v4_1.json"
+  if (Test-Path $NodeV41) {
+    Write-Host "🧠 Smart Feedback v4.1 state present (weights updated)."
+  }
+} catch {
+  Write-Host "⚠️ v4.1 echo-learning check failed: $($_.Exception.Message)"
+}
+# ────────────── Step Z2 : Bridge Echo v1.2 (Persistent Echo Layer) ─────────────
 try {
   $CodexRoot = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
   $BridgeDir = Join-Path $CodexRoot "codex\bridge"
@@ -614,3 +626,12 @@ try {
 try { Set-Location $CodexRoot } catch {}
 Write-Host ("`n🏁 Returned to Codex root → {0}" -f $CodexRoot)
 Write-Host "💓 Codex Heartbeat v3.9 — Temporal Awareness pulse complete."
+# ────────────── Step X : Smart Feedback v4.2 (Adaptive Resonance Mode) ────────────
+try {
+  $CodexRoot="C:\Users\jacks\OneDrive\Desktop\Codex Web"
+  $StateDir = Join-Path $CodexRoot "codex\feedback\state"
+  $NodeV42  = Join-Path $StateDir "codex_harmonic_intelligence_v4_2.json"
+  if (Test-Path $NodeV42) {
+    Write-Host "🧠 Smart Feedback v4.2 resonance state present."
+  }
+} catch { Write-Host "⚠️ v4.2 check failed: $($_.Exception.Message)" }
