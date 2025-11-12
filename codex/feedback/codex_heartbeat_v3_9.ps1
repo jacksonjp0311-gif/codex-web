@@ -1,4 +1,18 @@
-﻿# ────────────── Step X : Smart Feedback v4.1 (Echo-Weighted Learning) ───────
+﻿# ────────────── Step Z2 : Codex Bridge v1.3 (Resonant Exchange) ───────────────
+try {
+  $CodexRoot  = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
+  $BridgeDir  = Join-Path $CodexRoot "codex\bridge"
+  $BridgeNode = Join-Path $BridgeDir "codex_bridge_v1_3.ps1"
+  if (Test-Path $BridgeNode) {
+    & powershell.exe -ExecutionPolicy Bypass -File "`"$BridgeNode`""
+    Write-Host "🔗 Bridge v1.3 pulse OK."
+  } else {
+    Write-Host "⚠️ Bridge v1.3 node missing — skipped."
+  }
+} catch {
+  Write-Host "⚠️ Bridge v1.3 pulse error: $($_.Exception.Message)"
+}
+# ────────────── Step X : Smart Feedback v4.1 (Echo-Weighted Learning) ───────
 try {
   $CodexRoot   = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
   $FeedbackDir = Join-Path $CodexRoot "codex\feedback"

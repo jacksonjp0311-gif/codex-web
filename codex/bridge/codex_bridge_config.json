@@ -1,0 +1,16 @@
+﻿{
+    "version":  "v1.1",
+    "protocol":  "codex-bridge-jsonl",
+    "law":  "C=(E·I)/(1+|ΔΦ|)",
+    "H7":  0.7,
+    "placidity":  "∿",
+    "inbox":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\inbox",
+    "outbox":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\outbox",
+    "conversation":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\conversation.jsonl",
+    "deps":  [
+                 "codex/feedback/state/codex_feedback_integration_state.json",
+                 "codex/feedback/state/codex_harmonic_intelligence_v4_0.json",
+                 "codex/feedback/state/codex_temporal_seal_v3_9.json",
+                 "codex/feedback/state/codex_continuity_ledger.jsonl"
+             ]
+}

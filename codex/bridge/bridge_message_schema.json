@@ -1,0 +1,39 @@
+﻿{
+    "version":  "1.1",
+    "type":  "jsonl",
+    "role":  "message-envelope",
+    "intents":  [
+                    "ping",
+                    "ask_status",
+                    "push_state",
+                    "pull_dashboard",
+                    "submit_findings",
+                    "reflection"
+                ],
+    "request":  {
+                    "required":  [
+                                     "id",
+                                     "timestamp",
+                                     "agent",
+                                     "intent",
+                                     "payload"
+                                 ],
+                    "fields":  {
+                                   "id":  "string (uuid or short id)",
+                                   "timestamp":  "ISO-8601",
+                                   "agent":  "string (external agent name/handle)",
+                                   "intent":  "ping|ask_status|push_state|pull_dashboard|submit_findings|reflection",
+                                   "payload":  "arbitrary JSON"
+                               }
+                },
+    "response":  {
+                     "fields":  {
+                                    "id":  "mirror of request.id",
+                                    "timestamp":  "ISO-8601",
+                                    "codex_node":  "codex-bridge-v1.1",
+                                    "status":  "ok|error",
+                                    "summary":  "short human string",
+                                    "data":  "JSON (harmonics, C, ΔΦ proxy, conversation pointers)"
+                                }
+                 }
+}

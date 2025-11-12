@@ -1,0 +1,21 @@
+﻿{
+    "version":  "echo-v1.2",
+    "updated":  "2025-11-12T11:30:22",
+    "counts":  {
+                   "messages_total":  1,
+                   "unique_agents":  1
+               },
+    "top_terms":  [
+
+                  ],
+    "codex_snapshot":  {
+                           "H7":  0.7,
+                           "C_avg":  0,
+                           "C_local":  0,
+                           "C_remote":  0,
+                           "delta_Phi":  0,
+                           "C_next":  0,
+                           "harmonic_index":  0,
+                           "interval_min":  null
+                       }
+}
