@@ -1,3 +1,6 @@
 
 [Pulse 2025-11-12 10:34:23] Initiating Feedback Integration...
 [Pulse 2025-11-12 10:34:23] ?? Error: The term 'C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\codex_feedback_integration_v3_5.ps1' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[Pulse 2025-11-12 10:38:43] Running integration cycle…
+[Pulse 2025-11-12 10:38:43] ?? Processing -File 'C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback\state\codex_feedback_integration_state.json' failed because the file does not have a '.ps1' extension. Specify a valid Windows PowerShell script file name, and then try again.
