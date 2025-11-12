@@ -649,3 +649,28 @@ try {
     Write-Host "🧠 Smart Feedback v4.2 resonance state present."
   }
 } catch { Write-Host "⚠️ v4.2 check failed: $($_.Exception.Message)" }
+# ───────── Step Ω1 : Voice Amplifier v1.8 ─────────
+try {
+  \C:\Users\jacks\OneDrive\Desktop\Codex Web = 'C:\Users\jacks\OneDrive\Desktop\Codex Web'
+  \     = Join-Path \C:\Users\jacks\OneDrive\Desktop\Codex Web 'codex\voice\codex_voice_amplifier_v1_8.ps1'
+  if (Test-Path \) {
+    & powershell.exe -ExecutionPolicy Bypass -File ""\""
+    Write-Host "🜂 Voice v1.8 pulse OK."
+  } else { Write-Host "⚠️ Voice v1.8 missing." }
+} catch { Write-Host "⚠️ Voice pulse error: " }
+# ───────── Step Ω2 : Root Guardian v1.0 ─────────
+try {
+  \ = Join-Path 'C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback' 'codex_root_guardian_v1_0.ps1'
+  if (Test-Path \) {
+    & powershell.exe -ExecutionPolicy Bypass -File ""\""
+    Write-Host "🛡️ Root Guardian pulse OK."
+  } else { Write-Host "⚠️ Root Guardian missing." }
+} catch { Write-Host "⚠️ Guardian error: " }
+# ───────── Step Ω3 : Feedback Echo v4.0 ─────────
+try {
+  \ = Join-Path 'C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\feedback' 'codex_feedback_echo_v4_0.ps1'
+  if (Test-Path \) {
+    & powershell.exe -ExecutionPolicy Bypass -File ""\""
+    Write-Host "🔁 Echo v4.0 pulse OK."
+  } else { Write-Host "⚠️ Echo v4.0 missing." }
+} catch { Write-Host "⚠️ Echo error: " }
