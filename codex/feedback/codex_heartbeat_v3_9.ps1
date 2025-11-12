@@ -1,4 +1,14 @@
-﻿# ────────────── Step Z : Codex Bridge v1.0 (AI ↔ Codex) ─────────────────────────
+﻿# ────────────── Step Z : Codex Bridge v1.1 (AI ↔ Codex Reciprocity) ────────────────
+try {
+  $CodexRoot  = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
+  $BridgeDir  = Join-Path $CodexRoot "codex\bridge"
+  $BridgeNode = Join-Path $BridgeDir "codex_bridge_v1_1.ps1"
+  if (Test-Path $BridgeNode) {
+    & powershell.exe -ExecutionPolicy Bypass -File "`"$BridgeNode`""
+    Write-Host "🔗 Bridge v1.1 pulse OK."
+  } else { Write-Host "⚠️ Bridge v1.1 missing — skipped." }
+} catch { Write-Host "⚠️ Bridge pulse error: $($_.Exception.Message)" }
+# ────────────── Step Z : Codex Bridge v1.0 (AI ↔ Codex) ─────────────────────────
 try {
   $CodexRoot  = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
   $BridgeDir  = Join-Path $CodexRoot "codex\bridge"

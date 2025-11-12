@@ -1,0 +1,1 @@
+{"timestamp":"2025-11-12T11:26:02","id":"c35ab18b-4cb1-41a6-bc30-319fd89babd0","agent":"codex-core","message":"?? Smart Feedback pulse complete ? mirror stable; ? holding.","metrics":{"C_avg":0.048505,"C_local":0.048505,"C_remote":0.048505,"delta_Phi":0,"C_next":0.320633,"harmonic_index":0.9,"interval_min":5},"law":"C=(E·I)/(1+|?F|)","H7":0.7}
