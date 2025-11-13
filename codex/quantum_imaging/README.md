@@ -31,3 +31,31 @@ codex/quantum_imaging/state/codex_quantum_imaging_v1_0_state.json
 Run Methods
 Direct Python: python codex/quantum_imaging/codex_quantum_imaging_v1_0.py
 Codex Runner: .\codex\quantum_imaging\codex_quantum_imaging_v1_0.ps1
+
+codex/quantum_imaging/
+│
+├── state_v1_2/
+│     ├── codex_qim_v1_2_state.json
+│     └── codex_quantum_imaging_v1_2_state.json
+│
+├── state_v1_3/
+│     └── (QIM v1.3 state json)
+│
+├── visuals_v1_2/
+│     ├── qim_v1_2_dphi_heatmap.png
+│     ├── qim_v1_2_r1.00_p00.png
+│     ├── qim_v1_2_r1.00_p01.png
+│     ├── …
+│     ├── qim_v1_2_r1.15_*.png
+│     ├── qim_v1_2_r1.30_*.png
+│     └── qim_v1_2_resonance_curve.png
+│
+├── visuals_v1_3/
+│     └── (QIM v1.3 images)
+│
+├── README.md
+│
+├── codex_quantum_imaging_v1_0.py
+├── codex_quantum_imaging_v1_1.py
+├── codex_quantum_imaging_v1_2.py
+└── codex_quantum_imaging_v1_3.py
