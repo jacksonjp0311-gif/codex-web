@@ -1,0 +1,37 @@
+﻿{
+    "ok":  true,
+    "version":  "4.3",
+    "timestamp":  "2025-11-13T04:40:35.5759380-05:00",
+    "coherence":  {
+                      "C_avg":  0.40853488235294128,
+                      "C_next_avg":  0.42707944000000003,
+                      "C_samples":  34,
+                      "delta_phi_avg":  -0.0064680000000000007,
+                      "H_avg":  null,
+                      "harmonic_index_avg":  0.9,
+                      "risk_band":  "Low"
+                  },
+    "recommendations":  {
+                            "heartbeat_interval_s":  300,
+                            "modes":  {
+                                          "quantum_crystal_v9":  "Normal",
+                                          "third_eye_v2":  "Analysis",
+                                          "bridge_v1":  "Normal"
+                                      }
+                        },
+    "alerts":  [
+                   {
+                       "type":  "low_coherence",
+                       "severity":  "medium",
+                       "notes":  "Average coherence below 0.65; outside preferred H₇ band."
+                   }
+               ],
+    "meta":  {
+                 "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+                 "ledger_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_continuity_ledger.jsonl",
+                 "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_state_v4_3.json",
+                 "log_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_log_v4_3.jsonl",
+                 "law_H7":  0.7,
+                 "protocol":  "Universal Truth Protocol (E–I–C ∿)"
+             }
+}
