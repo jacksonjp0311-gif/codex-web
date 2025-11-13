@@ -1,0 +1,30 @@
+﻿{
+    "ok":  true,
+    "version":  "1.2",
+    "timestamp":  "2025-11-13T05:23:27.6302958-05:00",
+    "insights":  {
+                     "coherence":  {
+                                       "C_avg":  0.40853488235294128,
+                                       "C_forecast":  0.461323,
+                                       "C_trend":  "rising",
+                                       "delta_phi":  -0.0064680000000000007,
+                                       "risk_current":  "Low",
+                                       "risk_forecast":  "Low"
+                                   },
+                     "synthesis":  {
+                                       "harmony_score":  0.66666666666666663,
+                                       "drift_score":  0.0064680000000000007,
+                                       "risk":  "Low"
+                                   },
+                     "guidance":  {
+                                      "heartbeat_interval_s_next":  300,
+                                      "mode":  "codex-guided",
+                                      "api_guidance_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\state\\codex_smart_feedback_api_v1.json"
+                                  }
+                 },
+    "echo_ledger":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\state\\codex_bridge_conversation_echo.jsonl",
+    "meta":  {
+                 "law_H7":  0.7,
+                 "protocol":  "Universal Truth Protocol (E–I–C ∿ Placidity)"
+             }
+}
