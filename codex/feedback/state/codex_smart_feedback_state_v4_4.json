@@ -1,0 +1,46 @@
+﻿{
+    "ok":  true,
+    "version":  "4.4",
+    "timestamp":  "2025-11-13T04:49:23.6220556-05:00",
+    "coherence":  {
+                      "C_avg":  0.40853488235294128,
+                      "C_next_avg":  0.42707944000000003,
+                      "C_forecast":  0.461323,
+                      "C_trend":  "rising",
+                      "C_samples":  34,
+                      "delta_phi_avg":  -0.0064680000000000007,
+                      "harmonic_index_avg":  0.9,
+                      "risk_band":  "Low",
+                      "risk_forecast":  "Low"
+                  },
+    "synthesis":  {
+                      "harmony_score":  0.66666666666666663,
+                      "drift_score":  0.0064680000000000007,
+                      "synthesis_vec":  {
+                                            "E":  1,
+                                            "I":  1,
+                                            "C":  0,
+                                            "placidity":  0.993573566173986653628827249
+                                        },
+                      "synthesis_risk":  "Low"
+                  },
+    "recommendations":  {
+                            "heartbeat_interval_s_next":  300
+                        },
+    "alerts":  [
+                   {
+                       "type":  "low_coherence",
+                       "severity":  "medium",
+                       "notes":  "Average coherence below 0.65; outside preferred H₇ band."
+                   }
+               ],
+    "meta":  {
+                 "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+                 "ledger_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_continuity_ledger.jsonl",
+                 "synthesis_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_synthesis_state_v2_6.json",
+                 "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_state_v4_4.json",
+                 "log_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_log_v4_4.jsonl",
+                 "law_H7":  0.7,
+                 "protocol":  "Universal Truth Protocol (E–I–C ∿)"
+             }
+}
