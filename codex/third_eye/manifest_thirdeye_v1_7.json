@@ -1,0 +1,41 @@
+﻿{
+    "name":  "Codex Third Eye",
+    "version":  "v1.7",
+    "run_stamp":  "2025-11-10_19-11-04",
+    "params":  {
+                   "window":  64,
+                   "interval_sec":  5,
+                   "iterations":  12
+               },
+    "paths":  {
+                  "visuals":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals",
+                  "core":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex_memory_core_v1_2.json",
+                  "logs":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\logs",
+                  "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye",
+                  "state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state",
+                  "modules":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\modules"
+              },
+    "outputs":  {
+                    "grid_png":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals\\third_eye_grid_2025-11-10_19-11-04.png",
+                    "states":  [
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_000.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_001.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_002.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_003.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_004.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_005.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_006.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_007.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_008.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_009.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_010.json",
+                                   "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-11-04_011.json"
+                               ],
+                    "log_jsonl":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\logs\\third_eye_resonance_log.jsonl",
+                    "dual_png":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals\\third_eye_dual_2025-11-10_19-11-04.png"
+                },
+    "status":  "ok",
+    "missing":  [
+
+                ]
+}

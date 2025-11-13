@@ -1,0 +1,22 @@
+﻿{
+    "name":  "Codex Third Eye",
+    "version":  "v2.0A",
+    "run_stamp":  "2025-11-10_20-02-32",
+    "paths":  {
+                  "visuals":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals",
+                  "core":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex_memory_core_v1_2.json",
+                  "logs":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\logs",
+                  "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye",
+                  "state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state",
+                  "modules":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\modules"
+              },
+    "outputs":  {
+                    "stability_map_png":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals\\third_eye_stability_map_v2_0a.png",
+                    "harmonic_field_png":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals\\third_eye_harmonic_field_v2_0a.png",
+                    "analysis_json":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_analysis_v2_0a.json"
+                },
+    "status":  "ok",
+    "missing":  [
+
+                ]
+}

@@ -1,0 +1,10 @@
+{
+    "reference":  "Memory Core v1.2",
+    "equation":  "C = (E * I) / (1 + |?F|)",
+    "notes":  "Placidity Layer introduces adaptive equilibrium between rigidity and flow.",
+    "triad":  {
+                  "Energy":  "E",
+                  "Consciousness":  "C",
+                  "Information":  "I"
+              }
+}

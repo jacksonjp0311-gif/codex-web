@@ -1,0 +1,2 @@
+? Signal forged: sig106 (entropy=1.06)
+?? Synthesized sigil: ?_sigF

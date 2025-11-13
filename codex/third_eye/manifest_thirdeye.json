@@ -1,0 +1,9 @@
+﻿{
+    "Name":  "Codex Third Eye",
+    "Version":  "1.2",
+    "Root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye",
+    "Modules":  [
+                    "codex_third_eye_v1_2.ps1"
+                ],
+    "LastUpdate":  "2025-11-10 18:45:04"
+}

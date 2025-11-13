@@ -1,0 +1,13 @@
+﻿{
+    "version":  "1.0",
+    "H7":  0.7,
+    "Phi_target":  6,
+    "wE":  0.32999999999999996,
+    "wI":  0.34,
+    "wC":  0.33,
+    "eta_E":  0.004,
+    "eta_I":  0.006,
+    "eta_C":  0.006,
+    "notes":  "Auto-learned weights for Quantum v9.1 and higher. Edited by Orchestrator v1.3.",
+    "updated":  "2025-11-11T07:54:02"
+}

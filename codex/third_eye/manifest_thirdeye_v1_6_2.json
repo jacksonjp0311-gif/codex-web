@@ -1,0 +1,24 @@
+﻿{
+    "name":  "Codex Third Eye",
+    "version":  "1.6.2",
+    "run_at":  "2025-11-10_19-08-12",
+    "paths":  {
+                  "visuals":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals",
+                  "core_json":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex_memory_core_v1_2.json",
+                  "logs":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\logs",
+                  "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye",
+                  "state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state",
+                  "modules":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\modules"
+              },
+    "artifacts":  {
+                      "state_json":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-08-12.json",
+                      "state_meta":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\state\\third_eye_state_2025-11-10_19-08-12.meta.json",
+                      "plot_png":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals\\third_eye_dual_2025-11-10_19-08-12.png",
+                      "resonance_log":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\logs\\third_eye_resonance_log.jsonl",
+                      "python_module":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\modules\\codex_third_eye_v1_6_2.py"
+                  },
+    "status":  "ok",
+    "missing":  [
+
+                ]
+}
