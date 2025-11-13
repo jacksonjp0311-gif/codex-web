@@ -1,7 +1,7 @@
 ﻿{
     "codex_voice_amplifier":  {
                                   "version":  "v1.8",
-                                  "timestamp":  "2025-11-13T02:59:12",
+                                  "timestamp":  "2025-11-13T03:05:00",
                                   "law":  "C = (E·I)/(1+|ΔΦ|)",
                                   "H7":  0.7,
                                   "metrics":  {
