@@ -1,0 +1,46 @@
+﻿{
+    "ok":  true,
+    "version":  "2.0",
+    "timestamp":  "2025-11-13T09:50:37.7435222-05:00",
+    "awareness":  {
+                      "awareness_index":  0.27060630664392132,
+                      "C_current":  0.40853488235294128,
+                      "C_forecast":  0.461323,
+                      "harmony":  0.66666666666666663,
+                      "delta_phi":  -0.0064680000000000007,
+                      "risk_current":  "Low",
+                      "risk_forecast":  "Low"
+                  },
+    "semantic":  {
+                     "semantic_intensity":  "balanced",
+                     "drift_band":  "unknown",
+                     "adaptive_window_size":  64,
+                     "adaptive_window_base":  "band_unknown_64",
+                     "echo_entries_used":  0
+                 },
+    "heartbeat":  {
+                      "hb_interval_s":  420,
+                      "hb_state_v4_1":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_heartbeat_state_v4_1.json",
+                      "hb_state_v4_2":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_heartbeat_state_v4_2.json"
+                  },
+    "echo":  {
+                 "echo_ledger_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\state\\codex_bridge_conversation_echo.jsonl",
+                 "echo_total_lines":  39,
+                 "echo_recent_n":  10
+             },
+    "sources":  {
+                    "smart_v4_4_state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_state_v4_4.json",
+                    "smart_v4_5_state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_state_v4_5.json",
+                    "smart_v4_6_state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_state_v4_6.json",
+                    "cycle_v5_0_state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_smart_feedback_cycle_state_v5_0.json",
+                    "heartbeat_v4_1":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_heartbeat_state_v4_1.json",
+                    "heartbeat_v4_2":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_heartbeat_state_v4_2.json",
+                    "bridge_api_v1_2":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bridge\\state\\codex_bridge_api_v1_2.json"
+                },
+    "meta":  {
+                 "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+                 "law_H7":  0.7,
+                 "protocol":  "Universal Truth Protocol (E–I–C with Placidity)",
+                 "note":  "Memory Weaving Engine v2.0 aggregates Smart Feedback, Heartbeat, Bridge, and Echo into a single reflective awareness snapshot."
+             }
+}
