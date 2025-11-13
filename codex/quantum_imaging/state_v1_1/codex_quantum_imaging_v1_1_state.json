@@ -1,0 +1,1160 @@
+{
+  "ok": true,
+  "module": "codex_quantum_imaging_v1_1",
+  "version": "1.1-hybrid",
+  "timestamp": "2025-11-13T12:43:12.941983+00:00",
+  "H7": 0.7,
+  "config": {
+    "grid_size_coarse": 256,
+    "grid_size_fine": 512,
+    "extent": 4.0,
+    "ring_radius": 0.45,
+    "atom_sigma": 0.2,
+    "cluster_spacing": 0.9,
+    "afm_sharpness": 4.0,
+    "phases": 12,
+    "radius_scales": [
+      1.0,
+      1.15,
+      1.3
+    ],
+    "coarse_interest_threshold_C_over_H7": 0.03,
+    "coarse_interest_threshold_dphi": 0.0012,
+    "seed": null
+  },
+  "seed_used": 15204,
+  "summary": {
+    "C_codex_mean": 0.5087211164724853,
+    "C_codex_std": 0.02277247902601336,
+    "C_over_H7_mean": 0.7267444521035507,
+    "C_over_H7_std": 0.032532112894304806,
+    "DeltaPhi_mean_mean": 0.0009390922840176462,
+    "DeltaPhi_mean_std": 1.060555369209683e-05
+  },
+  "coarse_samples": [
+    {
+      "index": 0,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 0,
+      "phase_angle": 0.0,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05556785425682767,
+        "I_entropy": 8.93504612724789,
+        "DeltaPhi_mean": 0.0009408058177749132,
+        "C_codex": 0.4960346686748359,
+        "H7": 0.7,
+        "C_over_H7": 0.7086209552497656
+      }
+    },
+    {
+      "index": 1,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 1,
+      "phase_angle": 0.5235987755982988,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05535120649486419,
+        "I_entropy": 8.935024538271506,
+        "DeltaPhi_mean": 0.0009281515787675448,
+        "C_codex": 0.49410578319179704,
+        "H7": 0.7,
+        "C_over_H7": 0.7058654045597101
+      }
+    },
+    {
+      "index": 2,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 2,
+      "phase_angle": 1.0471975511965976,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.054686796961262156,
+        "I_entropy": 8.934550593506037,
+        "DeltaPhi_mean": 0.0009311013429549116,
+        "C_codex": 0.4881474395107005,
+        "H7": 0.7,
+        "C_over_H7": 0.6973534850152865
+      }
+    },
+    {
+      "index": 3,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 3,
+      "phase_angle": 1.5707963267948966,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05450211842219902,
+        "I_entropy": 8.93555910469814,
+        "DeltaPhi_mean": 0.0009224097682697827,
+        "C_codex": 0.4865580945535697,
+        "H7": 0.7,
+        "C_over_H7": 0.6950829922193853
+      }
+    },
+    {
+      "index": 4,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 4,
+      "phase_angle": 2.0943951023931953,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.055334226131112885,
+        "I_entropy": 8.92971202200032,
+        "DeltaPhi_mean": 0.0009334963863141722,
+        "C_codex": 0.4936578764673253,
+        "H7": 0.7,
+        "C_over_H7": 0.7052255378104647
+      }
+    },
+    {
+      "index": 5,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 5,
+      "phase_angle": 2.617993877991494,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05565204578727685,
+        "I_entropy": 8.935903580092607,
+        "DeltaPhi_mean": 0.0009415768229997012,
+        "C_codex": 0.4968335082737247,
+        "H7": 0.7,
+        "C_over_H7": 0.7097621546767496
+      }
+    },
+    {
+      "index": 6,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 6,
+      "phase_angle": 3.141592653589793,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05562017679710621,
+        "I_entropy": 8.93213006558246,
+        "DeltaPhi_mean": 0.0009390234011818911,
+        "C_codex": 0.49634057800474163,
+        "H7": 0.7,
+        "C_over_H7": 0.7090579685782024
+      }
+    },
+    {
+      "index": 7,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 7,
+      "phase_angle": 3.665191429188092,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.054377934569979636,
+        "I_entropy": 8.935314947458163,
+        "DeltaPhi_mean": 0.000924679420795577,
+        "C_codex": 0.48543509972819054,
+        "H7": 0.7,
+        "C_over_H7": 0.6934787138974151
+      }
+    },
+    {
+      "index": 8,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 8,
+      "phase_angle": 4.1887902047863905,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05549102934376565,
+        "I_entropy": 8.939974557091354,
+        "DeltaPhi_mean": 0.000940460671380119,
+        "C_codex": 0.4956222772204889,
+        "H7": 0.7,
+        "C_over_H7": 0.7080318246006985
+      }
+    },
+    {
+      "index": 9,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 9,
+      "phase_angle": 4.71238898038469,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.055241008408860225,
+        "I_entropy": 8.931222730334872,
+        "DeltaPhi_mean": 0.0009297115447533422,
+        "C_codex": 0.4929114844501974,
+        "H7": 0.7,
+        "C_over_H7": 0.704159263500282
+      }
+    },
+    {
+      "index": 10,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 10,
+      "phase_angle": 5.235987755982988,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05539921190204969,
+        "I_entropy": 8.928677216721246,
+        "DeltaPhi_mean": 0.0009375587974047432,
+        "C_codex": 0.4941783598653647,
+        "H7": 0.7,
+        "C_over_H7": 0.7059690855219496
+      }
+    },
+    {
+      "index": 11,
+      "mode": "coarse",
+      "radius_scale": 1.0,
+      "phase_index": 11,
+      "phase_angle": 5.759586531581287,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.055270244706096906,
+        "I_entropy": 8.93019206088691,
+        "DeltaPhi_mean": 0.0009339865848132926,
+        "C_codex": 0.49311333923402634,
+        "H7": 0.7,
+        "C_over_H7": 0.7044476274771805
+      }
+    },
+    {
+      "index": 12,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 0,
+      "phase_angle": 0.0,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.054510632124690206,
+        "I_entropy": 8.996631702403636,
+        "DeltaPhi_mean": 0.0009381560418932303,
+        "C_codex": 0.4899524292593001,
+        "H7": 0.7,
+        "C_over_H7": 0.6999320417990001
+      }
+    },
+    {
+      "index": 13,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 1,
+      "phase_angle": 0.5235987755982988,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05507333939296523,
+        "I_entropy": 8.996672168278032,
+        "DeltaPhi_mean": 0.0009538690557531718,
+        "C_codex": 0.4950046101507425,
+        "H7": 0.7,
+        "C_over_H7": 0.7071494430724893
+      }
+    },
+    {
+      "index": 14,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 2,
+      "phase_angle": 1.0471975511965976,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05488539165070455,
+        "I_entropy": 8.991423545664443,
+        "DeltaPhi_mean": 0.0009578282172431323,
+        "C_codex": 0.4930255689993496,
+        "H7": 0.7,
+        "C_over_H7": 0.7043222414276423
+      }
+    },
+    {
+      "index": 15,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 3,
+      "phase_angle": 1.5707963267948966,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05428497506563025,
+        "I_entropy": 8.990602102138336,
+        "DeltaPhi_mean": 0.0009354487436897125,
+        "C_codex": 0.48759848754698165,
+        "H7": 0.7,
+        "C_over_H7": 0.6965692679242595
+      }
+    },
+    {
+      "index": 16,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 4,
+      "phase_angle": 2.0943951023931953,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05503234808741651,
+        "I_entropy": 8.992614677211234,
+        "DeltaPhi_mean": 0.0009546032120676677,
+        "C_codex": 0.49441273314914796,
+        "H7": 0.7,
+        "C_over_H7": 0.7063039044987829
+      }
+    },
+    {
+      "index": 17,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 5,
+      "phase_angle": 2.617993877991494,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.055048855177828024,
+        "I_entropy": 8.994981842020074,
+        "DeltaPhi_mean": 0.0009531928891378049,
+        "C_codex": 0.49469191593197553,
+        "H7": 0.7,
+        "C_over_H7": 0.7067027370456794
+      }
+    },
+    {
+      "index": 18,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 6,
+      "phase_angle": 3.141592653589793,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.054996554228819994,
+        "I_entropy": 8.990412595778544,
+        "DeltaPhi_mean": 0.0009526264186446465,
+        "C_codex": 0.4939711439014724,
+        "H7": 0.7,
+        "C_over_H7": 0.7056730627163892
+      }
+    },
+    {
+      "index": 19,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 7,
+      "phase_angle": 3.665191429188092,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.054388659150470635,
+        "I_entropy": 8.995359291395754,
+        "DeltaPhi_mean": 0.0009350600687861395,
+        "C_codex": 0.48878848384241924,
+        "H7": 0.7,
+        "C_over_H7": 0.6982692626320275
+      }
+    },
+    {
+      "index": 20,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 8,
+      "phase_angle": 4.1887902047863905,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05458912694304024,
+        "I_entropy": 8.993811069877065,
+        "DeltaPhi_mean": 0.0009434311495380352,
+        "C_codex": 0.4905015397637302,
+        "H7": 0.7,
+        "C_over_H7": 0.7007164853767575
+      }
+    },
+    {
+      "index": 21,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 9,
+      "phase_angle": 4.71238898038469,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.0556179692271045,
+        "I_entropy": 8.992958967553783,
+        "DeltaPhi_mean": 0.0009596444302769923,
+        "C_codex": 0.49969058982663067,
+        "H7": 0.7,
+        "C_over_H7": 0.7138436997523295
+      }
+    },
+    {
+      "index": 22,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 10,
+      "phase_angle": 5.235987755982988,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05437899105720197,
+        "I_entropy": 8.998691356719629,
+        "DeltaPhi_mean": 0.0009391437219928269,
+        "C_codex": 0.4888806276413241,
+        "H7": 0.7,
+        "C_over_H7": 0.6984008966304631
+      }
+    },
+    {
+      "index": 23,
+      "mode": "coarse",
+      "radius_scale": 1.15,
+      "phase_index": 11,
+      "phase_angle": 5.759586531581287,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05574775430759488,
+        "I_entropy": 8.994719236119966,
+        "DeltaPhi_mean": 0.000960517056792774,
+        "C_codex": 0.5009542229651829,
+        "H7": 0.7,
+        "C_over_H7": 0.7156488899502613
+      }
+    },
+    {
+      "index": 24,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 0,
+      "phase_angle": 0.0,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05904500577487558,
+        "I_entropy": 9.070656005559712,
+        "DeltaPhi_mean": 0.0009227034523481012,
+        "C_codex": 0.5350832131021602,
+        "H7": 0.7,
+        "C_over_H7": 0.7644045901459432
+      }
+    },
+    {
+      "index": 25,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 1,
+      "phase_angle": 0.5235987755982988,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05906889727561347,
+        "I_entropy": 9.065211834768807,
+        "DeltaPhi_mean": 0.0009370968286203789,
+        "C_codex": 0.5349707472589731,
+        "H7": 0.7,
+        "C_over_H7": 0.7642439246556759
+      }
+    },
+    {
+      "index": 26,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 2,
+      "phase_angle": 1.0471975511965976,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05984006685563251,
+        "I_entropy": 9.062551278729426,
+        "DeltaPhi_mean": 0.0009250333895353914,
+        "C_codex": 0.5418024890089002,
+        "H7": 0.7,
+        "C_over_H7": 0.7740035557270003
+      }
+    },
+    {
+      "index": 27,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 3,
+      "phase_angle": 1.5707963267948966,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.06053053353215394,
+        "I_entropy": 9.070528521402862,
+        "DeltaPhi_mean": 0.0009480933293820041,
+        "C_codex": 0.5485238789884589,
+        "H7": 0.7,
+        "C_over_H7": 0.7836055414120842
+      }
+    },
+    {
+      "index": 28,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 4,
+      "phase_angle": 2.0943951023931953,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05904607334468262,
+        "I_entropy": 9.068236200688137,
+        "DeltaPhi_mean": 0.0009242540772930873,
+        "C_codex": 0.5349493107311495,
+        "H7": 0.7,
+        "C_over_H7": 0.7642133010444994
+      }
+    },
+    {
+      "index": 29,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 5,
+      "phase_angle": 2.617993877991494,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.060635420517759775,
+        "I_entropy": 9.068727548761244,
+        "DeltaPhi_mean": 0.0009410323778903348,
+        "C_codex": 0.5493691343373059,
+        "H7": 0.7,
+        "C_over_H7": 0.7848130490532943
+      }
+    },
+    {
+      "index": 30,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 6,
+      "phase_angle": 3.141592653589793,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.06021111889723864,
+        "I_entropy": 9.070208860053192,
+        "DeltaPhi_mean": 0.0009321380252512563,
+        "C_codex": 0.5456188320348173,
+        "H7": 0.7,
+        "C_over_H7": 0.7794554743354534
+      }
+    },
+    {
+      "index": 31,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 7,
+      "phase_angle": 3.665191429188092,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.059402551371549164,
+        "I_entropy": 9.062810658537003,
+        "DeltaPhi_mean": 0.0009373192319701838,
+        "C_codex": 0.5378499386229824,
+        "H7": 0.7,
+        "C_over_H7": 0.7683570551756891
+      }
+    },
+    {
+      "index": 32,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 8,
+      "phase_angle": 4.1887902047863905,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.060210681519646675,
+        "I_entropy": 9.069794648193238,
+        "DeltaPhi_mean": 0.000935989763829075,
+        "C_codex": 0.545587852365875,
+        "H7": 0.7,
+        "C_over_H7": 0.7794112176655358
+      }
+    },
+    {
+      "index": 33,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 9,
+      "phase_angle": 4.71238898038469,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05960077512745935,
+        "I_entropy": 9.071854609768666,
+        "DeltaPhi_mean": 0.0009508488164558721,
+        "C_codex": 0.540175940931715,
+        "H7": 0.7,
+        "C_over_H7": 0.7716799156167357
+      }
+    },
+    {
+      "index": 34,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 10,
+      "phase_angle": 5.235987755982988,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.058996303794899896,
+        "I_entropy": 9.06579897669467,
+        "DeltaPhi_mean": 0.0009383352016075904,
+        "C_codex": 0.5343472337532589,
+        "H7": 0.7,
+        "C_over_H7": 0.7633531910760841
+      }
+    },
+    {
+      "index": 35,
+      "mode": "coarse",
+      "radius_scale": 1.3,
+      "phase_index": 11,
+      "phase_angle": 5.759586531581287,
+      "grid_size": 256,
+      "metrics": {
+        "E_mean": 0.05908605074440809,
+        "I_entropy": 9.067579933645906,
+        "DeltaPhi_mean": 0.000927994587225867,
+        "C_codex": 0.5352707597206576,
+        "H7": 0.7,
+        "C_over_H7": 0.7646725138866538
+      }
+    }
+  ],
+  "fine_samples": [
+    {
+      "radius_scale": 1.0,
+      "phase_index": 0,
+      "phase_angle": 0.0,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.054829995356265836,
+        "I_entropy": 10.328334192583167,
+        "DeltaPhi_mean": 0.00023249326053764832,
+        "C_codex": 0.5661708849022443,
+        "H7": 0.7,
+        "C_over_H7": 0.8088155498603491
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p00.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 1,
+      "phase_angle": 0.5235987755982988,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05537667151182446,
+        "I_entropy": 10.326577712629536,
+        "DeltaPhi_mean": 0.00023330813850878148,
+        "C_codex": 0.5717181153443707,
+        "H7": 0.7,
+        "C_over_H7": 0.8167401647776724
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p01.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 2,
+      "phase_angle": 1.0471975511965976,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05489029908338144,
+        "I_entropy": 10.324623924714551,
+        "DeltaPhi_mean": 0.00023233222741120843,
+        "C_codex": 0.5665900580208082,
+        "H7": 0.7,
+        "C_over_H7": 0.8094143686011546
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p02.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 3,
+      "phase_angle": 1.5707963267948966,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05379933985587392,
+        "I_entropy": 10.318718472669373,
+        "DeltaPhi_mean": 0.000227973339791703,
+        "C_codex": 0.555013713658291,
+        "H7": 0.7,
+        "C_over_H7": 0.7928767337975586
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p03.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 4,
+      "phase_angle": 2.0943951023931953,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05485832380859702,
+        "I_entropy": 10.317048049796078,
+        "DeltaPhi_mean": 0.0002318728410511252,
+        "C_codex": 0.5658447586327897,
+        "H7": 0.7,
+        "C_over_H7": 0.8083496551896996
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p04.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 5,
+      "phase_angle": 2.617993877991494,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.054692477175585355,
+        "I_entropy": 10.327153946476844,
+        "DeltaPhi_mean": 0.0002303057878256947,
+        "C_codex": 0.5646875806882953,
+        "H7": 0.7,
+        "C_over_H7": 0.8066965438404219
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p05.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 6,
+      "phase_angle": 3.141592653589793,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05503795130987621,
+        "I_entropy": 10.32715040284151,
+        "DeltaPhi_mean": 0.00023287118853037602,
+        "C_codex": 0.5682528713198295,
+        "H7": 0.7,
+        "C_over_H7": 0.8117898161711851
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p06.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 7,
+      "phase_angle": 3.665191429188092,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.056293828059393744,
+        "I_entropy": 10.320198205680752,
+        "DeltaPhi_mean": 0.00023926275192285174,
+        "C_codex": 0.5808244936627182,
+        "H7": 0.7,
+        "C_over_H7": 0.8297492766610259
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p07.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 8,
+      "phase_angle": 4.1887902047863905,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.0544749246828386,
+        "I_entropy": 10.322186636645746,
+        "DeltaPhi_mean": 0.00023024972438979345,
+        "C_codex": 0.5621708998987185,
+        "H7": 0.7,
+        "C_over_H7": 0.8031012855695979
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p08.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 9,
+      "phase_angle": 4.71238898038469,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.054854805941199944,
+        "I_entropy": 10.320603827509295,
+        "DeltaPhi_mean": 0.00023310993758855154,
+        "C_codex": 0.5660027792814746,
+        "H7": 0.7,
+        "C_over_H7": 0.8085753989735351
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p09.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 10,
+      "phase_angle": 5.235987755982988,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.0555892475733263,
+        "I_entropy": 10.321926370206675,
+        "DeltaPhi_mean": 0.0002338759910139022,
+        "C_codex": 0.5736539565394795,
+        "H7": 0.7,
+        "C_over_H7": 0.8195056521992564
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p10.png"
+    },
+    {
+      "radius_scale": 1.0,
+      "phase_index": 11,
+      "phase_angle": 5.759586531581287,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.055287438598382185,
+        "I_entropy": 10.325594387163846,
+        "DeltaPhi_mean": 0.0002343422912899611,
+        "C_codex": 0.5707419167036253,
+        "H7": 0.7,
+        "C_over_H7": 0.8153455952908933
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.00_p11.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 0,
+      "phase_angle": 0.0,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05511699773923619,
+        "I_entropy": 10.385274644828039,
+        "DeltaPhi_mean": 0.0002369131787176918,
+        "C_codex": 0.572269580914836,
+        "H7": 0.7,
+        "C_over_H7": 0.8175279727354801
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p00.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 1,
+      "phase_angle": 0.5235987755982988,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05525528844069286,
+        "I_entropy": 10.38903343093584,
+        "DeltaPhi_mean": 0.0002415164629690211,
+        "C_codex": 0.573910430029239,
+        "H7": 0.7,
+        "C_over_H7": 0.8198720428989129
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p01.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 2,
+      "phase_angle": 1.0471975511965976,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05545320963503023,
+        "I_entropy": 10.382659589772956,
+        "DeltaPhi_mean": 0.00024071217215557603,
+        "C_codex": 0.5756132416871087,
+        "H7": 0.7,
+        "C_over_H7": 0.8223046309815839
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p02.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 3,
+      "phase_angle": 1.5707963267948966,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05597166213459013,
+        "I_entropy": 10.383781315645265,
+        "DeltaPhi_mean": 0.0002426463230528991,
+        "C_codex": 0.5810565082535528,
+        "H7": 0.7,
+        "C_over_H7": 0.8300807260765041
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p03.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 4,
+      "phase_angle": 2.0943951023931953,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05428464793798764,
+        "I_entropy": 10.389378688438715,
+        "DeltaPhi_mean": 0.0002349369857924264,
+        "C_codex": 0.5638512948726748,
+        "H7": 0.7,
+        "C_over_H7": 0.8055018498181069
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p04.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 5,
+      "phase_angle": 2.617993877991494,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05541576072097368,
+        "I_entropy": 10.381851123040246,
+        "DeltaPhi_mean": 0.00023936931775785954,
+        "C_codex": 0.5751804971119888,
+        "H7": 0.7,
+        "C_over_H7": 0.8216864244456984
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p05.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 6,
+      "phase_angle": 3.141592653589793,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05443527038267393,
+        "I_entropy": 10.389386240055826,
+        "DeltaPhi_mean": 0.0002360973349112339,
+        "C_codex": 0.5654155559815864,
+        "H7": 0.7,
+        "C_over_H7": 0.8077365085451236
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p06.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 7,
+      "phase_angle": 3.665191429188092,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.0558029625431975,
+        "I_entropy": 10.38196949690429,
+        "DeltaPhi_mean": 0.00024140494288260334,
+        "C_codex": 0.5792048320509705,
+        "H7": 0.7,
+        "C_over_H7": 0.8274354743585294
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p07.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 8,
+      "phase_angle": 4.1887902047863905,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05594587648561816,
+        "I_entropy": 10.388067619908856,
+        "DeltaPhi_mean": 0.00023962393699048786,
+        "C_codex": 0.5810303192150692,
+        "H7": 0.7,
+        "C_over_H7": 0.8300433131643846
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p08.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 9,
+      "phase_angle": 4.71238898038469,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05492477982251755,
+        "I_entropy": 10.381294021468035,
+        "DeltaPhi_mean": 0.00023811331401530971,
+        "C_codex": 0.5700545508236834,
+        "H7": 0.7,
+        "C_over_H7": 0.8143636440338334
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p09.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 10,
+      "phase_angle": 5.235987755982988,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05634142849203998,
+        "I_entropy": 10.387381898337354,
+        "DeltaPhi_mean": 0.00024173528828821928,
+        "C_codex": 0.5850984954912,
+        "H7": 0.7,
+        "C_over_H7": 0.8358549935588572
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p10.png"
+    },
+    {
+      "radius_scale": 1.15,
+      "phase_index": 11,
+      "phase_angle": 5.759586531581287,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05617918083763769,
+        "I_entropy": 10.38140665125885,
+        "DeltaPhi_mean": 0.00024159976128009978,
+        "C_codex": 0.5830780500924156,
+        "H7": 0.7,
+        "C_over_H7": 0.8329686429891653
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.15_p11.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 0,
+      "phase_angle": 0.0,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05932388861999159,
+        "I_entropy": 10.457145835163768,
+        "DeltaPhi_mean": 0.00023415811607633603,
+        "C_codex": 0.6202133268240898,
+        "H7": 0.7,
+        "C_over_H7": 0.8860190383201284
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p00.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 1,
+      "phase_angle": 0.5235987755982988,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.059828822436661905,
+        "I_entropy": 10.452956180736484,
+        "DeltaPhi_mean": 0.00023280225616597303,
+        "C_codex": 0.6252425014105115,
+        "H7": 0.7,
+        "C_over_H7": 0.8932035734435879
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p01.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 2,
+      "phase_angle": 1.0471975511965976,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.060157788681661356,
+        "I_entropy": 10.457639947199219,
+        "DeltaPhi_mean": 0.00023314413093803506,
+        "C_codex": 0.6289618552873667,
+        "H7": 0.7,
+        "C_over_H7": 0.8985169361248097
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p02.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 3,
+      "phase_angle": 1.5707963267948966,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.059909313002377396,
+        "I_entropy": 10.457470448834023,
+        "DeltaPhi_mean": 0.0002354776933672201,
+        "C_codex": 0.6263523783190278,
+        "H7": 0.7,
+        "C_over_H7": 0.8947891118843255
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p03.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 4,
+      "phase_angle": 2.0943951023931953,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.060237983510159604,
+        "I_entropy": 10.45775947507423,
+        "DeltaPhi_mean": 0.00023404012252612805,
+        "C_codex": 0.6298069427186951,
+        "H7": 0.7,
+        "C_over_H7": 0.8997242038838502
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p04.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 5,
+      "phase_angle": 2.617993877991494,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.060663569010812414,
+        "I_entropy": 10.457331121407112,
+        "DeltaPhi_mean": 0.0002363596223250353,
+        "C_codex": 0.634229121996654,
+        "H7": 0.7,
+        "C_over_H7": 0.906041602852363
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p05.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 6,
+      "phase_angle": 3.141592653589793,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05914216431983013,
+        "I_entropy": 10.45208223153501,
+        "DeltaPhi_mean": 0.00023202382516343165,
+        "C_codex": 0.6180153705315399,
+        "H7": 0.7,
+        "C_over_H7": 0.8828791007593427
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p06.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 7,
+      "phase_angle": 3.665191429188092,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05877100410014263,
+        "I_entropy": 10.452370030499335,
+        "DeltaPhi_mean": 0.0002337647586579611,
+        "C_codex": 0.6141527146575634,
+        "H7": 0.7,
+        "C_over_H7": 0.8773610209393763
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p07.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 8,
+      "phase_angle": 4.1887902047863905,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.060041923209598225,
+        "I_entropy": 10.46001369612613,
+        "DeltaPhi_mean": 0.0002359435457066807,
+        "C_codex": 0.6278911922399357,
+        "H7": 0.7,
+        "C_over_H7": 0.8969874174856225
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p08.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 9,
+      "phase_angle": 4.71238898038469,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.06019957094100763,
+        "I_entropy": 10.461824868241045,
+        "DeltaPhi_mean": 0.00023469019563687233,
+        "C_codex": 0.6296495957412673,
+        "H7": 0.7,
+        "C_over_H7": 0.8994994224875248
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p09.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 10,
+      "phase_angle": 5.235987755982988,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.05995535998522319,
+        "I_entropy": 10.45361258877074,
+        "DeltaPhi_mean": 0.000236784246104781,
+        "C_codex": 0.6266017364860288,
+        "H7": 0.7,
+        "C_over_H7": 0.8951453378371841
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p10.png"
+    },
+    {
+      "radius_scale": 1.3,
+      "phase_index": 11,
+      "phase_angle": 5.759586531581287,
+      "grid_size": 512,
+      "metrics": {
+        "E_mean": 0.059968535205370044,
+        "I_entropy": 10.455524693224621,
+        "DeltaPhi_mean": 0.00023173577102042432,
+        "C_codex": 0.6268572354114887,
+        "H7": 0.7,
+        "C_over_H7": 0.8955103363021268
+      },
+      "visual_path": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_afm_r1.30_p11.png"
+    }
+  ],
+  "paths": {
+    "visuals_dir": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1",
+    "state_json": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/state_v1_1/codex_quantum_imaging_v1_1_state.json",
+    "resonance_curve": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_resonance_curve.png",
+    "dphi_heatmap": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals_v1_1/codex_qim_v1_1_dphi_heatmap.png"
+  }
+}
