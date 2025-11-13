@@ -71,3 +71,17 @@
     "drift_band":  "unknown",
     "semantic_profile":  "balanced"
 }
+{
+    "timestamp":  "2025-11-13T12:00:34.1672768-05:00",
+    "source":  "MemoryWeaveV2.0",
+    "awareness_index":  0.27060630664392132,
+    "C_current":  0.40853488235294128,
+    "C_forecast":  0.461323,
+    "harmony":  0.66666666666666663,
+    "delta_phi":  -0.0064680000000000007,
+    "risk_current":  "Low",
+    "risk_forecast":  "Low",
+    "hb_interval_s":  420,
+    "drift_band":  "unknown",
+    "semantic_profile":  "balanced"
+}
