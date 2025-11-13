@@ -16,7 +16,7 @@ def main():
         "protocol": "CodexTriadicGlyph",
         "version": "1.1",
         "mode": "A",
-        "context": "voicebox_v3_1",
+        "context": "voicebox_v3_1_memory_weave_v2_1_forced_overwrite",
         "triad": {
             "energy":       {"glyph": "E", "value": 1.0},
             "information":  {"glyph": "I", "value": 1.0},
@@ -24,7 +24,7 @@ def main():
         },
         "H7": 0.70,
         "timestamp": t,
-        "note": "A = evolution_through_reorganization"
+        "note": "A = evolution_through_reorganization (forced overwrite anchoring)"
     }
 
     out_path = state_dir / "voicebox_state_v3_1.json"
