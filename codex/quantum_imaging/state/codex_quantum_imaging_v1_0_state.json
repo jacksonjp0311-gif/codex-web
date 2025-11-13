@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "module": "codex_quantum_imaging_v1_0",
+  "version": "1.0",
+  "timestamp": "2025-11-13T10:28:49.669198",
+  "config": {
+    "grid_size": 256,
+    "extent": 4.0,
+    "ring_radius": 0.45,
+    "atom_sigma": 0.2,
+    "cluster_spacing": 0.9,
+    "afm_sharpness": 4.0,
+    "seed": 25159
+  },
+  "metrics": {
+    "E_mean": 0.06097605937336472,
+    "I_entropy": 8.939932718468349,
+    "DeltaPhi_mean": 0.0009511431848273745,
+    "C_codex": 0.5446038719739532,
+    "H7": 0.7,
+    "C_over_H7": 0.7780055313913617
+  },
+  "paths": {
+    "visual_afm": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/visuals/codex_quantum_imaging_v1_0_afm.png",
+    "state_json": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/quantum_imaging/state/codex_quantum_imaging_v1_0_state.json"
+  }
+}
