@@ -7,3 +7,12 @@
     "timestamp":  "2025-11-13T16:23:58",
     "layer":  "H23 Continuity Lattice"
 }
+{
+    "E":  1,
+    "I":  1,
+    "C":  0.7,
+    "H7":  0.7,
+    "PhiDelta":  0,
+    "timestamp":  "2025-11-13T16:32:14",
+    "layer":  "H23 Continuity Lattice"
+}
