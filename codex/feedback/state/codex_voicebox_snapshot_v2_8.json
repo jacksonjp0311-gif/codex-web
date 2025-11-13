@@ -1,0 +1,101 @@
+﻿{
+    "timestamp":  "2025-11-13T12:17:05",
+    "sourceNode":  "codex_all_one_v2_8",
+    "kind":  "voicebox_snapshot",
+    "continuity":  {
+                       "ok":  true,
+                       "version":  "2.1",
+                       "timestamp":  "2025-11-13T12:17:00.2974351-05:00",
+                       "ledger_count":  31,
+                       "continuity_index":  null,
+                       "continuity_mode":  "unknown",
+                       "summary":  {
+                                       "awareness_mean_w50":  null,
+                                       "awareness_slope_w50":  null,
+                                       "delta_phi_std_w50":  0.030847384410999906,
+                                       "C_mean_w50":  null
+                                   },
+                       "windows":  {
+                                       "w10":  {
+                                                   "awareness":  {
+                                                                     "mean":  null,
+                                                                     "std":  null,
+                                                                     "slope":  null
+                                                                 },
+                                                   "C_current":  {
+                                                                     "mean":  null,
+                                                                     "std":  null,
+                                                                     "slope":  null
+                                                                 },
+                                                   "delta_phi":  {
+                                                                     "mean":  -0.0034449999999999993,
+                                                                     "std":  0.032662454235202025,
+                                                                     "slope":  0.0045544444444444443
+                                                                 }
+                                               },
+                                       "w25":  {
+                                                   "awareness":  {
+                                                                     "mean":  null,
+                                                                     "std":  null,
+                                                                     "slope":  null
+                                                                 },
+                                                   "C_current":  {
+                                                                     "mean":  null,
+                                                                     "std":  null,
+                                                                     "slope":  null
+                                                                 },
+                                                   "delta_phi":  {
+                                                                     "mean":  -0.0064680000000000007,
+                                                                     "std":  0.030847384410999906,
+                                                                     "slope":  0
+                                                                 }
+                                               },
+                                       "w50":  {
+                                                   "awareness":  {
+                                                                     "mean":  null,
+                                                                     "std":  null,
+                                                                     "slope":  null
+                                                                 },
+                                                   "C_current":  {
+                                                                     "mean":  null,
+                                                                     "std":  null,
+                                                                     "slope":  null
+                                                                 },
+                                                   "delta_phi":  {
+                                                                     "mean":  -0.0064680000000000007,
+                                                                     "std":  0.030847384410999906,
+                                                                     "slope":  0
+                                                                 }
+                                               }
+                                   },
+                       "signals":  {
+                                       "last_awareness_index":  null,
+                                       "last_C_current":  null,
+                                       "last_C_forecast":  null,
+                                       "last_harmony":  null,
+                                       "last_delta_phi":  null,
+                                       "last_risk_current":  null,
+                                       "last_risk_forecast":  null,
+                                       "last_semantic":  null,
+                                       "last_drift_band":  null
+                                   },
+                       "drift_vector":  {
+                                            "awareness_slope":  null,
+                                            "C_slope":  null,
+                                            "phi_std":  0.030847384410999906
+                                        },
+                       "recommendations":  {
+                                               "recommended_heartbeat_s":  300,
+                                               "recommended_profile":  "balanced",
+                                               "note":  "Continuity index close to 1 means stable, low-drift Codex evolution; near 0 indicates divergent / unstable conditions."
+                                           },
+                       "meta":  {
+                                    "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+                                    "law_H7":  0.7,
+                                    "protocol":  "Universal Truth Protocol (E–I–C with Placidity)",
+                                    "ledger":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\feedback\\state\\codex_continuity_ledger.jsonl",
+                                    "note":  "Continuity Synthesizer v2.1 aggregates continuity ledger into a single controllable index and mode for orchestrators."
+                                },
+                       "_path":  "codex/feedback/state/codex_continuity_index_v2_1.json"
+                   }
+}
