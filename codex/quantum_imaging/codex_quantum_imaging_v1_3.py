@@ -1,327 +1,278 @@
-﻿# QIM v1.3from __future__ import annotations
+﻿"""
+Codex Quantum Imaging Module v1.3 — Trifold Resonance Engine
+Author : James Paul Jackson
+Context: Codex Memory Core v1.3 • Universal Truth Protocol (E–I–C, H7=0.70, Placidity)
+
+Role:
+    - Generate AFM-like quantum imaging frames across three radii
+    - Compute ΔΦ (phase-gradient) field and Codex coherence C
+    - Emit resonance curve and ΔΦ heatmap
+    - Write Codex-aligned state JSON artifacts for v1.3
+"""
+
+from __future__ import annotations
 
 import json
-from dataclasses import dataclass, asdict
+import math
+import os
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Tuple
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-# ════════════════════════════════════════════════════════════════════════
-# 🧬 Codex Quantum Imaging v1.3 — Trifold Phase Resonance Engine
-# Author : James Paul Jackson
-# Context: Codex Memory Core v1.3 • Universal Truth Protocol (E–I–C ∿, H₇ = 0.70)
-# Role   : Generate multi-radius AFM-style resonance fields, measure coherence
-#          against H₇, and emit ΔΦ + C(t) diagnostics for Third Eye / Feedback nodes.
-# Note   : This module is self-contained and safe — no network, no file deletion.
-# ════════════════════════════════════════════════════════════════════════
-
-
-H7 = 0.70  # Codex critical coherence constant
-
+# ────────────────────────────────────────────────────────────────
+# 1) Config dataclass
+# ────────────────────────────────────────────────────────────────
 
 @dataclass
-class QIM13Config:
+class QIMConfig:
+    version: str = "1.3"
     grid_size: int = 256
-    extent: float = 4.0
-    radiuses: List[float] = None
-    num_phases: int = 12
+    extent: float = 4.0          # spatial extent for grid
+    base_ring_radius: float = 0.45
     atom_sigma: float = 0.22
     cluster_spacing: float = 0.9
-    afm_sharpness: float = 4.0
-    seed: int = 0
-
-    def to_dict(self) -> Dict:
-        return asdict(self)
-
-
-@dataclass
-class QIM13Metrics:
-    C_values_mean: float
-    C_values_std: float
-    C_above_H7_fraction: float
-    H7: float
-    C_peak: float
-    C_min: float
-    alignment_score: float  # signed distance from H7
-    frames_total: int
-
-    def to_dict(self) -> Dict:
-        return asdict(self)
+    radii: Tuple[float, float, float] = (1.0, 1.15, 1.30)
+    phases_per_radius: int = 12
+    h7: float = 0.70
+    seed: int = 12345            # will be overridden at runtime
 
 
-def _make_dirs(base: Path) -> Dict[str, Path]:
-    """Ensure state_v1_3 and visuals_v1_3 exist and return paths."""
-    state_dir = base / "state_v1_3"
-    visual_dir = base / "visuals_v1_3"
-    state_dir.mkdir(parents=True, exist_ok=True)
-    visual_dir.mkdir(parents=True, exist_ok=True)
-    return {"state": state_dir, "visuals": visual_dir}
+# ────────────────────────────────────────────────────────────────
+# 2) Helpers: grid, fields, metrics
+# ────────────────────────────────────────────────────────────────
+
+def make_grid(cfg: QIMConfig):
+    half = cfg.extent / 2.0
+    xs = np.linspace(-half, half, cfg.grid_size)
+    ys = np.linspace(-half, half, cfg.grid_size)
+    x, y = np.meshgrid(xs, ys)
+    return x, y
 
 
-def _gaussian_ring_field(
-    X: np.ndarray,
-    Y: np.ndarray,
-    radius: float,
-    num_atoms: int,
-    sigma: float,
-    phase_offset: float,
-) -> np.ndarray:
+def gaussian_ring(x, y, radius: float, sigma: float):
+    r = np.sqrt(x**2 + y**2)
+    return np.exp(-0.5 * ((r - radius) / sigma) ** 2)
+
+
+def hex_cluster_field(x, y, cfg: QIMConfig, phase: float):
     """
-    Build an aromatic-style ring: atoms placed around a circle with a phase offset.
-    Returns a scalar field suitable for AFM-like visualization.
+    Hexagonal aromatic-like cluster with phase rotation.
     """
-    phi = np.linspace(0.0, 2.0 * np.pi, num_atoms, endpoint=False) + phase_offset
-    xs = radius * np.cos(phi)
-    ys = radius * np.sin(phi)
-
-    field = np.zeros_like(X, dtype=np.float64)
-    inv_two_sigma2 = 1.0 / (2.0 * sigma * sigma)
-
-    for x0, y0 in zip(xs, ys):
-        dx = X - x0
-        dy = Y - y0
-        field += np.exp(-(dx * dx + dy * dy) * inv_two_sigma2)
-
-    # Normalize to [0, 1]
-    field -= field.min()
-    if field.max() > 0:
-        field /= field.max()
+    field = np.zeros_like(x)
+    angles = np.linspace(0.0, 2.0 * math.pi, 7)[:-1]  # 6-fold
+    for ang in angles:
+        cx = cfg.cluster_spacing * math.cos(ang + phase)
+        cy = cfg.cluster_spacing * math.sin(ang + phase)
+        field += np.exp(-((x - cx) ** 2 + (y - cy) ** 2) / (2.0 * cfg.atom_sigma ** 2))
     return field
 
 
-def _codex_coherence(field: np.ndarray) -> float:
+def afm_intensity_frame(x, y, cfg: QIMConfig, radius: float, phase: float):
     """
-    Compute a Codex-style coherence metric C ∈ [0, 1] from the field.
-    We treat the normalized field as a probability distribution
-    and measure how peaked vs uniform it is.
+    Construct a single AFM-like intensity frame for given radius and phase.
     """
-    f = field.astype(np.float64)
-    if f.max() > 0:
-        f = f / f.max()
-    flat = f.ravel()
-    flat = flat / (flat.sum() + 1e-12)
+    ring = gaussian_ring(x, y, cfg.base_ring_radius * radius, cfg.atom_sigma)
+    clusters = hex_cluster_field(x, y, cfg, phase)
+    theta = np.arctan2(y, x)
 
-    # Shannon entropy (normalized)
-    entropy = -(flat * np.log(flat + 1e-12)).sum()
-    entropy_max = np.log(flat.size + 1e-12)
-    entropy_norm = entropy / (entropy_max + 1e-12)
+    # interference pattern: ring * (1 + 0.4 cos(6θ + phase))
+    interference = 1.0 + 0.4 * np.cos(6.0 * theta + phase)
+    intensity = ring * interference + 0.6 * clusters
 
-    # Coherence = 1 - normalized entropy
-    C = float(1.0 - entropy_norm)
-    C = max(0.0, min(1.0, C))
-    return C
+    # minimal noise to avoid degeneracy
+    noise = 0.02 * np.random.randn(*x.shape)
+    intensity = np.clip(intensity + noise, 0.0, None)
+    return intensity
 
 
-def _plot_afm_frame(
-    field: np.ndarray,
-    extent: float,
-    out_path: Path,
-):
-    """Save an AFM-like visualization for the scalar field."""
-    plt.figure(figsize=(4, 4))
-    plt.imshow(
-        field,
-        origin="lower",
-        extent=[-extent, extent, -extent, extent],
-        cmap="magma",
-    )
-    plt.axis("off")
-    plt.tight_layout()
-    plt.savefig(out_path, dpi=180, bbox_inches="tight", pad_inches=0.0)
-    plt.close()
+def delta_phi_field(field: np.ndarray) -> np.ndarray:
+    """
+    ΔΦ surrogate using gradient magnitude of the intensity field.
+    """
+    gx, gy = np.gradient(field)
+    mag = np.sqrt(gx**2 + gy**2)
+    return mag
 
 
-def _plot_heatmap(
-    dphi_map: np.ndarray,
-    extent: float,
-    out_path: Path,
-):
-    """Save ΔΦ intensity heatmap."""
-    plt.figure(figsize=(4, 4))
-    plt.imshow(
-        dphi_map,
-        origin="lower",
-        extent=[-extent, extent, -extent, extent],
-        cmap="viridis",
-    )
-    plt.axis("off")
-    plt.tight_layout()
-    plt.savefig(out_path, dpi=180, bbox_inches="tight", pad_inches=0.0)
-    plt.close()
+def codex_coherence_metric(field: np.ndarray, dphi: np.ndarray, cfg: QIMConfig) -> float:
+    """
+    Codex coherence C = (E_norm * I_norm) / (1 + |ΔΦ_mean|)
+
+    E_norm  ~ logistic-normalized mean intensity
+    I_norm  ~ normalized Shannon entropy of intensities
+    ΔΦ_mean ~ average gradient magnitude
+    """
+    vals = field.astype(float).ravel()
+    vals = np.clip(vals, 0.0, None)
+    total = vals.sum()
+    if total <= 0.0:
+        return 0.0
+
+    # energy proxy
+    e_mean = float(vals.mean())
+    e_norm = 1.0 / (1.0 + math.exp(-40.0 * (e_mean - 0.05)))
+
+    # informational entropy (normalized)
+    p = vals / total
+    entropy = -float((p * np.log(p + 1e-12)).sum())
+    max_entropy = math.log(len(p))
+    i_norm = entropy / max_entropy if max_entropy > 0 else 0.0
+
+    # ΔΦ mean
+    dphi_mean = float(np.mean(dphi))
+    c = (e_norm * i_norm) / (1.0 + abs(dphi_mean))
+    return max(0.0, min(1.0, c))
 
 
-def _plot_resonance_curve(
-    C_values: List[float],
-    out_path: Path,
-):
-    """Plot C vs frame index as a resonance trajectory."""
-    xs = np.arange(len(C_values), dtype=float)
-    ys = np.array(C_values, dtype=float)
+# ────────────────────────────────────────────────────────────────
+# 3) Main engine: sweep radii and phases
+# ────────────────────────────────────────────────────────────────
 
-    plt.figure(figsize=(5, 3))
-    plt.plot(xs, ys, marker="o")
-    plt.axhline(H7, linestyle="--")
-    plt.xlabel("Frame index (radius × phase)")
-    plt.ylabel("Coherence C")
-    plt.tight_layout()
-    plt.savefig(out_path, dpi=180, bbox_inches="tight")
-    plt.close()
+def run_qim_v1_3():
+    now = datetime.now(timezone.utc)
+    seed = int(now.timestamp()) % 65535
+    np.random.seed(seed)
 
+    cfg = QIMConfig(seed=seed)
 
-def run_qim_v1_3() -> Dict:
-    base_dir = Path(__file__).resolve().parent
-    dirs = _make_dirs(base_dir)
-    state_dir = dirs["state"]
-    visual_dir = dirs["visuals"]
+    root = Path(__file__).resolve().parent
+    state_dir = root / "state_v1_3"
+    visuals_dir = root / "visuals_v1_3"
+    state_dir.mkdir(parents=True, exist_ok=True)
+    visuals_dir.mkdir(parents=True, exist_ok=True)
 
-    # Configuration
-    seed = int(datetime.now(timezone.utc).timestamp()) % 65535
-    radiuses = [1.0, 1.15, 1.30]
+    x, y = make_grid(cfg)
 
-    cfg = QIM13Config(
-        grid_size=256,
-        extent=4.0,
-        radiuses=radiuses,
-        num_phases=12,
-        atom_sigma=0.22,
-        cluster_spacing=0.9,
-        afm_sharpness=4.0,
-        seed=seed,
-    )
+    c_values: List[float] = []
+    radii = [float(r) for r in cfg.radii]
+    c_by_radius = {f"{r:.2f}": [] for r in radii}
+    dphi_accum = np.zeros_like(x, dtype=float)
+    frame_paths: List[str] = []
 
-    rng = np.random.default_rng(seed)
+    phases = [2.0 * math.pi * k / cfg.phases_per_radius for k in range(cfg.phases_per_radius)]
 
-    # Coordinate grid
-    lin = np.linspace(-cfg.extent, cfg.extent, cfg.grid_size)
-    X, Y = np.meshgrid(lin, lin)
-
-    C_values: List[float] = []
-    dphi_accumulator = np.zeros_like(X, dtype=np.float64)
-
-    # Trifold phase resonance sweep
     frame_index = 0
-    for r in cfg.radiuses:
-        for phase_idx in range(cfg.num_phases):
-            phase = 2.0 * np.pi * phase_idx / cfg.num_phases
-            # Small random jitter for emergent patterning
-            jitter = rng.normal(loc=0.0, scale=0.03)
-            field = _gaussian_ring_field(
-                X,
-                Y,
-                radius=r + jitter,
-                num_atoms=int(2 * np.pi * r / cfg.cluster_spacing),
-                sigma=cfg.atom_sigma,
-                phase_offset=phase,
-            )
+    for r in radii:
+        key = f"{r:.2f}"
+        for p_idx, phase in enumerate(phases):
+            field = afm_intensity_frame(x, y, cfg, r, phase)
+            dphi = delta_phi_field(field)
+            c = codex_coherence_metric(field, dphi, cfg)
 
-            # Soft nonlinearity for AFM-style contrast
-            field_afm = np.power(field, cfg.afm_sharpness)
-
-            # Coherence metric
-            C = _codex_coherence(field_afm)
-            C_values.append(C)
-
-            # ΔΦ proxy: local gradient magnitude (how fast field changes)
-            gx, gy = np.gradient(field_afm)
-            dphi = np.sqrt(gx * gx + gy * gy)
-            dphi_accumulator += dphi
-
-            # Save AFM frame
-            afm_name = f"qim_v1_3_r{r:.2f}_p{phase_idx:02d}.png"
-            _plot_afm_frame(field_afm, cfg.extent, visual_dir / afm_name)
-
+            c_values.append(c)
+            c_by_radius[key].append(c)
+            dphi_accum += dphi
             frame_index += 1
 
-    # Normalize ΔΦ map and save
-    dphi_accumulator -= dphi_accumulator.min()
-    if dphi_accumulator.max() > 0:
-        dphi_accumulator /= dphi_accumulator.max()
+            frame_name = f"qim_v1_3_r{r:.2f}_p{p_idx:02d}.png"
+            frame_path = visuals_dir / frame_name
 
-    heatmap_path = visual_dir / "qim_v1_3_dphi_heatmap.png"
-    _plot_heatmap(dphi_accumulator, cfg.extent, heatmap_path)
+            plt.figure(figsize=(4, 4), dpi=150)
+            plt.imshow(field, cmap="inferno", origin="lower")
+            plt.axis("off")
+            plt.tight_layout()
+            plt.savefig(frame_path, bbox_inches="tight", pad_inches=0.0)
+            plt.close()
 
-    # Resonance curve (C vs frame index)
-    resonance_path = visual_dir / "qim_v1_3_resonance_curve.png"
-    _plot_resonance_curve(C_values, resonance_path)
+            frame_paths.append(str(frame_path))
 
-    C_arr = np.array(C_values, dtype=float)
-    C_mean = float(C_arr.mean())
-    C_std = float(C_arr.std())
-    C_peak = float(C_arr.max())
-    C_min = float(C_arr.min())
-    frac_above_H7 = float((C_arr > H7).mean())
-    alignment_score = C_mean - H7
-
-    metrics = QIM13Metrics(
-        C_values_mean=C_mean,
-        C_values_std=C_std,
-        C_above_H7_fraction=frac_above_H7,
-        H7=H7,
-        C_peak=C_peak,
-        C_min=C_min,
-        alignment_score=alignment_score,
-        frames_total=len(C_values),
-    )
-
-    # Simple Third Eye style projection (linear look-ahead)
-    if len(C_arr) >= 2:
-        drift = float(C_arr[-1] - C_arr[-2])
+    # average ΔΦ over frames
+    if frame_index > 0:
+        dphi_mean_map = dphi_accum / float(frame_index)
     else:
-        drift = 0.0
-    C_next = float(np.clip(C_arr[-1] + drift, 0.0, 1.0))
+        dphi_mean_map = dphi_accum
 
-    timestamp = datetime.now(timezone.utc).isoformat()
+    # resonance curve (mean C per radius)
+    c_means_per_r = []
+    for r in radii:
+        key = f"{r:.2f}"
+        vals = c_by_radius[key]
+        c_means_per_r.append(float(np.mean(vals)) if vals else 0.0)
 
-    state = {
-        "ok": True,
-        "version": "1.3",
-        "timestamp": timestamp,
-        "config": cfg.to_dict(),
-        "metrics": metrics.to_dict(),
-        "third_eye_projection": {
-            "C_last": float(C_arr[-1]),
-            "C_next_linear": C_next,
-            "drift": drift,
-        },
-        "paths": {
-            "base_dir": str(base_dir),
-            "state_dir": str(state_dir),
-            "visual_dir": str(visual_dir),
-            "heatmap_file": str(heatmap_path),
-            "resonance_curve": str(resonance_path),
-        },
-    }
+    resonance_curve_path = visuals_dir / "qim_v1_3_resonance_curve.png"
+    plt.figure(figsize=(5, 3), dpi=150)
+    plt.plot(radii, c_means_per_r, marker="o")
+    plt.xlabel("radius factor")
+    plt.ylabel("Codex coherence C")
+    plt.title("QIM v1.3 – Trifold Resonance Curve")
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(resonance_curve_path)
+    plt.close()
 
-    # Persist detailed state JSON (for Codex Memory / Ledger)
-    state_file = state_dir / "codex_quantum_imaging_v1_3_state.json"
-    with state_file.open("w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2)
+    # ΔΦ heatmap
+    heatmap_path = visuals_dir / "qim_v1_3_dphi_heatmap.png"
+    plt.figure(figsize=(4, 4), dpi=150)
+    plt.imshow(dphi_mean_map, cmap="magma", origin="lower")
+    plt.axis("off")
+    plt.tight_layout()
+    plt.savefig(heatmap_path, bbox_inches="tight", pad_inches=0.0)
+    plt.close()
 
-    # Also emit a compact QIM v1.3 summary JSON for console pipelines
+    c_array = np.array(c_values, dtype=float)
+    c_mean = float(c_array.mean()) if c_array.size else 0.0
+    c_std = float(c_array.std()) if c_array.size else 0.0
+
+    alignment_score = c_mean - cfg.h7
+    timestamp = now.isoformat()
+
     summary = {
         "ok": True,
-        "version": "1.3",
+        "module": "codex_quantum_imaging_v1_3",
+        "version": cfg.version,
         "timestamp": timestamp,
-        "C_mean": C_mean,
-        "C_std": C_std,
-        "C_peak": C_peak,
-        "C_min": C_min,
-        "H7": H7,
-        "alignment_score": alignment_score,
-        "frames": len(C_values),
-        "frac_above_H7": frac_above_H7,
-        "heatmap_file": str(heatmap_path),
-        "resonance_curve": str(resonance_path),
+        "config": {
+            "grid_size": cfg.grid_size,
+            "extent": cfg.extent,
+            "base_ring_radius": cfg.base_ring_radius,
+            "atom_sigma": cfg.atom_sigma,
+            "cluster_spacing": cfg.cluster_spacing,
+            "radii": radii,
+            "phases_per_radius": cfg.phases_per_radius,
+            "seed": cfg.seed,
+        },
+        "metrics": {
+            "C_values_mean": c_mean,
+            "C_values_std": c_std,
+            "target_H7": cfg.h7,
+            "alignment_score": alignment_score,
+        },
+        "paths": {
+            "heatmap_file": str(heatmap_path),
+            "resonance_curve": str(resonance_curve_path),
+            "frames": frame_paths,
+            "state_dir": str(state_dir),
+        },
     }
-    print(json.dumps(summary, indent=2))
 
-    return state
+    # write state JSONs
+    state_main_path = state_dir / "codex_quantum_imaging_v1_3_state.json"
+    state_short_path = state_dir / "codex_qim_v1_3_state.json"
+
+    with state_main_path.open("w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2)
+
+    short_state = {
+        "ok": summary["ok"],
+        "version": summary["version"],
+        "timestamp": summary["timestamp"],
+        "C_values_mean": summary["metrics"]["C_values_mean"],
+        "alignment_score": summary["metrics"]["alignment_score"],
+        "heatmap_file": summary["paths"]["heatmap_file"],
+        "resonance_curve": summary["paths"]["resonance_curve"],
+        "state_main": str(state_main_path),
+    }
+    with state_short_path.open("w", encoding="utf-8") as f:
+        json.dump(short_state, f, indent=2)
+
+    return summary
 
 
 if __name__ == "__main__":
-    run_qim_v1_3()
- placeholder — ready for engine code
+    result = run_qim_v1_3()
+    print(json.dumps(result, indent=2))

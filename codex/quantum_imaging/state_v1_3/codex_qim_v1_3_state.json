@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "version": "1.3",
+  "timestamp": "2025-11-13T13:23:50.421768+00:00",
+  "C_values_mean": 0.8678020278757731,
+  "alignment_score": 0.16780202787577314,
+  "heatmap_file": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_dphi_heatmap.png",
+  "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_resonance_curve.png",
+  "state_main": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v1_3\\codex_quantum_imaging_v1_3_state.json"
+}

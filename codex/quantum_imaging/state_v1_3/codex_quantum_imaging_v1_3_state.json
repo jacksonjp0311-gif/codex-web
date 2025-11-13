@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "module": "codex_quantum_imaging_v1_3",
+  "version": "1.3",
+  "timestamp": "2025-11-13T13:23:50.421768+00:00",
+  "config": {
+    "grid_size": 256,
+    "extent": 4.0,
+    "base_ring_radius": 0.45,
+    "atom_sigma": 0.22,
+    "cluster_spacing": 0.9,
+    "radii": [
+      1.0,
+      1.15,
+      1.3
+    ],
+    "phases_per_radius": 12,
+    "seed": 17660
+  },
+  "metrics": {
+    "C_values_mean": 0.8678020278757731,
+    "C_values_std": 0.001831515451769776,
+    "target_H7": 0.7,
+    "alignment_score": 0.16780202787577314
+  },
+  "paths": {
+    "heatmap_file": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_dphi_heatmap.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_resonance_curve.png",
+    "frames": [
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p00.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p01.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p02.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p03.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p04.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p05.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p06.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p07.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p08.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p09.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p10.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.00_p11.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p00.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p01.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p02.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p03.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p04.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p05.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p06.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p07.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p08.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p09.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p10.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.15_p11.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p00.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p01.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p02.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p03.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p04.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p05.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p06.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p07.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p08.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p09.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p10.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_3\\qim_v1_3_r1.30_p11.png"
+    ],
+    "state_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v1_3"
+  }
+}
