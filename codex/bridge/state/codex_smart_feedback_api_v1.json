@@ -1,0 +1,27 @@
+﻿{
+    "ok":  true,
+    "version":  "4.4",
+    "timestamp":  "2025-11-13T04:49:23.6220556-05:00",
+    "coherence":  {
+                      "C_avg":  0.40853488235294128,
+                      "C_next_avg":  0.42707944000000003,
+                      "C_forecast":  0.461323,
+                      "C_trend":  "rising",
+                      "delta_phi":  -0.0064680000000000007,
+                      "harmonic_idx":  0.9,
+                      "risk":  "Low",
+                      "risk_forecast":  "Low"
+                  },
+    "synthesis":  {
+                      "harmony_score":  0.66666666666666663,
+                      "drift_score":  0.0064680000000000007,
+                      "risk":  "Low"
+                  },
+    "operations":  {
+                       "heartbeat_interval_s_next":  300
+                   },
+    "hints":  {
+                  "mode":  "codex-guided",
+                  "note":  "Use these metrics as context when deciding intensity, pacing, and risk posture."
+              }
+}
