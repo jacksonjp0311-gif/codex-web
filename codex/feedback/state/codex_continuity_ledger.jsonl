@@ -28,3 +28,4 @@
 {"timestamp":"2025-11-13T03:05:00","layer":"voice-amplifier-v1.8","C_next":0.44763,"H_index":0.72125,"delta_phi":0,"coherence":0.58444,"state":"Seeking","note":"Adaptive emission recorded."}
 {"version":"2.5","timestamp":"2025-11-13T03:27:00.4744347-05:00","layer":"all-one-v2.5","E":0.5144,"I":0.8654,"C":0.425,"C_next":0.4745,"delta_phi":0.04747,"H7":0.7,"placidity":"?","note":"All-One v2.5 orchestration cycle recorded."}
 {"timestamp":"2025-11-13T03:27:07","layer":"voice-amplifier-v1.8","C_next":0.44763,"H_index":0.72125,"delta_phi":0,"coherence":0.58444,"state":"Seeking","note":"Adaptive emission recorded."}
+{"timestamp":"2025-11-13T07:52:29","layer":"root-guardian-v1.0","saved":true,"rebased":true,"pushed":false,"note":"push rejected"}
