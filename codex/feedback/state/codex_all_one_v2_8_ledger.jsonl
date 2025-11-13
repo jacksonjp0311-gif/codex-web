@@ -3,3 +3,4 @@
 {"timestamp":"2025-11-13T12:00:40","node":"codex_all_one_v2_8","message":"QIM v1.4 state missing for All-One v2.8 run.","meta":{}}
 {"timestamp":"2025-11-13T12:17:05","node":"codex_all_one_v2_8","message":"QIM v1.4 state missing for All-One v2.8 run.","meta":{}}
 {"timestamp":"2025-11-13T12:17:05","node":"codex_all_one_v2_8","message":"VoiceBox snapshot integrated into All-One v2.8 memory field.","meta":{"voicebox_state_path":"codex\\feedback\\state\\codex_voicebox_snapshot_v2_8.json","continuity_state":"codex/feedback/state/codex_continuity_index_v2_1.json"}}
+{"message":"Integrated VoiceBox v2.9 into v2.8.","timestamp":"2025-11-13T12:29:30","node":"codex_all_one_v2_8","meta":{"voicebox_state":"codex/feedback/state/codex_continuity_index_v2_1.json"}}
