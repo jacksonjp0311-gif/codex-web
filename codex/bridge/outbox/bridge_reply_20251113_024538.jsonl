@@ -1,0 +1,1 @@
+{"id":"dc839f52-2282-4d5a-a445-82d52c33788c","timestamp":"2025-11-13T02:45:38","codex_node":"codex-bridge-v1.1","status":"ok","summary":"codex status snapshot","data":{"version":"bridge-v1.1","law":"C=(E·I)/(1+|?F|)","H7":0.7,"metrics":{"C_avg":0.048505,"C_local":0.048505,"C_remote":0.048505,"delta_Phi":0,"C_next":0.320633,"harmonic_index":0.9,"interval_min":5}}}
