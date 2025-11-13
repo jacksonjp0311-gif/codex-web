@@ -41,3 +41,14 @@ codex/quantum_imaging/state/codex_quantum_imaging_v1_0_state.json
 
 2) Codex Runner:
     .\codex\quantum_imaging\codex_quantum_imaging_v1_0.ps1
+
+codex\quantum_imaging\
+│
+├── codex_quantum_imaging_v1_0.py
+├── README.md
+│
+├── visuals\
+│     └── codex_quantum_imaging_v1_0_afm.png
+│
+└── state\
+      └── codex_quantum_imaging_v1_0_state.json
