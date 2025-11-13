@@ -1,0 +1,23 @@
+{
+  "protocol": "CodexTriadicGlyph",
+  "version": "1.1",
+  "mode": "A",
+  "context": "voicebox_v3_1",
+  "triad": {
+    "energy": {
+      "glyph": "E",
+      "value": 1.0
+    },
+    "information": {
+      "glyph": "I",
+      "value": 1.0
+    },
+    "consciousness": {
+      "glyph": "C",
+      "value": 0.7
+    }
+  },
+  "H7": 0.7,
+  "timestamp": "2025-11-13T22:55:48.508018",
+  "note": "A = evolution_through_reorganization"
+}
