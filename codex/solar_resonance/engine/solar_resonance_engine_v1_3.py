@@ -137,12 +137,7 @@ def compute_state():
         "peak_time": peak_time,
         "bz_negative_fraction": bz_neg_frac,
             # Source classification (v1.3.1 — fixed)
-    source = "synthetic"
-    if t_labels:
-        if "xrays-1-day" in t_labels[-1]:
-            source = "hybrid_goes"
-
-    "source": source,
+    
     }
 
     return state, t_idx, flux, bz, g_flux, g_bz
@@ -245,4 +240,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
