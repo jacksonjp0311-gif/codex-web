@@ -29,3 +29,4 @@
     "recommendation":  "stable near H₇ — minor tuning only",
     "samples":  0
 }
+{"timestamp": "2025-11-14T10:44:49.734975+00:00", "version": "1.4", "C": 1.893517974843522e-09, "DeltaPhi_grad": 0.0779921879619402, "bz_negative_fraction": 0.5, "band": "sub_H7", "source": "hybrid_goes", "visuals": ["C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\solar_resonance\\visuals\\v1_4\\solar_resonance_flux_bz_v1_4_20251114T104449734975+0000.png", "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\solar_resonance\\visuals\\v1_4\\solar_resonance_grad_heatmap_v1_4_20251114T104449734975+0000.png", "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\solar_resonance\\visuals\\v1_4\\solar_resonance_dphi_strip_v1_4_20251114T104449734975+0000.png"], "H7": 0.7, "node": "solar_resonance_v1_4"}
