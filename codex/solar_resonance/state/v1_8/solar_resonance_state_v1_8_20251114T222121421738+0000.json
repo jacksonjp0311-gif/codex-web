@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "version": "1.8",
+  "timestamp": "2025-11-14T22:21:21.421738+00:00",
+  "N": 256,
+  "H7": 0.7,
+  "E_sun": 1.6071909495277148e-06,
+  "I_sun": 2.3006085179734475e-06,
+  "DeltaPhi_grad": 0.07795297349379147,
+  "DeltaPhi_local_mean": 0.07795297349379146,
+  "C_raw": 3.4301284744446136e-12,
+  "C": 4.900183534920877e-12,
+  "C_half": 4.785718529481292e-12,
+  "dC": 1.144650054395849e-13,
+  "coherence_score": 0.38162602481022295,
+  "harmonic_index": 0,
+  "harmonic_peak": 1.0,
+  "harmonic_entropy": 0.2367479503844543,
+  "bz_negative_fraction": 0.5,
+  "trend_score": 0.5000000000011446,
+  "Omega": 0.4210840165405301,
+  "band": "sub_H7",
+  "drift": "flat",
+  "alert_level": "quiet",
+  "source": "hybrid_goes",
+  "SRS": {
+    "Omega": 0.4210840165405301,
+    "band": "sub_H7",
+    "alert_level": "quiet",
+    "harmonic_index": 0,
+    "harmonic_peak": 1.0,
+    "harmonic_entropy": 0.2367479503844543,
+    "bz_negative_fraction": 0.5,
+    "DeltaPhi_grad": 0.07795297349379147,
+    "DeltaPhi_local_mean": 0.07795297349379146
+  },
+  "Temporal": {
+    "N_samples": 256,
+    "coherence_drift": 1.144650054395849e-13,
+    "trend_score": 0.5000000000011446,
+    "texture_entropy": 0.2367479503844543
+  }
+}
