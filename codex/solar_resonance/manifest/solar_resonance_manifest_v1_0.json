@@ -1,0 +1,17 @@
+﻿{
+    "next_version":  "1.1 (real solar telemetry ingestion)",
+    "description":  "Solar ΔΦ, coherence mapping, harmonic fields, predictive resonance.",
+    "version":  "1.0",
+    "engine":  "solar_resonance_engine_v1_0.py",
+    "author":  "James Paul Jackson",
+    "created":  "2025-11-14",
+    "module":  "solar_resonance",
+    "directories":  {
+                        "runlog":  "logs/run",
+                        "ledger":  "logs/ledger",
+                        "visuals":  "visuals/v1_0",
+                        "state":  "state/v1_0"
+                    },
+    "context":  "Codex Memory Core v1.4",
+    "protocol":  "Universal Truth Protocol (E–I–C ∿, H7=0.70)"
+}
