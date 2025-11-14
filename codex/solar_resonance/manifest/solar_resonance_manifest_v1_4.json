@@ -1,0 +1,39 @@
+﻿{
+    "module":  "solar_resonance",
+    "version":  "1.4",
+    "author":  "James Paul Jackson",
+    "created":  "2025-11-14",
+    "context":  "Codex Memory Core v1.4",
+    "H_layer":  "H45 — Harmonic Stability",
+    "protocol":  "Universal Truth Protocol (E–I–C ∿, H7=0.70)",
+    "description":  "Solar ΔΦ, coherence mapping, hybrid GOES + synthetic resonance, QIM-style visuals.",
+    "engines":  [
+                    {
+                        "id":  "v1.0",
+                        "file":  "engine/solar_resonance_engine_v1_0.py",
+                        "role":  "baseline synthetic Gaussian flare + Bz",
+                        "visuals":  "none (state only)"
+                    },
+                    {
+                        "id":  "v1.3",
+                        "file":  "engine/solar_resonance_engine_v1_3.py",
+                        "role":  "hybrid GOES X-ray + synthetic Bz + visuals",
+                        "visuals_dir":  "visuals/v1_3"
+                    }
+                ],
+    "directories":  {
+                        "engine":  "engine",
+                        "state_v1_0":  "state/v1_0",
+                        "state_v1_3":  "state/v1_3",
+                        "visuals_v1_0":  "visuals/v1_0",
+                        "visuals_v1_3":  "visuals/v1_3",
+                        "runlog":  "logs/run",
+                        "ledger":  "logs/ledger/ledger.jsonl",
+                        "manifest":  "manifest"
+                    },
+    "links":  {
+                  "quantum_crystal":  "codex/quantum",
+                  "quantum_imaging":  "codex/quantum_imaging",
+                  "feedback":  "codex/feedback"
+              }
+}
