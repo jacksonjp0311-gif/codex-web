@@ -1,0 +1,17 @@
+﻿{
+    "version":  "2.2",
+    "timestamp":  "2025-11-14T04:21:27",
+    "triad":  {
+                  "E":  1,
+                  "I":  1,
+                  "C":  1,
+                  "PhiDelta":  0,
+                  "H7":  0.7,
+                  "timestamp":  "2025-11-14T04:21:27",
+                  "layer":  "H40 Harmonic Calibration"
+              },
+    "pattern":  {
+                    "harmonic_index":  1,
+                    "stability":  0.7
+                }
+}
