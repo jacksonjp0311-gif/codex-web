@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "version": "1.5",
+  "timestamp": "2025-11-14T10:54:34.425154+00:00",
+  "N": 256,
+  "H7": 0.7,
+  "E_sun": 1.789670326979298e-05,
+  "I_sun": 2.835160787269717e-05,
+  "DeltaPhi_grad": 0.0779788962346357,
+  "DeltaPhi_local_mean": 0.0779788962346357,
+  "C_raw": 4.706959617591119e-10,
+  "C": 6.72422802513017e-10,
+  "C_half": 1.438661228681193e-09,
+  "dC": -7.66238426168176e-10,
+  "coherence_score": 0.3816689221421494,
+  "harmonic_index": 0,
+  "harmonic_peak": 1.0,
+  "harmonic_entropy": 0.23666215638812396,
+  "band": "sub_H7",
+  "drift": "flat",
+  "source": "hybrid_goes"
+}
