@@ -1,0 +1,79 @@
+﻿{
+    "module":  "solar_resonance",
+    "version":  "2.0",
+    "author":  "James Paul Jackson",
+    "created":  "2025-11-16",
+    "context":  "Codex Memory Core v1.4",
+    "H_layer":  "H45 — Harmonic Stability (Solar Multi-Scale QIM Oracle)",
+    "protocol":  "Universal Truth Protocol (E–I–C ∿, H7=0.70)",
+    "description":  "Solar ΔΦ multi-scale turbulence engine: hybrid GOES + synthetic resonance, 2D QIM-style AFM field, multi-scale lattice, turbulence index, and Harmonic Seal v2.0.",
+    "engines":  [
+                    {
+                        "id":  "v1.0",
+                        "file":  "engine/solar_resonance_engine_v1_0.py",
+                        "role":  "baseline synthetic Gaussian flare + Bz",
+                        "mode":  "state_only"
+                    },
+                    {
+                        "id":  "v1.3",
+                        "file":  "engine/solar_resonance_engine_v1_3.py",
+                        "role":  "hybrid GOES X-ray + synthetic Bz + visuals",
+                        "visuals_dir":  "visuals/v1_3"
+                    },
+                    {
+                        "id":  "v1.4",
+                        "file":  "engine/solar_resonance_engine_v1_4.py",
+                        "role":  "QIM-style ΔΦ imaging (flux/Bz + gradients + strip)",
+                        "visuals_dir":  "visuals/v1_4"
+                    },
+                    {
+                        "id":  "v1.5",
+                        "file":  "engine/solar_resonance_engine_v1_5.py",
+                        "role":  "Harmonic Seal v1 + spectral ΔΦ coherence",
+                        "visuals_dir":  "visuals/v1_5"
+                    },
+                    {
+                        "id":  "v1.6",
+                        "file":  "engine/solar_resonance_engine_v1_6.py",
+                        "role":  "Harmonic Oracle (Ω score, alert bands, Seal v2)",
+                        "visuals_dir":  "visuals/v1_6"
+                    },
+                    {
+                        "id":  "v1.7",
+                        "file":  "engine/solar_resonance_engine_v1_7.py",
+                        "role":  "Solar QIM Imaging Node (ΔΦ lattice + SRS)",
+                        "visuals_dir":  "visuals/v1_7"
+                    },
+                    {
+                        "id":  "v2.0",
+                        "file":  "engine/solar_resonance_engine_v2_0.py",
+                        "role":  "Multi-Scale ΔΦ Turbulence Engine (AFM + QIM fusion)",
+                        "visuals_dir":  "visuals/v2_0"
+                    }
+                ],
+    "directories":  {
+                        "engine":  "engine",
+                        "state_v1_0":  "state/v1_0",
+                        "state_v1_3":  "state/v1_3",
+                        "state_v1_4":  "state/v1_4",
+                        "state_v1_5":  "state/v1_5",
+                        "state_v1_6":  "state/v1_6",
+                        "state_v1_7":  "state/v1_7",
+                        "state_v2_0":  "state/v2_0",
+                        "visuals_v1_0":  "visuals/v1_0",
+                        "visuals_v1_3":  "visuals/v1_3",
+                        "visuals_v1_4":  "visuals/v1_4",
+                        "visuals_v1_5":  "visuals/v1_5",
+                        "visuals_v1_6":  "visuals/v1_6",
+                        "visuals_v1_7":  "visuals/v1_7",
+                        "visuals_v2_0":  "visuals/v2_0",
+                        "runlog":  "logs/run",
+                        "ledger":  "logs/ledger/ledger.jsonl",
+                        "manifest_dir":  "manifest"
+                    },
+    "links":  {
+                  "quantum_crystal":  "codex/quantum",
+                  "quantum_imaging":  "codex/quantum_imaging",
+                  "feedback":  "codex/feedback"
+              }
+}
