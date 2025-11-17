@@ -1,0 +1,20 @@
+﻿{
+    "timestamp":  "2025-11-17T10:06:07.3620096-05:00",
+    "graph":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_graph.jsonl",
+    "section":  "herbal",
+    "H7":  0.7,
+    "axes":  {
+                 "phase":  [
+                               "PASSIVE",
+                               "ACTIVE"
+                           ],
+                 "flow":  [
+                              "INPUT",
+                              "OUTPUT"
+                          ],
+                 "depth":  [
+                               "CORE",
+                               "PERIPHERY"
+                           ]
+             }
+}
