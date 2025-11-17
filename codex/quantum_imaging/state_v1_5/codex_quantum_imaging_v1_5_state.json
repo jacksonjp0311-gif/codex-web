@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "module": "codex_quantum_imaging_v1_5",
+  "version": "1.5",
+  "timestamp": "2025-11-17T13:09:15.632996+00:00",
+  "config": {
+    "grid_size": 256,
+    "extent": 3.0,
+    "base_radius": 0.55,
+    "atom_sigma": 0.22,
+    "cluster_spacing": 0.9,
+    "radii": [
+      1.0,
+      1.15,
+      1.3
+    ],
+    "phases_per_radius": 4,
+    "seed": 34710
+  },
+  "metrics": {
+    "E_mean": 0.10208275630295717,
+    "I_mean": 0.8345321567091285,
+    "C_values_mean": 0.7266918045228046,
+    "target_H7": 0.7,
+    "alignment_score": 0.02669180452280462
+  },
+  "paths": {
+    "delta_phi_grid": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_delta_phi_grid.png",
+    "triadic_vision_map": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_triadic_vision.png",
+    "frames": [
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_01.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_02.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_03.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_04.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_05.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_06.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_07.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_08.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_09.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_10.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_11.png",
+      "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_frame_12.png"
+    ],
+    "state_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v1_5"
+  }
+}

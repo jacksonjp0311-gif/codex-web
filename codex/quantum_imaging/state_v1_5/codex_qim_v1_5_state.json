@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "version": "1.5",
+  "timestamp": "2025-11-17T13:09:15.632996+00:00",
+  "C_values_mean": 0.7266918045228046,
+  "alignment_score": 0.02669180452280462,
+  "delta_phi_grid": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_delta_phi_grid.png",
+  "triadic_vision_map": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v1_5\\qim_v1_5_triadic_vision.png",
+  "state_main": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v1_5\\codex_quantum_imaging_v1_5_state.json"
+}
