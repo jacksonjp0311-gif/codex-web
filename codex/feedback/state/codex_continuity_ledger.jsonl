@@ -165,4 +165,11 @@
          " H 7 " :     0 . 7 ,  
          " n o t e " :     " V o y n i c h   A l l - O n e   v 1 . 2   r u n      R E L + S T A T E   g r a p h   e m i s s i o n "  
  }  
- 
+ {
+    "t":  "2025-11-17T10:24:54.6457394-05:00",
+    "module":  "voynich_graph_v2_1",
+    "graph":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_graph_v2_1.jsonl",
+    "state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\state\\voynich_state_20251117_102454.json",
+    "H7":  0.7,
+    "note":  "Radial botanical mapping"
+}
