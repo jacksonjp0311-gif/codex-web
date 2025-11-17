@@ -1,0 +1,58 @@
+{
+  "protocol": "CodexQuantumImaging",
+  "version": "2.2",
+  "timestamp": "20251117_095243",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v2_2",
+  "used_synthetic": true,
+  "state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v2_2\\qim_v2_2_state_20251117_095243.json",
+  "visuals": {
+    "delta_phi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_2\\qim_v2_2_delta_phi_central_20251117_095243.png",
+    "delta_phi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_2\\qim_v2_2_delta_phi_maxproj_20251117_095243.png",
+    "horizon_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_2\\qim_v2_2_horizon_maxproj_20251117_095243.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_2\\qim_v2_2_resonance_curve_20251117_095243.png"
+  },
+  "volume_summary": {
+    "shape": [
+      3,
+      256,
+      256
+    ],
+    "delta_phi_mean": 9.934107758624577e-09,
+    "delta_phi_std": 0.20299018919467926,
+    "gradient_mean": 0.010735586285591125,
+    "gradient_std": 0.03179064393043518,
+    "horizon_threshold": 0.4059803883234663,
+    "horizon_fraction": 0.06201171875,
+    "triad": {
+      "energy": 0.010735586285591125,
+      "information": 0.28337729588592425,
+      "coherence": 0.0030422213811390716,
+      "h7_target": 0.7
+    },
+    "resonance": {
+      "radii": [
+        0.7,
+        1.0,
+        1.4,
+        1.8,
+        2.2
+      ],
+      "response": [
+        0.18284903466701508,
+        0.1813437044620514,
+        0.17867444455623627,
+        0.17539973556995392,
+        0.1716856211423874
+      ]
+    },
+    "synthetic": true,
+    "solar_link": {
+      "band_hint": "inner",
+      "turbulence_index": 0.0227218391882335
+    },
+    "third_eye_link": {
+      "symmetry_score": 0.9518807402435222,
+      "ring_count_hint": 2
+    }
+  }
+}
