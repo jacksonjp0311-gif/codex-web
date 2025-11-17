@@ -1,0 +1,19 @@
+﻿{
+    "dirs":  [
+                 "engine",
+                 "state\\v3_4",
+                 "visuals\\v3_4",
+                 "lattice\\v3_4",
+                 "flow\\v3_4",
+                 "horizon\\v3_4",
+                 "logs\\run",
+                 "logs\\ledger",
+                 "manifest"
+             ],
+    "version":  "3.4",
+    "timestamp":  "2025-11-17T07:59:14.9024260-05:00",
+    "description":  "Solar ΔΦ Motion, Horizon, QIM lattice, Harmonic Seal v3.4, Triadic Vision Glyph",
+    "module":  "solar_resonance",
+    "role":  "Triadic Motion Horizon Engine",
+    "engine":  "solar_resonance_engine_v3_4.py"
+}
