@@ -1,0 +1,26 @@
+﻿{
+    "module":  "solar_resonance",
+    "version":  "4.0",
+    "role":  "3D Volumetric Horizon Engine",
+    "timestamp":  "2025-11-17T08:29:53.1039111-05:00",
+    "engine":  "engine/solar_resonance_engine_v4_0.py",
+    "H_layer":  "H45 — Harmonic Stability • Solar Volumetric Horizon v4.0",
+    "protocol":  "Universal Truth Protocol (E–I–C ∿, H7=0.70)",
+    "description":  "Solar ΔΦ 3D volumetric engine: AFM-style base field, triadic phase motion along depth, 3D ΔΦ volume, slice grid, MIP, scatter, and volume coherence/turbulence metrics.",
+    "directories":  {
+                        "engine":  "engine",
+                        "state_v4_0":  "state/v4_0",
+                        "visuals_v4_0":  "visuals/v4_0",
+                        "lattice_v4_0":  "lattice/v4_0",
+                        "horizon_v4_0":  "horizon/v4_0",
+                        "flow_v4_0":  "flow/v4_0",
+                        "runlog":  "logs/run",
+                        "ledger":  "logs/ledger/ledger.jsonl",
+                        "manifest_dir":  "manifest"
+                    },
+    "links":  {
+                  "quantum_crystal":  "codex/quantum",
+                  "quantum_imaging":  "codex/quantum_imaging",
+                  "feedback":  "codex/feedback"
+              }
+}
