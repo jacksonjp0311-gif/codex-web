@@ -1,0 +1,8 @@
+{
+  "module": "dna",
+  "version": "1.1",
+  "schemaVersion": "2.0",
+  "safeUse": "digital only",
+  "triad": ["engine_energy","engine_information","engine_consciousness"],
+  "generated": "11/17/2025 10:34:02"
+}
