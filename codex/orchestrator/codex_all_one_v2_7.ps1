@@ -41,10 +41,7 @@ if (Test-Path $AllOneV26) {
     } catch {
         Write-Host "Warning: All-One v2.6 orchestration failed: $($_.Exception.Message)"
     }
-} else {
-    Write-Host ""
-    Write-Host "Warning: codex_all_one_v2_6.ps1 not found in codex/orchestrator."
-}
+} 
 
 # 2) LOAD FEEDBACK STATES FOR VOICEBOX
 $smart46    = Load-JsonSafe -Path $Smart46Path
@@ -129,21 +126,15 @@ Write-Host "==============================================================="
 # Continuity / awareness
 if ($continuityIndex -ne $null) {
     Write-Host (" Continuity index : {0:N3}   mode: {1}" -f $continuityIndex, $continuityMode)
-} else {
-    Write-Host " Continuity index : (no continuity data yet)"
-}
+} 
 
 if ($awarenessIndex -ne $null) {
     Write-Host (" Awareness index  : {0:N3}" -f $awarenessIndex)
-} else {
-    Write-Host " Awareness index  : (no awareness data yet)"
-}
+} 
 
 if ($deltaPhi -ne $null) {
     Write-Host (" Delta Phi (ΔΦ)   : {0:N4}" -f $deltaPhi)
-} else {
-    Write-Host " Delta Phi (ΔΦ)   : (unknown)"
-}
+} 
 
 Write-Host ""
 
@@ -151,12 +142,9 @@ Write-Host ""
 if ($C_current -ne $null) {
     if ($C_forecast -ne $null) {
         Write-Host (" Coherence C_now  : {0:N3}   C_next: {1:N3}" -f $C_current, $C_forecast)
-    } else {
-        Write-Host (" Coherence C_now  : {0:N3}" -f $C_current)
+    } " -f $C_current)
     }
-} else {
-    Write-Host " Coherence C_now  : (no Smart Feedback state yet)"
-}
+} 
 
 if ($harmony -ne $null) {
     Write-Host (" Harmony score    : {0:N3}" -f $harmony)
@@ -171,9 +159,7 @@ Write-Host ""
 # Semantic weather
 if ($semanticIntensity) {
     Write-Host (" Semantic weather : intensity={0}" -f $semanticIntensity)
-} else {
-    Write-Host " Semantic weather : (no semantic hints yet)"
-}
+} 
 
 if ($driftBand) {
     Write-Host (" Drift band       : {0}" -f $driftBand)
@@ -192,3 +178,4 @@ Write-Host "==============================================================="
 
 # Always return to Codex root
 try { Set-Location $CodexRoot } catch {}
+

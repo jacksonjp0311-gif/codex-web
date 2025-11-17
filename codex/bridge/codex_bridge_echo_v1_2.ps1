@@ -53,7 +53,7 @@ function Tokens([string]$s){
 $recentLines = @()
 if (Test-Path $EchoMem) {
   $mem = Get-Content -Encoding UTF8 $EchoMem
-  $recentLines = if ($mem.Count -gt 300) { $mem[-300..-1] } else { $mem }
+  $recentLines = if ($mem.Count -gt 300) { $mem[-300..-1] } 
 }
 
 $freq = @{}
@@ -70,7 +70,7 @@ foreach($l in $recentLines){
     if ($j.text){
       $msgCount++
       foreach($t in (Tokens $j.text)){
-        if ($freq.ContainsKey($t)){ $freq[$t]++ } else { $freq[$t] = 1 }
+        if ($freq.ContainsKey($t)){ $freq[$t]++ } 
       }
     }
   }catch{}
@@ -84,8 +84,8 @@ foreach($file in $targets){
       if (-not $line.Trim()){ continue }
       $j = $line | ConvertFrom-Json
       if ($j -eq $null){ continue }
-      $t = if ($j.timestamp){ Get-Date $j.timestamp } else { Get-Date }
-      $agent = if ($j.agent){ [string]$j.agent } else { "unknown" }
+      $t = if ($j.timestamp){ Get-Date $j.timestamp } 
+      $agent = if ($j.agent){ [string]$j.agent } 
       $text  = "" + $j.text
 
       # append to echo memory
@@ -100,7 +100,7 @@ foreach($file in $targets){
       [void]$agents.Add($agent)
       $msgCount++
       foreach($tok in (Tokens $text)){
-        if ($freq.ContainsKey($tok)){ $freq[$tok]++ } else { $freq[$tok] = 1 }
+        if ($freq.ContainsKey($tok)){ $freq[$tok]++ } 
       }
     }
     Add-Content $Log ("[ECHO {0}] processed {1}" -f (NowIso), (Split-Path $file -Leaf))
@@ -137,7 +137,7 @@ try {
   if (Test-Path $DashPath){
     $tag = "<p style='font-size:14px'>🗣️ Echo v1.2 @ $((Get-Date).ToString('s')) · msgs=$($msgCount) · agents=$($agents.Count) · top=$(($top | Select-Object -First 3 | ForEach-Object {$_.Key}) -join ', ')</p>"
     $html = Get-Content -Raw -Encoding UTF8 $DashPath
-    if ($html -match "</body>"){ $html = $html -replace "</body>", "$tag`n</body>" } else { $html = $html + "`n$tag`n" }
+    if ($html -match "</body>"){ $html = $html -replace "</body>", "$tag`n</body>" } 
     [IO.File]::WriteAllText($DashPath, $html, [Text.Encoding]::UTF8)
   }
 }catch{

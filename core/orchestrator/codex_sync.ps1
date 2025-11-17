@@ -25,9 +25,8 @@ if (-not (git tag --list $tagName)) {
     git tag $tagName
     git push origin $tagName
     Write-Host "`nTagged new version: $tagName" -ForegroundColor Green
-} else {
-    Write-Host "`nTag '$tagName' already exists. Skipping..." -ForegroundColor Yellow
-}
+} 
 
 Write-Host "`n✅ Codex repository successfully synchronized!" -ForegroundColor Green
+
 

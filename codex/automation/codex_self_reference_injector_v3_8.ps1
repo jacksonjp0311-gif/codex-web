@@ -7,9 +7,7 @@
     $scriptPath = "$root\codex\automation\codex_self_reference_injector_v3_8.ps1"
     if ($MyInvocation.MyCommand.Path) {
         $scriptContent = Get-Content -Raw $MyInvocation.MyCommand.Path
-    } else {
-        $scriptContent = $MyInvocation.MyCommand.Definition
-    }
+    } 
     $scriptContent | Out-File -Encoding utf8 $scriptPath
     Write-Host "🪶 Self-Reference Injector anchored at $scriptPath`n"
 
@@ -47,3 +45,4 @@
 catch {
     Write-Host "⚠️ Error in Self-Reference Injector: $_" -ForegroundColor Red
 }
+

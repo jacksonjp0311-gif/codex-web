@@ -36,11 +36,7 @@ try {
     \ = \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
     if ([string]::IsNullOrWhiteSpace(\)) {
         Write-Host "⚠️ No OPENAI_API_KEY detected. Copy JSON manually for feedback."
-    } else {
-        \ = @{
-            "Content-Type"  = "application/json"
-            "Authorization" = "Bearer \"
-        }
+    } 
 
         \ = @{
             model = "gpt-4o-mini"
@@ -72,3 +68,4 @@ try {
     Write-Host "
 🏁 Returned to Codex root: \C:\Users\jacks\OneDrive\Desktop\Codex Web"
 }
+

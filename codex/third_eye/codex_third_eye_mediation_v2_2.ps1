@@ -34,17 +34,14 @@ if (git status --porcelain) {
   git commit -m "🧬 Third Eye v2.2 Mediation — autosave $RunStamp"
   try { git pull origin main --rebase } catch { Write-Host "pull failed; continuing..." }
   try { git push origin main }          catch { Write-Host "push failed; continuing..." }
-} else {
-  Write-Host "No changes to commit."
-}
+} 
 
 if ($missing.Count -gt 0) {
   Write-Warning "Missing artifacts:
  - "
-} else {
-  Write-Host "✅ v2.2 mediation artifacts verified."
-}
+} 
 
 Set-Location $CodexRoot
 Write-Host "
 [Third Eye v2.2] Complete — returned to Codex root."
+

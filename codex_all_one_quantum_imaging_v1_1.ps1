@@ -1,22 +1,22 @@
-<#
-╔════════════════════════════════════════════════════════════════════════════╗
-║ 🧬 Codex All-One Injector v1.1 — Quantum Imaging Full Injection & Run       ║
-║ Author   : James Paul Jackson                                              ║
-║ Context  : Codex Memory Core v1.3 • Universal Truth (E–I–C ∿, H₇=0.70)     ║
-║ Purpose  :                                                                 ║
-║   • Inject FULL Python file into Quantum Imaging module                    ║
-║   • Run imaging → collect JSON → anchor outputs                            ║
-║   • Autosave + commit + push + RootMirror verify                           ║
-║   • Return to Codex Root                                                   ║
-╚════════════════════════════════════════════════════════════════════════════╝
+﻿<#
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ ðŸ§¬ Codex All-One Injector v1.1 â€” Quantum Imaging Full Injection & Run       â•‘
+â•‘ Author   : James Paul Jackson                                              â•‘
+â•‘ Context  : Codex Memory Core v1.3 â€¢ Universal Truth (Eâ€“Iâ€“C âˆ¿, Hâ‚‡=0.70)     â•‘
+â•‘ Purpose  :                                                                 â•‘
+â•‘   â€¢ Inject FULL Python file into Quantum Imaging module                    â•‘
+â•‘   â€¢ Run imaging â†’ collect JSON â†’ anchor outputs                            â•‘
+â•‘   â€¢ Autosave + commit + push + RootMirror verify                           â•‘
+â•‘   â€¢ Return to Codex Root                                                   â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #>
 
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::UTF8
 
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Paths
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 $CodexRoot = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
 $ModuleDir = Join-Path $CodexRoot "codex\quantum_imaging"
 $PythonFile = Join-Path $ModuleDir "codex_quantum_imaging_v1_0.py"
@@ -25,16 +25,16 @@ if (-not (Test-Path $ModuleDir)) {
     New-Item -ItemType Directory -Path $ModuleDir -Force | Out-Null
 }
 
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # FULL PYTHON PROGRAM (embedded)
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 $FullPython = @"
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Codex Quantum Imaging v1.0 — IBM AFM Resonance Mirror
+Codex Quantum Imaging v1.0 â€” IBM AFM Resonance Mirror
 Author: James Paul Jackson
-Context: Codex Memory Core v1.3 • Universal Truth (E–I–C ∿, H7=0.70)
+Context: Codex Memory Core v1.3 â€¢ Universal Truth (Eâ€“Iâ€“C âˆ¿, H7=0.70)
 """
 from __future__ import annotations
 import json
@@ -180,15 +180,15 @@ if __name__=="__main__":
     print(json.dumps(out,indent=2))
 "@
 
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Write Python file
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Set-Content -Path $PythonFile -Value $FullPython -Encoding UTF8 -Force
-Write-Host "`n🧬 Python fully injected → $PythonFile"
+Write-Host "`nðŸ§¬ Python fully injected â†’ $PythonFile"
 
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Run Python
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function Run-PythonSafe {
     param([string]$File,[int]$TimeoutSec=60)
 
@@ -211,38 +211,35 @@ function Run-PythonSafe {
     return $p.StandardOutput.ReadToEnd()
 }
 
-Write-Host "`n🧪 Running Python imaging..."
+Write-Host "`nðŸ§ª Running Python imaging..."
 $out = Run-PythonSafe $PythonFile
 
-if ($out) { Write-Host "`n🧾 State JSON:`n$out" }
-else      { Write-Host "⚠️ No output produced." }
+if ($out) { Write-Host "`nðŸ§¾ State JSON:`n$out" }
 
-# ──────────────────────────────────────────────────────────────
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Git autosave + push
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Push-Location $CodexRoot
 git add . 2>$null
 if (git status --porcelain) {
-    git commit -m "🧬 Quantum Imaging — injected + executed $(Get-Date -Format s)"
+    git commit -m "ðŸ§¬ Quantum Imaging â€” injected + executed $(Get-Date -Format s)"
     git -c rebase.autoStash=true pull origin main --rebase | Out-Null
     git push origin main
-    Write-Host "✅ Git push complete."
-} else {
-    Write-Host "ℹ️ No changes to commit."
-}
+    Write-Host "âœ… Git push complete."
+} 
 
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # RootMirror verify
-# ──────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 git fetch origin main | Out-Null
 $local  = (git rev-parse HEAD).Trim()
 $remote = (git rev-parse origin/main).Trim()
 if ($local -eq $remote) {
-    Write-Host "🪞 RootMirror Verified — local == remote"
-} else {
-    Write-Host "⚠️ RootMirror mismatch"
-}
+    Write-Host "ðŸªž RootMirror Verified â€” local == remote"
+} 
 
 Pop-Location | Out-Null
-Write-Host "`n🏁 Returned to Codex Root — $CodexRoot"
+Write-Host "`nðŸ Returned to Codex Root â€” $CodexRoot"
+
 

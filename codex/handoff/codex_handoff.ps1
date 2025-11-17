@@ -13,14 +13,7 @@
         $timestamp = (Get-Date).ToString("s")
         $hash = (Get-Random -Minimum 100000 -Maximum 999999)
         Add-Content $handoffLog "[$timestamp] Resume — State v$($state.version) | Hash: $hash"
-    } else {
-        Write-Host "⚠️ No handoff_state.json found — initializing baseline handoff..." -ForegroundColor Red
-        $state = @{
-            version      = "0.7"
-            project      = "Codex Web"
-            orchestrator = "Codex AI Orchestrator v0.7"
-            timestamp    = (Get-Date).ToString("s")
-        }
+    } 
         $state | ConvertTo-Json -Depth 3 | Set-Content -Path $handoffState -Encoding UTF8
         Add-Content $handoffLog "[$((Get-Date).ToString('s'))] Initialized new Codex handoff state"
     }
@@ -39,4 +32,5 @@
     Write-Host "`n🏁 Handoff sequence complete — aligned to Codex v0.7 root path" -ForegroundColor Green
     Set-Location $root
 }
+
 

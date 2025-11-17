@@ -17,7 +17,7 @@ $smart = Get-Content $SmartState -Raw | ConvertFrom-Json
 $base = 300 # default 5 minutes
 if ($smart.coherence_context.C_current -lt 0.45) { $interval = 420 } # slowdown
 elseif ($smart.coherence_context.C_current -gt 0.70) { $interval = 180 } # speedup
-else { $interval = $base }
+
 
 # Write state
 $state = @{
@@ -52,3 +52,4 @@ if (git status --porcelain) {
 
 # Return to root
 Set-Location $CodexRoot
+

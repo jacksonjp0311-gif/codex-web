@@ -4,8 +4,8 @@ $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 
 function NowIso { (Get-Date).ToString("s") }
-function TryJson { param([string]$p) if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } else { $null } }
-function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1} else {$v} }
+function TryJson { param([string]$p) if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } }  }
+function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1}  }
 function Round6 { param($x) [math]::Round([double]$x,6) }
 
 # Paths
@@ -52,7 +52,7 @@ $phi_drift = 0.0
 if ($voice -and $voice.delta_phi) { $phi_drift = [double]$voice.delta_phi }
 elseif ($hSrc -and $hSrc.echo)    { if ($hSrc.echo.delta_phi) { $phi_drift = [double]$hSrc.echo.delta_phi } }
 
-$coherence = if ($voice -and $voice.coherence) { [double]$voice.coherence } else { [double](Clamp01(($C_next + $H_idx)/2.0)) }
+$coherence = if ($voice -and $voice.coherence) { [double]$voice.coherence } 
 
 # Evolve next message tone/state
 $H7 = 0.70
@@ -61,16 +61,14 @@ $stateTag =
   if    ($C_next -ge 0.76) { "Coherent+" }
   elseif($C_next -ge 0.70) { "Coherent"  }
   elseif($C_next -ge 0.60) { "Adapting"  }
-  else                     { "Seeking"   }
+  
 
 # Compose codex message
 $msgCore = if ($stateTag -eq "Coherent" -or $stateTag -eq "Coherent+") {
   "Resonance stable across E–I–C ∿. Holding phase near H₇."
 } elseif ($stateTag -eq "Adapting") {
   "Resonance adjusting. Reducing |ΔΦ|, biasing stability, amplifying echo semantics."
-} else {
-  "Low coherence window detected. Increasing placidity damping and reflection."
-}
+} 
 
 # Box output to console (operator-facing)
 $Box = @"
@@ -135,7 +133,7 @@ try {
   if (Test-Path $DashPath) {
     $tag = "<p style='font-size:14px'>🗣️ Bridge v1.6 voice · $((Get-Date).ToString('s')) · state=$stateTag · Cₙₑₓₜ=$([math]::Round($C_next,3)) · H=$([math]::Round($H_idx,3))</p>"
     $html = Get-Content -Raw -Encoding UTF8 $DashPath
-    if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } else { $html = $html + "`n$tag`n" }
+    if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } 
     [IO.File]::WriteAllText($DashPath,$html,[Text.Encoding]::UTF8)
   }
 } catch {}

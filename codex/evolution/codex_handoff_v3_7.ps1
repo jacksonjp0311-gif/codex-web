@@ -23,7 +23,7 @@ function Safe-LoadJson($path) {
     if (Test-Path $path) {
         try { return (Get-Content $path -Raw | ConvertFrom-Json) }
         catch { return @{"error"="parse_failed";"file"=$path} }
-    } else { return @{"error"="missing";"file"=$path} }
+    }  }
 }
 
 Write-Host "📥 Loading Codex state snapshots..."
@@ -69,3 +69,4 @@ Write-Host "   Phase: HSP — ready for next AI continuity handoff."
 Write-Host "`n🏁 Returned to Codex root: $root" -ForegroundColor Cyan
 
 Set-Location $root
+

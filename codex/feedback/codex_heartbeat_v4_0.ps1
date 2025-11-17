@@ -13,7 +13,7 @@ $AllOnePathV1= Join-Path $CodexRoot "codex_all_one_v1_8_rootmirror.ps1"
 
 function NowIso { (Get-Date).ToString("s") }
 function _mkd { param($p) if(-not(Test-Path $p)){ New-Item -ItemType Directory -Force -Path $p | Out-Null } }
-function SafeNum([object]$x){ if($null -eq $x){0.0}else{ try{ [double]$x }catch{ 0.0 } } }
+function SafeNum([object]$x){ if($null -eq $x){0.0}catch{ 0.0 } } }
 
 function Run-NodeSafe {
   param([string]$ScriptPath,[int]$TimeoutMs=90000,[string]$Tag="node")
@@ -59,7 +59,7 @@ function RootMirror-Verify {
 
 function Get-DeltaC{
   if(-not (Test-Path $LedgerPath)){return 0.0}
-  try{ (Get-Content -Tail 1 -Encoding UTF8 $LedgerPath | ConvertFrom-Json).delta_C }catch{ 0.0 } | ForEach-Object { if($_ -eq $null){0.0}else{ [double]$_ } }
+  try{ (Get-Content -Tail 1 -Encoding UTF8 $LedgerPath | ConvertFrom-Json).delta_C }catch{ 0.0 } | ForEach-Object { if($_ -eq $null){0.0} }
 }
 
 function Next-Interval-Minutes([double]$dC){
@@ -71,7 +71,7 @@ function Next-Interval-Minutes([double]$dC){
 _mkd $FeedbackDir; _mkd $StateDir
 
 if($Pulse){
-  $AllOne = if(Test-Path $AllOnePathV2){$AllOnePathV2}elseif(Test-Path $AllOnePathV1){$AllOnePathV1}else{""}
+  $AllOne = if(Test-Path $AllOnePathV2){$AllOnePathV2}elseif(Test-Path $AllOnePathV1){$AllOnePathV1}
   if($AllOne){ [void](Run-NodeSafe -ScriptPath $AllOne -TimeoutMs 90000 -Tag "All-One RootMirror") }
   try{
     $pulse = @{ timestamp=NowIso; layer="heartbeat-v4.0"; note="scheduled pulse" } | ConvertTo-Json -Depth 3 -Compress

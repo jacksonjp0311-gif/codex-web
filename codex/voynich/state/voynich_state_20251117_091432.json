@@ -1,0 +1,19 @@
+﻿{
+    "module":  "codex_voynich_parser_node_v1_1",
+    "timestamp":  "2025-11-17T09:14:32.2306610-05:00",
+    "codex_law":  "Universal Truth Protocol (E–I–C ∿, H7 = 0.70)",
+    "section":  "herbal",
+    "output_graph":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_graph.jsonl",
+    "depth_axis":  [
+                       "CORE",
+                       "PERIPHERY"
+                   ],
+    "phase_axis":  [
+                       "PASSIVE",
+                       "ACTIVE"
+                   ],
+    "flow_axis":  [
+                      "INPUT",
+                      "OUTPUT"
+                  ]
+}

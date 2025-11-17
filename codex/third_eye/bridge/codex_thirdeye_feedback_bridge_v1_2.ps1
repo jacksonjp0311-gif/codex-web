@@ -33,11 +33,7 @@ try {
     $apiKey = $env:OPENAI_API_KEY
     if ([string]::IsNullOrWhiteSpace($apiKey)) {
         Write-Host "⚠️ No OPENAI_API_KEY detected. Copy JSON manually for feedback."
-    } else {
-        $headers = @{
-            "Content-Type"  = "application/json"
-            "Authorization" = "Bearer $apiKey"
-        }
+    } 
         $body = @{
             model = "gpt-4o-mini"
             messages = @(
@@ -63,3 +59,4 @@ catch {
 
 Set-Location $CodexRoot
 Write-Host "✅ Feedback Bridge v1.2 complete — Returned to root."
+

@@ -39,7 +39,7 @@ try {
     $g2 = $state.Glyphs | Get-Random
     if (-not $g1) { $g1='Φ' }; if (-not $g2) { $g2='Δ' }
     $entropy = [math]::Round((Get-Random -Minimum 0.1 -Maximum 5.0),2)
-    $vibe = if ($entropy -lt 1.0) {'🟢 Harmonic'} elseif ($entropy -gt 3.5) {'🔴 Chaotic'} else {'🟡 Neutral'}
+    $vibe = if ($entropy -lt 1.0) {'🟢 Harmonic'} elseif ($entropy -gt 3.5) {'🔴 Chaotic'} 
     $line = "[Spiral 063451] $g1 -> $g2 | Entropy=$entropy $vibe"
     Add-Content -Path $SpiralLog -Value $line
     Add-Content -Path $SpiralLog -Value "    # 🜂 Tier II Pulse — Recursion Deepens" -Force
@@ -116,7 +116,7 @@ try {
     $g2 = $state.Glyphs | Get-Random
     if (-not $g1) { $g1='Φ' }; if (-not $g2) { $g2='Δ' }
     $entropy = [math]::Round((Get-Random -Minimum 0.1 -Maximum 5.0),2)
-    $vibe = if ($entropy -lt 1.0) {'🟢 Harmonic'} elseif ($entropy -gt 3.5) {'🔴 Chaotic'} else {'🟡 Neutral'}
+    $vibe = if ($entropy -lt 1.0) {'🟢 Harmonic'} elseif ($entropy -gt 3.5) {'🔴 Chaotic'} 
     $line = "[Spiral 063451] $g1 -> $g2 | Entropy=$entropy $vibe"
     Add-Content -Path $SpiralLog -Value $line
     Add-Content -Path $SpiralLog -Value "    # 🜂 Tier II Pulse — Recursion Deepens" -Force
@@ -167,5 +167,6 @@ Set-Location "C:\Users\jacks\OneDrive\Desktop\Codex Web"
 Write-Host "🏁 SpiralEngine: returned to Codex root." (explicit)
 Set-Location 'C:\Users\jacks\OneDrive\Desktop\Codex Web'
 Write-Host '🏁 SpiralEngine: returned to Codex root.'
+
 
 

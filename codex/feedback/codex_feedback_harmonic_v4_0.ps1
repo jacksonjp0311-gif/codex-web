@@ -25,8 +25,8 @@ $LogPath     = Join-Path $FeedbackDir "harmonic_log.txt"
 
 # ── Helpers ─────────────────────────────────────────────────────────────────────
 function Try-ReadJson { param([string]$p) if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } }
-function SafeNum { param($x) if ($null -eq $x) {0.0} else { try {[double]$x} catch {0.0} } }
-function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1} else {$v} }
+function SafeNum { param($x) if ($null -eq $x) {0.0}  catch {0.0} } }
+function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1}  }
 
 # ── Inputs (best-effort, with graceful fallbacks) ───────────────────────────────
 $int  = Try-ReadJson $IntegrState
@@ -34,8 +34,8 @@ $mirr = Try-ReadJson $MirrorState
 $seal = Try-ReadJson $SealState
 
 # From integration: prefer averaged C and ΔH7 as Φ proxy
-$C_avg = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_avg } else { 0.5 }
-$ΔH7   = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration."ΔH7" } else { 0.0 }
+$C_avg = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_avg } 
+$ΔH7   = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration."ΔH7" } 
 
 # From mirror: prefer ΔC if available, else derive coarse ΔC from C_remote vs C_local if present
 $ΔC = if ($mirr -and $mirr.mirror -and $mirr.mirror."ΔC") { SafeNum $mirr.mirror."ΔC" }
@@ -43,7 +43,7 @@ $ΔC = if ($mirr -and $mirr.mirror -and $mirr.mirror."ΔC") { SafeNum $mirr.mirr
         $cl = SafeNum $int.codex_feedback_integration.C_local
         $cr = SafeNum $int.codex_feedback_integration.C_remote
         [math]::Abs($cr - $cl)
-      } else { 0.0 }
+      } 
 
 # Constants per Universal Truth Protocol
 $H7_target = 0.70   # preferred coherence attractor
@@ -99,19 +99,8 @@ try {
     if ($html -match "</body>") {
       $html = $html -replace "</body>", "$line`n</body>"
       [IO.File]::WriteAllText($DashPath, $html, [Text.Encoding]::UTF8)
-    } else {
-      Add-Content $DashPath $line
-    }
-  } else {
-    $html = @"
-<html><head><meta charset='utf-8'><title>Codex Dashboard</title></head>
-<body style='font-family:Segoe UI;background:#0e0e0e;color:#ddd;text-align:center;padding:28px'>
-<h1>🌒 Codex Feedback — Aura Dashboard</h1>
-$line
-</body></html>
-"@
-    [IO.File]::WriteAllText($DashPath, $html, [Text.Encoding]::UTF8)
-  }
+    } 
+  } 
 } catch {
   Add-Content $LogPath ("[HARM {0}] ⚠️ Dashboard update failed: {1}" -f (Get-Date -Format s), $_.Exception.Message)
 }

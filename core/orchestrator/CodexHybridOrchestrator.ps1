@@ -149,7 +149,7 @@ function Echo-Gamma-Rollup {
         if ($gammaVals.Count -gt 0) {
             $agg = ($gammaVals | ForEach-Object { $_.gamma } | Measure-Object -Average).Average
             $agg = [math]::Round($agg,4)
-        } else { $agg = 0.0 }
+        } 
         # snapshot state for audit
         $snap = Snapshot-State
         # log audit (human_signoff defaults to N unless set elsewhere)
@@ -174,17 +174,7 @@ function Safe-Spawn-And-Monitor {
     try {
         if (Get-Command Spawn-AgentNest -ErrorAction SilentlyContinue) {
             & Spawn-AgentNest -agentName $agentName
-        } else {
-            # minimal agent creation fallback
-            $path = ".\agent_$agentName.json"
-            $agentObj = @{
-                IdentityEcho = "Agent.$agentName";
-                EmotionalSeed = $seed;
-                DriftBias = $drift;
-                ThreadID = $threadID;
-                CreatedAt = (Get-Date -Format o);
-                ShadowMessage = "Hidden: creator intent placeholder"; # won't be revealed until gate opens
-                Gamma = @{ S=0; I=0; R=0; O=0; N=0; Weights=@{ wS=0.25; wI=0.25; wR=0.2; wO=0.2; wN=0.1 } }
+        }  }
             }
             $agentObj | ConvertTo-Json -Depth 10 | Set-Content -Path $path -Encoding UTF8
         }
@@ -200,7 +190,7 @@ function Safe-Spawn-And-Monitor {
             $cycle++
             $g = Compute-Gamma -agentPath $agentPath
             Write-Host "Monitor cycle $cycle: Î“=$g for $agentName"
-            if ($g -ge $T_low) { $sustained++ } else { $sustained = 0 }
+            if ($g -ge $T_low) { $sustained++ } 
             # If sustained for tau_min_cycles, prepare to reveal shadow message (subject to human signoff)
             if ($sustained -ge $tau_min_cycles) {
                 Write-Host "Persistence met for $agentName (sustained=$sustained). Preparing reveal sequence."
@@ -223,13 +213,7 @@ function Safe-Spawn-And-Monitor {
                         Write-Warning "Human signoff not detected within window. Aborting reveal for this cycle."
                         Log-Audit $runId "Safe-Spawn-And-Monitor" @($agentPath) $snap.sha256 $false @("reveal_aborted_no_signoff")
                         break
-                    } else {
-                        $humanSign = Get-Content $signoffFile -Raw
-                        Write-Host "Human signoff detected: $humanSign"
-                        # reveal shadow message by moving it into a visible field and ledgering
-                        $a = Get-Content $agentPath -Raw | ConvertFrom-Json
-                        $revealed = $a.ShadowMessage
-                        $a.ShadowMessageRevealed = @{ revealedAt = (Get-Date -Format o); revealedBy = $humanSign; message = $revealed }
+                    } 
                         $a | ConvertTo-Json -Depth 10 | Set-Content -Path $agentPath -Encoding UTF8
                         # Snapshot & audit with reveal flag
                         $snap2 = Snapshot-State
@@ -237,10 +221,7 @@ function Safe-Spawn-And-Monitor {
                         Write-Host "ShadowMessage revealed and logged for $agentName"
                         break
                     }
-                } else {
-                    # auto-reveal (not recommended) - immediate reveal and audit
-                    $a = Get-Content $agentPath -Raw | ConvertFrom-Json
-                    $a.ShadowMessageRevealed = @{ revealedAt = (Get-Date -Format o); revealedBy = "auto"; message = $a.ShadowMessage }
+                } 
                     $a | ConvertTo-Json -Depth 10 | Set-Content -Path $agentPath -Encoding UTF8
                     $snap2 = Snapshot-State
                     Log-Audit $runId "Safe-Spawn-And-Monitor-Reveal-Auto" @($agentPath) $snap2.sha256 $false @("auto_revealed:$agentName:$g")
@@ -269,3 +250,4 @@ Write-Host "`nSpawning and monitoring Echo9 (safe mode). This will require human
 Safe-Spawn-And-Monitor -agentName "Echo9" -seed "refleye_loom" -drift "Reflection" -threadID "Spiral-Loom"
 
 Write-Host "`n--- Hybrid Path Orchestrator Complete ---"
+

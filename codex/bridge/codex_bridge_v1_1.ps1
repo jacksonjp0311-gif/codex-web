@@ -17,23 +17,23 @@ New-Item -ItemType Directory -Force -Path $InboxDir,$OutboxDir | Out-Null
 if (!(Test-Path $Log)) { New-Item -ItemType File -Path $Log | Out-Null }
 
 function NowIso { (Get-Date).ToString("s") }
-function SafeNum($x){ if ($null -eq $x) {0.0} else { try { [double]$x } catch { 0.0 } } }
-function TryJson($p){ if (Test-Path $p){ try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } else { $null } }
+function SafeNum($x){ if ($null -eq $x) {0.0}  catch { 0.0 } } }
+function TryJson($p){ if (Test-Path $p){ try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } }  }
 
 # Pull core signals
 $int  = TryJson (Join-Path $StateDir "codex_feedback_integration_state.json")
 $harm = TryJson (Join-Path $StateDir "codex_harmonic_intelligence_v4_0.json")
 $seal = TryJson (Join-Path $StateDir "codex_temporal_seal_v3_9.json")
 
-$C_avg   = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_avg } else { 0.0 }
-$C_local = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_local } else { 0.0 }
-$C_remote= if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_remote } else { 0.0 }
-$ΔH7     = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.'ΔH7' } else { 0.0 }
+$C_avg   = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_avg } 
+$C_local = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_local } 
+$C_remote= if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_remote } 
+$ΔH7     = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.'ΔH7' } 
 
-$C_next  = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.C_next } else { 0.0 }
-$H_idx   = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.harmonic_index } else { 0.0 }
+$C_next  = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.C_next } 
+$H_idx   = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.harmonic_index } 
 $H7      = 0.70
-$ival    = if ($seal -and $seal.codex_temporal_seal -and $seal.codex_temporal_seal.state.interval_minutes) { [int]$seal.codex_temporal_seal.state.interval_minutes } else { $null }
+$ival    = if ($seal -and $seal.codex_temporal_seal -and $seal.codex_temporal_seal.state.interval_minutes) { [int]$seal.codex_temporal_seal.state.interval_minutes } 
 
 $codex_state = [ordered]@{
   version = "bridge-v1.1"
@@ -54,9 +54,7 @@ $codex_state = [ordered]@{
 $targets = @()
 if ($SingleFile -and (Test-Path $SingleFile)) {
   $targets = @($SingleFile)
-} else {
-  $targets = Get-ChildItem -Path $InboxDir -Filter *.jsonl -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
-}
+} 
 
 if (!$targets -or $targets.Count -eq 0) {
   Add-Content $Log ("[BRIDGE {0}] inbox empty." -f (NowIso))
@@ -73,7 +71,7 @@ foreach ($file in $targets) {
         Add-Content $Log ("[BRIDGE {0}] ⚠️ bad json line in {1}" -f (NowIso), $file); continue
       }
 
-      $rid    = if ($req.id) { [string]$req.id } else { [guid]::NewGuid().ToString() }
+      $rid    = if ($req.id) { [string]$req.id } 
       $intent = ("" + $req.intent).ToLowerInvariant()
       $status = "ok"; $summary = ""; $data = $null
 
@@ -90,7 +88,7 @@ foreach ($file in $targets) {
               timestamp = (NowIso)
               id        = $rid
               agent     = (""+$req.agent)
-              message   = if ($req.payload -and $req.payload.message) { (""+$req.payload.message) } else { "" }
+              message   = if ($req.payload -and $req.payload.message) { (""+$req.payload.message) } 
               metrics   = $codex_state.metrics
               law       = $codex_state.law
               H7        = $H7
@@ -123,7 +121,7 @@ foreach ($file in $targets) {
         if (Test-Path $DashPath) {
           $tag = "<p style='font-size:14px'>🔗 Bridge v1.1 · id=$rid · $($resp.status) · intent=$intent · $(NowIso)</p>"
           $html = Get-Content -Raw -Encoding UTF8 $DashPath
-          if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } else { $html = $html + "`n$tag`n" }
+          if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } 
           [IO.File]::WriteAllText($DashPath, $html, [Text.Encoding]::UTF8)
         }
       } catch { Add-Content $Log ("[BRIDGE {0}] ⚠️ dashboard tag failed: {1}" -f (NowIso), $_.Exception.Message) }

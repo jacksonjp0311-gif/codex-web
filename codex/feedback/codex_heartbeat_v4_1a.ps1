@@ -57,10 +57,7 @@ function Invoke-CodexHeartbeatV41A {
         Write-Host "🔁 Updating scheduled task interval..."
         schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes /F | Out-Null
     }
-    else {
-        Write-Host "✨ Creating new scheduled task with safe escaping..."
-        cmd.exe /c "schtasks /Create /TN $TaskName /SC MINUTE /MO $minutes /TR $escaped /F"
-    }
+    
 
     return $cycle
 }
@@ -68,3 +65,4 @@ function Invoke-CodexHeartbeatV41A {
 if ($MyInvocation.InvocationName -ne '.') {
     Invoke-CodexHeartbeatV41A -CodexRootOverride $CodexRoot
 }
+

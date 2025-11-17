@@ -8,9 +8,7 @@
     $scriptPath = "$automationDir\codex_extract_summary_v3_8.ps1"
     if ($MyInvocation.MyCommand.Path) {
         $scriptContent = Get-Content -Raw $MyInvocation.MyCommand.Path
-    } else {
-        $scriptContent = $MyInvocation.MyCommand.Definition
-    }
+    } 
     $scriptContent | Out-File -Encoding utf8 $scriptPath
     Write-Host "🪶 Summary Extractor anchored at $scriptPath`n"
 
@@ -34,7 +32,7 @@
     $allHphi = @($metricsList | ForEach-Object { $_.Hphi }) | Where-Object { $_ -ne $null }
     $allRMI  = @($metricsList | ForEach-Object { $_.RMI })  | Where-Object { $_ -ne $null }
 
-    function Mean($arr) { if ($arr.Count -gt 0) { ($arr | Measure-Object -Average).Average } else { 0 } }
+    function Mean($arr) { if ($arr.Count -gt 0) { ($arr | Measure-Object -Average).Average }  }
 
     # --- Compute Metric Spread ---
     function MetricSpread($arr) {
@@ -71,3 +69,4 @@
 catch {
     Write-Host "⚠️ Error in Summary Extractor: $_" -ForegroundColor Red
 }
+

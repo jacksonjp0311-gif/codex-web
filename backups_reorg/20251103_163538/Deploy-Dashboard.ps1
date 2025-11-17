@@ -36,13 +36,12 @@ git add .\dashboard.py, .\requirements.txt, .\.streamlit\config.toml
 
 if (git diff --cached --quiet) {
     Write-Host "⏭ No changes to commit."
-} else {
-    git commit -m "🔮 Add dashboard and Streamlit Cloud config"
-}
+} 
 
 # Push and exit
 git push origin main
 Write-Host "✅ Pushed and triggered Streamlit Cloud rebuild."
 
 Pop-Location
+
 

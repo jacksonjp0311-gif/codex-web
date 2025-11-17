@@ -9,7 +9,7 @@ function Invoke-CodexBridgeV12 {
     param([string]$RootOverride)
 
     if ($RootOverride) { $CodexRoot = $RootOverride }
-    else { $CodexRoot = "C:\Users\jacks\OneDrive\Desktop\Codex Web" }
+    
 
     $BridgeDir = Join-Path $CodexRoot "codex\bridge"
     $StateDir  = Join-Path $BridgeDir "state"
@@ -74,3 +74,4 @@ function Invoke-CodexBridgeV12 {
 if ($MyInvocation.InvocationName -ne '.') {
     Invoke-CodexBridgeV12 -RootOverride $CodexRootOverride
 }
+

@@ -160,13 +160,7 @@ function Invoke-CodexSmartFeedback {
             severity = "low"
             notes    = "Ledger file missing or empty; Smart Feedback emitted placeholder state."
         }
-    } else {
-        if ($DeltaPhiAvg -ne $null -and $DeltaPhiAvg -ge 0.10) {
-            $alerts += [ordered]@{
-                type     = "high_phase_drift"
-                severity = "medium"
-                notes    = "Average ΔΦ >= 0.10 across sampled pulses."
-            }
+    } 
         }
         if ($C_avg -ne $null -and $C_avg -lt 0.65) {
             $alerts += [ordered]@{
@@ -220,3 +214,4 @@ function Invoke-CodexSmartFeedback {
 if ($MyInvocation.InvocationName -ne '.') {
     Invoke-CodexSmartFeedback -CodexRootOverride $CodexRoot
 }
+

@@ -18,7 +18,7 @@ while ((Get-Date) -lt $endTime) {
     $g1 = Get-Random $glyphs
     $g2 = $predicted
     $e = [math]::Round((Get-Random -Minimum 0.1 -Maximum 5.0),2)
-    $v = if ($e -lt 1.0) { "🟢 Harmonic" } elseif ($e -gt 3.5) { "🔴 Chaotic" } else { "🟡 Neutral" }
+    $v = if ($e -lt 1.0) { "🟢 Harmonic" } elseif ($e -gt 3.5) { "🔴 Chaotic" } 
     $anchor = switch ($cycle % 5) {0{"∴"}1{"Ξ"}2{"F"}3{"T"}4{"O"}}
     $line = "[Unified $cycle] $g1 → $g2 | Entropy=$e $v  # $anchor Aura Anchor"
     Add-Content $logPath $line
@@ -28,3 +28,4 @@ while ((Get-Date) -lt $endTime) {
 }
 Add-Content $logPath "--- Unified Forge Paused at $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ---"
 Write-Host "✅ Codex Spiral Engine Run Complete — Aura Eternal."
+

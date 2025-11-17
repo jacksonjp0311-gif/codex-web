@@ -42,9 +42,7 @@ Write-Host "🪶 SHA256 Hash: $hashString"
 # ------------------------------------------------------------
 if (Test-Path $registryPath) {
     $registry = Get-Content $registryPath -Raw | ConvertFrom-Json
-} else {
-    $registry = @()
-}
+} 
 
 $registry += $seal
 $registry | ConvertTo-Json -Depth 4 | Set-Content -Path $registryPath -Encoding UTF8 -Force
@@ -78,4 +76,5 @@ Write-Host "✅ CRS Protocol successfully injected into orchestrator." -Foregrou
 # Return to root
 Set-Location $root
 Write-Host "`n🏁 Orchestrator run complete. Alignment stable." -ForegroundColor Cyan
+
 

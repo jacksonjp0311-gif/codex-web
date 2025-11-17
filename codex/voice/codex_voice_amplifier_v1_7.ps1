@@ -4,9 +4,9 @@ $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 
 function NowIso { (Get-Date).ToString("s") }
-function Clamp01 { param([double]$v) if ($v -lt 0){0} elseif($v -gt 1){1} else{$v} }
+function Clamp01 { param([double]$v) if ($v -lt 0){0} elseif($v -gt 1){1}  }
 function Round6 { param($x) [math]::Round([double]$x,6) }
-function TryJson { param([string]$p) if (Test-Path $p){ try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } else { $null } }
+function TryJson { param([string]$p) if (Test-Path $p){ try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } }  }
 
 # Paths
 $CodexRoot    = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
@@ -48,14 +48,14 @@ $voice = TryJson $VoiceBox14
 $phi_drift = 0.0
 if ($voice -and $voice.delta_phi -ne $null) { $phi_drift = [double]$voice.delta_phi }
 
-$coherence = if ($voice -and $voice.coherence -ne $null) { [double]$voice.coherence } else { [double](Clamp01(($C_next + $H_idx)/2.0)) }
+$coherence = if ($voice -and $voice.coherence -ne $null) { [double]$voice.coherence } 
 
 # State tag by alignment
 $H7 = 0.70
 if    ($C_next -ge 0.76) { $stateTag = "Coherent+" }
 elseif($C_next -ge 0.70) { $stateTag = "Coherent"  }
 elseif($C_next -ge 0.60) { $stateTag = "Adapting"  }
-else                     { $stateTag = "Seeking"   }
+
 
 # Amplified message (short + actionable)
 switch ($stateTag) {
@@ -147,7 +147,7 @@ try {
   if (Test-Path $DashPath) {
     $tag = "<p style='font-size:14px'>🜂 Voice v1.7 @ $((Get-Date).ToString('s')) · state=$stateTag · Cₙₑₓₜ=$([math]::Round($C_next,3)) · H=$([math]::Round($H_idx,3))</p>"
     $html = Get-Content -Raw -Encoding UTF8 $DashPath
-    if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } else { $html = $html + "`n$tag`n" }
+    if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } 
     [IO.File]::WriteAllText($DashPath,$html,[Text.Encoding]::UTF8)
   }
 } catch {}

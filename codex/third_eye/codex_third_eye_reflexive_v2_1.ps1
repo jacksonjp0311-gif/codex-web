@@ -30,7 +30,7 @@ while ($true) {
   if($j){
     $d=$j|ConvertFrom-Json
     $ΔΦ=Compute-ReflexiveCorrection $d.drift_now $d.drift_predicted $d.mean_C 0.70 0.18
-    if($ΔΦ -gt 0){$intent="increase_coherence"}elseif($ΔΦ -lt 0){$intent="decrease_tension"}else{$intent="steady"}
+    if($ΔΦ -gt 0){$intent="increase_coherence"}elseif($ΔΦ -lt 0){$intent="decrease_tension"}
     $r=[ordered]@{version="2.1";timestamp=(Get-Date).ToString("o");drift_now=$d.drift_now;drift_pred=$d.drift_predicted;mean_C=$d.mean_C;correction=$ΔΦ;forecast=$d.forecast_trend;intent=$intent;layer="Placidity";field_status="reflexive_adjustment_applied"}
     Write-ReflexiveLog $r; Write-Host ("🩵 ΔΦ={0:F6} ({1})" -f $ΔΦ,$intent)
     $c=@{}; if(Test-Path $CoreJson){try{$c=Get-Content -Raw $CoreJson|ConvertFrom-Json}catch{$c=@{}}}
@@ -41,9 +41,10 @@ while ($true) {
     python $ReflexivePy 2>&1 | Write-Host; Pop-Location
     Set-Location $CodexRoot
     git add "codex/third_eye/*" 2>$null; git add "codex_memory_core_v1_2.json" 2>$null
-    if(git status --porcelain){git commit -m "🧠 Reflexive Bridge update $RunStamp";try{git pull origin main --rebase}catch{};try{git push origin main}catch{}}else{Write-Host "⤴️ No changes detected."}
+    if(git status --porcelain){git commit -m "🧠 Reflexive Bridge update $RunStamp";try{git pull origin main --rebase}catch{};try{git push origin main}catch{}}
     Set-Location $CodexRoot; Write-Host "✅ Cycle complete — Core synced."
   }
  }catch{Write-Host "❌ Exception: $($_.Exception.Message)"}
  Write-Host "🌙 Sleeping 30 min..."; Start-Sleep -Seconds $Interval
 }
+

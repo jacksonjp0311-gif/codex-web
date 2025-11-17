@@ -21,9 +21,7 @@ Write-Host "[run] harmonic integration..."
 # Check for new output
 if (Test-Path "$LogDir\third_eye_resonance_v2_0.jsonl") {
     Write-Host "[ok] resonance data verified."
-} else {
-    Write-Host "[warn] resonance file missing."
-}
+} 
 
 # Autosave + Git
 Set-Location $CodexRoot
@@ -36,3 +34,4 @@ if (git status --porcelain) {
 
 Write-Host "[done] Cycle complete — returned to Codex root."
 Set-Location $CodexRoot
+

@@ -16,10 +16,7 @@
     $scriptPath = "$automationDir\codex_reorganize_root_v3_8.ps1"
     if ($MyInvocation.MyCommand.Path) {
         Copy-Item -Path $MyInvocation.MyCommand.Path -Destination $scriptPath -Force
-    } else {
-        $content = $MyInvocation.MyCommand.Definition
-        $content | Out-File -Encoding utf8 $scriptPath
-    }
+    } 
     Write-Host "🪶 Reorganization script anchored at $scriptPath`n"
 
     $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
@@ -71,3 +68,4 @@
 catch {
     Write-Host "⚠️ Error during reorganization: $_" -ForegroundColor Red
 }
+

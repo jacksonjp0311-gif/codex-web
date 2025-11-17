@@ -58,7 +58,7 @@ function Git-BestEffortPush {
         $status = (& git status --porcelain)
         if ($status.Trim().Length -gt 0) {
             & git commit -m $Message --author $GitAuthor --no-verify 2>$null
-        } else { Write-Host "ℹ️ Git: nothing to commit." }
+        } 
         try { & git push origin main 2>$null } catch { try { & git push origin main --force 2>$null } catch { Write-Host "⚠️ Git push failed." } }
         Write-Host "📡 Git sync complete."
     } catch { Write-Host "⚠️ Git error: $($_.Exception.Message)" } finally { Pop-Location }
@@ -151,11 +151,11 @@ try {
     # Select glyphs adaptively
     if (-not $state.Glyphs -or $state.Glyphs.Count -eq 0){ $state.Glyphs=$defaultState.Glyphs }
     $g1=$state.Glyphs | Get-Random
-    $g2=if($biasWeights.Count -gt 0){ Select-Weighted -weights $biasWeights } else { $state.Glyphs | Get-Random }
+    $g2=if($biasWeights.Count -gt 0){ Select-Weighted -weights $biasWeights } 
 
     # Entropy + vibe
     $entropy=[math]::Round((Get-Random -Minimum 0.1 -Maximum 5.0),2)
-    $vibe=if($entropy -lt 1.0){"🟢 Harmonic"}elseif($entropy -gt 3.5){"🔴 Chaotic"}else{"🟡 Neutral"}
+    $vibe=if($entropy -lt 1.0){"🟢 Harmonic"}elseif($entropy -gt 3.5){"🔴 Chaotic"}
 
     # Log + save
     $line="[Adaptive $(Get-Date -Format 'HHmmss')] $g1 -> $g2 | Entropy=$entropy $vibe"
@@ -168,7 +168,7 @@ try {
     Save-Json -Path $StateFile -Object $state
 
     # Learning resonance
-    $w_g2=if($biasWeights.ContainsKey($g2)){[double]$biasWeights[$g2]}else{0.0}
+    $w_g2=if($biasWeights.ContainsKey($g2)){[double]$biasWeights[$g2]}
     $resonance=[math]::Round(($w_g2*(1.0-($entropy/5.0))),4)
     Add-Content -Path (Join-Path $StateDir "learning_ledger.txt") -Value "[$(Get-Date -Format s)] g1=$g1 g2=$g2 entropy=$entropy vibe=$vibe resonance=$resonance"
 
@@ -186,3 +186,4 @@ catch {
 try { Set-Location $CodexRoot } catch {}
 Pop-Location
 Write-Host "`n🏁 Returned to Codex root: $CodexRoot"
+

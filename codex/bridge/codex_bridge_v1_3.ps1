@@ -26,9 +26,9 @@ New-Item -ItemType Directory -Force -Path $InboxDir,$OutboxDir,$BridgeState | Ou
 if (!(Test-Path $LogPath)) { New-Item -ItemType File -Path $LogPath | Out-Null }
 
 function IsoNow { (Get-Date).ToString("s") }
-function Try-Json { param([string]$p) if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } else { $null } }
-function SafeNum { param($x) if ($null -eq $x) {0.0} else { try {[double]$x} catch {0.0} } }
-function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1} else {$v} }
+function Try-Json { param([string]$p) if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } }  }
+function SafeNum { param($x) if ($null -eq $x) {0.0}  catch {0.0} } }
+function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1}  }
 
 # Read v4.2 state
 $v42 = Try-Json $V42Path
@@ -123,7 +123,7 @@ function MeanOf { param($arr,$key)
   if (-not $arr -or $arr.Count -eq 0) { return 0.0 }
   $sum = 0.0; $n = 0
   foreach ($e in $arr) { if ($e.$key -ne $null) { $sum += [double]$e.$key; $n++ } }
-  if ($n -eq 0) { 0.0 } else { $sum / $n }
+  if ($n -eq 0) { 0.0 } 
 }
 $p.mean_stability = [math]::Round((MeanOf $idx.snapshots 's'),6)
 $p.mean_drift     = [math]::Round((MeanOf $idx.snapshots 'd'),6)
@@ -154,16 +154,14 @@ $summary | ConvertTo-Json -Depth 8 | Out-File $ResSummary -Encoding UTF8
 $targets = @()
 if ($SingleFile -and (Test-Path $SingleFile)) {
   $targets = @($SingleFile)
-} else {
-  $targets = Get-ChildItem -Path $InboxDir -Filter *.jsonl -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
-}
+} 
 foreach ($file in $targets) {
   try {
     $lines = Get-Content -Encoding UTF8 $file
     foreach ($line in $lines) {
       if (-not $line.Trim()) { continue }
       try { $req = $line | ConvertFrom-Json } catch { continue }
-      $rid = if ($req.id) { [string]$req.id } else { [guid]::NewGuid().ToString() }
+      $rid = if ($req.id) { [string]$req.id } 
       $intent = ("" + $req.intent).ToLowerInvariant()
 
       $resp = [ordered]@{
@@ -195,7 +193,7 @@ try {
   if (Test-Path $DashPath) {
     $tag = "<p style='font-size:14px'>🔗 v1.3 Resonant Exchange · mood=$mood · S=$([math]::Round($si,3)) · Δ=$([math]::Round($md,3)) · Cₙₑₓₜ=$([math]::Round($cn,3)) · H=$([math]::Round($hidx,3)) @ $((Get-Date).ToString('s'))</p>"
     $html = Get-Content -Raw -Encoding UTF8 $DashPath
-    if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } else { $html = $html + "`n$tag`n" }
+    if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" } 
     [IO.File]::WriteAllText($DashPath, $html, [Text.Encoding]::UTF8)
   }
 } catch {

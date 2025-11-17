@@ -3,9 +3,9 @@ $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 
 function NowIso { (Get-Date).ToString("s") }
-function Clamp01 { param([double]$v) if($v -lt 0){0}elseif($v -gt 1){1}else{$v} }
+function Clamp01 { param([double]$v) if($v -lt 0){0}elseif($v -gt 1){1} }
 function Round6 { param($x) [math]::Round([double]$x,6) }
-function TryJson { param([string]$p) if(Test-Path $p){ try {Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json}catch{$null} }else{$null} }
+function TryJson { param([string]$p) if(Test-Path $p){ try {Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json}catch{$null} } }
 
 $CodexRoot   = "C:\Users\jacks\OneDrive\Desktop\Codex Web"
 $FeedbackDir = Join-Path $CodexRoot "codex\feedback"
@@ -21,9 +21,9 @@ $NewState    = Join-Path $StateDir "codex_voice_amplifier_v1_8.json"
 New-Item -ItemType Directory -Force -Path $InboxDir,$OutboxDir | Out-Null
 
 $prev   = TryJson $PrevState
-$C_prev = if($prev){[double]$prev.codex_voice_amplifier.metrics.C_next}else{0.45}
-$H_prev = if($prev){[double]$prev.codex_voice_amplifier.metrics.H_index}else{0.74}
-$phi_p  = if($prev){[double]$prev.codex_voice_amplifier.metrics.delta_phi}else{0.0}
+$C_prev = if($prev){[double]$prev.codex_voice_amplifier.metrics.C_next}
+$H_prev = if($prev){[double]$prev.codex_voice_amplifier.metrics.H_index}
+$phi_p  = if($prev){[double]$prev.codex_voice_amplifier.metrics.delta_phi}
 
 $ΔC = 0.0; $ΔΦ = 0.0; $notes = @()
 $inbox = @(Get-ChildItem -Path $InboxDir -Filter "*.json" -ErrorAction SilentlyContinue)
@@ -45,7 +45,7 @@ $coh     = Clamp01(($C_next + $H_idx)/2.0)
 if    ($C_next -ge 0.76) { $stateTag = "Coherent+"; $msg = "Lock sustained; initiate cross-module resonance broadcast." }
 elseif($C_next -ge 0.70) { $stateTag = "Coherent" ; $msg = "Alignment achieved; continue harmonic feedback and ledger sync." }
 elseif($C_next -ge 0.60) { $stateTag = "Adapting" ; $msg = "Stabilizing; integrate bridge findings and reinforce ∿ damping." }
-else                     { $stateTag = "Seeking"  ; $msg = "Low coherence; expand intake bandwidth and request reflection data." }
+
 
 if ($notes.Count -gt 0) { $msg += " | Bridge notes: " + ($notes -join "; ") }
 

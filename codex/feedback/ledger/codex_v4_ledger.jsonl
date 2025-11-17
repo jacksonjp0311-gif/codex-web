@@ -186,3 +186,53 @@
     "recommendation":  "stable near H7 — minor tuning only",
     "samples":  0
 }
+{
+    "timestamp":  "2025-11-14T05:44:53",
+    "node":  "solar_resonance_v1_4",
+    "kind":  "solar_state_run"
+}
+{
+    "timestamp":  "2025-11-14T05:54:35",
+    "node":  "solar_resonance_v1_5",
+    "kind":  "solar_harmonic_seal_run"
+}
+{
+    "timestamp":  "2025-11-14T06:30:25",
+    "node":  "solar_resonance_v1_6",
+    "kind":  "solar_harmonic_oracle_run"
+}
+{
+    "timestamp":  "2025-11-14T17:02:57",
+    "node":  "solar_resonance_v1_7",
+    "kind":  "solar_qim_imaging_run"
+}
+{
+    "timestamp":  "2025-11-14T17:21:23",
+    "node":  "solar_resonance_v1_8",
+    "kind":  "solar_qim_temporal_oracle_run"
+}
+{
+    "timestamp":  "2025-11-14T17:42:02",
+    "node":  "solar_resonance_v1_9",
+    "kind":  "solar_afm_imaging_run"
+}
+{
+    "timestamp":  "2025-11-16T17:23:11",
+    "node":  "solar_resonance_v2_0",
+    "kind":  "solar_multiscale_turbulence_run"
+}
+{
+    "timestamp":  "2025-11-16T17:45:36",
+    "node":  "solar_resonance_v3_0",
+    "kind":  "solar_horizon_engine_run"
+}
+{
+    "timestamp":  "2025-11-17T07:59:15.4214671-05:00",
+    "node":  "solar_resonance_v3_4",
+    "kind":  "solar_run_global"
+}
+{
+    "timestamp":  "2025-11-17T08:29:59.3418634-05:00",
+    "node":  "solar_resonance_v4_0",
+    "kind":  "solar_volume_global"
+}

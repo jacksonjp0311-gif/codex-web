@@ -234,17 +234,15 @@ function Invoke-CodexSmartFeedbackV46 {
             $C_trend = "flat"
         } elseif ($C_delta -gt 0) {
             $C_trend = "rising"
-        } else {
-            $C_trend = "falling"
-        }
+        } 
     }
 
     # Semantic drift index (refined)
     $semDrift = $null
     if ($C_std -ne $null -or $Phi_std -ne $null -or $D_std -ne $null) {
-        $cTerm = (if ($C_std  -ne $null) { $C_std  } else { 0.0 })
-        $pTerm = (if ($Phi_std -ne $null) { $Phi_std } else { 0.0 })
-        $dTerm = (if ($D_std -ne $null) { $D_std } else { 0.0 })
+        $cTerm = (if ($C_std  -ne $null) { $C_std  } )
+        $pTerm = (if ($Phi_std -ne $null) { $Phi_std } )
+        $dTerm = (if ($D_std -ne $null) { $D_std } )
 
         $raw = $cTerm * 1.5 + [Math]::Abs($pTerm) * 4.0 + $dTerm * 2.0
         if ($raw -lt 0) { $raw = 0 }
@@ -257,7 +255,7 @@ function Invoke-CodexSmartFeedbackV46 {
         if ($semDrift -lt 0.20)      { $DriftBand = "stable" }
         elseif ($semDrift -lt 0.45)  { $DriftBand = "low" }
         elseif ($semDrift -lt 0.70)  { $DriftBand = "medium" }
-        else                         { $DriftBand = "high" }
+        
     }
 
     # Pull coherence context
@@ -316,13 +314,7 @@ function Invoke-CodexSmartFeedbackV46 {
             severity = "low"
             notes    = "Bridge v1.2 echo ledger empty or missing; semantic drift estimate is limited."
         }
-    } else {
-        if ($DriftBand -eq "high") {
-            $alertList += [ordered]@{
-                type     = "high_semantic_drift"
-                severity = "medium"
-                notes    = "Semantic drift index in HIGH band; favor grounding, reflection, and slower cycles."
-            }
+    } 
         }
         if ($C_current -ne $null -and $C_current -lt 0.60) {
             $alertList += [ordered]@{
@@ -417,3 +409,4 @@ function Invoke-CodexSmartFeedbackV46 {
 if ($MyInvocation.InvocationName -ne '.') {
     Invoke-CodexSmartFeedbackV46 -CodexRootOverride $CodexRoot
 }
+

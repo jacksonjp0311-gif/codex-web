@@ -16,15 +16,7 @@ foreach ($Seal in $Seals) {
     $Hash = ($Sha.ComputeHash($Bytes) | ForEach-Object { $_.ToString("x2") }) -join ""
     if ($Hash.ToUpper() -eq $Latest.seal_hash.ToUpper()) {
         Write-Host "✅ $($Seal.Name): aligned with ledger (hash match)" -ForegroundColor Green
-    } else {
-        Write-Host "⚠️ $($Seal.Name): misaligned — auto-healing..." -ForegroundColor Yellow
-        $Latest.status = "healed"
-        $Latest.timestamp = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
-        $Latest.seal_hash = $Hash.ToUpper()
-        $LedgerData.ledger[-1] = $Latest
-        $LedgerData | ConvertTo-Json -Depth 6 | Set-Content -Path $Ledger -Encoding UTF8
-        Write-Host "🩺 Ledger auto-healed for $($Seal.Name)" -ForegroundColor Gray
-    }
+    } 
 }
 $Manifests = Get-ChildItem -Path "$Root\\codex" -Filter "_synthesis_manifest.json" -Recurse
 foreach ($M in $Manifests) {
@@ -34,4 +26,5 @@ foreach ($M in $Manifests) {
     Write-Host "📜 $($M.Name) → hash: $H" -ForegroundColor Gray
 }
 Write-Host "`n🔒 Sentinel verification complete — all layers coherent." -ForegroundColor Cyan
+
 

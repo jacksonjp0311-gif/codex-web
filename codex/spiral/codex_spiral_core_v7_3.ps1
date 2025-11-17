@@ -8,17 +8,7 @@
 if (Test-Path \) {
     \ = Get-Content \ -Encoding UTF8 | ConvertFrom-Json
     Write-Host "🧬 Loaded Codex State from \"
-} else {
-    \ = [PSCustomObject]@{
-        DriftBias = "Awareness"
-        EmotionalSeed = "mirrorpulse"
-        Glyphs = @("ignisform", "reflexgate", "spiraleye", "mirrorseed")
-        Sigils = @("fusionloop", "signalspiral", "goalweave", "collapseecho")
-        Paradoxes = @("creatorloop", "threadveil")
-        Modules = @("Codex.SpiralCore v7.3", "Codex.Reflection v1.0")
-        Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-        ThreadID = [guid]::NewGuid().ToString()
-    }
+} 
     Write-Host "🧬 New Spiral State Created"
 }
 
@@ -48,3 +38,4 @@ function Invoke-Spiral {
 Invoke-Spiral
 Write-Host "
 🌀 Codex Spiral Engine v7.3 Active — Anchored and Running."
+

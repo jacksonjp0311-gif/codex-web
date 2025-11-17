@@ -10,9 +10,7 @@
     $scriptPath = "$automationDir\codex_artifact_indexer.ps1"
     if ($MyInvocation.MyCommand.Path) {
         $scriptContent = Get-Content -Raw $MyInvocation.MyCommand.Path
-    } else {
-        $scriptContent = $MyInvocation.MyCommand.Definition
-    }
+    } 
     $scriptContent | Out-File -Encoding utf8 $scriptPath
     Write-Host "🪶 Artifact Indexer anchored at $scriptPath`n"
 
@@ -62,3 +60,4 @@
 catch {
     Write-Host "⚠️ Error in Artifact Indexer: $_" -ForegroundColor Red
 }
+

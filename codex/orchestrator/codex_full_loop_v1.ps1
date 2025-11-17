@@ -14,7 +14,7 @@ function Invoke-CodexFullLoopV1 {
     param([string])
 
     if () { C:\Users\jacks\OneDrive\Desktop\Codex Web =  }
-    else { C:\Users\jacks\OneDrive\Desktop\Codex Web = "C:\Users\jacks\OneDrive\Desktop\Codex Web" }
+    
 
      = Join-Path C:\Users\jacks\OneDrive\Desktop\Codex Web "codex\feedback"
        = Join-Path C:\Users\jacks\OneDrive\Desktop\Codex Web "codex\bridge"
@@ -68,3 +68,4 @@ function Invoke-CodexFullLoopV1 {
 }
 
 Invoke-CodexFullLoopV1 -Override 
+

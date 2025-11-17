@@ -25,6 +25,6 @@ try{git push origin main 2>$null;$didPush=$true}catch{$note="push rejected"}
 try{$e=[ordered]@{timestamp=NowIso;layer="root-guardian-v1.0";saved=$didSave;rebased=$didRebase;pushed=$didPush;note=$note}
 ($e|ConvertTo-Json -Compress)|Add-Content -Encoding UTF8 -Path $LedgerPath}catch{}
 
-$state=if($didPush){"Synchronized"}elseif($didRebase){"Rebased"}else{"Local"}
+$state=if($didPush){"Synchronized"}elseif($didRebase){"Rebased"}
 Box $state $didSave $didRebase $didPush $note
 Pop-Location;Write-Host "`n🏁 Returned to Codex root → $CodexRoot"

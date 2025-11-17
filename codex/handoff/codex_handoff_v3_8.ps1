@@ -17,9 +17,7 @@
     # --- Anchor Script (safe for console or file execution) ---
     if ($MyInvocation.MyCommand.Path) {
         $scriptContent = Get-Content -Raw $MyInvocation.MyCommand.Path
-    } else {
-        $scriptContent = $MyInvocation.MyCommand.Definition
-    }
+    } 
     $scriptContent | Out-File -Encoding utf8 $scriptPath
     Write-Host "🪶 Script anchored at $scriptPath`n"
 
@@ -119,3 +117,4 @@
 catch {
     Write-Host "⚠️ Error encountered: $_" -ForegroundColor Red
 }
+

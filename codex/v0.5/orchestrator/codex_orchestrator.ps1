@@ -37,8 +37,7 @@ $entry = @{
 # 6. Load or initialize ledger
 if (Test-Path $ledgerPath) {
     $ledgerJson = Get-Content $ledgerPath -Raw | ConvertFrom-Json
-} else {
-    $ledgerJson = @{ ledger = @() }
+} 
 }
 
 # 6.5 Ensure ledger object exists before appending
@@ -58,6 +57,7 @@ Write-Host "✅ Codex Seal successfully registered.`n"
 Write-Host "ðŸª¶ SHA256 Hash: $sealHash"
 Write-Host "🏷️ Tag created: $tagName`n"
 Write-Host "📜 Ledger updated: $ledgerPath`n"
+
 
 
 

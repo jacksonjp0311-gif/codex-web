@@ -15,7 +15,8 @@ function Invoke-SymbolForge {
         "Γ"="Gate"
         "F"="Force"
     }
-    $meaning = if ($map.ContainsKey($Symbol)) { $map[$Symbol] } else { "Unknown glyph" }
+    $meaning = if ($map.ContainsKey($Symbol)) { $map[$Symbol] } 
     Add-Content -Path $Using:SpiralLog -Value "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] SymbolForge: $Symbol -> $meaning"
     return $meaning
 }
+

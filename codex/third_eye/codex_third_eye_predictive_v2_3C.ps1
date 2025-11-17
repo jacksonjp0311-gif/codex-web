@@ -39,7 +39,7 @@ function Merge-State-To-Resonance {
     Copy-Item $ResV20 $ResV23 -Force
     return $true
   }
-  else { return $false }
+  
 }
 function Get-DC-From-Res {
   if (!(Test-Path $ResV23)) { return $null }
@@ -60,7 +60,7 @@ function Next-IntervalSec([double]$dC,[double]$dPhi){
   elseif ($m -lt 0.020){ $scale=1.0 }  # stable
   elseif ($m -lt 0.050){ $scale=0.75 } # mild
   elseif ($m -lt 0.100){ $scale=0.55 } # elevated
-  else                  { $scale=0.40 }# high activity
+  # high activity
   return (Clamp ([int]([Math]::Round($base*$scale))) $min $max)
 }
 function Git-Autosave([string]$msg){
@@ -82,8 +82,8 @@ function Invoke-PredictiveCycle {
   if (-not $merged){ Write-Host "[warn] no state snapshots found; continuing cycle." }
 
   # Run Harmonic v2.3 and Reflexive v2.3A (these update state/core/visuals)
-  if (Test-Path $HarmonicPS){ & $HarmonicPS | Out-Null } else { Write-Host "[warn] missing $HarmonicPS" }
-  if (Test-Path $ReflexivePS){ & $ReflexivePS | Out-Null } else { Write-Host "[warn] missing $ReflexivePS" }
+  if (Test-Path $HarmonicPS){ & $HarmonicPS | Out-Null } 
+  if (Test-Path $ReflexivePS){ & $ReflexivePS | Out-Null } 
 
   # Re-merge (to include any fresh state files produced this cycle)
   Merge-State-To-Resonance | Out-Null
@@ -93,7 +93,7 @@ function Invoke-PredictiveCycle {
   if ($null -eq $dC){ $dC = 0.0 }
   $dPhi = Get-DPhi
 
-  $trend = if ($dC -gt 0){ "rising" } elseif ($dC -lt 0){ "falling" } else { "stable" }
+  $trend = if ($dC -gt 0){ "rising" } elseif ($dC -lt 0){ "falling" } 
   $logObj = [ordered]@{
     t       = (Get-Date).ToString("o")
     version = "2.3C"
@@ -161,3 +161,4 @@ finally {
   }
   Write-Host "[done] Returned to Codex root: $CodexRoot"
 }
+

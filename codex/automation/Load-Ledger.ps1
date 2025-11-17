@@ -61,16 +61,14 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
       if ($pair -match '^(script|ledger|output)\s*=\s*"([^"]+)"$') {
         $h[$matches[1]] = $matches[2]
       }
-      else { FailLine "Bad handshake param: $pair" $i }
+      
     }
     foreach ($k in @('script','ledger','output')) {
       if (-not $h.ContainsKey($k)) { FailLine "Missing handshake key: $k" $i }
     }
     $steps += @{ Type = 'Handshake'; Params = $h }
   }
-  else {
-    FailLine "Unknown DSL line: $text" $i
-  }
+  
 }
 
 # 2) Build shell stub (LF-only)
@@ -116,5 +114,6 @@ Write-Host "Hook generated at $HookPath" -ForegroundColor Green
 
 # 4) Re-activate venv if we did above
 if ($activated) { . $activate }
+
 
 

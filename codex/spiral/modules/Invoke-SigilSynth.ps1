@@ -5,8 +5,8 @@ function Invoke-SigilSynth {
     if (-not (Test-Path $StateFile)) { Write-Host "⚠️ State missing, can't synth."; return }
     try {
         $s = Get-Content $StateFile -Raw | ConvertFrom-Json
-        $gA = if ($s.Glyphs) { $s.Glyphs | Get-Random } else { "Φ" }
-        $gB = if ($s.Glyphs) { $s.Glyphs | Get-Random } else { "Δ" }
+        $gA = if ($s.Glyphs) { $s.Glyphs | Get-Random } 
+        $gB = if ($s.Glyphs) { $s.Glyphs | Get-Random } 
         $new = "$($gA.Substring(0,1))$($gB.Substring(0,1))_sig"
         if (-not $s.Sigils) { $s.Sigils = @() }
         if (-not ($s.Sigils -contains $new)) { $s.Sigils += $new }
@@ -16,3 +16,4 @@ function Invoke-SigilSynth {
         Write-Host "🌀 SigilSynth: forged $new"
     } catch { Write-Host "⚠️ SigilSynth error: $($_.Exception.Message)" }
 }
+

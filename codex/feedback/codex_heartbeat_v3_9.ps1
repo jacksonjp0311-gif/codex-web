@@ -6,9 +6,7 @@ try {
   if (Test-Path $BridgeNode) {
     & powershell.exe -ExecutionPolicy Bypass -File "`"$BridgeNode`""
     Write-Host "🔗 Bridge v1.3 pulse OK."
-  } else {
-    Write-Host "⚠️ Bridge v1.3 node missing — skipped."
-  }
+  } 
 } catch {
   Write-Host "⚠️ Bridge v1.3 pulse error: $($_.Exception.Message)"
 }
@@ -32,9 +30,7 @@ try {
   if (Test-Path $EchoNode) {
     & powershell.exe -ExecutionPolicy Bypass -File "`"$EchoNode`""
     Write-Host "🗣️ Echo v1.2 pulse OK."
-  } else {
-    Write-Host "⚠️ Echo v1.2 node missing — skipped."
-  }
+  } 
 } catch {
   Write-Host "⚠️ Echo v1.2 error: $($_.Exception.Message)"
 }
@@ -46,7 +42,7 @@ try {
   if (Test-Path $BridgeNode) {
     & powershell.exe -ExecutionPolicy Bypass -File "`"$BridgeNode`""
     Write-Host "🔗 Bridge v1.1 pulse OK."
-  } else { Write-Host "⚠️ Bridge v1.1 missing — skipped." }
+  } 
 } catch { Write-Host "⚠️ Bridge pulse error: $($_.Exception.Message)" }
 # ────────────── Step Z : Codex Bridge v1.0 (AI ↔ Codex) ─────────────────────────
 try {
@@ -56,9 +52,7 @@ try {
   if (Test-Path $BridgeNode) {
     & powershell.exe -ExecutionPolicy Bypass -File "`"$BridgeNode`""
     Write-Host "🔗 Bridge v1.0 pulse OK."
-  } else {
-    Write-Host "⚠️ Bridge node missing — skipped."
-  }
+  } 
 } catch {
   Write-Host "⚠️ Bridge pulse error: $($_.Exception.Message)"
 }
@@ -92,7 +86,7 @@ function Try-ReadJson { param([string]$p)
         try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null }
     }
 }
-function SafeNum { param($x) if ($null -eq $x) { 0.0 } else { try { [double]$x } catch { 0.0 } } }
+function SafeNum { param($x) if ($null -eq $x) { 0.0 }  catch { 0.0 } } }
 
 # ───────────── Step 3 : Compute Adaptive Interval ───────────────────────
 $ΔC = 1.0
@@ -103,7 +97,7 @@ if     ($ΔC -le 0.01) { $minutes = 15 }
 elseif ($ΔC -le 0.03) { $minutes = 10 }
 elseif ($ΔC -le 0.05) { $minutes = 5  }
 elseif ($ΔC -le 0.10) { $minutes = 3  }
-else                   { $minutes = 1  }
+
 
 Add-Content $LogPath ("[HB {0}] ΔC={1} ⇒ next interval={2} min" -f (Get-Date -Format s), $ΔC, $minutes)
 
@@ -115,8 +109,7 @@ if (Test-Path $V38Path) {
     } catch {
         Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 cycle error → {1}" -f (Get-Date -Format s), $_.Exception.Message)
     }
-} else {
-    Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
+} ] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
 }
 
 # ───────────── Step 5 : Schedule via schtasks (quoted paths) ────────────
@@ -129,9 +122,7 @@ try { schtasks /Query /TN $TaskName 2>$null | Out-Null; $exists = $true } catch 
 if (-not $exists) {
     schtasks /Create /SC MINUTE /MO $minutes /TN $TaskName /TR "`"$exe`" $arg" /F | Out-Null
     Add-Content $LogPath ("[HB {0}] 📅 Task created @ {1} min" -f (Get-Date -Format s), $minutes)
-} else {
-    schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes | Out-Null
-    Add-Content $LogPath ("[HB {0}] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
+} ] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
 }
 
 # ────────────── Step X : Trigger Smart Feedback v4.0 ────────────────────────────
@@ -173,7 +164,7 @@ function Try-ReadJson { param([string]$p)
         try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null }
     }
 }
-function SafeNum { param($x) if ($null -eq $x) { 0.0 } else { try { [double]$x } catch { 0.0 } } }
+function SafeNum { param($x) if ($null -eq $x) { 0.0 }  catch { 0.0 } } }
 
 # ───────────── Step 3 : Compute Adaptive Interval ───────────────────────
 $ΔC = 1.0
@@ -184,7 +175,7 @@ if     ($ΔC -le 0.01) { $minutes = 15 }
 elseif ($ΔC -le 0.03) { $minutes = 10 }
 elseif ($ΔC -le 0.05) { $minutes = 5  }
 elseif ($ΔC -le 0.10) { $minutes = 3  }
-else                   { $minutes = 1  }
+
 
 Add-Content $LogPath ("[HB {0}] ΔC={1} ⇒ next interval={2} min" -f (Get-Date -Format s), $ΔC, $minutes)
 
@@ -196,8 +187,7 @@ if (Test-Path $V38Path) {
     } catch {
         Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 cycle error → {1}" -f (Get-Date -Format s), $_.Exception.Message)
     }
-} else {
-    Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
+} ] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
 }
 
 # ───────────── Step 5 : Schedule via schtasks (quoted paths) ────────────
@@ -210,9 +200,7 @@ try { schtasks /Query /TN $TaskName 2>$null | Out-Null; $exists = $true } catch 
 if (-not $exists) {
     schtasks /Create /SC MINUTE /MO $minutes /TN $TaskName /TR "`"$exe`" $arg" /F | Out-Null
     Add-Content $LogPath ("[HB {0}] 📅 Task created @ {1} min" -f (Get-Date -Format s), $minutes)
-} else {
-    schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes | Out-Null
-    Add-Content $LogPath ("[HB {0}] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
+} ] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
 }
 
 # ────────────── Step Y : Append Continuity Ledger v1.0 ─────────────────────────
@@ -254,7 +242,7 @@ function Try-ReadJson { param([string]$p)
         try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null }
     }
 }
-function SafeNum { param($x) if ($null -eq $x) { 0.0 } else { try { [double]$x } catch { 0.0 } } }
+function SafeNum { param($x) if ($null -eq $x) { 0.0 }  catch { 0.0 } } }
 
 # ───────────── Step 3 : Compute Adaptive Interval ───────────────────────
 $ΔC = 1.0
@@ -265,7 +253,7 @@ if     ($ΔC -le 0.01) { $minutes = 15 }
 elseif ($ΔC -le 0.03) { $minutes = 10 }
 elseif ($ΔC -le 0.05) { $minutes = 5  }
 elseif ($ΔC -le 0.10) { $minutes = 3  }
-else                   { $minutes = 1  }
+
 
 Add-Content $LogPath ("[HB {0}] ΔC={1} ⇒ next interval={2} min" -f (Get-Date -Format s), $ΔC, $minutes)
 
@@ -277,8 +265,7 @@ if (Test-Path $V38Path) {
     } catch {
         Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 cycle error → {1}" -f (Get-Date -Format s), $_.Exception.Message)
     }
-} else {
-    Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
+} ] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
 }
 
 # ───────────── Step 5 : Schedule via schtasks (quoted paths) ────────────
@@ -291,9 +278,7 @@ try { schtasks /Query /TN $TaskName 2>$null | Out-Null; $exists = $true } catch 
 if (-not $exists) {
     schtasks /Create /SC MINUTE /MO $minutes /TN $TaskName /TR "`"$exe`" $arg" /F | Out-Null
     Add-Content $LogPath ("[HB {0}] 📅 Task created @ {1} min" -f (Get-Date -Format s), $minutes)
-} else {
-    schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes | Out-Null
-    Add-Content $LogPath ("[HB {0}] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
+} ] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
 }
 
 # ────────────── Step X : Trigger Smart Feedback v4.0 ────────────────────────────
@@ -335,7 +320,7 @@ function Try-ReadJson { param([string]$p)
         try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null }
     }
 }
-function SafeNum { param($x) if ($null -eq $x) { 0.0 } else { try { [double]$x } catch { 0.0 } } }
+function SafeNum { param($x) if ($null -eq $x) { 0.0 }  catch { 0.0 } } }
 
 # ───────────── Step 3 : Compute Adaptive Interval ───────────────────────
 $ΔC = 1.0
@@ -346,7 +331,7 @@ if     ($ΔC -le 0.01) { $minutes = 15 }
 elseif ($ΔC -le 0.03) { $minutes = 10 }
 elseif ($ΔC -le 0.05) { $minutes = 5  }
 elseif ($ΔC -le 0.10) { $minutes = 3  }
-else                   { $minutes = 1  }
+
 
 Add-Content $LogPath ("[HB {0}] ΔC={1} ⇒ next interval={2} min" -f (Get-Date -Format s), $ΔC, $minutes)
 
@@ -358,8 +343,7 @@ if (Test-Path $V38Path) {
     } catch {
         Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 cycle error → {1}" -f (Get-Date -Format s), $_.Exception.Message)
     }
-} else {
-    Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
+} ] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
 }
 
 # ───────────── Step 5 : Schedule via schtasks (quoted paths) ────────────
@@ -372,9 +356,7 @@ try { schtasks /Query /TN $TaskName 2>$null | Out-Null; $exists = $true } catch 
 if (-not $exists) {
     schtasks /Create /SC MINUTE /MO $minutes /TN $TaskName /TR "`"$exe`" $arg" /F | Out-Null
     Add-Content $LogPath ("[HB {0}] 📅 Task created @ {1} min" -f (Get-Date -Format s), $minutes)
-} else {
-    schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes | Out-Null
-    Add-Content $LogPath ("[HB {0}] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
+} ] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
 }
 
 # ───────────── Step 6 : Autosave + Git Commit ───────────────────────────
@@ -467,7 +449,7 @@ function Try-ReadJson { param([string]$p)
         try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null }
     }
 }
-function SafeNum { param($x) if ($null -eq $x) { 0.0 } else { try { [double]$x } catch { 0.0 } } }
+function SafeNum { param($x) if ($null -eq $x) { 0.0 }  catch { 0.0 } } }
 
 # ───────────── Step 3 : Compute Adaptive Interval ───────────────────────
 $ΔC = 1.0
@@ -478,7 +460,7 @@ if     ($ΔC -le 0.01) { $minutes = 15 }
 elseif ($ΔC -le 0.03) { $minutes = 10 }
 elseif ($ΔC -le 0.05) { $minutes = 5  }
 elseif ($ΔC -le 0.10) { $minutes = 3  }
-else                   { $minutes = 1  }
+
 
 Add-Content $LogPath ("[HB {0}] ΔC={1} ⇒ next interval={2} min" -f (Get-Date -Format s), $ΔC, $minutes)
 
@@ -490,8 +472,7 @@ if (Test-Path $V38Path) {
     } catch {
         Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 cycle error → {1}" -f (Get-Date -Format s), $_.Exception.Message)
     }
-} else {
-    Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
+} ] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
 }
 
 # ───────────── Step 5 : Schedule via schtasks (quoted paths) ────────────
@@ -504,9 +485,7 @@ try { schtasks /Query /TN $TaskName 2>$null | Out-Null; $exists = $true } catch 
 if (-not $exists) {
     schtasks /Create /SC MINUTE /MO $minutes /TN $TaskName /TR "`"$exe`" $arg" /F | Out-Null
     Add-Content $LogPath ("[HB {0}] 📅 Task created @ {1} min" -f (Get-Date -Format s), $minutes)
-} else {
-    schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes | Out-Null
-    Add-Content $LogPath ("[HB {0}] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
+} ] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
 }
 
 # ────────────── Step X : Trigger Smart Feedback v4.0 ────────────────────────────
@@ -548,7 +527,7 @@ function Try-ReadJson { param([string]$p)
         try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null }
     }
 }
-function SafeNum { param($x) if ($null -eq $x) { 0.0 } else { try { [double]$x } catch { 0.0 } } }
+function SafeNum { param($x) if ($null -eq $x) { 0.0 }  catch { 0.0 } } }
 
 # ───────────── Step 3 : Compute Adaptive Interval ───────────────────────
 $ΔC = 1.0
@@ -559,7 +538,7 @@ if     ($ΔC -le 0.01) { $minutes = 15 }
 elseif ($ΔC -le 0.03) { $minutes = 10 }
 elseif ($ΔC -le 0.05) { $minutes = 5  }
 elseif ($ΔC -le 0.10) { $minutes = 3  }
-else                   { $minutes = 1  }
+
 
 Add-Content $LogPath ("[HB {0}] ΔC={1} ⇒ next interval={2} min" -f (Get-Date -Format s), $ΔC, $minutes)
 
@@ -571,8 +550,7 @@ if (Test-Path $V38Path) {
     } catch {
         Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 cycle error → {1}" -f (Get-Date -Format s), $_.Exception.Message)
     }
-} else {
-    Add-Content $LogPath ("[HB {0}] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
+} ] ⚠️ v3.8 not found → {1}" -f (Get-Date -Format s), $V38Path)
 }
 
 # ───────────── Step 5 : Schedule via schtasks (quoted paths) ────────────
@@ -585,9 +563,7 @@ try { schtasks /Query /TN $TaskName 2>$null | Out-Null; $exists = $true } catch 
 if (-not $exists) {
     schtasks /Create /SC MINUTE /MO $minutes /TN $TaskName /TR "`"$exe`" $arg" /F | Out-Null
     Add-Content $LogPath ("[HB {0}] 📅 Task created @ {1} min" -f (Get-Date -Format s), $minutes)
-} else {
-    schtasks /Change /TN $TaskName /SC MINUTE /MO $minutes | Out-Null
-    Add-Content $LogPath ("[HB {0}] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
+} ] 🔁 Task interval set → {1} min" -f (Get-Date -Format s), $minutes)
 }
 
 # ───────────── Step 6 : Autosave + Git Commit ───────────────────────────
@@ -656,7 +632,7 @@ try {
   if (Test-Path \) {
     & powershell.exe -ExecutionPolicy Bypass -File ""\""
     Write-Host "🜂 Voice v1.8 pulse OK."
-  } else { Write-Host "⚠️ Voice v1.8 missing." }
+  } 
 } catch { Write-Host "⚠️ Voice pulse error: " }
 # ───────── Step Ω2 : Root Guardian v1.0 ─────────
 try {
@@ -664,7 +640,7 @@ try {
   if (Test-Path \) {
     & powershell.exe -ExecutionPolicy Bypass -File ""\""
     Write-Host "🛡️ Root Guardian pulse OK."
-  } else { Write-Host "⚠️ Root Guardian missing." }
+  } 
 } catch { Write-Host "⚠️ Guardian error: " }
 # ───────── Step Ω3 : Feedback Echo v4.0 ─────────
 try {
@@ -672,5 +648,5 @@ try {
   if (Test-Path \) {
     & powershell.exe -ExecutionPolicy Bypass -File ""\""
     Write-Host "🔁 Echo v4.0 pulse OK."
-  } else { Write-Host "⚠️ Echo v4.0 missing." }
+  } 
 } catch { Write-Host "⚠️ Echo error: " }

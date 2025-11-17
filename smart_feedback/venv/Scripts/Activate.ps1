@@ -1,4 +1,4 @@
-<#
+﻿<#
 .Synopsis
 Activate a Python virtual environment for the current PowerShell session.
 
@@ -180,11 +180,7 @@ Write-Verbose "VenvExecDir Name: '$($VenvExecDir.Name)"
 if ($VenvDir) {
     Write-Verbose "VenvDir given as parameter, using '$VenvDir' to determine values"
 }
-else {
-    Write-Verbose "VenvDir not given as a parameter, using parent directory name as VenvDir."
-    $VenvDir = $VenvExecDir.Parent.FullName.TrimEnd("\\/")
-    Write-Verbose "VenvDir=$VenvDir"
-}
+
 
 # Next, read the `pyvenv.cfg` file to determine any required value such
 # as `prompt`.
@@ -195,17 +191,8 @@ $pyvenvCfg = Get-PyVenvConfig -ConfigDir $VenvDir
 if ($Prompt) {
     Write-Verbose "Prompt specified as argument, using '$Prompt'"
 }
-else {
-    Write-Verbose "Prompt not specified as argument to script, checking pyvenv.cfg value"
-    if ($pyvenvCfg -and $pyvenvCfg['prompt']) {
-        Write-Verbose "  Setting based on value in pyvenv.cfg='$($pyvenvCfg['prompt'])'"
-        $Prompt = $pyvenvCfg['prompt'];
-    }
-    else {
-        Write-Verbose "  Setting prompt based on parent's directory's name. (Is the directory name passed to venv module when creating the virtual environment)"
-        Write-Verbose "  Got leaf-name of $VenvDir='$(Split-Path -Path $venvDir -Leaf)'"
-        $Prompt = Split-Path -Path $venvDir -Leaf
-    }
+
+    
 }
 
 Write-Verbose "Prompt = '$Prompt'"
@@ -246,3 +233,4 @@ if (Test-Path -Path Env:PYTHONHOME) {
 # Add the venv to the PATH
 Copy-Item -Path Env:PATH -Destination Env:_OLD_VIRTUAL_PATH
 $Env:PATH = "$VenvExecDir$([System.IO.Path]::PathSeparator)$Env:PATH"
+

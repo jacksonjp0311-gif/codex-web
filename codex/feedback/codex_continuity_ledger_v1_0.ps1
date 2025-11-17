@@ -23,12 +23,11 @@ New-Item -ItemType Directory -Force -Path $FeedbackDir,$StateDir | Out-Null
 if (!(Test-Path $LogPath)) { New-Item -ItemType File -Path $LogPath | Out-Null }
 
 function Try-ReadJson { param([string]$p)
-  if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } else { $null }
+  if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } } 
 }
-function SafeNum { param($x) if ($null -eq $x) {0.0} else { try {[double]$x} catch {0.0} } }
-function Mean { param([double[]]$arr) if (!$arr -or $arr.Count -eq 0) {0.0} else { ($arr | Measure-Object -Average).Average } }
-function Std  { param([double[]]$arr) if (!$arr -or $arr.Count -lt 2) {0.0} else {
-  $m = Mean $arr; $ss = 0.0; foreach ($x in $arr) { $ss += [math]::Pow(($x-$m),2) }; [math]::Sqrt($ss/($arr.Count-1)) } }
+function SafeNum { param($x) if ($null -eq $x) {0.0}  catch {0.0} } }
+function Mean { param([double[]]$arr) if (!$arr -or $arr.Count -eq 0) {0.0}  }
+function Std  { param([double[]]$arr) if (!$arr -or $arr.Count -lt 2) {0.0} ; [math]::Sqrt($ss/($arr.Count-1)) } }
 
 # Read inputs
 $int  = Try-ReadJson $IntegrState
@@ -37,10 +36,10 @@ $harm = Try-ReadJson $HarmState
 $seal = Try-ReadJson $SealState
 
 # Integration values
-$C_avg = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_avg } else { 0.0 }
-$C_loc = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_local } else { 0.0 }
-$C_rem = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_remote } else { 0.0 }
-$ΔH7   = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.'ΔH7' } else { 0.0 }
+$C_avg = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_avg } 
+$C_loc = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_local } 
+$C_rem = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.C_remote } 
+$ΔH7   = if ($int -and $int.codex_feedback_integration) { SafeNum $int.codex_feedback_integration.'ΔH7' } 
 
 # ΔC (robust block — keep in ONE block)
 $ΔC = $null
@@ -50,17 +49,15 @@ if ($mirr -and $mirr.mirror -and $mirr.mirror.'ΔC') {
 elseif ($int -and $int.codex_feedback_integration) {
   $ΔC = [math]::Abs($C_rem - $C_loc)
 }
-else {
-  $ΔC = 0.0
-}
+
 
 # Harmonic v4.0
-$C_next         = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.C_next } else { 0.0 }
-$harmonic_index = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.harmonic_index } else { 0.0 }
+$C_next         = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.C_next } 
+$harmonic_index = if ($harm -and $harm.codex_harmonic_intelligence) { SafeNum $harm.codex_harmonic_intelligence.metrics.harmonic_index } 
 
 # Seal
 $H7   = 0.70
-$ival = if ($seal -and $seal.codex_temporal_seal -and $seal.codex_temporal_seal.state.interval_minutes) { [int]$seal.codex_temporal_seal.state.interval_minutes } else { $null }
+$ival = if ($seal -and $seal.codex_temporal_seal -and $seal.codex_temporal_seal.state.interval_minutes) { [int]$seal.codex_temporal_seal.state.interval_minutes } 
 
 # Commit
 try { Set-Location $CodexRoot; $commit = (& git rev-parse HEAD).Trim() } catch { $commit = "" }
@@ -96,7 +93,7 @@ Add-Content $LogPath ("[LEDGER {0}] ΔC={1} ΔΦ~={2} Cnext={3} H={4}" -f (Get-D
 try {
   $all = @()
   if (Test-Path $LedgerPath) { $all = Get-Content -Encoding UTF8 $LedgerPath }
-  $last = if ($all.Count -gt 200) { $all[-200..-1] } else { $all }
+  $last = if ($all.Count -gt 200) { $all[-200..-1] } 
 
   $Cns = @(); $Hs = @()
   foreach ($l in $last) {
@@ -128,7 +125,7 @@ try {
   if (Test-Path $DashPath) {
     $html = Get-Content -Raw -Encoding UTF8 $DashPath
     if ($html -match "</body>") { $html = $html -replace "</body>", "$tag`n</body>" }
-    else { $html = $html + "`n$tag`n" }
+    
     [IO.File]::WriteAllText($DashPath, $html, [Text.Encoding]::UTF8)
   }
 } catch {

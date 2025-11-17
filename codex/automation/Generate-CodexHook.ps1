@@ -60,18 +60,14 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
     foreach ($p in $pairs) {
       if ($p -match '^(script|ledger|output)\s*=\s*"([^"]+)"$') {
         $h[$Matches[1]] = $Matches[2]
-      } else {
-        FailLine ("Invalid Handshake entry: " + $p) $i
-      }
+      } 
     }
     foreach ($k in @("script","ledger","output")) {
       if (-not $h.ContainsKey($k)) { FailLine ("Missing Handshake key: " + $k) $i }
     }
     $steps += @{ Type="Handshake"; Params=$h }
   }
-  else {
-    FailLine ("Unknown DSL line: " + $text) $i
-  }
+  
 }
 
 # 2) Build LF-only shell stub
@@ -116,4 +112,5 @@ if (-not (Test-Path $hookDir)) {
   New-Item -ItemType Directory -Path $hookDir | Out-Null
 }
 Set-Content -Path $HookPath -Value $stub
+
 

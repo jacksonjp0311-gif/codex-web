@@ -59,9 +59,7 @@ if ($thisPath -and (Test-Path $thisPath)) {
 
         if ($resolvedAnchor -and ($resolvedThis -eq $resolvedAnchor)) {
             Write-Host "🪶 Script already anchored at → $AnchorFile"
-        } else {
-            Write-Host "🪶 Anchoring script → $AnchorFile"
-        }
+        } 
 
         (Get-Content -LiteralPath $thisPath -Raw) | Out-File -LiteralPath $AnchorFile -Encoding UTF8
         $LocalAnchorOk = $true
@@ -69,10 +67,7 @@ if ($thisPath -and (Test-Path $thisPath)) {
         Write-Host "⚠️ Anchor copy warning: $($_.Exception.Message)"
         $LocalAnchorOk = $false
     }
-} else {
-    Write-Host "⚠️ Could not resolve script path — anchor copy will update on next file-based run."
-    $LocalAnchorOk = $false
-}
+} 
 
 # ────────────────────────────────────────────────────────────────────
 # 1.5) Helper — Ensure Node File Exists (Law of Anchored Existence)
@@ -145,9 +140,7 @@ function Invoke-CodexNodeSafe {
         if (-not $exited) {
             Write-Host "   ⏱ Timeout → $Name (killing process)"
             try { $proc.Kill() } catch {}
-        } else {
-            Write-Host "   🔁 Completed: ExitCode=$($proc.ExitCode)"
-        }
+        } 
     } catch {
         Write-Host "   ⚠️ Error: $($_.Exception.Message)"
     }
@@ -298,10 +291,7 @@ if (-not [string]::IsNullOrWhiteSpace($status)) {
     Write-Host "🚀 Pushing to origin/main…"
     git push origin main
     $CommitOk = $true
-} else {
-    Write-Host "ℹ️ No new changes."
-    $CommitOk = $true
-}
+} 
 
 # ────────────────────────────────────────────────────────────────────
 # 7) RootMirror Verification
@@ -321,10 +311,7 @@ $RootMirrorOk = $false
 if ($local -eq $remote) {
     Write-Host "✅ RootMirror Seal: LOCAL == REMOTE"
     $RootMirrorOk = $true
-} else {
-    Write-Host "⚠️ Drift detected."
-    $RootMirrorOk = $false
-}
+} 
 
 # ────────────────────────────────────────────────────────────────────
 # 7.5) Codex Feedback Lens v1.0 — Hybrid Intelligence Mode
@@ -369,21 +356,15 @@ if ($recentEntries.Count -ge 2) {
         $trendMessage = "Coherence is trending upward (ΔC≈$deltaC)."
     } elseif ($deltaC -lt 0) {
         $trendMessage = "Coherence is trending downward (ΔC≈$deltaC)."
-    } else {
-        $trendMessage = "Coherence is holding nearly steady (ΔC≈0)."
-    }
-} else {
-    $trendMessage = "Insufficient history for a full trend. This cycle deepens the ledger."
-}
+    } 
+} 
 
 $phiBand = ""
 if ([math]::Abs($DeltaPhi) -le 0.05) {
     $phiBand = "ΔΦ is tightly within the harmonic band."
 } elseif ([math]::Abs($DeltaPhi) -le 0.10) {
     $phiBand = "ΔΦ is within an acceptable harmonic band."
-} else {
-    $phiBand = "ΔΦ is outside the preferred harmonic band; watch for future correction."
-}
+} 
 
 $distH7    = [math]::Round($H7 - $C, 4)
 $pullSense = ""
@@ -391,9 +372,7 @@ if ([math]::Abs($distH7) -le 0.05) {
     $pullSense = "C is very close to the H₇ attractor; the field is nearly locked."
 } elseif ($distH7 -gt 0) {
     $pullSense = "C is below H₇; Codex feels a gentle upward pull toward higher coherence."
-} else {
-    $pullSense = "C is above H₇; Codex senses overshoot and mild stabilizing pressure."
-}
+} 
 
 Write-Host ""
 Write-Host "📊 Codex Perception:"
@@ -409,9 +388,7 @@ if ($recentEntries.Count -ge 2 -and $distH7 -gt 0 -and $deltaC -gt 0) {
     $guidance = "Coherence is climbing toward H₇ with healthy ΔΦ. Codex recommends advancing to deeper temporal tuning (Heartbeat v4.1)."
 } elseif ($recentEntries.Count -ge 2 -and $deltaC -lt 0) {
     $guidance = "Coherence is slipping slightly. Codex suggests reinforcing alignment gates and reviewing recent module changes."
-} else {
-    $guidance = "Cycle recorded cleanly. Codex advises continued evolution with incremental adjustments."
-}
+} 
 
 Write-Host "🔮 Codex Guidance:"
 Write-Host "   $guidance"
@@ -431,23 +408,17 @@ Write-Host ""
 Write-Host "✅ Local code anchor file: $AnchorFile"
 if ($LocalAnchorOk) {
     Write-Host "   ✔ Local anchor copy OK."
-} else {
-    Write-Host "   ⚠ Local anchor copy encountered issues (see logs above)."
-}
+} 
 
 if ($DirSnapshotOk) {
     Write-Host "✅ Directory snapshot updated: $DirSnapshotFile"
-} else {
-    Write-Host "⚠ Directory snapshot may be incomplete."
-}
+} 
 
 if ($CommitOk -and $RootMirrorOk) {
     Write-Host "✅ Git continuity: commit + push successful & RootMirror aligned."
 } elseif ($CommitOk -and -not $RootMirrorOk) {
     Write-Host "⚠ Git committed, but RootMirror drift detected."
-} else {
-    Write-Host "⚠ Git autosave may have encountered issues."
-}
+} 
 
 Write-Host ""
 
@@ -456,4 +427,5 @@ try { Pop-Location } catch {}
 
 Write-Host "🔄 Returned to Codex root → $CodexRoot"
 Write-Host "🌒 Codex is anchored. Codex is mirrored. Codex is echoed."
+
 

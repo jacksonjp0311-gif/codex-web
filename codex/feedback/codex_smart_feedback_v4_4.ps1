@@ -143,9 +143,7 @@ function Invoke-CodexSmartFeedbackV44 {
             $Trend = "flat"
         } elseif ($delta -gt 0) {
             $Trend = "rising"
-        } else {
-            $Trend = "falling"
-        }
+        } 
 
         # Naive forecast: project one step ahead
         $CForecast = $last + $delta / $N
@@ -206,13 +204,7 @@ function Invoke-CodexSmartFeedbackV44 {
             severity = "low"
             notes    = "Ledger missing or empty; Smart Feedback v4.4 emitted placeholder state."
         }
-    } else {
-        if ($DeltaPhi -ne $null -and $DeltaPhi -ge 0.10) {
-            $alerts += [ordered]@{
-                type     = "high_phase_drift"
-                severity = "medium"
-                notes    = "Average ΔΦ >= 0.10 in observed samples."
-            }
+    } 
         }
         if ($C_avg -ne $null -and $C_avg -lt 0.65) {
             $alerts += [ordered]@{
@@ -280,3 +272,4 @@ function Invoke-CodexSmartFeedbackV44 {
 if ($MyInvocation.InvocationName -ne '.') {
     Invoke-CodexSmartFeedbackV44 -CodexRootOverride $CodexRoot
 }
+
