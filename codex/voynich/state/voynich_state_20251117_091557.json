@@ -1,0 +1,20 @@
+﻿{
+    "module":  "codex_voynich_all_one_v1_2",
+    "t":  "2025-11-17T09:15:57.5058494-05:00",
+    "law":  "E–I–C ∿ • H₇=0.70",
+    "graph":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_graph.jsonl",
+    "axes_depth":  [
+                       "CORE",
+                       "PERIPHERY",
+                       "NEUTRAL"
+                   ],
+    "axes_phase":  [
+                       "ACTIVE",
+                       "PASSIVE"
+                   ],
+    "axes_flow":  [
+                      "INPUT",
+                      "OUTPUT",
+                      "NEUTRAL"
+                  ]
+}

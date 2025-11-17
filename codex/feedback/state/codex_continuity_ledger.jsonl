@@ -149,3 +149,11 @@
     "H7":  0.7,
     "note":  "Voynich Parser v1.1 run — REL+STATE graph emission"
 }
+{
+    "t":  "2025-11-17T09:15:57.5058494-05:00",
+    "module":  "voynich_all_one_v1_2",
+    "graph":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_graph.jsonl",
+    "state":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\state\\voynich_state_20251117_091557.json",
+    "H7":  0.7,
+    "note":  "Voynich All-One Node v1.2 run"
+}
