@@ -1,0 +1,16 @@
+﻿{
+    "timestamp":  "2025-11-17T09:49:37.9625269-05:00",
+    "graph":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_graph.jsonl",
+    "depth_axis":  [
+                       "CORE",
+                       "PERIPHERY"
+                   ],
+    "phase_axis":  [
+                       "PASSIVE",
+                       "ACTIVE"
+                   ],
+    "flow_axis":  [
+                      "INPUT",
+                      "OUTPUT"
+                  ]
+}
