@@ -1,0 +1,48 @@
+{
+  "protocol": "CodexQuantumImaging",
+  "version": "2.1",
+  "timestamp": "20251117_094031",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v2_1",
+  "used_synthetic": true,
+  "state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v2_1\\qim_v2_1_state_20251117_094031.json",
+  "visuals": {
+    "delta_phi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_1\\qim_v2_1_delta_phi_central_20251117_094031.png",
+    "delta_phi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_1\\qim_v2_1_delta_phi_maxproj_20251117_094031.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v2_1\\qim_v2_1_resonance_curve_20251117_094031.png"
+  },
+  "volume_summary": {
+    "shape": [
+      3,
+      256,
+      256
+    ],
+    "delta_phi_mean": -4.967053879312289e-09,
+    "delta_phi_std": 0.2029578685760498,
+    "gradient_mean": 0.010712482035160065,
+    "gradient_std": 0.03178437426686287,
+    "horizon_threshold": 0.40591573218504573,
+    "triad": {
+      "energy": 0.010712482035160065,
+      "information": 0.2833684157008467,
+      "coherence": 0.0030355790474492048,
+      "h7_target": 0.7
+    },
+    "resonance": {
+      "radii": [
+        0.7,
+        1.0,
+        1.4,
+        1.8,
+        2.2
+      ],
+      "response": [
+        0.18260955810546875,
+        0.1811029464006424,
+        0.17843122780323029,
+        0.17515340447425842,
+        0.17143578827381134
+      ]
+    },
+    "synthetic": true
+  }
+}
