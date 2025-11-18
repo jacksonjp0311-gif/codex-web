@@ -1,0 +1,24 @@
+﻿{
+    "version":  "2.0",
+    "description":  "Voynich OS v2.0 — REL+STATE+MODE IR",
+    "node_types":  [
+                       "CLAUSE",
+                       "PAGE",
+                       "STATE_EDGE",
+                       "MODE_SWITCH"
+                   ],
+    "fields":  {
+                   "folio":  "string",
+                   "clause_id":  "string (folio:index)",
+                   "tokens":  "list[string]",
+                   "rel_index":  "int",
+                   "rel_token":  "string",
+                   "subject_raw":  "string",
+                   "object_raw":  "string",
+                   "depth":  "string",
+                   "phase":  "string",
+                   "flow":  "string",
+                   "mode":  "string",
+                   "section":  "string"
+               }
+}

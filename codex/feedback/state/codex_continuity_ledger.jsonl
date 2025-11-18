@@ -189,4 +189,13 @@
          " H 7 " :     0 . 7 ,  
          " n o t e " :     " R a d i a l   b o t a n i c a l   m a p p i n g "  
  }  
- 
+ {
+    "t":  "2025-11-18T09:50:14.5384003-05:00",
+    "module":  "voynich_os_v2_0",
+    "run_id":  "20251118_095014",
+    "ir_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_ir_v2_0_20251118_095014.jsonl",
+    "vm_output":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_vm_out_v2_0_20251118_095014.json",
+    "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\state\\voynich_os_state_20251118_095014.json",
+    "H7":  0.7,
+    "note":  "Voynich OS v2.0 — compile+VM run"
+}

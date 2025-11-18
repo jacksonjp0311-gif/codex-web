@@ -1,0 +1,33 @@
+﻿{
+    "version":  "2.0",
+    "mode":  "codex_hybrid",
+    "codex_law":  "Universal Truth Protocol (E–I–C ∿, H7 = 0.70)",
+    "rel_token":  "ol",
+    "axes":  {
+                 "depth":  [
+                               "CORE",
+                               "PERIPHERY",
+                               "NEUTRAL",
+                               "UNKNOWN"
+                           ],
+                 "phase":  [
+                               "ACTIVE",
+                               "PASSIVE",
+                               "TRANSITION",
+                               "UNKNOWN"
+                           ],
+                 "flow":  [
+                              "INPUT",
+                              "OUTPUT",
+                              "NEUTRAL",
+                              "UNKNOWN"
+                          ]
+             },
+    "modes":  {
+                  "INGEST":  "CORE • ACTIVE • INPUT",
+                  "BUFFER":  "CORE • PASSIVE • INPUT",
+                  "EMIT":  "PERIPHERY • * • OUTPUT",
+                  "TRANSFORM":  "CORE • * • OUTPUT",
+                  "IDLE":  "fallback state"
+              }
+}

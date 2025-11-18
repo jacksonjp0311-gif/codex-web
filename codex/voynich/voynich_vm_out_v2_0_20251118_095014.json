@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "total_clauses": 0,
+    "modes": {},
+    "depths": {},
+    "distinct_tokens": 0
+  },
+  "codex_state": {
+    "E": 0.0,
+    "I": 0.0,
+    "delta_phi": 0.0,
+    "C": 0.0,
+    "H7": 0.7
+  }
+}

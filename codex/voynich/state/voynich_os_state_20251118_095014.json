@@ -1,0 +1,11 @@
+﻿{
+    "module":  "codex_voynich_os_v2_0",
+    "run_id":  "20251118_095014",
+    "timestamp":  "2025-11-18T09:50:14.5384003-05:00",
+    "codex_law":  "Universal Truth Protocol (E–I–C ∿, H7 = 0.70)",
+    "H_layer":  "H16–H23 Voynich OS Synthesis",
+    "input_eva":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_eva.txt",
+    "ir_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_ir_v2_0_20251118_095014.jsonl",
+    "vm_output":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_vm_out_v2_0_20251118_095014.json",
+    "log_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\logs\\voynich_os_run_20251118_095014.log"
+}
