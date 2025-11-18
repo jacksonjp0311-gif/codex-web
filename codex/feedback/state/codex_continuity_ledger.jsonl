@@ -199,3 +199,13 @@
     "H7":  0.7,
     "note":  "Voynich OS v2.0 — compile+VM run"
 }
+{
+    "t":  "2025-11-18T10:31:11.9136391-05:00",
+    "module":  "voynich_os_v3_all_one",
+    "spec_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3\\manifest\\voynich_os_v3_spec.json",
+    "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3\\state\\voynich_os_v3_state_20251118_103111.json",
+    "ir_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3\\ir\\voynich_os_v3_ir.jsonl",
+    "vm_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3\\vm\\voynich_os_v3_vm_state.json",
+    "H7":  0.7,
+    "note":  "Voynich OS v3.0 kernel anchored — pharaonic systems thinking alignment."
+}

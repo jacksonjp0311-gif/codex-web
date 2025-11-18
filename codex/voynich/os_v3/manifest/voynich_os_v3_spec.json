@@ -1,0 +1,74 @@
+﻿{
+    "module":  "voynich_os_v3",
+    "timestamp":  "2025-11-18T10:31:11.9136391-05:00",
+    "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+    "voynich_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich",
+    "os_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3",
+    "eic_law":  "C = (E·I) / (1 + |ΔΦ|), H7 = 0.70, ∿ Placidity",
+    "lineage":  {
+                    "style":  "pharaonic_thought_alignment",
+                    "notes":  [
+                                  "Think in cycles: sky → earth → body → sky",
+                                  "See pages as process-temples, not texts",
+                                  "Treat diagrams as I/O architectures",
+                                  "Biology, astronomy, and ritual as one OS"
+                              ]
+                },
+    "rel_layer":  {
+                      "description":  "REL tokens (e.g. \u0027ol\u0027) as binding / mapping operators",
+                      "examples":  [
+                                       "subject ol object",
+                                       "core_state ol peripheral_state"
+                                   ]
+                  },
+    "state_layer":  {
+                        "phase":  [
+                                      "ACTIVE",
+                                      "PASSIVE"
+                                  ],
+                        "flow":  [
+                                     "INPUT",
+                                     "OUTPUT",
+                                     "NEUTRAL"
+                                 ],
+                        "depth":  [
+                                      "CORE",
+                                      "PERIPHERY",
+                                      "NEUTRAL"
+                                  ],
+                        "suffix_map":  [
+                                           "aiin/ain → CORE, ACTIVE, INPUT",
+                                           "oin/oiny → CORE, PASSIVE, INPUT",
+                                           "dy/ody   → PERIPHERY, OUTPUT",
+                                           "edy      → CORE, PASSIVE, OUTPUT",
+                                           "y        → NEUTRAL, PASSIVE, NEUTRAL (fallback)"
+                                       ],
+                        "axes":  [
+                                     "depth",
+                                     "phase",
+                                     "flow"
+                                 ]
+                    },
+    "mode_layer":  {
+                       "mapping":  [
+                                       "CORE+ACTIVE+INPUT → INGEST",
+                                       "CORE+PASSIVE+INPUT → BUFFER",
+                                       "PERIPHERY+OUTPUT → EMIT",
+                                       "CORE+OUTPUT → TRANSFORM",
+                                       "UNKNOWN → IDLE"
+                                   ],
+                       "modes":  [
+                                     "INGEST",
+                                     "BUFFER",
+                                     "EMIT",
+                                     "TRANSFORM",
+                                     "IDLE"
+                                 ]
+                   },
+    "compiler":  {
+                     "vm_target":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3\\vm\\voynich_os_v3_vm_state.json",
+                     "notes":  "v3.0 kernel anchors structure; later engines will fill IR + VM content.",
+                     "ir_target":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\os_v3\\ir\\voynich_os_v3_ir.jsonl",
+                     "input_eva":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\voynich_eva.txt"
+                 }
+}
