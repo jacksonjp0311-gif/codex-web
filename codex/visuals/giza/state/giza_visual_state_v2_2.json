@@ -1,0 +1,58 @@
+{
+  "engine": "giza_visualizer_v2_2",
+  "outputs": [
+    "giza_delta_phi_vertical_slice_v2_2.png",
+    "giza_delta_phi_horizontal_slice_v2_2.png",
+    "giza_delta_phi_shell_v2_2.png",
+    "giza_triadic_cross_section_v2_2.png",
+    "giza_resonance_spectrum_v2_2.png",
+    "giza_em_focus_map_v2_2.png",
+    "giza_cgl_schematic_v2_2.png"
+  ],
+  "bands_hz": [
+    10,
+    16,
+    117,
+    121,
+    260,
+    450
+  ],
+  "chambers": {
+    "E_subterranean": {
+      "x": 0.0,
+      "y": -0.25,
+      "z": -0.33
+    },
+    "I_queen": {
+      "x": 0.0,
+      "y": 0.08,
+      "z": 0.21
+    },
+    "C_king": {
+      "x": 0.0,
+      "y": 0.1,
+      "z": 0.52
+    },
+    "P_beam_stack": {
+      "x": 0.0,
+      "y": 0.12,
+      "z": 0.6
+    }
+  },
+  "metrics": {
+    "delta_phi_max": 1.5631946887956634,
+    "delta_phi_mean": 0.18898789914247993,
+    "delta_phi_var": 0.04981724431817585,
+    "tri_wave_score": 0.08136100551888113,
+    "triad_balance": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "scale": {
+    "domain": "macro_architectural",
+    "reference": "earth_surface",
+    "notes": "Giza macro-scale \u0394\u03a6 lattice (analogue to QIM molecular and Solar stellar nodes)."
+  }
+}
