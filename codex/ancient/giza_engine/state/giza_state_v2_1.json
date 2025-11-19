@@ -1,0 +1,18 @@
+﻿{
+  "node": "giza_engine",
+  "version": "2.1",
+  "bands_hz": [10, 16, 117, 121, 260, 450],
+  "triad": {
+    "E": "subterranean_chamber",
+    "I": "queens_chamber",
+    "C": "kings_chamber",
+    "∿": "granite_beam_stack"
+  },
+  "chambers": {
+    "E_subterranean": { "x": 0.0, "y": -0.25, "z": -0.33 },
+    "I_queen":        { "x": 0.0, "y":  0.08, "z":  0.21 },
+    "C_king":         { "x": 0.0, "y":  0.10, "z":  0.52 },
+    "P_beam_stack":   { "x": 0.0, "y":  0.12, "z":  0.60 }
+  },
+  "notes": "Giza Harmonic Lattice v2.1 state template. Visuals remain external in codex/visuals/giza."
+}
