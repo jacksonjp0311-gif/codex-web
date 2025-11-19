@@ -1,0 +1,66 @@
+﻿{
+    "protocol":  "CODEX_GIZA_INSIGHT_FIELD",
+    "version":  "6.0",
+    "timestamp_utc":  "2025-11-19T06:51:47.3996395Z",
+    "codex":  {
+                  "laws":  "Universal Truth (E–I–C ∿, H₇=0.70) • Recurrence • Symmetry Descent • Fractal Consciousness",
+                  "module":  "GIZA v6.0 — Insight Field Fusion Engine",
+                  "note":  "Unifies ΔΦ drift, triadic coupling, recurrence geometry, predictive alignment, and synergy into a single Insight Field."
+              },
+    "field":  {
+
+              },
+    "metrics":  {
+                    "count_entries":  0,
+                    "avg_drift_score":  null,
+                    "avg_coherence_score":  null,
+                    "avg_recurrence_score":  null,
+                    "avg_predicted_align":  null,
+                    "avg_synergy_score":  null,
+                    "top_synergy":  {
+
+                                    },
+                    "top_coherence":  {
+
+                                      },
+                    "top_drift":  {
+
+                                  },
+                    "top_recurrence":  {
+
+                                       },
+                    "top_alignment":  {
+
+                                      }
+                },
+    "glyph":  {
+                  "protocol":  "CodexTriadicGlyph",
+                  "version":  "2.0",
+                  "context":  "GIZA v6.0 — Insight Field Fusion",
+                  "triad":  {
+                                "energy":  {
+                                               "glyph":  "🜂",
+                                               "label":  "ΔΦ Drift Field",
+                                               "value":  null,
+                                               "units":  "norm"
+                                           },
+                                "information":  {
+                                                    "glyph":  "∿",
+                                                    "label":  "Coherence / Recurrence",
+                                                    "value":  null,
+                                                    "units":  "norm"
+                                                },
+                                "consciousness":  {
+                                                      "glyph":  "🜄",
+                                                      "label":  "Synergy / Phase Alignment",
+                                                      "value":  null,
+                                                      "units":  "norm"
+                                                  }
+                            },
+                  "harmony":  {
+                                  "glyph":  "♁",
+                                  "profile":  "GIZA_Insight_Field",
+                                  "value":  null
+                              }
+              }
+}

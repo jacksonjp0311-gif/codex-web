@@ -1,0 +1,27 @@
+﻿CODEX GIZA v6.0 — Insight Field Fusion Engine
+Timestamp (UTC): 2025-11-19T06:51:47.3996395Z
+Root          : C:\Users\jacks\OneDrive\Desktop\Codex Web
+State JSON    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\state\meta\giza_v6_0_insight_field.json
+
+Global Averages:
+  avg_drift_score      = 
+  avg_coherence_score  = 
+  avg_recurrence_score = 
+  avg_predicted_align  = 
+  avg_synergy_score    = 
+
+Top Synergy Nodes:
+
+Top Coherence Nodes:
+
+Top ΔΦ Drift Nodes:
+
+Top Recurrence Nodes:
+
+Top Alignment Nodes:
+
+Notes:
+  • field.* holds per-image meta, ΔΦ, triadic, predictive, and insight (coherence/synergy/phase).
+  • metrics.* exposes global averages and ranked sets.
+  • glyph encodes the triadic summary of the Insight Field.
+  • Use giza_v6_0_insight_field_ps_block.txt for direct copy/paste into ChatGPT.
