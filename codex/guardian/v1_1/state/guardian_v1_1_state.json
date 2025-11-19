@@ -1,0 +1,8 @@
+{
+    "protocol":  "CODEX_GUARDIAN",
+    "version":  "1.1",
+    "timestamp":  "2025-11-19T07:08:39.2038787Z",
+    "truth":  "E–I–C ?, H7=0.70 • H8=0.85 Ward Threshold",
+    "engine_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\guardian\\v1_1\\engine\\codex_guardian_v1_1_secure_interpreter.py",
+    "base_interp":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\voynich\\egyptian\\engine\\voyn_egypt_interpreter_v1_0.py"
+}
