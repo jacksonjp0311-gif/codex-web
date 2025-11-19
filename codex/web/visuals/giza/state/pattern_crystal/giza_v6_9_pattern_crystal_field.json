@@ -1,0 +1,23 @@
+﻿{
+    "version":  "6.9",
+    "source_state":  "giza_v6_8_seed_asymmetry_field.json",
+    "node_count":  383,
+    "timestamp_utc":  "2025-11-19T18:50:14.1309466Z",
+    "protocol":  "CODEX_GIZA_PATTERN_CRYSTAL_FIELD",
+    "pattern_crystal_mesh":  {
+
+                             },
+    "epsilon_seed":  1E-09,
+    "metrics":  {
+                    "C_max":  0,
+                    "avg_delta_phi_local":  0,
+                    "channel_fraction":  0,
+                    "rune_density":  0,
+                    "avg_information_I":  0,
+                    "avg_energy_E":  0,
+                    "avg_consciousness_C":  0,
+                    "crystal_fraction":  0,
+                    "root_fraction":  0.002610966057,
+                    "C_rune_threshold":  0
+                }
+}

@@ -1,0 +1,23 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Curvature Energy (ΔΦ_avg)",
+                                 "glyph":  "𓂀",
+                                 "value":  0
+                             },
+                  "consciousness":  {
+                                        "label":  "Crystal Coherence (C_avg)",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Channel Flow (I_avg)",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "version":  "2.9",
+    "rune_density":  0,
+    "context":  "GIZA v6.9 — Pattern Crystalizer (Triadic Mode)"
+}
