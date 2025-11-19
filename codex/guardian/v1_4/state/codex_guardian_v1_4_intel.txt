@@ -1,0 +1,15 @@
+╔═══════════════════════════════════════╗
+║ 𓂀  GUARDIAN v1.4 — INTEL PANEL        ║
+╚═══════════════════════════════════════╝
+ Drift Prediction     : 0.5000
+ Anomaly Prediction   : 0.6200
+
+ Triadic Ward Glyph:
+   🛡️  Stability     : 0.5
+   ∿   ΔΦ Vector     : 0.5
+   🜄  Harmony       : 0.38
+   ♁   Integrity     : 0.19
+
+ Notes:
+   • Predictive model based on v1.2 + v1.3
+   • Downstream: Heartbeat, Bridge, Security Mesh

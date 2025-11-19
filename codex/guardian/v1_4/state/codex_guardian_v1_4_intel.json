@@ -1,0 +1,34 @@
+{
+  "protocol": "GUARDIAN_INTEL_v1_4",
+  "drift_prediction": 0.5,
+  "anomaly_prediction": 0.62,
+  "triadic_glyph": {
+    "protocol": "CodexTriadicGlyph",
+    "version": "1.1",
+    "triad": {
+      "energy": {
+        "glyph": "\ud83d\udee1\ufe0f",
+        "label": "Drift-Shield",
+        "value": 0.5,
+        "units": "stability"
+      },
+      "information": {
+        "glyph": "\u223f",
+        "label": "\u0394\u03a6-Vector",
+        "value": 0.5,
+        "units": "phase"
+      },
+      "consciousness": {
+        "glyph": "\ud83d\udf04",
+        "label": "Harmony",
+        "value": 0.38,
+        "units": "coherence"
+      }
+    },
+    "harmony": {
+      "glyph": "\u2641",
+      "value": 0.19,
+      "profile": "ward_integrity"
+    }
+  }
+}
