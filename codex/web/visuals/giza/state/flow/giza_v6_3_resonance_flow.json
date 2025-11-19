@@ -1,0 +1,24 @@
+﻿{
+    "protocol":  "CODEX_GIZA_RESONANCE_FLOW",
+    "version":  "6.3",
+    "timestamp_utc":  "2025-11-19T15:20:27.7165160Z",
+    "source_state":  "giza_v6_2_gradient_resonance.json",
+    "node_count":  0,
+    "metrics":  {
+                    "avg_resonance":  null,
+                    "avg_curvature":  null,
+                    "avg_abs_gradient":  null,
+                    "pos_fraction":  null,
+                    "neg_fraction":  null,
+                    "zero_fraction":  null,
+                    "flow_coherence_index":  null,
+                    "peak_resonance":  null,
+                    "peak_resonance_node":  null
+                },
+    "flow_segments":  [
+
+                      ],
+    "top_flows":  {
+
+                  }
+}

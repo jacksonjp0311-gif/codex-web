@@ -1,0 +1,7 @@
+﻿GIZA v6.3 — Resonance Flow ASCII Map
+Timestamp (UTC): 2025-11-19T15:20:27.7165160Z
+Nodes: 0
+Avg Resonance: 
+Peak Resonance:  at 
+
+
