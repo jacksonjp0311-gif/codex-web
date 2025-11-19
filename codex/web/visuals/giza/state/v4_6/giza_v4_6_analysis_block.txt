@@ -1,0 +1,3273 @@
+﻿===== GIZA_V4_6_ANALYSIS_BEGIN =====
+{
+    "protocol":  "CODEX_GIZA_ANALYSIS",
+    "version":  "4.6",
+    "timestamp_utc":  "2025-11-19T05:58:09.1874600Z",
+    "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+    "giza_source":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0",
+    "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\v4_6",
+    "overlays_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\overlays\\v4_6",
+    "total_pngs":  87,
+    "avg_size_kb":  57.16,
+    "avg_brightness_estimate":  207.35,
+    "global_drift_index":  0.02,
+    "category_counts":  [
+                            {
+                                "Key":  "delta_phi",
+                                "Value":  14,
+                                "Name":  "delta_phi"
+                            },
+                            {
+                                "Key":  "em_field",
+                                "Value":  4,
+                                "Name":  "em_field"
+                            },
+                            {
+                                "Key":  "holo",
+                                "Value":  37,
+                                "Name":  "holo"
+                            },
+                            {
+                                "Key":  "other",
+                                "Value":  16,
+                                "Name":  "other"
+                            },
+                            {
+                                "Key":  "q_lattice",
+                                "Value":  2,
+                                "Name":  "q_lattice"
+                            },
+                            {
+                                "Key":  "resonance",
+                                "Value":  4,
+                                "Name":  "resonance"
+                            },
+                            {
+                                "Key":  "seed",
+                                "Value":  2,
+                                "Name":  "seed"
+                            },
+                            {
+                                "Key":  "solar",
+                                "Value":  1,
+                                "Name":  "solar"
+                            },
+                            {
+                                "Key":  "triadic",
+                                "Value":  5,
+                                "Name":  "triadic"
+                            },
+                            {
+                                "Key":  "voice",
+                                "Value":  2,
+                                "Name":  "voice"
+                            }
+                        ],
+    "series_drift":  [
+                         {
+                             "series_key":  "giza_resonance_spectrum",
+                             "count":  4,
+                             "avg_delta_brightness":  0.2367,
+                             "avg_delta_C":  0,
+                             "drift_index_GDI":  0.0026
+                         },
+                         {
+                             "series_key":  "giza_triadic_cross_section",
+                             "count":  5,
+                             "avg_delta_brightness":  1.215,
+                             "avg_delta_C":  0,
+                             "drift_index_GDI":  0.0133
+                         },
+                         {
+                             "series_key":  "giza_delta_phi_vertical_slice",
+                             "count":  3,
+                             "avg_delta_brightness":  2.88,
+                             "avg_delta_C":  0.0021,
+                             "drift_index_GDI":  0.0328
+                         },
+                         {
+                             "series_key":  "giza_voice_coupling",
+                             "count":  2,
+                             "avg_delta_brightness":  1.95,
+                             "avg_delta_C":  0,
+                             "drift_index_GDI":  0.0213
+                         },
+                         {
+                             "series_key":  "giza_em_focus_map",
+                             "count":  4,
+                             "avg_delta_brightness":  0.0033,
+                             "avg_delta_C":  0,
+                             "drift_index_GDI":  0
+                         },
+                         {
+                             "series_key":  "giza_q_lattice",
+                             "count":  2,
+                             "avg_delta_brightness":  4.13,
+                             "avg_delta_C":  0.0248,
+                             "drift_index_GDI":  0.0601
+                         },
+                         {
+                             "series_key":  "giza_delta_phi_horizontal_slice",
+                             "count":  3,
+                             "avg_delta_brightness":  2,
+                             "avg_delta_C":  0.0093,
+                             "drift_index_GDI":  0.0274
+                         },
+                         {
+                             "series_key":  "giza_holo_midplane_t_series",
+                             "count":  24,
+                             "avg_delta_brightness":  0.1935,
+                             "avg_delta_C":  0.0008,
+                             "drift_index_GDI":  0.0026
+                         }
+                     ],
+    "prediction":  {
+                       "heuristic_version":  "1.0",
+                       "global_drift_index":  0.02,
+                       "brightness_baseline":  207.35,
+                       "suggested_next_mode":  "stabilize_near_H7",
+                       "notes":  [
+                                     "Higher GDI → more rapid structural change",
+                                     "Brightness baseline used as proxy for field excitation",
+                                     "Next GIZA run (v4.7) should probe stability around current GDI"
+                                 ]
+                   },
+    "anomalies":  [
+                      {
+                          "name":  "giza_beam_interference_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_beam_interference_v2_3.png",
+                          "category":  "other",
+                          "avg_brightness":  160.24,
+                          "symmetry_score":  28.6903,
+                          "triad_E":  0.6284,
+                          "triad_I":  0.7169,
+                          "triad_C":  0.4224,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_beam_interference_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_beam_interference_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  161.36,
+                          "symmetry_score":  28.4385,
+                          "triad_E":  0.6328,
+                          "triad_I":  0.7208,
+                          "triad_C":  0.4211,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_body_coupling_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_body_coupling_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  242.99,
+                          "symmetry_score":  18.7792,
+                          "triad_E":  0.9529,
+                          "triad_I":  0.8293,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_cavity_modes_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cavity_modes_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  248.32,
+                          "symmetry_score":  8.8557,
+                          "triad_E":  0.9738,
+                          "triad_I":  0.481,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_cgl_schematic_v2_1.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_1.png",
+                          "category":  "other",
+                          "avg_brightness":  251.73,
+                          "symmetry_score":  8.6959,
+                          "triad_E":  0.9872,
+                          "triad_I":  0.2722,
+                          "triad_C":  0.5275,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_cgl_schematic_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_2.png",
+                          "category":  "other",
+                          "avg_brightness":  251.67,
+                          "symmetry_score":  8.7951,
+                          "triad_E":  0.9869,
+                          "triad_I":  0.2789,
+                          "triad_C":  0.5275,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_cgl_schematic_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_3.png",
+                          "category":  "other",
+                          "avg_brightness":  251.64,
+                          "symmetry_score":  8.7904,
+                          "triad_E":  0.9868,
+                          "triad_I":  0.2789,
+                          "triad_C":  0.5275,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_cgl_schematic_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  251.65,
+                          "symmetry_score":  8.8176,
+                          "triad_E":  0.9869,
+                          "triad_I":  0.2791,
+                          "triad_C":  0.5275,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_2.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  161.47,
+                          "symmetry_score":  30.9936,
+                          "triad_E":  0.6332,
+                          "triad_I":  0.6917,
+                          "triad_C":  0.4718,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_3.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  161.97,
+                          "symmetry_score":  31.3059,
+                          "triad_E":  0.6352,
+                          "triad_I":  0.6811,
+                          "triad_C":  0.4718,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_5.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  165.47,
+                          "symmetry_score":  29.8641,
+                          "triad_E":  0.6489,
+                          "triad_I":  0.6705,
+                          "triad_C":  0.4533,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_map_v2_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_map_v2_0.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  164.85,
+                          "symmetry_score":  37.9341,
+                          "triad_E":  0.6465,
+                          "triad_I":  0.7416,
+                          "triad_C":  0.4622,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_map_v2_1.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_map_v2_1.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  166.02,
+                          "symmetry_score":  37.0515,
+                          "triad_E":  0.6511,
+                          "triad_I":  0.6987,
+                          "triad_C":  0.4658,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_purity_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_3.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  248.79,
+                          "symmetry_score":  8.2111,
+                          "triad_E":  0.9756,
+                          "triad_I":  0.4641,
+                          "triad_C":  0.4865,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_purity_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_5.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  250.11,
+                          "symmetry_score":  7.3337,
+                          "triad_E":  0.9808,
+                          "triad_I":  0.3865,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_shell_v2_1.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_1.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  246.51,
+                          "symmetry_score":  12.805,
+                          "triad_E":  0.9667,
+                          "triad_I":  0.6203,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_shell_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_2.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  248.17,
+                          "symmetry_score":  12.5312,
+                          "triad_E":  0.9732,
+                          "triad_I":  0.5094,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_shell_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_3.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  247.56,
+                          "symmetry_score":  12.3649,
+                          "triad_E":  0.9708,
+                          "triad_I":  0.5448,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_shell_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_5.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  248.39,
+                          "symmetry_score":  12.344,
+                          "triad_E":  0.9741,
+                          "triad_I":  0.5029,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_2.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  148.8,
+                          "symmetry_score":  35.8656,
+                          "triad_E":  0.5835,
+                          "triad_I":  0.6111,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_3.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  153.43,
+                          "symmetry_score":  34.2217,
+                          "triad_E":  0.6017,
+                          "triad_I":  0.6231,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_5.png",
+                          "category":  "delta_phi",
+                          "avg_brightness":  152.3,
+                          "symmetry_score":  33.9907,
+                          "triad_E":  0.5973,
+                          "triad_I":  0.6364,
+                          "triad_C":  0.4527,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_em_focus_map_v2_1.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_1.png",
+                          "category":  "em_field",
+                          "avg_brightness":  204.07,
+                          "symmetry_score":  25.023,
+                          "triad_E":  0.8003,
+                          "triad_I":  0.6816,
+                          "triad_C":  0.4637,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_em_focus_map_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_2.png",
+                          "category":  "em_field",
+                          "avg_brightness":  204.06,
+                          "symmetry_score":  25.0363,
+                          "triad_E":  0.8002,
+                          "triad_I":  0.683,
+                          "triad_C":  0.4637,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_em_focus_map_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_3.png",
+                          "category":  "em_field",
+                          "avg_brightness":  204.07,
+                          "symmetry_score":  25.0688,
+                          "triad_E":  0.8003,
+                          "triad_I":  0.6825,
+                          "triad_C":  0.4637,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_em_focus_map_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_5.png",
+                          "category":  "em_field",
+                          "avg_brightness":  204.07,
+                          "symmetry_score":  25.0613,
+                          "triad_E":  0.8003,
+                          "triad_I":  0.6817,
+                          "triad_C":  0.4637,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_C_slice_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_C_slice_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  163.91,
+                          "symmetry_score":  33.2271,
+                          "triad_E":  0.6428,
+                          "triad_I":  0.6604,
+                          "triad_C":  0.4509,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_center_time_series_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_center_time_series_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  248.47,
+                          "symmetry_score":  9.152,
+                          "triad_E":  0.9744,
+                          "triad_I":  0.5077,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_E_slice_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_E_slice_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  159.11,
+                          "symmetry_score":  29.9788,
+                          "triad_E":  0.624,
+                          "triad_I":  0.6747,
+                          "triad_C":  0.4496,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_EIC_hist_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_EIC_hist_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  247.41,
+                          "symmetry_score":  15.0609,
+                          "triad_E":  0.9702,
+                          "triad_I":  0.284,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_horizontal_slice_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_horizontal_slice_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  167.28,
+                          "symmetry_score":  29.1027,
+                          "triad_E":  0.656,
+                          "triad_I":  0.6047,
+                          "triad_C":  0.4533,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_I_slice_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_I_slice_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  150.74,
+                          "symmetry_score":  29.2299,
+                          "triad_E":  0.5911,
+                          "triad_I":  0.6673,
+                          "triad_C":  0.4078,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_lotus_overlay_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_lotus_overlay_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  248.64,
+                          "symmetry_score":  11.1786,
+                          "triad_E":  0.9751,
+                          "triad_I":  0.5848,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_00_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_00_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.79,
+                          "symmetry_score":  23.2651,
+                          "triad_E":  0.7364,
+                          "triad_I":  0.8407,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_01_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_01_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.7,
+                          "symmetry_score":  23.4933,
+                          "triad_E":  0.7361,
+                          "triad_I":  0.8488,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_02_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_02_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.82,
+                          "symmetry_score":  23.2488,
+                          "triad_E":  0.7365,
+                          "triad_I":  0.8453,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_03_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_03_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.22,
+                          "symmetry_score":  22.9233,
+                          "triad_E":  0.7342,
+                          "triad_I":  0.7851,
+                          "triad_C":  0.4663,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_04_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_04_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.88,
+                          "symmetry_score":  23.3373,
+                          "triad_E":  0.7368,
+                          "triad_I":  0.8407,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_05_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_05_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  188.12,
+                          "symmetry_score":  22.6384,
+                          "triad_E":  0.7377,
+                          "triad_I":  0.8248,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_06_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_06_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.84,
+                          "symmetry_score":  23.1447,
+                          "triad_E":  0.7366,
+                          "triad_I":  0.8401,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_07_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_07_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.66,
+                          "symmetry_score":  23.5708,
+                          "triad_E":  0.7359,
+                          "triad_I":  0.8518,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_08_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_08_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.77,
+                          "symmetry_score":  23.2465,
+                          "triad_E":  0.7364,
+                          "triad_I":  0.8383,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_09_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_09_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.82,
+                          "symmetry_score":  23.3068,
+                          "triad_E":  0.7365,
+                          "triad_I":  0.8356,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_10_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_10_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.74,
+                          "symmetry_score":  23.5732,
+                          "triad_E":  0.7362,
+                          "triad_I":  0.8438,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_11_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_11_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.92,
+                          "symmetry_score":  23.1749,
+                          "triad_E":  0.7369,
+                          "triad_I":  0.8327,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_12_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_12_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.92,
+                          "symmetry_score":  23.2716,
+                          "triad_E":  0.7369,
+                          "triad_I":  0.8393,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_13_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_13_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  188.01,
+                          "symmetry_score":  22.9271,
+                          "triad_E":  0.7373,
+                          "triad_I":  0.8283,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_14_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_14_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.79,
+                          "symmetry_score":  23.5005,
+                          "triad_E":  0.7364,
+                          "triad_I":  0.8423,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_15_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_15_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  188.04,
+                          "symmetry_score":  22.9868,
+                          "triad_E":  0.7374,
+                          "triad_I":  0.8285,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_16_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_16_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  188.36,
+                          "symmetry_score":  22.4183,
+                          "triad_E":  0.7387,
+                          "triad_I":  0.8111,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_17_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_17_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  188.35,
+                          "symmetry_score":  22.3828,
+                          "triad_E":  0.7386,
+                          "triad_I":  0.8106,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_18_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_18_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.96,
+                          "symmetry_score":  23.0324,
+                          "triad_E":  0.7371,
+                          "triad_I":  0.8365,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_19_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_19_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.77,
+                          "symmetry_score":  23.4349,
+                          "triad_E":  0.7364,
+                          "triad_I":  0.8406,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_20_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_20_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.7,
+                          "symmetry_score":  23.7379,
+                          "triad_E":  0.7361,
+                          "triad_I":  0.8517,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_21_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_21_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.83,
+                          "symmetry_score":  23.3954,
+                          "triad_E":  0.7366,
+                          "triad_I":  0.8396,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_22_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_22_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  187.97,
+                          "symmetry_score":  23.1419,
+                          "triad_E":  0.7371,
+                          "triad_I":  0.8321,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_midplane_t_23_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_23_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  188.02,
+                          "symmetry_score":  23.0638,
+                          "triad_E":  0.7373,
+                          "triad_I":  0.8294,
+                          "triad_C":  0.4569,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_holo_shell_profile_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_shell_profile_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  245.58,
+                          "symmetry_score":  13.1707,
+                          "triad_E":  0.9631,
+                          "triad_I":  0.6773,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_solar_coupling_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_solar_coupling_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  247.65,
+                          "symmetry_score":  13.4131,
+                          "triad_E":  0.9712,
+                          "triad_I":  0.5567,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_time_radius_strip_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_time_radius_strip_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  161.82,
+                          "symmetry_score":  37.1412,
+                          "triad_E":  0.6346,
+                          "triad_I":  0.6207,
+                          "triad_C":  0.4159,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_triad_glyph_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_triad_glyph_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  251.62,
+                          "symmetry_score":  8.8123,
+                          "triad_E":  0.9867,
+                          "triad_I":  0.2716,
+                          "triad_C":  0.5275,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_vertical_slice_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_vertical_slice_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  153.43,
+                          "symmetry_score":  38.2346,
+                          "triad_E":  0.6017,
+                          "triad_I":  0.6469,
+                          "triad_C":  0.4527,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_holo_voice_coupling_v3_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_voice_coupling_v3_0.png",
+                          "category":  "holo",
+                          "avg_brightness":  248.5,
+                          "symmetry_score":  7.6819,
+                          "triad_E":  0.9745,
+                          "triad_I":  0.497,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_lotus_harmonic_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_lotus_harmonic_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  248.53,
+                          "symmetry_score":  11.0395,
+                          "triad_E":  0.9746,
+                          "triad_I":  0.5946,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_meridian_map_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_meridian_map_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  247.63,
+                          "symmetry_score":  14.068,
+                          "triad_E":  0.9711,
+                          "triad_I":  0.5365,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_muon_paths_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_muon_paths_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  204.34,
+                          "symmetry_score":  25.6183,
+                          "triad_E":  0.8013,
+                          "triad_I":  0.6122,
+                          "triad_C":  0.4282,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_piezo_map_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_piezo_map_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  158.28,
+                          "symmetry_score":  33.7695,
+                          "triad_E":  0.6207,
+                          "triad_I":  0.679,
+                          "triad_C":  0.4517,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_q_lattice_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_q_lattice_v2_3.png",
+                          "category":  "q_lattice",
+                          "avg_brightness":  160.47,
+                          "symmetry_score":  35.4581,
+                          "triad_E":  0.6293,
+                          "triad_I":  0.6635,
+                          "triad_C":  0.4653,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_q_lattice_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_q_lattice_v2_5.png",
+                          "category":  "q_lattice",
+                          "avg_brightness":  164.6,
+                          "symmetry_score":  30.6238,
+                          "triad_E":  0.6455,
+                          "triad_I":  0.6385,
+                          "triad_C":  0.4405,
+                          "anomaly_flags":  [
+                                                "dark_pocket",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_resonance_spectrum_v2_1.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_1.png",
+                          "category":  "resonance",
+                          "avg_brightness":  248.71,
+                          "symmetry_score":  9.2888,
+                          "triad_E":  0.9753,
+                          "triad_I":  0.445,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_resonance_spectrum_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_2.png",
+                          "category":  "resonance",
+                          "avg_brightness":  248.71,
+                          "symmetry_score":  9.3297,
+                          "triad_E":  0.9753,
+                          "triad_I":  0.445,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_resonance_spectrum_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_3.png",
+                          "category":  "resonance",
+                          "avg_brightness":  249.42,
+                          "symmetry_score":  8.2512,
+                          "triad_E":  0.9781,
+                          "triad_I":  0.3992,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_resonance_spectrum_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_5.png",
+                          "category":  "resonance",
+                          "avg_brightness":  249.39,
+                          "symmetry_score":  8.3071,
+                          "triad_E":  0.978,
+                          "triad_I":  0.4012,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_schumann_coupling_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_3.png",
+                          "category":  "other",
+                          "avg_brightness":  248.84,
+                          "symmetry_score":  10.1437,
+                          "triad_E":  0.9758,
+                          "triad_I":  0.4423,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_schumann_coupling_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  248.88,
+                          "symmetry_score":  10.1028,
+                          "triad_E":  0.976,
+                          "triad_I":  0.4397,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_solar_coupling_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_solar_coupling_v2_5.png",
+                          "category":  "solar",
+                          "avg_brightness":  247.75,
+                          "symmetry_score":  13.1492,
+                          "triad_E":  0.9716,
+                          "triad_I":  0.548,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_triadic_cross_section_v2_0.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_0.png",
+                          "category":  "triadic",
+                          "avg_brightness":  203.03,
+                          "symmetry_score":  44.4006,
+                          "triad_E":  0.7962,
+                          "triad_I":  0.7445,
+                          "triad_C":  0.4363,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_triadic_cross_section_v2_1.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_1.png",
+                          "category":  "triadic",
+                          "avg_brightness":  201.87,
+                          "symmetry_score":  42.3848,
+                          "triad_E":  0.7916,
+                          "triad_I":  0.7483,
+                          "triad_C":  0.4363,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_triadic_cross_section_v2_2.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_2.png",
+                          "category":  "triadic",
+                          "avg_brightness":  201.87,
+                          "symmetry_score":  42.4031,
+                          "triad_E":  0.7916,
+                          "triad_I":  0.7483,
+                          "triad_C":  0.4363,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_triadic_cross_section_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_3.png",
+                          "category":  "triadic",
+                          "avg_brightness":  201.85,
+                          "symmetry_score":  42.4627,
+                          "triad_E":  0.7916,
+                          "triad_I":  0.7498,
+                          "triad_C":  0.4363,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_triadic_cross_section_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_5.png",
+                          "category":  "triadic",
+                          "avg_brightness":  200.59,
+                          "symmetry_score":  44.7872,
+                          "triad_E":  0.7866,
+                          "triad_I":  0.7583,
+                          "triad_C":  0.4363,
+                          "anomaly_flags":  {
+
+                                            }
+                      },
+                      {
+                          "name":  "giza_vertical_flex_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_vertical_flex_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  245.91,
+                          "symmetry_score":  14.4928,
+                          "triad_E":  0.9644,
+                          "triad_I":  0.6539,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_voice_coupling_v2_3.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_3.png",
+                          "category":  "voice",
+                          "avg_brightness":  250.3,
+                          "symmetry_score":  7.6675,
+                          "triad_E":  0.9816,
+                          "triad_I":  0.3922,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_voice_coupling_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_5.png",
+                          "category":  "voice",
+                          "avg_brightness":  248.35,
+                          "symmetry_score":  7.943,
+                          "triad_E":  0.9739,
+                          "triad_I":  0.513,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "giza_water_resonance_v2_5.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_water_resonance_v2_5.png",
+                          "category":  "other",
+                          "avg_brightness":  247.34,
+                          "symmetry_score":  11.1193,
+                          "triad_E":  0.97,
+                          "triad_I":  0.5902,
+                          "triad_C":  0.55,
+                          "anomaly_flags":  [
+                                                "bright_spike",
+                                                "low_symmetry"
+                                            ]
+                      },
+                      {
+                          "name":  "seed_giza_v3_0_a.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\seed_giza_v3_0_a.png",
+                          "category":  "seed",
+                          "avg_brightness":  255,
+                          "symmetry_score":  0,
+                          "triad_E":  1,
+                          "triad_I":  0,
+                          "triad_C":  0.85,
+                          "anomaly_flags":  "bright_spike"
+                      },
+                      {
+                          "name":  "seed_giza_v3_0_b.png",
+                          "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\seed_giza_v3_0_b.png",
+                          "category":  "seed",
+                          "avg_brightness":  255,
+                          "symmetry_score":  0,
+                          "triad_E":  1,
+                          "triad_I":  0,
+                          "triad_C":  0.85,
+                          "anomaly_flags":  "bright_spike"
+                      }
+                  ],
+    "files":  [
+                  {
+                      "name":  "giza_beam_interference_v2_3.png",
+                      "category":  "other",
+                      "series_key":  "giza_beam_interference_v2_3.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_beam_interference_v2_3.png",
+                      "size_kb":  67,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  160.24,
+                      "edge_score":  22.9395,
+                      "symmetry_score":  28.6903,
+                      "center_intensity":  92.33,
+                      "triad_E":  0.6284,
+                      "triad_I":  0.7169,
+                      "triad_C":  0.4224,
+                      "sha256":  "47C2242D66E90D31F1C5877774465F1486B94E89D42B99C464D6556D4943940A",
+                      "tags":  [
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_beam_interference_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_beam_interference_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_beam_interference_v2_5.png",
+                      "size_kb":  69.84,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  161.36,
+                      "edge_score":  23.0645,
+                      "symmetry_score":  28.4385,
+                      "center_intensity":  90.67,
+                      "triad_E":  0.6328,
+                      "triad_I":  0.7208,
+                      "triad_C":  0.4211,
+                      "sha256":  "BFBB9D241B4C8FAF9414C39DEC43CF0E5D30487E9DB74E862FA7E5E0D0B1DA88",
+                      "tags":  [
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_body_coupling_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_body_coupling_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_body_coupling_v2_5.png",
+                      "size_kb":  62.26,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  242.99,
+                      "edge_score":  26.5367,
+                      "symmetry_score":  18.7792,
+                      "center_intensity":  255,
+                      "triad_E":  0.9529,
+                      "triad_I":  0.8293,
+                      "triad_C":  0.55,
+                      "sha256":  "F46554A2F0CE5AC5C971FEB45FE059C4908F46E78662614878DBD430592B32D7",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_cavity_modes_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_cavity_modes_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cavity_modes_v2_5.png",
+                      "size_kb":  44.74,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.32,
+                      "edge_score":  15.3928,
+                      "symmetry_score":  8.8557,
+                      "center_intensity":  255,
+                      "triad_E":  0.9738,
+                      "triad_I":  0.481,
+                      "triad_C":  0.55,
+                      "sha256":  "E0E8ED16EDFD5E6C391BA0BCA78F533143DCF2044CD4684380B71EC8791AB295",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_cgl_schematic_v2_1.png",
+                      "category":  "other",
+                      "series_key":  "giza_cgl_schematic_v2_1.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_1.png",
+                      "size_kb":  54.09,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  251.73,
+                      "edge_score":  8.7119,
+                      "symmetry_score":  8.6959,
+                      "center_intensity":  226.33,
+                      "triad_E":  0.9872,
+                      "triad_I":  0.2722,
+                      "triad_C":  0.5275,
+                      "sha256":  "28F1A5BC39E574D2D59CD8EFCC4964CCEAC6ED28D6CD0F9D3B2D52027E1A050B",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_cgl_schematic_v2_2.png",
+                      "category":  "other",
+                      "series_key":  "giza_cgl_schematic_v2_2.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_2.png",
+                      "size_kb":  54.35,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  251.67,
+                      "edge_score":  8.9247,
+                      "symmetry_score":  8.7951,
+                      "center_intensity":  226.33,
+                      "triad_E":  0.9869,
+                      "triad_I":  0.2789,
+                      "triad_C":  0.5275,
+                      "sha256":  "90F9913B40086757A172A3C15B6D9527FD5A5E100932ADF0E7C127357812BB57",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_cgl_schematic_v2_3.png",
+                      "category":  "other",
+                      "series_key":  "giza_cgl_schematic_v2_3.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_3.png",
+                      "size_kb":  54.43,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  251.64,
+                      "edge_score":  8.9262,
+                      "symmetry_score":  8.7904,
+                      "center_intensity":  226.33,
+                      "triad_E":  0.9868,
+                      "triad_I":  0.2789,
+                      "triad_C":  0.5275,
+                      "sha256":  "D9EE049A8508F21AEDB98A701431051FEC57077CEFB9E4320A13E46B1AC557D0",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_cgl_schematic_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_cgl_schematic_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_5.png",
+                      "size_kb":  54.31,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  251.65,
+                      "edge_score":  8.9297,
+                      "symmetry_score":  8.8176,
+                      "center_intensity":  226.33,
+                      "triad_E":  0.9869,
+                      "triad_I":  0.2791,
+                      "triad_C":  0.5275,
+                      "sha256":  "BD8BEA0BF846ECD546DD9FAE0A9DFC04AA5B806980267E89F5D5EAEEE44A0B2E",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_horizontal_slice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_2.png",
+                      "size_kb":  72.61,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  161.47,
+                      "edge_score":  22.1347,
+                      "symmetry_score":  30.9936,
+                      "center_intensity":  155.33,
+                      "triad_E":  0.6332,
+                      "triad_I":  0.6917,
+                      "triad_C":  0.4718,
+                      "sha256":  "76B03B02B2B8968D2A084F65DB533B207E11BA9C2C7D6D35A8B2BFA2C96F9681",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_horizontal_slice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_3.png",
+                      "size_kb":  72.9,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  161.97,
+                      "edge_score":  21.7948,
+                      "symmetry_score":  31.3059,
+                      "center_intensity":  155.33,
+                      "triad_E":  0.6352,
+                      "triad_I":  0.6811,
+                      "triad_C":  0.4718,
+                      "sha256":  "478FAEE23399BA0436600D7AFC76D7E097377A26B09E63CCAD8482208D1FA379",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_horizontal_slice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_5.png",
+                      "size_kb":  77.38,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  165.47,
+                      "edge_score":  21.4567,
+                      "symmetry_score":  29.8641,
+                      "center_intensity":  131.67,
+                      "triad_E":  0.6489,
+                      "triad_I":  0.6705,
+                      "triad_C":  0.4533,
+                      "sha256":  "6C25CF394FC4C267FE20C3AA8A982E0832186149DAF9383818819DA196378F95",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_map_v2_0.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_map_v2_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_map_v2_0.png",
+                      "size_kb":  107.25,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  164.85,
+                      "edge_score":  23.7313,
+                      "symmetry_score":  37.9341,
+                      "center_intensity":  143,
+                      "triad_E":  0.6465,
+                      "triad_I":  0.7416,
+                      "triad_C":  0.4622,
+                      "sha256":  "81EE96638C04B899955826F0434AEB07C950A90DE5D0159C8B38188E9367B4D6",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_map_v2_1.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_map_v2_1.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_map_v2_1.png",
+                      "size_kb":  121.37,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  166.02,
+                      "edge_score":  22.3576,
+                      "symmetry_score":  37.0515,
+                      "center_intensity":  147.67,
+                      "triad_E":  0.6511,
+                      "triad_I":  0.6987,
+                      "triad_C":  0.4658,
+                      "sha256":  "977E0472BDB7752FA6542E2DCE9780BB6CD449E485C46FC83AC81D8A8A3F95CE",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_purity_v2_3.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_purity_v2_3.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_3.png",
+                      "size_kb":  63.17,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.79,
+                      "edge_score":  14.8527,
+                      "symmetry_score":  8.2111,
+                      "center_intensity":  174,
+                      "triad_E":  0.9756,
+                      "triad_I":  0.4641,
+                      "triad_C":  0.4865,
+                      "sha256":  "DA1FBCBE9A0C63B11FFD081388984003535B754D540A06C42EC5715231198CFB",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_purity_v2_5.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_purity_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_5.png",
+                      "size_kb":  61.74,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  250.11,
+                      "edge_score":  12.3685,
+                      "symmetry_score":  7.3337,
+                      "center_intensity":  255,
+                      "triad_E":  0.9808,
+                      "triad_I":  0.3865,
+                      "triad_C":  0.55,
+                      "sha256":  "537DDE30E1981A93C95D1D3419C4E8E99B5DAA90210099438731260EB9CA0E1B",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_shell_v2_1.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_shell_v2_1.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_1.png",
+                      "size_kb":  62.54,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  246.51,
+                      "edge_score":  19.8505,
+                      "symmetry_score":  12.805,
+                      "center_intensity":  255,
+                      "triad_E":  0.9667,
+                      "triad_I":  0.6203,
+                      "triad_C":  0.55,
+                      "sha256":  "B72CEE9F72447ADA551B7EAD0097C262C65947DC80ACC1BA9C88F1B8D03E9883",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_shell_v2_2.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_shell_v2_2.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_2.png",
+                      "size_kb":  54.93,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  248.17,
+                      "edge_score":  16.2995,
+                      "symmetry_score":  12.5312,
+                      "center_intensity":  255,
+                      "triad_E":  0.9732,
+                      "triad_I":  0.5094,
+                      "triad_C":  0.55,
+                      "sha256":  "79A80FAED0DA24CAEFFF60F044EB4D7AA25388BBF8520317D0E261E341326DB8",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_shell_v2_3.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_shell_v2_3.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_3.png",
+                      "size_kb":  55.81,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  247.56,
+                      "edge_score":  17.4337,
+                      "symmetry_score":  12.3649,
+                      "center_intensity":  255,
+                      "triad_E":  0.9708,
+                      "triad_I":  0.5448,
+                      "triad_C":  0.55,
+                      "sha256":  "1BEFB634B71936596B1191F242848217AA7F4E7210DF166A3003DD63BC0A7E05",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_shell_v2_5.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_shell_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_5.png",
+                      "size_kb":  56.22,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  248.39,
+                      "edge_score":  16.0924,
+                      "symmetry_score":  12.344,
+                      "center_intensity":  255,
+                      "triad_E":  0.9741,
+                      "triad_I":  0.5029,
+                      "triad_C":  0.55,
+                      "sha256":  "3AA39F464BD9887B7D56CFCFF283C4009FC50F26ADF8BED8353F5E19577C66B3",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_vertical_slice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_2.png",
+                      "size_kb":  66.58,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  148.8,
+                      "edge_score":  19.5558,
+                      "symmetry_score":  35.8656,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.5835,
+                      "triad_I":  0.6111,
+                      "triad_C":  0.4569,
+                      "sha256":  "2011877BC2BCCF3907B2D334738161A38906F68C9CA06A3BCA756EFABB69F91D",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_vertical_slice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_3.png",
+                      "size_kb":  70.32,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  153.43,
+                      "edge_score":  19.9405,
+                      "symmetry_score":  34.2217,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.6017,
+                      "triad_I":  0.6231,
+                      "triad_C":  0.4569,
+                      "sha256":  "286837AC960BD40B777BB41F02D360E02D26E826817F0DEB62285C9880AB9B79",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                      "category":  "delta_phi",
+                      "series_key":  "giza_delta_phi_vertical_slice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_5.png",
+                      "size_kb":  70.03,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  152.3,
+                      "edge_score":  20.3653,
+                      "symmetry_score":  33.9907,
+                      "center_intensity":  131,
+                      "triad_E":  0.5973,
+                      "triad_I":  0.6364,
+                      "triad_C":  0.4527,
+                      "sha256":  "8B8EBF0274B5576673771E31105156ED15A36DE8D89EF06E9C74E7B241A0EFB1",
+                      "tags":  [
+                                   "delta_phi_map",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_em_focus_map_v2_1.png",
+                      "category":  "em_field",
+                      "series_key":  "giza_em_focus_map",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_1.png",
+                      "size_kb":  63.15,
+                      "width":  1000,
+                      "height":  1200,
+                      "avg_brightness":  204.07,
+                      "edge_score":  21.8121,
+                      "symmetry_score":  25.023,
+                      "center_intensity":  145,
+                      "triad_E":  0.8003,
+                      "triad_I":  0.6816,
+                      "triad_C":  0.4637,
+                      "sha256":  "6584558A9DF7FAE896D874B80E9DDE7A491064B085C84226952B75D4EABF7D95",
+                      "tags":  [
+                                   "em_focus",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_em_focus_map_v2_2.png",
+                      "category":  "em_field",
+                      "series_key":  "giza_em_focus_map",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_2.png",
+                      "size_kb":  63.39,
+                      "width":  1000,
+                      "height":  1200,
+                      "avg_brightness":  204.06,
+                      "edge_score":  21.8573,
+                      "symmetry_score":  25.0363,
+                      "center_intensity":  145,
+                      "triad_E":  0.8002,
+                      "triad_I":  0.683,
+                      "triad_C":  0.4637,
+                      "sha256":  "BE91D43AEC893025FC3B83A4E7BB7414C4FB6FCAC51CCEE2AB67314C7F958922",
+                      "tags":  [
+                                   "em_focus",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_em_focus_map_v2_3.png",
+                      "category":  "em_field",
+                      "series_key":  "giza_em_focus_map",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_3.png",
+                      "size_kb":  63.49,
+                      "width":  1000,
+                      "height":  1200,
+                      "avg_brightness":  204.07,
+                      "edge_score":  21.8395,
+                      "symmetry_score":  25.0688,
+                      "center_intensity":  145,
+                      "triad_E":  0.8003,
+                      "triad_I":  0.6825,
+                      "triad_C":  0.4637,
+                      "sha256":  "15B995BC02B5428ED93F5889B195908D95B259FAEAEAEB9D7F0410EF7940DC8F",
+                      "tags":  [
+                                   "em_focus",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_em_focus_map_v2_5.png",
+                      "category":  "em_field",
+                      "series_key":  "giza_em_focus_map",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_5.png",
+                      "size_kb":  63.33,
+                      "width":  1000,
+                      "height":  1200,
+                      "avg_brightness":  204.07,
+                      "edge_score":  21.8131,
+                      "symmetry_score":  25.0613,
+                      "center_intensity":  145,
+                      "triad_E":  0.8003,
+                      "triad_I":  0.6817,
+                      "triad_C":  0.4637,
+                      "sha256":  "A2E1413CE40E8617ADBD66465ECAD5724B387ACACEC235AA26B3119263D15B7E",
+                      "tags":  [
+                                   "em_focus",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_C_slice_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_C_slice_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_C_slice_v3_0.png",
+                      "size_kb":  65.9,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  163.91,
+                      "edge_score":  21.1327,
+                      "symmetry_score":  33.2271,
+                      "center_intensity":  128.67,
+                      "triad_E":  0.6428,
+                      "triad_I":  0.6604,
+                      "triad_C":  0.4509,
+                      "sha256":  "F67B25D3C57F765AA830D424CE3814B7897E294F1F9066AD06E6AB9D2554A9B8",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_center_time_series_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_center_time_series",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_center_time_series_v3_0.png",
+                      "size_kb":  81.17,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.47,
+                      "edge_score":  16.2459,
+                      "symmetry_score":  9.152,
+                      "center_intensity":  255,
+                      "triad_E":  0.9744,
+                      "triad_I":  0.5077,
+                      "triad_C":  0.55,
+                      "sha256":  "5D5D4D83337F57E1A513DF7926C88C1AA1A75D3C18CFEB080E254482CFEF91B3",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_E_slice_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_E_slice_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_E_slice_v3_0.png",
+                      "size_kb":  59.79,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  159.11,
+                      "edge_score":  21.5894,
+                      "symmetry_score":  29.9788,
+                      "center_intensity":  127,
+                      "triad_E":  0.624,
+                      "triad_I":  0.6747,
+                      "triad_C":  0.4496,
+                      "sha256":  "C22E60046532A82C50D38A5EE2FEC99E511C353FE13380BEC0F924ECCC1E0C2E",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_EIC_hist_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_EIC_hist_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_EIC_hist_v3_0.png",
+                      "size_kb":  38.85,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  247.41,
+                      "edge_score":  9.088,
+                      "symmetry_score":  15.0609,
+                      "center_intensity":  255,
+                      "triad_E":  0.9702,
+                      "triad_I":  0.284,
+                      "triad_C":  0.55,
+                      "sha256":  "606238AFE43BD19EBABCA8315BBA903304AB209F25CA12F5545F02CF8C85DBDE",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_horizontal_slice_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_horizontal_slice_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_horizontal_slice_v3_0.png",
+                      "size_kb":  75.65,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  167.28,
+                      "edge_score":  19.3516,
+                      "symmetry_score":  29.1027,
+                      "center_intensity":  131.67,
+                      "triad_E":  0.656,
+                      "triad_I":  0.6047,
+                      "triad_C":  0.4533,
+                      "sha256":  "59C96C5E40EE8FD682269222931C0A8F6BD411707827F7E973653288436DC06B",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_I_slice_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_I_slice_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_I_slice_v3_0.png",
+                      "size_kb":  52.54,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  150.74,
+                      "edge_score":  21.3527,
+                      "symmetry_score":  29.2299,
+                      "center_intensity":  73.67,
+                      "triad_E":  0.5911,
+                      "triad_I":  0.6673,
+                      "triad_C":  0.4078,
+                      "sha256":  "948B8635D6690A793623F929F2A6494E7FDB096E3EF6CFA4F8BF2A994CDA27C9",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_lotus_overlay_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_lotus_overlay_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_lotus_overlay_v3_0.png",
+                      "size_kb":  146.88,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  248.64,
+                      "edge_score":  18.7139,
+                      "symmetry_score":  11.1786,
+                      "center_intensity":  255,
+                      "triad_E":  0.9751,
+                      "triad_I":  0.5848,
+                      "triad_C":  0.55,
+                      "sha256":  "6A902BE9A8D087C77F0D174A90D8603983A021EE107D7B7EF0AEFD4D7815FEB6",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_00_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_00_v3_0.png",
+                      "size_kb":  42.46,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.79,
+                      "edge_score":  26.9015,
+                      "symmetry_score":  23.2651,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7364,
+                      "triad_I":  0.8407,
+                      "triad_C":  0.4569,
+                      "sha256":  "85FBD2A43E92F46512983A48EBF3E0067D6071B921FF0F35CD199E9D6140C4B3",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_01_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  1,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_01_v3_0.png",
+                      "size_kb":  42.48,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.7,
+                      "edge_score":  27.1625,
+                      "symmetry_score":  23.4933,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7361,
+                      "triad_I":  0.8488,
+                      "triad_C":  0.4569,
+                      "sha256":  "C007DCA60D717FE12342361A5FD24E87EBA6AD4905D6D97E5715ADA2707FC7B7",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_02_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  2,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_02_v3_0.png",
+                      "size_kb":  41.92,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.82,
+                      "edge_score":  27.0499,
+                      "symmetry_score":  23.2488,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7365,
+                      "triad_I":  0.8453,
+                      "triad_C":  0.4569,
+                      "sha256":  "765665A4FC84BA25B0BF65B8101740D8C7D85EFF00B69AA6F1AD49E1A0A5DA4A",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_03_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  3,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_03_v3_0.png",
+                      "size_kb":  42.23,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.22,
+                      "edge_score":  25.1222,
+                      "symmetry_score":  22.9233,
+                      "center_intensity":  148.33,
+                      "triad_E":  0.7342,
+                      "triad_I":  0.7851,
+                      "triad_C":  0.4663,
+                      "sha256":  "76B4284C1FD4CBD9A482ADDAE9F6F07AA3D80390C53C68C056A0775F70266CB2",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_04_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  4,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_04_v3_0.png",
+                      "size_kb":  41.97,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.88,
+                      "edge_score":  26.9037,
+                      "symmetry_score":  23.3373,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7368,
+                      "triad_I":  0.8407,
+                      "triad_C":  0.4569,
+                      "sha256":  "B50C6525A16E31B3EB95DE4083B25745FE4012B79EFEB4DEBEFE4EDEF71F52C1",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_05_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  5,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_05_v3_0.png",
+                      "size_kb":  41.8,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  188.12,
+                      "edge_score":  26.3934,
+                      "symmetry_score":  22.6384,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7377,
+                      "triad_I":  0.8248,
+                      "triad_C":  0.4569,
+                      "sha256":  "0D14A01E7A92778BC58BCE229D94454DD3E305ACCF22247547EB27B52EFC4FB3",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_06_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  6,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_06_v3_0.png",
+                      "size_kb":  42.38,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.84,
+                      "edge_score":  26.8821,
+                      "symmetry_score":  23.1447,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7366,
+                      "triad_I":  0.8401,
+                      "triad_C":  0.4569,
+                      "sha256":  "9EB25D0D33AF86D9F826E5546351D2A9E05626A6ACF32FCC91DE21CEC1E1CA0F",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_07_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  7,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_07_v3_0.png",
+                      "size_kb":  42.58,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.66,
+                      "edge_score":  27.2573,
+                      "symmetry_score":  23.5708,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7359,
+                      "triad_I":  0.8518,
+                      "triad_C":  0.4569,
+                      "sha256":  "54262AB6604AD7AFCF3CFA39808776440A209154004359FFE8ECB0DD7FC25B21",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_08_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  8,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_08_v3_0.png",
+                      "size_kb":  42.63,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.77,
+                      "edge_score":  26.8267,
+                      "symmetry_score":  23.2465,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7364,
+                      "triad_I":  0.8383,
+                      "triad_C":  0.4569,
+                      "sha256":  "0331F8D9392EA5885DCAEB8E0C989405342D18142360148FF41E0B2DE0E5E3FC",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_09_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  9,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_09_v3_0.png",
+                      "size_kb":  42.61,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.82,
+                      "edge_score":  26.7406,
+                      "symmetry_score":  23.3068,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7365,
+                      "triad_I":  0.8356,
+                      "triad_C":  0.4569,
+                      "sha256":  "69DB34A98C23F1E8293D459BE374012854219DCE0968C35249314C30A8D527FA",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_10_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  10,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_10_v3_0.png",
+                      "size_kb":  42.39,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.74,
+                      "edge_score":  27.0003,
+                      "symmetry_score":  23.5732,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7362,
+                      "triad_I":  0.8438,
+                      "triad_C":  0.4569,
+                      "sha256":  "6287F0A391AE70245DF60A5015AAEB1C6408D9E07D92D0EB819338F98F595969",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_11_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  11,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_11_v3_0.png",
+                      "size_kb":  41.98,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.92,
+                      "edge_score":  26.6463,
+                      "symmetry_score":  23.1749,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7369,
+                      "triad_I":  0.8327,
+                      "triad_C":  0.4569,
+                      "sha256":  "FCBA8F6D4A56C6E325B16ADC9B8792327A3E61E40B406D1EF9A97E93FB32DCCB",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_12_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  12,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_12_v3_0.png",
+                      "size_kb":  42.09,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.92,
+                      "edge_score":  26.8588,
+                      "symmetry_score":  23.2716,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7369,
+                      "triad_I":  0.8393,
+                      "triad_C":  0.4569,
+                      "sha256":  "92C7E6D0FDBF4F9F98BAF2B43094E540AC81B01C5AB1E5178A1C34EBDF27B4B1",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_13_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  13,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_13_v3_0.png",
+                      "size_kb":  42.25,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  188.01,
+                      "edge_score":  26.5067,
+                      "symmetry_score":  22.9271,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7373,
+                      "triad_I":  0.8283,
+                      "triad_C":  0.4569,
+                      "sha256":  "699724D6768C16E81478A2E12D4F7DB45BF359303116C8A862D643DA60B04209",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_14_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  14,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_14_v3_0.png",
+                      "size_kb":  42.4,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.79,
+                      "edge_score":  26.9545,
+                      "symmetry_score":  23.5005,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7364,
+                      "triad_I":  0.8423,
+                      "triad_C":  0.4569,
+                      "sha256":  "66E461AE0D75F169C65B7F27EF0ACD8A9C2191CD241FED800944F2C9D32F5C89",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_15_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  15,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_15_v3_0.png",
+                      "size_kb":  41.78,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  188.04,
+                      "edge_score":  26.5132,
+                      "symmetry_score":  22.9868,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7374,
+                      "triad_I":  0.8285,
+                      "triad_C":  0.4569,
+                      "sha256":  "1DA2BE2957ACC1C6104966C8960D2AA95B9A912A1B2EEAD63E0AEEEAF8DF8F2A",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_16_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  16,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_16_v3_0.png",
+                      "size_kb":  41.72,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  188.36,
+                      "edge_score":  25.9546,
+                      "symmetry_score":  22.4183,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7387,
+                      "triad_I":  0.8111,
+                      "triad_C":  0.4569,
+                      "sha256":  "85018ACA2A1159D077F09F44DF77BDA03418AFE5F0926652CF08B894DCEB3141",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_17_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  17,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_17_v3_0.png",
+                      "size_kb":  41.58,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  188.35,
+                      "edge_score":  25.9394,
+                      "symmetry_score":  22.3828,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7386,
+                      "triad_I":  0.8106,
+                      "triad_C":  0.4569,
+                      "sha256":  "C5C23A3EC39A55844660344943232366BEDC2A1B1063206C945D04B8CC811245",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_18_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  18,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_18_v3_0.png",
+                      "size_kb":  42.18,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.96,
+                      "edge_score":  26.7665,
+                      "symmetry_score":  23.0324,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7371,
+                      "triad_I":  0.8365,
+                      "triad_C":  0.4569,
+                      "sha256":  "E9EDCBBB610D0331E3730C699ED7B656713A12DEDA6A010DE9BD22F7D38C8AD4",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_19_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  19,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_19_v3_0.png",
+                      "size_kb":  42.37,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.77,
+                      "edge_score":  26.8986,
+                      "symmetry_score":  23.4349,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7364,
+                      "triad_I":  0.8406,
+                      "triad_C":  0.4569,
+                      "sha256":  "6D340BB2181BCF9C685FCDE6CD40222905ECA60AF504C9486080531506616DB7",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_20_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  20,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_20_v3_0.png",
+                      "size_kb":  42.51,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.7,
+                      "edge_score":  27.254,
+                      "symmetry_score":  23.7379,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7361,
+                      "triad_I":  0.8517,
+                      "triad_C":  0.4569,
+                      "sha256":  "F2E08661D55D343D46A1733FADD0A6AC7F7B387146896A462B13A592BB0622D9",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_21_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  21,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_21_v3_0.png",
+                      "size_kb":  42.34,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.83,
+                      "edge_score":  26.8668,
+                      "symmetry_score":  23.3954,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7366,
+                      "triad_I":  0.8396,
+                      "triad_C":  0.4569,
+                      "sha256":  "6759BC3E2ADFDAAF2CF14E0C3292D94AEDF1AD23CA4003B33C8C4DFE17DC3D83",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_22_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  22,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_22_v3_0.png",
+                      "size_kb":  41.86,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  187.97,
+                      "edge_score":  26.6284,
+                      "symmetry_score":  23.1419,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7371,
+                      "triad_I":  0.8321,
+                      "triad_C":  0.4569,
+                      "sha256":  "92F35FC967DB8C05789D1C8C71F966734E4B91B5C2D7D5B7D1600D3316026381",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_midplane_t_23_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_midplane_t_series",
+                      "time_index":  23,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_23_v3_0.png",
+                      "size_kb":  42.07,
+                      "width":  640,
+                      "height":  640,
+                      "avg_brightness":  188.02,
+                      "edge_score":  26.5413,
+                      "symmetry_score":  23.0638,
+                      "center_intensity":  136.33,
+                      "triad_E":  0.7373,
+                      "triad_I":  0.8294,
+                      "triad_C":  0.4569,
+                      "sha256":  "75E06989DF7F6353A89F646162B5B76232D42A04B296DE552A17F67D0A15DD2E",
+                      "tags":  [
+                                   "holographic_field",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_shell_profile_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_shell_profile_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_shell_profile_v3_0.png",
+                      "size_kb":  58.25,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  245.58,
+                      "edge_score":  21.675,
+                      "symmetry_score":  13.1707,
+                      "center_intensity":  255,
+                      "triad_E":  0.9631,
+                      "triad_I":  0.6773,
+                      "triad_C":  0.55,
+                      "sha256":  "E5B4F8D08FB15A68C3D32E2ABE7A5FDF70DAEFCCA07F2E4CB334AD4E75256A5E",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_solar_coupling_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_solar_coupling_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_solar_coupling_v3_0.png",
+                      "size_kb":  67.22,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  247.65,
+                      "edge_score":  17.8147,
+                      "symmetry_score":  13.4131,
+                      "center_intensity":  255,
+                      "triad_E":  0.9712,
+                      "triad_I":  0.5567,
+                      "triad_C":  0.55,
+                      "sha256":  "8BAD299599D56BC8BEFE0D3C525F4D1DB91C12E662A2C344685F63BA965A4585",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_time_radius_strip_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_time_radius_strip_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_time_radius_strip_v3_0.png",
+                      "size_kb":  56.57,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  161.82,
+                      "edge_score":  19.8639,
+                      "symmetry_score":  37.1412,
+                      "center_intensity":  84,
+                      "triad_E":  0.6346,
+                      "triad_I":  0.6207,
+                      "triad_C":  0.4159,
+                      "sha256":  "756571C26A1B3A6136EC4F4B4D165069BC5A7E0A51A20C4F24CA8A824CEE1F7D",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_triad_glyph_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_triad_glyph_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_triad_glyph_v3_0.png",
+                      "size_kb":  54.52,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  251.62,
+                      "edge_score":  8.6903,
+                      "symmetry_score":  8.8123,
+                      "center_intensity":  226.33,
+                      "triad_E":  0.9867,
+                      "triad_I":  0.2716,
+                      "triad_C":  0.5275,
+                      "sha256":  "2E11D05D92FAB3EC817356C32E9567336C53E6300E19AE4CEC1E363EFC6E7F02",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_vertical_slice_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_vertical_slice_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_vertical_slice_v3_0.png",
+                      "size_kb":  69.11,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  153.43,
+                      "edge_score":  20.7014,
+                      "symmetry_score":  38.2346,
+                      "center_intensity":  131,
+                      "triad_E":  0.6017,
+                      "triad_I":  0.6469,
+                      "triad_C":  0.4527,
+                      "sha256":  "37A1C0A0C7942D0B7FDB7FAE33FCA45395585F0428E2A81DD3A824685B7915FA",
+                      "tags":  [
+                                   "holographic_field",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_holo_voice_coupling_v3_0.png",
+                      "category":  "holo",
+                      "series_key":  "giza_holo_voice_coupling_v3_0.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_voice_coupling_v3_0.png",
+                      "size_kb":  63.78,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.5,
+                      "edge_score":  15.9026,
+                      "symmetry_score":  7.6819,
+                      "center_intensity":  255,
+                      "triad_E":  0.9745,
+                      "triad_I":  0.497,
+                      "triad_C":  0.55,
+                      "sha256":  "B43C187A453BF902654ABA9184C0616ABE864FC54C003ABE10B921E53C82FD0B",
+                      "tags":  [
+                                   "holographic_field",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_lotus_harmonic_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_lotus_harmonic_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_lotus_harmonic_v2_5.png",
+                      "size_kb":  146.79,
+                      "width":  1000,
+                      "height":  1000,
+                      "avg_brightness":  248.53,
+                      "edge_score":  19.0264,
+                      "symmetry_score":  11.0395,
+                      "center_intensity":  255,
+                      "triad_E":  0.9746,
+                      "triad_I":  0.5946,
+                      "triad_C":  0.55,
+                      "sha256":  "7ABD35FE51EE0227218DC5717D50AF8BB87B64DFD33686FF066D1C17E6F69C99",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_meridian_map_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_meridian_map_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_meridian_map_v2_5.png",
+                      "size_kb":  58.12,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  247.63,
+                      "edge_score":  17.1669,
+                      "symmetry_score":  14.068,
+                      "center_intensity":  255,
+                      "triad_E":  0.9711,
+                      "triad_I":  0.5365,
+                      "triad_C":  0.55,
+                      "sha256":  "A88753F0F644095AFEF1454CF75135FDC0FF2C896219471FDE3875442339A467",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_muon_paths_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_muon_paths_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_muon_paths_v2_5.png",
+                      "size_kb":  125.59,
+                      "width":  1000,
+                      "height":  1200,
+                      "avg_brightness":  204.34,
+                      "edge_score":  19.5893,
+                      "symmetry_score":  25.6183,
+                      "center_intensity":  99.67,
+                      "triad_E":  0.8013,
+                      "triad_I":  0.6122,
+                      "triad_C":  0.4282,
+                      "sha256":  "DBA9A91765FA8776500EBF61D02B5D914A477966A266FFC9BC61A24E3BAB48F3",
+                      "tags":  [
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_piezo_map_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_piezo_map_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_piezo_map_v2_5.png",
+                      "size_kb":  69.63,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  158.28,
+                      "edge_score":  21.7296,
+                      "symmetry_score":  33.7695,
+                      "center_intensity":  129.67,
+                      "triad_E":  0.6207,
+                      "triad_I":  0.679,
+                      "triad_C":  0.4517,
+                      "sha256":  "3992ED5C240B841962FF97540ED443F7901C24F36A0163C02B2647CC4958A0E7",
+                      "tags":  [
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_q_lattice_v2_3.png",
+                      "category":  "q_lattice",
+                      "series_key":  "giza_q_lattice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_q_lattice_v2_3.png",
+                      "size_kb":  64.8,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  160.47,
+                      "edge_score":  21.2317,
+                      "symmetry_score":  35.4581,
+                      "center_intensity":  147,
+                      "triad_E":  0.6293,
+                      "triad_I":  0.6635,
+                      "triad_C":  0.4653,
+                      "sha256":  "D60535E1D39ED0D240F39C6BAFC4603A299EB38D7EE74C9393CEE3462E046254",
+                      "tags":  [
+                                   "quantum_lattice",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_q_lattice_v2_5.png",
+                      "category":  "q_lattice",
+                      "series_key":  "giza_q_lattice",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_q_lattice_v2_5.png",
+                      "size_kb":  63.07,
+                      "width":  1200,
+                      "height":  1200,
+                      "avg_brightness":  164.6,
+                      "edge_score":  20.4306,
+                      "symmetry_score":  30.6238,
+                      "center_intensity":  115.33,
+                      "triad_E":  0.6455,
+                      "triad_I":  0.6385,
+                      "triad_C":  0.4405,
+                      "sha256":  "7BADB993C20B0FDC9D6E1D91BEE60A41A6F79D976BB73DA257D8C49EA8DBED97",
+                      "tags":  [
+                                   "quantum_lattice",
+                                   "dark_pocket",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_resonance_spectrum_v2_1.png",
+                      "category":  "resonance",
+                      "series_key":  "giza_resonance_spectrum",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_1.png",
+                      "size_kb":  46.49,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.71,
+                      "edge_score":  14.2407,
+                      "symmetry_score":  9.2888,
+                      "center_intensity":  255,
+                      "triad_E":  0.9753,
+                      "triad_I":  0.445,
+                      "triad_C":  0.55,
+                      "sha256":  "4C97AFFA093536DB5AB07B44BBCB815A9022465BF65665DB3898B063EE81979C",
+                      "tags":  [
+                                   "resonance_spectrum",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_resonance_spectrum_v2_2.png",
+                      "category":  "resonance",
+                      "series_key":  "giza_resonance_spectrum",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_2.png",
+                      "size_kb":  46.75,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.71,
+                      "edge_score":  14.2407,
+                      "symmetry_score":  9.3297,
+                      "center_intensity":  255,
+                      "triad_E":  0.9753,
+                      "triad_I":  0.445,
+                      "triad_C":  0.55,
+                      "sha256":  "F32FCAF11F19D3A0E4DFEA145B92C9A3B7D0BA4EC07BA938B7A2A10C041A54EA",
+                      "tags":  [
+                                   "resonance_spectrum",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_resonance_spectrum_v2_3.png",
+                      "category":  "resonance",
+                      "series_key":  "giza_resonance_spectrum",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_3.png",
+                      "size_kb":  45.55,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  249.42,
+                      "edge_score":  12.7753,
+                      "symmetry_score":  8.2512,
+                      "center_intensity":  255,
+                      "triad_E":  0.9781,
+                      "triad_I":  0.3992,
+                      "triad_C":  0.55,
+                      "sha256":  "DE826D2883FBF0314EF68E0F4502F265BB5B809359E6DBC310AFF648C7AC4ACD",
+                      "tags":  [
+                                   "resonance_spectrum",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_resonance_spectrum_v2_5.png",
+                      "category":  "resonance",
+                      "series_key":  "giza_resonance_spectrum",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_5.png",
+                      "size_kb":  45.74,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  249.39,
+                      "edge_score":  12.8372,
+                      "symmetry_score":  8.3071,
+                      "center_intensity":  255,
+                      "triad_E":  0.978,
+                      "triad_I":  0.4012,
+                      "triad_C":  0.55,
+                      "sha256":  "AEA88E047DB04283DCFC4700E9574E65DA242D8934428A12F081FE8AA81CD995",
+                      "tags":  [
+                                   "resonance_spectrum",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_schumann_coupling_v2_3.png",
+                      "category":  "other",
+                      "series_key":  "giza_schumann_coupling_v2_3.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_3.png",
+                      "size_kb":  43.1,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.84,
+                      "edge_score":  14.1521,
+                      "symmetry_score":  10.1437,
+                      "center_intensity":  255,
+                      "triad_E":  0.9758,
+                      "triad_I":  0.4423,
+                      "triad_C":  0.55,
+                      "sha256":  "C34A1CF219CA518F5588B7CC4F2021FE35E8B4D243924D9E27012EBEE594552A",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_schumann_coupling_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_schumann_coupling_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_5.png",
+                      "size_kb":  42.96,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.88,
+                      "edge_score":  14.0703,
+                      "symmetry_score":  10.1028,
+                      "center_intensity":  255,
+                      "triad_E":  0.976,
+                      "triad_I":  0.4397,
+                      "triad_C":  0.55,
+                      "sha256":  "716E909126D01396C3DCF96A39DD97987D893B434EF4AEC50A2D4431F5134012",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_solar_coupling_v2_5.png",
+                      "category":  "solar",
+                      "series_key":  "giza_solar_coupling",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_solar_coupling_v2_5.png",
+                      "size_kb":  67.01,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  247.75,
+                      "edge_score":  17.5358,
+                      "symmetry_score":  13.1492,
+                      "center_intensity":  255,
+                      "triad_E":  0.9716,
+                      "triad_I":  0.548,
+                      "triad_C":  0.55,
+                      "sha256":  "8D87AF8BD33E36ABFC48A34BA3AB9925E17EF5E7FA9F9A0EAA46B5CBE20CA793",
+                      "tags":  [
+                                   "solar_coupling",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_triadic_cross_section_v2_0.png",
+                      "category":  "triadic",
+                      "series_key":  "giza_triadic_cross_section",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_0.png",
+                      "size_kb":  38.28,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  203.03,
+                      "edge_score":  23.8238,
+                      "symmetry_score":  44.4006,
+                      "center_intensity":  110,
+                      "triad_E":  0.7962,
+                      "triad_I":  0.7445,
+                      "triad_C":  0.4363,
+                      "sha256":  "2F84164066AE41DB5CAFF8B565519D709CD1A815E14A031183E4D8B95DEE336B",
+                      "tags":  [
+                                   "triadic_cross_section",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_triadic_cross_section_v2_1.png",
+                      "category":  "triadic",
+                      "series_key":  "giza_triadic_cross_section",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_1.png",
+                      "size_kb":  39.17,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  201.87,
+                      "edge_score":  23.9467,
+                      "symmetry_score":  42.3848,
+                      "center_intensity":  110,
+                      "triad_E":  0.7916,
+                      "triad_I":  0.7483,
+                      "triad_C":  0.4363,
+                      "sha256":  "233DDC6ADA0B96C6939DF323345011EE520607F08A72B484DE53183D6A789D1D",
+                      "tags":  [
+                                   "triadic_cross_section",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_triadic_cross_section_v2_2.png",
+                      "category":  "triadic",
+                      "series_key":  "giza_triadic_cross_section",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_2.png",
+                      "size_kb":  39.57,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  201.87,
+                      "edge_score":  23.9467,
+                      "symmetry_score":  42.4031,
+                      "center_intensity":  110,
+                      "triad_E":  0.7916,
+                      "triad_I":  0.7483,
+                      "triad_C":  0.4363,
+                      "sha256":  "A0E80939693951E7BB0EE974FAE45FBE3ABE11559025F79086ACFA88FED6B8E6",
+                      "tags":  [
+                                   "triadic_cross_section",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_triadic_cross_section_v2_3.png",
+                      "category":  "triadic",
+                      "series_key":  "giza_triadic_cross_section",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_3.png",
+                      "size_kb":  39.67,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  201.85,
+                      "edge_score":  23.9947,
+                      "symmetry_score":  42.4627,
+                      "center_intensity":  110,
+                      "triad_E":  0.7916,
+                      "triad_I":  0.7498,
+                      "triad_C":  0.4363,
+                      "sha256":  "28AB91DD71D4E8684C8E8B9FE2414D170809F5859F247180F12A8BA0E73281E6",
+                      "tags":  [
+                                   "triadic_cross_section",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_triadic_cross_section_v2_5.png",
+                      "category":  "triadic",
+                      "series_key":  "giza_triadic_cross_section",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_5.png",
+                      "size_kb":  39.54,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  200.59,
+                      "edge_score":  24.2661,
+                      "symmetry_score":  44.7872,
+                      "center_intensity":  110,
+                      "triad_E":  0.7866,
+                      "triad_I":  0.7583,
+                      "triad_C":  0.4363,
+                      "sha256":  "9B83825A4A8DD7CBF0950953529E2E6F263513704B3D2A068CC4A3768AF3F059",
+                      "tags":  [
+                                   "triadic_cross_section",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_vertical_flex_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_vertical_flex_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_vertical_flex_v2_5.png",
+                      "size_kb":  67.72,
+                      "width":  1200,
+                      "height":  800,
+                      "avg_brightness":  245.91,
+                      "edge_score":  20.926,
+                      "symmetry_score":  14.4928,
+                      "center_intensity":  255,
+                      "triad_E":  0.9644,
+                      "triad_I":  0.6539,
+                      "triad_C":  0.55,
+                      "sha256":  "E84863D72FE662D46C3E7D4FCAF8B03EC976E0FD503351EAAA98D630B01A92A0",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_voice_coupling_v2_3.png",
+                      "category":  "voice",
+                      "series_key":  "giza_voice_coupling",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_3.png",
+                      "size_kb":  63.02,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  250.3,
+                      "edge_score":  12.5497,
+                      "symmetry_score":  7.6675,
+                      "center_intensity":  255,
+                      "triad_E":  0.9816,
+                      "triad_I":  0.3922,
+                      "triad_C":  0.55,
+                      "sha256":  "CAF11DCF75D2751C9BBE3222BE17C4BA796EA246E20E57C7D9E6DE679C9D1283",
+                      "tags":  [
+                                   "voice_coupling",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_voice_coupling_v2_5.png",
+                      "category":  "voice",
+                      "series_key":  "giza_voice_coupling",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_5.png",
+                      "size_kb":  63.56,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  248.35,
+                      "edge_score":  16.4154,
+                      "symmetry_score":  7.943,
+                      "center_intensity":  255,
+                      "triad_E":  0.9739,
+                      "triad_I":  0.513,
+                      "triad_C":  0.55,
+                      "sha256":  "B73ADD03B1F5094A056F2CC18611DF2AAD49069ED254034265EC5F4A4C45EAF2",
+                      "tags":  [
+                                   "voice_coupling",
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "giza_water_resonance_v2_5.png",
+                      "category":  "other",
+                      "series_key":  "giza_water_resonance_v2_5.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_water_resonance_v2_5.png",
+                      "size_kb":  86.77,
+                      "width":  1400,
+                      "height":  800,
+                      "avg_brightness":  247.34,
+                      "edge_score":  18.8865,
+                      "symmetry_score":  11.1193,
+                      "center_intensity":  255,
+                      "triad_E":  0.97,
+                      "triad_I":  0.5902,
+                      "triad_C":  0.55,
+                      "sha256":  "1595107C856908D1E3D31EBFBE2F48680C525E058568365ED3D700C018C7AFDF",
+                      "tags":  [
+                                   "bright_spike",
+                                   "low_symmetry"
+                               ]
+                  },
+                  {
+                      "name":  "seed_giza_v3_0_a.png",
+                      "category":  "seed",
+                      "series_key":  "seed_giza_v3_0_a.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\seed_giza_v3_0_a.png",
+                      "size_kb":  0.07,
+                      "width":  1,
+                      "height":  1,
+                      "avg_brightness":  255,
+                      "edge_score":  0,
+                      "symmetry_score":  0,
+                      "center_intensity":  255,
+                      "triad_E":  1,
+                      "triad_I":  0,
+                      "triad_C":  0.85,
+                      "sha256":  "B70177A128CE0F9A1CEFB6459452FB7859AF2C1DA3173526AEF39106E6D02E35",
+                      "tags":  [
+                                   "seed_frame",
+                                   "bright_spike"
+                               ]
+                  },
+                  {
+                      "name":  "seed_giza_v3_0_b.png",
+                      "category":  "seed",
+                      "series_key":  "seed_giza_v3_0_b.png",
+                      "time_index":  0,
+                      "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\seed_giza_v3_0_b.png",
+                      "size_kb":  0.07,
+                      "width":  1,
+                      "height":  1,
+                      "avg_brightness":  255,
+                      "edge_score":  0,
+                      "symmetry_score":  0,
+                      "center_intensity":  255,
+                      "triad_E":  1,
+                      "triad_I":  0,
+                      "triad_C":  0.85,
+                      "sha256":  "B70177A128CE0F9A1CEFB6459452FB7859AF2C1DA3173526AEF39106E6D02E35",
+                      "tags":  [
+                                   "seed_frame",
+                                   "bright_spike"
+                               ]
+                  }
+              ],
+    "graph_summary":  {
+                          "nodes":  87,
+                          "edges":  433
+                      }
+}
+===== GIZA_V4_6_ANALYSIS_END =====

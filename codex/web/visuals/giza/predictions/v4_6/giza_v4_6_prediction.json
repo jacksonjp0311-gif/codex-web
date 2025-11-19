@@ -1,0 +1,11 @@
+﻿{
+    "heuristic_version":  "1.0",
+    "global_drift_index":  0.02,
+    "brightness_baseline":  207.35,
+    "suggested_next_mode":  "stabilize_near_H7",
+    "notes":  [
+                  "Higher GDI → more rapid structural change",
+                  "Brightness baseline used as proxy for field excitation",
+                  "Next GIZA run (v4.7) should probe stability around current GDI"
+              ]
+}

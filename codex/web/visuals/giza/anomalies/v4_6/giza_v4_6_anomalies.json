@@ -1,0 +1,1181 @@
+﻿[
+    {
+        "name":  "giza_beam_interference_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_beam_interference_v2_3.png",
+        "category":  "other",
+        "avg_brightness":  160.24,
+        "symmetry_score":  28.6903,
+        "triad_E":  0.6284,
+        "triad_I":  0.7169,
+        "triad_C":  0.4224,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_beam_interference_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_beam_interference_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  161.36,
+        "symmetry_score":  28.4385,
+        "triad_E":  0.6328,
+        "triad_I":  0.7208,
+        "triad_C":  0.4211,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_body_coupling_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_body_coupling_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  242.99,
+        "symmetry_score":  18.7792,
+        "triad_E":  0.9529,
+        "triad_I":  0.8293,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_cavity_modes_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cavity_modes_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  248.32,
+        "symmetry_score":  8.8557,
+        "triad_E":  0.9738,
+        "triad_I":  0.481,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_cgl_schematic_v2_1.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_1.png",
+        "category":  "other",
+        "avg_brightness":  251.73,
+        "symmetry_score":  8.6959,
+        "triad_E":  0.9872,
+        "triad_I":  0.2722,
+        "triad_C":  0.5275,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_cgl_schematic_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_2.png",
+        "category":  "other",
+        "avg_brightness":  251.67,
+        "symmetry_score":  8.7951,
+        "triad_E":  0.9869,
+        "triad_I":  0.2789,
+        "triad_C":  0.5275,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_cgl_schematic_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_3.png",
+        "category":  "other",
+        "avg_brightness":  251.64,
+        "symmetry_score":  8.7904,
+        "triad_E":  0.9868,
+        "triad_I":  0.2789,
+        "triad_C":  0.5275,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_cgl_schematic_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  251.65,
+        "symmetry_score":  8.8176,
+        "triad_E":  0.9869,
+        "triad_I":  0.2791,
+        "triad_C":  0.5275,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_2.png",
+        "category":  "delta_phi",
+        "avg_brightness":  161.47,
+        "symmetry_score":  30.9936,
+        "triad_E":  0.6332,
+        "triad_I":  0.6917,
+        "triad_C":  0.4718,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_3.png",
+        "category":  "delta_phi",
+        "avg_brightness":  161.97,
+        "symmetry_score":  31.3059,
+        "triad_E":  0.6352,
+        "triad_I":  0.6811,
+        "triad_C":  0.4718,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_horizontal_slice_v2_5.png",
+        "category":  "delta_phi",
+        "avg_brightness":  165.47,
+        "symmetry_score":  29.8641,
+        "triad_E":  0.6489,
+        "triad_I":  0.6705,
+        "triad_C":  0.4533,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_map_v2_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_map_v2_0.png",
+        "category":  "delta_phi",
+        "avg_brightness":  164.85,
+        "symmetry_score":  37.9341,
+        "triad_E":  0.6465,
+        "triad_I":  0.7416,
+        "triad_C":  0.4622,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_map_v2_1.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_map_v2_1.png",
+        "category":  "delta_phi",
+        "avg_brightness":  166.02,
+        "symmetry_score":  37.0515,
+        "triad_E":  0.6511,
+        "triad_I":  0.6987,
+        "triad_C":  0.4658,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_purity_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_3.png",
+        "category":  "delta_phi",
+        "avg_brightness":  248.79,
+        "symmetry_score":  8.2111,
+        "triad_E":  0.9756,
+        "triad_I":  0.4641,
+        "triad_C":  0.4865,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_purity_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_5.png",
+        "category":  "delta_phi",
+        "avg_brightness":  250.11,
+        "symmetry_score":  7.3337,
+        "triad_E":  0.9808,
+        "triad_I":  0.3865,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_shell_v2_1.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_1.png",
+        "category":  "delta_phi",
+        "avg_brightness":  246.51,
+        "symmetry_score":  12.805,
+        "triad_E":  0.9667,
+        "triad_I":  0.6203,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_shell_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_2.png",
+        "category":  "delta_phi",
+        "avg_brightness":  248.17,
+        "symmetry_score":  12.5312,
+        "triad_E":  0.9732,
+        "triad_I":  0.5094,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_shell_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_3.png",
+        "category":  "delta_phi",
+        "avg_brightness":  247.56,
+        "symmetry_score":  12.3649,
+        "triad_E":  0.9708,
+        "triad_I":  0.5448,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_shell_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_shell_v2_5.png",
+        "category":  "delta_phi",
+        "avg_brightness":  248.39,
+        "symmetry_score":  12.344,
+        "triad_E":  0.9741,
+        "triad_I":  0.5029,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_2.png",
+        "category":  "delta_phi",
+        "avg_brightness":  148.8,
+        "symmetry_score":  35.8656,
+        "triad_E":  0.5835,
+        "triad_I":  0.6111,
+        "triad_C":  0.4569,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_3.png",
+        "category":  "delta_phi",
+        "avg_brightness":  153.43,
+        "symmetry_score":  34.2217,
+        "triad_E":  0.6017,
+        "triad_I":  0.6231,
+        "triad_C":  0.4569,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_vertical_slice_v2_5.png",
+        "category":  "delta_phi",
+        "avg_brightness":  152.3,
+        "symmetry_score":  33.9907,
+        "triad_E":  0.5973,
+        "triad_I":  0.6364,
+        "triad_C":  0.4527,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_em_focus_map_v2_1.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_1.png",
+        "category":  "em_field",
+        "avg_brightness":  204.07,
+        "symmetry_score":  25.023,
+        "triad_E":  0.8003,
+        "triad_I":  0.6816,
+        "triad_C":  0.4637,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_em_focus_map_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_2.png",
+        "category":  "em_field",
+        "avg_brightness":  204.06,
+        "symmetry_score":  25.0363,
+        "triad_E":  0.8002,
+        "triad_I":  0.683,
+        "triad_C":  0.4637,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_em_focus_map_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_3.png",
+        "category":  "em_field",
+        "avg_brightness":  204.07,
+        "symmetry_score":  25.0688,
+        "triad_E":  0.8003,
+        "triad_I":  0.6825,
+        "triad_C":  0.4637,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_em_focus_map_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_em_focus_map_v2_5.png",
+        "category":  "em_field",
+        "avg_brightness":  204.07,
+        "symmetry_score":  25.0613,
+        "triad_E":  0.8003,
+        "triad_I":  0.6817,
+        "triad_C":  0.4637,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_C_slice_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_C_slice_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  163.91,
+        "symmetry_score":  33.2271,
+        "triad_E":  0.6428,
+        "triad_I":  0.6604,
+        "triad_C":  0.4509,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_center_time_series_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_center_time_series_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  248.47,
+        "symmetry_score":  9.152,
+        "triad_E":  0.9744,
+        "triad_I":  0.5077,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_E_slice_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_E_slice_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  159.11,
+        "symmetry_score":  29.9788,
+        "triad_E":  0.624,
+        "triad_I":  0.6747,
+        "triad_C":  0.4496,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_EIC_hist_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_EIC_hist_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  247.41,
+        "symmetry_score":  15.0609,
+        "triad_E":  0.9702,
+        "triad_I":  0.284,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_horizontal_slice_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_horizontal_slice_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  167.28,
+        "symmetry_score":  29.1027,
+        "triad_E":  0.656,
+        "triad_I":  0.6047,
+        "triad_C":  0.4533,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_I_slice_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_I_slice_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  150.74,
+        "symmetry_score":  29.2299,
+        "triad_E":  0.5911,
+        "triad_I":  0.6673,
+        "triad_C":  0.4078,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_lotus_overlay_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_lotus_overlay_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  248.64,
+        "symmetry_score":  11.1786,
+        "triad_E":  0.9751,
+        "triad_I":  0.5848,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_midplane_t_00_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_00_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.79,
+        "symmetry_score":  23.2651,
+        "triad_E":  0.7364,
+        "triad_I":  0.8407,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_01_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_01_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.7,
+        "symmetry_score":  23.4933,
+        "triad_E":  0.7361,
+        "triad_I":  0.8488,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_02_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_02_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.82,
+        "symmetry_score":  23.2488,
+        "triad_E":  0.7365,
+        "triad_I":  0.8453,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_03_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_03_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.22,
+        "symmetry_score":  22.9233,
+        "triad_E":  0.7342,
+        "triad_I":  0.7851,
+        "triad_C":  0.4663,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_midplane_t_04_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_04_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.88,
+        "symmetry_score":  23.3373,
+        "triad_E":  0.7368,
+        "triad_I":  0.8407,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_05_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_05_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  188.12,
+        "symmetry_score":  22.6384,
+        "triad_E":  0.7377,
+        "triad_I":  0.8248,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_06_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_06_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.84,
+        "symmetry_score":  23.1447,
+        "triad_E":  0.7366,
+        "triad_I":  0.8401,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_07_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_07_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.66,
+        "symmetry_score":  23.5708,
+        "triad_E":  0.7359,
+        "triad_I":  0.8518,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_08_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_08_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.77,
+        "symmetry_score":  23.2465,
+        "triad_E":  0.7364,
+        "triad_I":  0.8383,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_09_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_09_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.82,
+        "symmetry_score":  23.3068,
+        "triad_E":  0.7365,
+        "triad_I":  0.8356,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_10_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_10_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.74,
+        "symmetry_score":  23.5732,
+        "triad_E":  0.7362,
+        "triad_I":  0.8438,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_11_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_11_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.92,
+        "symmetry_score":  23.1749,
+        "triad_E":  0.7369,
+        "triad_I":  0.8327,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_12_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_12_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.92,
+        "symmetry_score":  23.2716,
+        "triad_E":  0.7369,
+        "triad_I":  0.8393,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_13_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_13_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  188.01,
+        "symmetry_score":  22.9271,
+        "triad_E":  0.7373,
+        "triad_I":  0.8283,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_14_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_14_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.79,
+        "symmetry_score":  23.5005,
+        "triad_E":  0.7364,
+        "triad_I":  0.8423,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_15_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_15_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  188.04,
+        "symmetry_score":  22.9868,
+        "triad_E":  0.7374,
+        "triad_I":  0.8285,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_16_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_16_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  188.36,
+        "symmetry_score":  22.4183,
+        "triad_E":  0.7387,
+        "triad_I":  0.8111,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_17_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_17_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  188.35,
+        "symmetry_score":  22.3828,
+        "triad_E":  0.7386,
+        "triad_I":  0.8106,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_18_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_18_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.96,
+        "symmetry_score":  23.0324,
+        "triad_E":  0.7371,
+        "triad_I":  0.8365,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_19_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_19_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.77,
+        "symmetry_score":  23.4349,
+        "triad_E":  0.7364,
+        "triad_I":  0.8406,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_20_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_20_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.7,
+        "symmetry_score":  23.7379,
+        "triad_E":  0.7361,
+        "triad_I":  0.8517,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_21_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_21_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.83,
+        "symmetry_score":  23.3954,
+        "triad_E":  0.7366,
+        "triad_I":  0.8396,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_22_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_22_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  187.97,
+        "symmetry_score":  23.1419,
+        "triad_E":  0.7371,
+        "triad_I":  0.8321,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_midplane_t_23_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_midplane_t_23_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  188.02,
+        "symmetry_score":  23.0638,
+        "triad_E":  0.7373,
+        "triad_I":  0.8294,
+        "triad_C":  0.4569,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_holo_shell_profile_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_shell_profile_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  245.58,
+        "symmetry_score":  13.1707,
+        "triad_E":  0.9631,
+        "triad_I":  0.6773,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_solar_coupling_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_solar_coupling_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  247.65,
+        "symmetry_score":  13.4131,
+        "triad_E":  0.9712,
+        "triad_I":  0.5567,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_time_radius_strip_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_time_radius_strip_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  161.82,
+        "symmetry_score":  37.1412,
+        "triad_E":  0.6346,
+        "triad_I":  0.6207,
+        "triad_C":  0.4159,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_triad_glyph_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_triad_glyph_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  251.62,
+        "symmetry_score":  8.8123,
+        "triad_E":  0.9867,
+        "triad_I":  0.2716,
+        "triad_C":  0.5275,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_vertical_slice_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_vertical_slice_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  153.43,
+        "symmetry_score":  38.2346,
+        "triad_E":  0.6017,
+        "triad_I":  0.6469,
+        "triad_C":  0.4527,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_holo_voice_coupling_v3_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_voice_coupling_v3_0.png",
+        "category":  "holo",
+        "avg_brightness":  248.5,
+        "symmetry_score":  7.6819,
+        "triad_E":  0.9745,
+        "triad_I":  0.497,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_lotus_harmonic_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_lotus_harmonic_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  248.53,
+        "symmetry_score":  11.0395,
+        "triad_E":  0.9746,
+        "triad_I":  0.5946,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_meridian_map_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_meridian_map_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  247.63,
+        "symmetry_score":  14.068,
+        "triad_E":  0.9711,
+        "triad_I":  0.5365,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_muon_paths_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_muon_paths_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  204.34,
+        "symmetry_score":  25.6183,
+        "triad_E":  0.8013,
+        "triad_I":  0.6122,
+        "triad_C":  0.4282,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_piezo_map_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_piezo_map_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  158.28,
+        "symmetry_score":  33.7695,
+        "triad_E":  0.6207,
+        "triad_I":  0.679,
+        "triad_C":  0.4517,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_q_lattice_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_q_lattice_v2_3.png",
+        "category":  "q_lattice",
+        "avg_brightness":  160.47,
+        "symmetry_score":  35.4581,
+        "triad_E":  0.6293,
+        "triad_I":  0.6635,
+        "triad_C":  0.4653,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_q_lattice_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_q_lattice_v2_5.png",
+        "category":  "q_lattice",
+        "avg_brightness":  164.6,
+        "symmetry_score":  30.6238,
+        "triad_E":  0.6455,
+        "triad_I":  0.6385,
+        "triad_C":  0.4405,
+        "anomaly_flags":  [
+                              "dark_pocket",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_resonance_spectrum_v2_1.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_1.png",
+        "category":  "resonance",
+        "avg_brightness":  248.71,
+        "symmetry_score":  9.2888,
+        "triad_E":  0.9753,
+        "triad_I":  0.445,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_resonance_spectrum_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_2.png",
+        "category":  "resonance",
+        "avg_brightness":  248.71,
+        "symmetry_score":  9.3297,
+        "triad_E":  0.9753,
+        "triad_I":  0.445,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_resonance_spectrum_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_3.png",
+        "category":  "resonance",
+        "avg_brightness":  249.42,
+        "symmetry_score":  8.2512,
+        "triad_E":  0.9781,
+        "triad_I":  0.3992,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_resonance_spectrum_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_resonance_spectrum_v2_5.png",
+        "category":  "resonance",
+        "avg_brightness":  249.39,
+        "symmetry_score":  8.3071,
+        "triad_E":  0.978,
+        "triad_I":  0.4012,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_schumann_coupling_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_3.png",
+        "category":  "other",
+        "avg_brightness":  248.84,
+        "symmetry_score":  10.1437,
+        "triad_E":  0.9758,
+        "triad_I":  0.4423,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_schumann_coupling_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  248.88,
+        "symmetry_score":  10.1028,
+        "triad_E":  0.976,
+        "triad_I":  0.4397,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_solar_coupling_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_solar_coupling_v2_5.png",
+        "category":  "solar",
+        "avg_brightness":  247.75,
+        "symmetry_score":  13.1492,
+        "triad_E":  0.9716,
+        "triad_I":  0.548,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_triadic_cross_section_v2_0.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_0.png",
+        "category":  "triadic",
+        "avg_brightness":  203.03,
+        "symmetry_score":  44.4006,
+        "triad_E":  0.7962,
+        "triad_I":  0.7445,
+        "triad_C":  0.4363,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_triadic_cross_section_v2_1.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_1.png",
+        "category":  "triadic",
+        "avg_brightness":  201.87,
+        "symmetry_score":  42.3848,
+        "triad_E":  0.7916,
+        "triad_I":  0.7483,
+        "triad_C":  0.4363,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_triadic_cross_section_v2_2.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_2.png",
+        "category":  "triadic",
+        "avg_brightness":  201.87,
+        "symmetry_score":  42.4031,
+        "triad_E":  0.7916,
+        "triad_I":  0.7483,
+        "triad_C":  0.4363,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_triadic_cross_section_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_3.png",
+        "category":  "triadic",
+        "avg_brightness":  201.85,
+        "symmetry_score":  42.4627,
+        "triad_E":  0.7916,
+        "triad_I":  0.7498,
+        "triad_C":  0.4363,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_triadic_cross_section_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_triadic_cross_section_v2_5.png",
+        "category":  "triadic",
+        "avg_brightness":  200.59,
+        "symmetry_score":  44.7872,
+        "triad_E":  0.7866,
+        "triad_I":  0.7583,
+        "triad_C":  0.4363,
+        "anomaly_flags":  {
+
+                          }
+    },
+    {
+        "name":  "giza_vertical_flex_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_vertical_flex_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  245.91,
+        "symmetry_score":  14.4928,
+        "triad_E":  0.9644,
+        "triad_I":  0.6539,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_voice_coupling_v2_3.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_3.png",
+        "category":  "voice",
+        "avg_brightness":  250.3,
+        "symmetry_score":  7.6675,
+        "triad_E":  0.9816,
+        "triad_I":  0.3922,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_voice_coupling_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_5.png",
+        "category":  "voice",
+        "avg_brightness":  248.35,
+        "symmetry_score":  7.943,
+        "triad_E":  0.9739,
+        "triad_I":  0.513,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "giza_water_resonance_v2_5.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_water_resonance_v2_5.png",
+        "category":  "other",
+        "avg_brightness":  247.34,
+        "symmetry_score":  11.1193,
+        "triad_E":  0.97,
+        "triad_I":  0.5902,
+        "triad_C":  0.55,
+        "anomaly_flags":  [
+                              "bright_spike",
+                              "low_symmetry"
+                          ]
+    },
+    {
+        "name":  "seed_giza_v3_0_a.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\seed_giza_v3_0_a.png",
+        "category":  "seed",
+        "avg_brightness":  255,
+        "symmetry_score":  0,
+        "triad_E":  1,
+        "triad_I":  0,
+        "triad_C":  0.85,
+        "anomaly_flags":  "bright_spike"
+    },
+    {
+        "name":  "seed_giza_v3_0_b.png",
+        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\seed_giza_v3_0_b.png",
+        "category":  "seed",
+        "avg_brightness":  255,
+        "symmetry_score":  0,
+        "triad_E":  1,
+        "triad_I":  0,
+        "triad_C":  0.85,
+        "anomaly_flags":  "bright_spike"
+    }
+]
