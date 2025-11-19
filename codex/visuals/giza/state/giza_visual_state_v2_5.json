@@ -1,0 +1,95 @@
+{
+  "engine": "giza_visualizer_v2_5",
+  "outputs": [
+    "giza_delta_phi_vertical_slice_v2_5.png",
+    "giza_delta_phi_horizontal_slice_v2_5.png",
+    "giza_delta_phi_shell_v2_5.png",
+    "giza_q_lattice_v2_5.png",
+    "giza_beam_interference_v2_5.png",
+    "giza_triadic_cross_section_v2_5.png",
+    "giza_resonance_spectrum_v2_5.png",
+    "giza_em_focus_map_v2_5.png",
+    "giza_schumann_coupling_v2_5.png",
+    "giza_voice_coupling_v2_5.png",
+    "giza_delta_phi_purity_v2_5.png",
+    "giza_cgl_schematic_v2_5.png",
+    "giza_piezo_map_v2_5.png",
+    "giza_water_resonance_v2_5.png",
+    "giza_cavity_modes_v2_5.png",
+    "giza_vertical_flex_v2_5.png",
+    "giza_muon_paths_v2_5.png",
+    "giza_meridian_map_v2_5.png",
+    "giza_solar_coupling_v2_5.png",
+    "giza_lotus_harmonic_v2_5.png",
+    "giza_body_coupling_v2_5.png"
+  ],
+  "bands_hz": [
+    8,
+    14.3,
+    20.8,
+    10,
+    16,
+    117,
+    121,
+    260,
+    450
+  ],
+  "chambers": {
+    "E_subterranean": {
+      "x": 0.0,
+      "y": -0.25,
+      "z": -0.33
+    },
+    "I_queen": {
+      "x": 0.0,
+      "y": 0.08,
+      "z": 0.21
+    },
+    "C_king": {
+      "x": 0.0,
+      "y": 0.1,
+      "z": 0.52
+    },
+    "P_beam_stack": {
+      "x": 0.0,
+      "y": 0.12,
+      "z": 0.6
+    }
+  },
+  "metrics": {
+    "delta_phi_max": 2.3974369349708016,
+    "delta_phi_mean": 0.3110038524938409,
+    "delta_phi_var": 0.11101023839515206,
+    "tri_wave_score": 0.07875240980714268,
+    "triad_balance": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "delta_phi_purity_mean": 0.1257142857142857,
+    "piezo_mean_index": 0.03594640897677001,
+    "giza_resonant_stability_index": 0.745251035522225
+  },
+  "layers": [
+    "\u0394\u03a6_volume",
+    "Q_lattice",
+    "beam_interference",
+    "triadic_stack",
+    "schumann_coupling",
+    "voice_coupling",
+    "piezo_layer",
+    "water_resonance",
+    "cavity_modes",
+    "earth_flex_gravity",
+    "muon_paths",
+    "meridian_alignment",
+    "solar_coupling",
+    "lotus_harmonic",
+    "body_chamber_coupling"
+  ],
+  "scale": {
+    "domain": "macro_architectural",
+    "reference": "earth_surface",
+    "notes": "Giza v2.5 deep harmonic integration \u2014 Codex simulation only."
+  }
+}

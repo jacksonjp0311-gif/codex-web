@@ -1,0 +1,53 @@
+﻿{
+  "node": "giza_engine",
+  "version": "2.5",
+  "bands_hz": [8.0, 14.3, 20.8, 10.0, 16.0, 117.0, 121.0, 260.0, 450.0],
+  "channels": {
+    "E": { "band_hz": [10.0, 16.0],  "role": "earth_coupling" },
+    "I": { "band_hz": [110.0, 150.0], "role": "air_architecture_coupling" },
+    "C": { "band_hz": [120.0, 450.0], "role": "granite_cavity_coupling" },
+    "∿":{ "band_hz": [0.0, 0.0],     "role": "ΔΦ_smoothing_impedance (granite_beam_stack)" }
+  },
+  "layers": [
+    "ΔΦ_volume",
+    "Q_lattice",
+    "beam_interference",
+    "triadic_stack",
+    "schumann_coupling",
+    "voice_coupling",
+    "piezo_layer",
+    "water_resonance",
+    "cavity_modes",
+    "earth_flex_gravity",
+    "muon_paths",
+    "meridian_alignment",
+    "solar_coupling",
+    "lotus_harmonic",
+    "body_chamber_coupling"
+  ],
+  "triad": {
+    "E": "subterranean_chamber",
+    "I": "queens_chamber",
+    "C": "kings_chamber",
+    "∿": "granite_beam_stack"
+  },
+  "glyph_lattice": {
+    "nodes": [
+      { "id": "E", "glyph": "𓂧", "role": "energy_origin" },
+      { "id": "I", "glyph": "𓏏", "role": "information_chamber" },
+      { "id": "C", "glyph": "𓂀", "role": "consciousness_cavity" },
+      { "id": "∿", "glyph": "𓊽", "role": "stabilizer_beam_stack" }
+    ],
+    "edges": [
+      { "from": "E", "to": "I", "relation": "uplink" },
+      { "from": "I", "to": "C", "relation": "carrier" },
+      { "from": "C", "to": "∿", "relation": "damp" },
+      { "from": "∿", "to": "E", "relation": "return" }
+    ]
+  },
+  "scale": {
+    "domain": "macro_architectural",
+    "reference": "earth_surface",
+    "notes": "Giza ΔΦ Harmonic Engine v2.5 — deep integration model (simulation, not historical fact)."
+  }
+}
