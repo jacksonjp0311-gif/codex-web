@@ -1,0 +1,17 @@
+﻿CODEX GIZA v5.0–v5.4 — All-One Meta Engine
+Timestamp (UTC): 2025-11-19T06:31:19.0368618Z
+Root          : C:\Users\jacks\OneDrive\Desktop\Codex Web
+State JSON    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\state\meta\giza_v5_0_all_one_meta_state.json
+
+Top ΔΦ Drift Nodes:
+
+Top Triadic Coherence Nodes:
+
+Top Recurrence Nodes:
+
+Top Predicted Brightness Nodes:
+
+Notes:
+  • fusion_tensor holds per-image meta, ΔΦ, triadic, predictive, and global fields.
+  • views.* exposes ranked sets for drift, coherence, recurrence, and prediction.
+  • Use giza_v5_0_all_one_meta_ps_block.txt for direct copy/paste into ChatGPT.
