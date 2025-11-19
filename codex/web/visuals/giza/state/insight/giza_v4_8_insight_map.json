@@ -1,7 +1,7 @@
 ﻿{
     "protocol":  "CODEX_GIZA_INSIGHT",
     "version":  "4.8",
-    "timestamp_utc":  "2025-11-19T06:19:08.3129359Z",
+    "timestamp_utc":  "2025-11-19T06:40:52.9472159Z",
     "total_files":  87,
     "fields":  {
                    "delta_phi_drift":  {
@@ -461,62 +461,7 @@
                                                                                                  }
                                                           },
                                      "deltaPhi_to_solar":  {
-                                                               "giza_delta_phi_map_v2_0.png":  {
-                                                                                                   "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                   "center_brightness":  250.44
-                                                                                               },
-                                                               "giza_delta_phi_shell_v2_2.png":  {
-                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                     "center_brightness":  250.44
-                                                                                                 },
-                                                               "giza_delta_phi_shell_v2_1.png":  {
-                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                     "center_brightness":  250.44
-                                                                                                 },
-                                                               "giza_delta_phi_purity_v2_5.png":  {
-                                                                                                      "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                      "center_brightness":  250.44
-                                                                                                  },
-                                                               "giza_delta_phi_shell_v2_3.png":  {
-                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                     "center_brightness":  250.44
-                                                                                                 },
-                                                               "giza_delta_phi_horizontal_slice_v2_5.png":  {
-                                                                                                                "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                                "center_brightness":  250.44
-                                                                                                            },
-                                                               "giza_delta_phi_vertical_slice_v2_3.png":  {
-                                                                                                              "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                              "center_brightness":  250.44
-                                                                                                          },
-                                                               "giza_delta_phi_horizontal_slice_v2_3.png":  {
-                                                                                                                "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                                "center_brightness":  250.44
-                                                                                                            },
-                                                               "giza_delta_phi_map_v2_1.png":  {
-                                                                                                   "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                   "center_brightness":  250.44
-                                                                                               },
-                                                               "giza_delta_phi_horizontal_slice_v2_2.png":  {
-                                                                                                                "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                                "center_brightness":  250.44
-                                                                                                            },
-                                                               "giza_delta_phi_vertical_slice_v2_5.png":  {
-                                                                                                              "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                              "center_brightness":  250.44
-                                                                                                          },
-                                                               "giza_delta_phi_shell_v2_5.png":  {
-                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                     "center_brightness":  250.44
-                                                                                                 },
-                                                               "giza_delta_phi_vertical_slice_v2_2.png":  {
-                                                                                                              "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                              "center_brightness":  250.44
-                                                                                                          },
-                                                               "giza_delta_phi_purity_v2_3.png":  {
-                                                                                                      "name":  "giza_solar_coupling_v2_5.png",
-                                                                                                      "center_brightness":  250.44
-                                                                                                  }
+
                                                            }
                                  }
                }

@@ -1,15 +1,45 @@
 ﻿CODEX GIZA v5.0–v5.4 — All-One Meta Engine
-Timestamp (UTC): 2025-11-19T06:31:19.0368618Z
+Timestamp (UTC): 2025-11-19T06:40:54.5758844Z
 Root          : C:\Users\jacks\OneDrive\Desktop\Codex Web
 State JSON    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\state\meta\giza_v5_0_all_one_meta_state.json
 
 Top ΔΦ Drift Nodes:
+  giza_delta_phi_shell_v2_1.png  → drift_score = 50.8084
+  giza_delta_phi_purity_v2_5.png  → drift_score = 50.7866
+  giza_delta_phi_shell_v2_3.png  → drift_score = 50.3986
+  giza_delta_phi_purity_v2_3.png  → drift_score = 50.0778
+  giza_delta_phi_shell_v2_5.png  → drift_score = 49.6712
+  giza_delta_phi_shell_v2_2.png  → drift_score = 49.5418
+  giza_delta_phi_vertical_slice_v2_3.png  → drift_score = 24.2180
+  giza_delta_phi_vertical_slice_v2_2.png  → drift_score = 24.1354
+  giza_delta_phi_map_v2_1.png  → drift_score = 24.0428
+  giza_delta_phi_map_v2_0.png  → drift_score = 23.6094
 
 Top Triadic Coherence Nodes:
 
 Top Recurrence Nodes:
+  giza_delta_phi_shell_v2_1.png  → recurrence_score = 50.9002
+  giza_delta_phi_purity_v2_5.png  → recurrence_score = 50.8826
+  giza_delta_phi_shell_v2_3.png  → recurrence_score = 50.4908
+  giza_delta_phi_purity_v2_3.png  → recurrence_score = 50.1728
+  giza_delta_phi_shell_v2_5.png  → recurrence_score = 49.7625
+  giza_delta_phi_shell_v2_2.png  → recurrence_score = 49.6328
+  giza_delta_phi_vertical_slice_v2_3.png  → recurrence_score = 24.3005
+  giza_delta_phi_vertical_slice_v2_2.png  → recurrence_score = 24.2184
+  giza_delta_phi_map_v2_1.png  → recurrence_score = 24.1270
+  giza_delta_phi_map_v2_0.png  → recurrence_score = 23.6928
 
 Top Predicted Brightness Nodes:
+  giza_delta_phi_shell_v2_1.png  → predicted_brightness = 252.0866
+  giza_delta_phi_purity_v2_5.png  → predicted_brightness = 251.9587
+  giza_delta_phi_shell_v2_3.png  → predicted_brightness = 250.0368
+  giza_delta_phi_purity_v2_3.png  → predicted_brightness = 248.4280
+  giza_delta_phi_shell_v2_5.png  → predicted_brightness = 246.4062
+  giza_delta_phi_shell_v2_2.png  → predicted_brightness = 245.7562
+  giza_delta_phi_vertical_slice_v2_3.png  → predicted_brightness = 119.2308
+  giza_delta_phi_vertical_slice_v2_2.png  → predicted_brightness = 118.8209
+  giza_delta_phi_map_v2_1.png  → predicted_brightness = 118.3614
+  giza_delta_phi_map_v2_0.png  → predicted_brightness = 116.1911
 
 Notes:
   • fusion_tensor holds per-image meta, ΔΦ, triadic, predictive, and global fields.

@@ -2,28 +2,746 @@
 {
     "protocol":  "CODEX_GIZA_META",
     "version":  "5.0-5.4",
-    "timestamp_utc":  "2025-11-19T06:31:19.0368618Z",
+    "timestamp_utc":  "2025-11-19T06:40:54.5758844Z",
     "codex":  {
                   "laws":  "Universal Truth (E–I–C ∿, H₇=0.70) • Recurrence • Symmetry Descent • Fractal Consciousness",
                   "module":  "GIZA All-One Meta Engine (v5.x)",
                   "note":  "Fusion of ΔΦ drift, triadic coupling, recurrence geometry, and predictive field into a single Insight Field."
               },
     "fusion_tensor":  {
-
+                          "giza_delta_phi_map_v2_0.png":  {
+                                                              "name":  "giza_delta_phi_map_v2_0.png",
+                                                              "category":  "delta_phi",
+                                                              "meta":  {
+                                                                           "width":  1200,
+                                                                           "height":  1200,
+                                                                           "avg_brightness":  168.79,
+                                                                           "center_brightness":  116.16,
+                                                                           "edge_brightness":  181.49,
+                                                                           "horiz_symmetry":  0.845,
+                                                                           "vert_symmetry":  0.932,
+                                                                           "edge_density":  0.055
+                                                                       },
+                                                              "delta_phi":  {
+                                                                                "purity":  0.055,
+                                                                                "symmetry":  0.8885,
+                                                                                "brightness":  116.16,
+                                                                                "drift_score":  23.6094,
+                                                                                "recurrence_score":  23.6928
+                                                                            },
+                                                              "triadic":  {
+                                                                              "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                              "holo_center_b":  116.05,
+                                                                              "solar_name":  null,
+                                                                              "solar_center_b":  null,
+                                                                              "triadic_coherence":  null
+                                                                          },
+                                                              "predictive":  {
+                                                                                 "predicted_brightness":  116.1911,
+                                                                                 "predicted_alignment":  0.4718
+                                                                             },
+                                                              "globals":  {
+                                                                              "symmetry_field":  {
+                                                                                                     "edge_avg":  0.046,
+                                                                                                     "vert_avg":  0.937,
+                                                                                                     "horiz_avg":  0.911
+                                                                                                 },
+                                                                              "brightness_field":  {
+                                                                                                       "edge_avg":  216.99,
+                                                                                                       "center_avg":  160.71
+                                                                                                   }
+                                                                          }
+                                                          },
+                          "giza_delta_phi_shell_v2_1.png":  {
+                                                                "name":  "giza_delta_phi_shell_v2_1.png",
+                                                                "category":  "delta_phi",
+                                                                "meta":  {
+                                                                             "width":  1200,
+                                                                             "height":  800,
+                                                                             "avg_brightness":  247.25,
+                                                                             "center_brightness":  252.05,
+                                                                             "edge_brightness":  246.62,
+                                                                             "horiz_symmetry":  0.938,
+                                                                             "vert_symmetry":  0.976,
+                                                                             "edge_density":  0.039
+                                                                         },
+                                                                "delta_phi":  {
+                                                                                  "purity":  0.039,
+                                                                                  "symmetry":  0.957,
+                                                                                  "brightness":  252.05,
+                                                                                  "drift_score":  50.8084,
+                                                                                  "recurrence_score":  50.9002
+                                                                              },
+                                                                "triadic":  {
+                                                                                "holo_name":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                                "holo_center_b":  251.99,
+                                                                                "solar_name":  null,
+                                                                                "solar_center_b":  null,
+                                                                                "triadic_coherence":  null
+                                                                            },
+                                                                "predictive":  {
+                                                                                   "predicted_brightness":  252.0866,
+                                                                                   "predicted_alignment":  0.498
+                                                                               },
+                                                                "globals":  {
+                                                                                "symmetry_field":  {
+                                                                                                       "edge_avg":  0.046,
+                                                                                                       "vert_avg":  0.937,
+                                                                                                       "horiz_avg":  0.911
+                                                                                                   },
+                                                                                "brightness_field":  {
+                                                                                                         "edge_avg":  216.99,
+                                                                                                         "center_avg":  160.71
+                                                                                                     }
+                                                                            }
+                                                            },
+                          "giza_delta_phi_purity_v2_5.png":  {
+                                                                 "name":  "giza_delta_phi_purity_v2_5.png",
+                                                                 "category":  "delta_phi",
+                                                                 "meta":  {
+                                                                              "width":  1400,
+                                                                              "height":  800,
+                                                                              "avg_brightness":  250.95,
+                                                                              "center_brightness":  251.92,
+                                                                              "edge_brightness":  250.95,
+                                                                              "horiz_symmetry":  0.985,
+                                                                              "vert_symmetry":  0.982,
+                                                                              "edge_density":  0.023
+                                                                          },
+                                                                 "delta_phi":  {
+                                                                                   "purity":  0.023,
+                                                                                   "symmetry":  0.9835,
+                                                                                   "brightness":  251.92,
+                                                                                   "drift_score":  50.7866,
+                                                                                   "recurrence_score":  50.8826
+                                                                               },
+                                                                 "triadic":  {
+                                                                                 "holo_name":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                                 "holo_center_b":  251.99,
+                                                                                 "solar_name":  null,
+                                                                                 "solar_center_b":  null,
+                                                                                 "triadic_coherence":  null
+                                                                             },
+                                                                 "predictive":  {
+                                                                                    "predicted_brightness":  251.9587,
+                                                                                    "predicted_alignment":  0.5032
+                                                                                },
+                                                                 "globals":  {
+                                                                                 "symmetry_field":  {
+                                                                                                        "edge_avg":  0.046,
+                                                                                                        "vert_avg":  0.937,
+                                                                                                        "horiz_avg":  0.911
+                                                                                                    },
+                                                                                 "brightness_field":  {
+                                                                                                          "edge_avg":  216.99,
+                                                                                                          "center_avg":  160.71
+                                                                                                      }
+                                                                             }
+                                                             },
+                          "giza_delta_phi_shell_v2_3.png":  {
+                                                                "name":  "giza_delta_phi_shell_v2_3.png",
+                                                                "category":  "delta_phi",
+                                                                "meta":  {
+                                                                             "width":  1200,
+                                                                             "height":  800,
+                                                                             "avg_brightness":  247.55,
+                                                                             "center_brightness":  250,
+                                                                             "edge_brightness":  247.1,
+                                                                             "horiz_symmetry":  0.942,
+                                                                             "vert_symmetry":  0.977,
+                                                                             "edge_density":  0.037
+                                                                         },
+                                                                "delta_phi":  {
+                                                                                  "purity":  0.037,
+                                                                                  "symmetry":  0.9595,
+                                                                                  "brightness":  250,
+                                                                                  "drift_score":  50.3986,
+                                                                                  "recurrence_score":  50.4908
+                                                                              },
+                                                                "triadic":  {
+                                                                                "holo_name":  "giza_holo_solar_coupling_v3_0.png",
+                                                                                "holo_center_b":  250.44,
+                                                                                "solar_name":  null,
+                                                                                "solar_center_b":  null,
+                                                                                "triadic_coherence":  null
+                                                                            },
+                                                                "predictive":  {
+                                                                                   "predicted_brightness":  250.0368,
+                                                                                   "predicted_alignment":  0.4982
+                                                                               },
+                                                                "globals":  {
+                                                                                "symmetry_field":  {
+                                                                                                       "edge_avg":  0.046,
+                                                                                                       "vert_avg":  0.937,
+                                                                                                       "horiz_avg":  0.911
+                                                                                                   },
+                                                                                "brightness_field":  {
+                                                                                                         "edge_avg":  216.99,
+                                                                                                         "center_avg":  160.71
+                                                                                                     }
+                                                                            }
+                                                            },
+                          "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                           "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                                                                           "category":  "delta_phi",
+                                                                           "meta":  {
+                                                                                        "width":  1200,
+                                                                                        "height":  1200,
+                                                                                        "avg_brightness":  170.37,
+                                                                                        "center_brightness":  106.3,
+                                                                                        "edge_brightness":  184.86,
+                                                                                        "horiz_symmetry":  0.878,
+                                                                                        "vert_symmetry":  0.948,
+                                                                                        "edge_density":  0.046
+                                                                                    },
+                                                                           "delta_phi":  {
+                                                                                             "purity":  0.046,
+                                                                                             "symmetry":  0.913,
+                                                                                             "brightness":  106.3,
+                                                                                             "drift_score":  21.6436,
+                                                                                             "recurrence_score":  21.7303
+                                                                                         },
+                                                                           "triadic":  {
+                                                                                           "holo_name":  "giza_holo_E_slice_v3_0.png",
+                                                                                           "holo_center_b":  105.42,
+                                                                                           "solar_name":  null,
+                                                                                           "solar_center_b":  null,
+                                                                                           "triadic_coherence":  null
+                                                                                       },
+                                                                           "predictive":  {
+                                                                                              "predicted_brightness":  106.3330,
+                                                                                              "predicted_alignment":  0.4795
+                                                                                          },
+                                                                           "globals":  {
+                                                                                           "symmetry_field":  {
+                                                                                                                  "edge_avg":  0.046,
+                                                                                                                  "vert_avg":  0.937,
+                                                                                                                  "horiz_avg":  0.911
+                                                                                                              },
+                                                                                           "brightness_field":  {
+                                                                                                                    "edge_avg":  216.99,
+                                                                                                                    "center_avg":  160.71
+                                                                                                                }
+                                                                                       }
+                                                                       },
+                          "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                           "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                                                                           "category":  "delta_phi",
+                                                                           "meta":  {
+                                                                                        "width":  1200,
+                                                                                        "height":  1200,
+                                                                                        "avg_brightness":  166.95,
+                                                                                        "center_brightness":  110.01,
+                                                                                        "edge_brightness":  181.09,
+                                                                                        "horiz_symmetry":  0.871,
+                                                                                        "vert_symmetry":  0.969,
+                                                                                        "edge_density":  0.046
+                                                                                    },
+                                                                           "delta_phi":  {
+                                                                                             "purity":  0.046,
+                                                                                             "symmetry":  0.920,
+                                                                                             "brightness":  110.01,
+                                                                                             "drift_score":  22.3884,
+                                                                                             "recurrence_score":  22.4758
+                                                                                         },
+                                                                           "triadic":  {
+                                                                                           "holo_name":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                                           "holo_center_b":  108.69,
+                                                                                           "solar_name":  null,
+                                                                                           "solar_center_b":  null,
+                                                                                           "triadic_coherence":  null
+                                                                                       },
+                                                                           "predictive":  {
+                                                                                              "predicted_brightness":  110.0436,
+                                                                                              "predicted_alignment":  0.483
+                                                                                          },
+                                                                           "globals":  {
+                                                                                           "symmetry_field":  {
+                                                                                                                  "edge_avg":  0.046,
+                                                                                                                  "vert_avg":  0.937,
+                                                                                                                  "horiz_avg":  0.911
+                                                                                                              },
+                                                                                           "brightness_field":  {
+                                                                                                                    "edge_avg":  216.99,
+                                                                                                                    "center_avg":  160.71
+                                                                                                                }
+                                                                                       }
+                                                                       },
+                          "giza_delta_phi_purity_v2_3.png":  {
+                                                                 "name":  "giza_delta_phi_purity_v2_3.png",
+                                                                 "category":  "delta_phi",
+                                                                 "meta":  {
+                                                                              "width":  1400,
+                                                                              "height":  800,
+                                                                              "avg_brightness":  250.42,
+                                                                              "center_brightness":  248.39,
+                                                                              "edge_brightness":  250.46,
+                                                                              "horiz_symmetry":  0.975,
+                                                                              "vert_symmetry":  0.974,
+                                                                              "edge_density":  0.025
+                                                                          },
+                                                                 "delta_phi":  {
+                                                                                   "purity":  0.025,
+                                                                                   "symmetry":  0.9745,
+                                                                                   "brightness":  248.39,
+                                                                                   "drift_score":  50.0778,
+                                                                                   "recurrence_score":  50.1728
+                                                                               },
+                                                                 "triadic":  {
+                                                                                 "holo_name":  "giza_holo_solar_coupling_v3_0.png",
+                                                                                 "holo_center_b":  250.44,
+                                                                                 "solar_name":  null,
+                                                                                 "solar_center_b":  null,
+                                                                                 "triadic_coherence":  null
+                                                                             },
+                                                                 "predictive":  {
+                                                                                    "predicted_brightness":  248.4280,
+                                                                                    "predicted_alignment":  0.4998
+                                                                                },
+                                                                 "globals":  {
+                                                                                 "symmetry_field":  {
+                                                                                                        "edge_avg":  0.046,
+                                                                                                        "vert_avg":  0.937,
+                                                                                                        "horiz_avg":  0.911
+                                                                                                    },
+                                                                                 "brightness_field":  {
+                                                                                                          "edge_avg":  216.99,
+                                                                                                          "center_avg":  160.71
+                                                                                                      }
+                                                                             }
+                                                             },
+                          "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                         "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                                         "category":  "delta_phi",
+                                                                         "meta":  {
+                                                                                      "width":  1200,
+                                                                                      "height":  1200,
+                                                                                      "avg_brightness":  150.05,
+                                                                                      "center_brightness":  119.2,
+                                                                                      "edge_brightness":  158.1,
+                                                                                      "horiz_symmetry":  0.872,
+                                                                                      "vert_symmetry":  0.898,
+                                                                                      "edge_density":  0.06
+                                                                                  },
+                                                                         "delta_phi":  {
+                                                                                           "purity":  0.06,
+                                                                                           "symmetry":  0.885,
+                                                                                           "brightness":  119.2,
+                                                                                           "drift_score":  24.2180,
+                                                                                           "recurrence_score":  24.3005
+                                                                                       },
+                                                                         "triadic":  {
+                                                                                         "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                         "holo_center_b":  116.05,
+                                                                                         "solar_name":  null,
+                                                                                         "solar_center_b":  null,
+                                                                                         "triadic_coherence":  null
+                                                                                     },
+                                                                         "predictive":  {
+                                                                                            "predicted_brightness":  119.2308,
+                                                                                            "predicted_alignment":  0.4725
+                                                                                        },
+                                                                         "globals":  {
+                                                                                         "symmetry_field":  {
+                                                                                                                "edge_avg":  0.046,
+                                                                                                                "vert_avg":  0.937,
+                                                                                                                "horiz_avg":  0.911
+                                                                                                            },
+                                                                                         "brightness_field":  {
+                                                                                                                  "edge_avg":  216.99,
+                                                                                                                  "center_avg":  160.71
+                                                                                                              }
+                                                                                     }
+                                                                     },
+                          "giza_delta_phi_map_v2_1.png":  {
+                                                              "name":  "giza_delta_phi_map_v2_1.png",
+                                                              "category":  "delta_phi",
+                                                              "meta":  {
+                                                                           "width":  1200,
+                                                                           "height":  1200,
+                                                                           "avg_brightness":  170.48,
+                                                                           "center_brightness":  118.33,
+                                                                           "edge_brightness":  183.14,
+                                                                           "horiz_symmetry":  0.849,
+                                                                           "vert_symmetry":  0.935,
+                                                                           "edge_density":  0.05
+                                                                       },
+                                                              "delta_phi":  {
+                                                                                "purity":  0.05,
+                                                                                "symmetry":  0.892,
+                                                                                "brightness":  118.33,
+                                                                                "drift_score":  24.0428,
+                                                                                "recurrence_score":  24.1270
+                                                                            },
+                                                              "triadic":  {
+                                                                              "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                              "holo_center_b":  116.05,
+                                                                              "solar_name":  null,
+                                                                              "solar_center_b":  null,
+                                                                              "triadic_coherence":  null
+                                                                          },
+                                                              "predictive":  {
+                                                                                 "predicted_brightness":  118.3614,
+                                                                                 "predicted_alignment":  0.471
+                                                                             },
+                                                              "globals":  {
+                                                                              "symmetry_field":  {
+                                                                                                     "edge_avg":  0.046,
+                                                                                                     "vert_avg":  0.937,
+                                                                                                     "horiz_avg":  0.911
+                                                                                                 },
+                                                                              "brightness_field":  {
+                                                                                                       "edge_avg":  216.99,
+                                                                                                       "center_avg":  160.71
+                                                                                                   }
+                                                                          }
+                                                          },
+                          "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                           "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                                                                           "category":  "delta_phi",
+                                                                           "meta":  {
+                                                                                        "width":  1200,
+                                                                                        "height":  1200,
+                                                                                        "avg_brightness":  166.16,
+                                                                                        "center_brightness":  109.63,
+                                                                                        "edge_brightness":  180.31,
+                                                                                        "horiz_symmetry":  0.871,
+                                                                                        "vert_symmetry":  0.967,
+                                                                                        "edge_density":  0.049
+                                                                                    },
+                                                                           "delta_phi":  {
+                                                                                             "purity":  0.049,
+                                                                                             "symmetry":  0.919,
+                                                                                             "brightness":  109.63,
+                                                                                             "drift_score":  22.3132,
+                                                                                             "recurrence_score":  22.4002
+                                                                                         },
+                                                                           "triadic":  {
+                                                                                           "holo_name":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                                           "holo_center_b":  108.69,
+                                                                                           "solar_name":  null,
+                                                                                           "solar_center_b":  null,
+                                                                                           "triadic_coherence":  null
+                                                                                       },
+                                                                           "predictive":  {
+                                                                                              "predicted_brightness":  109.6635,
+                                                                                              "predicted_alignment":  0.484
+                                                                                          },
+                                                                           "globals":  {
+                                                                                           "symmetry_field":  {
+                                                                                                                  "edge_avg":  0.046,
+                                                                                                                  "vert_avg":  0.937,
+                                                                                                                  "horiz_avg":  0.911
+                                                                                                              },
+                                                                                           "brightness_field":  {
+                                                                                                                    "edge_avg":  216.99,
+                                                                                                                    "center_avg":  160.71
+                                                                                                                }
+                                                                                       }
+                                                                       },
+                          "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                         "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                                                                         "category":  "delta_phi",
+                                                                         "meta":  {
+                                                                                      "width":  1200,
+                                                                                      "height":  1200,
+                                                                                      "avg_brightness":  149.06,
+                                                                                      "center_brightness":  115.84,
+                                                                                      "edge_brightness":  157.35,
+                                                                                      "horiz_symmetry":  0.875,
+                                                                                      "vert_symmetry":  0.905,
+                                                                                      "edge_density":  0.059
+                                                                                  },
+                                                                         "delta_phi":  {
+                                                                                           "purity":  0.059,
+                                                                                           "symmetry":  0.890,
+                                                                                           "brightness":  115.84,
+                                                                                           "drift_score":  23.5476,
+                                                                                           "recurrence_score":  23.6307
+                                                                                       },
+                                                                         "triadic":  {
+                                                                                         "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                         "holo_center_b":  116.05,
+                                                                                         "solar_name":  null,
+                                                                                         "solar_center_b":  null,
+                                                                                         "triadic_coherence":  null
+                                                                                     },
+                                                                         "predictive":  {
+                                                                                            "predicted_brightness":  115.8712,
+                                                                                            "predicted_alignment":  0.4745
+                                                                                        },
+                                                                         "globals":  {
+                                                                                         "symmetry_field":  {
+                                                                                                                "edge_avg":  0.046,
+                                                                                                                "vert_avg":  0.937,
+                                                                                                                "horiz_avg":  0.911
+                                                                                                            },
+                                                                                         "brightness_field":  {
+                                                                                                                  "edge_avg":  216.99,
+                                                                                                                  "center_avg":  160.71
+                                                                                                              }
+                                                                                     }
+                                                                     },
+                          "giza_delta_phi_shell_v2_5.png":  {
+                                                                "name":  "giza_delta_phi_shell_v2_5.png",
+                                                                "category":  "delta_phi",
+                                                                "meta":  {
+                                                                             "width":  1200,
+                                                                             "height":  800,
+                                                                             "avg_brightness":  246.53,
+                                                                             "center_brightness":  246.37,
+                                                                             "edge_brightness":  246.45,
+                                                                             "horiz_symmetry":  0.942,
+                                                                             "vert_symmetry":  0.964,
+                                                                             "edge_density":  0.04
+                                                                         },
+                                                                "delta_phi":  {
+                                                                                  "purity":  0.04,
+                                                                                  "symmetry":  0.953,
+                                                                                  "brightness":  246.37,
+                                                                                  "drift_score":  49.6712,
+                                                                                  "recurrence_score":  49.7625
+                                                                              },
+                                                                "triadic":  {
+                                                                                "holo_name":  "giza_holo_shell_profile_v3_0.png",
+                                                                                "holo_center_b":  244.39,
+                                                                                "solar_name":  null,
+                                                                                "solar_center_b":  null,
+                                                                                "triadic_coherence":  null
+                                                                            },
+                                                                "predictive":  {
+                                                                                   "predicted_brightness":  246.4062,
+                                                                                   "predicted_alignment":  0.4965
+                                                                               },
+                                                                "globals":  {
+                                                                                "symmetry_field":  {
+                                                                                                       "edge_avg":  0.046,
+                                                                                                       "vert_avg":  0.937,
+                                                                                                       "horiz_avg":  0.911
+                                                                                                   },
+                                                                                "brightness_field":  {
+                                                                                                         "edge_avg":  216.99,
+                                                                                                         "center_avg":  160.71
+                                                                                                     }
+                                                                            }
+                                                            },
+                          "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                         "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                                         "category":  "delta_phi",
+                                                                         "meta":  {
+                                                                                      "width":  1200,
+                                                                                      "height":  1200,
+                                                                                      "avg_brightness":  145.69,
+                                                                                      "center_brightness":  118.79,
+                                                                                      "edge_brightness":  153.06,
+                                                                                      "horiz_symmetry":  0.868,
+                                                                                      "vert_symmetry":  0.905,
+                                                                                      "edge_density":  0.057
+                                                                                  },
+                                                                         "delta_phi":  {
+                                                                                           "purity":  0.057,
+                                                                                           "symmetry":  0.8865,
+                                                                                           "brightness":  118.79,
+                                                                                           "drift_score":  24.1354,
+                                                                                           "recurrence_score":  24.2184
+                                                                                       },
+                                                                         "triadic":  {
+                                                                                         "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                         "holo_center_b":  116.05,
+                                                                                         "solar_name":  null,
+                                                                                         "solar_center_b":  null,
+                                                                                         "triadic_coherence":  null
+                                                                                     },
+                                                                         "predictive":  {
+                                                                                            "predicted_brightness":  118.8209,
+                                                                                            "predicted_alignment":  0.4718
+                                                                                        },
+                                                                         "globals":  {
+                                                                                         "symmetry_field":  {
+                                                                                                                "edge_avg":  0.046,
+                                                                                                                "vert_avg":  0.937,
+                                                                                                                "horiz_avg":  0.911
+                                                                                                            },
+                                                                                         "brightness_field":  {
+                                                                                                                  "edge_avg":  216.99,
+                                                                                                                  "center_avg":  160.71
+                                                                                                              }
+                                                                                     }
+                                                                     },
+                          "giza_delta_phi_shell_v2_2.png":  {
+                                                                "name":  "giza_delta_phi_shell_v2_2.png",
+                                                                "category":  "delta_phi",
+                                                                "meta":  {
+                                                                             "width":  1200,
+                                                                             "height":  800,
+                                                                             "avg_brightness":  245.97,
+                                                                             "center_brightness":  245.72,
+                                                                             "edge_brightness":  245.84,
+                                                                             "horiz_symmetry":  0.941,
+                                                                             "vert_symmetry":  0.964,
+                                                                             "edge_density":  0.042
+                                                                         },
+                                                                "delta_phi":  {
+                                                                                  "purity":  0.042,
+                                                                                  "symmetry":  0.9525,
+                                                                                  "brightness":  245.72,
+                                                                                  "drift_score":  49.5418,
+                                                                                  "recurrence_score":  49.6328
+                                                                              },
+                                                                "triadic":  {
+                                                                                "holo_name":  "giza_holo_shell_profile_v3_0.png",
+                                                                                "holo_center_b":  244.39,
+                                                                                "solar_name":  null,
+                                                                                "solar_center_b":  null,
+                                                                                "triadic_coherence":  null
+                                                                            },
+                                                                "predictive":  {
+                                                                                   "predicted_brightness":  245.7562,
+                                                                                   "predicted_alignment":  0.4972
+                                                                               },
+                                                                "globals":  {
+                                                                                "symmetry_field":  {
+                                                                                                       "edge_avg":  0.046,
+                                                                                                       "vert_avg":  0.937,
+                                                                                                       "horiz_avg":  0.911
+                                                                                                   },
+                                                                                "brightness_field":  {
+                                                                                                         "edge_avg":  216.99,
+                                                                                                         "center_avg":  160.71
+                                                                                                     }
+                                                                            }
+                                                            }
                       },
     "views":  {
-                  "top_drift":  {
-
-                                },
+                  "top_drift":  [
+                                    {
+                                        "name":  "giza_delta_phi_shell_v2_1.png",
+                                        "drift_score":  50.8084
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_purity_v2_5.png",
+                                        "drift_score":  50.7866
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_shell_v2_3.png",
+                                        "drift_score":  50.3986
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_purity_v2_3.png",
+                                        "drift_score":  50.0778
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_shell_v2_5.png",
+                                        "drift_score":  49.6712
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_shell_v2_2.png",
+                                        "drift_score":  49.5418
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                        "drift_score":  24.2180
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                        "drift_score":  24.1354
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_map_v2_1.png",
+                                        "drift_score":  24.0428
+                                    },
+                                    {
+                                        "name":  "giza_delta_phi_map_v2_0.png",
+                                        "drift_score":  23.6094
+                                    }
+                                ],
                   "top_triadic_coherence":  {
 
                                             },
-                  "top_recurrence":  {
-
-                                     },
-                  "top_predicted_brightness":  {
-
-                                               }
+                  "top_recurrence":  [
+                                         {
+                                             "name":  "giza_delta_phi_shell_v2_1.png",
+                                             "recurrence_score":  50.9002
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_purity_v2_5.png",
+                                             "recurrence_score":  50.8826
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_shell_v2_3.png",
+                                             "recurrence_score":  50.4908
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_purity_v2_3.png",
+                                             "recurrence_score":  50.1728
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_shell_v2_5.png",
+                                             "recurrence_score":  49.7625
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_shell_v2_2.png",
+                                             "recurrence_score":  49.6328
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                             "recurrence_score":  24.3005
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                             "recurrence_score":  24.2184
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_map_v2_1.png",
+                                             "recurrence_score":  24.1270
+                                         },
+                                         {
+                                             "name":  "giza_delta_phi_map_v2_0.png",
+                                             "recurrence_score":  23.6928
+                                         }
+                                     ],
+                  "top_predicted_brightness":  [
+                                                   {
+                                                       "name":  "giza_delta_phi_shell_v2_1.png",
+                                                       "predicted_brightness":  252.0866
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_purity_v2_5.png",
+                                                       "predicted_brightness":  251.9587
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_shell_v2_3.png",
+                                                       "predicted_brightness":  250.0368
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_purity_v2_3.png",
+                                                       "predicted_brightness":  248.4280
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_shell_v2_5.png",
+                                                       "predicted_brightness":  246.4062
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_shell_v2_2.png",
+                                                       "predicted_brightness":  245.7562
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                       "predicted_brightness":  119.2308
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                       "predicted_brightness":  118.8209
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_map_v2_1.png",
+                                                       "predicted_brightness":  118.3614
+                                                   },
+                                                   {
+                                                       "name":  "giza_delta_phi_map_v2_0.png",
+                                                       "predicted_brightness":  116.1911
+                                                   }
+                                               ]
               }
 }
 ===== GIZA_V5_0_ALL_ONE_META_END =====

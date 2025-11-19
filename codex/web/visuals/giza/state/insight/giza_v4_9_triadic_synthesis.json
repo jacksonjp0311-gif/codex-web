@@ -1,17 +1,279 @@
 ﻿{
     "protocol":  "CODEX_GIZA_TRIADIC",
     "version":  "4.9",
-    "timestamp_utc":  "2025-11-19T06:22:41.8479045Z",
+    "timestamp_utc":  "2025-11-19T06:40:53.5115685Z",
     "drift_map":  {
-
+                      "giza_delta_phi_map_v2_0.png":  {
+                                                          "name":  "giza_delta_phi_map_v2_0.png",
+                                                          "purity":  0.055,
+                                                          "symmetry":  0.8885,
+                                                          "brightness":  116.16,
+                                                          "drift_score":  23.6094
+                                                      },
+                      "giza_delta_phi_shell_v2_1.png":  {
+                                                            "name":  "giza_delta_phi_shell_v2_1.png",
+                                                            "purity":  0.039,
+                                                            "symmetry":  0.957,
+                                                            "brightness":  252.05,
+                                                            "drift_score":  50.8084
+                                                        },
+                      "giza_delta_phi_purity_v2_5.png":  {
+                                                             "name":  "giza_delta_phi_purity_v2_5.png",
+                                                             "purity":  0.023,
+                                                             "symmetry":  0.9835,
+                                                             "brightness":  251.92,
+                                                             "drift_score":  50.7866
+                                                         },
+                      "giza_delta_phi_shell_v2_3.png":  {
+                                                            "name":  "giza_delta_phi_shell_v2_3.png",
+                                                            "purity":  0.037,
+                                                            "symmetry":  0.9595,
+                                                            "brightness":  250,
+                                                            "drift_score":  50.3986
+                                                        },
+                      "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                       "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                                                                       "purity":  0.046,
+                                                                       "symmetry":  0.913,
+                                                                       "brightness":  106.3,
+                                                                       "drift_score":  21.6436
+                                                                   },
+                      "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                       "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                                                                       "purity":  0.046,
+                                                                       "symmetry":  0.920,
+                                                                       "brightness":  110.01,
+                                                                       "drift_score":  22.3884
+                                                                   },
+                      "giza_delta_phi_purity_v2_3.png":  {
+                                                             "name":  "giza_delta_phi_purity_v2_3.png",
+                                                             "purity":  0.025,
+                                                             "symmetry":  0.9745,
+                                                             "brightness":  248.39,
+                                                             "drift_score":  50.0778
+                                                         },
+                      "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                     "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                                     "purity":  0.06,
+                                                                     "symmetry":  0.885,
+                                                                     "brightness":  119.2,
+                                                                     "drift_score":  24.2180
+                                                                 },
+                      "giza_delta_phi_map_v2_1.png":  {
+                                                          "name":  "giza_delta_phi_map_v2_1.png",
+                                                          "purity":  0.05,
+                                                          "symmetry":  0.892,
+                                                          "brightness":  118.33,
+                                                          "drift_score":  24.0428
+                                                      },
+                      "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                       "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                                                                       "purity":  0.049,
+                                                                       "symmetry":  0.919,
+                                                                       "brightness":  109.63,
+                                                                       "drift_score":  22.3132
+                                                                   },
+                      "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                     "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                                                                     "purity":  0.059,
+                                                                     "symmetry":  0.890,
+                                                                     "brightness":  115.84,
+                                                                     "drift_score":  23.5476
+                                                                 },
+                      "giza_delta_phi_shell_v2_5.png":  {
+                                                            "name":  "giza_delta_phi_shell_v2_5.png",
+                                                            "purity":  0.04,
+                                                            "symmetry":  0.953,
+                                                            "brightness":  246.37,
+                                                            "drift_score":  49.6712
+                                                        },
+                      "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                     "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                                     "purity":  0.057,
+                                                                     "symmetry":  0.8865,
+                                                                     "brightness":  118.79,
+                                                                     "drift_score":  24.1354
+                                                                 },
+                      "giza_delta_phi_shell_v2_2.png":  {
+                                                            "name":  "giza_delta_phi_shell_v2_2.png",
+                                                            "purity":  0.042,
+                                                            "symmetry":  0.9525,
+                                                            "brightness":  245.72,
+                                                            "drift_score":  49.5418
+                                                        }
                   },
     "triadic_tensor":  {
-
+                           "giza_delta_phi_map_v2_0.png":  {
+                                                               "delta_phi":  "giza_delta_phi_map_v2_0.png",
+                                                               "holo":  "giza_holo_vertical_slice_v3_0.png",
+                                                               "solar":  null,
+                                                               "triadic_coherence":  null
+                                                           },
+                           "giza_delta_phi_shell_v2_1.png":  {
+                                                                 "delta_phi":  "giza_delta_phi_shell_v2_1.png",
+                                                                 "holo":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                 "solar":  null,
+                                                                 "triadic_coherence":  null
+                                                             },
+                           "giza_delta_phi_purity_v2_5.png":  {
+                                                                  "delta_phi":  "giza_delta_phi_purity_v2_5.png",
+                                                                  "holo":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                  "solar":  null,
+                                                                  "triadic_coherence":  null
+                                                              },
+                           "giza_delta_phi_shell_v2_3.png":  {
+                                                                 "delta_phi":  "giza_delta_phi_shell_v2_3.png",
+                                                                 "holo":  "giza_holo_solar_coupling_v3_0.png",
+                                                                 "solar":  null,
+                                                                 "triadic_coherence":  null
+                                                             },
+                           "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                            "delta_phi":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                                                                            "holo":  "giza_holo_E_slice_v3_0.png",
+                                                                            "solar":  null,
+                                                                            "triadic_coherence":  null
+                                                                        },
+                           "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                            "delta_phi":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                                                                            "holo":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                            "solar":  null,
+                                                                            "triadic_coherence":  null
+                                                                        },
+                           "giza_delta_phi_purity_v2_3.png":  {
+                                                                  "delta_phi":  "giza_delta_phi_purity_v2_3.png",
+                                                                  "holo":  "giza_holo_solar_coupling_v3_0.png",
+                                                                  "solar":  null,
+                                                                  "triadic_coherence":  null
+                                                              },
+                           "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                          "delta_phi":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                                          "holo":  "giza_holo_vertical_slice_v3_0.png",
+                                                                          "solar":  null,
+                                                                          "triadic_coherence":  null
+                                                                      },
+                           "giza_delta_phi_map_v2_1.png":  {
+                                                               "delta_phi":  "giza_delta_phi_map_v2_1.png",
+                                                               "holo":  "giza_holo_vertical_slice_v3_0.png",
+                                                               "solar":  null,
+                                                               "triadic_coherence":  null
+                                                           },
+                           "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                            "delta_phi":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                                                                            "holo":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                            "solar":  null,
+                                                                            "triadic_coherence":  null
+                                                                        },
+                           "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                          "delta_phi":  "giza_delta_phi_vertical_slice_v2_5.png",
+                                                                          "holo":  "giza_holo_vertical_slice_v3_0.png",
+                                                                          "solar":  null,
+                                                                          "triadic_coherence":  null
+                                                                      },
+                           "giza_delta_phi_shell_v2_5.png":  {
+                                                                 "delta_phi":  "giza_delta_phi_shell_v2_5.png",
+                                                                 "holo":  "giza_holo_shell_profile_v3_0.png",
+                                                                 "solar":  null,
+                                                                 "triadic_coherence":  null
+                                                             },
+                           "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                          "delta_phi":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                                          "holo":  "giza_holo_vertical_slice_v3_0.png",
+                                                                          "solar":  null,
+                                                                          "triadic_coherence":  null
+                                                                      },
+                           "giza_delta_phi_shell_v2_2.png":  {
+                                                                 "delta_phi":  "giza_delta_phi_shell_v2_2.png",
+                                                                 "holo":  "giza_holo_shell_profile_v3_0.png",
+                                                                 "solar":  null,
+                                                                 "triadic_coherence":  null
+                                                             }
                        },
     "recurrence_field":  {
-
+                             "giza_delta_phi_map_v2_0.png":  23.6928,
+                             "giza_delta_phi_shell_v2_1.png":  50.9002,
+                             "giza_delta_phi_purity_v2_5.png":  50.8826,
+                             "giza_delta_phi_shell_v2_3.png":  50.4908,
+                             "giza_delta_phi_horizontal_slice_v2_5.png":  21.7303,
+                             "giza_delta_phi_horizontal_slice_v2_3.png":  22.4758,
+                             "giza_delta_phi_purity_v2_3.png":  50.1728,
+                             "giza_delta_phi_vertical_slice_v2_3.png":  24.3005,
+                             "giza_delta_phi_map_v2_1.png":  24.1270,
+                             "giza_delta_phi_horizontal_slice_v2_2.png":  22.4002,
+                             "giza_delta_phi_vertical_slice_v2_5.png":  23.6307,
+                             "giza_delta_phi_shell_v2_5.png":  49.7625,
+                             "giza_delta_phi_vertical_slice_v2_2.png":  24.2184,
+                             "giza_delta_phi_shell_v2_2.png":  49.6328
                          },
     "predictive_field":  {
-
+                             "giza_delta_phi_map_v2_0.png":  {
+                                                                 "name":  "giza_delta_phi_map_v2_0.png",
+                                                                 "predicted_brightness":  116.1911,
+                                                                 "predicted_alignment":  0.4718
+                                                             },
+                             "giza_delta_phi_shell_v2_1.png":  {
+                                                                   "name":  "giza_delta_phi_shell_v2_1.png",
+                                                                   "predicted_brightness":  252.0866,
+                                                                   "predicted_alignment":  0.498
+                                                               },
+                             "giza_delta_phi_purity_v2_5.png":  {
+                                                                    "name":  "giza_delta_phi_purity_v2_5.png",
+                                                                    "predicted_brightness":  251.9587,
+                                                                    "predicted_alignment":  0.5032
+                                                                },
+                             "giza_delta_phi_shell_v2_3.png":  {
+                                                                   "name":  "giza_delta_phi_shell_v2_3.png",
+                                                                   "predicted_brightness":  250.0368,
+                                                                   "predicted_alignment":  0.4982
+                                                               },
+                             "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                              "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                                                                              "predicted_brightness":  106.3330,
+                                                                              "predicted_alignment":  0.4795
+                                                                          },
+                             "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                              "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                                                                              "predicted_brightness":  110.0436,
+                                                                              "predicted_alignment":  0.483
+                                                                          },
+                             "giza_delta_phi_purity_v2_3.png":  {
+                                                                    "name":  "giza_delta_phi_purity_v2_3.png",
+                                                                    "predicted_brightness":  248.4280,
+                                                                    "predicted_alignment":  0.4998
+                                                                },
+                             "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                            "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                                            "predicted_brightness":  119.2308,
+                                                                            "predicted_alignment":  0.4725
+                                                                        },
+                             "giza_delta_phi_map_v2_1.png":  {
+                                                                 "name":  "giza_delta_phi_map_v2_1.png",
+                                                                 "predicted_brightness":  118.3614,
+                                                                 "predicted_alignment":  0.471
+                                                             },
+                             "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                              "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                                                                              "predicted_brightness":  109.6635,
+                                                                              "predicted_alignment":  0.484
+                                                                          },
+                             "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                            "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                                                                            "predicted_brightness":  115.8712,
+                                                                            "predicted_alignment":  0.4745
+                                                                        },
+                             "giza_delta_phi_shell_v2_5.png":  {
+                                                                   "name":  "giza_delta_phi_shell_v2_5.png",
+                                                                   "predicted_brightness":  246.4062,
+                                                                   "predicted_alignment":  0.4965
+                                                               },
+                             "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                            "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                                            "predicted_brightness":  118.8209,
+                                                                            "predicted_alignment":  0.4718
+                                                                        },
+                             "giza_delta_phi_shell_v2_2.png":  {
+                                                                   "name":  "giza_delta_phi_shell_v2_2.png",
+                                                                   "predicted_brightness":  245.7562,
+                                                                   "predicted_alignment":  0.4972
+                                                               }
                          }
 }
