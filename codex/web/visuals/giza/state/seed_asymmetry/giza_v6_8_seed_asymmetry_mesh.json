@@ -1,0 +1,3066 @@
+﻿{
+    "node_263":  {
+                     "noise":  -4.75E-10,
+                     "t":  0.688481675393,
+                     "chirality":  1,
+                     "base_growth":  9.9E-11,
+                     "asym_value":  -3.76E-10,
+                     "index":  263
+                 },
+    "node_272":  {
+                     "noise":  -4.92E-10,
+                     "t":  0.712041884817,
+                     "chirality":  -1,
+                     "base_growth":  2E-12,
+                     "asym_value":  4.94E-10,
+                     "index":  272
+                 },
+    "node_241":  {
+                     "noise":  -6.8E-11,
+                     "t":  0.630890052356,
+                     "chirality":  1,
+                     "base_growth":  0,
+                     "asym_value":  -6.8E-11,
+                     "index":  241
+                 },
+    "node_154":  {
+                     "noise":  -2.19E-10,
+                     "t":  0.403141361257,
+                     "chirality":  1,
+                     "base_growth":  6.68E-10,
+                     "asym_value":  4.49E-10,
+                     "index":  154
+                 },
+    "node_23":  {
+                    "noise":  4.92E-10,
+                    "t":  0.060209424084,
+                    "chirality":  1,
+                    "base_growth":  1.793E-09,
+                    "asym_value":  2.285E-09,
+                    "index":  23
+                },
+    "node_32":  {
+                    "noise":  2.36E-10,
+                    "t":  0.083769633508,
+                    "chirality":  1,
+                    "base_growth":  1.689E-09,
+                    "asym_value":  1.925E-09,
+                    "index":  32
+                },
+    "node_227":  {
+                     "noise":  -2.14E-10,
+                     "t":  0.594240837696,
+                     "chirality":  1,
+                     "base_growth":  2.7E-11,
+                     "asym_value":  -1.87E-10,
+                     "index":  227
+                 },
+    "node_53":  {
+                    "noise":  2.25E-10,
+                    "t":  0.138743455497,
+                    "chirality":  -1,
+                    "base_growth":  1.968E-09,
+                    "asym_value":  1.742E-09,
+                    "index":  53
+                },
+    "node_236":  {
+                     "noise":  -7.8E-11,
+                     "t":  0.61780104712,
+                     "chirality":  1,
+                     "base_growth":  2.96E-10,
+                     "asym_value":  2.18E-10,
+                     "index":  236
+                 },
+    "node_40":  {
+                    "noise":  -2.23E-10,
+                    "t":  0.104712041885,
+                    "chirality":  1,
+                    "base_growth":  1.985E-09,
+                    "asym_value":  1.761E-09,
+                    "index":  40
+                },
+    "node_71":  {
+                    "noise":  1.8E-10,
+                    "t":  0.185863874346,
+                    "chirality":  1,
+                    "base_growth":  1.987E-09,
+                    "asym_value":  2.166E-09,
+                    "index":  71
+                },
+    "node_214":  {
+                     "noise":  -1.84E-10,
+                     "t":  0.560209424084,
+                     "chirality":  1,
+                     "base_growth":  1.9E-10,
+                     "asym_value":  6E-12,
+                     "index":  214
+                 },
+    "node_342":  {
+                     "noise":  -3.9E-10,
+                     "t":  0.895287958115,
+                     "chirality":  1,
+                     "base_growth":  7.89E-10,
+                     "asym_value":  3.99E-10,
+                     "index":  342
+                 },
+    "node_296":  {
+                     "noise":  1.33E-10,
+                     "t":  0.774869109948,
+                     "chirality":  -1,
+                     "base_growth":  7.4E-11,
+                     "asym_value":  -5.9E-11,
+                     "index":  296
+                 },
+    "node_153":  {
+                     "noise":  6.5E-11,
+                     "t":  0.400523560209,
+                     "chirality":  1,
+                     "base_growth":  9.55E-10,
+                     "asym_value":  1.02E-09,
+                     "index":  153
+                 },
+    "node_377":  {
+                     "noise":  3.75E-10,
+                     "t":  0.986910994764,
+                     "chirality":  -1,
+                     "base_growth":  1.419E-09,
+                     "asym_value":  1.044E-09,
+                     "index":  377
+                 },
+    "node_332":  {
+                     "noise":  4.25E-10,
+                     "t":  0.869109947644,
+                     "chirality":  -1,
+                     "base_growth":  3.74E-10,
+                     "asym_value":  -5.1E-11,
+                     "index":  332
+                 },
+    "node_355":  {
+                     "noise":  6.6E-11,
+                     "t":  0.929319371728,
+                     "chirality":  1,
+                     "base_growth":  9.32E-10,
+                     "asym_value":  9.98E-10,
+                     "index":  355
+                 },
+    "node_344":  {
+                     "noise":  -2.41E-10,
+                     "t":  0.900523560209,
+                     "chirality":  1,
+                     "base_growth":  1.034E-09,
+                     "asym_value":  7.92E-10,
+                     "index":  344
+                 },
+    "node_130":  {
+                     "noise":  2.28E-10,
+                     "t":  0.340314136126,
+                     "chirality":  -1,
+                     "base_growth":  1.709E-09,
+                     "asym_value":  1.481E-09,
+                     "index":  130
+                 },
+    "node_117":  {
+                     "noise":  2.4E-11,
+                     "t":  0.306282722513,
+                     "chirality":  -1,
+                     "base_growth":  1.648E-09,
+                     "asym_value":  1.624E-09,
+                     "index":  117
+                 },
+    "node_229":  {
+                     "noise":  9.5E-11,
+                     "t":  0.599476439791,
+                     "chirality":  1,
+                     "base_growth":  2.1E-11,
+                     "asym_value":  1.15E-10,
+                     "index":  229
+                 },
+    "node_38":  {
+                    "noise":  2E-11,
+                    "t":  0.099476439791,
+                    "chirality":  1,
+                    "base_growth":  2E-09,
+                    "asym_value":  2.02E-09,
+                    "index":  38
+                },
+    "node_238":  {
+                     "noise":  -4.49E-10,
+                     "t":  0.623036649215,
+                     "chirality":  -1,
+                     "base_growth":  2E-12,
+                     "asym_value":  4.52E-10,
+                     "index":  238
+                 },
+    "node_135":  {
+                     "noise":  -1.34E-10,
+                     "t":  0.353403141361,
+                     "chirality":  -1,
+                     "base_growth":  1.32E-09,
+                     "asym_value":  1.454E-09,
+                     "index":  135
+                 },
+    "node_28":  {
+                    "noise":  -1.85E-10,
+                    "t":  0.073298429319,
+                    "chirality":  -1,
+                    "base_growth":  1.949E-09,
+                    "asym_value":  2.134E-09,
+                    "index":  28
+                },
+    "node_124":  {
+                     "noise":  -1.14E-10,
+                     "t":  0.324607329843,
+                     "chirality":  1,
+                     "base_growth":  1.793E-09,
+                     "asym_value":  1.679E-09,
+                     "index":  124
+                 },
+    "node_7":  {
+                   "noise":  3.67E-10,
+                   "t":  0.01832460733,
+                   "chirality":  1,
+                   "base_growth":  1.811E-09,
+                   "asym_value":  2.178E-09,
+                   "index":  7
+               },
+    "node_65":  {
+                    "noise":  -2.71E-10,
+                    "t":  0.170157068063,
+                    "chirality":  1,
+                    "base_growth":  1.97E-09,
+                    "asym_value":  1.698E-09,
+                    "index":  65
+                },
+    "node_180":  {
+                     "noise":  -3.44E-10,
+                     "t":  0.471204188482,
+                     "chirality":  1,
+                     "base_growth":  2.94E-10,
+                     "asym_value":  -5.1E-11,
+                     "index":  180
+                 },
+    "node_103":  {
+                     "noise":  -4.49E-10,
+                     "t":  0.269633507853,
+                     "chirality":  -1,
+                     "base_growth":  1.478E-09,
+                     "asym_value":  1.927E-09,
+                     "index":  103
+                 },
+    "node_99":  {
+                    "noise":  -5.8E-11,
+                    "t":  0.259162303665,
+                    "chirality":  1,
+                    "base_growth":  1.586E-09,
+                    "asym_value":  1.528E-09,
+                    "index":  99
+                },
+    "node_72":  {
+                    "noise":  -4.53E-10,
+                    "t":  0.188481675393,
+                    "chirality":  -1,
+                    "base_growth":  1.981E-09,
+                    "asym_value":  2.434E-09,
+                    "index":  72
+                },
+    "node_305":  {
+                     "noise":  -1.86E-10,
+                     "t":  0.798429319372,
+                     "chirality":  -1,
+                     "base_growth":  3.25E-10,
+                     "asym_value":  5.11E-10,
+                     "index":  305
+                 },
+    "node_267":  {
+                     "noise":  -2.2E-11,
+                     "t":  0.698952879581,
+                     "chirality":  -1,
+                     "base_growth":  1.42E-10,
+                     "asym_value":  1.64E-10,
+                     "index":  267
+                 },
+    "node_276":  {
+                     "noise":  -4.71E-10,
+                     "t":  0.722513089005,
+                     "chirality":  1,
+                     "base_growth":  1.1E-11,
+                     "asym_value":  -4.6E-10,
+                     "index":  276
+                 },
+    "node_245":  {
+                     "noise":  3.35E-10,
+                     "t":  0.641361256545,
+                     "chirality":  1,
+                     "base_growth":  0,
+                     "asym_value":  3.35E-10,
+                     "index":  245
+                 },
+    "node_152":  {
+                     "noise":  -2.04E-10,
+                     "t":  0.397905759162,
+                     "chirality":  -1,
+                     "base_growth":  1.409E-09,
+                     "asym_value":  1.613E-09,
+                     "index":  152
+                 },
+    "node_143":  {
+                     "noise":  2.88E-10,
+                     "t":  0.374345549738,
+                     "chirality":  1,
+                     "base_growth":  1.122E-09,
+                     "asym_value":  1.41E-09,
+                     "index":  143
+                 },
+    "node_14":  {
+                    "noise":  -2.9E-11,
+                    "t":  0.03664921466,
+                    "chirality":  -1,
+                    "base_growth":  1.528E-09,
+                    "asym_value":  1.558E-09,
+                    "index":  14
+                },
+    "node_119":  {
+                     "noise":  1.74E-10,
+                     "t":  0.311518324607,
+                     "chirality":  -1,
+                     "base_growth":  1.861E-09,
+                     "asym_value":  1.687E-09,
+                     "index":  119
+                 },
+    "node_161":  {
+                     "noise":  -4.9E-11,
+                     "t":  0.421465968586,
+                     "chirality":  -1,
+                     "base_growth":  9.27E-10,
+                     "asym_value":  9.77E-10,
+                     "index":  161
+                 },
+    "node_36":  {
+                    "noise":  2.9E-11,
+                    "t":  0.094240837696,
+                    "chirality":  1,
+                    "base_growth":  2E-09,
+                    "asym_value":  2.029E-09,
+                    "index":  36
+                },
+    "node_232":  {
+                     "noise":  -1.93E-10,
+                     "t":  0.607329842932,
+                     "chirality":  -1,
+                     "base_growth":  6E-12,
+                     "asym_value":  1.99E-10,
+                     "index":  232
+                 },
+    "node_112":  {
+                     "noise":  2.48E-10,
+                     "t":  0.293193717277,
+                     "chirality":  -1,
+                     "base_growth":  1.944E-09,
+                     "asym_value":  1.696E-09,
+                     "index":  112
+                 },
+    "node_282":  {
+                     "noise":  5.7E-11,
+                     "t":  0.738219895288,
+                     "chirality":  -1,
+                     "base_growth":  3.01E-10,
+                     "asym_value":  2.44E-10,
+                     "index":  282
+                 },
+    "node_39":  {
+                    "noise":  -1.26E-10,
+                    "t":  0.102094240838,
+                    "chirality":  -1,
+                    "base_growth":  1.987E-09,
+                    "asym_value":  2.114E-09,
+                    "index":  39
+                },
+    "node_343":  {
+                     "noise":  -1.96E-10,
+                     "t":  0.897905759162,
+                     "chirality":  1,
+                     "base_growth":  1.182E-09,
+                     "asym_value":  9.87E-10,
+                     "index":  343
+                 },
+    "node_134":  {
+                     "noise":  7E-11,
+                     "t":  0.350785340314,
+                     "chirality":  -1,
+                     "base_growth":  1.175E-09,
+                     "asym_value":  1.105E-09,
+                     "index":  134
+                 },
+    "node_125":  {
+                     "noise":  2.7E-10,
+                     "t":  0.32722513089,
+                     "chirality":  -1,
+                     "base_growth":  1.231E-09,
+                     "asym_value":  9.6E-10,
+                     "index":  125
+                 },
+    "node_176":  {
+                     "noise":  1.2E-10,
+                     "t":  0.460732984293,
+                     "chirality":  1,
+                     "base_growth":  9E-10,
+                     "asym_value":  1.02E-09,
+                     "index":  176
+                 },
+    "node_82":  {
+                    "noise":  -4.72E-10,
+                    "t":  0.214659685864,
+                    "chirality":  1,
+                    "base_growth":  1.887E-09,
+                    "asym_value":  1.414E-09,
+                    "index":  82
+                },
+    "node_204":  {
+                     "noise":  -6E-11,
+                     "t":  0.534031413613,
+                     "chirality":  1,
+                     "base_growth":  8.7E-11,
+                     "asym_value":  2.7E-11,
+                     "index":  204
+                 },
+    "node_96":  {
+                    "noise":  3.77E-10,
+                    "t":  0.251308900524,
+                    "chirality":  -1,
+                    "base_growth":  1.877E-09,
+                    "asym_value":  1.5E-09,
+                    "index":  96
+                },
+    "node_157":  {
+                     "noise":  2.43E-10,
+                     "t":  0.410994764398,
+                     "chirality":  1,
+                     "base_growth":  1.386E-09,
+                     "asym_value":  1.628E-09,
+                     "index":  157
+                 },
+    "node_277":  {
+                     "noise":  -1.42E-10,
+                     "t":  0.725130890052,
+                     "chirality":  -1,
+                     "base_growth":  1.1E-11,
+                     "asym_value":  1.53E-10,
+                     "index":  277
+                 },
+    "node_244":  {
+                     "noise":  -4.7E-10,
+                     "t":  0.638743455497,
+                     "chirality":  -1,
+                     "base_growth":  3.6E-11,
+                     "asym_value":  5.06E-10,
+                     "index":  244
+                 },
+    "node_255":  {
+                     "noise":  -2.26E-10,
+                     "t":  0.667539267016,
+                     "chirality":  1,
+                     "base_growth":  8E-12,
+                     "asym_value":  -2.18E-10,
+                     "index":  255
+                 },
+    "node_131":  {
+                     "noise":  4.18E-10,
+                     "t":  0.342931937173,
+                     "chirality":  -1,
+                     "base_growth":  1.555E-09,
+                     "asym_value":  1.137E-09,
+                     "index":  131
+                 },
+    "node_162":  {
+                     "noise":  2.2E-11,
+                     "t":  0.424083769634,
+                     "chirality":  1,
+                     "base_growth":  1.124E-09,
+                     "asym_value":  1.146E-09,
+                     "index":  162
+                 },
+    "node_37":  {
+                    "noise":  -2.68E-10,
+                    "t":  0.096858638743,
+                    "chirality":  1,
+                    "base_growth":  1.987E-09,
+                    "asym_value":  1.719E-09,
+                    "index":  37
+                },
+    "node_366":  {
+                     "noise":  4.57E-10,
+                     "t":  0.958115183246,
+                     "chirality":  -1,
+                     "base_growth":  1.464E-09,
+                     "asym_value":  1.007E-09,
+                     "index":  366
+                 },
+    "node_285":  {
+                     "noise":  2.52E-10,
+                     "t":  0.746073298429,
+                     "chirality":  -1,
+                     "base_growth":  1.17E-10,
+                     "asym_value":  -1.34E-10,
+                     "index":  285
+                 },
+    "node_294":  {
+                     "noise":  -1.6E-11,
+                     "t":  0.769633507853,
+                     "chirality":  -1,
+                     "base_growth":  5.13E-10,
+                     "asym_value":  5.29E-10,
+                     "index":  294
+                 },
+    "node_288":  {
+                     "noise":  1.36E-10,
+                     "t":  0.753926701571,
+                     "chirality":  1,
+                     "base_growth":  4.1E-11,
+                     "asym_value":  1.77E-10,
+                     "index":  288
+                 },
+    "node_81":  {
+                    "noise":  -1.24E-10,
+                    "t":  0.212041884817,
+                    "chirality":  -1,
+                    "base_growth":  2E-09,
+                    "asym_value":  2.124E-09,
+                    "index":  81
+                },
+    "node_9":  {
+                   "noise":  4.6E-11,
+                   "t":  0.023560209424,
+                   "chirality":  -1,
+                   "base_growth":  1.251E-09,
+                   "asym_value":  1.205E-09,
+                   "index":  9
+               },
+    "node_156":  {
+                     "noise":  -1.94E-10,
+                     "t":  0.408376963351,
+                     "chirality":  -1,
+                     "base_growth":  9.83E-10,
+                     "asym_value":  1.177E-09,
+                     "index":  156
+                 },
+    "node_147":  {
+                     "noise":  -4.95E-10,
+                     "t":  0.384816753927,
+                     "chirality":  1,
+                     "base_growth":  9.88E-10,
+                     "asym_value":  4.93E-10,
+                     "index":  147
+                 },
+    "node_359":  {
+                     "noise":  -5.5E-11,
+                     "t":  0.939790575916,
+                     "chirality":  1,
+                     "base_growth":  1.503E-09,
+                     "asym_value":  1.447E-09,
+                     "index":  359
+                 },
+    "node_174":  {
+                     "noise":  1.3E-11,
+                     "t":  0.455497382199,
+                     "chirality":  -1,
+                     "base_growth":  6.95E-10,
+                     "asym_value":  6.81E-10,
+                     "index":  174
+                 },
+    "node_165":  {
+                     "noise":  -3.38E-10,
+                     "t":  0.431937172775,
+                     "chirality":  1,
+                     "base_growth":  4.76E-10,
+                     "asym_value":  1.38E-10,
+                     "index":  165
+                 },
+    "node_10":  {
+                    "noise":  4.9E-11,
+                    "t":  0.026178010471,
+                    "chirality":  -1,
+                    "base_growth":  1.674E-09,
+                    "asym_value":  1.625E-09,
+                    "index":  10
+                },
+    "node_68":  {
+                    "noise":  -4E-12,
+                    "t":  0.178010471204,
+                    "chirality":  1,
+                    "base_growth":  1.994E-09,
+                    "asym_value":  1.991E-09,
+                    "index":  68
+                },
+    "node_79":  {
+                    "noise":  -2.87E-10,
+                    "t":  0.206806282723,
+                    "chirality":  -1,
+                    "base_growth":  1.909E-09,
+                    "asym_value":  2.196E-09,
+                    "index":  79
+                },
+    "node_319":  {
+                     "noise":  2.22E-10,
+                     "t":  0.835078534031,
+                     "chirality":  1,
+                     "base_growth":  2.64E-10,
+                     "asym_value":  4.86E-10,
+                     "index":  319
+                 },
+    "node_168":  {
+                     "noise":  -2.29E-10,
+                     "t":  0.439790575916,
+                     "chirality":  1,
+                     "base_growth":  9.68E-10,
+                     "asym_value":  7.39E-10,
+                     "index":  168
+                 },
+    "node_197":  {
+                     "noise":  4.8E-10,
+                     "t":  0.515706806283,
+                     "chirality":  -1,
+                     "base_growth":  1.55E-10,
+                     "asym_value":  -3.26E-10,
+                     "index":  197
+                 },
+    "node_110":  {
+                     "noise":  -5E-12,
+                     "t":  0.287958115183,
+                     "chirality":  1,
+                     "base_growth":  1.83E-09,
+                     "asym_value":  1.824E-09,
+                     "index":  110
+                 },
+    "node_186":  {
+                     "noise":  1.12E-10,
+                     "t":  0.486910994764,
+                     "chirality":  -1,
+                     "base_growth":  2.37E-10,
+                     "asym_value":  1.25E-10,
+                     "index":  186
+                 },
+    "node_121":  {
+                     "noise":  -3.7E-10,
+                     "t":  0.316753926702,
+                     "chirality":  1,
+                     "base_growth":  1.458E-09,
+                     "asym_value":  1.088E-09,
+                     "index":  121
+                 },
+    "node_380":  {
+                     "noise":  -3.32E-10,
+                     "t":  0.994764397906,
+                     "chirality":  1,
+                     "base_growth":  1.727E-09,
+                     "asym_value":  1.395E-09,
+                     "index":  380
+                 },
+    "node_239":  {
+                     "noise":  -1.57E-10,
+                     "t":  0.625654450262,
+                     "chirality":  1,
+                     "base_growth":  2.48E-10,
+                     "asym_value":  9.1E-11,
+                     "index":  239
+                 },
+    "node_3":  {
+                   "noise":  1.67E-10,
+                   "t":  0.007853403141,
+                   "chirality":  -1,
+                   "base_growth":  1.318E-09,
+                   "asym_value":  1.151E-09,
+                   "index":  3
+               },
+    "node_12":  {
+                    "noise":  -2.32E-10,
+                    "t":  0.031413612565,
+                    "chirality":  1,
+                    "base_growth":  1.885E-09,
+                    "asym_value":  1.653E-09,
+                    "index":  12
+                },
+    "node_104":  {
+                     "noise":  -3.18E-10,
+                     "t":  0.272251308901,
+                     "chirality":  1,
+                     "base_growth":  1.811E-09,
+                     "asym_value":  1.493E-09,
+                     "index":  104
+                 },
+    "node_21":  {
+                    "noise":  2.48E-10,
+                    "t":  0.05497382199,
+                    "chirality":  -1,
+                    "base_growth":  1.399E-09,
+                    "asym_value":  1.151E-09,
+                    "index":  21
+                },
+    "node_260":  {
+                     "noise":  3.8E-10,
+                     "t":  0.680628272251,
+                     "chirality":  -1,
+                     "base_growth":  1E-12,
+                     "asym_value":  -3.79E-10,
+                     "index":  260
+                 },
+    "node_166":  {
+                     "noise":  2.88E-10,
+                     "t":  0.434554973822,
+                     "chirality":  1,
+                     "base_growth":  9.79E-10,
+                     "asym_value":  1.268E-09,
+                     "index":  166
+                 },
+    "node_60":  {
+                    "noise":  2.96E-10,
+                    "t":  0.157068062827,
+                    "chirality":  1,
+                    "base_growth":  1.948E-09,
+                    "asym_value":  2.245E-09,
+                    "index":  60
+                },
+    "node_270":  {
+                     "noise":  -2.12E-10,
+                     "t":  0.706806282723,
+                     "chirality":  -1,
+                     "base_growth":  0,
+                     "asym_value":  2.12E-10,
+                     "index":  270
+                 },
+    "node_188":  {
+                     "noise":  4.26E-10,
+                     "t":  0.492146596859,
+                     "chirality":  1,
+                     "base_growth":  3.98E-10,
+                     "asym_value":  8.24E-10,
+                     "index":  188
+                 },
+    "node_354":  {
+                     "noise":  4.3E-11,
+                     "t":  0.926701570681,
+                     "chirality":  1,
+                     "base_growth":  7.18E-10,
+                     "asym_value":  7.6E-10,
+                     "index":  354
+                 },
+    "node_311":  {
+                     "noise":  -3.75E-10,
+                     "t":  0.814136125654,
+                     "chirality":  1,
+                     "base_growth":  3.07E-10,
+                     "asym_value":  -6.8E-11,
+                     "index":  311
+                 },
+    "node_290":  {
+                     "noise":  8.6E-11,
+                     "t":  0.759162303665,
+                     "chirality":  -1,
+                     "base_growth":  5.8E-11,
+                     "asym_value":  -2.8E-11,
+                     "index":  290
+                 },
+    "node_376":  {
+                     "noise":  -7.7E-11,
+                     "t":  0.984293193717,
+                     "chirality":  1,
+                     "base_growth":  1.464E-09,
+                     "asym_value":  1.386E-09,
+                     "index":  376
+                 },
+    "node_379":  {
+                     "noise":  -2.94E-10,
+                     "t":  0.992146596859,
+                     "chirality":  1,
+                     "base_growth":  1.411E-09,
+                     "asym_value":  1.117E-09,
+                     "index":  379
+                 },
+    "node_368":  {
+                     "noise":  -4.13E-10,
+                     "t":  0.96335078534,
+                     "chirality":  -1,
+                     "base_growth":  1.411E-09,
+                     "asym_value":  1.825E-09,
+                     "index":  368
+                 },
+    "node_321":  {
+                     "noise":  2.61E-10,
+                     "t":  0.840314136126,
+                     "chirality":  1,
+                     "base_growth":  3.96E-10,
+                     "asym_value":  6.57E-10,
+                     "index":  321
+                 },
+    "node_150":  {
+                     "noise":  -2.4E-11,
+                     "t":  0.392670157068,
+                     "chirality":  1,
+                     "base_growth":  1.505E-09,
+                     "asym_value":  1.481E-09,
+                     "index":  150
+                 },
+    "node_29":  {
+                    "noise":  -4.93E-10,
+                    "t":  0.075916230366,
+                    "chirality":  -1,
+                    "base_growth":  1.949E-09,
+                    "asym_value":  2.442E-09,
+                    "index":  29
+                },
+    "node_31":  {
+                    "noise":  3.25E-10,
+                    "t":  0.081151832461,
+                    "chirality":  -1,
+                    "base_growth":  1.681E-09,
+                    "asym_value":  1.356E-09,
+                    "index":  31
+                },
+    "node_381":  {
+                     "noise":  -2.4E-10,
+                     "t":  0.997382198953,
+                     "chirality":  1,
+                     "base_growth":  1.173E-09,
+                     "asym_value":  9.34E-10,
+                     "index":  381
+                 },
+    "node_70":  {
+                    "noise":  4.88E-10,
+                    "t":  0.183246073298,
+                    "chirality":  1,
+                    "base_growth":  1.861E-09,
+                    "asym_value":  2.348E-09,
+                    "index":  70
+                },
+    "node_122":  {
+                     "noise":  9.6E-11,
+                     "t":  0.319371727749,
+                     "chirality":  1,
+                     "base_growth":  1.296E-09,
+                     "asym_value":  1.392E-09,
+                     "index":  122
+                 },
+    "node_334":  {
+                     "noise":  -1.1E-11,
+                     "t":  0.874345549738,
+                     "chirality":  -1,
+                     "base_growth":  1.098E-09,
+                     "asym_value":  1.109E-09,
+                     "index":  334
+                 },
+    "node_269":  {
+                     "noise":  2.38E-10,
+                     "t":  0.704188481675,
+                     "chirality":  1,
+                     "base_growth":  2.15E-10,
+                     "asym_value":  4.53E-10,
+                     "index":  269
+                 },
+    "node_356":  {
+                     "noise":  2.52E-10,
+                     "t":  0.931937172775,
+                     "chirality":  1,
+                     "base_growth":  9.63E-10,
+                     "asym_value":  1.215E-09,
+                     "index":  356
+                 },
+    "node_210":  {
+                     "noise":  -2.07E-10,
+                     "t":  0.549738219895,
+                     "chirality":  1,
+                     "base_growth":  4.44E-10,
+                     "asym_value":  2.37E-10,
+                     "index":  210
+                 },
+    "node_16":  {
+                    "noise":  -5E-12,
+                    "t":  0.041884816754,
+                    "chirality":  -1,
+                    "base_growth":  1.869E-09,
+                    "asym_value":  1.875E-09,
+                    "index":  16
+                },
+    "node_199":  {
+                     "noise":  1.24E-10,
+                     "t":  0.520942408377,
+                     "chirality":  -1,
+                     "base_growth":  3.01E-10,
+                     "asym_value":  1.77E-10,
+                     "index":  199
+                 },
+    "node_25":  {
+                    "noise":  3.78E-10,
+                    "t":  0.065445026178,
+                    "chirality":  -1,
+                    "base_growth":  1.808E-09,
+                    "asym_value":  1.431E-09,
+                    "index":  25
+                },
+    "node_113":  {
+                     "noise":  3.3E-10,
+                     "t":  0.295811518325,
+                     "chirality":  1,
+                     "base_growth":  1.427E-09,
+                     "asym_value":  1.756E-09,
+                     "index":  113
+                 },
+    "node_205":  {
+                     "noise":  -1.46E-10,
+                     "t":  0.53664921466,
+                     "chirality":  1,
+                     "base_growth":  1.84E-10,
+                     "asym_value":  3.8E-11,
+                     "index":  205
+                 },
+    "node_140":  {
+                     "noise":  -4.25E-10,
+                     "t":  0.366492146597,
+                     "chirality":  1,
+                     "base_growth":  1.398E-09,
+                     "asym_value":  9.73E-10,
+                     "index":  140
+                 },
+    "node_90":  {
+                    "noise":  -9.4E-11,
+                    "t":  0.235602094241,
+                    "chirality":  1,
+                    "base_growth":  1.639E-09,
+                    "asym_value":  1.546E-09,
+                    "index":  90
+                },
+    "node_219":  {
+                     "noise":  2.21E-10,
+                     "t":  0.573298429319,
+                     "chirality":  -1,
+                     "base_growth":  5.49E-10,
+                     "asym_value":  3.28E-10,
+                     "index":  219
+                 },
+    "node_382":  {
+                     "noise":  3.91E-10,
+                     "t":  1,
+                     "chirality":  -1,
+                     "base_growth":  1.176E-09,
+                     "asym_value":  7.85E-10,
+                     "index":  382
+                 },
+    "node_190":  {
+                     "noise":  -2.3E-11,
+                     "t":  0.497382198953,
+                     "chirality":  -1,
+                     "base_growth":  4.07E-10,
+                     "asym_value":  4.3E-10,
+                     "index":  190
+                 },
+    "node_89":  {
+                    "noise":  5.6E-11,
+                    "t":  0.232984293194,
+                    "chirality":  1,
+                    "base_growth":  1.932E-09,
+                    "asym_value":  1.989E-09,
+                    "index":  89
+                },
+    "node_98":  {
+                    "noise":  -4.47E-10,
+                    "t":  0.256544502618,
+                    "chirality":  -1,
+                    "base_growth":  1.527E-09,
+                    "asym_value":  1.974E-09,
+                    "index":  98
+                },
+    "node_268":  {
+                     "noise":  -1.81E-10,
+                     "t":  0.701570680628,
+                     "chirality":  1,
+                     "base_growth":  0,
+                     "asym_value":  -1.81E-10,
+                     "index":  268
+                 },
+    "node_34":  {
+                    "noise":  -5.8E-11,
+                    "t":  0.089005235602,
+                    "chirality":  1,
+                    "base_growth":  1.877E-09,
+                    "asym_value":  1.819E-09,
+                    "index":  34
+                },
+    "node_279":  {
+                     "noise":  3E-11,
+                     "t":  0.730366492147,
+                     "chirality":  -1,
+                     "base_growth":  1.23E-10,
+                     "asym_value":  9.3E-11,
+                     "index":  279
+                 },
+    "node_20":  {
+                    "noise":  -4.76E-10,
+                    "t":  0.052356020942,
+                    "chirality":  -1,
+                    "base_growth":  1.54E-09,
+                    "asym_value":  2.016E-09,
+                    "index":  20
+                },
+    "node_142":  {
+                     "noise":  1.1E-10,
+                     "t":  0.371727748691,
+                     "chirality":  -1,
+                     "base_growth":  1.472E-09,
+                     "asym_value":  1.362E-09,
+                     "index":  142
+                 },
+    "node_17":  {
+                    "noise":  -2.99E-10,
+                    "t":  0.044502617801,
+                    "chirality":  -1,
+                    "base_growth":  1.75E-09,
+                    "asym_value":  2.048E-09,
+                    "index":  17
+                },
+    "node_171":  {
+                     "noise":  2.72E-10,
+                     "t":  0.447643979058,
+                     "chirality":  1,
+                     "base_growth":  7.69E-10,
+                     "asym_value":  1.041E-09,
+                     "index":  171
+                 },
+    "node_24":  {
+                    "noise":  -4.64E-10,
+                    "t":  0.062827225131,
+                    "chirality":  1,
+                    "base_growth":  1.421E-09,
+                    "asym_value":  9.57E-10,
+                    "index":  24
+                },
+    "node_35":  {
+                    "noise":  -2.46E-10,
+                    "t":  0.091623036649,
+                    "chirality":  -1,
+                    "base_growth":  1.928E-09,
+                    "asym_value":  2.174E-09,
+                    "index":  35
+                },
+    "node_138":  {
+                     "noise":  2.12E-10,
+                     "t":  0.361256544503,
+                     "chirality":  -1,
+                     "base_growth":  9.5E-10,
+                     "asym_value":  7.37E-10,
+                     "index":  138
+                 },
+    "node_129":  {
+                     "noise":  3.42E-10,
+                     "t":  0.337696335079,
+                     "chirality":  -1,
+                     "base_growth":  1.574E-09,
+                     "asym_value":  1.232E-09,
+                     "index":  129
+                 },
+    "node_283":  {
+                     "noise":  3.45E-10,
+                     "t":  0.740837696335,
+                     "chirality":  1,
+                     "base_growth":  5.8E-11,
+                     "asym_value":  4.03E-10,
+                     "index":  283
+                 },
+    "node_109":  {
+                     "noise":  -4.4E-10,
+                     "t":  0.285340314136,
+                     "chirality":  -1,
+                     "base_growth":  1.472E-09,
+                     "asym_value":  1.912E-09,
+                     "index":  109
+                 },
+    "node_329":  {
+                     "noise":  4.09E-10,
+                     "t":  0.861256544503,
+                     "chirality":  1,
+                     "base_growth":  1.118E-09,
+                     "asym_value":  1.526E-09,
+                     "index":  329
+                 },
+    "node_249":  {
+                     "noise":  3.78E-10,
+                     "t":  0.651832460733,
+                     "chirality":  -1,
+                     "base_growth":  3E-12,
+                     "asym_value":  -3.75E-10,
+                     "index":  249
+                 },
+    "node_120":  {
+                     "noise":  1.36E-10,
+                     "t":  0.314136125654,
+                     "chirality":  1,
+                     "base_growth":  1.514E-09,
+                     "asym_value":  1.65E-09,
+                     "index":  120
+                 },
+    "node_83":  {
+                    "noise":  -1.17E-10,
+                    "t":  0.217277486911,
+                    "chirality":  -1,
+                    "base_growth":  1.928E-09,
+                    "asym_value":  2.045E-09,
+                    "index":  83
+                },
+    "node_92":  {
+                    "noise":  -3.54E-10,
+                    "t":  0.240837696335,
+                    "chirality":  -1,
+                    "base_growth":  1.942E-09,
+                    "asym_value":  2.296E-09,
+                    "index":  92
+                },
+    "node_158":  {
+                     "noise":  2.53E-10,
+                     "t":  0.413612565445,
+                     "chirality":  -1,
+                     "base_growth":  1.301E-09,
+                     "asym_value":  1.048E-09,
+                     "index":  158
+                 },
+    "node_149":  {
+                     "noise":  -8.5E-11,
+                     "t":  0.390052356021,
+                     "chirality":  -1,
+                     "base_growth":  8.28E-10,
+                     "asym_value":  9.12E-10,
+                     "index":  149
+                 },
+    "node_44":  {
+                    "noise":  -2.04E-10,
+                    "t":  0.115183246073,
+                    "chirality":  -1,
+                    "base_growth":  1.969E-09,
+                    "asym_value":  2.174E-09,
+                    "index":  44
+                },
+    "node_55":  {
+                    "noise":  -1.79E-10,
+                    "t":  0.143979057592,
+                    "chirality":  1,
+                    "base_growth":  2E-09,
+                    "asym_value":  1.821E-09,
+                    "index":  55
+                },
+    "node_207":  {
+                     "noise":  -3.04E-10,
+                     "t":  0.541884816754,
+                     "chirality":  1,
+                     "base_growth":  1.73E-10,
+                     "asym_value":  -1.31E-10,
+                     "index":  207
+                 },
+    "node_66":  {
+                    "noise":  -4.23E-10,
+                    "t":  0.17277486911,
+                    "chirality":  -1,
+                    "base_growth":  1.99E-09,
+                    "asym_value":  2.412E-09,
+                    "index":  66
+                },
+    "node_316":  {
+                     "noise":  7.3E-11,
+                     "t":  0.82722513089,
+                     "chirality":  -1,
+                     "base_growth":  7.91E-10,
+                     "asym_value":  7.18E-10,
+                     "index":  316
+                 },
+    "node_77":  {
+                    "noise":  -3.4E-11,
+                    "t":  0.201570680628,
+                    "chirality":  -1,
+                    "base_growth":  1.996E-09,
+                    "asym_value":  2.029E-09,
+                    "index":  77
+                },
+    "node_350":  {
+                     "noise":  2.58E-10,
+                     "t":  0.916230366492,
+                     "chirality":  1,
+                     "base_growth":  1.252E-09,
+                     "asym_value":  1.511E-09,
+                     "index":  350
+                 },
+    "node_254":  {
+                     "noise":  3.85E-10,
+                     "t":  0.664921465969,
+                     "chirality":  1,
+                     "base_growth":  7.4E-11,
+                     "asym_value":  4.59E-10,
+                     "index":  254
+                 },
+    "node_191":  {
+                     "noise":  1.47E-10,
+                     "t":  0.5,
+                     "chirality":  -1,
+                     "base_growth":  5.46E-10,
+                     "asym_value":  3.99E-10,
+                     "index":  191
+                 },
+    "node_289":  {
+                     "noise":  4.74E-10,
+                     "t":  0.756544502618,
+                     "chirality":  -1,
+                     "base_growth":  4E-12,
+                     "asym_value":  -4.7E-10,
+                     "index":  289
+                 },
+    "node_298":  {
+                     "noise":  1.7E-11,
+                     "t":  0.780104712042,
+                     "chirality":  -1,
+                     "base_growth":  3.4E-11,
+                     "asym_value":  1.6E-11,
+                     "index":  298
+                 },
+    "node_26":  {
+                    "noise":  5E-12,
+                    "t":  0.068062827225,
+                    "chirality":  -1,
+                    "base_growth":  1.826E-09,
+                    "asym_value":  1.821E-09,
+                    "index":  26
+                },
+    "node_293":  {
+                     "noise":  -1.3E-11,
+                     "t":  0.767015706806,
+                     "chirality":  1,
+                     "base_growth":  3.78E-10,
+                     "asym_value":  3.65E-10,
+                     "index":  293
+                 },
+    "node_371":  {
+                     "noise":  -4.5E-10,
+                     "t":  0.971204188482,
+                     "chirality":  -1,
+                     "base_growth":  9.54E-10,
+                     "asym_value":  1.405E-09,
+                     "index":  371
+                 },
+    "node_93":  {
+                    "noise":  -1.27E-10,
+                    "t":  0.243455497382,
+                    "chirality":  1,
+                    "base_growth":  1.833E-09,
+                    "asym_value":  1.706E-09,
+                    "index":  93
+                },
+    "node_146":  {
+                     "noise":  1.43E-10,
+                     "t":  0.38219895288,
+                     "chirality":  -1,
+                     "base_growth":  9.08E-10,
+                     "asym_value":  7.65E-10,
+                     "index":  146
+                 },
+    "node_240":  {
+                     "noise":  3.56E-10,
+                     "t":  0.628272251309,
+                     "chirality":  1,
+                     "base_growth":  3E-12,
+                     "asym_value":  3.59E-10,
+                     "index":  240
+                 },
+    "node_164":  {
+                     "noise":  4.59E-10,
+                     "t":  0.429319371728,
+                     "chirality":  -1,
+                     "base_growth":  9.01E-10,
+                     "asym_value":  4.41E-10,
+                     "index":  164
+                 },
+    "node_69":  {
+                    "noise":  4.17E-10,
+                    "t":  0.180628272251,
+                    "chirality":  1,
+                    "base_growth":  1.902E-09,
+                    "asym_value":  2.319E-09,
+                    "index":  69
+                },
+    "node_78":  {
+                    "noise":  5E-10,
+                    "t":  0.204188481675,
+                    "chirality":  -1,
+                    "base_growth":  1.992E-09,
+                    "asym_value":  1.492E-09,
+                    "index":  78
+                },
+    "node_340":  {
+                     "noise":  -2.43E-10,
+                     "t":  0.890052356021,
+                     "chirality":  -1,
+                     "base_growth":  8.86E-10,
+                     "asym_value":  1.129E-09,
+                     "index":  340
+                 },
+    "node_212":  {
+                     "noise":  -3.36E-10,
+                     "t":  0.55497382199,
+                     "chirality":  1,
+                     "base_growth":  5.39E-10,
+                     "asym_value":  2.03E-10,
+                     "index":  212
+                 },
+    "node_357":  {
+                     "noise":  1.85E-10,
+                     "t":  0.934554973822,
+                     "chirality":  -1,
+                     "base_growth":  1.101E-09,
+                     "asym_value":  9.16E-10,
+                     "index":  357
+                 },
+    "node_299":  {
+                     "noise":  3E-11,
+                     "t":  0.782722513089,
+                     "chirality":  -1,
+                     "base_growth":  4.71E-10,
+                     "asym_value":  4.4E-10,
+                     "index":  299
+                 },
+    "node_303":  {
+                     "noise":  1.96E-10,
+                     "t":  0.793193717277,
+                     "chirality":  1,
+                     "base_growth":  7E-10,
+                     "asym_value":  8.96E-10,
+                     "index":  303
+                 },
+    "node_107":  {
+                     "noise":  -4.86E-10,
+                     "t":  0.280104712042,
+                     "chirality":  1,
+                     "base_growth":  1.923E-09,
+                     "asym_value":  1.437E-09,
+                     "index":  107
+                 },
+    "node_348":  {
+                     "noise":  9.8E-11,
+                     "t":  0.910994764398,
+                     "chirality":  -1,
+                     "base_growth":  6.89E-10,
+                     "asym_value":  5.9E-10,
+                     "index":  348
+                 },
+    "node_223":  {
+                     "noise":  3.85E-10,
+                     "t":  0.583769633508,
+                     "chirality":  -1,
+                     "base_growth":  7.5E-11,
+                     "asym_value":  -3.11E-10,
+                     "index":  223
+                 },
+    "node_361":  {
+                     "noise":  4.68E-10,
+                     "t":  0.94502617801,
+                     "chirality":  1,
+                     "base_growth":  1.459E-09,
+                     "asym_value":  1.926E-09,
+                     "index":  361
+                 },
+    "node_225":  {
+                     "noise":  3.02E-10,
+                     "t":  0.589005235602,
+                     "chirality":  1,
+                     "base_growth":  1.9E-11,
+                     "asym_value":  3.21E-10,
+                     "index":  225
+                 },
+    "node_51":  {
+                    "noise":  -3.7E-11,
+                    "t":  0.133507853403,
+                    "chirality":  1,
+                    "base_growth":  1.864E-09,
+                    "asym_value":  1.827E-09,
+                    "index":  51
+                },
+    "node_234":  {
+                     "noise":  -5.9E-11,
+                     "t":  0.612565445026,
+                     "chirality":  -1,
+                     "base_growth":  2.89E-10,
+                     "asym_value":  3.48E-10,
+                     "index":  234
+                 },
+    "node_317":  {
+                     "noise":  4.6E-11,
+                     "t":  0.829842931937,
+                     "chirality":  -1,
+                     "base_growth":  7.12E-10,
+                     "asym_value":  6.66E-10,
+                     "index":  317
+                 },
+    "node_250":  {
+                     "noise":  4.84E-10,
+                     "t":  0.65445026178,
+                     "chirality":  1,
+                     "base_growth":  6.1E-11,
+                     "asym_value":  5.45E-10,
+                     "index":  250
+                 },
+    "node_309":  {
+                     "noise":  4.2E-10,
+                     "t":  0.80890052356,
+                     "chirality":  -1,
+                     "base_growth":  8.6E-11,
+                     "asym_value":  -3.34E-10,
+                     "index":  309
+                 },
+    "node_335":  {
+                     "noise":  -4.04E-10,
+                     "t":  0.876963350785,
+                     "chirality":  1,
+                     "base_growth":  1.213E-09,
+                     "asym_value":  8.1E-10,
+                     "index":  335
+                 },
+    "node_280":  {
+                     "noise":  -2.52E-10,
+                     "t":  0.732984293194,
+                     "chirality":  1,
+                     "base_growth":  1.51E-10,
+                     "asym_value":  -1.01E-10,
+                     "index":  280
+                 },
+    "node_375":  {
+                     "noise":  2.02E-10,
+                     "t":  0.98167539267,
+                     "chirality":  -1,
+                     "base_growth":  1.685E-09,
+                     "asym_value":  1.482E-09,
+                     "index":  375
+                 },
+    "node_302":  {
+                     "noise":  -3.83E-10,
+                     "t":  0.79057591623,
+                     "chirality":  -1,
+                     "base_growth":  5.14E-10,
+                     "asym_value":  8.97E-10,
+                     "index":  302
+                 },
+    "node_364":  {
+                     "noise":  -2.91E-10,
+                     "t":  0.952879581152,
+                     "chirality":  -1,
+                     "base_growth":  7.95E-10,
+                     "asym_value":  1.086E-09,
+                     "index":  364
+                 },
+    "node_271":  {
+                     "noise":  -3.3E-10,
+                     "t":  0.70942408377,
+                     "chirality":  -1,
+                     "base_growth":  7.2E-11,
+                     "asym_value":  4.02E-10,
+                     "index":  271
+                 },
+    "node_242":  {
+                     "noise":  -3.87E-10,
+                     "t":  0.633507853403,
+                     "chirality":  -1,
+                     "base_growth":  1.61E-10,
+                     "asym_value":  5.48E-10,
+                     "index":  242
+                 },
+    "node_358":  {
+                     "noise":  -4.82E-10,
+                     "t":  0.937172774869,
+                     "chirality":  -1,
+                     "base_growth":  9.62E-10,
+                     "asym_value":  1.444E-09,
+                     "index":  358
+                 },
+    "node_331":  {
+                     "noise":  2.16E-10,
+                     "t":  0.866492146597,
+                     "chirality":  1,
+                     "base_growth":  7.7E-10,
+                     "asym_value":  9.86E-10,
+                     "index":  331
+                 },
+    "node_349":  {
+                     "noise":  -2.41E-10,
+                     "t":  0.913612565445,
+                     "chirality":  1,
+                     "base_growth":  9.35E-10,
+                     "asym_value":  6.94E-10,
+                     "index":  349
+                 },
+    "node_313":  {
+                     "noise":  3.48E-10,
+                     "t":  0.819371727749,
+                     "chirality":  1,
+                     "base_growth":  1.22E-10,
+                     "asym_value":  4.69E-10,
+                     "index":  313
+                 },
+    "node_224":  {
+                     "noise":  9.1E-11,
+                     "t":  0.586387434555,
+                     "chirality":  -1,
+                     "base_growth":  2.8E-10,
+                     "asym_value":  1.89E-10,
+                     "index":  224
+                 },
+    "node_235":  {
+                     "noise":  4.85E-10,
+                     "t":  0.615183246073,
+                     "chirality":  1,
+                     "base_growth":  3.07E-10,
+                     "asym_value":  7.92E-10,
+                     "index":  235
+                 },
+    "node_345":  {
+                     "noise":  9.3E-11,
+                     "t":  0.903141361257,
+                     "chirality":  -1,
+                     "base_growth":  5.7E-10,
+                     "asym_value":  4.77E-10,
+                     "index":  345
+                 },
+    "node_160":  {
+                     "noise":  1.83E-10,
+                     "t":  0.418848167539,
+                     "chirality":  -1,
+                     "base_growth":  1.245E-09,
+                     "asym_value":  1.061E-09,
+                     "index":  160
+                 },
+    "node_217":  {
+                     "noise":  -4.6E-11,
+                     "t":  0.568062827225,
+                     "chirality":  -1,
+                     "base_growth":  1.04E-10,
+                     "asym_value":  1.5E-10,
+                     "index":  217
+                 },
+    "node_307":  {
+                     "noise":  -1.75E-10,
+                     "t":  0.803664921466,
+                     "chirality":  -1,
+                     "base_growth":  8.3E-11,
+                     "asym_value":  2.57E-10,
+                     "index":  307
+                 },
+    "node_251":  {
+                     "noise":  2.26E-10,
+                     "t":  0.657068062827,
+                     "chirality":  -1,
+                     "base_growth":  6.4E-11,
+                     "asym_value":  -1.61E-10,
+                     "index":  251
+                 },
+    "node_308":  {
+                     "noise":  3.22E-10,
+                     "t":  0.806282722513,
+                     "chirality":  -1,
+                     "base_growth":  1.22E-10,
+                     "asym_value":  -2E-10,
+                     "index":  308
+                 },
+    "node_203":  {
+                     "noise":  -3.07E-10,
+                     "t":  0.531413612565,
+                     "chirality":  -1,
+                     "base_growth":  2.17E-10,
+                     "asym_value":  5.24E-10,
+                     "index":  203
+                 },
+    "node_193":  {
+                     "noise":  2.78E-10,
+                     "t":  0.505235602094,
+                     "chirality":  -1,
+                     "base_growth":  4.12E-10,
+                     "asym_value":  1.34E-10,
+                     "index":  193
+                 },
+    "node_86":  {
+                    "noise":  -4.09E-10,
+                    "t":  0.225130890052,
+                    "chirality":  -1,
+                    "base_growth":  1.882E-09,
+                    "asym_value":  2.29E-09,
+                    "index":  86
+                },
+    "node_374":  {
+                     "noise":  -9E-12,
+                     "t":  0.979057591623,
+                     "chirality":  1,
+                     "base_growth":  1.66E-09,
+                     "asym_value":  1.651E-09,
+                     "index":  374
+                 },
+    "node_365":  {
+                     "noise":  -1.49E-10,
+                     "t":  0.955497382199,
+                     "chirality":  1,
+                     "base_growth":  1.201E-09,
+                     "asym_value":  1.053E-09,
+                     "index":  365
+                 },
+    "node_248":  {
+                     "noise":  2.01E-10,
+                     "t":  0.649214659686,
+                     "chirality":  -1,
+                     "base_growth":  2.7E-11,
+                     "asym_value":  -1.73E-10,
+                     "index":  248
+                 },
+    "node_221":  {
+                     "noise":  -2.97E-10,
+                     "t":  0.578534031414,
+                     "chirality":  1,
+                     "base_growth":  1.08E-10,
+                     "asym_value":  -1.88E-10,
+                     "index":  221
+                 },
+    "node_347":  {
+                     "noise":  -3.9E-10,
+                     "t":  0.908376963351,
+                     "chirality":  -1,
+                     "base_growth":  5.7E-10,
+                     "asym_value":  9.61E-10,
+                     "index":  347
+                 },
+    "node_19":  {
+                    "noise":  -1.08E-10,
+                    "t":  0.049738219895,
+                    "chirality":  -1,
+                    "base_growth":  1.368E-09,
+                    "asym_value":  1.476E-09,
+                    "index":  19
+                },
+    "node_114":  {
+                     "noise":  2.38E-10,
+                     "t":  0.298429319372,
+                     "chirality":  1,
+                     "base_growth":  1.922E-09,
+                     "asym_value":  2.16E-09,
+                     "index":  114
+                 },
+    "node_295":  {
+                     "noise":  4.2E-10,
+                     "t":  0.772251308901,
+                     "chirality":  -1,
+                     "base_growth":  5.27E-10,
+                     "asym_value":  1.07E-10,
+                     "index":  295
+                 },
+    "node_136":  {
+                     "noise":  -1.75E-10,
+                     "t":  0.356020942408,
+                     "chirality":  1,
+                     "base_growth":  1.648E-09,
+                     "asym_value":  1.473E-09,
+                     "index":  136
+                 },
+    "node_127":  {
+                     "noise":  -1.93E-10,
+                     "t":  0.332460732984,
+                     "chirality":  1,
+                     "base_growth":  1.603E-09,
+                     "asym_value":  1.41E-09,
+                     "index":  127
+                 },
+    "node_281":  {
+                     "noise":  -3.72E-10,
+                     "t":  0.735602094241,
+                     "chirality":  1,
+                     "base_growth":  4E-12,
+                     "asym_value":  -3.69E-10,
+                     "index":  281
+                 },
+    "node_320":  {
+                     "noise":  4.46E-10,
+                     "t":  0.837696335079,
+                     "chirality":  -1,
+                     "base_growth":  2.28E-10,
+                     "asym_value":  -2.18E-10,
+                     "index":  320
+                 },
+    "node_100":  {
+                     "noise":  -1E-11,
+                     "t":  0.261780104712,
+                     "chirality":  -1,
+                     "base_growth":  1.578E-09,
+                     "asym_value":  1.589E-09,
+                     "index":  100
+                 },
+    "node_85":  {
+                    "noise":  2.6E-11,
+                    "t":  0.222513089005,
+                    "chirality":  1,
+                    "base_growth":  1.918E-09,
+                    "asym_value":  1.944E-09,
+                    "index":  85
+                },
+    "node_94":  {
+                    "noise":  1.81E-10,
+                    "t":  0.246073298429,
+                    "chirality":  -1,
+                    "base_growth":  1.988E-09,
+                    "asym_value":  1.807E-09,
+                    "index":  94
+                },
+    "node_5":  {
+                   "noise":  4.28E-10,
+                   "t":  0.013089005236,
+                   "chirality":  -1,
+                   "base_growth":  1.845E-09,
+                   "asym_value":  1.418E-09,
+                   "index":  5
+               },
+    "node_306":  {
+                     "noise":  -3.05E-10,
+                     "t":  0.801047120419,
+                     "chirality":  1,
+                     "base_growth":  3.64E-10,
+                     "asym_value":  5.9E-11,
+                     "index":  306
+                 },
+    "node_209":  {
+                     "noise":  2.43E-10,
+                     "t":  0.547120418848,
+                     "chirality":  -1,
+                     "base_growth":  4.3E-11,
+                     "asym_value":  -1.99E-10,
+                     "index":  209
+                 },
+    "node_264":  {
+                     "noise":  -2.89E-10,
+                     "t":  0.69109947644,
+                     "chirality":  -1,
+                     "base_growth":  6E-12,
+                     "asym_value":  2.95E-10,
+                     "index":  264
+                 },
+    "node_275":  {
+                     "noise":  4.3E-11,
+                     "t":  0.719895287958,
+                     "chirality":  1,
+                     "base_growth":  1.4E-11,
+                     "asym_value":  5.6E-11,
+                     "index":  275
+                 },
+    "node_46":  {
+                    "noise":  -1.43E-10,
+                    "t":  0.120418848168,
+                    "chirality":  -1,
+                    "base_growth":  1.807E-09,
+                    "asym_value":  1.95E-09,
+                    "index":  46
+                },
+    "node_352":  {
+                     "noise":  4.24E-10,
+                     "t":  0.921465968586,
+                     "chirality":  -1,
+                     "base_growth":  1.445E-09,
+                     "asym_value":  1.021E-09,
+                     "index":  352
+                 },
+    "node_57":  {
+                    "noise":  -7.3E-11,
+                    "t":  0.149214659686,
+                    "chirality":  -1,
+                    "base_growth":  1.966E-09,
+                    "asym_value":  2.039E-09,
+                    "index":  57
+                },
+    "node_278":  {
+                     "noise":  4.25E-10,
+                     "t":  0.727748691099,
+                     "chirality":  -1,
+                     "base_growth":  4E-12,
+                     "asym_value":  -4.21E-10,
+                     "index":  278
+                 },
+    "node_231":  {
+                     "noise":  -3.74E-10,
+                     "t":  0.604712041885,
+                     "chirality":  1,
+                     "base_growth":  2E-11,
+                     "asym_value":  -3.54E-10,
+                     "index":  231
+                 },
+    "node_213":  {
+                     "noise":  -7.2E-11,
+                     "t":  0.557591623037,
+                     "chirality":  -1,
+                     "base_growth":  3.13E-10,
+                     "asym_value":  3.85E-10,
+                     "index":  213
+                 },
+    "node_287":  {
+                     "noise":  4.28E-10,
+                     "t":  0.751308900524,
+                     "chirality":  1,
+                     "base_growth":  1E-11,
+                     "asym_value":  4.38E-10,
+                     "index":  287
+                 },
+    "node_27":  {
+                    "noise":  -2.68E-10,
+                    "t":  0.070680628272,
+                    "chirality":  -1,
+                    "base_growth":  1.967E-09,
+                    "asym_value":  2.234E-09,
+                    "index":  27
+                },
+    "node_175":  {
+                     "noise":  -5E-10,
+                     "t":  0.458115183246,
+                     "chirality":  1,
+                     "base_growth":  7.64E-10,
+                     "asym_value":  2.65E-10,
+                     "index":  175
+                 },
+    "node_139":  {
+                     "noise":  -2.77E-10,
+                     "t":  0.36387434555,
+                     "chirality":  -1,
+                     "base_growth":  1.267E-09,
+                     "asym_value":  1.543E-09,
+                     "index":  139
+                 },
+    "node_128":  {
+                     "noise":  1.66E-10,
+                     "t":  0.335078534031,
+                     "chirality":  1,
+                     "base_growth":  1.422E-09,
+                     "asym_value":  1.588E-09,
+                     "index":  128
+                 },
+    "node_291":  {
+                     "noise":  1.85E-10,
+                     "t":  0.761780104712,
+                     "chirality":  -1,
+                     "base_growth":  5.02E-10,
+                     "asym_value":  3.17E-10,
+                     "index":  291
+                 },
+    "node_84":  {
+                    "noise":  5.8E-11,
+                    "t":  0.219895287958,
+                    "chirality":  -1,
+                    "base_growth":  1.946E-09,
+                    "asym_value":  1.888E-09,
+                    "index":  84
+                },
+    "node_95":  {
+                    "noise":  7.6E-11,
+                    "t":  0.248691099476,
+                    "chirality":  1,
+                    "base_growth":  1.754E-09,
+                    "asym_value":  1.83E-09,
+                    "index":  95
+                },
+    "node_4":  {
+                   "noise":  3.98E-10,
+                   "t":  0.010471204188,
+                   "chirality":  1,
+                   "base_growth":  1.578E-09,
+                   "asym_value":  1.976E-09,
+                   "index":  4
+               },
+    "node_48":  {
+                    "noise":  2.79E-10,
+                    "t":  0.125654450262,
+                    "chirality":  1,
+                    "base_growth":  1.979E-09,
+                    "asym_value":  2.257E-09,
+                    "index":  48
+                },
+    "node_59":  {
+                    "noise":  -3.82E-10,
+                    "t":  0.15445026178,
+                    "chirality":  1,
+                    "base_growth":  2E-09,
+                    "asym_value":  1.618E-09,
+                    "index":  59
+                },
+    "node_148":  {
+                     "noise":  -2.92E-10,
+                     "t":  0.387434554974,
+                     "chirality":  1,
+                     "base_growth":  1.193E-09,
+                     "asym_value":  9.01E-10,
+                     "index":  148
+                 },
+    "node_326":  {
+                     "noise":  1.88E-10,
+                     "t":  0.853403141361,
+                     "chirality":  1,
+                     "base_growth":  2.64E-10,
+                     "asym_value":  4.52E-10,
+                     "index":  326
+                 },
+    "node_45":  {
+                    "noise":  4.08E-10,
+                    "t":  0.11780104712,
+                    "chirality":  1,
+                    "base_growth":  1.96E-09,
+                    "asym_value":  2.369E-09,
+                    "index":  45
+                },
+    "node_54":  {
+                    "noise":  -2.65E-10,
+                    "t":  0.141361256545,
+                    "chirality":  1,
+                    "base_growth":  1.99E-09,
+                    "asym_value":  1.725E-09,
+                    "index":  54
+                },
+    "node_195":  {
+                     "noise":  -4.7E-11,
+                     "t":  0.510471204188,
+                     "chirality":  1,
+                     "base_growth":  4.65E-10,
+                     "asym_value":  4.18E-10,
+                     "index":  195
+                 },
+    "node_67":  {
+                    "noise":  -1.55E-10,
+                    "t":  0.175392670157,
+                    "chirality":  -1,
+                    "base_growth":  1.975E-09,
+                    "asym_value":  2.13E-09,
+                    "index":  67
+                },
+    "node_76":  {
+                    "noise":  -7.6E-11,
+                    "t":  0.198952879581,
+                    "chirality":  -1,
+                    "base_growth":  1.988E-09,
+                    "asym_value":  2.063E-09,
+                    "index":  76
+                },
+    "node_192":  {
+                     "noise":  -6E-12,
+                     "t":  0.502617801047,
+                     "chirality":  -1,
+                     "base_growth":  3.71E-10,
+                     "asym_value":  3.77E-10,
+                     "index":  192
+                 },
+    "node_183":  {
+                     "noise":  4.82E-10,
+                     "t":  0.479057591623,
+                     "chirality":  1,
+                     "base_growth":  3.1E-10,
+                     "asym_value":  7.92E-10,
+                     "index":  183
+                 },
+    "node_286":  {
+                     "noise":  -3.03E-10,
+                     "t":  0.748691099476,
+                     "chirality":  1,
+                     "base_growth":  5E-12,
+                     "asym_value":  -2.98E-10,
+                     "index":  286
+                 },
+    "node_297":  {
+                     "noise":  3.7E-11,
+                     "t":  0.777486910995,
+                     "chirality":  -1,
+                     "base_growth":  1.41E-10,
+                     "asym_value":  1.04E-10,
+                     "index":  297
+                 },
+    "node_1":  {
+                   "noise":  -1.08E-10,
+                   "t":  0.002617801047,
+                   "chirality":  -1,
+                   "base_growth":  1.121E-09,
+                   "asym_value":  1.229E-09,
+                   "index":  1
+               },
+    "node_115":  {
+                     "noise":  4.3E-11,
+                     "t":  0.301047120419,
+                     "chirality":  -1,
+                     "base_growth":  1.748E-09,
+                     "asym_value":  1.705E-09,
+                     "index":  115
+                 },
+    "node_372":  {
+                     "noise":  2.78E-10,
+                     "t":  0.973821989529,
+                     "chirality":  1,
+                     "base_growth":  8.51E-10,
+                     "asym_value":  1.129E-09,
+                     "index":  372
+                 },
+    "node_363":  {
+                     "noise":  -3.68E-10,
+                     "t":  0.950261780105,
+                     "chirality":  1,
+                     "base_growth":  1.368E-09,
+                     "asym_value":  1E-09,
+                     "index":  363
+                 },
+    "node_42":  {
+                    "noise":  -3.59E-10,
+                    "t":  0.109947643979,
+                    "chirality":  -1,
+                    "base_growth":  1.877E-09,
+                    "asym_value":  2.236E-09,
+                    "index":  42
+                },
+    "node_339":  {
+                     "noise":  -3.26E-10,
+                     "t":  0.887434554974,
+                     "chirality":  1,
+                     "base_growth":  7.28E-10,
+                     "asym_value":  4.01E-10,
+                     "index":  339
+                 },
+    "node_341":  {
+                     "noise":  -3.55E-10,
+                     "t":  0.892670157068,
+                     "chirality":  -1,
+                     "base_growth":  4.07E-10,
+                     "asym_value":  7.62E-10,
+                     "index":  341
+                 },
+    "node_328":  {
+                     "noise":  -3.28E-10,
+                     "t":  0.858638743455,
+                     "chirality":  -1,
+                     "base_growth":  2.89E-10,
+                     "asym_value":  6.17E-10,
+                     "index":  328
+                 },
+    "node_292":  {
+                     "noise":  4.63E-10,
+                     "t":  0.764397905759,
+                     "chirality":  -1,
+                     "base_growth":  4.79E-10,
+                     "asym_value":  1.6E-11,
+                     "index":  292
+                 },
+    "node_336":  {
+                     "noise":  3.65E-10,
+                     "t":  0.879581151832,
+                     "chirality":  1,
+                     "base_growth":  6.43E-10,
+                     "asym_value":  1.008E-09,
+                     "index":  336
+                 },
+    "node_327":  {
+                     "noise":  2.2E-11,
+                     "t":  0.856020942408,
+                     "chirality":  -1,
+                     "base_growth":  1.059E-09,
+                     "asym_value":  1.038E-09,
+                     "index":  327
+                 },
+    "node_218":  {
+                     "noise":  -5.6E-11,
+                     "t":  0.570680628272,
+                     "chirality":  1,
+                     "base_growth":  6E-11,
+                     "asym_value":  4E-12,
+                     "index":  218
+                 },
+    "node_314":  {
+                     "noise":  -3.69E-10,
+                     "t":  0.821989528796,
+                     "chirality":  1,
+                     "base_growth":  3.3E-10,
+                     "asym_value":  -3.9E-11,
+                     "index":  314
+                 },
+    "node_194":  {
+                     "noise":  -1.97E-10,
+                     "t":  0.507853403141,
+                     "chirality":  1,
+                     "base_growth":  2.26E-10,
+                     "asym_value":  2.9E-11,
+                     "index":  194
+                 },
+    "node_185":  {
+                     "noise":  4.72E-10,
+                     "t":  0.484293193717,
+                     "chirality":  -1,
+                     "base_growth":  9.95E-10,
+                     "asym_value":  5.22E-10,
+                     "index":  185
+                 },
+    "node_30":  {
+                    "noise":  2.97E-10,
+                    "t":  0.078534031414,
+                    "chirality":  1,
+                    "base_growth":  1.777E-09,
+                    "asym_value":  2.074E-09,
+                    "index":  30
+                },
+    "node_300":  {
+                     "noise":  4.11E-10,
+                     "t":  0.785340314136,
+                     "chirality":  1,
+                     "base_growth":  4.74E-10,
+                     "asym_value":  8.85E-10,
+                     "index":  300
+                 },
+    "node_312":  {
+                     "noise":  4.98E-10,
+                     "t":  0.816753926702,
+                     "chirality":  1,
+                     "base_growth":  7.76E-10,
+                     "asym_value":  1.274E-09,
+                     "index":  312
+                 },
+    "node_310":  {
+                     "noise":  4.05E-10,
+                     "t":  0.811518324607,
+                     "chirality":  -1,
+                     "base_growth":  5.22E-10,
+                     "asym_value":  1.17E-10,
+                     "index":  310
+                 },
+    "node_262":  {
+                     "noise":  1.8E-11,
+                     "t":  0.685863874346,
+                     "chirality":  -1,
+                     "base_growth":  5E-11,
+                     "asym_value":  3.2E-11,
+                     "index":  262
+                 },
+    "node_273":  {
+                     "noise":  1.15E-10,
+                     "t":  0.714659685864,
+                     "chirality":  1,
+                     "base_growth":  8.1E-11,
+                     "asym_value":  1.96E-10,
+                     "index":  273
+                 },
+    "node_333":  {
+                     "noise":  -4.7E-10,
+                     "t":  0.871727748691,
+                     "chirality":  1,
+                     "base_growth":  6.99E-10,
+                     "asym_value":  2.29E-10,
+                     "index":  333
+                 },
+    "node_11":  {
+                    "noise":  3.61E-10,
+                    "t":  0.028795811518,
+                    "chirality":  -1,
+                    "base_growth":  1.674E-09,
+                    "asym_value":  1.314E-09,
+                    "index":  11
+                },
+    "node_322":  {
+                     "noise":  -1.91E-10,
+                     "t":  0.842931937173,
+                     "chirality":  -1,
+                     "base_growth":  2.47E-10,
+                     "asym_value":  4.38E-10,
+                     "index":  322
+                 },
+    "node_22":  {
+                    "noise":  2E-10,
+                    "t":  0.057591623037,
+                    "chirality":  -1,
+                    "base_growth":  1.695E-09,
+                    "asym_value":  1.495E-09,
+                    "index":  22
+                },
+    "node_33":  {
+                    "noise":  -2.38E-10,
+                    "t":  0.086387434555,
+                    "chirality":  1,
+                    "base_growth":  1.924E-09,
+                    "asym_value":  1.686E-09,
+                    "index":  33
+                },
+    "node_226":  {
+                     "noise":  -3.55E-10,
+                     "t":  0.591623036649,
+                     "chirality":  1,
+                     "base_growth":  1E-12,
+                     "asym_value":  -3.54E-10,
+                     "index":  226
+                 },
+    "node_338":  {
+                     "noise":  -3.84E-10,
+                     "t":  0.884816753927,
+                     "chirality":  -1,
+                     "base_growth":  1.125E-09,
+                     "asym_value":  1.509E-09,
+                     "index":  338
+                 },
+    "node_237":  {
+                     "noise":  4.62E-10,
+                     "t":  0.620418848168,
+                     "chirality":  1,
+                     "base_growth":  1.1E-11,
+                     "asym_value":  4.73E-10,
+                     "index":  237
+                 },
+    "node_63":  {
+                    "noise":  -1.04E-10,
+                    "t":  0.164921465969,
+                    "chirality":  -1,
+                    "base_growth":  1.902E-09,
+                    "asym_value":  2.006E-09,
+                    "index":  63
+                },
+    "node_50":  {
+                    "noise":  -2.36E-10,
+                    "t":  0.130890052356,
+                    "chirality":  -1,
+                    "base_growth":  1.896E-09,
+                    "asym_value":  2.133E-09,
+                    "index":  50
+                },
+    "node_215":  {
+                     "noise":  -3.01E-10,
+                     "t":  0.562827225131,
+                     "chirality":  1,
+                     "base_growth":  1.54E-10,
+                     "asym_value":  -1.47E-10,
+                     "index":  215
+                 },
+    "node_246":  {
+                     "noise":  1.62E-10,
+                     "t":  0.643979057592,
+                     "chirality":  -1,
+                     "base_growth":  4.8E-11,
+                     "asym_value":  -1.14E-10,
+                     "index":  246
+                 },
+    "node_56":  {
+                    "noise":  -2.96E-10,
+                    "t":  0.146596858639,
+                    "chirality":  1,
+                    "base_growth":  1.797E-09,
+                    "asym_value":  1.501E-09,
+                    "index":  56
+                },
+    "node_201":  {
+                     "noise":  -1.48E-10,
+                     "t":  0.526178010471,
+                     "chirality":  1,
+                     "base_growth":  4.59E-10,
+                     "asym_value":  3.11E-10,
+                     "index":  201
+                 },
+    "node_87":  {
+                    "noise":  4.62E-10,
+                    "t":  0.227748691099,
+                    "chirality":  -1,
+                    "base_growth":  1.93E-09,
+                    "asym_value":  1.468E-09,
+                    "index":  87
+                },
+    "node_116":  {
+                     "noise":  -7.7E-11,
+                     "t":  0.303664921466,
+                     "chirality":  -1,
+                     "base_growth":  1.864E-09,
+                     "asym_value":  1.941E-09,
+                     "index":  116
+                 },
+    "node_220":  {
+                     "noise":  8E-12,
+                     "t":  0.575916230366,
+                     "chirality":  -1,
+                     "base_growth":  4.64E-10,
+                     "asym_value":  4.56E-10,
+                     "index":  220
+                 },
+    "node_367":  {
+                     "noise":  3.67E-10,
+                     "t":  0.960732984293,
+                     "chirality":  1,
+                     "base_growth":  8.31E-10,
+                     "asym_value":  1.198E-09,
+                     "index":  367
+                 },
+    "node_132":  {
+                     "noise":  -2.86E-10,
+                     "t":  0.34554973822,
+                     "chirality":  1,
+                     "base_growth":  1.644E-09,
+                     "asym_value":  1.358E-09,
+                     "index":  132
+                 },
+    "node_261":  {
+                     "noise":  -4E-11,
+                     "t":  0.683246073298,
+                     "chirality":  1,
+                     "base_growth":  6E-12,
+                     "asym_value":  -3.4E-11,
+                     "index":  261
+                 },
+    "node_172":  {
+                     "noise":  -9.3E-11,
+                     "t":  0.450261780105,
+                     "chirality":  1,
+                     "base_growth":  1.087E-09,
+                     "asym_value":  9.95E-10,
+                     "index":  172
+                 },
+    "node_243":  {
+                     "noise":  4.9E-11,
+                     "t":  0.63612565445,
+                     "chirality":  -1,
+                     "base_growth":  1E-12,
+                     "asym_value":  -4.7E-11,
+                     "index":  243
+                 },
+    "node_228":  {
+                     "noise":  -1.61E-10,
+                     "t":  0.596858638743,
+                     "chirality":  1,
+                     "base_growth":  2.2E-11,
+                     "asym_value":  -1.39E-10,
+                     "index":  228
+                 },
+    "node_252":  {
+                     "noise":  -2.18E-10,
+                     "t":  0.659685863874,
+                     "chirality":  -1,
+                     "base_growth":  4E-12,
+                     "asym_value":  2.23E-10,
+                     "index":  252
+                 },
+    "node_41":  {
+                    "noise":  1.34E-10,
+                    "t":  0.107329842932,
+                    "chirality":  -1,
+                    "base_growth":  1.994E-09,
+                    "asym_value":  1.86E-09,
+                    "index":  41
+                },
+    "node_323":  {
+                     "noise":  -1.11E-10,
+                     "t":  0.84554973822,
+                     "chirality":  -1,
+                     "base_growth":  8.1E-10,
+                     "asym_value":  9.2E-10,
+                     "index":  323
+                 },
+    "node_330":  {
+                     "noise":  -3.39E-10,
+                     "t":  0.86387434555,
+                     "chirality":  -1,
+                     "base_growth":  8.15E-10,
+                     "asym_value":  1.154E-09,
+                     "index":  330
+                 },
+    "node_170":  {
+                     "noise":  4.57E-10,
+                     "t":  0.44502617801,
+                     "chirality":  1,
+                     "base_growth":  4.51E-10,
+                     "asym_value":  9.09E-10,
+                     "index":  170
+                 },
+    "node_62":  {
+                    "noise":  -1.16E-10,
+                    "t":  0.162303664921,
+                    "chirality":  1,
+                    "base_growth":  1.957E-09,
+                    "asym_value":  1.842E-09,
+                    "index":  62
+                },
+    "node_73":  {
+                    "noise":  2.62E-10,
+                    "t":  0.19109947644,
+                    "chirality":  1,
+                    "base_growth":  1.965E-09,
+                    "asym_value":  2.226E-09,
+                    "index":  73
+                },
+    "node_216":  {
+                     "noise":  4.72E-10,
+                     "t":  0.565445026178,
+                     "chirality":  -1,
+                     "base_growth":  1.32E-10,
+                     "asym_value":  -3.4E-10,
+                     "index":  216
+                 },
+    "node_370":  {
+                     "noise":  -3.3E-10,
+                     "t":  0.968586387435,
+                     "chirality":  -1,
+                     "base_growth":  1.565E-09,
+                     "asym_value":  1.895E-09,
+                     "index":  370
+                 },
+    "node_102":  {
+                     "noise":  1.19E-10,
+                     "t":  0.267015706806,
+                     "chirality":  -1,
+                     "base_growth":  1.459E-09,
+                     "asym_value":  1.34E-09,
+                     "index":  102
+                 },
+    "node_337":  {
+                     "noise":  3.37E-10,
+                     "t":  0.88219895288,
+                     "chirality":  -1,
+                     "base_growth":  6.76E-10,
+                     "asym_value":  3.39E-10,
+                     "index":  337
+                 },
+    "node_145":  {
+                     "noise":  2.09E-10,
+                     "t":  0.379581151832,
+                     "chirality":  1,
+                     "base_growth":  1.546E-09,
+                     "asym_value":  1.755E-09,
+                     "index":  145
+                 },
+    "node_304":  {
+                     "noise":  8.1E-11,
+                     "t":  0.795811518325,
+                     "chirality":  1,
+                     "base_growth":  5.28E-10,
+                     "asym_value":  6.09E-10,
+                     "index":  304
+                 },
+    "node_200":  {
+                     "noise":  -3.83E-10,
+                     "t":  0.523560209424,
+                     "chirality":  -1,
+                     "base_growth":  4.52E-10,
+                     "asym_value":  8.35E-10,
+                     "index":  200
+                 },
+    "node_266":  {
+                     "noise":  2.9E-10,
+                     "t":  0.696335078534,
+                     "chirality":  -1,
+                     "base_growth":  1E-12,
+                     "asym_value":  -2.89E-10,
+                     "index":  266
+                 },
+    "node_202":  {
+                     "noise":  -2.58E-10,
+                     "t":  0.528795811518,
+                     "chirality":  -1,
+                     "base_growth":  6.45E-10,
+                     "asym_value":  9.03E-10,
+                     "index":  202
+                 },
+    "node_151":  {
+                     "noise":  1.85E-10,
+                     "t":  0.395287958115,
+                     "chirality":  -1,
+                     "base_growth":  1.447E-09,
+                     "asym_value":  1.262E-09,
+                     "index":  151
+                 },
+    "node_346":  {
+                     "noise":  -4.24E-10,
+                     "t":  0.905759162304,
+                     "chirality":  -1,
+                     "base_growth":  8.22E-10,
+                     "asym_value":  1.246E-09,
+                     "index":  346
+                 },
+    "node_15":  {
+                    "noise":  9.7E-11,
+                    "t":  0.039267015707,
+                    "chirality":  1,
+                    "base_growth":  1.889E-09,
+                    "asym_value":  1.986E-09,
+                    "index":  15
+                },
+    "node_173":  {
+                     "noise":  -1.19E-10,
+                     "t":  0.452879581152,
+                     "chirality":  -1,
+                     "base_growth":  8.37E-10,
+                     "asym_value":  9.56E-10,
+                     "index":  173
+                 },
+    "node_118":  {
+                     "noise":  -2.26E-10,
+                     "t":  0.30890052356,
+                     "chirality":  -1,
+                     "base_growth":  1.397E-09,
+                     "asym_value":  1.623E-09,
+                     "index":  118
+                 },
+    "node_222":  {
+                     "noise":  -7.6E-11,
+                     "t":  0.581151832461,
+                     "chirality":  -1,
+                     "base_growth":  3.69E-10,
+                     "asym_value":  4.45E-10,
+                     "index":  222
+                 },
+    "node_258":  {
+                     "noise":  -4.15E-10,
+                     "t":  0.675392670157,
+                     "chirality":  -1,
+                     "base_growth":  1.8E-11,
+                     "asym_value":  4.33E-10,
+                     "index":  258
+                 },
+    "node_233":  {
+                     "noise":  4.59E-10,
+                     "t":  0.609947643979,
+                     "chirality":  1,
+                     "base_growth":  2.74E-10,
+                     "asym_value":  7.32E-10,
+                     "index":  233
+                 },
+    "node_18":  {
+                    "noise":  6E-11,
+                    "t":  0.047120418848,
+                    "chirality":  -1,
+                    "base_growth":  1.871E-09,
+                    "asym_value":  1.811E-09,
+                    "index":  18
+                },
+    "node_211":  {
+                     "noise":  -4.78E-10,
+                     "t":  0.552356020942,
+                     "chirality":  1,
+                     "base_growth":  6.29E-10,
+                     "asym_value":  1.51E-10,
+                     "index":  211
+                 },
+    "node_253":  {
+                     "noise":  -1.64E-10,
+                     "t":  0.662303664921,
+                     "chirality":  1,
+                     "base_growth":  1.2E-11,
+                     "asym_value":  -1.53E-10,
+                     "index":  253
+                 },
+    "node_137":  {
+                     "noise":  4.39E-10,
+                     "t":  0.358638743455,
+                     "chirality":  1,
+                     "base_growth":  1.089E-09,
+                     "asym_value":  1.528E-09,
+                     "index":  137
+                 },
+    "node_126":  {
+                     "noise":  -3.87E-10,
+                     "t":  0.329842931937,
+                     "chirality":  -1,
+                     "base_growth":  1.593E-09,
+                     "asym_value":  1.98E-09,
+                     "index":  126
+                 },
+    "node_181":  {
+                     "noise":  -4.19E-10,
+                     "t":  0.473821989529,
+                     "chirality":  -1,
+                     "base_growth":  3.97E-10,
+                     "asym_value":  8.16E-10,
+                     "index":  181
+                 },
+    "node_369":  {
+                     "noise":  -2.31E-10,
+                     "t":  0.965968586387,
+                     "chirality":  1,
+                     "base_growth":  1.4E-09,
+                     "asym_value":  1.169E-09,
+                     "index":  369
+                 },
+    "node_101":  {
+                     "noise":  -2.74E-10,
+                     "t":  0.264397905759,
+                     "chirality":  1,
+                     "base_growth":  1.905E-09,
+                     "asym_value":  1.631E-09,
+                     "index":  101
+                 },
+    "node_97":  {
+                    "noise":  7.7E-11,
+                    "t":  0.253926701571,
+                    "chirality":  -1,
+                    "base_growth":  1.596E-09,
+                    "asym_value":  1.519E-09,
+                    "index":  97
+                },
+    "node_6":  {
+                   "noise":  4.8E-10,
+                   "t":  0.015706806283,
+                   "chirality":  -1,
+                   "base_growth":  1.816E-09,
+                   "asym_value":  1.336E-09,
+                   "index":  6
+               },
+    "node_247":  {
+                     "noise":  2.1E-10,
+                     "t":  0.646596858639,
+                     "chirality":  -1,
+                     "base_growth":  4.1E-11,
+                     "asym_value":  -1.69E-10,
+                     "index":  247
+                 },
+    "node_208":  {
+                     "noise":  4.44E-10,
+                     "t":  0.544502617801,
+                     "chirality":  -1,
+                     "base_growth":  7.6E-11,
+                     "asym_value":  -3.68E-10,
+                     "index":  208
+                 },
+    "node_265":  {
+                     "noise":  7.8E-11,
+                     "t":  0.693717277487,
+                     "chirality":  1,
+                     "base_growth":  1E-12,
+                     "asym_value":  7.9E-11,
+                     "index":  265
+                 },
+    "node_274":  {
+                     "noise":  -1.95E-10,
+                     "t":  0.717277486911,
+                     "chirality":  1,
+                     "base_growth":  1.03E-10,
+                     "asym_value":  -9.2E-11,
+                     "index":  274
+                 },
+    "node_179":  {
+                     "noise":  -4.4E-10,
+                     "t":  0.468586387435,
+                     "chirality":  -1,
+                     "base_growth":  6.28E-10,
+                     "asym_value":  1.068E-09,
+                     "index":  179
+                 },
+    "node_47":  {
+                    "noise":  -3.26E-10,
+                    "t":  0.123036649215,
+                    "chirality":  -1,
+                    "base_growth":  1.984E-09,
+                    "asym_value":  2.31E-09,
+                    "index":  47
+                },
+    "node_256":  {
+                     "noise":  1.94E-10,
+                     "t":  0.670157068063,
+                     "chirality":  -1,
+                     "base_growth":  8E-12,
+                     "asym_value":  -1.87E-10,
+                     "index":  256
+                 },
+    "node_141":  {
+                     "noise":  -7.4E-11,
+                     "t":  0.369109947644,
+                     "chirality":  -1,
+                     "base_growth":  1.585E-09,
+                     "asym_value":  1.659E-09,
+                     "index":  141
+                 },
+    "node_74":  {
+                    "noise":  -1.15E-10,
+                    "t":  0.193717277487,
+                    "chirality":  1,
+                    "base_growth":  1.969E-09,
+                    "asym_value":  1.855E-09,
+                    "index":  74
+                },
+    "node_163":  {
+                     "noise":  -2E-10,
+                     "t":  0.426701570681,
+                     "chirality":  -1,
+                     "base_growth":  8.69E-10,
+                     "asym_value":  1.069E-09,
+                     "index":  163
+                 },
+    "node_259":  {
+                     "noise":  4.04E-10,
+                     "t":  0.678010471204,
+                     "chirality":  1,
+                     "base_growth":  1.1E-11,
+                     "asym_value":  4.15E-10,
+                     "index":  259
+                 },
+    "node_88":  {
+                    "noise":  2.2E-10,
+                    "t":  0.230366492147,
+                    "chirality":  1,
+                    "base_growth":  1.816E-09,
+                    "asym_value":  2.036E-09,
+                    "index":  88
+                },
+    "node_230":  {
+                     "noise":  -2.28E-10,
+                     "t":  0.602094240838,
+                     "chirality":  -1,
+                     "base_growth":  7.4E-11,
+                     "asym_value":  3.02E-10,
+                     "index":  230
+                 },
+    "node_284":  {
+                     "noise":  4.9E-10,
+                     "t":  0.743455497382,
+                     "chirality":  -1,
+                     "base_growth":  1.92E-10,
+                     "asym_value":  -2.98E-10,
+                     "index":  284
+                 },
+    "node_106":  {
+                     "noise":  -1.62E-10,
+                     "t":  0.277486910995,
+                     "chirality":  -1,
+                     "base_growth":  1.707E-09,
+                     "asym_value":  1.869E-09,
+                     "index":  106
+                 },
+    "node_353":  {
+                     "noise":  3.48E-10,
+                     "t":  0.924083769634,
+                     "chirality":  1,
+                     "base_growth":  5.97E-10,
+                     "asym_value":  9.45E-10,
+                     "index":  353
+                 },
+    "node_8":  {
+                   "noise":  -4.07E-10,
+                   "t":  0.020942408377,
+                   "chirality":  -1,
+                   "base_growth":  1.212E-09,
+                   "asym_value":  1.619E-09,
+                   "index":  8
+               },
+    "node_91":  {
+                    "noise":  -9E-12,
+                    "t":  0.238219895288,
+                    "chirality":  -1,
+                    "base_growth":  1.923E-09,
+                    "asym_value":  1.932E-09,
+                    "index":  91
+                },
+    "node_206":  {
+                     "noise":  5E-12,
+                     "t":  0.539267015707,
+                     "chirality":  -1,
+                     "base_growth":  5.7E-10,
+                     "asym_value":  5.65E-10,
+                     "index":  206
+                 },
+    "node_155":  {
+                     "noise":  3.3E-11,
+                     "t":  0.405759162304,
+                     "chirality":  -1,
+                     "base_growth":  7.3E-10,
+                     "asym_value":  6.97E-10,
+                     "index":  155
+                 },
+    "node_144":  {
+                     "noise":  8.2E-11,
+                     "t":  0.376963350785,
+                     "chirality":  1,
+                     "base_growth":  1.276E-09,
+                     "asym_value":  1.358E-09,
+                     "index":  144
+                 },
+    "node_177":  {
+                     "noise":  -2.43E-10,
+                     "t":  0.46335078534,
+                     "chirality":  1,
+                     "base_growth":  6.92E-10,
+                     "asym_value":  4.49E-10,
+                     "index":  177
+                 },
+    "node_49":  {
+                    "noise":  9.3E-11,
+                    "t":  0.128272251309,
+                    "chirality":  -1,
+                    "base_growth":  1.964E-09,
+                    "asym_value":  1.871E-09,
+                    "index":  49
+                },
+    "node_58":  {
+                    "noise":  8.8E-11,
+                    "t":  0.151832460733,
+                    "chirality":  -1,
+                    "base_growth":  1.921E-09,
+                    "asym_value":  1.832E-09,
+                    "index":  58
+                },
+    "node_360":  {
+                     "noise":  2.97E-10,
+                     "t":  0.942408376963,
+                     "chirality":  1,
+                     "base_growth":  9.22E-10,
+                     "asym_value":  1.219E-09,
+                     "index":  360
+                 },
+    "node_178":  {
+                     "noise":  -4.84E-10,
+                     "t":  0.465968586387,
+                     "chirality":  -1,
+                     "base_growth":  1.129E-09,
+                     "asym_value":  1.613E-09,
+                     "index":  178
+                 },
+    "node_111":  {
+                     "noise":  1.3E-11,
+                     "t":  0.29057591623,
+                     "chirality":  1,
+                     "base_growth":  1.714E-09,
+                     "asym_value":  1.727E-09,
+                     "index":  111
+                 },
+    "node_169":  {
+                     "noise":  4.82E-10,
+                     "t":  0.442408376963,
+                     "chirality":  1,
+                     "base_growth":  1.09E-09,
+                     "asym_value":  1.571E-09,
+                     "index":  169
+                 },
+    "node_257":  {
+                     "noise":  -4.56E-10,
+                     "t":  0.67277486911,
+                     "chirality":  1,
+                     "base_growth":  0,
+                     "asym_value":  -4.56E-10,
+                     "index":  257
+                 },
+    "node_196":  {
+                     "noise":  3.79E-10,
+                     "t":  0.513089005236,
+                     "chirality":  -1,
+                     "base_growth":  1.68E-10,
+                     "asym_value":  -2.12E-10,
+                     "index":  196
+                 },
+    "node_64":  {
+                    "noise":  -2.61E-10,
+                    "t":  0.167539267016,
+                    "chirality":  1,
+                    "base_growth":  1.909E-09,
+                    "asym_value":  1.648E-09,
+                    "index":  64
+                },
+    "node_187":  {
+                     "noise":  4.09E-10,
+                     "t":  0.489528795812,
+                     "chirality":  -1,
+                     "base_growth":  7.28E-10,
+                     "asym_value":  3.19E-10,
+                     "index":  187
+                 },
+    "node_75":  {
+                    "noise":  -4.81E-10,
+                    "t":  0.196335078534,
+                    "chirality":  -1,
+                    "base_growth":  1.999E-09,
+                    "asym_value":  2.48E-09,
+                    "index":  75
+                },
+    "node_108":  {
+                     "noise":  4.85E-10,
+                     "t":  0.282722513089,
+                     "chirality":  1,
+                     "base_growth":  1.608E-09,
+                     "asym_value":  2.093E-09,
+                     "index":  108
+                 },
+    "node_182":  {
+                     "noise":  1.66E-10,
+                     "t":  0.476439790576,
+                     "chirality":  -1,
+                     "base_growth":  9.5E-10,
+                     "asym_value":  7.84E-10,
+                     "index":  182
+                 },
+    "node_105":  {
+                     "noise":  -4.8E-10,
+                     "t":  0.274869109948,
+                     "chirality":  -1,
+                     "base_growth":  1.821E-09,
+                     "asym_value":  2.302E-09,
+                     "index":  105
+                 },
+    "node_324":  {
+                     "noise":  1E-10,
+                     "t":  0.848167539267,
+                     "chirality":  -1,
+                     "base_growth":  9.58E-10,
+                     "asym_value":  8.58E-10,
+                     "index":  324
+                 },
+    "node_2":  {
+                   "noise":  7.3E-11,
+                   "t":  0.005235602094,
+                   "chirality":  -1,
+                   "base_growth":  1.775E-09,
+                   "asym_value":  1.702E-09,
+                   "index":  2
+               },
+    "node_159":  {
+                     "noise":  1.95E-10,
+                     "t":  0.416230366492,
+                     "chirality":  -1,
+                     "base_growth":  1.078E-09,
+                     "asym_value":  8.83E-10,
+                     "index":  159
+                 },
+    "node_80":  {
+                    "noise":  -6.7E-11,
+                    "t":  0.20942408377,
+                    "chirality":  -1,
+                    "base_growth":  1.763E-09,
+                    "asym_value":  1.83E-09,
+                    "index":  80
+                },
+    "node_0":  {
+                   "noise":  -2.42E-10,
+                   "t":  0,
+                   "chirality":  1,
+                   "base_growth":  1.222E-09,
+                   "asym_value":  9.79E-10,
+                   "index":  0
+               },
+    "node_13":  {
+                    "noise":  -1.88E-10,
+                    "t":  0.034031413613,
+                    "chirality":  -1,
+                    "base_growth":  1.929E-09,
+                    "asym_value":  2.116E-09,
+                    "index":  13
+                },
+    "node_373":  {
+                     "noise":  -1.47E-10,
+                     "t":  0.976439790576,
+                     "chirality":  1,
+                     "base_growth":  8.87E-10,
+                     "asym_value":  7.4E-10,
+                     "index":  373
+                 },
+    "node_362":  {
+                     "noise":  -4.57E-10,
+                     "t":  0.947643979058,
+                     "chirality":  1,
+                     "base_growth":  1.528E-09,
+                     "asym_value":  1.072E-09,
+                     "index":  362
+                 },
+    "node_43":  {
+                    "noise":  3E-10,
+                    "t":  0.112565445026,
+                    "chirality":  -1,
+                    "base_growth":  1.982E-09,
+                    "asym_value":  1.682E-09,
+                    "index":  43
+                },
+    "node_351":  {
+                     "noise":  2.15E-10,
+                     "t":  0.918848167539,
+                     "chirality":  1,
+                     "base_growth":  1.017E-09,
+                     "asym_value":  1.231E-09,
+                     "index":  351
+                 },
+    "node_52":  {
+                    "noise":  3.99E-10,
+                    "t":  0.13612565445,
+                    "chirality":  1,
+                    "base_growth":  1.918E-09,
+                    "asym_value":  2.317E-09,
+                    "index":  52
+                },
+    "node_61":  {
+                    "noise":  3.82E-10,
+                    "t":  0.159685863874,
+                    "chirality":  1,
+                    "base_growth":  1.978E-09,
+                    "asym_value":  2.359E-09,
+                    "index":  61
+                },
+    "node_167":  {
+                     "noise":  1.48E-10,
+                     "t":  0.437172774869,
+                     "chirality":  -1,
+                     "base_growth":  1.191E-09,
+                     "asym_value":  1.044E-09,
+                     "index":  167
+                 },
+    "node_198":  {
+                     "noise":  1.28E-10,
+                     "t":  0.51832460733,
+                     "chirality":  -1,
+                     "base_growth":  7.11E-10,
+                     "asym_value":  5.83E-10,
+                     "index":  198
+                 },
+    "node_189":  {
+                     "noise":  -1.17E-10,
+                     "t":  0.494764397906,
+                     "chirality":  1,
+                     "base_growth":  2.74E-10,
+                     "asym_value":  1.57E-10,
+                     "index":  189
+                 },
+    "node_315":  {
+                     "noise":  -2.64E-10,
+                     "t":  0.824607329843,
+                     "chirality":  1,
+                     "base_growth":  5.39E-10,
+                     "asym_value":  2.75E-10,
+                     "index":  315
+                 },
+    "node_318":  {
+                     "noise":  -2.54E-10,
+                     "t":  0.832460732984,
+                     "chirality":  1,
+                     "base_growth":  2.75E-10,
+                     "asym_value":  2.1E-11,
+                     "index":  318
+                 },
+    "node_184":  {
+                     "noise":  2.54E-10,
+                     "t":  0.48167539267,
+                     "chirality":  -1,
+                     "base_growth":  4.79E-10,
+                     "asym_value":  2.24E-10,
+                     "index":  184
+                 },
+    "node_123":  {
+                     "noise":  4.65E-10,
+                     "t":  0.321989528796,
+                     "chirality":  -1,
+                     "base_growth":  1.29E-09,
+                     "asym_value":  8.24E-10,
+                     "index":  123
+                 },
+    "node_325":  {
+                     "noise":  -2E-12,
+                     "t":  0.850785340314,
+                     "chirality":  -1,
+                     "base_growth":  4.92E-10,
+                     "asym_value":  4.94E-10,
+                     "index":  325
+                 },
+    "node_378":  {
+                     "noise":  -3.4E-10,
+                     "t":  0.989528795812,
+                     "chirality":  1,
+                     "base_growth":  1.275E-09,
+                     "asym_value":  9.35E-10,
+                     "index":  378
+                 },
+    "node_301":  {
+                     "noise":  3.18E-10,
+                     "t":  0.787958115183,
+                     "chirality":  -1,
+                     "base_growth":  5.4E-11,
+                     "asym_value":  -2.65E-10,
+                     "index":  301
+                 },
+    "node_133":  {
+                     "noise":  -8.2E-11,
+                     "t":  0.348167539267,
+                     "chirality":  1,
+                     "base_growth":  1.226E-09,
+                     "asym_value":  1.144E-09,
+                     "index":  133
+                 }
+}

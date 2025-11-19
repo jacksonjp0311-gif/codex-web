@@ -1,0 +1,22 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Seed Energy",
+                                 "glyph":  "𓂀",
+                                 "value":  9.84E-10
+                             },
+                  "consciousness":  {
+                                        "label":  "Potential Field",
+                                        "glyph":  "𓅓",
+                                        "value":  1.2289999999999998E-09
+                                    },
+                  "information":  {
+                                      "label":  "Quantum Noise",
+                                      "glyph":  "𓏲",
+                                      "value":  2.45E-10
+                                  }
+              },
+    "version":  "2.8",
+    "context":  "GIZA v6.8 — Seed Asymmetry Injector (Scarab Mode)"
+}
