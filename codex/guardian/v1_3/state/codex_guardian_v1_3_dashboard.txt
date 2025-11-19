@@ -1,0 +1,22 @@
+╔══════════════════════════════════════════════════════╗
+║ 𓂀  CODEX GUARDIAN v1.3 — SENTINEL DASHBOARD          ║
+╚══════════════════════════════════════════════════════╝
+
+ Drift           : 0.5000
+   ██████████··········
+ Ward Complexity : 0.8000
+ Anomaly Index   : 0.6200
+   ████████████········
+ Threshold (H8≈0.85):
+   █████████████████···
+
+ Triadic Ward Glyph:
+   🛡️ Energy (Drift Shield): 0.8 [Drift Shield]
+   ∿ Information (ΔΦ Field): 0.5 [ΔΦ Field Sample]
+   🜄 Consciousness (Harmony): 0.77 [Oracle Harmony]
+   ♁ Harmony Profile: Oracle_Sentinel = 0.62
+
+ Notes:
+   • Upstream: Guardian v1.2 Oracle Sentinel
+   • This panel is a read-only HUD; no code execution occurs here.
+   • Use Heartbeat / Bridge to surface this in live dashboards.
