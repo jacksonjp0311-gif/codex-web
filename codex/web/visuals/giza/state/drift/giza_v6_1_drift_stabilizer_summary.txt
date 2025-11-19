@@ -1,0 +1,22 @@
+﻿CODEX GIZA v6.1 — Drift Stabilizer Node
+Timestamp (UTC): 2025-11-19T07:07:44.7636209Z
+Root          : C:\Users\jacks\OneDrive\Desktop\Codex Web
+Drift State   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\state\drift\giza_v6_1_drift_stabilizer.json
+Drift Mesh    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\state\drift\giza_v6_1_drift_mesh.json
+Drift Glyph   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\state\drift\giza_v6_1_drift_glyph.json
+
+Global Drift Metrics:
+  count_nodes             = 14
+  avg_drift_score         = 34.7988
+  avg_recurrence_score    = 34.887
+  avg_predicted_alignment = 0.4858
+  avg_coherence_score     = 11.7909
+  avg_synergy_score       = 20.9941
+  drift_align_correlation = 0.9273
+  drift_stability_metric  = 13.0186
+
+Notes:
+  • drift_mesh.* encodes per-node drift, gradient, recurrence, alignment, coherence, synergy, and phase.
+  • metrics.* summarizes the stabilized drift field, including the Drift Stability Metric (DSM).
+  • glyph encodes the triadic summary of the stabilized Drift Field.
+  • Use giza_v6_1_drift_stabilizer_ps_block.txt for direct copy/paste into ChatGPT.

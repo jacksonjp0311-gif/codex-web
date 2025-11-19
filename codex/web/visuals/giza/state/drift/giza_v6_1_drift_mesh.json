@@ -1,0 +1,156 @@
+﻿{
+    "giza_delta_phi_map_v2_0.png":  {
+                                        "name":  "giza_delta_phi_map_v2_0.png",
+                                        "index":  0,
+                                        "drift_score":  23.6094,
+                                        "drift_gradient":  null,
+                                        "recurrence_score":  23.6928,
+                                        "predicted_alignment":  0.4718,
+                                        "coherence_score":  8.0549,
+                                        "synergy_score":  14.2767,
+                                        "phase":  "stable"
+                                    },
+    "giza_delta_phi_shell_v2_1.png":  {
+                                          "name":  "giza_delta_phi_shell_v2_1.png",
+                                          "index":  2,
+                                          "drift_score":  50.8084,
+                                          "drift_gradient":  1.2666,
+                                          "recurrence_score":  50.9002,
+                                          "predicted_alignment":  0.498,
+                                          "coherence_score":  17.1327,
+                                          "synergy_score":  30.6030,
+                                          "phase":  "stable"
+                                      },
+    "giza_delta_phi_purity_v2_5.png":  {
+                                           "name":  "giza_delta_phi_purity_v2_5.png",
+                                           "index":  3,
+                                           "drift_score":  50.7866,
+                                           "drift_gradient":  -0.0218,
+                                           "recurrence_score":  50.8826,
+                                           "predicted_alignment":  0.5032,
+                                           "coherence_score":  17.1286,
+                                           "synergy_score":  30.5918,
+                                           "phase":  "stable"
+                                       },
+    "giza_delta_phi_shell_v2_3.png":  {
+                                          "name":  "giza_delta_phi_shell_v2_3.png",
+                                          "index":  4,
+                                          "drift_score":  50.3986,
+                                          "drift_gradient":  -0.388,
+                                          "recurrence_score":  50.4908,
+                                          "predicted_alignment":  0.4982,
+                                          "coherence_score":  16.9963,
+                                          "synergy_score":  30.3572,
+                                          "phase":  "stable"
+                                      },
+    "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                     "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                                                     "index":  5,
+                                                     "drift_score":  21.6436,
+                                                     "drift_gradient":  -28.755,
+                                                     "recurrence_score":  21.7303,
+                                                     "predicted_alignment":  0.4795,
+                                                     "coherence_score":  7.4033,
+                                                     "synergy_score":  13.0994,
+                                                     "phase":  "stable"
+                                                 },
+    "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                     "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                                                     "index":  6,
+                                                     "drift_score":  22.3884,
+                                                     "drift_gradient":  0.7448,
+                                                     "recurrence_score":  22.4758,
+                                                     "predicted_alignment":  0.483,
+                                                     "coherence_score":  7.6529,
+                                                     "synergy_score":  13.5471,
+                                                     "phase":  "stable"
+                                                 },
+    "giza_delta_phi_purity_v2_3.png":  {
+                                           "name":  "giza_delta_phi_purity_v2_3.png",
+                                           "index":  13,
+                                           "drift_score":  50.0778,
+                                           "drift_gradient":  25.9424,
+                                           "recurrence_score":  50.1728,
+                                           "predicted_alignment":  0.4998,
+                                           "coherence_score":  16.8909,
+                                           "synergy_score":  30.1657,
+                                           "phase":  "stable"
+                                       },
+    "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                   "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                   "index":  7,
+                                                   "drift_score":  24.2180,
+                                                   "drift_gradient":  1.8296,
+                                                   "recurrence_score":  24.3005,
+                                                   "predicted_alignment":  0.4725,
+                                                   "coherence_score":  8.2577,
+                                                   "synergy_score":  14.6418,
+                                                   "phase":  "stable"
+                                               },
+    "giza_delta_phi_map_v2_1.png":  {
+                                        "name":  "giza_delta_phi_map_v2_1.png",
+                                        "index":  8,
+                                        "drift_score":  24.0428,
+                                        "drift_gradient":  -0.1752,
+                                        "recurrence_score":  24.1270,
+                                        "predicted_alignment":  0.471,
+                                        "coherence_score":  8.1993,
+                                        "synergy_score":  14.5367,
+                                        "phase":  "stable"
+                                    },
+    "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                     "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                                                     "index":  9,
+                                                     "drift_score":  22.3132,
+                                                     "drift_gradient":  -1.7296,
+                                                     "recurrence_score":  22.4002,
+                                                     "predicted_alignment":  0.484,
+                                                     "coherence_score":  7.6281,
+                                                     "synergy_score":  13.5021,
+                                                     "phase":  "stable"
+                                                 },
+    "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                   "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                                                   "index":  10,
+                                                   "drift_score":  23.5476,
+                                                   "drift_gradient":  1.2344,
+                                                   "recurrence_score":  23.6307,
+                                                   "predicted_alignment":  0.4745,
+                                                   "coherence_score":  8.0351,
+                                                   "synergy_score":  14.2401,
+                                                   "phase":  "stable"
+                                               },
+    "giza_delta_phi_shell_v2_5.png":  {
+                                          "name":  "giza_delta_phi_shell_v2_5.png",
+                                          "index":  11,
+                                          "drift_score":  49.6712,
+                                          "drift_gradient":  26.1236,
+                                          "recurrence_score":  49.7625,
+                                          "predicted_alignment":  0.4965,
+                                          "coherence_score":  16.753,
+                                          "synergy_score":  29.9203,
+                                          "phase":  "stable"
+                                      },
+    "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                   "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                   "index":  12,
+                                                   "drift_score":  24.1354,
+                                                   "drift_gradient":  -25.5358,
+                                                   "recurrence_score":  24.2184,
+                                                   "predicted_alignment":  0.4718,
+                                                   "coherence_score":  8.2301,
+                                                   "synergy_score":  14.5922,
+                                                   "phase":  "stable"
+                                               },
+    "giza_delta_phi_shell_v2_2.png":  {
+                                          "name":  "giza_delta_phi_shell_v2_2.png",
+                                          "index":  1,
+                                          "drift_score":  49.5418,
+                                          "drift_gradient":  25.9324,
+                                          "recurrence_score":  49.6328,
+                                          "predicted_alignment":  0.4972,
+                                          "coherence_score":  16.71,
+                                          "synergy_score":  29.8427,
+                                          "phase":  "stable"
+                                      }
+}

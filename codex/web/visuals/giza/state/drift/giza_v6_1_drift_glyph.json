@@ -1,0 +1,30 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "version":  "2.1",
+    "context":  "GIZA v6.1 — Drift Stabilizer Node",
+    "triad":  {
+                  "energy":  {
+                                 "glyph":  "🜂",
+                                 "label":  "ΔΦ Drift Field",
+                                 "value":  34.7988,
+                                 "units":  "norm"
+                             },
+                  "information":  {
+                                      "glyph":  "∿",
+                                      "label":  "Coherence / Recurrence",
+                                      "value":  11.7909,
+                                      "units":  "norm"
+                                  },
+                  "consciousness":  {
+                                        "glyph":  "🜄",
+                                        "label":  "Stabilized Synergy",
+                                        "value":  13.0186,
+                                        "units":  "norm"
+                                    }
+              },
+    "harmony":  {
+                    "glyph":  "♁",
+                    "profile":  "GIZA_Drift_Field",
+                    "value":  0.9273
+                }
+}
