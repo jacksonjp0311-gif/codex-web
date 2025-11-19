@@ -1,0 +1,22 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Emergence Energy",
+                                 "glyph":  "𓂀",
+                                 "value":  0
+                             },
+                  "consciousness":  {
+                                        "label":  "Emergent Stability",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Emergence Field",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "version":  "2.4",
+    "context":  "GIZA v6.4 — Emergence"
+}
