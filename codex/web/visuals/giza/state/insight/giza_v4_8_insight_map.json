@@ -1,0 +1,523 @@
+﻿{
+    "protocol":  "CODEX_GIZA_INSIGHT",
+    "version":  "4.8",
+    "timestamp_utc":  "2025-11-19T06:19:08.3129359Z",
+    "total_files":  87,
+    "fields":  {
+                   "delta_phi_drift":  {
+                                           "giza_delta_phi_map_v2_0.png":  {
+                                                                               "purity":  0.055,
+                                                                               "symmetry":  0.8885,
+                                                                               "center":  116.16
+                                                                           },
+                                           "giza_delta_phi_shell_v2_2.png":  {
+                                                                                 "purity":  0.042,
+                                                                                 "symmetry":  0.9525,
+                                                                                 "center":  245.72
+                                                                             },
+                                           "giza_delta_phi_shell_v2_1.png":  {
+                                                                                 "purity":  0.039,
+                                                                                 "symmetry":  0.957,
+                                                                                 "center":  252.05
+                                                                             },
+                                           "giza_delta_phi_purity_v2_5.png":  {
+                                                                                  "purity":  0.023,
+                                                                                  "symmetry":  0.9835,
+                                                                                  "center":  251.92
+                                                                              },
+                                           "giza_delta_phi_shell_v2_3.png":  {
+                                                                                 "purity":  0.037,
+                                                                                 "symmetry":  0.9595,
+                                                                                 "center":  250
+                                                                             },
+                                           "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                                            "purity":  0.046,
+                                                                                            "symmetry":  0.913,
+                                                                                            "center":  106.3
+                                                                                        },
+                                           "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                                          "purity":  0.06,
+                                                                                          "symmetry":  0.885,
+                                                                                          "center":  119.2
+                                                                                      },
+                                           "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                                            "purity":  0.046,
+                                                                                            "symmetry":  0.920,
+                                                                                            "center":  110.01
+                                                                                        },
+                                           "giza_delta_phi_map_v2_1.png":  {
+                                                                               "purity":  0.05,
+                                                                               "symmetry":  0.892,
+                                                                               "center":  118.33
+                                                                           },
+                                           "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                                            "purity":  0.049,
+                                                                                            "symmetry":  0.919,
+                                                                                            "center":  109.63
+                                                                                        },
+                                           "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                                          "purity":  0.059,
+                                                                                          "symmetry":  0.890,
+                                                                                          "center":  115.84
+                                                                                      },
+                                           "giza_delta_phi_shell_v2_5.png":  {
+                                                                                 "purity":  0.04,
+                                                                                 "symmetry":  0.953,
+                                                                                 "center":  246.37
+                                                                             },
+                                           "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                                          "purity":  0.057,
+                                                                                          "symmetry":  0.8865,
+                                                                                          "center":  118.79
+                                                                                      },
+                                           "giza_delta_phi_purity_v2_3.png":  {
+                                                                                  "purity":  0.025,
+                                                                                  "symmetry":  0.9745,
+                                                                                  "center":  248.39
+                                                                              }
+                                       },
+                   "symmetry_field":  {
+                                          "edge_avg":  0.046,
+                                          "vert_avg":  0.937,
+                                          "horiz_avg":  0.911
+                                      },
+                   "brightness_field":  {
+                                            "edge_avg":  216.99,
+                                            "center_avg":  160.71
+                                        },
+                   "category_counts":  {
+                                           "resonance":  4,
+                                           "seed":  2,
+                                           "q_lattice":  2,
+                                           "other":  16,
+                                           "delta_phi":  14,
+                                           "solar":  1,
+                                           "holo":  37,
+                                           "voice":  2,
+                                           "triadic":  5,
+                                           "em_field":  4
+                                       },
+                   "top_core":  [
+                                    {
+                                        "name":  "giza_cgl_schematic_v2_3.png",
+                                        "category":  "other",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_3.png",
+                                        "size_kb":  54.43,
+                                        "width":  1000,
+                                        "height":  1000,
+                                        "avg_brightness":  248.18,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  246.92,
+                                        "horiz_symmetry":  0.946,
+                                        "vert_symmetry":  0.958,
+                                        "edge_density":  0.037,
+                                        "sha256":  "D9EE049A8508F21AEDB98A701431051FEC57077CEFB9E4320A13E46B1AC557D0"
+                                    },
+                                    {
+                                        "name":  "giza_cgl_schematic_v2_2.png",
+                                        "category":  "other",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_2.png",
+                                        "size_kb":  54.35,
+                                        "width":  1000,
+                                        "height":  1000,
+                                        "avg_brightness":  248.18,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  246.92,
+                                        "horiz_symmetry":  0.946,
+                                        "vert_symmetry":  0.958,
+                                        "edge_density":  0.037,
+                                        "sha256":  "90F9913B40086757A172A3C15B6D9527FD5A5E100932ADF0E7C127357812BB57"
+                                    },
+                                    {
+                                        "name":  "giza_holo_triad_glyph_v3_0.png",
+                                        "category":  "holo",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_triad_glyph_v3_0.png",
+                                        "size_kb":  54.52,
+                                        "width":  1000,
+                                        "height":  1000,
+                                        "avg_brightness":  247.79,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  246.46,
+                                        "horiz_symmetry":  0.947,
+                                        "vert_symmetry":  0.955,
+                                        "edge_density":  0.04,
+                                        "sha256":  "2E11D05D92FAB3EC817356C32E9567336C53E6300E19AE4CEC1E363EFC6E7F02"
+                                    },
+                                    {
+                                        "name":  "giza_cgl_schematic_v2_5.png",
+                                        "category":  "other",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_5.png",
+                                        "size_kb":  54.31,
+                                        "width":  1000,
+                                        "height":  1000,
+                                        "avg_brightness":  248.12,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  246.84,
+                                        "horiz_symmetry":  0.946,
+                                        "vert_symmetry":  0.957,
+                                        "edge_density":  0.038,
+                                        "sha256":  "BD8BEA0BF846ECD546DD9FAE0A9DFC04AA5B806980267E89F5D5EAEEE44A0B2E"
+                                    },
+                                    {
+                                        "name":  "giza_cgl_schematic_v2_1.png",
+                                        "category":  "other",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_cgl_schematic_v2_1.png",
+                                        "size_kb":  54.09,
+                                        "width":  1000,
+                                        "height":  1000,
+                                        "avg_brightness":  248.18,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  246.92,
+                                        "horiz_symmetry":  0.946,
+                                        "vert_symmetry":  0.958,
+                                        "edge_density":  0.037,
+                                        "sha256":  "28F1A5BC39E574D2D59CD8EFCC4964CCEAC6ED28D6CD0F9D3B2D52027E1A050B"
+                                    },
+                                    {
+                                        "name":  "giza_holo_EIC_hist_v3_0.png",
+                                        "category":  "holo",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_EIC_hist_v3_0.png",
+                                        "size_kb":  38.85,
+                                        "width":  1400,
+                                        "height":  800,
+                                        "avg_brightness":  249.21,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  248.65,
+                                        "horiz_symmetry":  0.959,
+                                        "vert_symmetry":  0.958,
+                                        "edge_density":  0.019,
+                                        "sha256":  "606238AFE43BD19EBABCA8315BBA903304AB209F25CA12F5545F02CF8C85DBDE"
+                                    },
+                                    {
+                                        "name":  "giza_holo_center_time_series_v3_0.png",
+                                        "category":  "holo",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_center_time_series_v3_0.png",
+                                        "size_kb":  81.17,
+                                        "width":  1400,
+                                        "height":  800,
+                                        "avg_brightness":  249.42,
+                                        "center_brightness":  255,
+                                        "edge_brightness":  249.18,
+                                        "horiz_symmetry":  0.974,
+                                        "vert_symmetry":  0.962,
+                                        "edge_density":  0.032,
+                                        "sha256":  "5D5D4D83337F57E1A513DF7926C88C1AA1A75D3C18CFEB080E254482CFEF91B3"
+                                    },
+                                    {
+                                        "name":  "giza_body_coupling_v2_5.png",
+                                        "category":  "other",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_body_coupling_v2_5.png",
+                                        "size_kb":  62.26,
+                                        "width":  1200,
+                                        "height":  800,
+                                        "avg_brightness":  249.28,
+                                        "center_brightness":  254.82,
+                                        "edge_brightness":  248.77,
+                                        "horiz_symmetry":  0.971,
+                                        "vert_symmetry":  0.965,
+                                        "edge_density":  0.031,
+                                        "sha256":  "F46554A2F0CE5AC5C971FEB45FE059C4908F46E78662614878DBD430592B32D7"
+                                    },
+                                    {
+                                        "name":  "giza_holo_voice_coupling_v3_0.png",
+                                        "category":  "holo",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_voice_coupling_v3_0.png",
+                                        "size_kb":  63.78,
+                                        "width":  1400,
+                                        "height":  800,
+                                        "avg_brightness":  248.02,
+                                        "center_brightness":  254.12,
+                                        "edge_brightness":  247.62,
+                                        "horiz_symmetry":  0.957,
+                                        "vert_symmetry":  0.971,
+                                        "edge_density":  0.035,
+                                        "sha256":  "B43C187A453BF902654ABA9184C0616ABE864FC54C003ABE10B921E53C82FD0B"
+                                    },
+                                    {
+                                        "name":  "giza_voice_coupling_v2_5.png",
+                                        "category":  "voice",
+                                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_5.png",
+                                        "size_kb":  63.56,
+                                        "width":  1400,
+                                        "height":  800,
+                                        "avg_brightness":  247.44,
+                                        "center_brightness":  254.12,
+                                        "edge_brightness":  246.98,
+                                        "horiz_symmetry":  0.957,
+                                        "vert_symmetry":  0.967,
+                                        "edge_density":  0.038,
+                                        "sha256":  "B73ADD03B1F5094A056F2CC18611DF2AAD49069ED254034265EC5F4A4C45EAF2"
+                                    }
+                                ],
+                   "top_symmetry":  [
+                                        {
+                                            "name":  "giza_delta_phi_purity_v2_5.png",
+                                            "category":  "delta_phi",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_5.png",
+                                            "size_kb":  61.74,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  250.95,
+                                            "center_brightness":  251.92,
+                                            "edge_brightness":  250.95,
+                                            "horiz_symmetry":  0.985,
+                                            "vert_symmetry":  0.982,
+                                            "edge_density":  0.023,
+                                            "sha256":  "537DDE30E1981A93C95D1D3419C4E8E99B5DAA90210099438731260EB9CA0E1B"
+                                        },
+                                        {
+                                            "name":  "giza_delta_phi_purity_v2_3.png",
+                                            "category":  "delta_phi",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_delta_phi_purity_v2_3.png",
+                                            "size_kb":  63.17,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  250.42,
+                                            "center_brightness":  248.39,
+                                            "edge_brightness":  250.46,
+                                            "horiz_symmetry":  0.975,
+                                            "vert_symmetry":  0.974,
+                                            "edge_density":  0.025,
+                                            "sha256":  "DA1FBCBE9A0C63B11FFD081388984003535B754D540A06C42EC5715231198CFB"
+                                        },
+                                        {
+                                            "name":  "giza_holo_center_time_series_v3_0.png",
+                                            "category":  "holo",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_center_time_series_v3_0.png",
+                                            "size_kb":  81.17,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  249.42,
+                                            "center_brightness":  255,
+                                            "edge_brightness":  249.18,
+                                            "horiz_symmetry":  0.974,
+                                            "vert_symmetry":  0.962,
+                                            "edge_density":  0.032,
+                                            "sha256":  "5D5D4D83337F57E1A513DF7926C88C1AA1A75D3C18CFEB080E254482CFEF91B3"
+                                        },
+                                        {
+                                            "name":  "giza_body_coupling_v2_5.png",
+                                            "category":  "other",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_body_coupling_v2_5.png",
+                                            "size_kb":  62.26,
+                                            "width":  1200,
+                                            "height":  800,
+                                            "avg_brightness":  249.28,
+                                            "center_brightness":  254.82,
+                                            "edge_brightness":  248.77,
+                                            "horiz_symmetry":  0.971,
+                                            "vert_symmetry":  0.965,
+                                            "edge_density":  0.031,
+                                            "sha256":  "F46554A2F0CE5AC5C971FEB45FE059C4908F46E78662614878DBD430592B32D7"
+                                        },
+                                        {
+                                            "name":  "giza_holo_voice_coupling_v3_0.png",
+                                            "category":  "holo",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_voice_coupling_v3_0.png",
+                                            "size_kb":  63.78,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  248.02,
+                                            "center_brightness":  254.12,
+                                            "edge_brightness":  247.62,
+                                            "horiz_symmetry":  0.957,
+                                            "vert_symmetry":  0.971,
+                                            "edge_density":  0.035,
+                                            "sha256":  "B43C187A453BF902654ABA9184C0616ABE864FC54C003ABE10B921E53C82FD0B"
+                                        },
+                                        {
+                                            "name":  "giza_holo_shell_profile_v3_0.png",
+                                            "category":  "holo",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_holo_shell_profile_v3_0.png",
+                                            "size_kb":  58.25,
+                                            "width":  1200,
+                                            "height":  800,
+                                            "avg_brightness":  248.01,
+                                            "center_brightness":  244.39,
+                                            "edge_brightness":  247.99,
+                                            "horiz_symmetry":  0.946,
+                                            "vert_symmetry":  0.981,
+                                            "edge_density":  0.035,
+                                            "sha256":  "E5B4F8D08FB15A68C3D32E2ABE7A5FDF70DAEFCCA07F2E4CB334AD4E75256A5E"
+                                        },
+                                        {
+                                            "name":  "giza_water_resonance_v2_5.png",
+                                            "category":  "other",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_water_resonance_v2_5.png",
+                                            "size_kb":  86.77,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  249.14,
+                                            "center_brightness":  246.91,
+                                            "edge_brightness":  249.18,
+                                            "horiz_symmetry":  0.964,
+                                            "vert_symmetry":  0.961,
+                                            "edge_density":  0.037,
+                                            "sha256":  "1595107C856908D1E3D31EBFBE2F48680C525E058568365ED3D700C018C7AFDF"
+                                        },
+                                        {
+                                            "name":  "giza_voice_coupling_v2_5.png",
+                                            "category":  "voice",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_voice_coupling_v2_5.png",
+                                            "size_kb":  63.56,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  247.44,
+                                            "center_brightness":  254.12,
+                                            "edge_brightness":  246.98,
+                                            "horiz_symmetry":  0.957,
+                                            "vert_symmetry":  0.967,
+                                            "edge_density":  0.038,
+                                            "sha256":  "B73ADD03B1F5094A056F2CC18611DF2AAD49069ED254034265EC5F4A4C45EAF2"
+                                        },
+                                        {
+                                            "name":  "giza_schumann_coupling_v2_5.png",
+                                            "category":  "other",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_5.png",
+                                            "size_kb":  42.96,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  248.17,
+                                            "center_brightness":  250.32,
+                                            "edge_brightness":  247.84,
+                                            "horiz_symmetry":  0.959,
+                                            "vert_symmetry":  0.964,
+                                            "edge_density":  0.033,
+                                            "sha256":  "716E909126D01396C3DCF96A39DD97987D893B434EF4AEC50A2D4431F5134012"
+                                        },
+                                        {
+                                            "name":  "giza_schumann_coupling_v2_3.png",
+                                            "category":  "other",
+                                            "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\outputs\\v3_0\\giza_schumann_coupling_v2_3.png",
+                                            "size_kb":  43.1,
+                                            "width":  1400,
+                                            "height":  800,
+                                            "avg_brightness":  248.17,
+                                            "center_brightness":  250.32,
+                                            "edge_brightness":  247.84,
+                                            "horiz_symmetry":  0.959,
+                                            "vert_symmetry":  0.964,
+                                            "edge_density":  0.033,
+                                            "sha256":  "C34A1CF219CA518F5588B7CC4F2021FE35E8B4D243924D9E27012EBEE594552A"
+                                        }
+                                    ],
+                   "couplings":  {
+                                     "deltaPhi_to_holo":  {
+                                                              "giza_delta_phi_map_v2_0.png":  {
+                                                                                                  "name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                                  "center_brightness":  116.05
+                                                                                              },
+                                                              "giza_delta_phi_shell_v2_2.png":  {
+                                                                                                    "name":  "giza_holo_shell_profile_v3_0.png",
+                                                                                                    "center_brightness":  244.39
+                                                                                                },
+                                                              "giza_delta_phi_shell_v2_1.png":  {
+                                                                                                    "name":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                                                    "center_brightness":  251.99
+                                                                                                },
+                                                              "giza_delta_phi_purity_v2_5.png":  {
+                                                                                                     "name":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                                                     "center_brightness":  251.99
+                                                                                                 },
+                                                              "giza_delta_phi_shell_v2_3.png":  {
+                                                                                                    "name":  "giza_holo_solar_coupling_v3_0.png",
+                                                                                                    "center_brightness":  250.44
+                                                                                                },
+                                                              "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                                                               "name":  "giza_holo_E_slice_v3_0.png",
+                                                                                                               "center_brightness":  105.42
+                                                                                                           },
+                                                              "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                                                             "name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                                             "center_brightness":  116.05
+                                                                                                         },
+                                                              "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                                                               "name":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                                                               "center_brightness":  108.69
+                                                                                                           },
+                                                              "giza_delta_phi_map_v2_1.png":  {
+                                                                                                  "name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                                  "center_brightness":  116.05
+                                                                                              },
+                                                              "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                                                               "name":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                                                               "center_brightness":  108.69
+                                                                                                           },
+                                                              "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                                                             "name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                                             "center_brightness":  116.05
+                                                                                                         },
+                                                              "giza_delta_phi_shell_v2_5.png":  {
+                                                                                                    "name":  "giza_holo_shell_profile_v3_0.png",
+                                                                                                    "center_brightness":  244.39
+                                                                                                },
+                                                              "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                                                             "name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                                             "center_brightness":  116.05
+                                                                                                         },
+                                                              "giza_delta_phi_purity_v2_3.png":  {
+                                                                                                     "name":  "giza_holo_solar_coupling_v3_0.png",
+                                                                                                     "center_brightness":  250.44
+                                                                                                 }
+                                                          },
+                                     "deltaPhi_to_solar":  {
+                                                               "giza_delta_phi_map_v2_0.png":  {
+                                                                                                   "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                   "center_brightness":  250.44
+                                                                                               },
+                                                               "giza_delta_phi_shell_v2_2.png":  {
+                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                     "center_brightness":  250.44
+                                                                                                 },
+                                                               "giza_delta_phi_shell_v2_1.png":  {
+                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                     "center_brightness":  250.44
+                                                                                                 },
+                                                               "giza_delta_phi_purity_v2_5.png":  {
+                                                                                                      "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                      "center_brightness":  250.44
+                                                                                                  },
+                                                               "giza_delta_phi_shell_v2_3.png":  {
+                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                     "center_brightness":  250.44
+                                                                                                 },
+                                                               "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                                                                "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                                "center_brightness":  250.44
+                                                                                                            },
+                                                               "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                                                              "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                              "center_brightness":  250.44
+                                                                                                          },
+                                                               "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                                                                "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                                "center_brightness":  250.44
+                                                                                                            },
+                                                               "giza_delta_phi_map_v2_1.png":  {
+                                                                                                   "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                   "center_brightness":  250.44
+                                                                                               },
+                                                               "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                                                                "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                                "center_brightness":  250.44
+                                                                                                            },
+                                                               "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                                                              "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                              "center_brightness":  250.44
+                                                                                                          },
+                                                               "giza_delta_phi_shell_v2_5.png":  {
+                                                                                                     "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                     "center_brightness":  250.44
+                                                                                                 },
+                                                               "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                                                              "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                              "center_brightness":  250.44
+                                                                                                          },
+                                                               "giza_delta_phi_purity_v2_3.png":  {
+                                                                                                      "name":  "giza_solar_coupling_v2_5.png",
+                                                                                                      "center_brightness":  250.44
+                                                                                                  }
+                                                           }
+                                 }
+               }
+}

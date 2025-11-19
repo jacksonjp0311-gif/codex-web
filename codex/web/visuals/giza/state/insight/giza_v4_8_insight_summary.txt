@@ -1,0 +1,37 @@
+﻿CODEX GIZA v4.8 — Insight Field Engine
+Timestamp: 2025-11-19T06:19:08.3129359Z
+
+Total files: 87
+
+Symmetry Field:
+  Horizontal Avg: 0.911
+  Vertical Avg  : 0.937
+  Edge Density  : 0.046
+
+Brightness Field:
+  Center Avg: 160.71
+  Edge Avg  : 216.99
+
+Top 10 Brightest Core Images:
+  giza_cgl_schematic_v2_3.png  → 255
+  giza_cgl_schematic_v2_2.png  → 255
+  giza_holo_triad_glyph_v3_0.png  → 255
+  giza_cgl_schematic_v2_5.png  → 255
+  giza_cgl_schematic_v2_1.png  → 255
+  giza_holo_EIC_hist_v3_0.png  → 255
+  giza_holo_center_time_series_v3_0.png  → 255
+  giza_body_coupling_v2_5.png  → 254.82
+  giza_holo_voice_coupling_v3_0.png  → 254.12
+  giza_voice_coupling_v2_5.png  → 254.12
+
+Top 10 Most Symmetric:
+  giza_delta_phi_purity_v2_5.png
+  giza_delta_phi_purity_v2_3.png
+  giza_holo_center_time_series_v3_0.png
+  giza_body_coupling_v2_5.png
+  giza_holo_voice_coupling_v3_0.png
+  giza_holo_shell_profile_v3_0.png
+  giza_water_resonance_v2_5.png
+  giza_voice_coupling_v2_5.png
+  giza_schumann_coupling_v2_5.png
+  giza_schumann_coupling_v2_3.png
