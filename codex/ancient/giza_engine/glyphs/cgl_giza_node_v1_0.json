@@ -1,0 +1,12 @@
+﻿{
+  "protocol":"CodexTriadicGlyph",
+  "version":"1.1",
+  "context":"Ancient Harmonic Engine",
+  "triad":{
+    "energy":{"glyph":"𓂧","node":"subterranean"},
+    "information":{"glyph":"𓏏","node":"queen"},
+    "consciousness":{"glyph":"𓂀","node":"king"},
+    "placidity":{"glyph":"𓊽","node":"granite_beam_stack"}
+  },
+  "harmonics":[16,117,121,300]
+}

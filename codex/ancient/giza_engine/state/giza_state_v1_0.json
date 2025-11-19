@@ -1,0 +1,8 @@
+﻿{
+  "node": "giza_engine",
+  "version": "1.0",
+  "ΔΦ_kings_chamber": 0.0,
+  "bands_hz": [16, 117, 121, 300],
+  "channels": ["acoustic", "EM", "seismic"],
+  "triad": ["E","I","C","∿"]
+}

@@ -1,0 +1,22 @@
+﻿# Hybrid Voynich–Egyptian test script (ASCII-safe)
+
+ROOT "C:\Users\jacks\OneDrive\Desktop\Codex Web"
+DIR  "codex/voynich/egyptian/state"
+DIR  "codex/voynich/egyptian/logs"
+
+LOG   path="codex/voynich/egyptian/logs/f1_hybrid.log"
+
+ENGINE name=F1_Herbal_Core path="codex/voynich/egyptian/engine/f1_core.py" voyn="qokedy chedy dain"
+STATE  id=f1_state path="codex/voynich/egyptian/state/f1_state.json" voyn="qokedy ain"
+
+PHASE name=F1_Mapping from=H19 to=H20 note="Voynich to Egypt hybrid mapping online."
+
+RUN engine=F1_Herbal_Core
+
+STATE_UPDATE id=f1_state status=OK note="Hybrid F1 mapping complete."
+LOG_APPEND msg="Hybrid F1 run finished (simulation)."
+
+EIC E=0.69 I=0.73 C=0.70
+
+MIRROR note="F1 mirror check (sim)."
+STABILIZE

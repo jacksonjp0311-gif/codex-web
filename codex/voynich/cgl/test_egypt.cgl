@@ -1,0 +1,20 @@
+﻿# 𓂀 Egyptian CGL v0.2 — Auto-generated test
+𓊖 ROOT "C:\Users\jacks\OneDrive\Desktop\Codex Web"
+𓊖 DIR  "codex/voynich/test"
+𓊖 DIR  "codex/voynich/test/logs"
+
+𓂜 ENGINE name=TestEngine path="codex/voynich/test/test_engine.py"
+𓊹 STATE  id=testRun path="codex/voynich/test/state_test.json"
+𓏭 LOG    path="codex/voynich/test/logs/test_run.log"
+
+𓏣 PHASE name=Egyptian_CGL from=H19 to=H20 note="Egyptian glyph protocol online."
+
+𓇳 RUN engine=TestEngine
+
+𓈗 STATE_UPDATE id=testRun status=𓆣 note="Egyptian CGL test successful."
+𓈗 LOG_APPEND  msg="Egyptian CGL v0.2 test completed."
+
+𓂋 EIC E=0.70 I=0.73 C=0.71
+
+𓁹 CHECK note="Simulated mirror check."
+𓎛 STABILIZE

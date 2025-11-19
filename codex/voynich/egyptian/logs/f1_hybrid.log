@@ -1,0 +1,15 @@
+𓏭 LOG bound: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\voynich\egyptian\logs\f1_hybrid.log
+𓂜 ENGINE F1_Herbal_Core -> codex/voynich/egyptian/engine/f1_core.py
+   𓂋 Voynich sequence:
+        qokedy → ? (unknown)
+𓊹 STATE f1_state -> codex/voynich/egyptian/state/f1_state.json
+   𓂋 Voynich state glyphs:
+        qokedy → ? (unknown)
+𓏣 PHASE F1_Mapping: H19→H20 — Voynich
+𓇳 RUN (sim): engine=F1_Herbal_Core, path=codex/voynich/egyptian/engine/f1_core.py
+𓈗 STATE_UPDATE f1_state -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\voynich\egyptian\state\f1_state.json
+𓏭 msg="Hybrid F1 run finished (simulation).
+𓂋 EIC: E=0.69, I=0.73, C=0.70
+𓁹 MIRROR CHECK note="F1 mirror check (sim)."
+𓎛 STABILIZE — run complete.
+[LOG] bound: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\voynich\egyptian\logs\f1_hybrid.log\n[ENGINE] F1_Herbal_Core -> codex/voynich/egyptian/engine/f1_core.py\n  [ENGINE VOYN] sequence:\n      qokedy -> EG_UNKNOWN (unknown)\n[STATE] f1_state -> codex/voynich/egyptian/state/f1_state.json\n  [STATE VOYN] glyphs:\n      qokedy -> EG_UNKNOWN (unknown)\n[PHASE] F1_Mapping: H19->H20 (Voynich)\n[RUN] (sim) engine=F1_Herbal_Core, path=codex/voynich/egyptian/engine/f1_core.py\n[STATE_UPDATE] f1_state -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\voynich\egyptian\state\f1_state.json\n[LOG+] msg="Hybrid F1 run finished (simulation).\n[EIC] E=0.69 I=0.73 C=0.70\n[MIRROR] note="F1 mirror check (sim)."\n[STABILIZE] run complete.\n
