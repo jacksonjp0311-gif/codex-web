@@ -1,0 +1,49 @@
+{
+  "protocol": "CODEX_GUARDIAN_ORACLE",
+  "version": "1.2",
+  "timestamp_utc": "2025-11-19T07:12:20.771144Z",
+  "codex_root": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+  "guardian": {
+    "v1_1_engine_hint": "codex/guardian/v1_1/engine/codex_guardian_v1_1_secure_interpreter.py"
+  },
+  "metrics": {
+    "drift": 0.5,
+    "ward_complexity": 0.8,
+    "anomaly_index": 0.62,
+    "glyph": {
+      "protocol": "CodexTriadicWard",
+      "version": "1.2",
+      "context": "GUARDIAN v1.2 \u2014 Oracle Sentinel",
+      "triad": {
+        "energy": {
+          "glyph": "\ud83d\udee1\ufe0f",
+          "label": "Drift Shield",
+          "value": 0.8,
+          "units": "norm"
+        },
+        "information": {
+          "glyph": "\u223f",
+          "label": "\u0394\u03a6 Field Sample",
+          "value": 0.5,
+          "units": "norm"
+        },
+        "consciousness": {
+          "glyph": "\ud83d\udf04",
+          "label": "Oracle Harmony",
+          "value": 0.77,
+          "units": "norm"
+        }
+      },
+      "harmony": {
+        "glyph": "\u2641",
+        "profile": "Oracle_Sentinel",
+        "value": 0.62
+      }
+    },
+    "viz": {
+      "drift_bar": "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+      "anomaly_bar": "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+      "threshold_bar": "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u00b7\u00b7\u00b7"
+    }
+  }
+}
