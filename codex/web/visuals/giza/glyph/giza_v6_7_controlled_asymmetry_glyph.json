@@ -1,0 +1,22 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Asymmetry Energy",
+                                 "glyph":  "𓂀",
+                                 "value":  0
+                             },
+                  "consciousness":  {
+                                        "label":  "Control Score",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Branch Symmetry Field",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "version":  "2.7",
+    "context":  "GIZA v6.7 — Controlled Asymmetry (ε = 1e-7)"
+}

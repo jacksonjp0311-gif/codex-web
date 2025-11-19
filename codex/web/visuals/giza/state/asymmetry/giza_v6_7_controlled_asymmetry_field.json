@@ -1,0 +1,23 @@
+﻿{
+    "source_state":  "giza_v6_6_morphogenetic_field.json",
+    "version":  "6.7",
+    "timestamp_utc":  "2025-11-19T18:26:40.7626338Z",
+    "controlled_asymmetry_mesh":  {
+
+                                  },
+    "metrics":  {
+                    "avg_branch_symmetry":  0,
+                    "avg_asym_intensity":  0,
+                    "epsilon_asymmetry":  1E-07,
+                    "parent_delta_phi":  0,
+                    "intelligence_gain":  0.5,
+                    "strong_fraction":  0,
+                    "control_score":  0,
+                    "avg_asym_magnitude":  0,
+                    "avg_asym_value":  0,
+                    "morph_coherence":  0,
+                    "phi_factor":  1
+                },
+    "node_count":  0,
+    "protocol":  "CODEX_GIZA_CONTROLLED_ASYMMETRY_FIELD"
+}
