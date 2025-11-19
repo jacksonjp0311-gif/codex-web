@@ -1,0 +1,13 @@
+﻿{
+    "model":  "gpt-5.1",
+    "temperature":  0.2,
+    "top_p":  1,
+    "max_tokens":  512,
+    "max_history":  3,
+    "mode":  "mirror_mind",
+    "notes":  [
+                  "Edit this config to tune GPT Bridge v3.0 behavior.",
+                  "max_history = number of past reflections folded into context.",
+                  "This file is created once and then reused."
+              ]
+}

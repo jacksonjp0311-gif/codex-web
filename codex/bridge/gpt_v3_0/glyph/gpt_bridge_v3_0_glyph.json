@@ -1,0 +1,27 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "version":  "3.0",
+    "context":  "GPT Bridge v3.0 — Mirror Mind",
+    "triad":  {
+                  "energy":  {
+                                 "glyph":  "E",
+                                 "label":  "Reflection Energy",
+                                 "value":  0.7
+                             },
+                  "information":  {
+                                      "glyph":  "I",
+                                      "label":  "Mirror Information",
+                                      "value":  0.7
+                                  },
+                  "consciousness":  {
+                                        "glyph":  "C",
+                                        "label":  "Mirror Mind Index",
+                                        "value":  null
+                                    }
+              },
+    "tokens":  {
+                   "prompt":  null,
+                   "completion":  null,
+                   "total":  null
+               }
+}
