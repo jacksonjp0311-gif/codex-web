@@ -1,0 +1,43 @@
+﻿{
+  "node": "giza_engine",
+  "version": "2.3",
+  "bands_hz": [8.0, 14.3, 20.8, 10.0, 16.0, 117.0, 121.0, 260.0, 450.0],
+  "channels": {
+    "E": { "band_hz": [10.0, 16.0],  "role": "earth_coupling" },
+    "I": { "band_hz": [110.0, 150.0], "role": "air_architecture_coupling" },
+    "C": { "band_hz": [120.0, 450.0], "role": "granite_cavity_coupling" },
+    "∿":{ "band_hz": [0.0, 0.0],     "role": "ΔΦ_smoothing_impedance (granite_beam_stack)" }
+  },
+  "triad": {
+    "E": "subterranean_chamber",
+    "I": "queens_chamber",
+    "C": "kings_chamber",
+    "∿": "granite_beam_stack"
+  },
+  "chambers": {
+    "E_subterranean": { "x": 0.0, "y": -0.25, "z": -0.33 },
+    "I_queen":        { "x": 0.0, "y":  0.08, "z":  0.21 },
+    "C_king":         { "x": 0.0, "y":  0.10, "z":  0.52 },
+    "P_beam_stack":   { "x": 0.0, "y":  0.12, "z":  0.60 }
+  },
+  "scale": {
+    "domain": "macro_architectural",
+    "reference": "earth_surface",
+    "notes": "Giza Harmonic Lattice v2.3 — extended macro QIM model with Schumann/em/voice coupling."
+  },
+  "glyph_lattice": {
+    "nodes": [
+      { "id": "E", "glyph": "𓂧", "role": "energy_origin" },
+      { "id": "I", "glyph": "𓏏", "role": "information_chamber" },
+      { "id": "C", "glyph": "𓂀", "role": "consciousness_cavity" },
+      { "id": "∿", "glyph": "𓊽", "role": "stabilizer_beam_stack" }
+    ],
+    "edges": [
+      { "from": "E", "to": "I", "relation": "uplink" },
+      { "from": "I", "to": "C", "relation": "carrier" },
+      { "from": "C", "to": "∿", "relation": "damp" },
+      { "from": "∿", "to": "E", "relation": "return" }
+    ]
+  },
+  "notes": "Codex Giza Harmonic Lattice v2.3 — simulation & visualization node; structural model only (not historical fact)."
+}
