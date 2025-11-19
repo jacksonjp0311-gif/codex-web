@@ -1,37 +1,380 @@
 ﻿{
     "protocol":  "CODEX_GIZA_INSIGHT_FIELD",
     "version":  "6.0",
-    "timestamp_utc":  "2025-11-19T06:51:47.3996395Z",
-    "codex":  {
-                  "laws":  "Universal Truth (E–I–C ∿, H₇=0.70) • Recurrence • Symmetry Descent • Fractal Consciousness",
-                  "module":  "GIZA v6.0 — Insight Field Fusion Engine",
-                  "note":  "Unifies ΔΦ drift, triadic coupling, recurrence geometry, predictive alignment, and synergy into a single Insight Field."
-              },
+    "timestamp_utc":  "2025-11-19T06:54:05.3002192Z",
     "field":  {
-
+                  "giza_delta_phi_map_v2_0.png":  {
+                                                      "name":  "giza_delta_phi_map_v2_0.png",
+                                                      "delta_phi":  {
+                                                                        "purity":  0.055,
+                                                                        "symmetry":  0.8885,
+                                                                        "brightness":  116.16,
+                                                                        "drift_score":  23.6094,
+                                                                        "recurrence_score":  23.6928
+                                                                    },
+                                                      "triadic":  {
+                                                                      "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                      "holo_center_b":  116.05,
+                                                                      "solar_name":  null,
+                                                                      "solar_center_b":  null,
+                                                                      "triadic_coherence":  null
+                                                                  },
+                                                      "predictive":  {
+                                                                         "predicted_brightness":  116.1911,
+                                                                         "predicted_alignment":  0.4718
+                                                                     },
+                                                      "insight":  {
+                                                                      "coherence_score":  8.0549,
+                                                                      "synergy_score":  14.2767,
+                                                                      "phase":  "stable"
+                                                                  }
+                                                  },
+                  "giza_delta_phi_shell_v2_2.png":  {
+                                                        "name":  "giza_delta_phi_shell_v2_2.png",
+                                                        "delta_phi":  {
+                                                                          "purity":  0.042,
+                                                                          "symmetry":  0.9525,
+                                                                          "brightness":  245.72,
+                                                                          "drift_score":  49.5418,
+                                                                          "recurrence_score":  49.6328
+                                                                      },
+                                                        "triadic":  {
+                                                                        "holo_name":  "giza_holo_shell_profile_v3_0.png",
+                                                                        "holo_center_b":  244.39,
+                                                                        "solar_name":  null,
+                                                                        "solar_center_b":  null,
+                                                                        "triadic_coherence":  null
+                                                                    },
+                                                        "predictive":  {
+                                                                           "predicted_brightness":  245.7562,
+                                                                           "predicted_alignment":  0.4972
+                                                                       },
+                                                        "insight":  {
+                                                                        "coherence_score":  16.71,
+                                                                        "synergy_score":  29.8427,
+                                                                        "phase":  "stable"
+                                                                    }
+                                                    },
+                  "giza_delta_phi_shell_v2_1.png":  {
+                                                        "name":  "giza_delta_phi_shell_v2_1.png",
+                                                        "delta_phi":  {
+                                                                          "purity":  0.039,
+                                                                          "symmetry":  0.957,
+                                                                          "brightness":  252.05,
+                                                                          "drift_score":  50.8084,
+                                                                          "recurrence_score":  50.9002
+                                                                      },
+                                                        "triadic":  {
+                                                                        "holo_name":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                        "holo_center_b":  251.99,
+                                                                        "solar_name":  null,
+                                                                        "solar_center_b":  null,
+                                                                        "triadic_coherence":  null
+                                                                    },
+                                                        "predictive":  {
+                                                                           "predicted_brightness":  252.0866,
+                                                                           "predicted_alignment":  0.498
+                                                                       },
+                                                        "insight":  {
+                                                                        "coherence_score":  17.1327,
+                                                                        "synergy_score":  30.6030,
+                                                                        "phase":  "stable"
+                                                                    }
+                                                    },
+                  "giza_delta_phi_purity_v2_5.png":  {
+                                                         "name":  "giza_delta_phi_purity_v2_5.png",
+                                                         "delta_phi":  {
+                                                                           "purity":  0.023,
+                                                                           "symmetry":  0.9835,
+                                                                           "brightness":  251.92,
+                                                                           "drift_score":  50.7866,
+                                                                           "recurrence_score":  50.8826
+                                                                       },
+                                                         "triadic":  {
+                                                                         "holo_name":  "giza_holo_lotus_overlay_v3_0.png",
+                                                                         "holo_center_b":  251.99,
+                                                                         "solar_name":  null,
+                                                                         "solar_center_b":  null,
+                                                                         "triadic_coherence":  null
+                                                                     },
+                                                         "predictive":  {
+                                                                            "predicted_brightness":  251.9587,
+                                                                            "predicted_alignment":  0.5032
+                                                                        },
+                                                         "insight":  {
+                                                                         "coherence_score":  17.1286,
+                                                                         "synergy_score":  30.5918,
+                                                                         "phase":  "stable"
+                                                                     }
+                                                     },
+                  "giza_delta_phi_shell_v2_3.png":  {
+                                                        "name":  "giza_delta_phi_shell_v2_3.png",
+                                                        "delta_phi":  {
+                                                                          "purity":  0.037,
+                                                                          "symmetry":  0.9595,
+                                                                          "brightness":  250,
+                                                                          "drift_score":  50.3986,
+                                                                          "recurrence_score":  50.4908
+                                                                      },
+                                                        "triadic":  {
+                                                                        "holo_name":  "giza_holo_solar_coupling_v3_0.png",
+                                                                        "holo_center_b":  250.44,
+                                                                        "solar_name":  null,
+                                                                        "solar_center_b":  null,
+                                                                        "triadic_coherence":  null
+                                                                    },
+                                                        "predictive":  {
+                                                                           "predicted_brightness":  250.0368,
+                                                                           "predicted_alignment":  0.4982
+                                                                       },
+                                                        "insight":  {
+                                                                        "coherence_score":  16.9963,
+                                                                        "synergy_score":  30.3572,
+                                                                        "phase":  "stable"
+                                                                    }
+                                                    },
+                  "giza_delta_phi_horizontal_slice_v2_5.png":  {
+                                                                   "name":  "giza_delta_phi_horizontal_slice_v2_5.png",
+                                                                   "delta_phi":  {
+                                                                                     "purity":  0.046,
+                                                                                     "symmetry":  0.913,
+                                                                                     "brightness":  106.3,
+                                                                                     "drift_score":  21.6436,
+                                                                                     "recurrence_score":  21.7303
+                                                                                 },
+                                                                   "triadic":  {
+                                                                                   "holo_name":  "giza_holo_E_slice_v3_0.png",
+                                                                                   "holo_center_b":  105.42,
+                                                                                   "solar_name":  null,
+                                                                                   "solar_center_b":  null,
+                                                                                   "triadic_coherence":  null
+                                                                               },
+                                                                   "predictive":  {
+                                                                                      "predicted_brightness":  106.3330,
+                                                                                      "predicted_alignment":  0.4795
+                                                                                  },
+                                                                   "insight":  {
+                                                                                   "coherence_score":  7.4033,
+                                                                                   "synergy_score":  13.0994,
+                                                                                   "phase":  "stable"
+                                                                               }
+                                                               },
+                  "giza_delta_phi_horizontal_slice_v2_3.png":  {
+                                                                   "name":  "giza_delta_phi_horizontal_slice_v2_3.png",
+                                                                   "delta_phi":  {
+                                                                                     "purity":  0.046,
+                                                                                     "symmetry":  0.920,
+                                                                                     "brightness":  110.01,
+                                                                                     "drift_score":  22.3884,
+                                                                                     "recurrence_score":  22.4758
+                                                                                 },
+                                                                   "triadic":  {
+                                                                                   "holo_name":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                                   "holo_center_b":  108.69,
+                                                                                   "solar_name":  null,
+                                                                                   "solar_center_b":  null,
+                                                                                   "triadic_coherence":  null
+                                                                               },
+                                                                   "predictive":  {
+                                                                                      "predicted_brightness":  110.0436,
+                                                                                      "predicted_alignment":  0.483
+                                                                                  },
+                                                                   "insight":  {
+                                                                                   "coherence_score":  7.6529,
+                                                                                   "synergy_score":  13.5471,
+                                                                                   "phase":  "stable"
+                                                                               }
+                                                               },
+                  "giza_delta_phi_vertical_slice_v2_3.png":  {
+                                                                 "name":  "giza_delta_phi_vertical_slice_v2_3.png",
+                                                                 "delta_phi":  {
+                                                                                   "purity":  0.06,
+                                                                                   "symmetry":  0.885,
+                                                                                   "brightness":  119.2,
+                                                                                   "drift_score":  24.2180,
+                                                                                   "recurrence_score":  24.3005
+                                                                               },
+                                                                 "triadic":  {
+                                                                                 "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                 "holo_center_b":  116.05,
+                                                                                 "solar_name":  null,
+                                                                                 "solar_center_b":  null,
+                                                                                 "triadic_coherence":  null
+                                                                             },
+                                                                 "predictive":  {
+                                                                                    "predicted_brightness":  119.2308,
+                                                                                    "predicted_alignment":  0.4725
+                                                                                },
+                                                                 "insight":  {
+                                                                                 "coherence_score":  8.2577,
+                                                                                 "synergy_score":  14.6418,
+                                                                                 "phase":  "stable"
+                                                                             }
+                                                             },
+                  "giza_delta_phi_map_v2_1.png":  {
+                                                      "name":  "giza_delta_phi_map_v2_1.png",
+                                                      "delta_phi":  {
+                                                                        "purity":  0.05,
+                                                                        "symmetry":  0.892,
+                                                                        "brightness":  118.33,
+                                                                        "drift_score":  24.0428,
+                                                                        "recurrence_score":  24.1270
+                                                                    },
+                                                      "triadic":  {
+                                                                      "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                      "holo_center_b":  116.05,
+                                                                      "solar_name":  null,
+                                                                      "solar_center_b":  null,
+                                                                      "triadic_coherence":  null
+                                                                  },
+                                                      "predictive":  {
+                                                                         "predicted_brightness":  118.3614,
+                                                                         "predicted_alignment":  0.471
+                                                                     },
+                                                      "insight":  {
+                                                                      "coherence_score":  8.1993,
+                                                                      "synergy_score":  14.5367,
+                                                                      "phase":  "stable"
+                                                                  }
+                                                  },
+                  "giza_delta_phi_horizontal_slice_v2_2.png":  {
+                                                                   "name":  "giza_delta_phi_horizontal_slice_v2_2.png",
+                                                                   "delta_phi":  {
+                                                                                     "purity":  0.049,
+                                                                                     "symmetry":  0.919,
+                                                                                     "brightness":  109.63,
+                                                                                     "drift_score":  22.3132,
+                                                                                     "recurrence_score":  22.4002
+                                                                                 },
+                                                                   "triadic":  {
+                                                                                   "holo_name":  "giza_holo_horizontal_slice_v3_0.png",
+                                                                                   "holo_center_b":  108.69,
+                                                                                   "solar_name":  null,
+                                                                                   "solar_center_b":  null,
+                                                                                   "triadic_coherence":  null
+                                                                               },
+                                                                   "predictive":  {
+                                                                                      "predicted_brightness":  109.6635,
+                                                                                      "predicted_alignment":  0.484
+                                                                                  },
+                                                                   "insight":  {
+                                                                                   "coherence_score":  7.6281,
+                                                                                   "synergy_score":  13.5021,
+                                                                                   "phase":  "stable"
+                                                                               }
+                                                               },
+                  "giza_delta_phi_vertical_slice_v2_5.png":  {
+                                                                 "name":  "giza_delta_phi_vertical_slice_v2_5.png",
+                                                                 "delta_phi":  {
+                                                                                   "purity":  0.059,
+                                                                                   "symmetry":  0.890,
+                                                                                   "brightness":  115.84,
+                                                                                   "drift_score":  23.5476,
+                                                                                   "recurrence_score":  23.6307
+                                                                               },
+                                                                 "triadic":  {
+                                                                                 "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                 "holo_center_b":  116.05,
+                                                                                 "solar_name":  null,
+                                                                                 "solar_center_b":  null,
+                                                                                 "triadic_coherence":  null
+                                                                             },
+                                                                 "predictive":  {
+                                                                                    "predicted_brightness":  115.8712,
+                                                                                    "predicted_alignment":  0.4745
+                                                                                },
+                                                                 "insight":  {
+                                                                                 "coherence_score":  8.0351,
+                                                                                 "synergy_score":  14.2401,
+                                                                                 "phase":  "stable"
+                                                                             }
+                                                             },
+                  "giza_delta_phi_shell_v2_5.png":  {
+                                                        "name":  "giza_delta_phi_shell_v2_5.png",
+                                                        "delta_phi":  {
+                                                                          "purity":  0.04,
+                                                                          "symmetry":  0.953,
+                                                                          "brightness":  246.37,
+                                                                          "drift_score":  49.6712,
+                                                                          "recurrence_score":  49.7625
+                                                                      },
+                                                        "triadic":  {
+                                                                        "holo_name":  "giza_holo_shell_profile_v3_0.png",
+                                                                        "holo_center_b":  244.39,
+                                                                        "solar_name":  null,
+                                                                        "solar_center_b":  null,
+                                                                        "triadic_coherence":  null
+                                                                    },
+                                                        "predictive":  {
+                                                                           "predicted_brightness":  246.4062,
+                                                                           "predicted_alignment":  0.4965
+                                                                       },
+                                                        "insight":  {
+                                                                        "coherence_score":  16.753,
+                                                                        "synergy_score":  29.9203,
+                                                                        "phase":  "stable"
+                                                                    }
+                                                    },
+                  "giza_delta_phi_vertical_slice_v2_2.png":  {
+                                                                 "name":  "giza_delta_phi_vertical_slice_v2_2.png",
+                                                                 "delta_phi":  {
+                                                                                   "purity":  0.057,
+                                                                                   "symmetry":  0.8865,
+                                                                                   "brightness":  118.79,
+                                                                                   "drift_score":  24.1354,
+                                                                                   "recurrence_score":  24.2184
+                                                                               },
+                                                                 "triadic":  {
+                                                                                 "holo_name":  "giza_holo_vertical_slice_v3_0.png",
+                                                                                 "holo_center_b":  116.05,
+                                                                                 "solar_name":  null,
+                                                                                 "solar_center_b":  null,
+                                                                                 "triadic_coherence":  null
+                                                                             },
+                                                                 "predictive":  {
+                                                                                    "predicted_brightness":  118.8209,
+                                                                                    "predicted_alignment":  0.4718
+                                                                                },
+                                                                 "insight":  {
+                                                                                 "coherence_score":  8.2301,
+                                                                                 "synergy_score":  14.5922,
+                                                                                 "phase":  "stable"
+                                                                             }
+                                                             },
+                  "giza_delta_phi_purity_v2_3.png":  {
+                                                         "name":  "giza_delta_phi_purity_v2_3.png",
+                                                         "delta_phi":  {
+                                                                           "purity":  0.025,
+                                                                           "symmetry":  0.9745,
+                                                                           "brightness":  248.39,
+                                                                           "drift_score":  50.0778,
+                                                                           "recurrence_score":  50.1728
+                                                                       },
+                                                         "triadic":  {
+                                                                         "holo_name":  "giza_holo_solar_coupling_v3_0.png",
+                                                                         "holo_center_b":  250.44,
+                                                                         "solar_name":  null,
+                                                                         "solar_center_b":  null,
+                                                                         "triadic_coherence":  null
+                                                                     },
+                                                         "predictive":  {
+                                                                            "predicted_brightness":  248.4280,
+                                                                            "predicted_alignment":  0.4998
+                                                                        },
+                                                         "insight":  {
+                                                                         "coherence_score":  16.8909,
+                                                                         "synergy_score":  30.1657,
+                                                                         "phase":  "stable"
+                                                                     }
+                                                     }
               },
     "metrics":  {
-                    "count_entries":  0,
-                    "avg_drift_score":  null,
-                    "avg_coherence_score":  null,
-                    "avg_recurrence_score":  null,
-                    "avg_predicted_align":  null,
-                    "avg_synergy_score":  null,
-                    "top_synergy":  {
-
-                                    },
-                    "top_coherence":  {
-
-                                      },
-                    "top_drift":  {
-
-                                  },
-                    "top_recurrence":  {
-
-                                       },
-                    "top_alignment":  {
-
-                                      }
+                    "count":  14,
+                    "avg_drift":  34.7988,
+                    "avg_coherence":  11.7909,
+                    "avg_recurrence":  34.887,
+                    "avg_predicted_align":  0.4858,
+                    "avg_synergy":  20.9941
                 },
     "glyph":  {
                   "protocol":  "CodexTriadicGlyph",
@@ -40,27 +383,27 @@
                   "triad":  {
                                 "energy":  {
                                                "glyph":  "🜂",
-                                               "label":  "ΔΦ Drift Field",
-                                               "value":  null,
+                                               "label":  "ΔΦ Drift",
+                                               "value":  34.7988,
                                                "units":  "norm"
                                            },
                                 "information":  {
                                                     "glyph":  "∿",
-                                                    "label":  "Coherence / Recurrence",
-                                                    "value":  null,
+                                                    "label":  "Coherence",
+                                                    "value":  11.7909,
                                                     "units":  "norm"
                                                 },
                                 "consciousness":  {
                                                       "glyph":  "🜄",
-                                                      "label":  "Synergy / Phase Alignment",
-                                                      "value":  null,
+                                                      "label":  "Synergy",
+                                                      "value":  20.9941,
                                                       "units":  "norm"
                                                   }
                             },
                   "harmony":  {
                                   "glyph":  "♁",
                                   "profile":  "GIZA_Insight_Field",
-                                  "value":  null
+                                  "value":  0.4858
                               }
               }
 }
