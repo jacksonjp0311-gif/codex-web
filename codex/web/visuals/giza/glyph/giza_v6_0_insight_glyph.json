@@ -1,0 +1,23 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "version":  "2.3",
+    "context":  "GIZA v6.0 — Insight Field",
+    "triad":  {
+                  "energy":  {
+                                 "glyph":  "𓂀",
+                                 "label":  "Insight Gradient",
+                                 "value":  0.313271
+                             },
+                  "information":  {
+                                      "glyph":  "𓏲",
+                                      "label":  "Insight Resonance",
+                                      "value":  0.72
+                                  },
+                  "consciousness":  {
+                                        "glyph":  "𓅓",
+                                        "label":  "Insight Drift-DSM",
+                                        "value":  0.329525
+                                    }
+              },
+    "delta_phi":  0.531795
+}

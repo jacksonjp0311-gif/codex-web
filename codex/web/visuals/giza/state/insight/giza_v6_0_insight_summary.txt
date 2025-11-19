@@ -1,0 +1,9 @@
+﻿GIZA v6.0 — Insight Field Summary
+Timestamp (UTC): 2025-11-19T15:44:06.1400397Z
+Nodes           : 64
+Avg |Gradient|  : 0.313271
+Avg Curvature   : 0.353906
+Avg Resonance   : 0.72
+ΔΦ              : 0.531795
+DSM Drift Index : 0.329525
+Peak Resonance  : 0.939932 at node n016

@@ -1,0 +1,337 @@
+﻿{
+    "protocol":  "CODEX_GIZA_INSIGHT_FIELD",
+    "version":  "6.0",
+    "timestamp_utc":  "2025-11-19T15:44:06.1400397Z",
+    "node_count":  64,
+    "metrics":  {
+                    "avg_abs_gradient":  0.313271,
+                    "delta_phi":  0.531795,
+                    "dsm_drift_index":  0.329525,
+                    "peak_resonance":  0.939932,
+                    "avg_curvature":  0.353906,
+                    "avg_resonance":  0.72,
+                    "peak_resonance_node":  "n016"
+                },
+    "mesh":  {
+                 "n057":  {
+                              "resonance":  0.59607,
+                              "curvature":  0.55656,
+                              "gradient":  -0.28166
+                          },
+                 "n008":  {
+                              "resonance":  0.877491,
+                              "curvature":  0.524559,
+                              "gradient":  0.357933
+                          },
+                 "n030":  {
+                              "resonance":  0.752789,
+                              "curvature":  0.102792,
+                              "gradient":  0.074521
+                          },
+                 "n046":  {
+                              "resonance":  0.501707,
+                              "curvature":  0.318914,
+                              "gradient":  -0.49612
+                          },
+                 "n031":  {
+                              "resonance":  0.730966,
+                              "curvature":  0.100311,
+                              "gradient":  0.024923
+                          },
+                 "n001":  {
+                              "resonance":  0.741905,
+                              "curvature":  0.598758,
+                              "gradient":  0.049784
+                          },
+                 "n054":  {
+                              "resonance":  0.547997,
+                              "curvature":  0.505872,
+                              "gradient":  -0.390916
+                          },
+                 "n037":  {
+                              "resonance":  0.605284,
+                              "curvature":  0.136677,
+                              "gradient":  -0.260718
+                          },
+                 "n006":  {
+                              "resonance":  0.84393,
+                              "curvature":  0.55656,
+                              "gradient":  0.28166
+                          },
+                 "n051":  {
+                              "resonance":  0.515208,
+                              "curvature":  0.441335,
+                              "gradient":  -0.465437
+                          },
+                 "n015":  {
+                              "resonance":  0.939385,
+                              "curvature":  0.368683,
+                              "gradient":  0.498602
+                          },
+                 "n036":  {
+                              "resonance":  0.624546,
+                              "curvature":  0.124758,
+                              "gradient":  -0.216942
+                          },
+                 "n044":  {
+                              "resonance":  0.511456,
+                              "curvature":  0.270378,
+                              "gradient":  -0.473964
+                          },
+                 "n027":  {
+                              "resonance":  0.815454,
+                              "curvature":  0.124758,
+                              "gradient":  0.216942
+                          },
+                 "n020":  {
+                              "resonance":  0.920531,
+                              "curvature":  0.247178,
+                              "gradient":  0.455753
+                          },
+                 "n014":  {
+                              "resonance":  0.936658,
+                              "curvature":  0.393412,
+                              "gradient":  0.492404
+                          },
+                 "n035":  {
+                              "resonance":  0.644756,
+                              "curvature":  0.115077,
+                              "gradient":  -0.17101
+                          },
+                 "n034":  {
+                              "resonance":  0.665713,
+                              "curvature":  0.107731,
+                              "gradient":  -0.123379
+                          },
+                 "n011":  {
+                              "resonance":  0.915772,
+                              "curvature":  0.464053,
+                              "gradient":  0.444936
+                          },
+                 "n040":  {
+                              "resonance":  0.555048,
+                              "curvature":  0.184579,
+                              "gradient":  -0.374891
+                          },
+                 "n024":  {
+                              "resonance":  0.869638,
+                              "curvature":  0.166737,
+                              "gradient":  0.340086
+                          },
+                 "n063":  {
+                              "resonance":  0.72,
+                              "curvature":  0.6,
+                              "gradient":  0
+                          },
+                 "n049":  {
+                              "resonance":  0.503342,
+                              "curvature":  0.393412,
+                              "gradient":  -0.492404
+                          },
+                 "n004":  {
+                              "resonance":  0.805456,
+                              "curvature":  0.580369,
+                              "gradient":  0.194217
+                          },
+                 "n022":  {
+                              "resonance":  0.898626,
+                              "curvature":  0.204064,
+                              "gradient":  0.405969
+                          },
+                 "n055":  {
+                              "resonance":  0.562509,
+                              "curvature":  0.524559,
+                              "gradient":  -0.357933
+                          },
+                 "n026":  {
+                              "resonance":  0.834716,
+                              "curvature":  0.136677,
+                              "gradient":  0.260718
+                          },
+                 "n058":  {
+                              "resonance":  0.614784,
+                              "curvature":  0.569555,
+                              "gradient":  -0.239127
+                          },
+                 "n025":  {
+                              "resonance":  0.852837,
+                              "curvature":  0.150717,
+                              "gradient":  0.301902
+                          },
+                 "n032":  {
+                              "resonance":  0.709034,
+                              "curvature":  0.100311,
+                              "gradient":  -0.024923
+                          },
+                 "n041":  {
+                              "resonance":  0.541374,
+                              "curvature":  0.204064,
+                              "gradient":  -0.405969
+                          },
+                 "n033":  {
+                              "resonance":  0.687211,
+                              "curvature":  0.102792,
+                              "gradient":  -0.074521
+                          },
+                 "n023":  {
+                              "resonance":  0.884952,
+                              "curvature":  0.184579,
+                              "gradient":  0.374891
+                          },
+                 "n048":  {
+                              "resonance":  0.500615,
+                              "curvature":  0.368683,
+                              "gradient":  -0.498602
+                          },
+                 "n047":  {
+                              "resonance":  0.500068,
+                              "curvature":  0.343767,
+                              "gradient":  -0.499845
+                          },
+                 "n003":  {
+                              "resonance":  0.784846,
+                              "curvature":  0.588893,
+                              "gradient":  0.147378
+                          },
+                 "n059":  {
+                              "resonance":  0.634544,
+                              "curvature":  0.580369,
+                              "gradient":  -0.194217
+                          },
+                 "n062":  {
+                              "resonance":  0.698095,
+                              "curvature":  0.598758,
+                              "gradient":  -0.049784
+                          },
+                 "n045":  {
+                              "resonance":  0.505516,
+                              "curvature":  0.29437,
+                              "gradient":  -0.487464
+                          },
+                 "n005":  {
+                              "resonance":  0.825216,
+                              "curvature":  0.569555,
+                              "gradient":  0.239127
+                          },
+                 "n028":  {
+                              "resonance":  0.795244,
+                              "curvature":  0.115077,
+                              "gradient":  0.17101
+                          },
+                 "n017":  {
+                              "resonance":  0.938293,
+                              "curvature":  0.318914,
+                              "gradient":  0.49612
+                          },
+                 "n002":  {
+                              "resonance":  0.763592,
+                              "curvature":  0.595043,
+                              "gradient":  0.099073
+                          },
+                 "n061":  {
+                              "resonance":  0.676408,
+                              "curvature":  0.595043,
+                              "gradient":  -0.099073
+                          },
+                 "n009":  {
+                              "resonance":  0.892003,
+                              "curvature":  0.505872,
+                              "gradient":  0.390916
+                          },
+                 "n018":  {
+                              "resonance":  0.934484,
+                              "curvature":  0.29437,
+                              "gradient":  0.487464
+                          },
+                 "n052":  {
+                              "resonance":  0.524228,
+                              "curvature":  0.464053,
+                              "gradient":  -0.444936
+                          },
+                 "n016":  {
+                              "resonance":  0.939932,
+                              "curvature":  0.343767,
+                              "gradient":  0.499845
+                          },
+                 "n043":  {
+                              "resonance":  0.519469,
+                              "curvature":  0.247178,
+                              "gradient":  -0.455753
+                          },
+                 "n000":  {
+                              "resonance":  0.72,
+                              "curvature":  0.6,
+                              "gradient":  0
+                          },
+                 "n010":  {
+                              "resonance":  0.904806,
+                              "curvature":  0.485637,
+                              "gradient":  0.420013
+                          },
+                 "n038":  {
+                              "resonance":  0.587163,
+                              "curvature":  0.150717,
+                              "gradient":  -0.301902
+                          },
+                 "n007":  {
+                              "resonance":  0.861413,
+                              "curvature":  0.541511,
+                              "gradient":  0.321394
+                          },
+                 "n042":  {
+                              "resonance":  0.529474,
+                              "curvature":  0.225,
+                              "gradient":  -0.433013
+                          },
+                 "n019":  {
+                              "resonance":  0.928544,
+                              "curvature":  0.270378,
+                              "gradient":  0.473964
+                          },
+                 "n050":  {
+                              "resonance":  0.508223,
+                              "curvature":  0.41771,
+                              "gradient":  -0.481312
+                          },
+                 "n013":  {
+                              "resonance":  0.931777,
+                              "curvature":  0.41771,
+                              "gradient":  0.481312
+                          },
+                 "n039":  {
+                              "resonance":  0.570362,
+                              "curvature":  0.166737,
+                              "gradient":  -0.340086
+                          },
+                 "n060":  {
+                              "resonance":  0.655154,
+                              "curvature":  0.588893,
+                              "gradient":  -0.147378
+                          },
+                 "n053":  {
+                              "resonance":  0.535194,
+                              "curvature":  0.485637,
+                              "gradient":  -0.420013
+                          },
+                 "n021":  {
+                              "resonance":  0.910526,
+                              "curvature":  0.225,
+                              "gradient":  0.433013
+                          },
+                 "n056":  {
+                              "resonance":  0.578587,
+                              "curvature":  0.541511,
+                              "gradient":  -0.321394
+                          },
+                 "n012":  {
+                              "resonance":  0.924792,
+                              "curvature":  0.441335,
+                              "gradient":  0.465437
+                          },
+                 "n029":  {
+                              "resonance":  0.774287,
+                              "curvature":  0.107731,
+                              "gradient":  0.123379
+                          }
+             }
+}
