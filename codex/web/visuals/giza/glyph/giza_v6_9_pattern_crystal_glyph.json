@@ -2,22 +2,22 @@
     "protocol":  "CodexTriadicGlyph",
     "triad":  {
                   "energy":  {
-                                 "label":  "Curvature Energy (ΔΦ_avg)",
+                                 "label":  "Curvature Energy",
                                  "glyph":  "𓂀",
-                                 "value":  0
+                                 "value":  6.72E-10
                              },
                   "consciousness":  {
-                                        "label":  "Crystal Coherence (C_avg)",
+                                        "label":  "Crystal C",
                                         "glyph":  "𓅓",
                                         "value":  0
                                     },
                   "information":  {
-                                      "label":  "Channel Flow (I_avg)",
+                                      "label":  "Flow I",
                                       "glyph":  "𓏲",
-                                      "value":  0
+                                      "value":  1.85E-10
                                   }
               },
     "version":  "2.9",
     "rune_density":  0,
-    "context":  "GIZA v6.9 — Pattern Crystalizer (Triadic Mode)"
+    "context":  "GIZA v6.9 — Pattern Crystalizer (Rebuild)"
 }
