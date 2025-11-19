@@ -1,0 +1,20 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "version":  "2.1",
+    "context":  "GIZA v6.2 — Gradient Resonance",
+    "triad":  {
+                  "energy":  {
+                                 "glyph":  "𓂀",
+                                 "value":  null
+                             },
+                  "consciousness":  {
+                                        "glyph":  "𓅓",
+                                        "value":  null
+                                    },
+                  "information":  {
+                                      "glyph":  "𓏲",
+                                      "value":  null
+                                  }
+              },
+    "delta_phi":  null
+}

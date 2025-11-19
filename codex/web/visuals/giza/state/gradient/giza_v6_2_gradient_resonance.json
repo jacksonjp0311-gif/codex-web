@@ -1,0 +1,15 @@
+﻿{
+    "protocol":  "CODEX_GIZA_GRADIENT_RESONANCE",
+    "version":  "6.2",
+    "timestamp_utc":  "2025-11-19T15:27:34.9609612Z",
+    "metrics":  {
+                    "delta_phi":  null,
+                    "avg_resonance":  null,
+                    "dsm_drift_index":  null,
+                    "avg_abs_gradient":  null,
+                    "avg_curvature":  null
+                },
+    "gradient_mesh":  {
+
+                      }
+}

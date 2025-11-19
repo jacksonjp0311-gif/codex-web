@@ -1,0 +1,6 @@
+﻿GIZA v6.2 — Gradient Resonance Summary
+Avg |Gradient| : 
+Avg Curvature  : 
+Avg Resonance  : 
+ΔΦ             : 
+DSM Drift      : 
