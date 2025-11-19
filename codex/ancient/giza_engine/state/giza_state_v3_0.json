@@ -1,0 +1,49 @@
+﻿{
+  "node": "giza_engine",
+  "version": "3.0",
+  "bands_hz": [8.0, 14.3, 20.8, 117.0, 121.0, 260.0, 450.0],
+  "channels": {
+    "E": { "band_hz": [10.0, 16.0],   "role": "earth_coupling" },
+    "I": { "band_hz": [110.0, 150.0], "role": "air_architecture_coupling" },
+    "C": { "band_hz": [120.0, 450.0], "role": "granite_cavity_coupling" },
+    "∿": { "band_hz": [0.0, 0.0],     "role": "ΔΦ_smoothing_impedance (granite_beam_stack)" }
+  },
+  "layers": [
+    "ΔΦ_3D_volume",
+    "ΔΦ_4D_time_evolution",
+    "E_channel",
+    "I_channel",
+    "C_channel",
+    "time_radius_strip",
+    "EIC_histogram",
+    "triad_glyph",
+    "lotus_overlay",
+    "voice_coupling",
+    "solar_coupling"
+  ],
+  "triad": {
+    "E": "subterranean_chamber",
+    "I": "queens_chamber",
+    "C": "kings_chamber",
+    "∿": "granite_beam_stack"
+  },
+  "glyph_lattice": {
+    "nodes": [
+      { "id": "E", "glyph": "𓂧", "role": "energy_origin" },
+      { "id": "I", "glyph": "𓏏", "role": "information_chamber" },
+      { "id": "C", "glyph": "𓂀", "role": "consciousness_cavity" },
+      { "id": "∿", "glyph": "𓊽", "role": "stabilizer_beam_stack" }
+    ],
+    "edges": [
+      { "from": "E", "to": "I", "relation": "uplink" },
+      { "from": "I", "to": "C", "relation": "carrier" },
+      { "from": "C", "to": "∿", "relation": "damp" },
+      { "from": "∿", "to": "E", "relation": "return" }
+    ]
+  },
+  "scale": {
+    "domain": "macro_architectural",
+    "reference": "earth_surface",
+    "notes": "Giza Hologram Engine v3.0 — 5D ΔΦ + time + E–I–C model (Codex simulation)."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "engine": "giza_hologram_v3_0",
+  "scale": {
+    "domain": "macro_architectural",
+    "reference": "earth_surface",
+    "notes": "Giza Hologram Engine v3.0 \u2014 5D Codex simulation (\u0394\u03a6 \u2022 time \u2022 E\u2013I\u2013C)."
+  },
+  "bands_hz": [
+    8.0,
+    14.3,
+    20.8,
+    117.0,
+    121.0,
+    260.0,
+    450.0
+  ],
+  "chambers": {
+    "E_subterranean": {
+      "x": 0.0,
+      "y": -0.3,
+      "z": -0.33
+    },
+    "I_queen": {
+      "x": 0.0,
+      "y": 0.05,
+      "z": 0.2
+    },
+    "C_king": {
+      "x": 0.0,
+      "y": 0.1,
+      "z": 0.52
+    },
+    "P_beam_stack": {
+      "x": 0.0,
+      "y": 0.12,
+      "z": 0.6
+    }
+  },
+  "triad_weights": {
+    "E": 1.0,
+    "I": 1.0,
+    "C": 1.0,
+    "P": 0.7
+  },
+  "metrics": {
+    "delta_phi_max": 2.677321672439575,
+    "delta_phi_mean": 0.3632553219795227,
+    "delta_phi_var": 0.14576078951358795,
+    "temporal_coherence_center": 0.7580470442771912,
+    "tri_wave_score": 0.064111618182451,
+    "E_mean": 0.19793683290481567,
+    "I_mean": 0.057414647191762924,
+    "C_mean": 0.14957186579704285,
+    "giza_resonant_hologram_index": 1.117550663295957
+  },
+  "outputs": [
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_vertical_slice_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_horizontal_slice_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_shell_profile_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_center_time_series_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_time_radius_strip_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_E_slice_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_I_slice_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_C_slice_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_EIC_hist_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_triad_glyph_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_lotus_overlay_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_voice_coupling_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\giza_holo_solar_coupling_v3_0.png",
+    "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\visuals\\giza\\outputs\\v3_0\\frames_4d"
+  ],
+  "layers": [
+    "\u0394\u03a6_3D_volume",
+    "\u0394\u03a6_4D_time_evolution",
+    "E_channel",
+    "I_channel",
+    "C_channel",
+    "time_radius_strip",
+    "EIC_histogram",
+    "triad_glyph",
+    "lotus_overlay",
+    "voice_coupling",
+    "solar_coupling"
+  ]
+}
