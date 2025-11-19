@@ -1,0 +1,9 @@
+﻿{
+    "model":  "gpt-5.1",
+    "temperature":  0.2,
+    "top_p":  1,
+    "max_completion_tokens":  600,
+    "max_history":  3,
+    "mode":  "mirror_mind",
+    "drift_sensitivity":  0.25
+}
