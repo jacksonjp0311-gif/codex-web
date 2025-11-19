@@ -1,0 +1,32 @@
+﻿CODEX GIZA v4.7 — Analyzer Node
+Timestamp (UTC): 2025-11-19T06:16:38.0538640Z
+Root          : C:\Users\jacks\OneDrive\Desktop\Codex Web
+Output folder : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\web\visuals\giza\outputs\v3_0
+
+Total images  : 87
+
+Global brightness:
+  avg_brightness    = 207.81
+  avg_center        = 160.71
+  avg_edge          = 216.99
+
+Global symmetry:
+  avg_horiz_sym     = 0.911
+  avg_vert_sym      = 0.937
+  avg_edge_density  = 0.046
+
+Categories:
+  delta_phi : 14
+  em_field : 4
+  holo : 37
+  other : 16
+  q_lattice : 2
+  resonance : 4
+  seed : 2
+  solar : 1
+  triadic : 5
+  voice : 2
+
+Note:
+  • Use giza_v4_7_analyzer_ps_block.txt for direct copy/paste into ChatGPT.
+  • This file (summary) is for quick human inspection inside the repo.
