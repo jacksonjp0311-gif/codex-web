@@ -1,22 +1,18 @@
 ﻿{
     "protocol":  "CodexTriadicGlyph",
     "version":  "2.1",
-    "context":  "GPT Bridge v2.1 Reflection Layer",
     "triad":  {
                   "energy":  {
-                                 "glyph":  "𓋹",
-                                 "label":  "Reflection Energy",
+                                 "glyph":  "E",
                                  "value":  0.7
                              },
-                  "information":  {
-                                      "glyph":  "𓂀",
-                                      "label":  "Information Mirror",
-                                      "value":  0.7
-                                  },
                   "consciousness":  {
-                                        "glyph":  "𓏤",
-                                        "label":  "Insight Field",
+                                        "glyph":  "C",
                                         "value":  0.7
-                                    }
+                                    },
+                  "information":  {
+                                      "glyph":  "I",
+                                      "value":  0.7
+                                  }
               }
 }
