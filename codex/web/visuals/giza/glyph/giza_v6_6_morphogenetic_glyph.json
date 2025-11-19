@@ -1,0 +1,22 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Growth Energy",
+                                 "glyph":  "𓂀",
+                                 "value":  0
+                             },
+                  "consciousness":  {
+                                        "label":  "Morphogenetic Coherence",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Branch Symmetry Field",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "version":  "2.6",
+    "context":  "GIZA v6.6 — Morphogenetic Expansion (Adaptive Growth)"
+}

@@ -1,0 +1,19 @@
+﻿{
+    "source_state":  "giza_v6_5_bifurcation_field.json",
+    "version":  "6.6",
+    "morphogenetic_mesh":  {
+
+                           },
+    "timestamp_utc":  "2025-11-19T18:19:05.8559129Z",
+    "metrics":  {
+                    "growth_hormone":  1,
+                    "avg_branch_symmetry":  0,
+                    "morphogenetic_coherence":  0,
+                    "avg_growth":  0,
+                    "parent_delta_phi":  0,
+                    "prune_fraction":  0,
+                    "strong_fraction":  0
+                },
+    "node_count":  0,
+    "protocol":  "CODEX_GIZA_MORPHOGENETIC_FIELD"
+}
