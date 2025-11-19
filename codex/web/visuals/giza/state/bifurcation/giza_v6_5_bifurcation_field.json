@@ -1,0 +1,17 @@
+﻿{
+    "source_state":  "giza_v6_4_emergence_field.json",
+    "version":  "6.5",
+    "timestamp_utc":  "2025-11-19T18:08:59.5597406Z",
+    "metrics":  {
+                    "avg_plus_channel":  0,
+                    "branch_delta_mean":  0,
+                    "avg_minus_channel":  0,
+                    "bifurcation_coherence":  1,
+                    "parent_delta_phi":  0
+                },
+    "node_count":  0,
+    "bifurcation_mesh":  {
+
+                         },
+    "protocol":  "CODEX_GIZA_BIFURCATION_FIELD"
+}

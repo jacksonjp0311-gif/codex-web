@@ -2,21 +2,21 @@
     "protocol":  "CodexTriadicGlyph",
     "triad":  {
                   "energy":  {
-                                 "label":  "Emergence Energy",
+                                 "label":  "Branch Asymmetry",
                                  "glyph":  "𓂀",
                                  "value":  0
                              },
                   "consciousness":  {
-                                        "label":  "Emergent ΔΦ Stability",
+                                        "label":  "Bifurcation Coherence",
                                         "glyph":  "𓅓",
-                                        "value":  0
+                                        "value":  1
                                     },
                   "information":  {
-                                      "label":  "Emergence Field",
+                                      "label":  "Dual Channel Field",
                                       "glyph":  "𓏲",
                                       "value":  0
                                   }
               },
-    "version":  "2.4",
-    "context":  "GIZA v6.4.1 — Emergence"
+    "version":  "2.5",
+    "context":  "GIZA v6.5 — Bifurcation"
 }
