@@ -1,0 +1,41 @@
+﻿===== GPT_BRIDGE_V2_1_BEGIN =====
+{
+    "timestamp":  "2025-11-19 02:47:56",
+    "intent":  "alignment_check",
+    "snapshot":  {
+                     "intent":  "alignment_check",
+                     "timestamp":  "2025-11-19 02:47:56",
+                     "module":  "Codex GPT Bridge v2.1",
+                     "h_layers":  "H1–H45 loaded",
+                     "triad":  {
+                                   "C":  0.7,
+                                   "E":  0.7,
+                                   "I":  0.7
+                               }
+                 },
+    "raw":  "",
+    "parsed":  null,
+    "glyph":  {
+                  "protocol":  "CodexTriadicGlyph",
+                  "version":  "2.1",
+                  "context":  "GPT Bridge v2.1 Reflection Layer",
+                  "triad":  {
+                                "energy":  {
+                                               "glyph":  "𓋹",
+                                               "label":  "Reflection Energy",
+                                               "value":  0.7
+                                           },
+                                "information":  {
+                                                    "glyph":  "𓂀",
+                                                    "label":  "Information Mirror",
+                                                    "value":  0.7
+                                                },
+                                "consciousness":  {
+                                                      "glyph":  "𓏤",
+                                                      "label":  "Insight Field",
+                                                      "value":  0.7
+                                                  }
+                            }
+              }
+}
+===== GPT_BRIDGE_V2_1_END =====
