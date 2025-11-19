@@ -1,0 +1,25 @@
+﻿{
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Curvature Energy (ΔΦ)",
+                                 "glyph":  "𓂀",
+                                 "value":  6.72E-10
+                             },
+                  "consciousness":  {
+                                        "label":  "Rune Coherence (Cmax)",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Channel Variance (I)",
+                                      "glyph":  "𓏲",
+                                      "value":  1.85E-10
+                                  }
+              },
+    "version":  "3.0",
+    "rune_threshold":  0,
+    "rune_count":  383,
+    "cluster_count":  1,
+    "context":  "GIZA v6.10 — Proto-Rune Extractor",
+    "protocol":  "CodexTriadicGlyph"
+}
