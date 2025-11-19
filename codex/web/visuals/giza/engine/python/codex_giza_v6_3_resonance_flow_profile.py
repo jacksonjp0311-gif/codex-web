@@ -4,26 +4,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 ROOT = r"C:\Users\jacks\OneDrive\Desktop\Codex Web"
-state_path = os.path.join(ROOT, "codex", "web", "visuals", "giza", "state", "gradient", "giza_v6_2_gradient_resonance.json")
+state_path = os.path.join(
+    ROOT,
+    "codex", "web", "visuals", "giza", "state", "flow",
+    "giza_v6_3_resonance_flow.json"
+)
 
 with open(state_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-mesh = data.get("gradient_mesh", {})
-names = list(mesh.keys())
-
-res_vals = []
-curv_vals = []
-for name in names:
-    node = mesh[name]
-    res = node.get("resonance_mag", 0.0)
-    curv = node.get("curvature", 0.0)
-    if res is None:
-        res = 0.0
-    if curv is None:
-        curv = 0.0
-    res_vals.append(float(res))
-    curv_vals.append(float(curv))
+profile = data.get("flow_profile", {})
+names   = profile.get("node_names", [])
+res_vals  = profile.get("resonance_series", [])
+curv_vals = profile.get("curvature_series", [])
 
 x = np.arange(len(names))
 

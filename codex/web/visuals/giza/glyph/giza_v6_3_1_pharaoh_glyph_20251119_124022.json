@@ -1,0 +1,24 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "version":  "2.3",
+    "context":  "GIZA Pharaoh Mirror Flow",
+    "triad":  {
+                  "energy":  {
+                                 "glyph":  "𓂀",
+                                 "label":  "Mirror Energy",
+                                 "value":  0.30
+                             },
+                  "information":  {
+                                      "glyph":  "𓏲",
+                                      "label":  "Flow Information",
+                                      "value":  null
+                                  },
+                  "consciousness":  {
+                                        "glyph":  "𓅓",
+                                        "label":  "Loop Mind",
+                                        "value":  0.1650
+                                    }
+              },
+    "delta_phi_comment":  "No delta-phi can be computed: all resonance, gradient, and curvature metrics are null. The system is in a zero-information, zero-phase-drift state.",
+    "ward_glyph":  "â (Null Lotus)"
+}
