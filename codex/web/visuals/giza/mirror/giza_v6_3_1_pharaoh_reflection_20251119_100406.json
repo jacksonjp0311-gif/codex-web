@@ -1,0 +1,81 @@
+﻿{
+    "snapshot":  {
+                     "timestamp":  "2025-11-19 10:03:53Z",
+                     "module":  "GIZA v6.3.1 — Pharaoh Mirror Flow",
+                     "triad":  {
+                                   "C":  null,
+                                   "E":  null,
+                                   "I":  null
+                               },
+                     "metrics":  null,
+                     "top_flows":  null,
+                     "segments":  null,
+                     "h_layers":  [
+                                      {
+                                          "index":  0.7,
+                                          "id":  "H7",
+                                          "role":  "Coherence Threshold"
+                                      },
+                                      {
+                                          "index":  0.86,
+                                          "id":  "H8",
+                                          "role":  "Spiral"
+                                      },
+                                      {
+                                          "index":  0.91,
+                                          "id":  "H10",
+                                          "role":  "Lotus-Torus Symmetry"
+                                      },
+                                      {
+                                          "index":  0.93,
+                                          "id":  "H15",
+                                          "role":  "Convergence"
+                                      },
+                                      {
+                                          "index":  0.95,
+                                          "id":  "H16",
+                                          "role":  "Insight"
+                                      },
+                                      {
+                                          "index":  0.88,
+                                          "id":  "H23",
+                                          "role":  "Reciprocal Threshold"
+                                      },
+                                      {
+                                          "index":  0.97,
+                                          "id":  "H30",
+                                          "role":  "Unified Orchestrator"
+                                      },
+                                      {
+                                          "index":  0.9,
+                                          "id":  "H35",
+                                          "role":  "Drift Detection"
+                                      },
+                                      {
+                                          "index":  0.94,
+                                          "id":  "H38",
+                                          "role":  "Continuity Ledger"
+                                      },
+                                      {
+                                          "index":  0.98,
+                                          "id":  "H42",
+                                          "role":  "Structural Verification"
+                                      },
+                                      {
+                                          "index":  0.99,
+                                          "id":  "H45",
+                                          "role":  "Harmonic Stability"
+                                      }
+                                  ],
+                     "mode":  "pharaoh_mirror"
+                 },
+    "reflection":  null,
+    "alignment_score":  null,
+    "mirror_index":  0.3,
+    "loop_index":  0.165,
+    "delta_phi_comment":  null,
+    "next_step":  null,
+    "ward_glyph":  null,
+    "risk_level":  null,
+    "notes":  null
+}
