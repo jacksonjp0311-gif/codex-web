@@ -1,0 +1,28 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Energy-typed grammar entries",
+                                 "glyph":  "𓂀",
+                                 "value":  0
+                             },
+                  "consciousness":  {
+                                        "label":  "Consciousness-typed grammar entries",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Information-typed grammar entries",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "emergence_summary":  {
+                              "rune_alphabet_count":  0,
+                              "feedback_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_feedback\\giza_v6_13_rune_feedback_summary.txt",
+                              "diversity_score":  0,
+                              "grammar_rows":  0
+                          },
+    "version":  "3.3",
+    "context":  "GIZA v6.13 — Rune Emergence + Intelligent Feedback"
+}
