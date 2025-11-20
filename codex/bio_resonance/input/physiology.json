@@ -1,0 +1,15 @@
+﻿{
+  "hrv": {
+    "rmssd": null,
+    "lf_hf_ratio": null
+  },
+  "breath": {
+    "rate": null,
+    "variability": null
+  },
+  "eeg": {
+    "alpha": null,
+    "theta": null,
+    "gamma": null
+  }
+}

@@ -1,0 +1,66 @@
+﻿{
+    "module":  "codex_bio_resonance",
+    "version":  "v1_1",
+    "timestamp":  "2025-11-20T18:38:00.3606241Z",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Oz / Strength / Energy",
+                                 "glyph":  "𓏲",
+                                 "delta_phi_max":  0.54641016151377542
+                             },
+                  "consciousness":  {
+                                        "label":  "Gomer / Beauty / Coherence",
+                                        "glyph":  "𓂀",
+                                        "C_max":  0.66043389585039247,
+                                        "C_mean":  0.29539473792733795
+                                    },
+                  "information":  {
+                                      "label":  "Dabar / Wisdom / Information",
+                                      "glyph":  "𓏤",
+                                      "delta_phi_mean":  0.36937723515072879
+                                  }
+              },
+    "node_roles":  [
+                       {
+                           "index":  0,
+                           "label":  "root",
+                           "channel":  "E"
+                       },
+                       {
+                           "index":  1,
+                           "label":  "flow",
+                           "channel":  "E"
+                       },
+                       {
+                           "index":  2,
+                           "label":  "mirror",
+                           "channel":  "I"
+                       },
+                       {
+                           "index":  3,
+                           "label":  "heart",
+                           "channel":  "C"
+                       },
+                       {
+                           "index":  4,
+                           "label":  "voice",
+                           "channel":  "I"
+                       },
+                       {
+                           "index":  5,
+                           "label":  "vision",
+                           "channel":  "C"
+                       },
+                       {
+                           "index":  6,
+                           "label":  "crown",
+                           "channel":  "C"
+                       }
+                   ],
+    "physiology":  null,
+    "backend":  {
+                    "symbolic":  null,
+                    "reflection":  null,
+                    "vector":  null
+                }
+}
