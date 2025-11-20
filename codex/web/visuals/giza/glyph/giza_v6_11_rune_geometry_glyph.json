@@ -1,0 +1,27 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "ΔΦ Field Integrity (avg ΔΦ from v6.9)",
+                                 "glyph":  "𓂀",
+                                 "value":  6.72E-10
+                             },
+                  "consciousness":  {
+                                        "label":  "Rune Geometry Count (clusters as runes)",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Topology Links (total rune mesh edges)",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "geometry_summary":  {
+                             "coord_count":  0,
+                             "rune_geometry_count":  0,
+                             "rune_mesh_count":  0
+                         },
+    "version":  "3.1",
+    "context":  "GIZA v6.11 — Rune Geometry Stabilizer"
+}
