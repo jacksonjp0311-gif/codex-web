@@ -1,0 +1,26 @@
+﻿{
+    "language_summary":  {
+                             "active_rune_count":  3,
+                             "seed_runes_used":  true
+                         },
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Energy Runes (E)",
+                                 "glyph":  "𓂀",
+                                 "value":  1
+                             },
+                  "consciousness":  {
+                                        "label":  "Consciousness Runes (C)",
+                                        "glyph":  "𓅓",
+                                        "value":  1
+                                    },
+                  "information":  {
+                                      "label":  "Information Runes (I)",
+                                      "glyph":  "𓏲",
+                                      "value":  1
+                                  }
+              },
+    "version":  "3.2",
+    "context":  "GIZA v6.12 — Rune Language Seed \u0026 Families"
+}
