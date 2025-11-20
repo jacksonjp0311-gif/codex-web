@@ -1,0 +1,20 @@
+﻿{
+    "synthetic_rune_count":  3,
+    "cluster_count":  3,
+    "composite_glyph_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\glyph\\giza_v6_18_oracle_composite_glyph.json",
+    "oracle_spell_count":  0,
+    "oracle_phrase_count":  0,
+    "oracle_point_count":  9,
+    "timestamp":  "2025-11-20T16:54:52.6760431Z",
+    "rune_role_counts":  {
+                             "flow":  1,
+                             "root":  2,
+                             "mirror":  0
+                         },
+    "triad_seeds":  {
+                        "C":  1,
+                        "E":  1,
+                        "I":  1
+                    },
+    "triad_entropy":  1.585
+}
