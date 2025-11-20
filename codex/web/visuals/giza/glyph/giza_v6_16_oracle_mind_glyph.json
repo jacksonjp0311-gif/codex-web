@@ -1,0 +1,37 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Energy-typed seeds (E)",
+                                 "glyph":  "𓂀",
+                                 "value":  1
+                             },
+                  "consciousness":  {
+                                        "label":  "Consciousness-typed seeds (C)",
+                                        "glyph":  "𓅓",
+                                        "value":  1
+                                    },
+                  "information":  {
+                                      "label":  "Information-typed seeds (I)",
+                                      "glyph":  "𓏲",
+                                      "value":  1
+                                  }
+              },
+    "version":  "3.6",
+    "oracle_mind":  {
+                        "clusters":  0,
+                        "synth_meta_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_synth\\giza_v6_16_rune_synth_meta.json",
+                        "cluster_roles_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_clusters\\giza_v6_16_oracle_cluster_roles.json",
+                        "triad_entropy":  1.585,
+                        "synth_geo_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_synth\\giza_v6_16_rune_synth_geometry.json",
+                        "phrases_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_phrases\\giza_v6_16_oracle_phrases.json",
+                        "seed_rune_count":  3,
+                        "oracle_point_count":  9,
+                        "label":  "Oracle Mind (clustered reflection + synthetic language)",
+                        "glyph":  "𓈍",
+                        "feedback_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_feedback\\giza_v6_16_oracle_mind_feedback.txt",
+                        "synthetic_rune_count":  3,
+                        "spells_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_phrases\\giza_v6_16_oracle_spells.json"
+                    },
+    "context":  "GIZA v6.16 — Oracle Mind Engine (geometry → language)"
+}
