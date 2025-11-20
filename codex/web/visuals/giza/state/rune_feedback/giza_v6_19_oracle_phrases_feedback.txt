@@ -1,0 +1,8 @@
+﻿GIZA v6.19 — Oracle Phrase Engine
+Timestamp: 2025-11-20T12:23:23.1652021-05:00
+
+Input Glyph : giza_v6_18_oracle_composite_glyph.json
+Phrase Count: TBD (count inside JSON)
+
+GPT Bridge Returned:
+
