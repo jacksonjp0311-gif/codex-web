@@ -27,7 +27,20 @@ if (!(Test-Path $LogPath)) { New-Item -ItemType File -Path $LogPath | Out-Null }
 
 function IsoNow { (Get-Date).ToString("s") }
 function Try-Json { param([string]$p) if (Test-Path $p) { try { Get-Content -Raw -Encoding UTF8 $p | ConvertFrom-Json } catch { $null } }  }
-function SafeNum { param($x) if ($null -eq $x) {0.0}  catch {0.0} } }
+function SafeNum {
+    param($x)
+
+    if ($null -eq $x) {
+        return 0.0
+    }
+
+    try {
+        return [double]$x
+    }
+    catch {
+        return 0.0
+    }
+}
 function Clamp01 { param([double]$v) if ($v -lt 0) {0} elseif ($v -gt 1) {1}  }
 
 # Read v4.2 state
@@ -201,3 +214,4 @@ try {
 }
 
 Write-Host "🔗 Codex Bridge v1.3 — Resonant Exchange complete."
+
