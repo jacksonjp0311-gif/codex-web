@@ -1,0 +1,26 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Global Asymmetry (ΔΦ bias)",
+                                 "glyph":  "𓂀",
+                                 "value":  0.097052029746572482
+                             },
+                  "consciousness":  {
+                                        "label":  "Symmetry Break Index (emergence potential)",
+                                        "glyph":  "𓅓",
+                                        "value":  1
+                                    },
+                  "information":  {
+                                      "label":  "Structured wells (fraction of strong ΔΦ cells)",
+                                      "glyph":  "𓏲",
+                                      "value":  0.246337890625
+                                  }
+              },
+    "origin_field":  {
+                         "strong_cell_count":  1009,
+                         "total_cells":  4096
+                     },
+    "version":  "3.2",
+    "context":  "Baryogenesis v1.0 — ΔΦ Origin Node"
+}

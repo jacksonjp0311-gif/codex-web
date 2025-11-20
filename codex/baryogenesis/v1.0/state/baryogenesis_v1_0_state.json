@@ -1,0 +1,17 @@
+{
+  "protocol": "CodexBaryogenesisNode",
+  "version": "1.0",
+  "timestamp_utc": "2025-11-20T14:23:41.396784Z",
+  "field_size": 64,
+  "metrics": {
+    "global_asymmetry": 0.09705202974657248,
+    "well_fraction": 0.246337890625,
+    "symmetry_break_index": 1.0,
+    "strong_cell_count": 1009,
+    "total_cells": 4096
+  },
+  "notes": {
+    "description": "Synthetic baryon-scale \u0394\u03a6 origin field for Codex Baryogenesis v1.0",
+    "seed_layer": "baryon_cp_violation_simulated"
+  }
+}

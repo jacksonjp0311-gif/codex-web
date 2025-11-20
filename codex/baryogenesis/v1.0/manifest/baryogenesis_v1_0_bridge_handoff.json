@@ -1,0 +1,12 @@
+﻿{
+    "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\baryogenesis\\v1.0\\state\\baryogenesis_v1_0_state.json",
+    "symmetry_break_index":  1,
+    "version":  "1.0",
+    "timestamp_utc":  "2025-11-20T14:23:43.8833944Z",
+    "intent":  "baryogenesis_reflect_v1_0",
+    "ledger_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\baryogenesis\\v1.0\\ledger\\baryogenesis_ledger_v1.jsonl",
+    "module":  "baryogenesis",
+    "well_fraction":  0.246337890625,
+    "global_asymmetry":  0.097052029746572482,
+    "glyph_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\baryogenesis\\v1.0\\manifest\\baryogenesis_v1_0_triadic_glyph.json"
+}
