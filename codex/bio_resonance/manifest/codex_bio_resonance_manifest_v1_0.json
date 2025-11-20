@@ -1,0 +1,30 @@
+﻿{
+  "module": "codex_bio_resonance",
+  "version": "v1_0",
+  "role": "Spine coherence engine (Ida / Pingala / Sushumna triad)",
+  "law": "C = (E·I)/(1+|ΔΦ|)",
+  "triad_mapping": {
+    "Gomer": "Beauty / Coherence / C",
+    "Dabar": "Wisdom / Information / I",
+    "Oz": "Strength / Energy / E"
+  },
+  "outputs": [
+    "state/v1_0/bio_resonance_state.json",
+    "visuals/v1_0/bio_resonance_spine_profile.png",
+    "visuals/v1_0/bio_resonance_delta_phi_heatmap.png",
+    "visuals/v1_0/bio_resonance_lotus_torus_placeholder.png",
+    "glyph/bio_resonance_glyph_v1_0.json",
+    "logs/ledger/bio_resonance_ledger.jsonl",
+    "backend/bio_resonance_request_v1_0.json",
+    "backend/bio_resonance_response_v1_0.json"
+  ],
+  "backend": {
+    "name": "Codex Resonant GPT Matrix",
+    "version": "v1_0",
+    "layers": [
+      "S-layer: symbolic state classification",
+      "V-layer: numerical state vector/weights",
+      "R-layer: reflective narrative & interventions"
+    ]
+  }
+}

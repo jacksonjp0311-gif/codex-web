@@ -1,0 +1,49 @@
+﻿{
+  "module": "codex_bio_resonance",
+  "version": "v1_0",
+  "backend": "Codex Resonant GPT Matrix v1.0",
+  "layers": [
+    "S-layer: symbolic state classification",
+    "V-layer: numerical state vector/weights",
+    "R-layer: reflective narrative & interventions"
+  ],
+  "request_schema": {
+    "triad_metrics": {
+      "nodes": "float[] position along spine 0..1 (base→crown)",
+      "energy": "float[] energy per node (Oz)",
+      "information": "float[] information per node (Dabar)",
+      "C": "float[] coherence per node (Gomer)",
+      "delta_phi": "float[] |E-I| per node"
+    },
+    "physiology": {
+      "hrv": {
+        "rmssd": "float | null",
+        "lf_hf_ratio": "float | null"
+      },
+      "breath": {
+        "rate": "float | null",
+        "variability": "float | null"
+      },
+      "eeg": {
+        "alpha": "float | null",
+        "theta": "float | null",
+        "gamma": "float | null"
+      }
+    }
+  },
+  "response_schema": {
+    "symbolic": {
+      "state_label": "string",
+      "pattern_family": "string",
+      "risk_level": "string"
+    },
+    "vector": {
+      "values": "float[] state vector",
+      "description": "string"
+    },
+    "reflection": {
+      "summary": "string",
+      "suggested_interventions": "string[]"
+    }
+  }
+}
