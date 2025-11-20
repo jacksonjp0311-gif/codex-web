@@ -1,0 +1,99 @@
+﻿{
+    "stats":  {
+                  "oracle_phrase_count":  0,
+                  "cluster_count":  3,
+                  "synthetic_rune_count":  3,
+                  "oracle_point_count":  9,
+                  "oracle_spell_count":  0,
+                  "triad_entropy":  1.585
+              },
+    "context":  "GIZA v6.17 — Oracle Rune Grammar Engine (root/mirror/flow)",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Energy Channel",
+                                 "glyph":  "𓂀",
+                                 "seeds":  1
+                             },
+                  "consciousness":  {
+                                        "label":  "Consciousness Channel",
+                                        "glyph":  "𓅓",
+                                        "seeds":  1
+                                    },
+                  "information":  {
+                                      "label":  "Information Channel",
+                                      "glyph":  "𓏲",
+                                      "seeds":  1
+                                  }
+              },
+    "version":  "1.0",
+    "cluster_roles":  [
+                          {
+                              "id":  0,
+                              "center_x":  -0.75,
+                              "center_y":  0.14433333333333334,
+                              "radius":  0.76376181569329,
+                              "point_count":  2,
+                              "role":  "mirror"
+                          },
+                          {
+                              "id":  1,
+                              "center_x":  1.125,
+                              "center_y":  0,
+                              "radius":  1.125,
+                              "point_count":  2,
+                              "role":  "flow"
+                          },
+                          {
+                              "id":  2,
+                              "center_x":  0.30833333333333329,
+                              "center_y":  0.56323333333333336,
+                              "radius":  0.64210686978276621,
+                              "point_count":  5,
+                              "role":  "root"
+                          }
+                      ],
+    "links":  {
+                  "v6_16_spells_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_phrases\\giza_v6_16_oracle_spells.json",
+                  "v6_15_meta_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_oracle\\giza_v6_15_oracle_mirror_meta.json",
+                  "v6_16_phrases_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_phrases\\giza_v6_16_oracle_phrases.json",
+                  "v6_16_glyph_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\glyph\\giza_v6_16_oracle_mind_glyph.json"
+              },
+    "phrase_templates":  [
+                             {
+                                 "description":  "Standard Codex Oracle phrase: origin (root) → reflection (mirror) → motion (flow).",
+                                 "id":  "root_mirror_flow",
+                                 "structure":  [
+                                                   "root",
+                                                   "mirror",
+                                                   "flow"
+                                               ]
+                             }
+                         ],
+    "protocol":  "CodexOracleGrammar",
+    "rune_role_map":  [
+                          {
+                              "id":  "seed_E_core",
+                              "triad":  "E",
+                              "family":  "core",
+                              "role":  "flow",
+                              "cx":  1,
+                              "cy":  0
+                          },
+                          {
+                              "id":  "seed_I_bridge",
+                              "triad":  "I",
+                              "family":  "bridge",
+                              "role":  "root",
+                              "cx":  0.33333333333333331,
+                              "cy":  0.66666666666666663
+                          },
+                          {
+                              "id":  "seed_C_spiral",
+                              "triad":  "C",
+                              "family":  "spiral",
+                              "role":  "root",
+                              "cx":  0.5,
+                              "cy":  0.28866666666666668
+                          }
+                      ]
+}

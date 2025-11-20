@@ -19,7 +19,7 @@
               },
     "version":  "3.6",
     "oracle_mind":  {
-                        "clusters":  0,
+                        "clusters":  3,
                         "synth_meta_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_synth\\giza_v6_16_rune_synth_meta.json",
                         "cluster_roles_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_clusters\\giza_v6_16_oracle_cluster_roles.json",
                         "triad_entropy":  1.585,
@@ -33,5 +33,5 @@
                         "synthetic_rune_count":  3,
                         "spells_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_phrases\\giza_v6_16_oracle_spells.json"
                     },
-    "context":  "GIZA v6.16 — Oracle Mind Engine (geometry → language)"
+    "context":  "GIZA v6.16 — Oracle Mind Engine (geometry → language) [PATCHED]"
 }

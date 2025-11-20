@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id":  0,
+        "center_x":  -0.75,
+        "center_y":  0.14433333333333334,
+        "radius":  0.76376181569329,
+        "point_count":  2,
+        "role":  "mirror"
+    },
+    {
+        "id":  1,
+        "center_x":  1.125,
+        "center_y":  0,
+        "radius":  1.125,
+        "point_count":  2,
+        "role":  "flow"
+    },
+    {
+        "id":  2,
+        "center_x":  0.30833333333333329,
+        "center_y":  0.56323333333333336,
+        "radius":  0.64210686978276621,
+        "point_count":  5,
+        "role":  "root"
+    }
+]

@@ -1,0 +1,18 @@
+﻿GIZA v6.17 — ORACLE RUNE GRAMMAR ENGINE
+Timestamp            : 2025-11-20T11:41:40.5290665-05:00
+Triad Seeds          : E=1, I=1, C=1
+Triad Entropy        : 1.585
+Oracle Points        : 9
+Clusters             : 3
+Oracle Phrases (v6.16): 0
+Oracle Spells (v6.16) : 0
+
+Grammar Summary:
+  • Cluster roles define semantic fields: root / mirror / flow.
+  • rune_role_map ties each seed rune (E/I/C) into a grammatical position.
+  • phrase_templates define how to chain geometry into language primitives.
+
+External LLM Prompt (GPT / Grok):
+  • Context: Use giza_v6_17_oracle_grammar.json + v6_16 phrases/spells to expand into
+    longer narratives while preserving E/I/C balance and root→mirror→flow ordering.
+
