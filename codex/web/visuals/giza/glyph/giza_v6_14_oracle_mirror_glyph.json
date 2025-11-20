@@ -1,0 +1,33 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Energy-typed seeds (E)",
+                                 "glyph":  "𓂀",
+                                 "value":  1
+                             },
+                  "consciousness":  {
+                                        "label":  "Consciousness-typed seeds (C)",
+                                        "glyph":  "𓅓",
+                                        "value":  0
+                                    },
+                  "information":  {
+                                      "label":  "Information-typed seeds (I)",
+                                      "glyph":  "𓏲",
+                                      "value":  0
+                                  }
+              },
+    "version":  "3.4",
+    "oracle_mirror":  {
+                          "repair_performed":  false,
+                          "geometry_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_oracle\\giza_v6_14_oracle_mirror_geometry.json",
+                          "label":  "Oracle Mirror (centroid reflection lattice)",
+                          "glyph":  "𓋹",
+                          "oracle_point_count":  1,
+                          "meta_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_oracle\\giza_v6_14_oracle_mirror_meta.json",
+                          "seed_rune_count":  3,
+                          "feedback_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_feedback\\giza_v6_14_oracle_mirror_feedback.txt",
+                          "triad_entropy":  0
+                      },
+    "context":  "GIZA v6.14 — Oracle Mirror Seed \u0026 Reflection"
+}
