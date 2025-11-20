@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id":  "seed_E_core",
+        "triad":  "E",
+        "family":  "core",
+        "centroid_x":  1,
+        "centroid_y":  0,
+        "point_count":  3
+    },
+    {
+        "id":  "seed_I_bridge",
+        "triad":  "I",
+        "family":  "bridge",
+        "centroid_x":  0.33333333333333331,
+        "centroid_y":  0.66666666666666663,
+        "point_count":  3
+    },
+    {
+        "id":  "seed_C_spiral",
+        "triad":  "C",
+        "family":  "spiral",
+        "centroid_x":  0.5,
+        "centroid_y":  0.28866666666666668,
+        "point_count":  3
+    }
+]

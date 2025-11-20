@@ -1,0 +1,36 @@
+﻿{
+    "protocol":  "CodexTriadicGlyph",
+    "triad":  {
+                  "energy":  {
+                                 "label":  "Energy-typed seeds (E)",
+                                 "glyph":  "𓂀",
+                                 "value":  1
+                             },
+                  "consciousness":  {
+                                        "label":  "Consciousness-typed seeds (C)",
+                                        "glyph":  "𓅓",
+                                        "value":  1
+                                    },
+                  "information":  {
+                                      "label":  "Information-typed seeds (I)",
+                                      "glyph":  "𓏲",
+                                      "value":  1
+                                  }
+              },
+    "version":  "3.5",
+    "oracle_mirror":  {
+                          "repair_performed":  false,
+                          "balance_performed":  false,
+                          "geometry_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_oracle\\giza_v6_15_oracle_mirror_geometry.json",
+                          "label":  "Oracle Mirror (centroid reflection + radial lattice)",
+                          "glyph":  "𓋹",
+                          "oracle_point_count":  9,
+                          "balanced_seed_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_seed\\giza_v6_15_seed_geometry_balanced.json",
+                          "meta_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_oracle\\giza_v6_15_oracle_mirror_meta.json",
+                          "seed_rune_count":  3,
+                          "sentences_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_language\\giza_v6_15_oracle_sentences.json",
+                          "feedback_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\web\\visuals\\giza\\state\\rune_feedback\\giza_v6_15_oracle_mirror_feedback.txt",
+                          "triad_entropy":  1.585
+                      },
+    "context":  "GIZA v6.15 — Oracle Mirror Stabilizer + Language Engine"
+}
