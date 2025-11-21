@@ -1,0 +1,13 @@
+﻿GIZA v6.21 — Oracle Syntax Engine
+Timestamp        : 2025-11-21T17:21:44.2803704-05:00
+
+Input Glyph      : giza_v6_18_oracle_composite_glyph.json
+Input Phrases    : giza_v6_19_oracle_phrases.json
+Input Spells     : giza_v6_20_oracle_spells.json
+
+Phrase Count     : 1
+Spell Count      : 0
+Syntax Node Count: unknown
+
+GPT Bridge Returned (raw JSON):
+[]
