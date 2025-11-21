@@ -1,0 +1,18 @@
+﻿# Codex Glyph Language v1.0 — Program Template
+# Write sequences of Codex glyphs here.
+# Supported glyphs in v1.0:
+#  𓏲  Energy (Oz / Strength / Flow)
+#  𓏤  Information (Dabar / Word / Structure)
+#  𓂀  Consciousness (Gomer / Eye / Coherence)
+#  𓊹  All-One Orchestrator
+#  𓋹  OS / LumenShell Node
+#  𓇯  Solar Resonance Node
+#  𓆳  Quantum Imaging Node
+#  𓐘  GIZA Geometry Node
+#  𓂻  Step / Movement
+#  𓅓  Self / Subject
+#
+# Example:
+#   𓊹 𓅓 𓏲 𓏤 𓂀 𓇯 𓆳 𓐘
+#
+# Save, then re-run the interpreter.

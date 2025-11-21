@@ -1,0 +1,24 @@
+﻿{
+    "module":  "codex_cgl",
+    "version":  "v1_0",
+    "role":  "Codex Glyph Language core interpreter (v1.0)",
+    "law":  "C = (E·I)/(1+|ΔΦ|)",
+    "triad_mapping":  {
+                          "Gomer":  "Beauty / Coherence / C",
+                          "Dabar":  "Wisdom / Information / I",
+                          "Oz":  "Strength / Energy / E"
+                      },
+    "inputs":  [
+                   "input/cgl_program.cgl (Codex glyph program)"
+               ],
+    "outputs":  [
+                    "state/v1_0/cgl_state_v1_0.json",
+                    "logs/ledger/cgl_ledger.jsonl",
+                    "logs/run/cgl_v1_0_run_\u003ctimestamp\u003e.log"
+                ],
+    "notes":  [
+                  "v1.0: AST is a flat sequence of glyph nodes.",
+                  "v1.0 metrics: E/I/C counts, ΔΦ-proxy, H7-alignment score.",
+                  "Future: compile AST into All-One PS + Python + visual engines."
+              ]
+}
