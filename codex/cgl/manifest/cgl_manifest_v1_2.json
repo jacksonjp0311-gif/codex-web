@@ -1,0 +1,28 @@
+﻿{
+    "module":  "codex_cgl",
+    "version":  "v1_2",
+    "role":  "Codex Glyph Language v1.2 — compiler + expansion + visuals",
+    "law":  "C = (E·I)/(1+|ΔΦ|)",
+    "triad_mapping":  {
+                          "Gomer":  "Beauty / Coherence / C",
+                          "Dabar":  "Wisdom / Information / I",
+                          "Oz":  "Strength / Energy / E"
+                      },
+    "inputs":  [
+                   "input/cgl_program.cgl (Codex glyph program)"
+               ],
+    "outputs":  [
+                    "state/v1_2/cgl_state_v1_2.json",
+                    "compiler/codex_cgl_compiled_orchestrator_v1_2.ps1",
+                    "engine/codex_cgl_visuals_v1_2.py",
+                    "logs/ledger/cgl_ledger.jsonl",
+                    "logs/run/cgl_v1_2_run_\u003ctimestamp\u003e.log",
+                    "visuals/v1_2/*.png"
+                ],
+    "notes":  [
+                  "v1.2: expanded glyph set (ΔΦ, Heartbeat, Bridge, Bio, DNA, Solar-high).",
+                  "v1.2: compiler emits plan-only orchestrator v1.2.",
+                  "v1.2: Python visuals engine generates triad + sequence plots.",
+                  "Future: v1.3 will bind opcodes to real All-One orchestrators."
+              ]
+}

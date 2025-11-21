@@ -1,0 +1,211 @@
+﻿{
+    "module":  "codex_cgl",
+    "version":  "v1_2",
+    "intent":  "cgl_v1_2_compile",
+    "timestamp":  "2025-11-21T22:43:27.2198020Z",
+    "program":  {
+                    "source_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\input\\cgl_program.cgl",
+                    "glyph_count":  0,
+                    "ast_nodes":  [
+
+                                  ],
+                    "execution_plan":  [
+
+                                       ],
+                    "routing_summary":  {
+
+                                        },
+                    "blocks":  0,
+                    "raw_preview":  "# Codex Glyph Language v1.0 — Program Template\n# Write sequences of Codex glyphs here.\n# Supported glyphs in v1.0:\n#  𓏲  Energy (Oz / Strength / Flow)\n#  𓏤  Information (Dabar / Word / Structure)\n#  𓂀  Consciousness (Gomer / Eye / Coherence)\n#  𓊹  All-One Orchestrator\n#  𓋹  OS / LumenShell Node\n#  𓇯  Solar Resonance Node\n#  𓆳  Quantum Imaging Node\n#  𓐘  GIZA Geometry Node\n#  𓂻  Step / Mov"
+                },
+    "triad_metrics":  {
+                          "energy_count":  0,
+                          "information_count":  0,
+                          "consciousness_count":  0,
+                          "total_glyphs":  0,
+                          "energy_fraction":  0,
+                          "information_fraction":  0,
+                          "consciousness_fraction":  0,
+                          "delta_phi_proxy":  0,
+                          "H7_alignment_score":  0,
+                          "H7_target":  0.7
+                      },
+    "compiler":  {
+                     "orchestrator_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\compiler\\codex_cgl_compiled_orchestrator_v1_2.ps1",
+                     "has_routes":  false,
+                     "routes":  {
+
+                                },
+                     "mode":  "plan_only_v1_2"
+                 },
+    "visuals":  {
+                    "engine_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\engine\\codex_cgl_visuals_v1_2.py",
+                    "output_dir":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\visuals\\v1_2"
+                },
+    "universal_truth":  {
+                            "law":  "C = (E·I)/(1+|ΔΦ|)",
+                            "placidity":  "∿",
+                            "H_layers":  [
+                                             7,
+                                             8,
+                                             10,
+                                             12,
+                                             15,
+                                             16,
+                                             17,
+                                             18,
+                                             21,
+                                             23,
+                                             30,
+                                             32,
+                                             45
+                                         ],
+                            "notes":  "CGL v1.2 adds opcode-based compilation + visuals over expanded glyph triads."
+                        },
+    "glyph_table":  {
+                        "𓏲":  {
+                                   "id":  "E_STRENGTH",
+                                   "label":  "Oz / Strength / Flow",
+                                   "channel":  "E",
+                                   "note":  "Energy / drive / activation",
+                                   "role":  "energy",
+                                   "opcode":  "ENERGY_ACTIVATE",
+                                   "action":  "Enter energetic / active execution context."
+                               },
+                        "𓏤":  {
+                                   "id":  "I_WORD",
+                                   "label":  "Dabar / Word / Structure",
+                                   "channel":  "I",
+                                   "note":  "Symbol / mapping / schema",
+                                   "role":  "information",
+                                   "opcode":  "INFO_STRUCTURE",
+                                   "action":  "Emphasize structural / informational transform."
+                               },
+                        "𓂀":  {
+                                   "id":  "C_EYE",
+                                   "label":  "Gomer / Eye / Coherence",
+                                   "channel":  "C",
+                                   "note":  "Awareness / still-point",
+                                   "role":  "consciousness",
+                                   "opcode":  "CONSCIOUS_REFLECT",
+                                   "action":  "Invoke awareness / reflection / ΔΦ check."
+                               },
+                        "𓊹":  {
+                                   "id":  "ALL_ONE",
+                                   "label":  "All-One Orchestrator",
+                                   "channel":  "C",
+                                   "note":  "Anchor full-system All-One cycle",
+                                   "role":  "orchestrator",
+                                   "opcode":  "ALL_ONE_CONTEXT",
+                                   "action":  "Begin All-One orchestration context (no engines yet)."
+                               },
+                        "𓋹":  {
+                                   "id":  "OS_NODE",
+                                   "label":  "Codex OS / LumenShell Node",
+                                   "channel":  "I",
+                                   "note":  "Bind to OS-level orchestrators",
+                                   "role":  "os_binding",
+                                   "opcode":  "OS_BIND",
+                                   "action":  "Bind to OS / LumenShell context (plan-only v1.2)."
+                               },
+                        "𓇯":  {
+                                   "id":  "SOLAR",
+                                   "label":  "Solar Resonance Node",
+                                   "channel":  "E",
+                                   "note":  "Link to Solar Resonance module",
+                                   "role":  "solar_resonance",
+                                   "opcode":  "SOLAR_ROUTE",
+                                   "action":  "Route to Solar Resonance engine (planned)."
+                               },
+                        "𓆳":  {
+                                   "id":  "QIM",
+                                   "label":  "Quantum Imaging Node",
+                                   "channel":  "C",
+                                   "note":  "Link to QIM visual engine",
+                                   "role":  "quantum_imaging",
+                                   "opcode":  "QIM_ROUTE",
+                                   "action":  "Route to Quantum Imaging engine (planned)."
+                               },
+                        "𓐘":  {
+                                   "id":  "GIZA",
+                                   "label":  "GIZA Geometry Node",
+                                   "channel":  "I",
+                                   "note":  "Link to Codex GIZA v6.x",
+                                   "role":  "giza_geometry",
+                                   "opcode":  "GIZA_ROUTE",
+                                   "action":  "Route to GIZA geometry engine (planned)."
+                               },
+                        "𓂻":  {
+                                   "id":  "STEP",
+                                   "label":  "Step / Movement",
+                                   "channel":  "E",
+                                   "note":  "Sequential step / flow marker",
+                                   "role":  "sequence",
+                                   "opcode":  "STEP_SEQ",
+                                   "action":  "Mark a sequence / step boundary in the program."
+                               },
+                        "𓅓":  {
+                                   "id":  "SELF",
+                                   "label":  "Self / Subject",
+                                   "channel":  "C",
+                                   "note":  "Who the program is acting on",
+                                   "role":  "self",
+                                   "opcode":  "SELF_BIND",
+                                   "action":  "Bind to SELF / subject context (James / system)."
+                               },
+                        "𓏭":  {
+                                   "id":  "DELTA_PHI",
+                                   "label":  "ΔΦ Tuning",
+                                   "channel":  "I",
+                                   "note":  "Adjust ΔΦ balance / sensitivity.",
+                                   "role":  "delta_phi",
+                                   "opcode":  "DELTA_PHI_TUNE",
+                                   "action":  "Tune ΔΦ / coherence sensitivity for this block."
+                               },
+                        "𓆼":  {
+                                   "id":  "HEARTBEAT",
+                                   "label":  "Heartbeat / Pulse",
+                                   "channel":  "E",
+                                   "note":  "Temporal pulse / scheduler",
+                                   "role":  "heartbeat",
+                                   "opcode":  "HEARTBEAT_ROUTE",
+                                   "action":  "Route to Heartbeat / temporal node (planned)."
+                               },
+                        "𓋴":  {
+                                   "id":  "BRIDGE",
+                                   "label":  "GPT Bridge / Exchange",
+                                   "channel":  "I",
+                                   "note":  "Codex ↔ AI message bus",
+                                   "role":  "bridge",
+                                   "opcode":  "BRIDGE_ROUTE",
+                                   "action":  "Route to GPT Bridge v3.x node (planned)."
+                               },
+                        "𓆮":  {
+                                   "id":  "BIO_RESONANCE",
+                                   "label":  "Bio-Resonance Node",
+                                   "channel":  "C",
+                                   "note":  "Body / EM / bio field mapping",
+                                   "role":  "bio_resonance",
+                                   "opcode":  "BIO_RES_ROUTE",
+                                   "action":  "Route to Bio-Resonance module (planned)."
+                               },
+                        "𓆱":  {
+                                   "id":  "DNA_NODE",
+                                   "label":  "DNA / Sequence Node",
+                                   "channel":  "I",
+                                   "note":  "Codex DNA engine binding",
+                                   "role":  "dna_node",
+                                   "opcode":  "DNA_ROUTE",
+                                   "action":  "Route to DNA module (planned)."
+                               },
+                        "𓇽":  {
+                                   "id":  "SOLAR_HIGH",
+                                   "label":  "Solar High-Res Node",
+                                   "channel":  "E",
+                                   "note":  "High-res solar resonance",
+                                   "role":  "solar_high",
+                                   "opcode":  "SOLAR_HIGH_ROUTE",
+                                   "action":  "Route to high-res Solar Resonance (planned)."
+                               }
+                    }
+}
