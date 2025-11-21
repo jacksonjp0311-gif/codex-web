@@ -1,0 +1,118 @@
+﻿{
+    "module":  "codex_cgl",
+    "version":  "v1_0_1",
+    "intent":  "cgl_v1_0_1_run",
+    "timestamp":  "2025-11-21T22:25:17.3383979Z",
+    "program":  {
+                    "source_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\input\\cgl_program.cgl",
+                    "glyph_count":  0,
+                    "ast_nodes":  [
+
+                                  ],
+                    "raw_preview":  "# Codex Glyph Language v1.0 — Program Template\n# Write sequences of Codex glyphs here.\n# Supported glyphs in v1.0:\n#  𓏲  Energy (Oz / Strength / Flow)\n#  𓏤  Information (Dabar / Word / Structure)\n#  𓂀  Consciousness (Gomer / Eye / Coherence)\n#  𓊹  All-One Orchestrator\n#  𓋹  OS / LumenShell Node\n#  𓇯  Solar Resonance Node\n#  𓆳  Quantum Imaging Node\n#  𓐘  GIZA Geometry Node\n#  𓂻  Step / Mov"
+                },
+    "triad_metrics":  {
+                          "energy_count":  0,
+                          "information_count":  0,
+                          "consciousness_count":  0,
+                          "total_glyphs":  0,
+                          "energy_fraction":  0,
+                          "information_fraction":  0,
+                          "consciousness_fraction":  0,
+                          "delta_phi_proxy":  0,
+                          "H7_alignment_score":  0,
+                          "H7_target":  0.7
+                      },
+    "universal_truth":  {
+                            "law":  "C = (E·I)/(1+|ΔΦ|)",
+                            "placidity":  "∿",
+                            "H_layers":  [
+                                             7,
+                                             8,
+                                             10,
+                                             12,
+                                             15,
+                                             16,
+                                             17,
+                                             18,
+                                             21,
+                                             23,
+                                             30,
+                                             32,
+                                             45
+                                         ],
+                            "notes":  "CGL v1.0.1 models code as glyph triads over E/I/C channels."
+                        },
+    "glyph_table":  {
+                        "𓏲":  {
+                                   "label":  "Oz / Strength / Flow",
+                                   "note":  "Energy / drive / activation",
+                                   "channel":  "E",
+                                   "id":  "E_STRENGTH",
+                                   "role":  "energy"
+                               },
+                        "𓏤":  {
+                                   "label":  "Dabar / Word / Structure",
+                                   "note":  "Symbol / mapping / schema",
+                                   "channel":  "I",
+                                   "id":  "I_WORD",
+                                   "role":  "information"
+                               },
+                        "𓂀":  {
+                                   "label":  "Gomer / Eye / Coherence",
+                                   "note":  "Awareness / still-point",
+                                   "channel":  "C",
+                                   "id":  "C_EYE",
+                                   "role":  "consciousness"
+                               },
+                        "𓊹":  {
+                                   "label":  "All-One Orchestrator",
+                                   "note":  "Anchor full-system All-One cycle",
+                                   "channel":  "C",
+                                   "id":  "ALL_ONE",
+                                   "role":  "orchestrator"
+                               },
+                        "𓋹":  {
+                                   "label":  "Codex OS / LumenShell Node",
+                                   "note":  "Bind to OS-level orchestrators",
+                                   "channel":  "I",
+                                   "id":  "OS_NODE",
+                                   "role":  "os_binding"
+                               },
+                        "𓇯":  {
+                                   "label":  "Solar Resonance Node",
+                                   "note":  "Link to Solar Resonance module",
+                                   "channel":  "E",
+                                   "id":  "SOLAR",
+                                   "role":  "solar_resonance"
+                               },
+                        "𓆳":  {
+                                   "label":  "Quantum Imaging Node",
+                                   "note":  "Link to QIM visual engine",
+                                   "channel":  "C",
+                                   "id":  "QIM",
+                                   "role":  "quantum_imaging"
+                               },
+                        "𓐘":  {
+                                   "label":  "GIZA Geometry Node",
+                                   "note":  "Link to Codex GIZA v6.x",
+                                   "channel":  "I",
+                                   "id":  "GIZA",
+                                   "role":  "giza_geometry"
+                               },
+                        "𓂻":  {
+                                   "label":  "Step / Movement",
+                                   "note":  "Sequential step / flow marker",
+                                   "channel":  "E",
+                                   "id":  "STEP",
+                                   "role":  "sequence"
+                               },
+                        "𓅓":  {
+                                   "label":  "Self / Subject",
+                                   "note":  "Who the program is acting on",
+                                   "channel":  "C",
+                                   "id":  "SELF",
+                                   "role":  "self"
+                               }
+                    }
+}
