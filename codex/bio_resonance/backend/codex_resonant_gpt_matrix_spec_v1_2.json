@@ -1,0 +1,66 @@
+﻿{
+  "module": "codex_bio_resonance",
+  "version": "v1_2",
+  "backend": "Codex Resonant GPT Matrix v1.2",
+  "layers": [
+    "S-layer: symbolic state classification",
+    "V-layer: numerical state vector/weights",
+    "R-layer: reflective narrative & interventions"
+  ],
+  "request_schema": {
+    "triad_metrics": {
+      "nodes": "float[] position along spine 0..1 (base→crown)",
+      "energy": "float[] energy per node (Oz)",
+      "information": "float[] information per node (Dabar)",
+      "C": "float[] coherence per node (Gomer)",
+      "delta_phi": "float[] |E-I| per node"
+    },
+    "metrics": {
+      "C_mean": "float",
+      "C_max": "float",
+      "delta_phi_mean": "float",
+      "delta_phi_max": "float"
+    },
+    "node_roles": "array of {index:int,label:string,channel:\"E|I|C\"}",
+    "geometry_summary": {
+      "lotus": "qualitative / numeric summary of lotus field (from C pattern)",
+      "torus": "qualitative / numeric summary of torus field (C, ΔΦ, HRV-modulated)",
+      "notes": "any additional geometric insights"
+    },
+    "physiology": {
+      "hrv": {
+        "rmssd": "float | null",
+        "lf_hf_ratio": "float | null"
+      },
+      "breath": {
+        "rate": "float | null",
+        "variability": "float | null"
+      },
+      "eeg": {
+        "alpha": "float | null",
+        "theta": "float | null",
+        "gamma": "float | null"
+      }
+    },
+    "oracle_hint": {
+      "mode": "string (e.g. 'root-mirror-flow')",
+      "intent": "string (e.g. 'bio_resonance_living_state_v1_2')"
+    }
+  },
+  "response_schema": {
+    "symbolic": {
+      "state_label": "string",
+      "pattern_family": "string",
+      "risk_level": "string"
+    },
+    "vector": {
+      "values": "float[] state vector",
+      "description": "string"
+    },
+    "reflection": {
+      "summary": "string",
+      "suggested_interventions": "string[]",
+      "spell": "string (optional oracle-style root→mirror→flow narrative)"
+    }
+  }
+}

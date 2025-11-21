@@ -1,0 +1,35 @@
+﻿{
+  "module": "codex_bio_resonance",
+  "version": "v1_2",
+  "role": "Living resonance engine (spine triad + physio + lotus/torus geometry)",
+  "law": "C = (E·I)/(1+|ΔΦ|)",
+  "triad_mapping": {
+    "Gomer": "Beauty / Coherence / C",
+    "Dabar": "Wisdom / Information / I",
+    "Oz": "Strength / Energy / E"
+  },
+  "inputs": [
+    "input/physiology.json (optional physiology data: hrv, breath, eeg)"
+  ],
+  "outputs": [
+    "state/v1_2/bio_resonance_state_v1_2.json",
+    "visuals/v1_2/bio_resonance_spine_profile_v1_2.png",
+    "visuals/v1_2/bio_resonance_delta_phi_heatmap_v1_2.png",
+    "visuals/v1_2/bio_resonance_coherence_wavefield_v1_2.png",
+    "visuals/v1_2/bio_resonance_lotus_field_v1_2.png",
+    "visuals/v1_2/bio_resonance_torus_field_v1_2.png",
+    "glyph/bio_resonance_glyph_v1_2.json",
+    "logs/ledger/bio_resonance_ledger.jsonl",
+    "backend/bio_resonance_request_v1_2.json",
+    "backend/bio_resonance_response_v1_2.json"
+  ],
+  "backend": {
+    "name": "Codex Resonant GPT Matrix",
+    "version": "v1_2",
+    "layers": [
+      "S-layer: symbolic state classification",
+      "V-layer: numerical state vector/weights",
+      "R-layer: reflective narrative & interventions"
+    ]
+  }
+}

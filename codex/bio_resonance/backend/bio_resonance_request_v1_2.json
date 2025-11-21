@@ -1,0 +1,127 @@
+﻿{
+    "module":  "codex_bio_resonance",
+    "version":  "v1_2",
+    "timestamp":  "2025-11-21T00:12:22.3195436Z",
+    "triad_metrics":  {
+                          "nodes":  [
+                                        0.0,
+                                        0.16666666666666666,
+                                        0.3333333333333333,
+                                        0.5,
+                                        0.6666666666666666,
+                                        0.8333333333333333,
+                                        1.0
+                                    ],
+                          "energy":  [
+                                         0.6,
+                                         0.9464101615137754,
+                                         0.9464101615137754,
+                                         0.6,
+                                         0.2535898384862246,
+                                         0.25358983848622435,
+                                         0.5999999999999999
+                                     ],
+                          "information":  [
+                                              1.0,
+                                              0.8,
+                                              0.4,
+                                              0.19999999999999996,
+                                              0.3999999999999998,
+                                              0.7999999999999997,
+                                              1.0
+                                          ],
+                          "delta_phi":  [
+                                            0.4,
+                                            0.1464101615137754,
+                                            0.5464101615137754,
+                                            0.4,
+                                            0.14641016151377523,
+                                            0.5464101615137753,
+                                            0.40000000000000013
+                                        ],
+                          "C":  [
+                                    0.4285714285714286,
+                                    0.6604338958503925,
+                                    0.24480184754795917,
+                                    0.0857142857142857,
+                                    0.08848136452362641,
+                                    0.13118891471224484,
+                                    0.42857142857142844
+                                ]
+                      },
+    "metrics":  {
+                    "C_mean":  0.29539473792733795,
+                    "C_max":  0.6604338958503925,
+                    "delta_phi_mean":  0.3693772351507288,
+                    "delta_phi_max":  0.5464101615137754,
+                    "H7_target":  0.7
+                },
+    "node_roles":  [
+                       {
+                           "index":  0,
+                           "label":  "root",
+                           "channel":  "E"
+                       },
+                       {
+                           "index":  1,
+                           "label":  "flow",
+                           "channel":  "E"
+                       },
+                       {
+                           "index":  2,
+                           "label":  "mirror",
+                           "channel":  "I"
+                       },
+                       {
+                           "index":  3,
+                           "label":  "heart",
+                           "channel":  "C"
+                       },
+                       {
+                           "index":  4,
+                           "label":  "voice",
+                           "channel":  "I"
+                       },
+                       {
+                           "index":  5,
+                           "label":  "vision",
+                           "channel":  "C"
+                       },
+                       {
+                           "index":  6,
+                           "label":  "crown",
+                           "channel":  "C"
+                       }
+                   ],
+    "physiology":  null,
+    "geometry_summary":  {
+                             "lotus":  "Lotus field from C pattern (7-petal, C-weighted)",
+                             "torus":  "Torus field modulated by C, ΔΦ, and HRV (if present) — flux-tube style",
+                             "notes":  "See visuals/v1_2 for qualitative geometry."
+                         },
+    "oracle_hint":  {
+                        "intent":  "bio_resonance_living_state_v1_2",
+                        "mode":  "root-mirror-flow"
+                    },
+    "context":  {
+                    "mapping":  {
+                                    "Gomer":  "Beauty / Coherence / C",
+                                    "Dabar":  "Wisdom / Information / I",
+                                    "Oz":  "Strength / Energy / E"
+                                },
+                    "law":  "C = (E·I)/(1+|ΔΦ|)",
+                    "H_layer_hint":  [
+                                         7,
+                                         8,
+                                         10,
+                                         12,
+                                         16,
+                                         17,
+                                         21,
+                                         23,
+                                         30,
+                                         32,
+                                         45
+                                     ]
+                }
+}
