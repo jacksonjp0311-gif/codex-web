@@ -1,0 +1,25 @@
+﻿{
+    "module":  "codex_cgl",
+    "version":  "v1_1",
+    "role":  "Codex Glyph Language core interpreter (v1.1, opcode layer)",
+    "law":  "C = (E·I)/(1+|ΔΦ|)",
+    "triad_mapping":  {
+                          "Gomer":  "Beauty / Coherence / C",
+                          "Dabar":  "Wisdom / Information / I",
+                          "Oz":  "Strength / Energy / E"
+                      },
+    "inputs":  [
+                   "input/cgl_program.cgl (Codex glyph program)"
+               ],
+    "outputs":  [
+                    "state/v1_1/cgl_state_v1_1.json",
+                    "logs/ledger/cgl_ledger.jsonl",
+                    "logs/run/cgl_v1_1_run_\u003ctimestamp\u003e.log"
+                ],
+    "notes":  [
+                  "v1.1: Adds opcode and execution_plan over glyph sequence.",
+                  "v1.1: Still planning-only; no external engines executed yet.",
+                  "v1.1: Ready for v1.2 compiler → All-One orchestrators.",
+                  "Metrics: E/I/C counts, ΔΦ-proxy, H7-alignment score."
+              ]
+}
