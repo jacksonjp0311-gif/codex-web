@@ -2,3 +2,4 @@
 {"timestamp":"2025-11-21T22:25:17.7963724Z","version":"v1_0_1","intent":"cgl_v1_0_1_run","glyph_count":0,"energy_count":0,"information_count":0,"consciousness_count":0,"delta_phi_proxy":0,"H7_alignment":0}
 {"timestamp":"2025-11-21T22:33:07.3273061Z","version":"v1_1","intent":"cgl_v1_1_run","glyph_count":0,"energy_count":0,"information_count":0,"consciousness_count":0,"delta_phi_proxy":0,"H7_alignment":0}
 {"timestamp":"2025-11-21T22:43:28.1551351Z","version":"v1_2","intent":"cgl_v1_2_compile","glyph_count":0,"energy_count":0,"information_count":0,"consciousness_count":0,"delta_phi_proxy":0,"H7_alignment":0,"blocks":0,"routes":{}}
+{"timestamp":"2025-11-22T20:43:54.7570513Z","version":"v1_1","total_tokens":30,"unique_tokens":22,"new_glyphs":16,"glyph_table":{"protocol":"CodexGlyphProtocol","version":"3.0","updated_at":"2025-11-22T20:43:54.375505Z","total_glyphs":22},"program_path":"C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\input\\program_v1_1.cgl"}

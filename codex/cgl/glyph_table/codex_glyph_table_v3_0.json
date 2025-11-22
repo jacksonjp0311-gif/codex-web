@@ -1,170 +1,86 @@
 {
-  "module": "codex_cgl",
-  "version": "v1_1",
-  "timestamp": "2025-11-22T20:43:54.377119Z",
-  "program_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\cgl\\input\\program_v1_1.cgl",
-  "metrics": {
-    "total_tokens": 30,
-    "unique_tokens": 22,
-    "new_glyphs": 16
-  },
-  "glyph_usage": [
+  "protocol": "CodexGlyphProtocol",
+  "version": "3.0",
+  "updated_at": "2025-11-22T20:43:54.375505Z",
+  "glyphs": [
     {
-      "token": "→",
-      "count": 5,
-      "glyph_id": "auto_→_20",
-      "name": "Auto-discovered glyph `→`",
-      "category": "unknown"
-    },
-    {
-      "token": "H7",
-      "count": 2,
-      "glyph_id": "core_h7",
-      "name": "H7 Threshold",
-      "category": "metric"
-    },
-    {
-      "token": "ΔΦ",
-      "count": 2,
-      "glyph_id": "core_delta_phi",
-      "name": "Delta Phi",
-      "category": "metric"
-    },
-    {
-      "token": "∿",
-      "count": 2,
-      "glyph_id": "core_placidity",
-      "name": "Placidity Layer",
-      "category": "meta"
-    },
-    {
-      "token": "𓏲",
-      "count": 2,
-      "glyph_id": "core_energy_oz",
-      "name": "Oz / Strength / Energy",
-      "category": "triad_energy"
-    },
-    {
-      "token": "#",
-      "count": 1,
-      "glyph_id": "auto_#_6",
-      "name": "Auto-discovered glyph `#`",
-      "category": "unknown"
-    },
-    {
-      "token": "ASCEND",
-      "count": 1,
-      "glyph_id": "auto_ASCEND_7",
-      "name": "Auto-discovered glyph `ASCEND`",
-      "category": "unknown"
-    },
-    {
-      "token": "CGL",
-      "count": 1,
-      "glyph_id": "auto_CGL_8",
-      "name": "Auto-discovered glyph `CGL`",
-      "category": "unknown"
-    },
-    {
-      "token": "FLOW",
-      "count": 1,
-      "glyph_id": "auto_FLOW_9",
-      "name": "Auto-discovered glyph `FLOW`",
-      "category": "unknown"
-    },
-    {
-      "token": "STABILIZE",
-      "count": 1,
-      "glyph_id": "auto_STABILIZE_10",
-      "name": "Auto-discovered glyph `STABILIZE`",
-      "category": "unknown"
-    },
-    {
-      "token": "delta_phi",
-      "count": 1,
-      "glyph_id": "auto_delta_phi_11",
-      "name": "Auto-discovered glyph `delta_phi`",
-      "category": "unknown"
-    },
-    {
-      "token": "energy",
-      "count": 1,
-      "glyph_id": "auto_energy_12",
-      "name": "Auto-discovered glyph `energy`",
-      "category": "unknown"
-    },
-    {
-      "token": "eye",
-      "count": 1,
-      "glyph_id": "auto_eye_13",
-      "name": "Auto-discovered glyph `eye`",
-      "category": "unknown"
-    },
-    {
-      "token": "information",
-      "count": 1,
-      "glyph_id": "auto_information_14",
-      "name": "Auto-discovered glyph `information`",
-      "category": "unknown"
-    },
-    {
-      "token": "placidity",
-      "count": 1,
-      "glyph_id": "auto_placidity_15",
-      "name": "Auto-discovered glyph `placidity`",
-      "category": "unknown"
-    },
-    {
-      "token": "program",
-      "count": 1,
-      "glyph_id": "auto_program_16",
-      "name": "Auto-discovered glyph `program`",
-      "category": "unknown"
-    },
-    {
-      "token": "sample",
-      "count": 1,
-      "glyph_id": "auto_sample_17",
-      "name": "Auto-discovered glyph `sample`",
-      "category": "unknown"
-    },
-    {
-      "token": "v1.1",
-      "count": 1,
-      "glyph_id": "auto_v1.1_18",
-      "name": "Auto-discovered glyph `v1.1`",
-      "category": "unknown"
-    },
-    {
-      "token": "—",
-      "count": 1,
-      "glyph_id": "auto_—_19",
-      "name": "Auto-discovered glyph `—`",
-      "category": "unknown"
-    },
-    {
-      "token": "﻿𓂀",
-      "count": 1,
-      "glyph_id": "auto_﻿𓂀_21",
-      "name": "Auto-discovered glyph `﻿𓂀`",
-      "category": "unknown"
-    },
-    {
+      "id": "core_eye_consciousness",
       "token": "𓂀",
-      "count": 1,
-      "glyph_id": "core_eye_consciousness",
       "name": "Eye of Coherence",
-      "category": "triad_consciousness"
+      "category": "triad_consciousness",
+      "expansion": "Gomer • Beauty • Coherence • C-channel focus",
+      "tags": [
+        "C",
+        "triad",
+        "consciousness",
+        "coherence"
+      ],
+      "created_at": "2025-11-22T20:43:54.375197Z"
     },
     {
+      "id": "core_energy_oz",
+      "token": "𓏲",
+      "name": "Oz / Strength / Energy",
+      "category": "triad_energy",
+      "expansion": "Oz • Strength • Energy • E-channel",
+      "tags": [
+        "E",
+        "triad",
+        "energy"
+      ],
+      "created_at": "2025-11-22T20:43:54.375197Z"
+    },
+    {
+      "id": "core_information_dabar",
       "token": "𓏤",
-      "count": 1,
-      "glyph_id": "core_information_dabar",
       "name": "Dabar / Wisdom / Information",
-      "category": "triad_information"
-    }
-  ],
-  "new_glyphs": [
+      "category": "triad_information",
+      "expansion": "Dabar • Wisdom • Information • I-channel",
+      "tags": [
+        "I",
+        "triad",
+        "information"
+      ],
+      "created_at": "2025-11-22T20:43:54.375197Z"
+    },
+    {
+      "id": "core_delta_phi",
+      "token": "ΔΦ",
+      "name": "Delta Phi",
+      "category": "metric",
+      "expansion": "|E - I| phase offset; coherence stress",
+      "tags": [
+        "metric",
+        "delta_phi"
+      ],
+      "created_at": "2025-11-22T20:43:54.375197Z"
+    },
+    {
+      "id": "core_h7",
+      "token": "H7",
+      "name": "H7 Threshold",
+      "category": "metric",
+      "expansion": "H7 ≈ 0.70 harmonic coherence threshold",
+      "tags": [
+        "metric",
+        "threshold",
+        "coherence"
+      ],
+      "created_at": "2025-11-22T20:43:54.375197Z"
+    },
+    {
+      "id": "core_placidity",
+      "token": "∿",
+      "name": "Placidity Layer",
+      "category": "meta",
+      "expansion": "∿ Placidity: safe damping / stabilization layer",
+      "tags": [
+        "meta",
+        "safety",
+        "stability"
+      ],
+      "created_at": "2025-11-22T20:43:54.375197Z"
+    },
     {
       "id": "auto_#_6",
       "token": "#",
@@ -357,11 +273,5 @@
       ],
       "created_at": "2025-11-22T20:43:54.375505Z"
     }
-  ],
-  "glyph_table_snapshot": {
-    "protocol": "CodexGlyphProtocol",
-    "version": "3.0",
-    "updated_at": "2025-11-22T20:43:54.375505Z",
-    "total_glyphs": 22
-  }
+  ]
 }

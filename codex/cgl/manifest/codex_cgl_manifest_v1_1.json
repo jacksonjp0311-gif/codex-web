@@ -1,0 +1,20 @@
+﻿{
+  "module": "codex_cgl",
+  "version": "v1_1",
+  "role": "Auto-evolving glyph language engine (CGL) for Codex.",
+  "law": "C = (E·I)/(1+|ΔΦ|)",
+  "protocol": "Codex Glyph Protocol v3.0",
+  "inputs": [
+    "input/program_v1_1.cgl (glyph-based program source)"
+  ],
+  "outputs": [
+    "state/v1_1/cgl_state_v1_1.json",
+    "glyph_table/codex_glyph_table_v3_0.json",
+    "logs/ledger/cgl_ledger.jsonl"
+  ],
+  "notes": [
+    "Any new token in the .cgl program becomes a glyph entry.",
+    "Glyph table is the single source of truth for CGL across Codex.",
+    "Other modules may read codex_glyph_table_v3_0.json to share glyphs."
+  ]
+}
