@@ -1,0 +1,54 @@
+﻿{
+    "protocol":  "CodexQuantumImagingStack",
+    "version":  "4.1",
+    "timestamp":  "2025-11-23T11:08:19-05:00",
+    "codex_root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+    "run_log":  [
+                    {
+                        "node":  "QIM v2.1 — AFM Volumetric Resonance",
+                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\qim_v2_1_all_one.ps1",
+                        "status":  "ok",
+                        "exitCode":  0,
+                        "durationSec":  0.032
+                    },
+                    {
+                        "node":  "QIM v2.2 — AFM Horizon + Bridge",
+                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\qim_v2_2_all_one.ps1",
+                        "status":  "ok",
+                        "exitCode":  0,
+                        "durationSec":  15.072
+                    },
+                    {
+                        "node":  "QIM v3.0 — Field Resonance Engine",
+                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\qim_v3_0_all_one.ps1",
+                        "status":  "ok",
+                        "exitCode":  0,
+                        "durationSec":  7.238
+                    },
+                    {
+                        "node":  "QIM v3.3A — 4D Field Evolution Engine",
+                        "path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\qim_v3_3_all_one.ps1",
+                        "status":  "ok",
+                        "exitCode":  0,
+                        "durationSec":  1.109
+                    }
+                ],
+    "states":  {
+                   "v3_0_field":  {
+                                      "latest_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v3_0\\qim_v3_0_field_state_20251123_110811.json",
+                                      "state_dir":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v3_0"
+                                  },
+                   "v3_3_4d":  {
+                                   "latest_path":  null,
+                                   "state_dir":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v3_3"
+                               },
+                   "v2_1_volume":  {
+                                       "latest_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v2_1\\qim_v2_1_state_20251117_094031.json",
+                                       "state_dir":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v2_1"
+                                   },
+                   "v2_2_horizon_bridge":  {
+                                               "latest_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v2_2\\qim_v2_2_state_20251123_110803.json",
+                                               "state_dir":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v2_2"
+                                           }
+               }
+}
