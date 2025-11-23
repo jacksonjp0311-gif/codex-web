@@ -1,0 +1,100 @@
+{
+  "protocol": "CodexQuantumImaging",
+  "version": "3.0",
+  "timestamp": "20251123_110811",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v3_0",
+  "state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v3_0\\qim_v3_0_field_state_20251123_110811.json",
+  "visuals": {
+    "delta_phi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v3_0\\qim_v3_0_field_delta_phi_central_20251123_110811.png",
+    "delta_phi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v3_0\\qim_v3_0_field_delta_phi_maxproj_20251123_110811.png",
+    "horizon_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v3_0\\qim_v3_0_field_horizon_maxproj_20251123_110811.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v3_0\\qim_v3_0_field_resonance_curve_20251123_110811.png"
+  },
+  "field_summary": {
+    "shape": [
+      3,
+      512,
+      512
+    ],
+    "delta_phi_mean": 1.2417634032146907e-08,
+    "delta_phi_std": 0.2190631479024887,
+    "gradient_mean": 0.01702498458325863,
+    "gradient_std": 0.014803084544837475,
+    "horizon_threshold": 0.43812630822261145,
+    "horizon_fraction": 0.03057861328125,
+    "triad": {
+      "energy": 0.01702498458325863,
+      "information": 0.9058549758593935,
+      "coherence": 0.015422166807167468,
+      "h7_target": 0.7
+    },
+    "resonance": {
+      "radii": [
+        0.7,
+        1.0,
+        1.4,
+        1.8,
+        2.2
+      ],
+      "response": [
+        0.20962703227996826,
+        0.20901605486869812,
+        0.20788682997226715,
+        0.20641762018203735,
+        0.20463186502456665
+      ]
+    },
+    "solar_link": {
+      "band_hint": "inner",
+      "turbulence_index": 0.00871911059558263
+    },
+    "third_eye_link": {
+      "symmetry_score": 0.9563994519043082,
+      "ring_count_hint": 4
+    },
+    "config": {
+      "field_size": 512,
+      "z_slices": 3,
+      "molecule_centers": [
+        [
+          -0.6,
+          -0.6
+        ],
+        [
+          0.0,
+          -0.6
+        ],
+        [
+          0.6,
+          -0.6
+        ],
+        [
+          -0.6,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6,
+          0.0
+        ],
+        [
+          -0.6,
+          0.6
+        ],
+        [
+          0.0,
+          0.6
+        ],
+        [
+          0.6,
+          0.6
+        ]
+      ],
+      "used_synthetic": true,
+      "afm_present": false
+    }
+  }
+}
