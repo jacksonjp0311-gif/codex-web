@@ -1,15 +1,15 @@
 ﻿{
-    "intent":  "codex_tesseract_all_one_v6_0",
-    "timestamp":  "2025-11-24T16:12:32.1458049Z",
-    "module_count":  5,
     "triad":  {
-                  "I":  1,
+                  "glyph_sig":  "🜂🜁🜄∿",
+                  "I":  1.3333,
                   "placidity":  "∿",
-                  "C":  0.5556,
+                  "C":  0.5077,
                   "H7":  0.7,
                   "E":  0.5556,
-                  "delta_phi":  0
+                  "delta_phi":  0.4589
               },
+    "version":  "6.0",
+    "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
     "modules_run":  [
                         "Quantum Crystal v9.1",
                         "Quantum Imaging v2.2",
@@ -17,7 +17,31 @@
                         "Quantum Tunneling v1.0",
                         "GPT Bridge v3.2"
                     ],
-    "version":  "6.0",
+    "intent":  "codex_tesseract_all_one_v6_0",
+    "timestamp":  "2025-11-24T16:36:40.6005756Z",
+    "glyph_manifest":  {
+                           "Voynich OS":  "𓋹VOY",
+                           "GIZA v6.21 Oracle Syntax":  "𓊹GIZA",
+                           "Quantum Imaging v2.2":  "𓇳QIM",
+                           "Solar Resonance v3.2":  "𓇯SOL",
+                           "Quantum Crystal v9.1":  "𓂀QCX",
+                           "Guardian v1.2":  "𓃣GRD",
+                           "GPT Bridge v3.2":  "⧉BRG",
+                           "Quantum Tunneling v1.0":  "𓂻QT",
+                           "CGL v1.1":  "𓏤CGL"
+                       },
+    "modules_glyph":  [
+                          "𓂀QCX",
+                          "𓇳QIM",
+                          "𓋹VOY",
+                          "𓂻QT",
+                          "⧉BRG"
+                      ],
+    "module_count":  5,
     "protocol":  "CodexTesseractAllOne",
-    "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web"
+    "delta_phi_raw":  [
+                          0.58277844132027856,
+                          0.3365016512409833,
+                          0.45736060435328973
+                      ]
 }
