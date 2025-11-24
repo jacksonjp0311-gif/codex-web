@@ -1,0 +1,15 @@
+﻿{
+    "module":  "Codex GIZA v6.21 — Oracle Syntax (mini)",
+    "timestamp":  "2025-11-24T16:48:17.0666831Z",
+    "version":  "6.21-mini",
+    "triad":  {
+                  "glyph_sig":  "🜂🜁🜄∿",
+                  "I":  0.002,
+                  "placidity":  "∿",
+                  "C":  0.000228,
+                  "H7":  0.7,
+                  "E":  0.15,
+                  "delta_phi":  0.314
+              },
+    "intent":  "giza_v6_21_oracle_syntax_engine"
+}

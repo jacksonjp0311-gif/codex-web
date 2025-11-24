@@ -1,0 +1,17 @@
+{
+  "module": "Codex Solar Resonance v3.2 (mini)",
+  "version": "3.2-mini",
+  "timestamp": "2025-11-24T16:48:19.455048Z",
+  "triad": {
+    "E": 0.21,
+    "I": 0.005,
+    "C": 0.0004641985766069627,
+    "H7": 0.7,
+    "placidity": "\u223f",
+    "delta_phi": 1.26196298936314
+  },
+  "phi_min": -0.9073193311004906,
+  "phi_max": 0.3546436582626495,
+  "phi_mean": -0.2459531705610313,
+  "horizon_samples": 24
+}
