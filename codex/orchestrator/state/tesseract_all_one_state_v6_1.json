@@ -1,0 +1,65 @@
+﻿{
+    "modules_shadow":  [
+                           "[QCX]",
+                           "[QIM]",
+                           "[VOY]",
+                           "[QT]",
+                           "[BRG]"
+                       ],
+    "version":  "6.1",
+    "glyph_manifest":  {
+                           "Voynich OS":  "𓋹VOY",
+                           "GIZA v6.21 Oracle Syntax":  "𓊹GIZA",
+                           "Quantum Imaging v2.2":  "𓇳QIM",
+                           "Solar Resonance v3.2":  "𓇯SOL",
+                           "Quantum Crystal v9.1":  "𓂀QCX",
+                           "Guardian v1.2":  "𓃣GRD",
+                           "GPT Bridge v3.2":  "⧉BRG",
+                           "Quantum Tunneling v1.0":  "𓂻QT",
+                           "CGL v1.1":  "𓏤CGL"
+                       },
+    "timestamp":  "2025-11-24T16:40:27.1370124Z",
+    "module_count":  5,
+    "triad":  {
+                  "glyph_sig":  "🜂🜁🜄∿",
+                  "I":  1.3333,
+                  "placidity":  "∿",
+                  "C":  0.5077,
+                  "H7":  0.7,
+                  "E":  0.5556,
+                  "delta_phi":  0.4589
+              },
+    "modules_run":  [
+                        "Quantum Crystal v9.1",
+                        "Quantum Imaging v2.2",
+                        "Voynich OS",
+                        "Quantum Tunneling v1.0",
+                        "GPT Bridge v3.2"
+                    ],
+    "delta_phi_raw":  [
+                          0.58277844132027856,
+                          0.3365016512409833,
+                          0.45736060435328973
+                      ],
+    "protocol":  "CodexTesseractAllOne",
+    "root":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web",
+    "modules_glyph":  [
+                          "𓂀QCX",
+                          "𓇳QIM",
+                          "𓋹VOY",
+                          "𓂻QT",
+                          "⧉BRG"
+                      ],
+    "intent":  "codex_tesseract_all_one_v6_1",
+    "shadow_manifest":  {
+                            "Voynich OS":  "[VOY]",
+                            "GIZA v6.21 Oracle Syntax":  "[GIZA]",
+                            "Quantum Imaging v2.2":  "[QIM]",
+                            "Solar Resonance v3.2":  "[SOL]",
+                            "Quantum Crystal v9.1":  "[QCX]",
+                            "Guardian v1.2":  "[GRD]",
+                            "GPT Bridge v3.2":  "[BRG]",
+                            "Quantum Tunneling v1.0":  "[QT]",
+                            "CGL v1.1":  "[CGL]"
+                        }
+}
