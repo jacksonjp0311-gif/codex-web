@@ -1,0 +1,80 @@
+[
+  {
+    "token": "qokedy",
+    "packet": {
+      "prefix": "qo",
+      "core": "k",
+      "bench": null,
+      "suffix": "edy"
+    },
+    "rel_state": {
+      "roles": [
+        "REL_ROUTE_INGEST",
+        "REL_GALLOWS_K"
+      ],
+      "state": {
+        "depth": 0,
+        "phase": 1,
+        "flow": 0
+      }
+    }
+  },
+  {
+    "token": "qokeedy",
+    "packet": {
+      "prefix": "qo",
+      "core": "ke",
+      "bench": null,
+      "suffix": "edy"
+    },
+    "rel_state": {
+      "roles": [
+        "REL_ROUTE_INGEST",
+        "REL_GALLOWS_K"
+      ],
+      "state": {
+        "depth": 0,
+        "phase": 1,
+        "flow": 0
+      }
+    }
+  },
+  {
+    "token": "chedy",
+    "packet": {
+      "prefix": null,
+      "core": null,
+      "bench": "ch",
+      "suffix": "edy"
+    },
+    "rel_state": {
+      "roles": [
+        "REL_BENCH_ch"
+      ],
+      "state": {
+        "depth": 0,
+        "phase": 0,
+        "flow": 0
+      }
+    }
+  },
+  {
+    "token": "dain",
+    "packet": {
+      "prefix": null,
+      "core": "d",
+      "bench": null,
+      "suffix": "ain"
+    },
+    "rel_state": {
+      "roles": [
+        "REL_EXTEND"
+      ],
+      "state": {
+        "depth": 1,
+        "phase": 0,
+        "flow": 0
+      }
+    }
+  }
+]
