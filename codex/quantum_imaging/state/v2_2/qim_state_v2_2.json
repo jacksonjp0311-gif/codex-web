@@ -1,0 +1,28 @@
+{
+    "module": "Codex Quantum Imaging v2.2",
+    "timestamp": "2025-11-24T16:12:28.960272Z",
+    "triad": {
+        "E": 0.08916687938124057,
+        "I": 0.0016511928864611724,
+        "C": 0.00011016201648949448,
+        "H7": 0.7,
+        "placidity": "\u223f",
+        "delta_phi": 0.3365016512409833
+    },
+    "stats": {
+        "dphi_min": 0.000335956860013701,
+        "dphi_max": 0.5296791691266286,
+        "dphi_mean": 0.08916687938124057
+    },
+    "links": {
+        "giza": "giza_drift_mesh",
+        "solar_resonance": "solar_horizon_field",
+        "third_eye": "qim_resonance_stream"
+    },
+    "outputs": {
+        "central_png": ".\\visuals\\v2_2\\qim_delta_phi_central_v2_2.png",
+        "max_png": ".\\visuals\\v2_2\\qim_delta_phi_max_v2_2.png",
+        "horizon_png": ".\\visuals\\v2_2\\qim_horizon_v2_2.png",
+        "curve_png": ".\\visuals\\v2_2\\qim_resonance_curve_v2_2.png"
+    }
+}

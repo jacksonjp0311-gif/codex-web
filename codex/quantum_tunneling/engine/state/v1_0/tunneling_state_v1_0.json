@@ -1,0 +1,20 @@
+{
+    "module": "Codex Quantum Tunneling v1.0",
+    "timestamp": "2025-11-24T16:12:31.393350Z",
+    "barrier": {
+        "height": 1.5,
+        "center_index": 100,
+        "lattice_length": 201
+    },
+    "triad": {
+        "E": 1.005,
+        "I": 0.12911208888634768,
+        "C": 0.08903606214081788,
+        "H7": 0.7,
+        "placidity": "\u223f",
+        "delta_phi": 0.45736060435328973
+    },
+    "notes": {
+        "description": "1D tunneling through a single barrier; \u0394\u03a6 from T(E) gradient."
+    }
+}
