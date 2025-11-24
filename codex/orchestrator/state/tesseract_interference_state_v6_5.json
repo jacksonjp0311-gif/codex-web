@@ -1,0 +1,17 @@
+{
+  "module": "Codex Tesseract Interference Engine v6.5 (mini)",
+  "version": "6.5-mini",
+  "timestamp": "2025-11-24T17:12:27.283484Z",
+  "triad": {
+    "E": 1.0,
+    "I": 1.0,
+    "C": 0.33367891577928505,
+    "H7": 0.7,
+    "placidity": "\u223f",
+    "delta_phi": 1.9968929791819963
+  },
+  "phi_min": -0.9984464895909981,
+  "phi_max": 0.9984464895909981,
+  "phi_mean": -2.946840262661766e-17,
+  "samples": 64
+}
