@@ -1,0 +1,57 @@
+{
+  "module": "Codex Tesseract Glyph Compression Engine v6.8 (mini)",
+  "version": "6.8-mini",
+  "timestamp": "2025-11-25T17:08:41.940207+00:00",
+  "triad_glyph": {
+    "H7": 0.7,
+    "placidity": "\u223f",
+    "compression_ratio_numeric_to_glyph": 1.0
+  },
+  "glyphs": {
+    "light": {
+      "role": "light",
+      "C": 0.9145,
+      "C_glyph": "\ud80c\uddf3",
+      "delta_phi": 0.7009,
+      "delta_phi_sign": "+"
+    },
+    "shadow": {
+      "role": "shadow",
+      "C": 0.0855,
+      "C_glyph": "\ud80c\udeb9",
+      "delta_phi": -0.7009,
+      "delta_phi_sign": "-"
+    },
+    "interference": {
+      "role": "interference",
+      "C": 0.5,
+      "C_glyph": "\ud80c\udc80",
+      "delta_phi": 0.0,
+      "delta_phi_sign": "0"
+    },
+    "collapse": {
+      "role": "collapse",
+      "C": 0.0,
+      "C_glyph": "\ud80c\udfe4",
+      "delta_phi": 0.0,
+      "delta_phi_sign": "0"
+    },
+    "unified": {
+      "role": "unified",
+      "C": 0.375,
+      "C_glyph": "\ud80c\udeb9",
+      "delta_phi": 0.0,
+      "delta_phi_sign": "0"
+    }
+  },
+  "inputs": {
+    "state_v6_3": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_3.json",
+    "state_v6_4": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_4.json",
+    "state_v6_5": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_5.json",
+    "state_v6_6": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_6.json",
+    "state_v6_7": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_7.json"
+  },
+  "visuals": {
+    "glyph_resonance_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\visuals\\v6_8\\tesseract_glyph_resonance_v6_8.png"
+  }
+}
