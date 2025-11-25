@@ -1,0 +1,58 @@
+{
+  "module": "Codex Tesseract HyperGlyph Engine v6.9 (mini)",
+  "version": "6.9-mini",
+  "timestamp": "2025-11-25T17:48:46.257419+00:00",
+  "triad_hyperglyph": {
+    "H7": 0.7,
+    "placidity": "\u223f",
+    "C_effective": 0.46491666666666664,
+    "pair_count": 3
+  },
+  "pairs": [
+    {
+      "name": "ls",
+      "roles": [
+        "light",
+        "shadow"
+      ],
+      "C_avg": 0.5,
+      "delta_phi_diff": -1.4018,
+      "sign_pattern": "+-",
+      "hyperglyph": "+-"
+    },
+    {
+      "name": "ic",
+      "roles": [
+        "interference",
+        "collapse"
+      ],
+      "C_avg": 0.25,
+      "delta_phi_diff": 0.0,
+      "sign_pattern": "00",
+      "hyperglyph": "00"
+    },
+    {
+      "name": "ul",
+      "roles": [
+        "unified",
+        "light"
+      ],
+      "C_avg": 0.6447499999999999,
+      "delta_phi_diff": 0.7009,
+      "sign_pattern": "0+",
+      "hyperglyph": "0+"
+    }
+  ],
+  "inputs": {
+    "state_v6_3": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_3.json",
+    "state_v6_4": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_4.json",
+    "state_v6_5": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_5.json",
+    "state_v6_6": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_6.json",
+    "state_v6_7": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_7.json",
+    "state_v6_8": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_all_one_state_v6_8.json",
+    "glyph_state_v6_8": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\state\\tesseract_glyph_state_v6_8.json"
+  },
+  "visuals": {
+    "hyperglyph_resonance_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\visuals\\v6_9\\tesseract_hyperglyph_resonance_v6_9.png"
+  }
+}
