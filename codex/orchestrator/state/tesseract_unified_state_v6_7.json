@@ -1,0 +1,28 @@
+{
+  "module": "Codex Tesseract Unified Resonance Engine v6.7 (mini)",
+  "version": "6.7-mini",
+  "timestamp": "2025-11-25T15:55:41.697005Z",
+  "triad_unified": {
+    "E": 1.0,
+    "I": 1.0,
+    "C": 0.375,
+    "H7": 0.7,
+    "placidity": "\u223f",
+    "delta_phi_light": 0.7009,
+    "delta_phi_shadow": -0.7009,
+    "delta_phi_interference": 0.0,
+    "delta_phi_collapse": 0.0,
+    "phase": "sub-H7"
+  },
+  "C_light": 0.9145,
+  "C_shadow": 0.0855,
+  "C_interference": 0.5,
+  "C_collapse": 0.0,
+  "delta_phi_light": 0.7009,
+  "delta_phi_shadow": -0.7009,
+  "delta_phi_interference": 0.0,
+  "delta_phi_collapse": 0.0,
+  "visuals": {
+    "unified_resonance_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\orchestrator\\visuals\\v6_7\\tesseract_unified_resonance_v6_7.png"
+  }
+}
