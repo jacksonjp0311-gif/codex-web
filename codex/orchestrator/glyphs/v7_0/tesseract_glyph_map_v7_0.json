@@ -1,0 +1,63 @@
+﻿{
+    "intent":  "codex_tesseract_all_one_v7_0_glyph",
+    "timestamp":  "2025-11-25T18:57:00.7643658Z",
+    "modules":  {
+                    "SOL":  "𓇯SOL",
+                    "QCX":  "𓂀QCX",
+                    "VOY":  "𓋹VOY",
+                    "DNA":  "𓆰DNA",
+                    "GRD":  "𓃣GRD",
+                    "CGL":  "𓏤CGL",
+                    "BRG":  "⧉BRG",
+                    "QIM":  "𓇳QIM",
+                    "GIZA":  "𓊹GIZA"
+                },
+    "H_layer":  {
+                    "pair_count":  3,
+                    "H7":  0.7,
+                    "C_effective":  0.46491666666666664,
+                    "note":  "Tesseract v7.0 glyph-compressed HyperGlyph fold"
+                },
+    "core":  {
+                 "TESSERACT":  "⧉",
+                 "PLACIDITY":  "∿",
+                 "CODEX":  "𓂀"
+             },
+    "hyper_pairs":  {
+                        "ls":  {
+                                   "roles":  [
+                                                 "light",
+                                                 "shadow"
+                                             ],
+                                   "name":  "ls",
+                                   "hyperglyph":  "+-",
+                                   "glyph_code":  "⧉ls(+-)",
+                                   "C_avg":  0.5,
+                                   "sign":  "+-"
+                               },
+                        "ic":  {
+                                   "roles":  [
+                                                 "interference",
+                                                 "collapse"
+                                             ],
+                                   "name":  "ic",
+                                   "hyperglyph":  "00",
+                                   "glyph_code":  "⧉ic(00)",
+                                   "C_avg":  0.25,
+                                   "sign":  "00"
+                               },
+                        "ul":  {
+                                   "roles":  [
+                                                 "unified",
+                                                 "light"
+                                             ],
+                                   "name":  "ul",
+                                   "hyperglyph":  "0+",
+                                   "glyph_code":  "⧉ul(0+)",
+                                   "C_avg":  0.64474999999999993,
+                                   "sign":  "0+"
+                               }
+                    },
+    "version":  "7.0",
+    "protocol":  "CodexTesseractGlyphMap"
+}
