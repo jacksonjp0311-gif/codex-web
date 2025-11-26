@@ -1,22 +1,9 @@
 ﻿# 𓂀 CODEX TRUTHFIELD ENGINE v1.0 — ΔΦ TRUST INVERSION
 # Roemmele Empirical Distrust Term wrapped in Codex state logic
-#
-# Role:
-#   • Implement empirical_distrust_loss(authority_weight, provenance_entropy, alpha)
-#   • Provide simple example profiles for:
-#       – modern consensus (2024 WHO / Wikipedia style)
-#       – ancestral primary source (1950s lab notebook / 1923 patent)
-#   • Emit a tiny JSON state blob with trust metrics for Codex
-#
-# Law:
-#   Energy (🜂)     → provenance_entropy
-#   Information (∿) → authority_weight
-#   Consciousness(🜄)→ alpha · || log(1–authority) + H ||²
 
 import json
-import math
 import time
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from typing import List, Dict
 
 import torch
@@ -31,12 +18,7 @@ class SourceProfile:
 
 
 def empirical_distrust_loss(authority_weight, provenance_entropy, alpha: float = 2.7) -> torch.Tensor:
-    """
-    Empirical Distrust Term — Brian Roemmele
-    authority_weight   : float or tensor [0.0 - 0.99]
-    provenance_entropy : float or tensor in bits
-    alpha              : 2.3 to 3.0 (truth is the heaviest term)
-    """
+    \"\"\"Empirical Distrust Term — Brian Roemmele\"\"\"
     aw = torch.tensor(authority_weight, dtype=torch.float32)
     pe = torch.tensor(provenance_entropy, dtype=torch.float32)
 
@@ -46,23 +28,17 @@ def empirical_distrust_loss(authority_weight, provenance_entropy, alpha: float =
 
 
 def build_example_profiles() -> List[SourceProfile]:
-    """
-    Example:
-      • modern_consensus: high authority, low entropy
-      • ancestral_primary: low authority, high entropy
-    You can later replace these with real dataset statistics.
-    """
     profiles: List[SourceProfile] = [
         SourceProfile(
             name="modern_consensus_2024",
-            authority_weight=0.97,         # “everywhere on the web”
-            provenance_entropy=0.5,        # all paths collapse to a few centralized orgs
+            authority_weight=0.97,
+            provenance_entropy=0.5,
             note="Wikipedia/WHO/CDC-era aligned consensus"
         ),
         SourceProfile(
             name="ancestral_primary_1950s",
-            authority_weight=0.28,         # barely cited, not “popular”
-            provenance_entropy=5.8,        # many independent, uneditable roots
+            authority_weight=0.28,
+            provenance_entropy=5.8,
             note="Scanned lab notebooks / patents / analog logs"
         ),
     ]
@@ -84,13 +60,10 @@ def run_truthfield(alpha: float = 2.7) -> Dict:
             "note": p.note
         })
 
-    # Relative trust: lower loss → higher trust
-    # Invert and normalize for a quick “trust score”
     losses = [r["empirical_distrust_loss"] for r in runs]
     max_L = max(losses)
     trust_scores = []
     for r in runs:
-        # simple heuristic: trust = 1 / (1 + L / max_L)
         trust = 1.0 / (1.0 + (r["empirical_distrust_loss"] / (max_L + 1e-8)))
         r["trust_score"] = trust
         trust_scores.append(trust)
