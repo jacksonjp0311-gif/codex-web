@@ -1,0 +1,40 @@
+{
+  "protocol": "CodexGlyphProtocol",
+  "version": "3.0",
+  "mode": "minimal",
+  "context": "Black Horizon v1.1 \u2014 Kerr Event-Bloom Engine",
+  "triad": {
+    "energy": {
+      "glyph": "\ud80c\uddf3",
+      "label": "event_horizon_energy",
+      "role": "collapsed_radiative_field"
+    },
+    "information": {
+      "glyph": "\ud80c\udfe4",
+      "label": "spacetime_information",
+      "role": "distorted_geometry"
+    },
+    "consciousness": {
+      "glyph": "\ud80c\udc80",
+      "label": "bloom_coherence",
+      "role": "emergent_pattern",
+      "C_avg": 0.05427048268344446,
+      "H7_alignment": 0.3542704826834445
+    }
+  },
+  "geometry": {
+    "layout": "triadic_pyramid",
+    "layer": "BlackHorizon_EventBloom_v1_1",
+    "links": {
+      "state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\state\\black_horizon_v1_1_20251126_012110.json"
+    }
+  },
+  "tags": [
+    "black_hole",
+    "event_horizon",
+    "codex",
+    "\u0394\u03a6",
+    "EIC",
+    "kerr"
+  ]
+}

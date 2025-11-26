@@ -1,0 +1,13 @@
+{
+    "timestamp":  "2025-11-26T06:21:15.9895055Z",
+    "version":  "v1.1",
+    "run_id":  "black_horizon_v1_1_20251126_012110",
+    "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\state\\black_horizon_v1_1_20251126_012110.json",
+    "glyph_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\glyph\\black_horizon_v1_1_20251126_012110.glyph.json",
+    "ascii_bloom":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\visuals\\bloom\\bloom_ascii_black_horizon_v1_1_20251126_012110.txt",
+    "C_avg":  0.05427048268344446,
+    "H7_alignment":  0.3542704826834445,
+    "mass_M":  1,
+    "spin_a":  0.9,
+    "incl_deg":  60
+}

@@ -1,0 +1,33 @@
+{
+  "protocol": "CodexBlackHorizonState",
+  "version": "1.1",
+  "timestamp": "2025-11-26T06:21:15.597425+00:00",
+  "dimensions": {
+    "nx": 256,
+    "ny": 256
+  },
+  "metrics": {
+    "C_avg": 0.05427048268344446,
+    "C_max": 0.9999999828336644,
+    "C_min": 0.0,
+    "delta_phi_mean": 0.028817218493017216,
+    "delta_phi_max": 0.9999999908143689,
+    "H7_target": 0.7,
+    "H7_alignment": 0.3542704826834445
+  },
+  "params": {
+    "mass_M": 1.0,
+    "spin_a": 0.9,
+    "incl_deg": 60.0
+  },
+  "paths": {
+    "delta_phi_field_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\visuals\\fields\\delta_phi_field_v1_1.png",
+    "coherence_field_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\visuals\\fields\\coherence_field_v1_1.png",
+    "bloom_map_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\visuals\\bloom\\bloom_map_v1_1.png",
+    "ascii_bloom": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_1\\visuals\\bloom\\bloom_ascii_black_horizon_v1_1_20251126_012110.txt"
+  },
+  "law": {
+    "equation": "C = (E * I) / (1 + |\u0394\u03a6|)",
+    "field": "UniversalTruthProtocol"
+  }
+}
