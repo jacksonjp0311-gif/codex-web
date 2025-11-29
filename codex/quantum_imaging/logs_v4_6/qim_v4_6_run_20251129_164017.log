@@ -1,0 +1,19 @@
+QIM v4.6 — Temporal Echo Engine starting...
+  input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v4_6
+  state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_6
+  visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v4_6
+  ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_6
+  log_file   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v4_6\qim_v4_6_run_20251129_164017.log
+Loaded base volume: shape=(64, 64, 64), used_synthetic=True, input_png_count=0
+Built 4D field with shape=(40, 64, 64, 64)
+Computed dphi field over 4D volume.
+Global triad: {'E': 0.08253540843725204, 'I': 0.02710268460214138, 'C': 0.002177904095587345}
+H19 dphi_global: 0.02710268460214138
+Cusp lambda_eff: 0.02638751218203648, barrier_scale: 0.00010163847200451748
+Harmonics: {'core': 524289, 'shell': 4718592, 'void': 5242879}
+H20 temporal echo index: 0.9988392622042925
+H20 origin mean corr   : 0.974000433087349
+Visuals written: {'echo_curve': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_6\\qim_v4_6_temporal_20251129_164018_echo_curve.png', 'dphi_panels': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_6\\qim_v4_6_temporal_20251129_164018_dphi_panels.png', 'echo_heatmap': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_6\\qim_v4_6_temporal_20251129_164018_echo_heatmap.png'}
+State JSON written -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_6\qim_v4_6_temporal_echo_state_20251129_164019.json
+Ledger appended    -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_6\qim_v4_6_ledger.jsonl
+QIM v4.6 run complete. Runtime: 1.456 s
