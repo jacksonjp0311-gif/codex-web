@@ -1,0 +1,21 @@
+QIM v4.1 — Field Convergence Engine (Python) starting…
+  input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v4_1
+  state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_1
+  visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v4_1
+  ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger
+  log_file   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v4_1\qim_v4_1_run_20251129_153936.log
+Loaded base volume: shape=(64, 64, 64), used_synthetic=True, input_png_count=0
+Built 4D field with shape=(40, 64, 64, 64)
+QIM v4.1 encountered an error: UnicodeEncodeError('charmap', 'Computed ΔΦ field over 4D volume.', 9, 11, 'character maps to <undefined>')
+Traceback (most recent call last):
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_quantum_imaging_v4_1_all_in_one.py", line 399, in main
+    log("Computed ΔΦ field over 4D volume.")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_quantum_imaging_v4_1_all_in_one.py", line 374, in log
+    print(msg)
+    ~~~~~^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 9-10: character maps to <undefined>
+

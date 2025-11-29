@@ -1,0 +1,9 @@
+QIM v4.1.1 starting...
+Loaded base volume, synth=True, pngs=0
+Built 4D field: (40, 64, 64, 64)
+Computed dphi.
+Triad: {'E': 0.08239627629518509, 'I': 0.02709479257464409, 'C': 0.002173616331502193}
+??_global=0.02709479257464409
+?_eff=0.026380031103774654 barrier=0.00010133846759425756
+State saved ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_1_1\qim_v4_1_1_state_20251129_154147.json
+Ledger appended.
