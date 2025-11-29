@@ -1,0 +1,18 @@
+QIM v4.2 ? Field Vision Engine starting...
+  input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v4_2
+  state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_2
+  visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v4_2
+  ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_2
+  log_file   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v4_2\qim_v4_2_run_20251129_154822.log
+Loaded base volume: shape=(64, 64, 64), used_synthetic=True, input_png_count=0
+Built 4D field with shape=(40, 64, 64, 64)
+Computed dphi field over 4D volume.
+Global triad: {'E': 0.08239627629518509, 'I': 0.02709479257464409, 'C': 0.002173616331502193}
+H19 dphi_global: 0.02709479257464409
+Cusp lambda_eff: 0.026380031103774654, barrier_scale: 0.00010133846759425756
+Harmonics: {'core': 524289, 'shell': 4718591, 'void': 5242880}
+imageio not available; skipping GIF.
+Visuals written: {'delta_phi_panels': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_2\\qim_v4_2_field_20251129_154823_delta_phi_panels.png', 'horizon_maxproj': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_2\\qim_v4_2_field_20251129_154823_horizon_maxproj.png', 'resonance_curve': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_2\\qim_v4_2_field_20251129_154823_resonance_curve.png'}
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_2\qim_v4_2_field_state_20251129_154825.json
+Ledger appended    ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_2\qim_v4_2_ledger.jsonl
+QIM v4.2 run complete. Runtime: 2.546 s

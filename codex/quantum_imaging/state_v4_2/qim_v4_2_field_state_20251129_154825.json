@@ -1,0 +1,58 @@
+{
+  "protocol": "CodexQIMFieldVision",
+  "version": "4.2",
+  "timestamp": "2025-11-29T15:48:25.024976Z",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v4_2",
+  "used_synthetic": true,
+  "input_png_count": 0,
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.08239627629518509,
+      "I": 0.02709479257464409,
+      "C": 0.002173616331502193
+    },
+    "H19_delta_phi_global": 0.02709479257464409,
+    "cusp_lambda_eff": 0.026380031103774654,
+    "cusp_barrier_scale": 0.00010133846759425756,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880
+    }
+  },
+  "codex": {
+    "H_layer": {
+      "H7": 0.7,
+      "H19": "Global dphi integration layer for 4D field"
+    },
+    "laws": {
+      "universal_truth": "C = (E\u00b7I)/(1 + |\u0394\u03a6_global|)",
+      "cusp_v2_8": "\u03bb = P/P_cr \u2192 1\u207b; \u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}"
+    },
+    "tesseract_alignment": {
+      "note": "Field prepared for glyph-compressed mapping (ls/ic/ul pairs)",
+      "modules": {
+        "QIM": "\ud80c\uddf3QIM",
+        "QCX": "\ud80c\udc80QCX",
+        "GIZA": "\ud80c\udeb9GIZA",
+        "VOY": "\ud80c\udef9VOY",
+        "SOL": "\ud80c\uddefSOL",
+        "DNA": "\ud80c\uddb0DNA",
+        "GRD": "\ud80c\udce3GRD",
+        "CGL": "\ud80c\udfe4CGL",
+        "BRG": "\u29c9BRG"
+      }
+    }
+  },
+  "visuals": {
+    "delta_phi_panels": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_2\\qim_v4_2_field_20251129_154823_delta_phi_panels.png",
+    "horizon_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_2\\qim_v4_2_field_20251129_154823_horizon_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_2\\qim_v4_2_field_20251129_154823_resonance_curve.png"
+  }
+}
