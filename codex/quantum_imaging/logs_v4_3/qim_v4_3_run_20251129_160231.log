@@ -1,0 +1,17 @@
+QIM v4.3 — High-Resolution Super-Res Engine starting...
+  input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v4_3
+  state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_3
+  visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v4_3
+  ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_3
+  log_file   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v4_3\qim_v4_3_run_20251129_160231.log
+Loaded base volume: shape=(64, 64, 64), synthetic=True, input_png_count=0
+Built 4D field with shape=(40, 64, 64, 64)
+Computed dphi field over 4D volume.
+Global triad: {'E': 0.08239627629518509, 'I': 0.02709479257464409, 'C': 0.002173616331502193}
+H19 dphi_global: 0.02709479257464409
+Cusp lambda_eff: 0.026380031103774654, barrier_scale: 0.00010133846759425756
+Harmonics: {'core': 524289, 'shell': 4718591, 'void': 5242880}
+Visuals written: {'delta_phi_central_superres': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_delta_phi_central_superres.png', 'horizon_maxproj_superres': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_horizon_maxproj_superres.png', 'delta_phi_maxproj_superres': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_delta_phi_maxproj_superres.png', 'resonance_curve': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_resonance_curve.png'}
+State JSON written -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_3\qim_v4_3_superres_state_20251129_160234.json
+Ledger appended    -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_3\qim_v4_3_ledger.jsonl
+QIM v4.3 run complete. Runtime: 2.596 s

@@ -1,0 +1,70 @@
+{
+  "protocol": "CodexQIMSuperRes",
+  "version": "4.3",
+  "timestamp": "2025-11-29T16:02:34.584249Z",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v4_3",
+  "used_synthetic": true,
+  "input_png_count": 0,
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "superres": {
+    "upsample_factor_2d": 4,
+    "base_xy": [
+      64,
+      64
+    ],
+    "superres_xy": [
+      256,
+      256
+    ]
+  },
+  "metrics": {
+    "triad": {
+      "E": 0.08239627629518509,
+      "I": 0.02709479257464409,
+      "C": 0.002173616331502193
+    },
+    "H19_dphi_global": 0.02709479257464409,
+    "cusp_lambda_eff": 0.026380031103774654,
+    "cusp_barrier_scale": 0.00010133846759425756,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880
+    }
+  },
+  "codex": {
+    "H_layer": {
+      "H7": 0.7,
+      "H19": "Global dphi integration over 4D field"
+    },
+    "laws": {
+      "universal_truth": "C = (E\u00b7I)/(1 + |dphi_global|)",
+      "cusp_v2_8": "lambda = P/P_cr -> 1-, barrier ~ (1-lambda)^(3/2) (E\u00b7I)^(3/2)"
+    },
+    "tesseract_alignment": {
+      "note": "Field prepared for glyph-compressed mapping (ls/ic/ul pairs).",
+      "modules": {
+        "QIM": "QIM",
+        "QCX": "QCX",
+        "GIZA": "GIZA",
+        "VOY": "VOY",
+        "SOL": "SOL",
+        "DNA": "DNA",
+        "GRD": "GRD",
+        "CGL": "CGL",
+        "BRG": "BRG"
+      }
+    }
+  },
+  "visuals": {
+    "delta_phi_central_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_delta_phi_central_superres.png",
+    "horizon_maxproj_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_horizon_maxproj_superres.png",
+    "delta_phi_maxproj_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_delta_phi_maxproj_superres.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_3\\qim_v4_3_field_20251129_160232_resonance_curve.png"
+  }
+}
