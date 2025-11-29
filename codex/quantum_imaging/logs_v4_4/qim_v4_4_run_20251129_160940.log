@@ -1,0 +1,17 @@
+QIM v4.4 — Field Decay + Growth Engine starting...
+  input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v4_4
+  state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_4
+  visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v4_4
+  ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_4
+  logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v4_4
+Loaded base volume: shape=(96, 96, 96), used_synthetic=True, png_count=0
+Built 4D growth/decay field: shape=(60, 96, 96, 96)
+Computed dphi field over 4D volume.
+Global triad: {'E': 0.04334159195423126, 'I': 0.014440212398767471, 'C': 0.0006169528631360978}
+H19 dphi_global: 0.014440212398767471
+Cusp lambda_eff: 0.014234660872346365, barrier_scale: 1.532420580832352e-05
+Harmonics: {'core': 2654208, 'shell': 23887872, 'void': 26542080}
+Visuals written: {'dphi_panels': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_4\\qim_v4_4_field_20251129_160944_dphi_panels.png', 'horizon_maxproj': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_4\\qim_v4_4_field_20251129_160944_horizon_maxproj.png', 'resonance_curve': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_4\\qim_v4_4_field_20251129_160944_resonance_curve.png'}
+State JSON written -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_4\qim_v4_4_field_state_20251129_160945.json
+Ledger appended    -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_4\qim_v4_4_ledger.jsonl
+QIM v4.4 run complete.
