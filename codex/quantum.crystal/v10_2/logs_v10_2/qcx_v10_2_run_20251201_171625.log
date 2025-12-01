@@ -1,0 +1,15 @@
+QCX v10.2 ? Self-Modding Crystal Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\state_v10_2
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\visuals_v10_2
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\ledger_v10_2
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\logs_v10_2
+[Channel] QCX_core: E=0.068289, I=0.025599, C=0.001704, S=1.351277, D_frac=1.832
+[Channel] QIM_shell: E=0.071017, I=0.026367, C=0.001824, S=1.350300, D_frac=1.831
+[Channel] Solar_env: E=0.077144, I=0.029077, C=0.002180, S=1.342352, D_frac=1.829
+[Channel] AFM_anchor: E=0.084535, I=0.031359, C=0.002570, S=1.337214, D_frac=1.808
+[Dominant] Teacher ? QCX_core | S=1.351277, ?=0.329, D_frac=1.832
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\state_v10_2\qcx_v10_2_state_20251201_171646.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\ledger_v10_2\qcx_v10_2_ledger.jsonl
+v10.3 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_2\engine\qcx_v10_3_autogen_spec.json
+QCX v10.2 run complete.

@@ -1,0 +1,144 @@
+{
+  "protocol": "CodexQCXSelfModdingCrystal",
+  "version": "10.2",
+  "timestamp": "2025-12-01T17:16:48.191304Z",
+  "mode": "self-modding-crystal",
+  "shape_4d": [
+    40,
+    96,
+    96,
+    96
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.07295539230108261,
+      "I": 0.027241427451372147,
+      "C": 0.0019347049032934535
+    },
+    "H19_dphi_global": 0.027241427451372147,
+    "lambda_eff": 0.026519011717585455,
+    "barrier_scale": 8.509853791392359e-05,
+    "omega_mean": 0.9737171530723572,
+    "omega_std": 0.014908130280673504,
+    "curvature_proxy": 0.011472944170236588,
+    "harmonics": {
+      "core": 1769472,
+      "shell": 15925249,
+      "void": 17694719
+    },
+    "multi_scale_persistence": 0.9757464612384176,
+    "fractal_dim_H16B": 1.8312877456391803
+  },
+  "channels": {
+    "QCX_core": {
+      "name": "QCX_core",
+      "E": 0.06828927993774414,
+      "I": 0.025598617270588875,
+      "C": 0.0017044788393559256,
+      "dphi_global": 0.025598617270588875,
+      "lambda_eff": 0.02495968387585595,
+      "barrier_scale": 7.036997891907799e-05,
+      "omega_mean": 0.9752593040466309,
+      "omega_std": 0.014387551695108414,
+      "curvature_proxy": 0.011110188439488411,
+      "persistence": 0.9746456633836764,
+      "fractal_dim": 1.831963346971776,
+      "core": 1769472,
+      "shell": 15925250,
+      "void": 17694718,
+      "weight_S": 1.351276502502513
+    },
+    "QIM_shell": {
+      "name": "QIM_shell",
+      "E": 0.07101720571517944,
+      "I": 0.026367049664258957,
+      "C": 0.0018244098840873358,
+      "dphi_global": 0.026367049664258957,
+      "lambda_eff": 0.025689688375015583,
+      "barrier_scale": 7.792622258877993e-05,
+      "omega_mean": 0.9745768308639526,
+      "omega_std": 0.015781395137310028,
+      "curvature_proxy": 0.011941914446651936,
+      "persistence": 0.9754951475398,
+      "fractal_dim": 1.8311167595152262,
+      "core": 1769472,
+      "shell": 15925248,
+      "void": 17694720,
+      "weight_S": 1.3502999173496124
+    },
+    "Solar_env": {
+      "name": "Solar_env",
+      "E": 0.07714438438415527,
+      "I": 0.02907695434987545,
+      "C": 0.002179743442514882,
+      "dphi_global": 0.02907695434987545,
+      "lambda_eff": 0.028255374126267323,
+      "barrier_scale": 0.0001017672572052548,
+      "omega_mean": 0.9720228314399719,
+      "omega_std": 0.016159899532794952,
+      "curvature_proxy": 0.012699337676167488,
+      "persistence": 0.9752942361812021,
+      "fractal_dim": 1.8285715233595312,
+      "core": 1769472,
+      "shell": 15925251,
+      "void": 17694717,
+      "weight_S": 1.3423519867931493
+    },
+    "AFM_anchor": {
+      "name": "AFM_anchor",
+      "E": 0.08453530818223953,
+      "I": 0.03135880082845688,
+      "C": 0.002570323625618619,
+      "dphi_global": 0.03135880082845688,
+      "lambda_eff": 0.030405326258201682,
+      "barrier_scale": 0.00013031119043303515,
+      "omega_mean": 0.9699817895889282,
+      "omega_std": 0.01897534541785717,
+      "curvature_proxy": 0.015018385834991932,
+      "persistence": 0.9792460701672969,
+      "fractal_dim": 1.8078499954573817,
+      "core": 1769473,
+      "shell": 15925247,
+      "void": 17694720,
+      "weight_S": 1.3372143823481468
+    }
+  },
+  "fusion": {
+    "teacher": "QCX_core",
+    "alpha_teach": 0.32932226127386094
+  },
+  "codex": {
+    "node": "QCX",
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 (irreversibility kernel)",
+      "H16": "Insight geometry (C_geo, \u03a9 error curvature)",
+      "H16B": "Fractal self-similarity dimension",
+      "H19": "Global dphi integration (4D field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u03bb = P/P_cr \u2192 1-, \u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|) defines conformal metric",
+      "harmonic_stability": "Stable fields exhibit core:shell:void \u2248 1:9:10"
+    },
+    "memory": {
+      "node_role": "atomic-scale \u0394\u03c6 kernel in multi-scale stack",
+      "baseline_versions": [
+        "QCX v10.0",
+        "QCX v10.1"
+      ],
+      "current_version": "QCX v10.2"
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_resonance_curve.png",
+    "radial_profile": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_radial_profile.png",
+    "dphi_histogram": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_dphi_histogram.png",
+    "time_radius_strip": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_2\\visuals_v10_2\\qcx_v10_2_field_time_radius_strip.png"
+  }
+}
