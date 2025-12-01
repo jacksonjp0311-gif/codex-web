@@ -1,0 +1,24 @@
+QCX v10.3 ? Physical Binding Crystal Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\state_v10_3
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\visuals_v10_3
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\ledger_v10_3
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\logs_v10_3
+input_afm  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_standard
+[AFM] No .npy/.npz found in C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_standard, using synthetic crystal.
+[Base] Using synthetic crystal (no AFM volume available).
+[Channels] Built QCX/QIM/Solar/AFM 4D fields.
+[Fractal] Box-counting dimension ? 1.694
+[Channel] QCX_core: E=0.051431, I=0.010355, C=0.000527, S=1.000420, D_frac=1.694, core=1769472, shell=15925248, void=17694720
+[Fractal] Box-counting dimension ? 1.561
+[Channel] QIM_shell: E=0.083301, I=0.004867, C=0.000403, S=0.986610, D_frac=1.561, core=1769472, shell=15925250, void=17694718
+[Fractal] Box-counting dimension ? 1.697
+[Channel] Solar_env: E=0.084118, I=0.014666, C=0.001216, S=0.991941, D_frac=1.697, core=1769472, shell=15925249, void=17694719
+[Fractal] Box-counting dimension ? 1.702
+[Channel] AFM_anchor: E=0.085751, I=0.014932, C=0.001262, S=0.993138, D_frac=1.702, core=1769472, shell=15925248, void=17694720
+[Dominant] Teacher ? QCX_core | S=1.000420, ?=0.227, leak_sigma=0.0001, D_frac=1.694
+[Fractal] Box-counting dimension ? 1.678
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\state_v10_3\qcx_v10_3_state_20251201_173421.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\ledger_v10_3\qcx_v10_3_ledger.jsonl
+v10.4 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_3\engine_v10_3\qcx_v10_4_autogen_spec.json
+QCX v10.3 run complete.
