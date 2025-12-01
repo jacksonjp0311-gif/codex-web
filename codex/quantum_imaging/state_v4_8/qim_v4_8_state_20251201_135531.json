@@ -1,0 +1,79 @@
+{
+  "protocol": "CodexQIMTranscendence",
+  "version": "4.8",
+  "timestamp": "2025-12-01T13:55:31.285103Z",
+  "mode": "vision",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v4_8",
+  "used_synthetic": true,
+  "input_png_count": 0,
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.08283591270446777,
+      "I": 0.022320151329040527,
+      "C": 0.0018085431502443577,
+      "C_geo": 0.0017990732118656676
+    },
+    "H19_dphi_global": 0.022320151329040527,
+    "lambda_eff": 0.021832839057338155,
+    "barrier_scale": 7.691185971712984e-05,
+    "H7_alignment": 0.7005526256723222,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718592,
+      "void": 5242879
+    },
+    "error_geometry": {
+      "omega_mean": 0.9887024101268527,
+      "omega_std": 0.015233795663735013,
+      "curvature_proxy": 0.005263787107846296
+    }
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H16": "Insight / pattern geometry (C_geo weighting)",
+      "H19": "Global dphi integration (4D field \u2192 C_effective)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|dphi_global|)",
+      "cusp_v2_8": "lambda = P/P_cr \u2192 1-, \u0394V \u221d (1-lambda)^{3/2} (EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|) defines deviation-weighted metric"
+    },
+    "memory": {
+      "node": "QIM",
+      "baseline_version": "4.7.1",
+      "current_version": "4.8",
+      "autogen_source_spec": "codex_qim_v4_8_autogen_spec.json"
+    },
+    "global_qim_v4_summary": {
+      "count": 6,
+      "E_mean": 0.0686867522696654,
+      "I_mean": 0.02258030915011962,
+      "C_mean": 0.0019148870474553692,
+      "C_max": 0.002177904095587345
+    }
+  },
+  "spec_info": {
+    "recommended_resolution": [
+      64,
+      64,
+      64
+    ],
+    "recommended_T": 40,
+    "global_C_mean": 0.0018631411906460042,
+    "global_C_max": 0.002177904095587345,
+    "next_focus": "boost C while keeping dphi_global below cusp knee"
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_8\\qim_v4_8_field_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_8\\qim_v4_8_field_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_8\\qim_v4_8_field_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_8\\qim_v4_8_field_resonance_curve.png"
+  }
+}
