@@ -1,0 +1,52 @@
+{
+  "protocol": "CodexQIMLivingField",
+  "version": "4.7.1",
+  "timestamp": "2025-12-01T13:41:16.926920Z",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v4_7_1",
+  "used_synthetic": true,
+  "input_png_count": 0,
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.08239627629518509,
+      "I": 0.02709479257464409,
+      "C": 0.002173616331502193
+    },
+    "H19_dphi_global": 0.02709479257464409,
+    "lambda_eff": 0.026380031103774654,
+    "barrier_scale": 0.00010133846759425756,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880
+    }
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H19": "Global dphi integration (4D field \u2192 C_effective)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|dphi_global|)",
+      "cusp_v2_8": "lambda = P/P_cr \u2192 1-, \u0394V \u221d (1-lambda)^{3/2} (EI)^{3/2}"
+    },
+    "global_qim_v4_summary": {
+      "count": 5,
+      "E_mean": 0.06594484746456146,
+      "I_mean": 0.021677412465214728,
+      "C_mean": 0.0018631411906460042,
+      "C_max": 0.002177904095587345
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_7_1\\qim_v4_7_1_field_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_7_1\\qim_v4_7_1_field_dphi_maxproj.png",
+    "horizon_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_7_1\\qim_v4_7_1_field_horizon_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_7_1\\qim_v4_7_1_field_resonance_curve.png"
+  }
+}
