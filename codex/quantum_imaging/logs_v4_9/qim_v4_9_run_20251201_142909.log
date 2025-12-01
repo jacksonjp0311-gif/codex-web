@@ -1,0 +1,25 @@
+QIM v4.9 ? Multi-Scale Insight Kernel Engine starting (mode='insight')
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_9
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v4_9
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_9
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v4_9
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v4_9
+spec_path  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v4_9_autogen_spec.json
+Loaded v4.9 spec recommendation: res=[64, 64, 64], T=40
+Loaded base volume: shape=(64, 64, 64), used_synthetic=True, input_png_count=0
+Built 4D field with shape=(40, 64, 64, 64)
+Computed dphi field over 4D volume.
+Error geometry stats: {'omega_mean': 0.9878661361972009, 'omega_std': 0.0127764004929412, 'curvature_proxy': 0.0076477759332627794}
+Global triad: {'E': 0.08195141702890396, 'I': 0.026987742632627487, 'C': 0.0021535639222778394, 'C_geo': 0.0021370939479423}
+H19 dphi_global: 0.026987742632627487
+Cusp lambda_eff: 0.026278544049070995, barrier_scale: 9.993937993804625e-05
+Harmonics: {'core': 524289, 'shell': 4718591, 'void': 5242880}
+Multi-scale insight metrics: persistence=0.2845617294311523, coherence_index=0.9950311332454436
+Multi-scale detail: {'1': {'shape': [40, 64, 64, 64], 'active_fraction': 0.5, 'omega_mean': 0.9878661361972009, 'curvature_proxy': 0.0076477759332627794, 'C_geo_scale': 0.026660277039178188}, '2': {'shape': [20, 32, 32, 32], 'active_fraction': 0.5, 'omega_mean': 0.9878661361972009, 'curvature_proxy': 0.0047312763448227255, 'C_geo_scale': 0.02666028071926632}, '4': {'shape': [10, 16, 16, 16], 'active_fraction': 0.5, 'omega_mean': 0.9878661361972008, 'curvature_proxy': 0.003966989609316283, 'C_geo_scale': 0.026660284399354455}, '8': {'shape': [5, 8, 8, 8], 'active_fraction': 0.5, 'omega_mean': 0.9878661361972008, 'curvature_proxy': 0.0035294251308238935, 'C_geo_scale': 0.02666028071926632}}
+Visuals written: {'dphi_central': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_dphi_central.png', 'dphi_maxproj': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_dphi_maxproj.png', 'omega_maxproj': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_omega_maxproj.png', 'resonance_curve': 'C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_resonance_curve.png'}
+Global QIM v4 summary: {'count': 7, 'E_mean': 0.0707080609032086, 'I_mean': 0.022543143747108325, 'C_mean': 0.0008780436964100077, 'C_max': 0.002173616331502193}
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v4_9\qim_v4_9_state_20251201_142912.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v4_9\qim_v4_9_ledger.jsonl
+v5.0 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v5_0_autogen_spec.json
+QIM v4.9 run complete. Runtime: 2.697 s

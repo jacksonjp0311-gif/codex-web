@@ -1,0 +1,134 @@
+{
+  "protocol": "CodexQIMMultiScaleInsight",
+  "version": "4.9",
+  "timestamp": "2025-12-01T14:29:12.531707Z",
+  "mode": "insight",
+  "input_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v4_9",
+  "used_synthetic": true,
+  "input_png_count": 0,
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.08195141702890396,
+      "I": 0.026987742632627487,
+      "C": 0.0021535639222778394,
+      "C_geo": 0.0021370939479423
+    },
+    "H19_dphi_global": 0.026987742632627487,
+    "lambda_eff": 0.026278544049070995,
+    "barrier_scale": 9.993937993804625e-05,
+    "H7_alignment": null,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880
+    },
+    "error_geometry": {
+      "omega_mean": 0.9878661361972009,
+      "omega_std": 0.0127764004929412,
+      "curvature_proxy": 0.0076477759332627794
+    },
+    "multi_scale": {
+      "1": {
+        "shape": [
+          40,
+          64,
+          64,
+          64
+        ],
+        "active_fraction": 0.5,
+        "omega_mean": 0.9878661361972009,
+        "curvature_proxy": 0.0076477759332627794,
+        "C_geo_scale": 0.026660277039178188
+      },
+      "2": {
+        "shape": [
+          20,
+          32,
+          32,
+          32
+        ],
+        "active_fraction": 0.5,
+        "omega_mean": 0.9878661361972009,
+        "curvature_proxy": 0.0047312763448227255,
+        "C_geo_scale": 0.02666028071926632
+      },
+      "4": {
+        "shape": [
+          10,
+          16,
+          16,
+          16
+        ],
+        "active_fraction": 0.5,
+        "omega_mean": 0.9878661361972008,
+        "curvature_proxy": 0.003966989609316283,
+        "C_geo_scale": 0.026660284399354455
+      },
+      "8": {
+        "shape": [
+          5,
+          8,
+          8,
+          8
+        ],
+        "active_fraction": 0.5,
+        "omega_mean": 0.9878661361972008,
+        "curvature_proxy": 0.0035294251308238935,
+        "C_geo_scale": 0.02666028071926632
+      }
+    },
+    "multi_scale_persistence": 0.2845617294311523,
+    "multi_scale_coherence_index": 0.9950311332454436
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H16": "Insight / pattern geometry (C_geo weighting)",
+      "H19": "Global dphi integration (4D field \u2192 C_effective)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|dphi_global|)",
+      "cusp_v2_8": "lambda = P/P_cr \u2192 1-, \u0394V \u221d (1-lambda)^{3/2} (EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|) defines deviation-weighted metric",
+      "harmonic_stability": "Stable imaging fields exhibit core:shell:void \u2248 1:9:10"
+    },
+    "memory": {
+      "node": "QIM",
+      "baseline_version": "4.7.1",
+      "previous_version": "4.8",
+      "current_version": "4.9",
+      "autogen_source_spec": "codex_qim_v4_9_autogen_spec.json"
+    },
+    "global_qim_v4_summary": {
+      "count": 7,
+      "E_mean": 0.0707080609032086,
+      "I_mean": 0.022543143747108325,
+      "C_mean": 0.0008780436964100077,
+      "C_max": 0.002173616331502193
+    }
+  },
+  "spec_info": {
+    "recommended_resolution": [
+      64,
+      64,
+      64
+    ],
+    "recommended_T": 40,
+    "global_C_mean": 0.0019148870474553692,
+    "global_C_max": 0.002177904095587345,
+    "next_focus": "refine multi-scale kernels, stabilize \u03a9 curvature and C_geo"
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v4_9\\qim_v4_9_field_resonance_curve.png"
+  }
+}
