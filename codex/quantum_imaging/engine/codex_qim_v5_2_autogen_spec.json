@@ -1,0 +1,40 @@
+{
+  "protocol": "QIMAutoGenSpec",
+  "source_version": "5.1",
+  "next_version": "5.2",
+  "timestamp": "2025-12-01T16:17:13.153938Z",
+  "current_metrics": {
+    "triad": {
+      "E": 0.08425478637218475,
+      "I": 0.029612243175506592,
+      "C": 0.0024232163509036704
+    },
+    "dphi_global": 0.029612243175506592,
+    "lambda_eff": 0.028760577947458343,
+    "barrier_scale": 0.0001192856732790615,
+    "omega_mean": 0.971579372882843,
+    "omega_std": 0.017682399600744247,
+    "curvature_proxy": 0.013036680407822132,
+    "multi_scale_persistence": 0.9752766822179855
+  },
+  "fusion": {
+    "teacher": "Solar",
+    "alpha_teach": 0.21998529068380596,
+    "channels": [
+      "QIM",
+      "Solar",
+      "QCX",
+      "ThirdEye",
+      "AFM"
+    ]
+  },
+  "recommendation": {
+    "recommended_resolution": [
+      64,
+      64,
+      64
+    ],
+    "recommended_T": 40,
+    "next_focus": "stabilize cross-run teacher identity, ingest real Solar/QCX/ThirdEye fields when available, and tune \u03a9-curvature jointly across channels."
+  }
+}

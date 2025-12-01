@@ -1,0 +1,18 @@
+QIM v5.1 ? Cross-Module Insight Engine (Teacher-Stabilized) starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_1
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v5_1
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_1
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v5_1
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v5_1
+[Base] Using synthetic AFM-style volume (v5.1).
+[Channel] QIM: E=0.079601, I=0.027476, C=0.002129, S=0.923796
+[Channel] Solar: E=0.079601, I=0.027488, C=0.002130, S=0.923813
+[Channel] QCX: E=0.079601, I=0.027470, C=0.002128, S=0.923788
+[Channel] ThirdEye: E=0.083172, I=0.028700, C=0.002320, S=0.923448
+[Channel] AFM: E=0.105862, I=0.040274, C=0.004098, S=0.901820
+[Dominant] Teacher channel ? Solar (S=0.923813, ?=0.220, curv=0.012908)
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_1\qim_v5_1_state_20251201_161712.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_1\qim_v5_1_ledger.jsonl
+v5.2 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v5_2_autogen_spec.json
+QIM v5.1 run complete.
