@@ -1,0 +1,711 @@
+﻿#!/usr/bin/env python3
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  QIM v5.2 — VISUAL EVOLUTION ENGINE (HARMONIC LENS)          ║
+# ║  Codex ΔΦ Perception Kernel + Evolving Visuals (5-Channel)   ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+import argparse
+import json
+import math
+import sys
+import traceback
+from dataclasses import dataclass, asdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+
+try:
+    import matplotlib.pyplot as plt
+    MATPLOTLIB_OK = True
+except Exception:
+    MATPLOTLIB_OK = False
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  0. SMALL EMERGENT UTILITIES                                │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def now_utc_iso():
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def safe_f(x, default=0.0):
+    try:
+        return float(x)
+    except Exception:
+        return float(default)
+
+
+def log(fp, msg: str):
+    line = msg.encode("ascii", "replace").decode("ascii")
+    print(line)
+    if fp is not None:
+        fp.write(line + "\n")
+        fp.flush()
+
+
+@dataclass
+class ChannelMetrics:
+    name: str
+    E: float
+    I: float
+    C: float
+    dphi_global: float
+    lambda_eff: float
+    barrier_scale: float
+    omega_mean: float
+    omega_std: float
+    curvature_proxy: float
+    persistence: float
+    core: int
+    shell: int
+    void: int
+    weight_S: float
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  1. BASE SYNTHETIC LATTICE                                  │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def synthetic_volume(shape=(64, 64, 64), seed=151):
+    np.random.seed(seed)
+    nx, ny, nz = shape
+    x = np.linspace(-1.5, 1.5, nx)
+    y = np.linspace(-1.5, 1.5, ny)
+    z = np.linspace(-1.5, 1.5, nz)
+    X, Y, Z = np.meshgrid(x, y, z, indexing="ij")
+    R = np.sqrt(X*X + Y*Y + Z*Z)
+
+    base = np.exp(-2.0 * R) * (1.0 + 0.35 * np.sin(4.0 * R))
+    peaks = np.zeros_like(base)
+
+    centers = [
+        (0.0, 0.0, 0.0),
+        (0.6, 0.2, -0.4),
+        (-0.5, 0.5, 0.3),
+    ]
+    for cx, cy, cz in centers:
+        Rp = np.sqrt((X - cx)**2 + (Y - cy)**2 + (Z - cz)**2)
+        peaks += np.exp(-30.0 * Rp*Rp)
+
+    vol = base + 0.7 * peaks
+    vol += 0.02 * np.random.randn(*vol.shape)
+    return vol
+
+
+def build_4d_field(volume3d, T=40, phase_shift=0.0, radial_mod=1.0):
+    nx, ny, nz = volume3d.shape
+    V = np.zeros((T, nx, ny, nz), dtype=np.float32)
+
+    x = np.linspace(-1.0, 1.0, nx)
+    y = np.linspace(-1.0, 1.0, ny)
+    z = np.linspace(-1.0, 1.0, nz)
+    X, Y, Z = np.meshgrid(x, y, z, indexing="ij")
+    R = np.sqrt(X*X + Y*Y + Z*Z)
+
+    for t in range(T):
+        theta = 2.0 * math.pi * t / float(T)
+        mod = (
+            1.0
+            + 0.30 * math.sin(theta + phase_shift)
+            + 0.22 * np.cos(2.0 * theta + 3.0 * R * radial_mod)
+        )
+        V[t] = volume3d * mod
+
+    return V
+
+
+def compute_dphi_4d(V):
+    T, nx, ny, nz = V.shape
+    dphi = np.zeros_like(V, dtype=np.float32)
+    for t in range(T):
+        gx, gy, gz = np.gradient(V[t])
+        dphi[t] = np.sqrt(gx*gx + gy*gy + gz*gz)
+    return dphi
+
+
+def omega_field(dphi):
+    # Ω = 1 / (1 + |ΔΦ|)
+    return 1.0 / (1.0 + np.abs(dphi))
+
+
+def harmonic_counts(dphi):
+    vals = dphi.flatten()
+    pos = vals[vals > 0.0]
+    if pos.size == 0:
+        total = int(vals.size)
+        return 0, 0, total
+    p95 = float(np.percentile(pos, 95.0))
+    p50 = float(np.percentile(pos, 50.0))
+    core = int((dphi >= p95).sum())
+    shell = int(((dphi < p95) & (dphi >= p50)).sum())
+    void = int((dphi < p50).sum())
+    return core, shell, void
+
+
+def multi_scale_persistence(dphi):
+    # Emergent but simple: downsample and compare norms
+    T, nx, ny, nz = dphi.shape
+    norms = []
+
+    def norm_of(slice_4d):
+        return float(np.mean(np.abs(slice_4d)))
+
+    norms.append(norm_of(dphi))
+    if T >= 20 and nx >= 32:
+        norms.append(norm_of(dphi[::2, ::2, ::2, ::2]))
+    if T >= 10 and nx >= 16:
+        norms.append(norm_of(dphi[::4, ::4, ::4, ::4]))
+    if T >= 5 and nx >= 8:
+        norms.append(norm_of(dphi[::8, ::8, ::8, ::8]))
+
+    if len(norms) <= 1:
+        return 0.0
+
+    arr = np.array(norms)
+    return float(1.0 - np.std(arr) / (np.mean(arr) + 1e-9))
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  2. CHANNEL SYNTHESIS (5 MODULES)                           │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def synthesize_channels(base3d, T=40):
+    # QIM: neutral reference
+    V_qim = build_4d_field(base3d, T=T, phase_shift=0.0, radial_mod=1.0)
+    # Solar: slower breathing, outward emphasis
+    V_solar = build_4d_field(base3d, T=T, phase_shift=0.7, radial_mod=1.3)
+    # QCX: sharper inner lattice modulation
+    V_qcx = build_4d_field(base3d, T=T, phase_shift=1.4, radial_mod=0.8)
+    # Third Eye: semantic burst; slightly asymmetric
+    V_third = build_4d_field(base3d * (1.0 + 0.2 * np.tanh(base3d)),
+                             T=T, phase_shift=2.1, radial_mod=1.1)
+    # AFM: horizon-weighted surface emphasis
+    V_afm = build_4d_field(base3d * (1.0 + 0.4 * (base3d > np.median(base3d))),
+                           T=T, phase_shift=2.8, radial_mod=1.0)
+
+    return {
+        "QIM": V_qim,
+        "Solar": V_solar,
+        "QCX": V_qcx,
+        "ThirdEye": V_third,
+        "AFM": V_afm,
+    }
+
+
+def channel_metrics(name, V):
+    dphi = compute_dphi_4d(V)
+    T, nx, ny, nz = V.shape
+
+    E = safe_f(np.mean(np.abs(V)))
+    I = safe_f(np.mean(dphi))
+    dphi_global = I
+    lam_eff = min(0.99, dphi_global / (1.0 + dphi_global))
+    barrier_scale = (1.0 - lam_eff) ** 1.5 * (max(E * I, 0.0) ** 1.5)
+
+    # Core triad coherence (Codex UTP)
+    C = (E * I) / (1.0 + abs(dphi_global))
+
+    Ω = omega_field(dphi)
+    omega_mean = safe_f(np.mean(Ω))
+    omega_std = safe_f(np.std(Ω))
+
+    curvature_proxy = safe_f(np.mean(np.abs(dphi - np.mean(dphi))))
+
+    persistence = multi_scale_persistence(dphi)
+
+    core, shell, void = harmonic_counts(dphi)
+
+    # Insight weight S = Ω * (1 - λ) * persistence
+    weight_S = omega_mean * (1.0 - lam_eff) * persistence
+
+    return ChannelMetrics(
+        name=name,
+        E=E,
+        I=I,
+        C=C,
+        dphi_global=dphi_global,
+        lambda_eff=lam_eff,
+        barrier_scale=safe_f(barrier_scale),
+        omega_mean=omega_mean,
+        omega_std=omega_std,
+        curvature_proxy=curvature_proxy,
+        persistence=persistence,
+        core=core,
+        shell=shell,
+        void=void,
+        weight_S=weight_S,
+    ), dphi, Ω
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  3. DOMINANT INSIGHT FUSION (TEACHER MODE)                  │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def dominant_fusion(channels, metrics_map, log_fp=None):
+    names = list(channels.keys())
+    weights = np.array([metrics_map[n].weight_S for n in names], dtype=np.float64)
+
+    if np.all(weights <= 0):
+        teacher_idx = names.index("QIM")
+    else:
+        teacher_idx = int(np.argmax(weights))
+
+    teacher_name = names[teacher_idx]
+    teacher_field = channels[teacher_name]
+
+    m_star = metrics_map[teacher_name]
+    curv = max(m_star.curvature_proxy, 1e-6)
+    # map curvature (~0.003–0.02) into [0.18, 0.42] for v5.2
+    alpha = 0.18 + 0.24 * min(1.0, (curv - 0.002) / 0.02)
+
+    if log_fp is not None:
+        log(log_fp, f"[Dominant] Teacher channel → {teacher_name} (S={m_star.weight_S:.6f}, α={alpha:.3f})")
+
+    fused_channels = {}
+    for n in names:
+        if n == teacher_name:
+            fused_channels[n] = channels[n].copy()
+        else:
+            fused_channels[n] = (1.0 - alpha) * channels[n] + alpha * teacher_field
+
+    stacked = np.stack([fused_channels[n] for n in names], axis=-1)
+    V_unified = np.mean(stacked, axis=-1)
+
+    return teacher_name, float(alpha), fused_channels, V_unified
+
+
+def enforce_harmonic_stability(dphi):
+    core, shell, void = harmonic_counts(dphi)
+    total = core + shell + void
+    if total == 0:
+        return dphi
+
+    ratio_core = core / total
+    ratio_shell = shell / total
+    ratio_void = void / total
+
+    t_core = 1.0 / 20.0
+    t_shell = 9.0 / 20.0
+    t_void = 10.0 / 20.0
+
+    err = abs(ratio_core - t_core) + abs(ratio_shell - t_shell) + abs(ratio_void - t_void)
+    if err < 0.05:
+        return dphi
+
+    vals = dphi
+    pos = vals[vals > 0.0]
+    if pos.size == 0:
+        return dphi
+    p95 = float(np.percentile(pos, 95.0))
+    p50 = float(np.percentile(pos, 50.0))
+
+    high_mask = (vals >= p95)
+    mid_mask = ((vals < p95) & (vals >= p50))
+    low_mask = (vals < p50)
+
+    vals = vals.copy()
+    vals[high_mask] *= 1.02
+    vals[mid_mask] *= 0.99
+    vals[low_mask] *= 0.985
+    return vals
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  4. VISUALS — EVOLVED SET                                   │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def radial_profile(slice2d):
+    nx, ny = slice2d.shape
+    cx = (nx - 1) / 2.0
+    cy = (ny - 1) / 2.0
+    Y, X = np.indices(slice2d.shape)
+    R = np.sqrt((X - cx)**2 + (Y - cy)**2)
+    r = R.flatten()
+    v = slice2d.flatten()
+    # bin radii
+    nbins = int(max(nx, ny) / 2)
+    bins = np.linspace(0, r.max(), nbins + 1)
+    idx = np.digitize(r, bins) - 1
+    prof = np.zeros(nbins, dtype=np.float64)
+    counts = np.zeros(nbins, dtype=np.int64)
+    for i, val in zip(idx, v):
+        if 0 <= i < nbins:
+            prof[i] += val
+            counts[i] += 1
+    counts[counts == 0] = 1
+    prof /= counts
+    centers = 0.5 * (bins[:-1] + bins[1:])
+    return centers, prof
+
+
+def make_visuals(V_unified, dphi_unified, omega_unified, out_dir: Path, prefix: str):
+    out_dir.mkdir(parents=True, exist_ok=True)
+    paths = {}
+    if not MATPLOTLIB_OK:
+        return paths
+
+    T, nx, ny, nz = V_unified.shape
+    t_mid = T // 2
+    z_mid = nz // 2
+
+    # 1) Δφ central slice (as in v5.1, but relabeled v5.2)
+    central = dphi_unified[t_mid, :, :, z_mid]
+    fig = plt.figure()
+    plt.imshow(central, origin="lower")
+    plt.title("QIM v5.2 unified dphi central slice (ring lens)")
+    plt.colorbar()
+    p_c = out_dir / f"{prefix}_dphi_central.png"
+    fig.savefig(p_c, bbox_inches="tight")
+    plt.close(fig)
+    paths["dphi_central"] = str(p_c)
+
+    # 2) Δφ max projection (3-node structure)
+    maxproj = dphi_unified.max(axis=0).max(axis=2)
+    fig = plt.figure()
+    plt.imshow(maxproj, origin="lower")
+    plt.title("QIM v5.2 unified dphi max projection (3-node)")
+    plt.colorbar()
+    p_m = out_dir / f"{prefix}_dphi_maxproj.png"
+    fig.savefig(p_m, bbox_inches="tight")
+    plt.close(fig)
+    paths["dphi_maxproj"] = str(p_m)
+
+    # 3) Ω max projection (error geometry)
+    omega_max = omega_unified.max(axis=0).max(axis=2)
+    fig = plt.figure()
+    plt.imshow(omega_max, origin="lower")
+    plt.title("QIM v5.2 unified omega max projection (GEO v1.0)")
+    plt.colorbar()
+    p_o = out_dir / f"{prefix}_omega_maxproj.png"
+    fig.savefig(p_o, bbox_inches="tight")
+    plt.close(fig)
+    paths["omega_maxproj"] = str(p_o)
+
+    # 4) Resonance curve <|V_unified|>(t)
+    energy_t = np.mean(np.abs(V_unified), axis=(1, 2, 3))
+    fig = plt.figure()
+    plt.plot(range(T), energy_t)
+    plt.xlabel("t")
+    plt.ylabel("<|V_unified|>")
+    plt.title("QIM v5.2 cross-module resonance curve")
+    p_r = out_dir / f"{prefix}_resonance_curve.png"
+    fig.savefig(p_r, bbox_inches="tight")
+    plt.close(fig)
+    paths["resonance_curve"] = str(p_r)
+
+    # 5) Radial profile of central slice (ring structure)
+    r, prof = radial_profile(central)
+    fig = plt.figure()
+    plt.plot(r, prof)
+    plt.xlabel("radius (pixels)")
+    plt.ylabel("⟨Δφ⟩(r)")
+    plt.title("QIM v5.2 radial Δφ profile (ring evolution)")
+    p_rad = out_dir / f"{prefix}_radial_profile.png"
+    fig.savefig(p_rad, bbox_inches="tight")
+    plt.close(fig)
+    paths["radial_profile"] = str(p_rad)
+
+    # 6) Δφ histogram (global roughness)
+    fig = plt.figure()
+    plt.hist(dphi_unified.flatten(), bins=80)
+    plt.xlabel("Δφ")
+    plt.ylabel("count")
+    plt.title("QIM v5.2 Δφ histogram (roughness distribution)")
+    p_h = out_dir / f"{prefix}_dphi_histogram.png"
+    fig.savefig(p_h, bbox_inches="tight")
+    plt.close(fig)
+    paths["dphi_histogram"] = str(p_h)
+
+    # 7) Time–radius strip (breathing ring)
+    central_t = dphi_unified[:, :, :, z_mid]
+    nx2, ny2 = central_t.shape[1], central_t.shape[2]
+    cx2 = (nx2 - 1) / 2.0
+    cy2 = (ny2 - 1) / 2.0
+    Y2, X2 = np.indices((nx2, ny2))
+    R2 = np.sqrt((X2 - cx2)**2 + (Y2 - cy2)**2)
+    r_flat = R2.flatten()
+    nbins = int(max(nx2, ny2) / 2)
+    bins = np.linspace(0, r_flat.max(), nbins + 1)
+    centers = 0.5 * (bins[:-1] + bins[1:])
+
+    strip = np.zeros((T, nbins), dtype=np.float32)
+    idx = np.digitize(r_flat, bins) - 1
+    for t in range(T):
+        vals = central_t[t].flatten()
+        acc = np.zeros(nbins, dtype=np.float64)
+        cnt = np.zeros(nbins, dtype=np.float64)
+        for i, v in zip(idx, vals):
+            if 0 <= i < nbins:
+                acc[i] += v
+                cnt[i] += 1.0
+        cnt[cnt == 0] = 1.0
+        strip[t] = acc / cnt
+
+    fig = plt.figure()
+    plt.imshow(strip, aspect="auto", origin="lower",
+               extent=[centers[0], centers[-1], 0, T-1])
+    plt.xlabel("radius")
+    plt.ylabel("t")
+    plt.title("QIM v5.2 time–radius strip (breathing ring)")
+    plt.colorbar(label="⟨Δφ⟩(r,t)")
+    p_tr = out_dir / f"{prefix}_time_radius_strip.png"
+    fig.savefig(p_tr, bbox_inches="tight")
+    plt.close(fig)
+    paths["time_radius_strip"] = str(p_tr)
+
+    return paths
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  5. STATE, LEDGER, AUTOGEN SPEC                             │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def write_state_ledger_spec(root_dir: Path,
+                            state_dir: Path,
+                            visuals_dir: Path,
+                            ledger_dir: Path,
+                            logs_dir: Path,
+                            V_unified,
+                            dphi_unified,
+                            omega_unified,
+                            channels,
+                            chan_metrics,
+                            teacher_name,
+                            alpha,
+                            visuals):
+    state_dir.mkdir(parents=True, exist_ok=True)
+    ledger_dir.mkdir(parents=True, exist_ok=True)
+
+    ts_tag = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    state_path = state_dir / f"qim_v5_2_state_{ts_tag}.json"
+    ledger_path = ledger_dir / "qim_v5_2_ledger.jsonl"
+    spec_path = (root_dir / "codex" / "quantum_imaging" / "engine" / "codex_qim_v5_3_autogen_spec.json")
+
+    T, nx, ny, nz = V_unified.shape
+
+    # Global triad metrics
+    E = safe_f(np.mean(np.abs(V_unified)))
+    I = safe_f(np.mean(dphi_unified))
+    dphi_global = I
+    lam_eff = min(0.99, dphi_global / (1.0 + dphi_global))
+    barrier_scale = (1.0 - lam_eff) ** 1.5 * (max(E * I, 0.0) ** 1.5)
+    C = (E * I) / (1.0 + abs(dphi_global))
+
+    # Error geometry
+    omega_mean = safe_f(np.mean(omega_unified))
+    omega_std = safe_f(np.std(omega_unified))
+    curvature_proxy = safe_f(np.mean(np.abs(dphi_unified - np.mean(dphi_unified))))
+
+    core, shell, void = harmonic_counts(dphi_unified)
+    persistence = multi_scale_persistence(dphi_unified)
+
+    chan_dict = {name: asdict(m) for name, m in chan_metrics.items()}
+
+    state_obj = {
+        "protocol": "CodexQIMVisualEvolution",
+        "version": "5.2",
+        "timestamp": now_utc_iso(),
+        "mode": "visual_evolution",
+        "shape_4d": [int(T), int(nx), int(ny), int(nz)],
+        "metrics": {
+            "triad": {
+                "E": E,
+                "I": I,
+                "C": C,
+            },
+            "H19_dphi_global": dphi_global,
+            "lambda_eff": lam_eff,
+            "barrier_scale": safe_f(barrier_scale),
+            "omega_mean": omega_mean,
+            "omega_std": omega_std,
+            "curvature_proxy": curvature_proxy,
+            "harmonics": {
+                "core": core,
+                "shell": shell,
+                "void": void,
+            },
+            "multi_scale_persistence": persistence,
+        },
+        "channels": chan_dict,
+        "fusion": {
+            "teacher": teacher_name,
+            "alpha_teach": alpha,
+        },
+        "codex": {
+            "H_layers": {
+                "H7": 0.70,
+                "H16": "Insight / pattern geometry (C_geo, cross-module)",
+                "H19": "Global dphi integration (4D unified field → C)",
+                "H31": "Harmonic Stability (core:shell:void ≈ 1:9:10)",
+            },
+            "laws": {
+                "universal_truth": "C = (E*I)/(1+|ΔΦ|)",
+                "cusp_v2_8": "λ = P/P_cr → 1-, ΔV ∝ (1-λ)^{3/2}(EI)^{3/2}",
+                "error_geometry": "Ω = 1/(1+|ΔΦ|) defines deviation-weighted metric",
+                "harmonic_stability": "Stable imaging fields exhibit core:shell:void ≈ 1:9:10",
+            },
+            "memory": {
+                "node": "QIM",
+                "baseline_version": "5.1",
+                "current_version": "5.2",
+                "mode": "visual-evolution",
+            },
+        },
+        "visuals": visuals,
+    }
+
+    state_path.write_text(json.dumps(state_obj, indent=2), encoding="utf-8")
+
+    ledger_obj = {
+        "timestamp": now_utc_iso(),
+        "mode": "visual-evolution",
+        "state_file": str(state_path),
+        "teacher": teacher_name,
+        "alpha_teach": alpha,
+        "E": E,
+        "I": I,
+        "C": C,
+        "dphi_global": dphi_global,
+        "lambda_eff": lam_eff,
+        "barrier_scale": safe_f(barrier_scale),
+        "omega_mean": omega_mean,
+        "omega_std": omega_std,
+        "curvature_proxy": curvature_proxy,
+        "core": core,
+        "shell": shell,
+        "void": void,
+        "multi_scale_persistence": persistence,
+    }
+    with ledger_path.open("a", encoding="utf-8") as lf:
+        lf.write(json.dumps(ledger_obj, ensure_ascii=False) + "\n")
+
+    spec_obj = {
+        "protocol": "QIMAutoGenSpec",
+        "source_version": "5.2",
+        "next_version": "5.3",
+        "timestamp": now_utc_iso(),
+        "current_metrics": {
+            "triad": {"E": E, "I": I, "C": C},
+            "dphi_global": dphi_global,
+            "lambda_eff": lam_eff,
+            "barrier_scale": safe_f(barrier_scale),
+            "omega_mean": omega_mean,
+            "omega_std": omega_std,
+            "curvature_proxy": curvature_proxy,
+            "multi_scale_persistence": persistence,
+        },
+        "fusion": {
+            "teacher": teacher_name,
+            "alpha_teach": alpha,
+            "channels": list(chan_metrics.keys()),
+        },
+        "recommendation": {
+            "recommended_resolution": [int(nx), int(ny), int(nz)],
+            "recommended_T": int(T),
+            "next_focus": "bind visual evolution to real AFM / Solar / QCX inputs and compare radial / time-radius signatures.",
+        },
+    }
+    spec_path.write_text(json.dumps(spec_obj, indent=2), encoding="utf-8")
+
+    return state_path, ledger_path, spec_path
+
+
+# ╭──────────────────────────────────────────────────────────────╮
+# │  6. MAIN                                                    │
+# ╰──────────────────────────────────────────────────────────────╯
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root_dir", required=True)
+    parser.add_argument("--state_dir", required=True)
+    parser.add_argument("--visuals_dir", required=True)
+    parser.add_argument("--ledger_dir", required=True)
+    parser.add_argument("--logs_dir", required=False)
+    parser.add_argument("--input_afm_dir", required=False)
+    args = parser.parse_args()
+
+    root_dir = Path(args.root_dir)
+    state_dir = Path(args.state_dir)
+    visuals_dir = Path(args.visuals_dir)
+    ledger_dir = Path(args.ledger_dir)
+    logs_dir = Path(args.logs_dir) if args.logs_dir else None
+    input_dir = Path(args.input_afm_dir) if args.input_afm_dir else (root_dir / "codex" / "quantum_imaging" / "input_afm" / "v5_2")
+
+    log_fp = None
+    try:
+        if logs_dir is not None:
+            logs_dir.mkdir(parents=True, exist_ok=True)
+            log_path = logs_dir / f"qim_v5_2_run_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.log"
+            log_fp = log_path.open("w", encoding="utf-8")
+    except Exception:
+        log_fp = None
+
+    log(log_fp, "QIM v5.2 — Visual Evolution Engine starting…")
+    log(log_fp, f"root_dir   : {root_dir}")
+    log(log_fp, f"state_dir  : {state_dir}")
+    log(log_fp, f"visuals_dir: {visuals_dir}")
+    log(log_fp, f"ledger_dir : {ledger_dir}")
+    log(log_fp, f"logs_dir   : {logs_dir}")
+    log(log_fp, f"input_dir  : {input_dir}")
+
+    try:
+        base3d = synthetic_volume(shape=(64, 64, 64), seed=151)
+        T = 40
+
+        channels = synthesize_channels(base3d, T=T)
+
+        metrics_map = {}
+        for name, V in channels.items():
+            m, dphi, Ω = channel_metrics(name, V)
+            metrics_map[name] = m
+            log(log_fp, f"[Channel] {name}: E={m.E:.6f}, I={m.I:.6f}, C={m.C:.6f}, S={m.weight_S:.6f}")
+
+        teacher_name, alpha, fused_channels, V_unified = dominant_fusion(channels, metrics_map, log_fp=log_fp)
+
+        dphi_unified = compute_dphi_4d(V_unified)
+        dphi_unified = enforce_harmonic_stability(dphi_unified)
+        omega_unified = omega_field(dphi_unified)
+
+        visuals = make_visuals(V_unified, dphi_unified, omega_unified, visuals_dir, "qim_v5_2_field")
+
+        state_path, ledger_path, spec_path = write_state_ledger_spec(
+            root_dir=root_dir,
+            state_dir=state_dir,
+            visuals_dir=visuals_dir,
+            ledger_dir=ledger_dir,
+            logs_dir=logs_dir,
+            V_unified=V_unified,
+            dphi_unified=dphi_unified,
+            omega_unified=omega_unified,
+            channels=fused_channels,
+            chan_metrics=metrics_map,
+            teacher_name=teacher_name,
+            alpha=alpha,
+            visuals=visuals,
+        )
+
+        log(log_fp, f"State JSON written → {state_path}")
+        log(log_fp, f"Ledger appended   → {ledger_path}")
+        log(log_fp, f"v5.3 autogen spec → {spec_path}")
+        log(log_fp, "QIM v5.2 run complete.")
+
+    except Exception as e:
+        err = "QIM v5.2 encountered an error: " + repr(e)
+        print(err, file=sys.stderr)
+        traceback.print_exc()
+        if log_fp is not None:
+            log_fp.write(err + "\n")
+            log_fp.write(traceback.format_exc() + "\n")
+            log_fp.flush()
+        if log_fp is not None:
+            log_fp.close()
+        sys.exit(1)
+
+    if log_fp is not None:
+        log_fp.close()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,17 @@
+QIM v5.2 ? Visual Evolution Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_2
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v5_2
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_2
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v5_2
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v5_2
+[Channel] QIM: E=0.079601, I=0.027477, C=0.002129, S=0.923801
+[Channel] Solar: E=0.079601, I=0.027488, C=0.002130, S=0.923813
+[Channel] QCX: E=0.079601, I=0.027471, C=0.002128, S=0.923799
+[Channel] ThirdEye: E=0.083172, I=0.028700, C=0.002320, S=0.923448
+[Channel] AFM: E=0.105862, I=0.040274, C=0.004098, S=0.901834
+[Dominant] Teacher channel ? Solar (S=0.923813, ?=0.311)
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_2\qim_v5_2_state_20251201_163554.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_2\qim_v5_2_ledger.jsonl
+v5.3 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v5_3_autogen_spec.json
+QIM v5.2 run complete.
