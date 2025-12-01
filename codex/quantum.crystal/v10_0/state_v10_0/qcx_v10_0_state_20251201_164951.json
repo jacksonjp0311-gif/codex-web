@@ -1,0 +1,64 @@
+{
+  "protocol": "CodexQCXLivingCrystal",
+  "version": "10.0",
+  "timestamp": "2025-12-01T16:49:51.574708Z",
+  "mode": "living-crystal",
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.21512632071971893,
+      "I": 0.0343206524848938,
+      "C": 0.007138285091801466
+    },
+    "H19_dphi_global": 0.0343206524848938,
+    "lambda_eff": 0.03318183041442755,
+    "barrier_scale": 0.0006031020900206345,
+    "omega_mean": 0.9672854542732239,
+    "omega_std": 0.020416978746652603,
+    "curvature_proxy": 0.015002991072833538,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880
+    },
+    "multi_scale_persistence": 0.9770527168319809
+  },
+  "codex": {
+    "node": "QCX",
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 (irreversibility kernel)",
+      "H16": "Insight geometry (pattern curvature C_geo)",
+      "H19": "Global dphi integration (4D field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u03bb = P/P_cr \u2192 1-, \u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|) defines conformal metric",
+      "harmonic_stability": "Stable fields exhibit core:shell:void \u2248 1:9:10"
+    },
+    "memory": {
+      "node_role": "atomic-scale \u0394\u03c6 kernel in multi-scale stack",
+      "baseline_versions": [
+        "QCX v9.1",
+        "QIM v5.0"
+      ],
+      "current_version": "QCX v10.0"
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_resonance_curve.png",
+    "radial_profile": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_radial_profile.png",
+    "dphi_histogram": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_dphi_histogram.png",
+    "time_radius_strip": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_0\\visuals_v10_0\\qcx_v10_0_field_time_radius_strip.png"
+  }
+}

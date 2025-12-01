@@ -1,0 +1,29 @@
+{
+  "protocol": "QCXAutoGenSpec",
+  "source_version": "10.0",
+  "next_version": "10.1",
+  "timestamp": "2025-12-01T16:49:51.575874Z",
+  "current_metrics": {
+    "triad": {
+      "E": 0.21512632071971893,
+      "I": 0.0343206524848938,
+      "C": 0.007138285091801466
+    },
+    "dphi_global": 0.0343206524848938,
+    "lambda_eff": 0.03318183041442755,
+    "barrier_scale": 0.0006031020900206345,
+    "omega_mean": 0.9672854542732239,
+    "omega_std": 0.020416978746652603,
+    "curvature_proxy": 0.015002991072833538,
+    "multi_scale_persistence": 0.9770527168319809
+  },
+  "recommendation": {
+    "next_focus": "Bind QCX 1\u00d7 kernel more explicitly into QIM/solar/AFM stack and tune lattice parameters against real AFM data.",
+    "recommended_resolution": [
+      64,
+      64,
+      64
+    ],
+    "recommended_T": 40
+  }
+}

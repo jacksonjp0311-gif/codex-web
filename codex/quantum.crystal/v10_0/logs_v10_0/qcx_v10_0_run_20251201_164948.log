@@ -1,0 +1,11 @@
+QCX v10.0 ? Living Quantum Crystal Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\state_v10_0
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\visuals_v10_0
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\ledger_v10_0
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\logs_v10_0
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\input_v10_0
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\state_v10_0\qcx_v10_0_state_20251201_164951.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\ledger_v10_0\qcx_v10_0_ledger.jsonl
+v10.1 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum.crystal\v10_0\engine\qcx_v10_1_autogen_spec.json
+QCX v10.0 run complete.
