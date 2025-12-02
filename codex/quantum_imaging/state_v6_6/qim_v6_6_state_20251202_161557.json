@@ -1,0 +1,55 @@
+{
+  "protocol": "CodexQIMAFMSuperResMultiAFM",
+  "version": "6.6",
+  "timestamp": "2025-12-02T16:15:57.285916Z",
+  "mode": "afm-multi-fusion-superres",
+  "superres_factor": 12,
+  "n_afm_sources": 1,
+  "shape_4d": [
+    40,
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.5001706480979919,
+      "I": 0.06912113726139069,
+      "C": 0.032337181275696174
+    },
+    "H19_dphi_global": 0.06912113726139069,
+    "lambda_eff": 0.06465229696837542,
+    "barrier_scale": 0.005815047168330112,
+    "omega_mean": 0.9359819293022156,
+    "omega_std": 0.024170342832803726,
+    "curvature_proxy": 0.022093793377280235,
+    "fractal_dim_H16B": 3.025821677695419,
+    "entanglement_index": 1.0
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16B": "Fractal AFM surface dimension",
+      "H16C": "Fractal expansion law: dim\u21923.0 volumetric convergence",
+      "H19": "Global \u0394\u03c6 integration (4D AFM field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+    },
+    "memory": {
+      "node": "QIM",
+      "current_version": "6.6",
+      "mode": "afm-multi-fusion-superres"
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_6\\qim_v6_6_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_6\\qim_v6_6_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_6\\qim_v6_6_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_6\\qim_v6_6_resonance_curve.png"
+  }
+}

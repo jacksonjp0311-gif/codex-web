@@ -1,0 +1,17 @@
+QIM v6.6 ? Multi-AFM Fusion Super-Res Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v6_6
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_6
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v6_6
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v6_6
+afm_dir    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_standard
+superres   : 12
+max_afm    : 4
+AFM source ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_standard\afm_synthetic_sharp_v1.npy
+Loaded 1 AFM volumes.
+Fused AFM volume shape: (128, 128, 128)
+Entanglement index (multi-AFM) = 1.000000
+Super-resolved fused AFM volume shape: (128, 128, 128)
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v6_6\qim_v6_6_state_20251202_161557.json
+Ledger appended ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v6_6\qim_v6_6_ledger.jsonl
+QIM v6.6 Multi-AFM Fusion AFM Super-Res run complete.
