@@ -1,8 +1,9 @@
-#!/usr/bin/env python3
-# +--------------------------------------------------------------+
-# �  QIM v5.4 � ENTANGLEMENT GEOMETRY ENGINE                     �
-# �  Cross-channel ?f entanglement (QIM / Solar / QCX / TE / AFM)�
-# +--------------------------------------------------------------+
+﻿#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  QIM v5.4 — ENTANGLEMENT GEOMETRY ENGINE                     ║
+# ║  Cross-channel Δφ entanglement (QIM / Solar / QCX / TE / AFM)║
+# ╚══════════════════════════════════════════════════════════════╝
 
 import argparse
 import json
@@ -22,9 +23,9 @@ except Exception:
     MATPLOTLIB_OK = False
 
 
-# ?--------------------------------------------------------------?
-# �  0. SMALL UTILITIES                                         �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  0. SMALL UTILITIES                                         │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def now_utc_iso():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
@@ -64,9 +65,9 @@ class ChannelMetrics:
     weight_S: float
 
 
-# ?--------------------------------------------------------------?
-# �  1. BASE LATTICE � REAL AFM OR SYNTHETIC                    �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  1. BASE LATTICE — REAL AFM OR SYNTHETIC                    │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def load_real_afm_cube(input_dir: Path, target_shape=(64, 64, 64), log_fp=None):
     files = list(input_dir.glob("*.npy")) + list(input_dir.glob("*.npz"))
@@ -212,9 +213,9 @@ def multi_scale_persistence(dphi):
     return float(1.0 - np.std(arr) / (np.mean(arr) + 1e-9))
 
 
-# ?--------------------------------------------------------------?
-# �  2. CHANNEL SYNTHESIS (QIM / SOLAR / QCX / TE / AFM)        �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  2. CHANNEL SYNTHESIS (QIM / SOLAR / QCX / TE / AFM)        │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def synthesize_channels(base3d, T, log_fp=None):
     V_qim = build_4d_field(base3d, T=T, phase_shift=0.0, radial_mod=1.0)
@@ -247,9 +248,9 @@ def channel_metrics(name, V):
 
     C = (E * I) / (1.0 + abs(dphi_global))
 
-    O = omega_field(dphi)
-    omega_mean = safe_f(np.mean(O))
-    omega_std = safe_f(np.std(O))
+    Ω = omega_field(dphi)
+    omega_mean = safe_f(np.mean(Ω))
+    omega_std = safe_f(np.std(Ω))
 
     curvature_proxy = safe_f(np.mean(np.abs(dphi - np.mean(dphi))))
     persistence = multi_scale_persistence(dphi)
@@ -274,12 +275,12 @@ def channel_metrics(name, V):
         shell=shell,
         void=void,
         weight_S=weight_S,
-    ), dphi, O
+    ), dphi, Ω
 
 
-# ?--------------------------------------------------------------?
-# �  3. ENTANGLEMENT METRICS                                    �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  3. ENTANGLEMENT METRICS                                    │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def pairwise_corr(a, b):
     a = a.astype(np.float64).ravel()
@@ -361,9 +362,9 @@ def fuse_entangled_field(channels, teacher_name, alpha):
     return fused_channels, V_ent
 
 
-# ?--------------------------------------------------------------?
-# �  4. VISUALS                                                 �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  4. VISUALS                                                 │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_dir: Path, prefix: str):
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -375,33 +376,33 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     t_mid = T // 2
     z_mid = nz // 2
 
-    # Central ?f slice
+    # Central Δφ slice
     central = dphi_ent[t_mid, :, :, z_mid]
     fig = plt.figure()
     plt.imshow(central, origin="lower")
-    plt.title("QIM v5.4 entangled ?f central slice")
+    plt.title("QIM v5.4 entangled Δφ central slice")
     plt.colorbar()
     p_c = out_dir / f"{prefix}_dphi_central.png"
     fig.savefig(p_c, bbox_inches="tight")
     plt.close(fig)
     paths["dphi_central"] = str(p_c)
 
-    # ?f max projection
+    # Δφ max projection
     maxproj = dphi_ent.max(axis=0).max(axis=2)
     fig = plt.figure()
     plt.imshow(maxproj, origin="lower")
-    plt.title("QIM v5.4 entangled ?f max projection")
+    plt.title("QIM v5.4 entangled Δφ max projection")
     plt.colorbar()
     p_m = out_dir / f"{prefix}_dphi_maxproj.png"
     fig.savefig(p_m, bbox_inches="tight")
     plt.close(fig)
     paths["dphi_maxproj"] = str(p_m)
 
-    # O max projection
+    # Ω max projection
     omega_max = omega_ent.max(axis=0).max(axis=2)
     fig = plt.figure()
     plt.imshow(omega_max, origin="lower")
-    plt.title("QIM v5.4 entangled O max projection (GEO v1.0)")
+    plt.title("QIM v5.4 entangled Ω max projection (GEO v1.0)")
     plt.colorbar()
     p_o = out_dir / f"{prefix}_omega_maxproj.png"
     fig.savefig(p_o, bbox_inches="tight")
@@ -426,7 +427,7 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     plt.colorbar(im)
     plt.xticks(range(len(names)), names, rotation=45, ha="right")
     plt.yticks(range(len(names)), names)
-    plt.title("QIM v5.4 ?f entanglement matrix")
+    plt.title("QIM v5.4 Δφ entanglement matrix")
     p_e = out_dir / f"{prefix}_entanglement_matrix.png"
     fig.savefig(p_e, bbox_inches="tight")
     plt.close(fig)
@@ -441,7 +442,7 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     fig = plt.figure()
     plt.plot(range(len(vals)), vals, marker="o")
     plt.xlabel("pair index")
-    plt.ylabel("|corr(?f_i, ?f_j)|")
+    plt.ylabel("|corr(Δφ_i, Δφ_j)|")
     plt.title("QIM v5.4 entanglement spectrum")
     p_s = out_dir / f"{prefix}_entanglement_spectrum.png"
     fig.savefig(p_s, bbox_inches="tight")
@@ -451,9 +452,9 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     return paths
 
 
-# ?--------------------------------------------------------------?
-# �  5. STATE + LEDGER                                          �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  5. STATE + LEDGER                                          │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def write_state_ledger(root_dir: Path,
                        state_dir: Path,
@@ -544,16 +545,16 @@ def write_state_ledger(root_dir: Path,
         "codex": {
             "H_layers": {
                 "H7": 0.70,
-                "H7B": "?F Cusp Law v2.8 irreversible kernel",
-                "H16": "Insight / multi-scale ?F structure (C_geo)",
-                "H19": "Global ?F integration (4D unified field ? C)",
-                "H31": "Harmonic Stability (core:shell:void � 1:9:10)",
+                "H7B": "ΔΦ Cusp Law v2.8 irreversible kernel",
+                "H16": "Insight / multi-scale ΔΦ structure (C_geo)",
+                "H19": "Global ΔΦ integration (4D unified field → C)",
+                "H31": "Harmonic Stability (core:shell:void ≈ 1:9:10)",
             },
             "laws": {
-                "universal_truth": "C = (E*I)/(1+|?F|)",
-                "cusp_v2_8": "? = P/P_cr ? 1-, ?V ? (1-?)^{3/2}(EI)^{3/2}",
-                "error_geometry": "O = 1/(1+|?F|) defines deviation-weighted metric",
-                "entanglement": "Cross-channel ?F coherence measured by correlation matrix + index.",
+                "universal_truth": "C = (E*I)/(1+|ΔΦ|)",
+                "cusp_v2_8": "λ = P/P_cr → 1-, ΔV ∝ (1-λ)^{3/2}(EI)^{3/2}",
+                "error_geometry": "Ω = 1/(1+|ΔΦ|) defines deviation-weighted metric",
+                "entanglement": "Cross-channel ΔΦ coherence measured by correlation matrix + index.",
             },
             "memory": {
                 "node": "QIM",
@@ -597,9 +598,9 @@ def write_state_ledger(root_dir: Path,
     return state_path, ledger_path
 
 
-# ?--------------------------------------------------------------?
-# �  6. MAIN                                                     �
-# ?--------------------------------------------------------------?
+# ╭──────────────────────────────────────────────────────────────╮
+# │  6. MAIN                                                     │
+# ╰──────────────────────────────────────────────────────────────╯
 
 def main():
     parser = argparse.ArgumentParser()
@@ -629,7 +630,7 @@ def main():
     except Exception:
         log_fp = None
 
-    log(log_fp, "QIM v5.4 � Entanglement Geometry Engine starting�")
+    log(log_fp, "QIM v5.4 — Entanglement Geometry Engine starting…")
     log(log_fp, f"root_dir   : {root_dir}")
     log(log_fp, f"state_dir  : {state_dir}")
     log(log_fp, f"visuals_dir: {visuals_dir}")
@@ -646,9 +647,9 @@ def main():
             base3d = afm_base
             log(log_fp, "[Mode] REAL AFM entanglement binding active.")
         else:
-            afm_mode = "ERROR_AF?_REQUIRED"
+            afm_mode = "synthetic-fallback"
             base3d = synthetic_volume(shape=(64, 64, 64), seed=541)
-            log(log_fp, "[Mode] No AFM detected ? synthetic AFM-style entanglement volume.")
+            log(log_fp, "[Mode] No AFM detected → synthetic AFM-style entanglement volume.")
 
         T = 40
         channels = synthesize_channels(base3d, T=T, log_fp=log_fp)
@@ -693,8 +694,8 @@ def main():
             spec_path=spec_path,
         )
 
-        log(log_fp, f"State JSON written ? {state_path}")
-        log(log_fp, f"Ledger appended   ? {ledger_path}")
+        log(log_fp, f"State JSON written → {state_path}")
+        log(log_fp, f"Ledger appended   → {ledger_path}")
         log(log_fp, "QIM v5.4 entanglement run complete.")
 
     except Exception as e:
@@ -715,3 +716,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

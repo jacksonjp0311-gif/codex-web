@@ -518,9 +518,9 @@ def write_state_ledger(root_dir: Path,
 
     state_obj = {
         "protocol": "CodexQIMEntanglementGeometry",
-        "version": "5.6",
+        "version": "5.8",
         "timestamp": now_utc_iso(),
-        "mode": "entanglement-geometry-afm-clarity-refine",
+        "mode": "afm-stability-projection",
         "afm_binding_mode": afm_mode,
         "shape_4d": [int(T), int(nx), int(ny), int(nz)],
         "metrics": {
@@ -558,9 +558,9 @@ def write_state_ledger(root_dir: Path,
             },
             "memory": {
                 "node": "QIM",
-                "current_version": "5.6",
-                "previous_version": "5.5",
-                "mode": "entanglement-geometry-afm-clarity-refine",
+                "current_version": "5.8",
+                "previous_version": "5.7",
+                "mode": "afm-stability-projection",
             },
         },
         "visuals": visuals,
@@ -571,7 +571,7 @@ def write_state_ledger(root_dir: Path,
 
     ledger_obj = {
         "timestamp": now_utc_iso(),
-        "mode": "entanglement-geometry-afm-clarity-refine",
+        "mode": "afm-stability-projection",
         "state_file": str(state_path),
         "E": E,
         "I": I,
@@ -716,5 +716,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
