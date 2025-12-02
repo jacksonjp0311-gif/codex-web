@@ -1,0 +1,25 @@
+QIM v5.4 ? Entanglement Geometry Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v6_0_1
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_0_1
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v6_0_1
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v6_0_1
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v6_0_1
+[AFM] Real AFM cube loaded from C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v6_0_1\afm_v5_5.npy
+[Mode] REAL AFM entanglement binding active.
+[Base] Channels synthesized for entanglement geometry.
+[Channel] QIM: E=0.962027, I=0.026878, C=0.025181, S=0.943569
+[Channel] Solar: E=0.962027, I=0.029567, C=0.027628, S=0.938102
+[Channel] QCX: E=0.962027, I=0.025292, C=0.023732, S=0.947288
+[Channel] ThirdEye: E=1.105886, I=0.033194, C=0.035529, S=0.930919
+[Channel] AFM: E=1.161887, I=0.211444, C=0.202794, S=0.663091
+[Entanglement] Index_global=0.580541, Teacher=QIM, alpha=0.341, score=0.709362
+QIM v5.4 encountered an error: NameError("name 'enhance_field' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v6_0_afm_sharp_crystal_engine.py", line 674, in main
+    visuals = make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, visuals_dir, "qim_v5_4_ent")
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v6_0_afm_sharp_crystal_engine.py", line 382, in make_entanglement_visuals
+    plt.imshow(enhance_field(), cmap='viridis', interpolation='lanczos')
+               ^^^^^^^^^^^^^
+NameError: name 'enhance_field' is not defined
+
