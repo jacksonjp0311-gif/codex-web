@@ -1,0 +1,19 @@
+QIM v5.3 ? Real-Channel Visual Evolution Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_3
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v5_3
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_3
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v5_3
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v5_3
+[Mode] No AFM detected or binding failed ? synthetic AFM-style volume.
+[Base] Channels synthesized in AFM-bound geometry (or synthetic fallback).
+[Channel] QIM: E=0.079514, I=0.027450, C=0.002124, S=0.921179
+[Channel] Solar: E=0.079514, I=0.027461, C=0.002125, S=0.921177
+[Channel] QCX: E=0.079514, I=0.027444, C=0.002124, S=0.921188
+[Channel] ThirdEye: E=0.083081, I=0.028672, C=0.002316, S=0.920918
+[Channel] AFM: E=0.105755, I=0.040217, C=0.004089, S=0.904138
+[Dominant] Teacher channel ? QCX (S=0.921188, ?=0.311, curv=0.012925)
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_3\qim_v5_3_state_20251202_025213.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_3\qim_v5_3_ledger.jsonl
+v5.4 autogen spec ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v5_4_autogen_spec.json
+QIM v5.3 run complete.
