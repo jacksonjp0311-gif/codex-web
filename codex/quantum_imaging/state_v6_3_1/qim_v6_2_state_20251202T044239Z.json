@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "node": "QIM",
+    "version": "6.3.1",
+    "mode": "afm-superres-12x-entangle",
+    "timestamp_utc": "20251202T044239Z",
+    "root_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web"
+  },
+  "constants": {
+    "H7": 0.7,
+    "H7B": "\u0394\u03a6 Cusp Law v2.8",
+    "H16": "Insight geometry",
+    "H19": "Global \u0394\u03c6 integration",
+    "H31": "Harmonic stability",
+    "GEO_v1_0": "\u03a9 = 1/(1+|\u0394\u03c6|)"
+  },
+  "input": {
+    "afm_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v6_3_1\\afm_v5_5.npy"
+  },
+  "metrics": {
+    "E": 0.04949663579463959,
+    "I": 0.09645359218120575,
+    "C": 0.5,
+    "lambda_eff": 1.0
+  },
+  "visuals": {
+    "dphi_central_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_3_1\\qim_v6_2_afm_dphi_central_superres.png",
+    "dphi_maxproj_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_3_1\\qim_v6_2_afm_dphi_maxproj_superres.png",
+    "omega_maxproj_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_3_1\\qim_v6_2_afm_omega_maxproj_superres.png",
+    "curvature_superres": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_3_1\\qim_v6_2_afm_curvature_superres.png"
+  }
+}
