@@ -17,16 +17,12 @@ def load_afm(path, target=64):
     if m>0: arr = (arr-arr.min())/m
     return arr
 
-def super_resolve(vol,factor):
-    nx,ny,nz = vol.shape
-    xs = np.linspace(0,nx-1,nx*factor)
-    ys = np.linspace(0,ny-1,ny*factor)
-    zs = np.linspace(0,nz-1,nz*factor)
-    X,Y,Z = np.meshgrid(xs,ys,zs,indexing="ij")
-    base = vol.astype(np.float32)
-    hi = base[np.clip(X.astype(int),0,nx-1),
-              np.clip(Y.astype(int),0,ny-1),
-              np.clip(Z.astype(int),0,nz-1)]
+from scipy.ndimage import zoom
+
+def super_resolve(vol, factor):
+    scale = (factor, factor, factor)
+    hi = zoom(vol, scale, order=1)  # safe linear interpolation
+    hi = hi.astype(np.float32)
     return hi
 
 def build_4d(vol,T=40):
@@ -161,3 +157,4 @@ if __name__=="__main__":
     led=sys.argv[4]; log=sys.argv[5]
     afm=sys.argv[6]; sr=int(sys.argv[7])
     main(root,state,vis,led,log,afm,sr)
+
