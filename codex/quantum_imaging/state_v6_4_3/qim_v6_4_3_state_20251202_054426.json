@@ -1,0 +1,60 @@
+{
+  "protocol": "CodexQIMAFMSuperRes",
+  "version": "6.4.3",
+  "timestamp": "2025-12-02T05:44:26.311226Z",
+  "mode": "afm-superres",
+  "afm_binding_mode": "real-afm-bound",
+  "superres_factor": 12,
+  "shape_4d": [
+    40,
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.5003092885017395,
+      "I": 0.06975293159484863,
+      "C": 0.03262252296434583
+    },
+    "H19_dphi_global": 0.06975293159484863,
+    "lambda_eff": 0.06520471179345776,
+    "barrier_scale": 0.00589218424190535,
+    "omega_mean": 0.935412585735321,
+    "omega_std": 0.023943884298205376,
+    "curvature_proxy": 0.021707389503717422,
+    "harmonics": {
+      "core": 4194306,
+      "shell": 37748741,
+      "void": 41943033
+    },
+    "multi_scale_persistence": 0.9984081217576876,
+    "fractal_dim_H16B": 1.9267999632255355
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16": "Insight geometry / C_geo",
+      "H16B": "Fractal AFM surface dimension",
+      "H19": "Global \u0394\u03a6 integration (4D AFM field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u03bb = P/P_cr \u2192 1-, \u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+    },
+    "memory": {
+      "node": "QIM",
+      "current_version": "6.4.3",
+      "mode": "afm-superres"
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_4_3\\qim_v6_4_3_afm_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_4_3\\qim_v6_4_3_afm_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_4_3\\qim_v6_4_3_afm_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_4_3\\qim_v6_4_3_afm_resonance_curve.png"
+  }
+}
