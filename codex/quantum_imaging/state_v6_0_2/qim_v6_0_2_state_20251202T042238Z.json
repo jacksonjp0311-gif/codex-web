@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "node": "QIM",
+    "version": "6.0.2",
+    "mode": "afm-sharp-crystal",
+    "timestamp_utc": "20251202T042238Z",
+    "root_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web"
+  },
+  "constants": {
+    "H7": 0.7,
+    "H7B": "\u0394\u03a6 Cusp Law v2.8",
+    "H16": "Insight geometry",
+    "H19": "Global \u0394\u03c6 integration",
+    "H31": "Harmonic stability",
+    "GEO_v1_0": "\u03a9 = 1/(1+|\u0394\u03c6|)"
+  },
+  "input": {
+    "afm_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\v6_0_2\\afm_v5_5.npy"
+  },
+  "metrics": {
+    "E": 0.00930329505354166,
+    "I": 0.00930329505354166,
+    "C": 0.9571490287780762,
+    "lambda_eff": 0.15126413457533897
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_0_2\\qim_v6_0_2_afm_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_0_2\\qim_v6_0_2_afm_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v6_0_2\\qim_v6_0_2_afm_omega_maxproj.png"
+  }
+}
