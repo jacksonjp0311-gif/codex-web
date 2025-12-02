@@ -1,0 +1,20 @@
+QIM v7.4 ? ?-basin Noise-Immunity Engine starting?
+root_dir    : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v7_4
+visuals_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v7_4
+ledger_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v7_4
+logs_dir    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v7_4
+afm_file    : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_standard\afm_synthetic_sharp_v1.npy
+superres    : 12
+noise_level : 0.05
+AFM cube loaded and normalized. shape=(128, 128, 128)
+Super-resolved AFM volume shape: (128, 128, 128)
+mean|??|   : 0.0009817248210310936
+max|??|    : 0.007175445556640625
+?-basin Ix : 0.9806650876998901
+?-stable f : 1.0
+?-corr     : 0.9987034729275446
+H34 adapt  : 0.0009830216877162457
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v7_4\qim_v7_4_state_20251202_185352.json
+Ledger appended ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v7_4\qim_v7_4_ledger.jsonl
+QIM v7.4 ?-basin Noise-Immunity run complete.
