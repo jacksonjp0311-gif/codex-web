@@ -18,10 +18,9 @@ import numpy as np
 import scipy.ndimage as ndi
 try:
     import matplotlib.pyplot as plt
-from matplotlib import colors
 
 def enhance_field(field):
-    \"\"\"Codex QIM v6.0 sharpener:
+    \"\"\"Codex QIM v6.0.1 sharpener:
     • 4× cubic upsample
     • Gaussian blur
     • Unsharp mask (0.8 gain)
@@ -394,7 +393,7 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     # Central Δφ slice
     central = dphi_ent[t_mid, :, :, z_mid]
     fig = plt.figure()
-    plt.imshow(enhance_field(\), cmap='viridis', interpolation='lanczos')
+    plt.imshow(enhance_field(central, origin="lower"), cmap='viridis', interpolation='lanczos')
     plt.title("QIM v5.4 entangled Δφ central slice")
     plt.colorbar()
     p_c = out_dir / f"{prefix}_dphi_central.png"
@@ -405,7 +404,7 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     # Δφ max projection
     maxproj = dphi_ent.max(axis=0).max(axis=2)
     fig = plt.figure()
-    plt.imshow(enhance_field(\), cmap='viridis', interpolation='lanczos')
+    plt.imshow(enhance_field(maxproj, origin="lower"), cmap='viridis', interpolation='lanczos')
     plt.title("QIM v5.4 entangled Δφ max projection")
     plt.colorbar()
     p_m = out_dir / f"{prefix}_dphi_maxproj.png"
@@ -416,7 +415,7 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
     # Ω max projection
     omega_max = omega_ent.max(axis=0).max(axis=2)
     fig = plt.figure()
-    plt.imshow(enhance_field(\), cmap='viridis', interpolation='lanczos')
+    plt.imshow(enhance_field(omega_max, origin="lower"), cmap='viridis', interpolation='lanczos')
     plt.title("QIM v5.4 entangled Ω max projection (GEO v1.0)")
     plt.colorbar()
     p_o = out_dir / f"{prefix}_omega_maxproj.png"
@@ -438,7 +437,7 @@ def make_entanglement_visuals(V_ent, dphi_ent, omega_ent, names, ent_mat, out_di
 
     # Entanglement matrix heatmap
     fig = plt.figure()
-    im = plt.imshow(enhance_field(\), cmap='viridis', interpolation='lanczos')
+    im = plt.imshow(enhance_field(ent_mat, vmin=-1.0, vmax=1.0, cmap="coolwarm"), cmap='viridis', interpolation='lanczos')
     plt.colorbar(im)
     plt.xticks(range(len(names)), names, rotation=45, ha="right")
     plt.yticks(range(len(names)), names)
@@ -533,7 +532,7 @@ def write_state_ledger(root_dir: Path,
 
     state_obj = {
         "protocol": "CodexQIMEntanglementGeometry",
-        "version": "6.0",
+        "version": "6.0.1",
         "timestamp": now_utc_iso(),
         "mode": "afm-entanglement-crystal-sharp",
         "afm_binding_mode": afm_mode,
@@ -573,8 +572,8 @@ def write_state_ledger(root_dir: Path,
             },
             "memory": {
                 "node": "QIM",
-                "current_version": "6.0",
-                "previous_version": "5.9",
+                "current_version": "6.0.1",
+                "previous_version": "6.0",
                 "mode": "afm-entanglement-crystal-sharp",
             },
         },
