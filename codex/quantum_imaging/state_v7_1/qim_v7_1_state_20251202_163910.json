@@ -1,0 +1,61 @@
+{
+  "protocol": "CodexQIMHarmonicInterferenceAFMSuperRes",
+  "version": "7.1",
+  "timestamp": "2025-12-02T16:39:10.560173Z",
+  "mode": "afm-harmonic-interference",
+  "superres_factor": 12,
+  "shape_4d": [
+    40,
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.5001706480979919,
+      "I": 0.06912113726139069,
+      "C": 0.032337181275696174
+    },
+    "H19_dphi_global": 0.06912113726139069,
+    "lambda_eff": 0.06465229696837542,
+    "barrier_scale": 0.005815047168330112,
+    "omega_mean": 0.9359819293022156,
+    "omega_std": 0.024170342832803726,
+    "curvature_proxy": 0.022093793377280235,
+    "fractal_dim_H16B": 3.025821677695419,
+    "fractal_dim_H16D_interference": 2.959289381088775,
+    "harmonic_core_ratio": 0.32671165466308594,
+    "harmonic_shell_ratio": 0.0,
+    "harmonic_void_ratio": 0.6732883453369141,
+    "harmonic_coupling_index": 0.005363271106034517,
+    "omega_interference_mean": 1.4648754596710205
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16B": "Fractal AFM surface dimension",
+      "H16C": "Fractal expansion law: dim\u21923.0 volumetric convergence",
+      "H19": "Global \u0394\u03c6 integration (4D AFM field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)",
+      "H41": "Cross-harmonic coupling: core\u00d7shell interference geometry"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+    },
+    "memory": {
+      "node": "QIM",
+      "current_version": "7.1",
+      "mode": "afm-harmonic-interference"
+    }
+  },
+  "visuals": {
+    "interference_slice": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_1\\qim_v7_1_interference_slice.png",
+    "interference_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_1\\qim_v7_1_interference_maxproj.png",
+    "omega_interference_map": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_1\\qim_v7_1_omega_interference.png",
+    "phase_map": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_1\\qim_v7_1_phase_map.png",
+    "interference_resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_1\\qim_v7_1_interference_resonance_curve.png"
+  }
+}
