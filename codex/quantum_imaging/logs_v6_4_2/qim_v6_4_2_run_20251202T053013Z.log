@@ -1,0 +1,19 @@
+QIM v6.4.2 · AFM↔QCX Entanglement Engine starting…
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v6_4_2
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_4_2
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v6_4_2
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v6_4_2
+afm_path   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v6_4_2\afm_v5_5.npy
+qcx_path   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_qcx\v6_4_2\qcx_v10_3_field.npy
+superres_factor: 12
+QIM v6.4.2 encountered an error: FileNotFoundError('QCX field not found: C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_qcx\\v6_4_2\\qcx_v10_3_field.npy')
+Traceback (most recent call last):
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v6_4_2_afm_qcx_superres_engine.py", line 176, in main
+    raise FileNotFoundError(f"QCX field not found: {qcx_path}")
+FileNotFoundError: QCX field not found: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_qcx\v6_4_2\qcx_v10_3_field.npy
+
+Traceback (most recent call last):
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\engine\codex_qim_v6_4_2_afm_qcx_superres_engine.py", line 176, in main
+    raise FileNotFoundError(f"QCX field not found: {qcx_path}")
+FileNotFoundError: QCX field not found: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_qcx\v6_4_2\qcx_v10_3_field.npy
