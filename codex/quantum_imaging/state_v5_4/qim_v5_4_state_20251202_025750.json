@@ -1,0 +1,372 @@
+{
+  "protocol": "CodexQIMEntanglementGeometry",
+  "version": "5.4",
+  "timestamp": "2025-12-02T02:57:51.168028Z",
+  "mode": "entanglement-geometry",
+  "afm_binding_mode": "synthetic-fallback",
+  "shape_4d": [
+    40,
+    64,
+    64,
+    64
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.08330149203538895,
+      "I": 0.029297778382897377,
+      "C": 0.0023710812399224237
+    },
+    "H19_dphi_global": 0.029297778382897377,
+    "lambda_eff": 0.028463850790513067,
+    "barrier_scale": 0.00011545683593006523,
+    "omega_mean": 0.9718698263168335,
+    "omega_std": 0.017531536519527435,
+    "curvature_proxy": 0.013002315536141396,
+    "harmonics": {
+      "core": 524289,
+      "shell": 4718592,
+      "void": 5242879
+    },
+    "multi_scale_persistence": 0.9653648443668503,
+    "entanglement": {
+      "index_global": 0.868140027960029,
+      "teacher": "QCX",
+      "teacher_alpha": 0.31956118687242274,
+      "teacher_score": 0.9036629645483683
+    }
+  },
+  "channels": {
+    "QIM": {
+      "name": "QIM",
+      "E": 0.07926230132579803,
+      "I": 0.027446400374174118,
+      "C": 0.00211735118831895,
+      "dphi_global": 0.027446400374174118,
+      "lambda_eff": 0.026713218679026686,
+      "barrier_scale": 9.74292468759283e-05,
+      "omega_mean": 0.9736056327819824,
+      "omega_std": 0.017177974805235863,
+      "curvature_proxy": 0.01278161071240902,
+      "persistence": 0.9642990083413906,
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880,
+      "weight_S": 0.9137673224270869
+    },
+    "Solar": {
+      "name": "Solar",
+      "E": 0.07926230132579803,
+      "I": 0.027457574382424355,
+      "C": 0.002118190170220288,
+      "dphi_global": 0.027457574382424355,
+      "lambda_eff": 0.026723803558437266,
+      "barrier_scale": 9.748716084317614e-05,
+      "omega_mean": 0.9735967516899109,
+      "omega_std": 0.017223374918103218,
+      "curvature_proxy": 0.012840496376156807,
+      "persistence": 0.9643201481772756,
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880,
+      "weight_S": 0.9137690813354027
+    },
+    "QCX": {
+      "name": "QCX",
+      "E": 0.07926230132579803,
+      "I": 0.027440566569566727,
+      "C": 0.002116913159512036,
+      "dphi_global": 0.027440566569566727,
+      "lambda_eff": 0.026707692359457524,
+      "barrier_scale": 9.739901480361576e-05,
+      "omega_mean": 0.9736101031303406,
+      "omega_std": 0.01715373806655407,
+      "curvature_proxy": 0.012869198806583881,
+      "persistence": 0.9642990146708521,
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880,
+      "weight_S": 0.9137767124154189
+    },
+    "ThirdEye": {
+      "name": "ThirdEye",
+      "E": 0.08279071003198624,
+      "I": 0.02865529991686344,
+      "C": 0.002306304771373247,
+      "dphi_global": 0.02865529991686344,
+      "lambda_eff": 0.02785704785575827,
+      "barrier_scale": 0.00011075798503173153,
+      "omega_mean": 0.9725484848022461,
+      "omega_std": 0.019188208505511284,
+      "curvature_proxy": 0.013873511925339699,
+      "persistence": 0.9660052082282107,
+      "core": 524289,
+      "shell": 4718591,
+      "void": 5242880,
+      "weight_S": 0.9133155699964356
+    },
+    "AFM": {
+      "name": "AFM",
+      "E": 0.10541468858718872,
+      "I": 0.04021415486931801,
+      "C": 0.00407527872265755,
+      "dphi_global": 0.04021415486931801,
+      "lambda_eff": 0.03865949591348342,
+      "barrier_scale": 0.0002601572753480628,
+      "omega_mean": 0.9619483947753906,
+      "omega_std": 0.023444795981049538,
+      "curvature_proxy": 0.018383849412202835,
+      "persistence": 0.9690090034538218,
+      "core": 524289,
+      "shell": 4718592,
+      "void": 5242879,
+      "weight_S": 0.896100722175242
+    }
+  },
+  "entanglement_matrix": [
+    {
+      "i": 0,
+      "j": 0,
+      "name_i": "QIM",
+      "name_j": "QIM",
+      "corr_dphi": 1.0
+    },
+    {
+      "i": 0,
+      "j": 1,
+      "name_i": "QIM",
+      "name_j": "Solar",
+      "corr_dphi": 0.9508638219354412
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "name_i": "QIM",
+      "name_j": "QCX",
+      "corr_dphi": 0.884418347337717
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "name_i": "QIM",
+      "name_j": "ThirdEye",
+      "corr_dphi": 0.8114605286189561
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "name_i": "QIM",
+      "name_j": "AFM",
+      "corr_dphi": 0.7200036096738702
+    },
+    {
+      "i": 1,
+      "j": 0,
+      "name_i": "Solar",
+      "name_j": "QIM",
+      "corr_dphi": 0.9508638219354412
+    },
+    {
+      "i": 1,
+      "j": 1,
+      "name_i": "Solar",
+      "name_j": "Solar",
+      "corr_dphi": 1.0
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "name_i": "Solar",
+      "name_j": "QCX",
+      "corr_dphi": 0.9247095936340824
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "name_i": "Solar",
+      "name_j": "ThirdEye",
+      "corr_dphi": 0.8875653343089609
+    },
+    {
+      "i": 1,
+      "j": 4,
+      "name_i": "Solar",
+      "name_j": "AFM",
+      "corr_dphi": 0.7587610335036186
+    },
+    {
+      "i": 2,
+      "j": 0,
+      "name_i": "QCX",
+      "name_j": "QIM",
+      "corr_dphi": 0.884418347337717
+    },
+    {
+      "i": 2,
+      "j": 1,
+      "name_i": "QCX",
+      "name_j": "Solar",
+      "corr_dphi": 0.9247095936340824
+    },
+    {
+      "i": 2,
+      "j": 2,
+      "name_i": "QCX",
+      "name_j": "QCX",
+      "corr_dphi": 1.0
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "name_i": "QCX",
+      "name_j": "ThirdEye",
+      "corr_dphi": 0.9497008567199067
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "name_i": "QCX",
+      "name_j": "AFM",
+      "corr_dphi": 0.8558230605017669
+    },
+    {
+      "i": 3,
+      "j": 0,
+      "name_i": "ThirdEye",
+      "name_j": "QIM",
+      "corr_dphi": 0.8114605286189561
+    },
+    {
+      "i": 3,
+      "j": 1,
+      "name_i": "ThirdEye",
+      "name_j": "Solar",
+      "corr_dphi": 0.8875653343089609
+    },
+    {
+      "i": 3,
+      "j": 2,
+      "name_i": "ThirdEye",
+      "name_j": "QCX",
+      "corr_dphi": 0.9497008567199067
+    },
+    {
+      "i": 3,
+      "j": 3,
+      "name_i": "ThirdEye",
+      "name_j": "ThirdEye",
+      "corr_dphi": 1.0
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "name_i": "ThirdEye",
+      "name_j": "AFM",
+      "corr_dphi": 0.9380940933659704
+    },
+    {
+      "i": 4,
+      "j": 0,
+      "name_i": "AFM",
+      "name_j": "QIM",
+      "corr_dphi": 0.7200036096738702
+    },
+    {
+      "i": 4,
+      "j": 1,
+      "name_i": "AFM",
+      "name_j": "Solar",
+      "corr_dphi": 0.7587610335036186
+    },
+    {
+      "i": 4,
+      "j": 2,
+      "name_i": "AFM",
+      "name_j": "QCX",
+      "corr_dphi": 0.8558230605017669
+    },
+    {
+      "i": 4,
+      "j": 3,
+      "name_i": "AFM",
+      "name_j": "ThirdEye",
+      "corr_dphi": 0.9380940933659704
+    },
+    {
+      "i": 4,
+      "j": 4,
+      "name_i": "AFM",
+      "name_j": "AFM",
+      "corr_dphi": 1.0
+    }
+  ],
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16": "Insight / multi-scale \u0394\u03a6 structure (C_geo)",
+      "H19": "Global \u0394\u03a6 integration (4D unified field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u03bb = P/P_cr \u2192 1-, \u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|) defines deviation-weighted metric",
+      "entanglement": "Cross-channel \u0394\u03a6 coherence measured by correlation matrix + index."
+    },
+    "memory": {
+      "node": "QIM",
+      "current_version": "5.4",
+      "previous_version": "5.3",
+      "mode": "entanglement-geometry"
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v5_4\\qim_v5_4_ent_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v5_4\\qim_v5_4_ent_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v5_4\\qim_v5_4_ent_omega_maxproj.png",
+    "resonance_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v5_4\\qim_v5_4_ent_resonance_curve.png",
+    "entanglement_matrix": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v5_4\\qim_v5_4_ent_entanglement_matrix.png",
+    "entanglement_spectrum": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v5_4\\qim_v5_4_ent_entanglement_spectrum.png"
+  },
+  "autogen_spec_v5_4": {
+    "protocol": "QIMAutoGenSpec",
+    "source_version": "5.3",
+    "next_version": "5.4",
+    "timestamp": "2025-12-02T02:52:13.883634Z",
+    "current_metrics": {
+      "triad": {
+        "E": 0.08362112194299698,
+        "I": 0.02932627499103546,
+        "C": 0.0023824282705506533
+      },
+      "dphi_global": 0.02932627499103546,
+      "lambda_eff": 0.028490747495288477,
+      "barrier_scale": 0.0001162866209090041,
+      "omega_mean": 0.971849262714386,
+      "omega_std": 0.017688803374767303,
+      "curvature_proxy": 0.013071524910628796,
+      "multi_scale_persistence": 0.9734761435023724
+    },
+    "fusion": {
+      "teacher": "QCX",
+      "alpha_teach": 0.31110258078575137,
+      "channels": [
+        "QIM",
+        "Solar",
+        "QCX",
+        "ThirdEye",
+        "AFM"
+      ]
+    },
+    "afm_binding_mode": "synthetic-fallback",
+    "recommendation": {
+      "recommended_resolution": [
+        64,
+        64,
+        64
+      ],
+      "recommended_T": 40,
+      "next_focus": "stabilize AFM-bound teacher dynamics across QIM/Solar/QCX/ThirdEye and compare real vs synthetic time\u2013radius signatures."
+    }
+  }
+}
