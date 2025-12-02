@@ -1,0 +1,14 @@
+{
+  "protocol": "CodexQIMAFMImportETH",
+  "version": "1.0",
+  "timestamp": "2025-12-02T18:00:13.067978Z",
+  "source_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\AFM images roughness",
+  "target_dir": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\input_afm\\nc_afm_eth_roughness",
+  "cube_depth": 16,
+  "counts": {
+    "converted": 0,
+    "skipped": 0
+  },
+  "converted": [],
+  "skipped": []
+}

@@ -1,0 +1,4 @@
+QIM AFM Import v1.0 ? ETH roughness
+src_dir  : C:\Users\jacks\OneDrive\Desktop\AFM images roughness
+out_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_eth_roughness
+cube_depth: 16
