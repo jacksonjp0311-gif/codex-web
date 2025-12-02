@@ -1,0 +1,70 @@
+{
+  "protocol": "CodexQIMOmegaBasinAFMSuperRes",
+  "version": "7.4",
+  "timestamp": "2025-12-02T19:13:41.923922Z",
+  "mode": "afm-omega-basin-noise-immunity",
+  "superres_factor": 12,
+  "noise_level": 0.05,
+  "shape_4d": [
+    40,
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.5001706480979919,
+      "I": 0.06912113726139069,
+      "C": 0.032337181275696174
+    },
+    "H19_dphi_global": 0.06912113726139069,
+    "lambda_eff": 0.06465229696837542,
+    "barrier_scale": 0.005815047168330112,
+    "omega_mean_before": 0.9359819293022156,
+    "omega_std_before": 0.024170342832803726,
+    "omega_mean_after": 0.9359833002090454,
+    "omega_std_after": 0.02420160546898842,
+    "delta_omega_mean": -1.3709068298339844e-06,
+    "omega_diff_L1": 0.000981586636044085,
+    "noise_immunity_index": 0.9990193843841553,
+    "basin_drop_index": 1.0,
+    "curvature_proxy": 0.022093793377280235,
+    "fractal_dim_H16B_3d": 3.025821677695419,
+    "fractal_dim_H16E_4d": 3.985582264980498,
+    "fractal_time_mean": 2.930532932281494,
+    "fractal_time_min": 2.9145913124084473,
+    "fractal_time_max": 2.9456231594085693
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16B": "Fractal AFM geometry (3D)",
+      "H16E": "4D harmonic baseline (t,x,y,z)",
+      "H19": "Global \u0394\u03c6 integration (4D AFM field \u2192 C)",
+      "H20": "\u03a9-basin invariance / noise-immunity",
+      "H31": "Harmonic stability (core:shell:void \u2248 1:9:10)",
+      "H34": "Adaptive harmonic feedback (future v7.x)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+    },
+    "memory": {
+      "node": "QIM",
+      "current_version": "7.4",
+      "mode": "afm-omega-basin-noise-immunity"
+    }
+  },
+  "visuals": {
+    "dphi_central_baseline": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_dphi_central_baseline.png",
+    "dphi_central_noisy": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_dphi_central_noisy.png",
+    "dphi_maxproj_baseline": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_dphi_maxproj_baseline.png",
+    "dphi_maxproj_noisy": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_dphi_maxproj_noisy.png",
+    "omega_maxproj_baseline": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_omega_maxproj_baseline.png",
+    "omega_maxproj_noisy": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_omega_maxproj_noisy.png",
+    "omega_time_noise_immunity": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_omega_time_noise_immunity.png",
+    "fractal_time_trace": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_fractal_time_trace.png"
+  }
+}

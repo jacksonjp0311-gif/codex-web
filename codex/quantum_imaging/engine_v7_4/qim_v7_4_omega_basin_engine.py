@@ -1,15 +1,8 @@
 ﻿#!/usr/bin/env python3
-"""
-QIM v7.4 — Ω-Basin Noise-Immunity Engine (AFM Super-Res)
-
-• AFM-bound 4D Δφ field (baseline)
-• GEO v1.0: Ω = 1/(1+|ΔΦ|)
-• H16B: 3D fractal AFM geometry
-• H16E: 4D harmonic baseline geometry
-• H19: global Δφ integration → C
-• H20: Ω-basin invariance / noise-immunity
-• H34: adaptive harmonic feedback (Ω-weighted noise response)
-"""
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  QIM v7.4 — Ω-BASIN NOISE-IMMUNITY ENGINE (AFM SUPER-RES)    ║
+# ║  AFM-bound 4D Δφ field + GEO v1.0 + H16B + H16E + H20        ║
+# ╚══════════════════════════════════════════════════════════════╝
 
 import sys, json, math, traceback
 from pathlib import Path
@@ -19,8 +12,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import zoom
 
-# ───────── UTIL ─────────
-
 def now_iso():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
@@ -28,30 +19,25 @@ def now_iso():
 
 def load_afm(path: Path) -> np.ndarray:
     arr = np.load(path)
-    # Handle .npz container
     if isinstance(arr, np.lib.npyio.NpzFile):
         key0 = arr.files[0]
         arr = arr[key0]
 
     arr = np.array(arr, dtype=np.float32)
 
-    # Normalize shape to (nx, ny, nz)
+    # Accept [X,Y], [Z,X,Y], or [T,Z,X,Y] styles
     if arr.ndim == 2:
-        # Repeat into a simple slab
-        arr = np.stack([arr] * 64, axis=-1)
+        arr = np.stack([arr] * 64, axis=-1)   # [X,Y] → [X,Y,Z]
     elif arr.ndim == 3:
+        # already [X,Y,Z] or [Z,X,Y]; assume (X,Y,Z)
         pass
     elif arr.ndim == 4:
-        # Take central time slice if 4D
+        # collapse time dimension → central snapshot
         arr = arr[arr.shape[0] // 2]
-    else:
-        raise ValueError(f"Unsupported AFM shape: {arr.shape}")
 
-    # Normalize to [0,1]
-    mn = float(arr.min())
-    mx = float(arr.max())
-    if mx > mn:
-        arr = (arr - mn) / (mx - mn)
+    m = float(arr.max() - arr.min())
+    if m > 0:
+        arr = (arr - arr.min()) / m
     else:
         arr = np.zeros_like(arr, dtype=np.float32)
     return arr
@@ -76,6 +62,7 @@ def build_4d(vol: np.ndarray, T: int = 40) -> np.ndarray:
     nx, ny, nz = vol.shape
     V = np.zeros((T0, nx, ny, nz), dtype=np.float32)
 
+    # radial coordinate for harmonic weighting
     x = np.linspace(-1.0, 1.0, nx)
     y = np.linspace(-1.0, 1.0, ny)
     z = np.linspace(-1.0, 1.0, nz)
@@ -84,7 +71,6 @@ def build_4d(vol: np.ndarray, T: int = 40) -> np.ndarray:
 
     for t in range(T0):
         theta = 2.0 * math.pi * t / float(T0)
-        # Harmonic breathing modulation, same family as v7.3
         mod = 1.0 + 0.30 * np.sin(theta) + 0.22 * np.cos(2.0 * theta + 3.0 * R)
         V[t] = vol * mod
 
@@ -99,7 +85,6 @@ def dphi_4d(V: np.ndarray) -> np.ndarray:
     return out
 
 def omega(dphi: np.ndarray) -> np.ndarray:
-    # GEO v1.0
     return 1.0 / (1.0 + np.abs(dphi))
 
 # ───────── FRACTAL DIMENSIONS ─────────
@@ -126,10 +111,6 @@ def fractal_dim_3d(vol: np.ndarray) -> float:
     return float(abs(p[0]))
 
 def fractal_dim_4d(vol4d: np.ndarray) -> float:
-    """
-    H16E 4D fractal dimension:
-    box-counting over (t,x,y,z) using stride sampling.
-    """
     data = (vol4d > np.median(vol4d)).astype(np.uint8)
     scales = [1, 2, 4, 5, 8]
     counts = []
@@ -184,144 +165,140 @@ def main(root, state_d, vis_d, ledger_d, logs_d, afm_path, superres, noise_level
             lf.flush()
 
         log("QIM v7.4 — Ω-basin Noise-Immunity Engine starting…")
-        log(f"root_dir    : {root_dir}")
-        log(f"state_dir   : {state_dir}")
-        log(f"visuals_dir : {visuals}")
-        log(f"ledger_dir  : {ledger_dir}")
-        log(f"logs_dir    : {logs_dir}")
-        log(f"afm_file    : {afm_file}")
-        log(f"superres    : {superres}")
-        log(f"noise_level : {noise_level}")
+        log(f"root_dir     : {root_dir}")
+        log(f"state_dir    : {state_dir}")
+        log(f"visuals_dir  : {visuals}")
+        log(f"ledger_dir   : {ledger_dir}")
+        log(f"logs_dir     : {logs_dir}")
+        log(f"afm_file     : {afm_file}")
+        log(f"superres     : {superres}")
+        log(f"noise_level  : {noise_level}")
 
         try:
-            # AFM load + super-res
+            # 1) Load & super-resolve AFM volume
             afm = load_afm(afm_file)
-            log(f"AFM cube loaded and normalized. shape={afm.shape}")
+            log("AFM cube loaded and normalized.")
 
             hi = super_resolve(afm, int(superres), max_size=128)
             log(f"Super-resolved AFM volume shape: {hi.shape}")
 
-            # 4D baseline field + Δφ + Ω
+            # 2) Build baseline 4D field and Δφ, Ω
             V = build_4d(hi, T=40)
-            dphi_base = dphi_4d(V)
-            Om_base = omega(dphi_base)
+            dphi = dphi_4d(V)
+            Om   = omega(dphi)
 
-            # H16B / H16E baseline
+            # 3) Inject Δφ noise (H20) and compute perturbed Ω
+            dphi_std = float(np.std(dphi))
+            sigma = float(noise_level) * max(dphi_std, 1e-6)
+            log(f"Δφ std        : {dphi_std:.6g}")
+            log(f"noise sigma    : {sigma:.6g}")
+
+            noise = np.random.normal(loc=0.0, scale=sigma, size=dphi.shape).astype(np.float32)
+            dphi_noisy = dphi + noise
+            Om_noisy   = omega(dphi_noisy)
+
+            # 4) Fractal metrics
             fd3 = fractal_dim_3d(hi)
-            fd4 = fractal_dim_4d(dphi_base)
+            fd4 = fractal_dim_4d(dphi)
 
-            # time-resolved 3D fractal dims on |Δφ(t,·)|
             T0 = V.shape[0]
             fd_t = []
             for t in range(T0):
-                fd_t.append(fractal_dim_3d(dphi_base[t]))
+                fd_t.append(fractal_dim_3d(dphi[t]))
             fd_t = np.array(fd_t, dtype=np.float32)
             fd_t_mean = float(fd_t.mean())
             fd_t_min  = float(fd_t.min())
             fd_t_max  = float(fd_t.max())
 
-            # Triad metrics (baseline)
+            # 5) Triad + cusp-like metrics
             E = float(np.mean(np.abs(V)))
-            I = float(np.mean(dphi_base))
+            I = float(np.mean(dphi))
             C = (E * I) / (1.0 + abs(I))
             lam = min(0.99, I / (1.0 + I))
             barrier = (1.0 - lam) ** 1.5 * (max(E * I, 0.0) ** 1.5)
 
-            om_mean = float(np.mean(Om_base))
-            om_std  = float(np.std(Om_base))
-            curv = float(np.mean(np.abs(dphi_base - np.mean(dphi_base))))
+            om_mean_before = float(np.mean(Om))
+            om_std_before  = float(np.std(Om))
+            om_mean_after  = float(np.mean(Om_noisy))
+            om_std_after   = float(np.std(Om_noisy))
 
-            # ───── H20: noise injection in Δφ and Ω-basin response ─────
-            sigma_dphi = float(np.std(dphi_base))
-            if sigma_dphi <= 0.0:
-                sigma_dphi = 1e-6
+            # Ω-basin noise-immunity metrics (H20)
+            delta_omega_mean = om_mean_before - om_mean_after
+            omega_diff = np.mean(np.abs(Om_noisy - Om))
+            # higher immunity → smaller drop / smaller diff
+            noise_immunity_index = 1.0 / (1.0 + max(0.0, omega_diff))
+            basin_drop_index     = 1.0 / (1.0 + max(0.0, delta_omega_mean))
 
-            rng = np.random.default_rng()
-            noise = rng.normal(loc=0.0,
-                               scale=noise_level * sigma_dphi,
-                               size=dphi_base.shape).astype(np.float32)
+            curv = float(np.mean(np.abs(dphi - np.mean(dphi))))
 
-            dphi_noisy = dphi_base + noise
-            dphi_noisy = np.clip(dphi_noisy, 0.0, None)
-
-            Om_noisy = omega(dphi_noisy)
-
-            delta_Om = Om_noisy - Om_base
-            abs_delta_Om = np.abs(delta_Om)
-
-            mean_abs_delta_omega = float(np.mean(abs_delta_Om))
-            max_abs_delta_omega  = float(np.max(abs_delta_Om))
-            noise_energy         = float(np.mean(noise * noise))
-
-            # Ω-basin stability index (H20):
-            # fraction of voxels with |ΔΩ| < 0.05, smoothed via exp-kernel
-            eps = 0.05
-            frac_stable = float(np.mean(abs_delta_Om < eps))
-            omega_basin_index = float(np.mean(np.exp(-abs_delta_Om / eps)))
-
-            # Correlation between baseline and noisy Ω
-            base_flat = Om_base.ravel()
-            noisy_flat = Om_noisy.ravel()
-            if np.std(base_flat) > 0 and np.std(noisy_flat) > 0:
-                corr = float(np.corrcoef(base_flat, noisy_flat)[0, 1])
-            else:
-                corr = 1.0
-
-            # H34: adaptive harmonic feedback metric
-            # Ω-weighted noise: how much noise lands in high-Ω (coherent) regions
-            weight = Om_base / (np.mean(Om_base) + 1e-9)
-            adaptive_feedback = float(np.mean(weight * abs_delta_Om))
-
-            log(f"mean|ΔΩ|   : {mean_abs_delta_omega}")
-            log(f"max|ΔΩ|    : {max_abs_delta_omega}")
-            log(f"Ω-basin Ix : {omega_basin_index}")
-            log(f"Ω-stable f : {frac_stable}")
-            log(f"Ω-corr     : {corr}")
-            log(f"H34 adapt  : {adaptive_feedback}")
-
-            # Visuals
+            # Visual slices (baseline vs noise)
             T0, nx, ny, nz = V.shape
             tmid = T0 // 2
             zmid = nz // 2
 
-            # baseline / noisy Ω max projections
-            omega_base_max = Om_base.max(axis=0).max(axis=2)
-            omega_noisy_max = Om_noisy.max(axis=0).max(axis=2)
-            delta_omega_max = abs_delta_Om.max(axis=0).max(axis=2)
+            dphi_c       = dphi[tmid, :, :, zmid]
+            dphi_c_noisy = dphi_noisy[tmid, :, :, zmid]
+
+            maxp        = dphi.max(axis=0).max(axis=2)
+            maxp_noisy  = dphi_noisy.max(axis=0).max(axis=2)
+
+            omega_max       = Om.max(axis=0).max(axis=2)
+            omega_max_noisy = Om_noisy.max(axis=0).max(axis=2)
 
             vis = {}
 
-            p1 = visuals / "qim_v7_4_omega_baseline_maxproj.png"
-            write_img(p1, omega_base_max, "QIM v7.4 Ω baseline max-projection")
-            vis["omega_baseline_maxproj"] = str(p1)
+            p1 = visuals / "qim_v7_4_dphi_central_baseline.png"
+            write_img(p1, dphi_c, "QIM v7.4 Δφ central slice (baseline)")
+            vis["dphi_central_baseline"] = str(p1)
 
-            p2 = visuals / "qim_v7_4_omega_noisy_maxproj.png"
-            write_img(p2, omega_noisy_max, "QIM v7.4 Ω noisy max-projection")
-            vis["omega_noisy_maxproj"] = str(p2)
+            p2 = visuals / "qim_v7_4_dphi_central_noisy.png"
+            write_img(p2, dphi_c_noisy, "QIM v7.4 Δφ central slice (noisy)")
+            vis["dphi_central_noisy"] = str(p2)
 
-            p3 = visuals / "qim_v7_4_delta_omega_maxproj.png"
-            write_img(p3, delta_omega_max, "QIM v7.4 |ΔΩ| max-projection")
-            vis["delta_omega_maxproj"] = str(p3)
+            p3 = visuals / "qim_v7_4_dphi_maxproj_baseline.png"
+            write_img(p3, maxp, "QIM v7.4 Δφ max projection (baseline)")
+            vis["dphi_maxproj_baseline"] = str(p3)
 
-            # Noise-immunity curve: fraction(|ΔΩ| < τ) vs τ
-            taus = np.linspace(0.0, 0.20, 50, dtype=np.float32)
-            fracs = []
-            flat_abs = abs_delta_Om.ravel()
-            for tau in taus:
-                fracs.append(float(np.mean(flat_abs < tau)))
-            fracs = np.array(fracs, dtype=np.float32)
+            p4 = visuals / "qim_v7_4_dphi_maxproj_noisy.png"
+            write_img(p4, maxp_noisy, "QIM v7.4 Δφ max projection (noisy)")
+            vis["dphi_maxproj_noisy"] = str(p4)
+
+            p5 = visuals / "qim_v7_4_omega_maxproj_baseline.png"
+            write_img(p5, omega_max, "QIM v7.4 Ω max projection (baseline)")
+            vis["omega_maxproj_baseline"] = str(p5)
+
+            p6 = visuals / "qim_v7_4_omega_maxproj_noisy.png"
+            write_img(p6, omega_max_noisy, "QIM v7.4 Ω max projection (noisy)")
+            vis["omega_maxproj_noisy"] = str(p6)
+
+            # Ω-basin noise-immunity curve (energy vs Ω)
+            energy_t = np.mean(np.abs(V), axis=(1, 2, 3))
+            omega_t  = np.mean(omega(dphi), axis=(1, 2, 3))
+            omega_t_noisy = np.mean(omega(dphi_noisy), axis=(1, 2, 3))
 
             plt.figure()
-            plt.plot(taus, fracs)
-            plt.xlabel("τ")
-            plt.ylabel("fraction(|ΔΩ| < τ)")
-            plt.title("QIM v7.4 Ω-basin noise-immunity curve (H20)")
-            p4 = visuals / "qim_v7_4_noise_immunity_curve.png"
-            plt.savefig(p4, bbox_inches="tight")
+            plt.plot(range(T0), omega_t, label="Ω baseline")
+            plt.plot(range(T0), omega_t_noisy, label="Ω noisy", linestyle="--")
+            plt.xlabel("t")
+            plt.ylabel("Ω(t)")
+            plt.title("QIM v7.4 Ω-basin noise-immunity (baseline vs noisy)")
+            plt.legend()
+            p7 = visuals / "qim_v7_4_omega_time_noise_immunity.png"
+            plt.savefig(p7, bbox_inches="tight")
             plt.close()
-            vis["omega_noise_immunity_curve"] = str(p4)
+            vis["omega_time_noise_immunity"] = str(p7)
 
-            # State JSON
+            # fractal vs time trace (3D |Δφ_t|)
+            plt.figure()
+            plt.plot(range(T0), fd_t)
+            plt.xlabel("t")
+            plt.ylabel("D_fractal(3D |Δφ_t|)")
+            plt.title("QIM v7.4 3D fractal dimension vs time (baseline)")
+            p8 = visuals / "qim_v7_4_fractal_time_trace.png"
+            plt.savefig(p8, bbox_inches="tight")
+            plt.close()
+            vis["fractal_time_trace"] = str(p8)
+
             ts_tag = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
             state_path = state_dir / f"qim_v7_4_state_{ts_tag}.json"
 
@@ -338,32 +315,31 @@ def main(root, state_d, vis_d, ledger_d, logs_d, afm_path, superres, noise_level
                     "H19_dphi_global": I,
                     "lambda_eff": lam,
                     "barrier_scale": barrier,
-                    "omega_mean": om_mean,
-                    "omega_std": om_std,
+                    "omega_mean_before": om_mean_before,
+                    "omega_std_before": om_std_before,
+                    "omega_mean_after": om_mean_after,
+                    "omega_std_after": om_std_after,
+                    "delta_omega_mean": float(delta_omega_mean),
+                    "omega_diff_L1": float(omega_diff),
+                    "noise_immunity_index": float(noise_immunity_index),
+                    "basin_drop_index": float(basin_drop_index),
                     "curvature_proxy": curv,
                     "fractal_dim_H16B_3d": fd3,
                     "fractal_dim_H16E_4d": fd4,
                     "fractal_time_mean": fd_t_mean,
                     "fractal_time_min": fd_t_min,
                     "fractal_time_max": fd_t_max,
-                    "noise_energy": noise_energy,
-                    "mean_abs_delta_omega": mean_abs_delta_omega,
-                    "max_abs_delta_omega": max_abs_delta_omega,
-                    "omega_basin_index_H20": omega_basin_index,
-                    "omega_fraction_stable": frac_stable,
-                    "omega_correlation": corr,
-                    "adaptive_feedback_H34": adaptive_feedback,
                 },
                 "codex": {
                     "H_layers": {
                         "H7": 0.70,
                         "H7B": "ΔΦ Cusp Law v2.8 irreversible kernel",
-                        "H16B": "Fractal AFM surface dimension (3D)",
-                        "H16E": "4D harmonic baseline geometry (t,x,y,z)",
+                        "H16B": "Fractal AFM geometry (3D)",
+                        "H16E": "4D harmonic baseline (t,x,y,z)",
                         "H19": "Global Δφ integration (4D AFM field → C)",
                         "H20": "Ω-basin invariance / noise-immunity",
-                        "H31": "Harmonic Stability (core:shell:void ≈ 1:9:10)",
-                        "H34": "Adaptive harmonic feedback (Ω-weighted noise)",
+                        "H31": "Harmonic stability (core:shell:void ≈ 1:9:10)",
+                        "H34": "Adaptive harmonic feedback (future v7.x)",
                     },
                     "laws": {
                         "universal_truth": "C = (E*I)/(1+|ΔΦ|)",
@@ -382,7 +358,6 @@ def main(root, state_d, vis_d, ledger_d, logs_d, afm_path, superres, noise_level
             state_path.write_text(json.dumps(state_obj, indent=2), encoding="utf-8")
             log(f"State JSON written → {state_path}")
 
-            # Ledger append
             ledger_path = ledger_dir / "qim_v7_4_ledger.jsonl"
             row = {
                 "timestamp": now_iso(),
@@ -393,23 +368,21 @@ def main(root, state_d, vis_d, ledger_d, logs_d, afm_path, superres, noise_level
                 "C": C,
                 "lambda_eff": lam,
                 "barrier_scale": barrier,
-                "omega_mean": om_mean,
-                "omega_std": om_std,
-                "curvature_proxy": curv,
+                "omega_mean_before": om_mean_before,
+                "omega_std_before": om_std_before,
+                "omega_mean_after": om_mean_after,
+                "omega_std_after": om_std_after,
+                "delta_omega_mean": float(delta_omega_mean),
+                "omega_diff_L1": float(omega_diff),
+                "noise_immunity_index": float(noise_immunity_index),
+                "basin_drop_index": float(basin_drop_index),
                 "fractal_dim_H16B_3d": fd3,
                 "fractal_dim_H16E_4d": fd4,
                 "fractal_time_mean": fd_t_mean,
                 "fractal_time_min": fd_t_min,
                 "fractal_time_max": fd_t_max,
-                "noise_level": float(noise_level),
-                "noise_energy": noise_energy,
-                "mean_abs_delta_omega": mean_abs_delta_omega,
-                "max_abs_delta_omega": max_abs_delta_omega,
-                "omega_basin_index_H20": omega_basin_index,
-                "omega_fraction_stable": frac_stable,
-                "omega_correlation": corr,
-                "adaptive_feedback_H34": adaptive_feedback,
                 "superres_factor": int(superres),
+                "noise_level": float(noise_level),
             }
             with ledger_path.open("a", encoding="utf-8") as lf2:
                 lf2.write(json.dumps(row) + "\n")
@@ -429,12 +402,5 @@ if __name__ == "__main__":
         print("Usage: engine.py ROOT STATE VISUALS LEDGER LOGS AFM_FILE SUPERRES NOISE_LEVEL", file=sys.stderr)
         sys.exit(1)
 
-    root, state, vis, led, logs, afm, sr_s, noise_s = sys.argv[1:9]
-    main(root,
-         state,
-         vis,
-         led,
-         logs,
-         afm,
-         int(sr_s),
-         float(noise_s))
+    root, state, vis, led, logs, afm, sr_s, noise_s = sys.argv[1:]
+    main(root, state, vis, led, logs, afm, int(sr_s), float(noise_s))
