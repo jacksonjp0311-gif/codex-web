@@ -1,0 +1,13 @@
+QIM v7.3 ? Harmonic 4D Fractal Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v7_3
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v7_3
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v7_3
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v7_3
+afm_file   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\nc_afm_standard\afm_synthetic_sharp_v1.npy
+superres   : 12
+AFM cube loaded and normalized.
+Super-resolved AFM volume shape: (128, 128, 128)
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v7_3\qim_v7_3_state_20251202_172427.json
+Ledger appended ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v7_3\qim_v7_3_ledger.jsonl
+QIM v7.3 Harmonic 4D Fractal run complete.

@@ -1,0 +1,57 @@
+{
+  "protocol": "CodexQIMHarmonic4DFractalAFMSuperRes",
+  "version": "7.3",
+  "timestamp": "2025-12-02T17:24:27.170525Z",
+  "mode": "afm-harmonic-4d-fractal",
+  "superres_factor": 12,
+  "shape_4d": [
+    40,
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "triad": {
+      "E": 0.5001706480979919,
+      "I": 0.06912113726139069,
+      "C": 0.032337181275696174
+    },
+    "H19_dphi_global": 0.06912113726139069,
+    "lambda_eff": 0.06465229696837542,
+    "barrier_scale": 0.005815047168330112,
+    "omega_mean": 0.9359819293022156,
+    "omega_std": 0.024170342832803726,
+    "curvature_proxy": 0.022093793377280235,
+    "fractal_dim_H16B_3d": 3.025821677695419,
+    "fractal_dim_H16E_4d": 3.985582264980498,
+    "fractal_time_mean": 2.930532932281494,
+    "fractal_time_min": 2.9145913124084473,
+    "fractal_time_max": 2.9456231594085693
+  },
+  "codex": {
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16B": "Fractal AFM surface dimension (3D)",
+      "H16E": "4D fractal harmonic geometry (t,x,y,z)",
+      "H19": "Global \u0394\u03c6 integration (4D AFM field \u2192 C)",
+      "H31": "Harmonic Stability (core:shell:void \u2248 1:9:10)"
+    },
+    "laws": {
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)",
+      "cusp_v2_8": "\u0394V \u221d (1-\u03bb)^{3/2}(EI)^{3/2}",
+      "error_geometry": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+    },
+    "memory": {
+      "node": "QIM",
+      "current_version": "7.3",
+      "mode": "afm-harmonic-4d-fractal"
+    }
+  },
+  "visuals": {
+    "dphi_central": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_3\\qim_v7_3_dphi_central.png",
+    "dphi_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_3\\qim_v7_3_dphi_maxproj.png",
+    "omega_maxproj": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_3\\qim_v7_3_omega_maxproj.png",
+    "fractal_time_trace": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_3\\qim_v7_3_fractal_time_trace.png"
+  }
+}
