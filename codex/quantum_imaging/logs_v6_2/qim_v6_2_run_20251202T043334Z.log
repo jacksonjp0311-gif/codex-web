@@ -1,0 +1,16 @@
+QIM v6.2 · AFM Super-Resolution Engine (12×) starting…
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v6_2
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_2
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v6_2
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v6_2
+afm_path   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v6_2\afm_v5_5.npy
+[AFM] Real AFM cube loaded from C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v6_2\afm_v5_5.npy
+[AFM] Shape = (64, 64, 64), dtype = float32
+[Metrics] E=0.0494966, I=0.0964536, C=0.500000, λ_eff=1.0000000
+[Visual] dphi_central_superres → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_2\qim_v6_2_afm_dphi_central_superres.png
+[Visual] dphi_maxproj_superres → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_2\qim_v6_2_afm_dphi_maxproj_superres.png
+[Visual] omega_maxproj_superres → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_2\qim_v6_2_afm_omega_maxproj_superres.png
+[Visual] curvature_superres → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v6_2\qim_v6_2_afm_curvature_superres.png
+[State] Written → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v6_2\qim_v6_2_state_20251202T043339Z.json
+[Ledger] Appended → C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v6_2\qim_v6_2_ledger.jsonl
