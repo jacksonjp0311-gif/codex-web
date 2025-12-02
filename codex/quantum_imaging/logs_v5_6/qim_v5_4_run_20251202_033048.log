@@ -1,0 +1,19 @@
+QIM v5.4 ? Entanglement Geometry Engine starting?
+root_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web
+state_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_6
+visuals_dir: C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\visuals_v5_6
+ledger_dir : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_6
+logs_dir   : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\logs_v5_6
+input_dir  : C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v5_6
+[AFM] Real AFM cube loaded from C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\input_afm\v5_6\afm_v5_5.npy
+[Mode] REAL AFM entanglement binding active.
+[Base] Channels synthesized for entanglement geometry.
+[Channel] QIM: E=0.011471, I=0.003108, C=0.000036, S=0.984491
+[Channel] Solar: E=0.011471, I=0.003109, C=0.000036, S=0.984481
+[Channel] QCX: E=0.011471, I=0.003108, C=0.000036, S=0.984496
+[Channel] ThirdEye: E=0.012051, I=0.003351, C=0.000040, S=0.983035
+[Channel] AFM: E=0.016058, I=0.004352, C=0.000070, S=0.982192
+[Entanglement] Index_global=0.962004, Teacher=QCX, alpha=0.234, score=0.975527
+State JSON written ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\state_v5_6\qim_v5_4_state_20251202_033058.json
+Ledger appended   ? C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\quantum_imaging\ledger_v5_6\qim_v5_4_ledger.jsonl
+QIM v5.4 entanglement run complete.
