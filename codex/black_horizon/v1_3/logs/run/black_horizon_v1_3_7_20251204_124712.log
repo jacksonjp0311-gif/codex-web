@@ -1,0 +1,8 @@
+﻿STDOUT:
+{"state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\state\\black_horizon_v1_3_7_20251204_124712_state.json", "summary_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\state\\black_horizon_v1_3_7_20251204_124712_summary.json"}
+
+
+STDERR:
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\black_horizon\v1_3\engine\black_horizon_engine_v1_3_6.py:307: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": __import__("datetime").datetime.utcnow().isoformat() + "Z",
+

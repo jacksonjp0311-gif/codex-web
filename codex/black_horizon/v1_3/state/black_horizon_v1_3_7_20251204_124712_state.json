@@ -1,0 +1,159 @@
+{
+  "module": "CodexBlackHorizon",
+  "version": "1.3.6",
+  "tag": "black_horizon_v1_3_7_20251204_124712",
+  "timestamp": "2025-12-04T17:47:14.456342Z",
+  "grid": {
+    "N": 256,
+    "x_min": -1.5,
+    "x_max": 1.5,
+    "y_min": -1.5,
+    "y_max": 1.5
+  },
+  "metrics_ref": {
+    "alpha_ref": 1.0,
+    "lambda_mean_ref": 6211.580479827684,
+    "collapse_fraction_ref": 1.0,
+    "C_avg_ref": 7.50311233033128e-05,
+    "H7_fraction_ref": 0.0,
+    "EI_mean_ref": 1.0,
+    "gamma_mean_ref": 0.35,
+    "phi_c_mean": 0.952380951473923,
+    "C_cusp": 0.5121951217013682,
+    "cusp_kernel": "Codex \u0394\u03a6 Cusp v2.8"
+  },
+  "sweep": [
+    {
+      "alpha": 0.7,
+      "lambda_mean": 4348.106335879379,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 0.00010718731900473258
+    },
+    {
+      "alpha": 0.75,
+      "lambda_mean": 4658.685359870763,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 0.00010004149773775042
+    },
+    {
+      "alpha": 0.7999999999999999,
+      "lambda_mean": 4969.264383862147,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 9.3788904129141e-05
+    },
+    {
+      "alpha": 0.85,
+      "lambda_mean": 5279.843407853531,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 8.82719097686033e-05
+    },
+    {
+      "alpha": 0.9,
+      "lambda_mean": 5590.422431844915,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 8.336791478145866e-05
+    },
+    {
+      "alpha": 0.95,
+      "lambda_mean": 5901.0014558363,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 7.898012979296085e-05
+    },
+    {
+      "alpha": 1.0,
+      "lambda_mean": 6211.580479827684,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 7.50311233033128e-05
+    },
+    {
+      "alpha": 1.05,
+      "lambda_mean": 6522.159503819068,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 7.145821266982171e-05
+    },
+    {
+      "alpha": 1.1,
+      "lambda_mean": 6832.738527810453,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 6.821011209392073e-05
+    },
+    {
+      "alpha": 1.15,
+      "lambda_mean": 7143.317551801835,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 6.524445504635897e-05
+    },
+    {
+      "alpha": 1.2000000000000002,
+      "lambda_mean": 7453.896575793222,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 6.2525936086094e-05
+    },
+    {
+      "alpha": 1.25,
+      "lambda_mean": 7764.475599784605,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 6.002489864265024e-05
+    },
+    {
+      "alpha": 1.3,
+      "lambda_mean": 8075.054623775989,
+      "H7_fraction": 0.0,
+      "collapse_fraction": 1.0,
+      "C_avg": 5.771624869485601e-05
+    }
+  ],
+  "qim_coupling": {
+    "enabled": true,
+    "qim_state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_v7_2\\qim_v7_2_state_20251202_165307.json",
+    "qim_metrics": {
+      "triad": {
+        "E": 0.500221312046051,
+        "I": 0.0691276341676712,
+        "C": 0.03234330004846631
+      },
+      "H19_dphi_global": 0.0691276341676712,
+      "lambda_eff": 0.06465798091683217,
+      "barrier_scale": 0.005816697712716725,
+      "omega_mean": 0.9359752535820007,
+      "omega_std": 0.02415432035923004,
+      "curvature_proxy": 0.02208002470433712,
+      "fractal_dim_H16B": 3.025821677695419,
+      "adaptive_damping": {
+        "eta_mean": 0.05363661050796509,
+        "eta_min": 0.0,
+        "eta_max": 0.07734823226928711
+      },
+      "coherence_memory_index": 0.6800941261802115
+    }
+  },
+  "system_phase": "joint-structured",
+  "codex": {
+    "laws": {
+      "delta_phi_cusp_v2_8": "V(\u03a6) = -EI ln(1+\u03a6) + D \u03a6 + (\u03b3/2) ln(1+\u03a6\u00b2)",
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)"
+    },
+    "H_layers": {
+      "H7": 0.7,
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel"
+    }
+  },
+  "visuals": {
+    "intensity_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\visuals\\black_horizon_v1_3_7_20251204_124712_intensity.png",
+    "lambda_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\visuals\\black_horizon_v1_3_7_20251204_124712_lambda_collapse.png",
+    "coherence_H7_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\visuals\\black_horizon_v1_3_7_20251204_124712_coherence_H7.png",
+    "lambda_phase_diagram_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\visuals\\black_horizon_v1_3_7_20251204_124712_lambda_phase_diagram.png"
+  }
+}
