@@ -1,0 +1,12 @@
+{
+  "tag": "black_horizon_v1_3_5_20251204_114427",
+  "version": "1.3.5",
+  "alpha_ref": 1.0,
+  "lambda_mean_ref": 15160.61496232047,
+  "collapse_fraction_ref": 0.8695924408014571,
+  "C_avg_ref": 0.1897402038593621,
+  "H7_fraction_ref": 0.02567167577413479,
+  "phi_c_mean": 0.03332109576838746,
+  "C_cusp": 0.862582863015117,
+  "system_phase": "joint-structured"
+}
