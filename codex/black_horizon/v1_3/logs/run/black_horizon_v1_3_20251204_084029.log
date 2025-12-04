@@ -1,0 +1,30 @@
+﻿STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\black_horizon\v1_3\engine\black_horizon_engine_v1_3.py", line 355, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\black_horizon\v1_3\engine\black_horizon_engine_v1_3.py", line 274, in main
+    plt.colorbar(label="\u03bb")
+    ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\jacks\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\matplotlib\pyplot.py", line 2533, in colorbar
+    ret = gcf().colorbar(mappable, cax=cax, ax=ax, **kwargs)
+  File "C:\Users\jacks\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\matplotlib\figure.py", line 1308, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **{
+        k: v for k, v in kwargs.items() if k not in NON_COLORBAR_KEYS})
+  File "C:\Users\jacks\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\matplotlib\colorbar.py", line 403, in __init__
+    self._draw_all()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\jacks\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\matplotlib\colorbar.py", line 545, in _draw_all
+    X, Y = self._mesh()
+           ~~~~~~~~~~^^
+  File "C:\Users\jacks\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\matplotlib\colorbar.py", line 1117, in _mesh
+    y, _ = self._proportional_y()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jacks\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\matplotlib\colorbar.py", line 1255, in _proportional_y
+    automin = yscaled[1] - yscaled[0]
+              ~~~~~~~^^^
+IndexError: index 1 is out of bounds for axis 0 with size 1
+

@@ -15,7 +15,7 @@ Horizon & collapse:
     λ > 1 → runaway collapse (irreversible)
 
 Module:
-    Codex Black Horizon v1.3 — ΔΦ Cusp Kerr Field Engine
+    Codex Black Horizon v1.3.1 — ΔΦ Cusp Kerr Field Engine (stabilized)
 """
 
 import argparse
@@ -25,6 +25,8 @@ from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
+# be gentle with numerical warnings
+np.seterr(divide="ignore", invalid="ignore")
 
 # ─────────────────────────────────────────────────────────────
 # Codex ΔΦ Cusp Kernel v2.8 (inlined)
@@ -196,6 +198,7 @@ def main():
         collapse_fraction = float(collapse_mask[valid].mean())
         EI_mean = float(EI[valid].mean())
         gamma_mean = float(gamma[valid].mean())
+        lambda_range = float(lam[valid].max() - lam[valid].min())
     else:
         C_avg = 0.0
         lam_mean = 0.0
@@ -203,6 +206,15 @@ def main():
         collapse_fraction = 0.0
         EI_mean = 0.0
         gamma_mean = 0.0
+        lambda_range = 0.0
+
+    # Phase-state classification (your “did we phase transition?” flag)
+    if lambda_range < 1e-3:
+        phase_state = "λ-field-collapsed"
+    elif collapse_fraction > 0.0:
+        phase_state = "partial-collapse"
+    else:
+        phase_state = "structured"
 
     # Cusp prediction at Φ_c using mean EI, γ
     if EI_mean > 0.0 and gamma_mean > 0.0:
@@ -221,7 +233,7 @@ def main():
     plt.figure(figsize=(5, 5))
     plt.imshow(intensity, extent=[x.min(), x.max(), y.min(), y.max()],
                origin="lower")
-    plt.title("Codex Black Horizon v1.3 — Kerr-like Intensity (E·I)")
+    plt.title("Codex Black Horizon v1.3.1 — Kerr-like Intensity (E·I)")
     plt.xlabel("x (r/M)")
     plt.ylabel("y (r/M)")
     plt.colorbar(label="normalized intensity")
@@ -230,16 +242,33 @@ def main():
     plt.savefig(ring_path, dpi=300)
     plt.close()
 
+    # Helper: stable color limits for λ
+    lam_finite = lam[np.isfinite(lam)]
+    if lam_finite.size > 0:
+        lam_min = float(lam_finite.min())
+        lam_max = float(lam_finite.max())
+    else:
+        lam_min, lam_max = 0.0, 1.0
+    if lam_max - lam_min < 1e-6:
+        lam_max = lam_min + 1e-6
+
     # 2) λ field (D/D_c) + collapse contour
     plt.figure(figsize=(5, 5))
-    plt.imshow(lam, extent=[x.min(), x.max(), y.min(), y.max()],
-               origin="lower")
-    plt.contour(collapse_mask.astype(float),
-                levels=[0.5],
-                colors="white",
-                linewidths=0.7,
-                extent=[x.min(), x.max(), y.min(), y.max()])
-    plt.title("Codex Black Horizon v1.3 — λ Field (D/D_c) with Collapse Rim")
+    plt.imshow(
+        lam,
+        extent=[x.min(), x.max(), y.min(), y.max()],
+        origin="lower",
+        vmin=lam_min,
+        vmax=lam_max,
+    )
+    plt.contour(
+        collapse_mask.astype(float),
+        levels=[0.5],
+        colors="white",
+        linewidths=0.7,
+        extent=[x.min(), x.max(), y.min(), y.max()],
+    )
+    plt.title("Codex Black Horizon v1.3.1 — λ Field (D/D_c) with Collapse Rim")
     plt.xlabel("x (r/M)")
     plt.ylabel("y (r/M)")
     plt.colorbar(label="λ")
@@ -253,12 +282,14 @@ def main():
     plt.figure(figsize=(5, 5))
     plt.imshow(C_display, extent=[x.min(), x.max(), y.min(), y.max()],
                origin="lower")
-    plt.contour(H7_mask.astype(float),
-                levels=[0.5],
-                colors="white",
-                linewidths=0.7,
-                extent=[x.min(), x.max(), y.min(), y.max()])
-    plt.title("Codex Black Horizon v1.3 — Coherence C with H₇ Ridge")
+    plt.contour(
+        H7_mask.astype(float),
+        levels=[0.5],
+        colors="white",
+        linewidths=0.7,
+        extent=[x.min(), x.max(), y.min(), y.max()],
+    )
+    plt.title("Codex Black Horizon v1.3.1 — Coherence C with H₇ Ridge")
     plt.xlabel("x (r/M)")
     plt.ylabel("y (r/M)")
     plt.colorbar(label="C")
@@ -276,6 +307,8 @@ def main():
         "N": int(N),
         "C_avg": C_avg,
         "lambda_mean": lam_mean,
+        "lambda_range": lambda_range,
+        "phase_state": phase_state,
         "H7_fraction": H7_fraction,
         "collapse_fraction": collapse_fraction,
         "gamma0": float(gamma0),
