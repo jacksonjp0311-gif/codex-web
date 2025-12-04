@@ -296,7 +296,12 @@ def main():
 
     # 2) λ field (reference α) with collapse rim — colorbar-safe
     if lam_field_ref is not None:
-        lam_plot = np.nan_to_num(lam_field_ref, nan=0.0, posinf=np.nanmax(lam_field_ref), neginf=np.nanmin(lam_field_ref))
+        lam_plot = np.nan_to_num(
+            lam_field_ref,
+            nan=0.0,
+            posinf=np.nanmax(lam_field_ref),
+            neginf=np.nanmin(lam_field_ref),
+        )
         finite_mask = np.isfinite(lam_plot)
 
         if finite_mask.sum() >= 4:
