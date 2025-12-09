@@ -1,0 +1,10 @@
+﻿STDOUT:
+{"state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\ctfe\\v1_3\\state\\ctfe_v1_3_20251209_161843_state.json", "summary_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\ctfe\\v1_3\\state\\ctfe_v1_3_20251209_161843_summary.json"}
+
+
+STDERR:
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\telemetry\ctfe\v1_3\engine\ctfe_engine_v1_3.py:377: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now_tag = _dt.datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\telemetry\ctfe\v1_3\engine\ctfe_engine_v1_3.py:392: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now_utc = _dt.datetime.utcnow().isoformat() + "Z"
+

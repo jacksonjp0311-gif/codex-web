@@ -1,0 +1,53 @@
+{
+  "module": "CTFE",
+  "version": "1.3",
+  "tag": "ctfe_v1_3_20251209_161843",
+  "timestamp_utc": "2025-12-09T16:18:44.767477Z",
+  "source": "ctfe_telemetry",
+  "telemetry": {
+    "provider": "NOAA SWPC GOES X-ray",
+    "used_real_data": true,
+    "N_points": 512
+  },
+  "metrics_ref": {
+    "C_avg_ref": 0.07463959884165744,
+    "H7_fraction_ref": 0.05059814453125,
+    "r_h": 0.8687892163792712,
+    "dr_halfmax": 0.12380867813974028,
+    "delta_phi_global": 0.0013319549690661147,
+    "delta_phi_1d_mean": 0.0355136140910962,
+    "lambda_eff": 0.01838297267137506,
+    "collapse_state": "metastable",
+    "EI_ref": 1.0,
+    "gamma_ref": 0.35,
+    "phi_c": 0.9523809523809526,
+    "C_cusp": 0.5121951219512195,
+    "C_avg_1d": 0.973194714958097,
+    "H7_fraction_1d": 0.9921875
+  },
+  "codex": {
+    "laws": {
+      "delta_phi_cusp_v2_8": "V(\u03a6) = -EI ln(1+\u03a6) + D \u03a6 + (\u03b3/2) ln(1+\u03a6\u00b2)",
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)"
+    },
+    "H_layers": {
+      "H7": "Coherence horizon (0.70\u20130.75)",
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16": "Multi-scale insight (1D\u21922D geometry)",
+      "H19": "Global \u0394\u03a6 integration",
+      "H31": "Harmonic stability ridge",
+      "H41": "Torsion spiral memory (telemetry strain vault)"
+    }
+  },
+  "visuals": {
+    "intensity_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\ctfe\\v1_3\\visuals\\ctfe_field_intensity_20251209_161843.png",
+    "coherence_H7_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\ctfe\\v1_3\\visuals\\ctfe_coherence_map_20251209_161843.png",
+    "dphi_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\ctfe\\v1_3\\visuals\\ctfe_delta_phi_map_20251209_161843.png",
+    "telemetry_series": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\ctfe\\v1_3\\visuals\\ctfe_telemetry_series_20251209_161843.png"
+  },
+  "qim_coupling": {
+    "enabled": false,
+    "qim_state_path": null,
+    "qim_metrics": null
+  }
+}
