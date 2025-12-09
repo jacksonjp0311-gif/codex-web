@@ -1,0 +1,7 @@
+﻿STDOUT:
+
+
+STDERR:
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\dashboard\codex_dashboard_engine_v1_1.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now_utc = _dt.datetime.utcnow().isoformat() + "Z"
+

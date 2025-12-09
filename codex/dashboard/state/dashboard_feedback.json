@@ -1,0 +1,85 @@
+{
+  "module": "CodexAllOneDashboardFeedback",
+  "version": "v1.1",
+  "tag": "geometry_dashboard_20251209_103057",
+  "timestamp_utc": "2025-12-09T15:31:11.685525Z",
+  "codex_law": "C = (E\u00b7I)/(1+|\u0394\u03a6|), H\u2087 \u2248 0.70\u20130.75",
+  "summary": "Modules wired: 7 | Modules with visuals: 7/7 | Modules with metrics: 1/7",
+  "modules": [
+    {
+      "name": "QIM",
+      "C_avg": null,
+      "H7_fraction": null,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\visuals_v7_4\\qim_v7_4_fractal_time_trace.png",
+      "status": [
+        "visual_ok",
+        "metrics_missing"
+      ]
+    },
+    {
+      "name": "QCX",
+      "C_avg": null,
+      "H7_fraction": null,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_3\\visuals_v10_3\\qcx_v10_3_field_time_radius_strip.png",
+      "status": [
+        "visual_ok",
+        "metrics_missing"
+      ]
+    },
+    {
+      "name": "Black Horizon",
+      "C_avg": 7.50311233033128e-05,
+      "H7_fraction": 0,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\visuals\\black_horizon_v1_3_7_20251204_124712_coherence_H7.png",
+      "status": [
+        "visual_ok",
+        "metrics_ok"
+      ]
+    },
+    {
+      "name": "Solar Resonance",
+      "C_avg": null,
+      "H7_fraction": null,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\solar_resonance\\visuals\\v4_0\\solar_volume_scatter_v4_0_20251117T134233222341+0000.png",
+      "status": [
+        "visual_ok",
+        "metrics_missing"
+      ]
+    },
+    {
+      "name": "Third Eye",
+      "C_avg": null,
+      "H7_fraction": null,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\third_eye\\visuals\\third_eye_fusion_surface_v2_4.png",
+      "status": [
+        "visual_ok",
+        "metrics_missing"
+      ]
+    },
+    {
+      "name": "Bio Resonance",
+      "C_avg": null,
+      "H7_fraction": null,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\bio_resonance\\visuals\\v1_2\\bio_resonance_torus_field_v1_2.png",
+      "status": [
+        "visual_ok",
+        "metrics_missing"
+      ]
+    },
+    {
+      "name": "Baryogenesis",
+      "C_avg": null,
+      "H7_fraction": null,
+      "primary_visual": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\baryogenesis\\v1.0\\visuals\\baryogenesis_v1_0_delta_phi_heatmap.png",
+      "status": [
+        "visual_ok",
+        "metrics_missing"
+      ]
+    }
+  ],
+  "recommendations": [
+    "Feed this JSON to GPT Bridge v3.x for narrative synthesis.",
+    "Investigate modules flagged with 'visual_missing' or 'metrics_missing'.",
+    "Use repeated runs to track which modules stabilize around H7."
+  ]
+}
