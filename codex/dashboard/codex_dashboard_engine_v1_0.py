@@ -17,6 +17,7 @@ try:
 except Exception:
     HAVE_MPL = False
 
+
 def render_dashboard(state_path, output_png):
     if not HAVE_MPL:
         print("Matplotlib not available; cannot render dashboard PNG.", file=sys.stderr)
@@ -26,7 +27,7 @@ def render_dashboard(state_path, output_png):
         print(f"State JSON not found: {state_path}", file=sys.stderr)
         return 1
 
-    # NOTE: use utf-8-sig to handle potential UTF-8 BOM from PowerShell Set-Content
+    # utf-8-sig = tolerant to potential BOM from PowerShell writers
     with open(state_path, "r", encoding="utf-8-sig") as f:
         state = json.load(f)
 
@@ -98,6 +99,7 @@ def render_dashboard(state_path, output_png):
     plt.close(fig)
     return 0
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--state-json", required=True)
@@ -106,6 +108,7 @@ def main():
 
     rc = render_dashboard(args.state_json, args.output_png)
     return rc
+
 
 if __name__ == "__main__":
     sys.exit(main())
