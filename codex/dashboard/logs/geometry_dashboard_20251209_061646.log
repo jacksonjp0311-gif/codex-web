@@ -1,0 +1,22 @@
+﻿STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\dashboard\codex_dashboard_engine_v1_0.py", line 110, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\dashboard\codex_dashboard_engine_v1_0.py", line 106, in main
+    rc = render_dashboard(args.state_json, args.output_png)
+  File "C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\dashboard\codex_dashboard_engine_v1_0.py", line 30, in render_dashboard
+    state = json.load(f)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 335, in loads
+    raise JSONDecodeError("Unexpected UTF-8 BOM (decode using utf-8-sig)",
+                          s, 0)
+json.decoder.JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+

@@ -1,0 +1,61 @@
+﻿{
+    "module":  "CodexAllOneDashboard",
+    "version":  "X",
+    "tag":  "geometry_dashboard_20251209_061646",
+    "tesseract_tag":  "⧉ALL-ONE⧉geometry-dashboard⧉ΔΦ⧉H7⧉H16⧉H19⧉H31⧉H41⧉",
+    "timestamp_utc":  "2025-12-09T11:16:47.8917390Z",
+    "codex_law":  "C = (E·I)/(1+|ΔΦ|), H₇ ≈ 0.70–0.75",
+    "H_layers":  {
+                     "H7":  "Coherence horizon (0.70–0.75 ridge)",
+                     "H16":  "Multi-scale insight (cross-resolution stability)",
+                     "H19":  "Global ΔΦ integration across modules",
+                     "H31":  "Harmonic stability law (core:shell:void ≈ 1:9:10)",
+                     "H41":  "Torsion spirals mode (strain-stored memory vault)"
+                 },
+    "modules":  [
+                    {
+                        "name":  "QIM",
+                        "module_type":  "quantum_imaging",
+                        "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum_imaging\\state_jpk_check\\jpk_state_20251203_133902.json",
+                        "tag":  null,
+                        "C_avg":  null,
+                        "H7_fraction":  null,
+                        "r_h":  null,
+                        "dr_halfmax":  null,
+                        "primary_visual":  null
+                    },
+                    {
+                        "name":  "QCX",
+                        "module_type":  "quantum_crystal",
+                        "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\quantum.crystal\\v10_3\\state_v10_3\\qcx_v10_3_state_20251201_173421.json",
+                        "tag":  null,
+                        "C_avg":  null,
+                        "H7_fraction":  null,
+                        "r_h":  null,
+                        "dr_halfmax":  null,
+                        "primary_visual":  null
+                    },
+                    {
+                        "name":  "Black Horizon",
+                        "module_type":  "black_horizon",
+                        "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\state\\black_horizon_v1_3_7_20251204_124712_state.json",
+                        "tag":  "black_horizon_v1_3_7_20251204_124712",
+                        "C_avg":  7.50311233033128E-05,
+                        "H7_fraction":  0,
+                        "r_h":  null,
+                        "dr_halfmax":  null,
+                        "primary_visual":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\black_horizon\\v1_3\\visuals\\black_horizon_v1_3_7_20251204_124712_coherence_H7.png"
+                    },
+                    {
+                        "name":  "Solar Resonance",
+                        "module_type":  "solar_resonance",
+                        "state_path":  "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\solar_resonance\\state\\v3_2\\solar_resonance_state_v3_2.json",
+                        "tag":  null,
+                        "C_avg":  null,
+                        "H7_fraction":  null,
+                        "r_h":  null,
+                        "dr_halfmax":  null,
+                        "primary_visual":  null
+                    }
+                ]
+}
