@@ -1,0 +1,16 @@
+{
+  "tag": "weather_temp_tokyo_v2_1_20251209_171240",
+  "version": "2.1",
+  "profile_id": "weather_temp_tokyo",
+  "profile_label": "Weather Temp (Tokyo)",
+  "provider": "openmeteo_temp",
+  "used_real_data": true,
+  "C_avg_ref": 0.07206854605582318,
+  "H7_fraction": 0.04888916015625,
+  "lambda_eff": 0.17412204766455158,
+  "collapse_state": "metastable",
+  "delta_phi_global": 0.0012859777457102004,
+  "r_h": 0.8399005248133318,
+  "dr_halfmax": 0.11968172220174877,
+  "C_cusp": 0.5121951219512195
+}

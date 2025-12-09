@@ -1,0 +1,10 @@
+﻿{
+    "id":  "weather_temp_nyc",
+    "label":  "Weather Temp (NYC)",
+    "provider":  "openmeteo_temp",
+    "lat":  40.7128,
+    "lon":  -74.006,
+    "extra":  {
+
+              }
+}

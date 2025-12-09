@@ -1,0 +1,16 @@
+{
+  "tag": "weather_temp_nyc_v2_1_20251209_171237",
+  "version": "2.1",
+  "profile_id": "weather_temp_nyc",
+  "profile_label": "Weather Temp (NYC)",
+  "provider": "openmeteo_temp",
+  "used_real_data": true,
+  "C_avg_ref": 0.07309828484723709,
+  "H7_fraction": 0.04925537109375,
+  "lambda_eff": 0.09763365895564052,
+  "collapse_state": "metastable",
+  "delta_phi_global": 0.0013044487352539555,
+  "r_h": 0.8481544366893146,
+  "dr_halfmax": 0.119681722201749,
+  "C_cusp": 0.5121951219512195
+}

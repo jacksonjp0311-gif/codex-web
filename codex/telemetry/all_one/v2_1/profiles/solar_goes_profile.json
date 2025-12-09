@@ -1,0 +1,10 @@
+﻿{
+    "id":  "solar_goes",
+    "label":  "Solar X-ray (GOES)",
+    "provider":  "goes_xray",
+    "lat":  null,
+    "lon":  null,
+    "extra":  {
+
+              }
+}

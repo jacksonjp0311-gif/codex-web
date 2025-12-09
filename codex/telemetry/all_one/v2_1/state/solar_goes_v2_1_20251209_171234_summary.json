@@ -1,0 +1,16 @@
+{
+  "tag": "solar_goes_v2_1_20251209_171234",
+  "version": "2.1",
+  "profile_id": "solar_goes",
+  "profile_label": "Solar X-ray (GOES)",
+  "provider": "goes_xray",
+  "used_real_data": true,
+  "C_avg_ref": 0.07466239175488121,
+  "H7_fraction": 0.05047607421875,
+  "lambda_eff": 0.01747234439077964,
+  "collapse_state": "metastable",
+  "delta_phi_global": 0.001332469251045508,
+  "r_h": 0.8687892163792712,
+  "dr_halfmax": 0.12380867813974028,
+  "C_cusp": 0.5121951219512195
+}

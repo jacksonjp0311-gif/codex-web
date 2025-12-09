@@ -1,0 +1,10 @@
+﻿{
+    "id":  "weather_precip_sp",
+    "label":  "Weather Precip (São Paulo)",
+    "provider":  "openmeteo_precip",
+    "lat":  -23.5505,
+    "lon":  -46.6333,
+    "extra":  {
+
+              }
+}

@@ -1,0 +1,10 @@
+﻿{
+    "id":  "weather_wind_london",
+    "label":  "Weather Wind (London)",
+    "provider":  "openmeteo_wind",
+    "lat":  51.5074,
+    "lon":  -0.1278,
+    "extra":  {
+
+              }
+}

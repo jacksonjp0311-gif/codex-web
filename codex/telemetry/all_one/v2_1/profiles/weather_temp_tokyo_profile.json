@@ -1,0 +1,10 @@
+﻿{
+    "id":  "weather_temp_tokyo",
+    "label":  "Weather Temp (Tokyo)",
+    "provider":  "openmeteo_temp",
+    "lat":  35.6895,
+    "lon":  139.6917,
+    "extra":  {
+
+              }
+}

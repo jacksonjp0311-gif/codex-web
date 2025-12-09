@@ -1,0 +1,51 @@
+{
+  "module": "TELEMETRY_ALL_ONE",
+  "version": "2.1",
+  "tag": "weather_temp_nyc_v2_1_20251209_171237",
+  "timestamp_utc": "2025-12-09T17:12:38.686791Z",
+  "source": "codex_telemetry_all_one_v2_1",
+  "telemetry": {
+    "profile_id": "weather_temp_nyc",
+    "profile_label": "Weather Temp (NYC)",
+    "provider": "openmeteo_temp",
+    "used_real_data": true,
+    "N_points": 48,
+    "series_name": "Open-Meteo temperature_2m"
+  },
+  "metrics_ref": {
+    "C_avg_ref": 0.07309828484723709,
+    "H7_fraction_ref": 0.04925537109375,
+    "r_h": 0.8481544366893146,
+    "dr_halfmax": 0.119681722201749,
+    "delta_phi_global": 0.0013044487352539555,
+    "delta_phi_1d_mean": 0.18861607142850403,
+    "lambda_eff": 0.09763365895564052,
+    "collapse_state": "metastable",
+    "EI_ref": 1.0,
+    "gamma_ref": 0.35,
+    "phi_c": 0.9523809523809526,
+    "C_cusp": 0.5121951219512195,
+    "C_avg_1d": 0.8540885555471934,
+    "H7_fraction_1d": 0.9375
+  },
+  "codex": {
+    "laws": {
+      "delta_phi_cusp_v2_8": "V(\u03a6) = -EI ln(1+\u03a6) + D \u03a6 + (\u03b3/2) ln(1+\u03a6\u00b2)",
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)"
+    },
+    "H_layers": {
+      "H7": "Coherence horizon (0.70\u20130.75)",
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16": "Telemetry \u2192 geometry (1D\u21922D)",
+      "H19": "Global \u0394\u03a6 integration across profiles",
+      "H31": "Harmonic stability ridge",
+      "H41": "Torsion spiral memory (telemetry strain vault)"
+    }
+  },
+  "visuals": {
+    "intensity_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_temp_nyc_intensity_20251209_171237.png",
+    "coherence_H7_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_temp_nyc_coherence_20251209_171237.png",
+    "dphi_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_temp_nyc_dphi_20251209_171237.png",
+    "telemetry_series": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_temp_nyc_series_20251209_171237.png"
+  }
+}

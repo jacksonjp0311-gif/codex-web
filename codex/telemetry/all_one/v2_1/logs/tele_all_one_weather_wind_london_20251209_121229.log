@@ -1,0 +1,10 @@
+﻿STDOUT:
+{"state_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\state\\weather_wind_london_v2_1_20251209_171242_state.json", "summary_path": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\state\\weather_wind_london_v2_1_20251209_171242_summary.json"}
+
+
+STDERR:
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\telemetry\all_one\v2_1\engine\telemetry_all_one_engine_v2_1.py:445: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now_tag = _dt.datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\telemetry\all_one\v2_1\engine\telemetry_all_one_engine_v2_1.py:460: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now_utc = _dt.datetime.utcnow().isoformat() + "Z"
+

@@ -1,0 +1,16 @@
+{
+  "tag": "synthetic_atmosphere_v2_1_20251209_171247",
+  "version": "2.1",
+  "profile_id": "synthetic_atmosphere",
+  "profile_label": "Synthetic Atmosphere (control)",
+  "provider": "synthetic_weather",
+  "used_real_data": false,
+  "C_avg_ref": 0.07428725505841137,
+  "H7_fraction": 0.05023193359375,
+  "lambda_eff": 0.03053474344820844,
+  "collapse_state": "metastable",
+  "delta_phi_global": 0.0013254413766758066,
+  "r_h": 0.8646622604412799,
+  "dr_halfmax": 0.11968172220174877,
+  "C_cusp": 0.5121951219512195
+}

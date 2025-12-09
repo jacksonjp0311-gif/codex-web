@@ -1,0 +1,10 @@
+﻿{
+    "id":  "synthetic_atmosphere",
+    "label":  "Synthetic Atmosphere (control)",
+    "provider":  "synthetic_weather",
+    "lat":  null,
+    "lon":  null,
+    "extra":  {
+
+              }
+}

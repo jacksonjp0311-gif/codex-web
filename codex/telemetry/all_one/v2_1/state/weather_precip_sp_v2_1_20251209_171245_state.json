@@ -1,0 +1,51 @@
+{
+  "module": "TELEMETRY_ALL_ONE",
+  "version": "2.1",
+  "tag": "weather_precip_sp_v2_1_20251209_171245",
+  "timestamp_utc": "2025-12-09T17:12:45.921720Z",
+  "source": "codex_telemetry_all_one_v2_1",
+  "telemetry": {
+    "profile_id": "weather_precip_sp",
+    "profile_label": "Weather Precip (S\u00e3o Paulo)",
+    "provider": "openmeteo_precip",
+    "used_real_data": true,
+    "N_points": 48,
+    "series_name": "Open-Meteo precipitation"
+  },
+  "metrics_ref": {
+    "C_avg_ref": 0.14874074909185758,
+    "H7_fraction_ref": 0.10028076171875,
+    "r_h": 0.8068848773094011,
+    "dr_halfmax": 0.2517443122174716,
+    "delta_phi_global": 0.0005908692111019774,
+    "delta_phi_1d_mean": 1.885416666660382,
+    "lambda_eff": 0.9759514469146225,
+    "collapse_state": "near-cusp",
+    "EI_ref": 1.0,
+    "gamma_ref": 0.35,
+    "phi_c": 0.9523809523809526,
+    "C_cusp": 0.5121951219512195,
+    "C_avg_1d": 0.6455811328017504,
+    "H7_fraction_1d": 0.4166666666666667
+  },
+  "codex": {
+    "laws": {
+      "delta_phi_cusp_v2_8": "V(\u03a6) = -EI ln(1+\u03a6) + D \u03a6 + (\u03b3/2) ln(1+\u03a6\u00b2)",
+      "universal_truth": "C = (E*I)/(1+|\u0394\u03a6|)"
+    },
+    "H_layers": {
+      "H7": "Coherence horizon (0.70\u20130.75)",
+      "H7B": "\u0394\u03a6 Cusp Law v2.8 irreversible kernel",
+      "H16": "Telemetry \u2192 geometry (1D\u21922D)",
+      "H19": "Global \u0394\u03a6 integration across profiles",
+      "H31": "Harmonic stability ridge",
+      "H41": "Torsion spiral memory (telemetry strain vault)"
+    }
+  },
+  "visuals": {
+    "intensity_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_precip_sp_intensity_20251209_171245.png",
+    "coherence_H7_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_precip_sp_coherence_20251209_171245.png",
+    "dphi_png": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_precip_sp_dphi_20251209_171245.png",
+    "telemetry_series": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\telemetry\\all_one\\v2_1\\visuals\\weather_precip_sp_series_20251209_171245.png"
+  }
+}

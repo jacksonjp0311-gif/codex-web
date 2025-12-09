@@ -1,0 +1,16 @@
+{
+  "tag": "weather_precip_sp_v2_1_20251209_171245",
+  "version": "2.1",
+  "profile_id": "weather_precip_sp",
+  "profile_label": "Weather Precip (S\u00e3o Paulo)",
+  "provider": "openmeteo_precip",
+  "used_real_data": true,
+  "C_avg_ref": 0.14874074909185758,
+  "H7_fraction": 0.10028076171875,
+  "lambda_eff": 0.9759514469146225,
+  "collapse_state": "near-cusp",
+  "delta_phi_global": 0.0005908692111019774,
+  "r_h": 0.8068848773094011,
+  "dr_halfmax": 0.2517443122174716,
+  "C_cusp": 0.5121951219512195
+}
