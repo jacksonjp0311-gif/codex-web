@@ -26,7 +26,8 @@ def render_dashboard(state_path, output_png):
         print(f"State JSON not found: {state_path}", file=sys.stderr)
         return 1
 
-    with open(state_path, "r", encoding="utf-8") as f:
+    # NOTE: use utf-8-sig to handle potential UTF-8 BOM from PowerShell Set-Content
+    with open(state_path, "r", encoding="utf-8-sig") as f:
         state = json.load(f)
 
     modules = state.get("modules", [])
