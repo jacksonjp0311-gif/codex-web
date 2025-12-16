@@ -1,0 +1,16 @@
+{
+  "tag": "weather_wind_london_v2_1_20251216_170136",
+  "version": "2.1",
+  "profile_id": "weather_wind_london",
+  "profile_label": "Weather Wind (London)",
+  "provider": "openmeteo_wind",
+  "used_real_data": true,
+  "C_avg_ref": 0.07232205606475241,
+  "H7_fraction": 0.04864501953125,
+  "lambda_eff": 0.1493848333747549,
+  "collapse_state": "metastable",
+  "delta_phi_global": 0.0012903803442903497,
+  "r_h": 0.8399005248133318,
+  "dr_halfmax": 0.11968172220174877,
+  "C_cusp": 0.5121951219512195
+}
