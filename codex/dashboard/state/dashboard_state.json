@@ -1,9 +1,9 @@
 ﻿{
     "module":  "CodexAllOneDashboard",
-    "version":  "v1.1",
-    "tag":  "geometry_dashboard_20251209_103057",
+    "version":  "v1.3",
+    "tag":  "geometry_dashboard_20251216_112056",
     "tesseract_tag":  "⧉ALL-ONE⧉geometry-dashboard⧉ΔΦ⧉H7⧉H16⧉H19⧉H31⧉H41⧉",
-    "timestamp_utc":  "2025-12-09T15:30:59.2019785Z",
+    "timestamp_utc":  "2025-12-16T16:20:57.8009386Z",
     "codex_law":  "C = (E·I)/(1+|ΔΦ|), H₇ ≈ 0.70–0.75",
     "H_layers":  {
                      "H7":  "Coherence horizon (0.70–0.75 ridge)",
