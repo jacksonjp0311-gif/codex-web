@@ -1,0 +1,7 @@
+﻿{
+  "version": "1.9",
+  "scope": [
+    { "id": "codex_core", "path": "codex" },
+    { "id": "qim", "path": "codex/quantum_imaging" }
+  ]
+}

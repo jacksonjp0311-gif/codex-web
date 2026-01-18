@@ -1,0 +1,7 @@
+﻿{
+  "version": "1.9",
+  "timestamp": "2026-01-01T00:00:00Z",
+  "frame_id": "default-20260101-001",
+  "seq": "001",
+  "changed_routes": ["codex_core"]
+}

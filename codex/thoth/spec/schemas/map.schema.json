@@ -1,0 +1,24 @@
+﻿{
+  "\": "https://json-schema.org/draft/2020-12/schema",
+  "title": "THOTH map.schema.json",
+  "type": "object",
+  "required": ["version", "scope"],
+  "properties": {
+    "version": { "type": "string" },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path"],
+        "properties": {
+          "id": { "type": "string" },
+          "path": { "type": "string" },
+          "include": { "type": "array", "items": { "type": "string" } },
+          "exclude": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

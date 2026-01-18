@@ -1,0 +1,14 @@
+﻿{
+  "\": "https://json-schema.org/draft/2020-12/schema",
+  "title": "THOTH snapshot.schema.json",
+  "type": "object",
+  "required": ["version", "timestamp", "frame_id", "seq", "changed_routes"],
+  "properties": {
+    "version": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "frame_id": { "type": "string" },
+    "seq": { "type": "string" },
+    "changed_routes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

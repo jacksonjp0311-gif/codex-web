@@ -1,0 +1,25 @@
+﻿{
+  "\": "https://json-schema.org/draft/2020-12/schema",
+  "title": "THOTH index.schema.json",
+  "type": "object",
+  "required": ["version", "timestamp", "routes"],
+  "properties": {
+    "version": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "routes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["path", "file_count", "byte_count", "route_hash"],
+        "properties": {
+          "path": { "type": "string" },
+          "file_count": { "type": "integer" },
+          "byte_count": { "type": "integer" },
+          "route_hash": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

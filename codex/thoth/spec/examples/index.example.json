@@ -1,0 +1,7 @@
+﻿{
+  "version": "1.9",
+  "timestamp": "2026-01-01T00:00:00Z",
+  "routes": {
+    "codex_core": { "path": "codex", "file_count": 0, "byte_count": 0, "route_hash": "0" }
+  }
+}

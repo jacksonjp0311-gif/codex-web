@@ -1,0 +1,7 @@
+﻿{
+  "version": "1.9",
+  "scope": [
+    { "id": "thoth_self", "path": "codex/thoth" },
+    { "id": "codex_core", "path": "codex" }
+  ]
+}

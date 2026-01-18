@@ -1,0 +1,21 @@
+{
+  "version": "1.9",
+  "timestamp": "2026-01-18T22:43:36.264270Z",
+  "frame_id": "default-20260118-001",
+  "seq": "001",
+  "declared_scope_map": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\thoth\\config\\map.json",
+  "changed_routes": [],
+  "non_claims": [
+    "no execution semantics",
+    "no interpretation logic",
+    "no agent behavior",
+    "no runtime coupling"
+  ],
+  "invariants": [
+    "append_only_history",
+    "no_retroactive_enrichment",
+    "observation_before_interpretation",
+    "structure_over_semantics",
+    "scope_sovereignty"
+  ]
+}

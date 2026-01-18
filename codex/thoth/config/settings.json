@@ -1,0 +1,11 @@
+﻿{
+  "version": "1.9",
+  "caps": {
+    "max_files_per_route": 5000,
+    "max_bytes_per_file": 200000,
+    "max_text_chars_per_file": 20000,
+    "max_depth": 32
+  },
+  "text_extensions": [".md",".txt",".ps1",".py",".js",".mjs",".json",".yaml",".yml",".tex",".html",".css"],
+  "binary_extensions": [".png",".jpg",".jpeg",".gif",".pdf",".zip",".7z",".exe",".dll",".npy",".npz",".bin",".pkl"]
+}

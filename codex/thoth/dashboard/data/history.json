@@ -1,0 +1,18 @@
+{
+  "latest": {
+    "timestamp": "2026-01-18T22:43:36.264270Z",
+    "frame_id": "default-20260118-001",
+    "seq": "001",
+    "changed_routes": [],
+    "snapshot_dir": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/thoth/runtime/memory/2026-01-18/001"
+  },
+  "items": [
+    {
+      "timestamp": "2026-01-18T22:43:36.264270Z",
+      "frame_id": "default-20260118-001",
+      "seq": "001",
+      "changed_routes": [],
+      "snapshot_dir": "C:/Users/jacks/OneDrive/Desktop/Codex Web/codex/thoth/runtime/memory/2026-01-18/001"
+    }
+  ]
+}
