@@ -1,0 +1,22 @@
+{
+  "protocol": "CodexPrimeOmegaBasin",
+  "version": "1.0",
+  "timestamp": "2026-01-27T16:58:09.563394Z",
+  "prime_limit": 200000,
+  "noise_level": 0.05,
+  "metrics": {
+    "omega_diff_L1": 0.022927207872271538,
+    "noise_immunity_index": 0.9775866672664216,
+    "basin_drop_index": 0.9974339755454359
+  },
+  "visuals": {
+    "dphi_baseline": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\primes\\omega_basin\\v1_0\\visuals\\prime_dphi_baseline.png",
+    "dphi_noisy": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\primes\\omega_basin\\v1_0\\visuals\\prime_dphi_noisy.png",
+    "omega_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\primes\\omega_basin\\v1_0\\visuals\\prime_omega_noise_immunity.png"
+  },
+  "codex": {
+    "H7": 0.7,
+    "H20": "\u03a9-basin invariance",
+    "law": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+  }
+}
