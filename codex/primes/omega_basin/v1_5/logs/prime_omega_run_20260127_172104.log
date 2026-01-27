@@ -1,0 +1,27 @@
+PRIME OMEGA-BASIN v1.5 starting...
+prime_limit       : 250000
+T                 : 96
+noise_sweep       : [0.0, 0.02, 0.05, 0.08, 0.12, 0.2, 0.3]
+H7                : 0.7
+auto_extend_sweep : False
+extend_max        : 1.5
+extend_step       : 0.1
+primes_count      : 22044
+gaps_count        : 22043
+gap_mean          : 11.3409
+gap_std           : 8.94027
+gap_max           : 86
+dphi_std_base     : 4.71287
+omega_mean_base   : 0.306761
+noise=0 sigma=0 immunity=1 margin=+0.3 omega_diff=0 omega_time=0
+noise=0.02 sigma=0.0942575 immunity=0.989898 margin=+0.289898 omega_diff=0.0102056 omega_time=0.00123852
+noise=0.05 sigma=0.235644 immunity=0.976287 margin=+0.276287 omega_diff=0.024289 omega_time=0.00379515
+noise=0.08 sigma=0.37703 immunity=0.963718 margin=+0.263718 omega_diff=0.0376484 omega_time=0.0054411
+noise=0.12 sigma=0.565545 immunity=0.948816 margin=+0.248816 omega_diff=0.0539446 omega_time=0.0067664
+noise=0.2 sigma=0.942575 immunity=0.925668 margin=+0.225668 omega_diff=0.0803015 omega_time=0.00976707
+noise=0.3 sigma=1.41386 immunity=0.905134 margin=+0.205134 omega_diff=0.104809 omega_time=0.0152856
+basin_width (max noise with immunity >= H7) : 0.3
+worst_H7_margin                            : +0.205134
+extended_sweep                             : False
+State -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\primes\omega_basin\v1_5\state\prime_omega_state_20260127_172104.json
+PRIME OMEGA-BASIN v1.5 complete.

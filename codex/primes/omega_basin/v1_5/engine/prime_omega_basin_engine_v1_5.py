@@ -1,0 +1,392 @@
+﻿#!/usr/bin/env python3
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  PRIME Ω-BASIN v1.5 — BASIN-WIDTH + EXTENDED SWEEP            ║
+# ║  v1.5: adds basin_width + H7 margins; optional extend sweep   ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+import sys, json, math, traceback
+from pathlib import Path
+from datetime import datetime, timezone
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+H7 = 0.70
+
+def now_iso():
+    return datetime.now(timezone.utc).isoformat().replace("+00:00","Z")
+
+def ascii_safe(s: str) -> str:
+    return s.encode("ascii", "replace").decode("ascii")
+
+def primes_up_to(N: int) -> np.ndarray:
+    sieve = np.ones(N+1, dtype=bool)
+    sieve[:2] = False
+    r = int(N**0.5)
+    for i in range(2, r+1):
+        if sieve[i]:
+            sieve[i*i:N+1:i] = False
+    return np.nonzero(sieve)[0]
+
+def build_gap_field(gaps: np.ndarray, T: int) -> np.ndarray:
+    n = len(gaps)
+    V = np.zeros((T, n), dtype=np.float32)
+    x = np.linspace(0.0, 1.0, n, dtype=np.float32)
+    for t in range(T):
+        theta = 2.0 * math.pi * t / float(T)
+        mod = 1.0 + 0.35*np.sin(theta) + 0.20*np.cos(2.0*theta + 6.0*x)
+        V[t] = gaps * mod
+    return V
+
+def dphi(V: np.ndarray) -> np.ndarray:
+    gx = np.gradient(V, axis=1)
+    gt = np.gradient(V, axis=0)
+    return np.sqrt(gx*gx + gt*gt)
+
+def omega(dP: np.ndarray) -> np.ndarray:
+    return 1.0/(1.0 + np.abs(dP))
+
+def parse_noise_levels(csv: str):
+    levels = []
+    for x in (csv or "").split(","):
+        x = x.strip()
+        if not x:
+            continue
+        levels.append(float(x))
+    if not levels:
+        levels = [0.0, 0.05, 0.10]
+    # sorted + unique for stability
+    levels = sorted(list(dict.fromkeys(levels)))
+    return levels
+
+def extend_levels(levels, extend_max, extend_step):
+    if not levels:
+        levels = [0.0]
+    m = float(max(levels))
+    x = m + float(extend_step)
+    while x <= float(extend_max) + 1e-12:
+        levels.append(float(x))
+        x += float(extend_step)
+    # sorted unique again
+    return sorted(list(dict.fromkeys(levels)))
+
+def main(root, state_d, vis_d, ledger_d, logs_d, limit, T, noise_levels_csv, auto_extend, extend_max, extend_step):
+    root = Path(root)
+    state_d  = Path(state_d)
+    vis_d    = Path(vis_d)
+    ledger_d = Path(ledger_d)
+    logs_d   = Path(logs_d)
+
+    for d in (state_d, vis_d, ledger_d, logs_d):
+        d.mkdir(parents=True, exist_ok=True)
+
+    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    log_path = logs_d / f"prime_omega_run_{ts}.log"
+
+    def log(msg: str):
+        s = ascii_safe(msg)
+        print(s)
+        with log_path.open("a", encoding="utf-8") as f:
+            f.write(s + "\n")
+
+    try:
+        noise_levels = parse_noise_levels(noise_levels_csv)
+
+        log("PRIME OMEGA-BASIN v1.5 starting...")
+        log(f"prime_limit       : {limit}")
+        log(f"T                 : {T}")
+        log(f"noise_sweep       : {noise_levels}")
+        log(f"H7                : {H7}")
+        log(f"auto_extend_sweep : {bool(auto_extend)}")
+        log(f"extend_max        : {float(extend_max)}")
+        log(f"extend_step       : {float(extend_step)}")
+
+        # 1) primes + gaps
+        P = primes_up_to(int(limit))
+        gaps = np.diff(P).astype(np.float32)
+        n = int(gaps.shape[0])
+
+        gap_mean = float(gaps.mean()) if n > 0 else 0.0
+        gap_std  = float(gaps.std())  if n > 0 else 0.0
+        gap_max  = float(gaps.max())  if n > 0 else 0.0
+
+        log(f"primes_count      : {int(P.shape[0])}")
+        log(f"gaps_count        : {n}")
+        log(f"gap_mean          : {gap_mean:.6g}")
+        log(f"gap_std           : {gap_std:.6g}")
+        log(f"gap_max           : {gap_max:.6g}")
+
+        # 2) baseline ΔΦ/Ω
+        V  = build_gap_field(gaps, T=int(T))
+        dP = dphi(V)
+        Om = omega(dP)
+
+        dP_std = float(np.std(dP)) if dP.size else 0.0
+        omega_t = np.mean(Om, axis=1)
+
+        omega_mean_base = float(np.mean(Om)) if Om.size else 0.0
+
+        log(f"dphi_std_base     : {dP_std:.6g}")
+        log(f"omega_mean_base   : {omega_mean_base:.6g}")
+
+        # 3) REFERENCE-ANCHORED sweep:
+        rng = np.random.default_rng(1337)
+        base_noise = rng.normal(0.0, 1.0, size=dP.shape).astype(np.float32)
+
+        def run_sweep(levels):
+            rows = []
+            immunity = []
+            omega_diff = []
+            omega_time = []
+            sigmas = []
+            margins = []
+            omega_t_max = None
+
+            max_noise_level = max(levels) if levels else 0.0
+
+            for nl in levels:
+                sigma = float(nl) * max(dP_std, 1e-12)
+                dP2 = dP + (sigma * base_noise)
+                Om2 = omega(dP2)
+
+                omega_diff_L1 = float(np.mean(np.abs(Om2 - Om)))
+                omega_t2 = np.mean(Om2, axis=1)
+                omega_time_L1 = float(np.mean(np.abs(omega_t2 - omega_t)))
+
+                noise_immunity_index = 1.0/(1.0 + max(0.0, omega_diff_L1))
+                drop = float(np.mean(Om) - np.mean(Om2))
+                basin_drop_index = 1.0/(1.0 + max(0.0, drop))
+
+                margin = float(noise_immunity_index - H7)
+
+                rows.append({
+                    "timestamp": now_iso(),
+                    "version": "1.5",
+                    "prime_limit": int(limit),
+                    "T": int(T),
+                    "noise_level": float(nl),
+                    "noise_sigma": float(sigma),
+                    "omega_diff_L1": omega_diff_L1,
+                    "omega_time_L1": omega_time_L1,
+                    "noise_immunity_index": noise_immunity_index,
+                    "basin_drop_index": basin_drop_index,
+                    "H7_margin": margin
+                })
+
+                immunity.append(noise_immunity_index)
+                omega_diff.append(omega_diff_L1)
+                omega_time.append(omega_time_L1)
+                sigmas.append(sigma)
+                margins.append(margin)
+
+                if abs(float(nl) - float(max_noise_level)) < 1e-12:
+                    omega_t_max = omega_t2.astype(np.float64)
+
+                log(f"noise={nl:.4g} sigma={sigma:.6g} immunity={noise_immunity_index:.6g} margin={margin:+.6g} omega_diff={omega_diff_L1:.6g} omega_time={omega_time_L1:.6g}")
+
+            # collapse detection
+            collapse_idx = None
+            for i, val in enumerate(immunity):
+                if val < H7:
+                    collapse_idx = i
+                    break
+
+            collapse_noise = float(levels[collapse_idx]) if collapse_idx is not None else None
+            collapse_sigma = float(sigmas[collapse_idx]) if collapse_idx is not None else None
+
+            # basin width: max noise with immunity >= H7
+            last_stable_idx = None
+            for i, val in enumerate(immunity):
+                if val >= H7:
+                    last_stable_idx = i
+            basin_width = float(levels[last_stable_idx]) if last_stable_idx is not None else 0.0
+
+            worst_margin = float(min(margins)) if margins else 0.0
+
+            return {
+                "levels": levels,
+                "rows": rows,
+                "immunity": immunity,
+                "omega_diff": omega_diff,
+                "omega_time": omega_time,
+                "sigmas": sigmas,
+                "margins": margins,
+                "omega_t_max": omega_t_max,
+                "collapse_idx": collapse_idx,
+                "collapse_noise": collapse_noise,
+                "collapse_sigma": collapse_sigma,
+                "basin_width": basin_width,
+                "worst_margin": worst_margin
+            }
+
+        sweep = run_sweep(noise_levels)
+
+        # Optional extend sweep only if no collapse observed and user requested it
+        extended = False
+        if bool(auto_extend) and (sweep["collapse_idx"] is None):
+            noise_levels_ext = extend_levels(list(sweep["levels"]), extend_max, extend_step)
+            if len(noise_levels_ext) > len(sweep["levels"]):
+                log(f"EXTEND: no collapse in initial sweep; extending to {max(noise_levels_ext):g} step {extend_step:g}")
+                sweep = run_sweep(noise_levels_ext)
+                extended = True
+
+        levels = sweep["levels"]
+        immunity = sweep["immunity"]
+        omega_diff = sweep["omega_diff"]
+        omega_time = sweep["omega_time"]
+        margins = sweep["margins"]
+        omega_t_max = sweep["omega_t_max"]
+
+        collapse_noise = sweep["collapse_noise"]
+        collapse_sigma = sweep["collapse_sigma"]
+        collapse_detected = sweep["collapse_idx"] is not None
+
+        basin_width = sweep["basin_width"]
+        worst_margin = sweep["worst_margin"]
+
+        log(f"basin_width (max noise with immunity >= H7) : {basin_width:g}")
+        log(f"worst_H7_margin                            : {worst_margin:+.6g}")
+        log(f"extended_sweep                             : {bool(extended)}")
+
+        # 5) visuals
+        p_curve = vis_d / f"prime_omega_immunity_vs_noise_{ts}.png"
+        p_diff  = vis_d / f"prime_omega_diff_vs_noise_{ts}.png"
+        p_time  = vis_d / f"prime_omega_time_vs_noise_{ts}.png"
+        p_margin = vis_d / f"prime_omega_H7_margin_vs_noise_{ts}.png"
+        p_curve_overlay = vis_d / f"prime_omega_curve_overlay_maxnoise_{ts}.png"
+
+        plt.figure()
+        plt.plot(levels, immunity, marker="o")
+        plt.axhline(H7, linestyle="--")
+        plt.title("Noise immunity vs noise level (H7 threshold)")
+        plt.xlabel("noise_level")
+        plt.ylabel("noise_immunity_index")
+        if collapse_noise is not None:
+            plt.axvline(collapse_noise, linestyle=":")
+        plt.savefig(p_curve, bbox_inches="tight")
+        plt.close()
+
+        plt.figure()
+        plt.plot(levels, omega_diff, marker="o")
+        plt.title("Omega_diff_L1 vs noise level")
+        plt.xlabel("noise_level")
+        plt.ylabel("omega_diff_L1")
+        plt.savefig(p_diff, bbox_inches="tight")
+        plt.close()
+
+        plt.figure()
+        plt.plot(levels, omega_time, marker="o")
+        plt.title("Omega_time_L1 vs noise level")
+        plt.xlabel("noise_level")
+        plt.ylabel("omega_time_L1")
+        plt.savefig(p_time, bbox_inches="tight")
+        plt.close()
+
+        plt.figure()
+        plt.plot(levels, margins, marker="o")
+        plt.axhline(0.0, linestyle="--")
+        plt.title("H7 margin vs noise level (immunity - H7)")
+        plt.xlabel("noise_level")
+        plt.ylabel("H7_margin")
+        plt.savefig(p_margin, bbox_inches="tight")
+        plt.close()
+
+        # overlay Ω(t) baseline vs Ω(t) at max noise
+        if omega_t_max is not None:
+            plt.figure()
+            plt.plot(omega_t, label="Omega(t) baseline")
+            plt.plot(omega_t_max, label=f"Omega(t) noisy (noise={max(levels):g})", linestyle="--")
+            plt.legend()
+            plt.title("Omega(t) overlay at max noise level")
+            plt.xlabel("t")
+            plt.ylabel("Omega(t)")
+            plt.savefig(p_curve_overlay, bbox_inches="tight")
+            plt.close()
+
+        # 6) state JSON
+        state_path = state_d / f"prime_omega_state_{ts}.json"
+        state = {
+            "protocol": "CodexPrimeOmegaBasin",
+            "version": "1.5",
+            "timestamp": now_iso(),
+            "prime_limit": int(limit),
+            "T": int(T),
+            "noise_sweep": levels,
+            "extended_sweep": bool(extended),
+            "baseline": {
+                "gap_mean": gap_mean,
+                "gap_std":  gap_std,
+                "gap_max":  gap_max,
+                "dphi_std": dP_std,
+                "omega_mean": omega_mean_base
+            },
+            "sweep_rows": sweep["rows"],
+            "collapse": {
+                "H7": H7,
+                "collapse_detected": bool(collapse_detected),
+                "collapse_noise_level": collapse_noise,
+                "collapse_sigma": collapse_sigma
+            },
+            "basin": {
+                "basin_width_noise_level": float(basin_width),
+                "worst_H7_margin": float(worst_margin)
+            },
+            "visuals": {
+                "immunity_vs_noise": str(p_curve),
+                "omega_diff_vs_noise": str(p_diff),
+                "omega_time_vs_noise": str(p_time),
+                "H7_margin_vs_noise": str(p_margin),
+                "omega_t_overlay_maxnoise": str(p_curve_overlay) if omega_t_max is not None else None
+            },
+            "codex": {
+                "H7": H7,
+                "H19": "Global dPhi integration",
+                "H20": "Omega-basin invariance / noise-immunity",
+                "law": "Omega = 1/(1+|dPhi|)",
+                "note_v1_5": "BASIN WIDTH: max noise level sustaining immunity >= H7; margin curve tracked. Reference-anchored sweep preserved."
+            }
+        }
+        state_path.write_text(json.dumps(state, indent=2), encoding="utf-8")
+        log(f"State -> {state_path}")
+
+        # 7) ledger append (one row per noise level + summary row)
+        ledger_path = ledger_d / "prime_omega_ledger.jsonl"
+        with ledger_path.open("a", encoding="utf-8") as f:
+            for r in sweep["rows"]:
+                f.write(json.dumps(r) + "\n")
+            f.write(json.dumps({
+                "timestamp": now_iso(),
+                "version": "1.5",
+                "prime_limit": int(limit),
+                "T": int(T),
+                "event": "basin_summary",
+                "H7": H7,
+                "extended_sweep": bool(extended),
+                "basin_width_noise_level": float(basin_width),
+                "worst_H7_margin": float(worst_margin),
+                "collapse_detected": bool(collapse_detected),
+                "collapse_noise_level": collapse_noise,
+                "collapse_sigma": collapse_sigma
+            }) + "\n")
+
+        log("PRIME OMEGA-BASIN v1.5 complete.")
+        return 0
+
+    except Exception as e:
+        err = "ERROR: " + repr(e)
+        print(err, file=sys.stderr)
+        with log_path.open("a", encoding="utf-8") as f:
+            f.write(ascii_safe(err) + "\n")
+            f.write(ascii_safe(traceback.format_exc()) + "\n")
+        return 1
+
+if __name__ == "__main__":
+    # Usage: engine ROOT STATE VIS LEDGER LOGS LIMIT T NOISE_CSV AUTOEXTEND EXTMAX EXTSTEP
+    if len(sys.argv) < 12:
+        print("Usage: engine ROOT STATE VIS LEDGER LOGS LIMIT T NOISE_SWEEP_CSV AUTOEXTEND EXTEND_MAX EXTEND_STEP", file=sys.stderr)
+        sys.exit(1)
+
+    _, root, state, vis, led, logs, lim, T, noise_csv, autoext, extmax, extstep = sys.argv[:12]
+    autoext = (str(autoext).strip().lower() in ("1","true","yes","y","on"))
+    code = main(root, state, vis, led, logs, int(lim), int(T), noise_csv, autoext, float(extmax), float(extstep))
+    sys.exit(code)
