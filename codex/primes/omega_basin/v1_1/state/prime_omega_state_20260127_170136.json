@@ -1,0 +1,35 @@
+{
+  "protocol": "CodexPrimeOmegaBasin",
+  "version": "1.1",
+  "timestamp": "2026-01-27T17:01:38.551400Z",
+  "prime_limit": 250000,
+  "T": 96,
+  "noise_level": 0.05,
+  "shape": {
+    "T": 96,
+    "gaps": 22043
+  },
+  "metrics": {
+    "gap_mean": 11.340879440307617,
+    "gap_std": 8.940265655517578,
+    "gap_max": 86.0,
+    "dphi_std": 4.712873458862305,
+    "noise_sigma": 0.23564367294311525,
+    "omega_mean_before": 0.306761234998703,
+    "omega_mean_after": 0.3030249774456024,
+    "omega_diff_L1": 0.02429278753697872,
+    "noise_immunity_index": 0.9762833558601995,
+    "basin_drop_index": 0.9962776501048106
+  },
+  "visuals": {
+    "dphi_baseline": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\primes\\omega_basin\\v1_1\\visuals\\prime_dphi_baseline_20260127_170136.png",
+    "dphi_noisy": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\primes\\omega_basin\\v1_1\\visuals\\prime_dphi_noisy_20260127_170136.png",
+    "omega_curve": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\primes\\omega_basin\\v1_1\\visuals\\prime_omega_noise_immunity_20260127_170136.png"
+  },
+  "codex": {
+    "H7": 0.7,
+    "H19": "Global \u0394\u03a6 integration",
+    "H20": "\u03a9-basin invariance / noise-immunity",
+    "law": "\u03a9 = 1/(1+|\u0394\u03a6|)"
+  }
+}
