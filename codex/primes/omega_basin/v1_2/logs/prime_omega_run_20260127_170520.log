@@ -1,0 +1,21 @@
+PRIME OMEGA-BASIN v1.2 starting...
+prime_limit : 250000
+noise_level : 0.05
+T           : 96
+primes_count : 22044
+gaps_count   : 22043
+gap_mean     : 11.3409
+gap_std      : 8.94027
+gap_max      : 86
+dphi_std            : 4.71287
+noise_sigma         : 0.235644
+omega_mean_before   : 0.306761
+omega_mean_after    : 0.303056
+omega_std_before    : 0.231864
+omega_std_after     : 0.222516
+omega_diff_L1       : 0.0243088
+omega_time_L1       : 0.00370505
+noise_immunity_index: 0.976268
+basin_drop_index    : 0.996309
+State -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\primes\omega_basin\v1_2\state\prime_omega_state_20260127_170520.json
+PRIME OMEGA-BASIN v1.2 complete.
