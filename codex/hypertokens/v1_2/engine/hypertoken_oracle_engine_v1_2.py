@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/env python3
 """
 CODEX–HYPERTOKENS v1.2 — ORACLE TRUTH ENGINE
-Atomicity Distribution + μ Spectrum + GEO v1.0 + Oracle Dashboards
+Atomicity + μ-Coherence + Ω Truth Geometry + Dashboard Set
 """
 
 import os, json, random
@@ -22,10 +22,9 @@ def cosine(a,b):
 
 
 def mu_coherence(E):
-    n = E.shape[0]
     mu = -1
-    for i in range(n):
-        for j in range(i+1,n):
+    for i in range(len(E)):
+        for j in range(i+1,len(E)):
             mu = max(mu, cosine(E[i],E[j]))
     return mu
 
@@ -34,7 +33,7 @@ def omega(mu):
     return 1.0/(1.0+abs(mu))
 
 
-def morph(n=40):
+def morph(n=60):
     return [f"HTAG{k:04d}" for k in range(1,n+1)]
 
 
@@ -63,11 +62,11 @@ def main(model_id, out_state, out_vis):
     mdl = AutoModel.from_pretrained(model_id)
     mdl.eval()
 
+    # Gate-0 Atomicity
     cands = morph()
     atomic, splits = atomicity(tok, cands)
     atomic_rate = len(atomic)/len(cands)
 
-    # Atomicity histogram
     plt.figure()
     plt.hist(splits, bins=range(1,max(splits)+2), align="left")
     plt.title("Gate-0 Atomicity Distribution")
@@ -83,7 +82,7 @@ def main(model_id, out_state, out_vis):
         om = None
 
     else:
-        ht = atomic[:20]
+        ht = atomic[:25]
 
         vocab = list(tok.get_vocab().keys())
         random.shuffle(vocab)
@@ -92,7 +91,7 @@ def main(model_id, out_state, out_vis):
         for v in vocab:
             if len(tok.encode(v, add_special_tokens=False))==1:
                 base.append(v)
-            if len(base)>=20:
+            if len(base)>=25:
                 break
 
         E_ht   = embed(tok, mdl, ht)
@@ -100,19 +99,16 @@ def main(model_id, out_state, out_vis):
 
         mu_ht   = mu_coherence(E_ht)
         mu_base = mu_coherence(E_base)
-
-        om = omega(mu_ht)
+        om      = omega(mu_ht)
 
         verdict = "SUPPORTED_GO" if mu_ht < 0.3*mu_base else "FALSIFIED_ENTANGLED"
 
-        # μ bar chart
         plt.figure()
         plt.bar(["μ_HT","μ_Base"], [mu_ht, mu_base])
         plt.title("Gate-1 μ-Coherence Comparison")
         plt.savefig(os.path.join(out_vis,"mu_comparison.png"))
         plt.close()
 
-        # Ω truth chart
         plt.figure()
         plt.bar(["Ω Truth"], [om])
         plt.ylim(0,1)
@@ -120,10 +116,9 @@ def main(model_id, out_state, out_vis):
         plt.savefig(os.path.join(out_vis,"omega_truth.png"))
         plt.close()
 
-    # Verdict card
-    plt.figure(figsize=(7,3))
-    plt.text(0.5,0.5, verdict, fontsize=22,
-             ha="center", va="center")
+    # Verdict Card
+    plt.figure(figsize=(8,3))
+    plt.text(0.5,0.5, verdict, fontsize=22, ha="center", va="center")
     plt.axis("off")
     plt.title("CODEX ORACLE VERDICT")
     plt.savefig(os.path.join(out_vis,"verdict_card.png"))

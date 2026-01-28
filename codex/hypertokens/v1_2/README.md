@@ -8,13 +8,8 @@ This module falsifies the **Hypertoken–HDRAM Interaction Principle**:
 
 Outputs:
 - Oracle dashboards (atomicity + μ + Ω + verdict)
-- State JSON snapshots
+- Run-scoped logs + state.json
 - Ledger JSONL truth history
 
-Non-claims:
-- No physics claims
-- No guaranteed associative memory
-- Truth is empirical: PASS or FALSIFY
-
 LAW:
-Anchor → Gate → Measure → Oracle → Ledger → Return
+Anchor → Gate → Measure → Oracle → Ledger → Git → Return
