@@ -1,15 +1,15 @@
-﻿# CODEX–HYPERTOKENS v1.2 — Oracle Truth Surface
+﻿# CODEX–HYPERTOKENS v1.2 — Oracle Dashboard Evolution
 
-This module falsifies the **Hypertoken–HDRAM Interaction Principle**:
-
-- Gate-0: Tokenizer Atomicity (single-token survival)
-- Gate-1: μ-Coherence Separation (embedding collision geometry)
-- GEO v1.0: Ω Truth Geometry score
+Truth Gates:
+- Gate-0 Atomicity Distribution
+- Gate-1 μ-Separation Spectrum
+- Gate-2 Retrieval Drift Sweep
+- GEO v1.0 Ω Truth Geometry
 
 Outputs:
-- Oracle dashboards (atomicity + μ + Ω + verdict)
-- Run-scoped logs + state.json
-- Ledger JSONL truth history
+- Oracle Visual Set (PNG)
+- Pro HTML Dashboard
+- State JSON + Ledger JSONL
 
 LAW:
-Anchor → Gate → Measure → Oracle → Ledger → Git → Return
+Anchor → Gate → Oracle → Ledger → Git → Return
