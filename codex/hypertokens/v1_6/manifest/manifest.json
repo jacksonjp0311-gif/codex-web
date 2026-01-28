@@ -1,0 +1,7 @@
+﻿{
+    "module":  "CodexHypertokens",
+    "law":  "Anchor→Atomicity→μ→Drift→Oracle→Ledger→Git",
+    "version":  "1.6",
+    "model_default":  "sentence-transformers/all-MiniLM-L6-v2",
+    "run_stamp":  "20260128_132501"
+}
