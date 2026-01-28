@@ -1,4 +1,3 @@
-﻿{ "verdict": "STATE_SEAL_FAIL", "timestamp": "2026-01-28T13:37:19.6171323-05:00", "model": "sentence-transformers/all-MiniLM-L6-v2", "version": "1.7", "exit_code": 1 } 
 {
   "version": "1.7",
   "timestamp": "2026-01-28T18:58:44.441374Z",
