@@ -1,0 +1,6 @@
+{
+  "version": "1.5",
+  "timestamp": "2026-01-28T18:16:44.397266Z",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "verdict": "READY_FOR_SWEEPS"
+}
