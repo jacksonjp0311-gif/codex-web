@@ -1,18 +1,26 @@
-﻿# CODEX–HYPERTOKENS v1.7
+﻿# CODEX–HYPERTOKENS v1.7 — CANON
 
-Canonical Atom-Mint upgrade to v1.6.
+## Codex Discovery (H₁₇)
 
-Gates:
-- Atomicity PRE-MINT
-- Atom-Mint Proof
-- Atomicity POST-MINT
-- μ-Separation Oracle
-- Retrieval Drift Sweep
+v1.7 proves:
 
-Outputs:
-- Oracle PNG set
-- Dashboard.html
-- State Seal JSON
-- Ledger JSONL
+- Atomicity can be minted (0 → full atom set)
+- μ-Separation rises sharply (hypertokens cluster)
+- Drift explodes under prefix noise
 
-Verdicts are falsifiable.
+**Law H₁₇: Atomicity ≠ Stability**
+
+Minted tokens are discrete atoms, but not retrieval anchors unless trained.
+
+## Outputs
+
+- visuals/atomicity_pre.png
+- visuals/atomicity_post.png
+- visuals/drift_sweep.png
+- dashboard/dashboard.html
+- confirmations/env_proof.json
+- confirmations/mint_proof.json
+- schemas/state_schema_min.json
+- logs/ledger/hypertoken_ledger.jsonl
+
+Verdicts are falsifiable boundary events.

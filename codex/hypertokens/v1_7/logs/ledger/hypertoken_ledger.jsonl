@@ -18,3 +18,22 @@
   ],
   "verdict": "DRIFT_FAIL"
 }
+{
+  "version": "1.7",
+  "timestamp": "2026-01-29T17:14:58.302546Z",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "architecture": "BertModel'>",
+  "minted": true,
+  "atomicity_pre": 0,
+  "atomicity_post": 119,
+  "mu_separation": 3.6689227154503774,
+  "drift_curve": [
+    -1.1920928955078125e-07,
+    0.6166833639144897,
+    0.7102576196193695,
+    0.8150776326656342,
+    0.9292526096105576,
+    0.9372181072831154
+  ],
+  "verdict": "DRIFT_FAIL"
+}

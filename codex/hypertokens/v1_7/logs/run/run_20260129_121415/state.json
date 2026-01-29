@@ -1,7 +1,4 @@
-
-    <html><body style='background:black;color:#00ffcc;font-family:monospace'>
-    <h1>CODEX–HYPERTOKENS v1.7 ORACLE</h1>
-    <pre>{
+{
   "version": "1.7",
   "timestamp": "2026-01-29T17:14:58.302546Z",
   "model": "sentence-transformers/all-MiniLM-L6-v2",
@@ -19,9 +16,4 @@
     0.9372181072831154
   ],
   "verdict": "DRIFT_FAIL"
-}</pre>
-    <img src='../visuals/atomicity_pre.png' width='600'>
-    <img src='../visuals/atomicity_post.png' width='600'>
-    <img src='../visuals/drift_sweep.png' width='600'>
-    </body></html>
-    
+}

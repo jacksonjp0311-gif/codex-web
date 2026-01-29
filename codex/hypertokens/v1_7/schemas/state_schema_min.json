@@ -1,0 +1,9 @@
+﻿{
+  "version": "string",
+  "atomicity_pre": "int",
+  "atomicity_post": "int",
+  "minted": "bool",
+  "mu_separation": "float|null",
+  "drift_curve": "array|null",
+  "verdict": "ATOMICITY_FAIL|DRIFT_FAIL|READY_FOR_SWEEPS"
+}

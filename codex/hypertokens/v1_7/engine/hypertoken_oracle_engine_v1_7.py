@@ -1,21 +1,14 @@
 ﻿#!/usr/bin/env python3
 """
-CODEX–HYPERTOKENS v1.7 — ATOM-MINT + μ/DRIFT ORACLE
+CODEX–HYPERTOKENS v1.7 — ATOM-MINT + μ/DRIFT ORACLE (CANON)
 
-Adds canonical Atom-Mint Gate:
-
-PRE:
-- HTAG tokens are usually NOT atomic.
-
-MINT:
-- tokenizer.add_tokens([...])
-- model.resize_token_embeddings()
-
-POST:
-- Atomicity re-tested.
+Adds confirmation artifacts:
+- env_proof.json
+- mint_proof.json
+- arch_proof.json
 """
 
-import json, sys, random
+import json, sys, random, platform
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -37,14 +30,30 @@ def emit(path, obj):
     Path(path).write_text(json.dumps(obj, indent=2), encoding="utf-8")
 
 
-def main(model_id, out_state, out_vis, out_dash):
+def main(model_id, out_state, out_vis, out_dash, confirm_dir):
+
+    confirm_dir = Path(confirm_dir)
+    confirm_dir.mkdir(parents=True, exist_ok=True)
 
     tok = AutoTokenizer.from_pretrained(model_id)
     mdl = AutoModel.from_pretrained(model_id)
     mdl.eval()
 
-    # ───────── Gate(A) Architecture Truth ─────────
     arch = str(type(mdl)).split(".")[-1]
+
+    # ───────── Confirmation: ENV PROOF ─────────
+    emit(confirm_dir/"env_proof.json",{
+        "timestamp": now(),
+        "python": sys.version,
+        "torch": torch.__version__,
+        "platform": platform.platform(),
+        "model_id": model_id
+    })
+
+    emit(confirm_dir/"arch_proof.json",{
+        "architecture": arch,
+        "encoder_like": "Bert" in arch or "Encoder" in arch
+    })
 
     # ───────── Gate-0 PRE Atomicity ─────────
     cands = [f"HTAG{k:04d}" for k in range(1,120)]
@@ -62,6 +71,13 @@ def main(model_id, out_state, out_vis, out_dash):
         tok.add_tokens(cands)
         mdl.resize_token_embeddings(len(tok))
         minted=True
+
+    emit(confirm_dir/"mint_proof.json",{
+        "timestamp": now(),
+        "minted": minted,
+        "added_tokens": len(cands),
+        "atomicity_pre": len(atomic_pre)
+    })
 
     # ───────── Gate-0 POST Atomicity ─────────
     splits_post=[len(tok.encode(c,add_special_tokens=False)) for c in cands]
@@ -123,7 +139,7 @@ def main(model_id, out_state, out_vis, out_dash):
         plt.title("Gate-2 Retrieval Drift Sweep")
         plt.savefig(Path(out_vis)/"drift_sweep.png")
 
-        verdict="READY" if max(drift)<0.15 else "DRIFT_FAIL"
+        verdict="READY_FOR_SWEEPS" if max(drift)<0.15 else "DRIFT_FAIL"
 
     state={
         "version":"1.7",
@@ -155,4 +171,6 @@ def main(model_id, out_state, out_vis, out_dash):
 
 
 if __name__=="__main__":
-    sys.exit(main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4]))
+    sys.exit(main(
+        sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5]
+    ))
