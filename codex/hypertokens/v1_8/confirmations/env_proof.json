@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-01-29T17:24:31.151383Z",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "torch": "2.5.1+cu121",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2"
+}

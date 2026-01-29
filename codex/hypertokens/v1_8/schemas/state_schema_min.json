@@ -1,0 +1,20 @@
+﻿{
+  "version": "string",
+  "model": "string",
+  "architecture": "string",
+  "seed": "int",
+  "atomicity_pre": "int",
+  "atomicity_post": "int",
+  "minted": "bool",
+  "mu_separation_pretrain": "float|null",
+  "drift_curve_pretrain": "array|null",
+  "train": {
+    "steps": "int",
+    "batch": "int",
+    "lr": "float",
+    "loss_final": "float|null"
+  },
+  "mu_separation_posttrain": "float|null",
+  "drift_curve_posttrain": "array|null",
+  "verdict": "ATOMICITY_FAIL|DRIFT_FAIL|RECOVERY_PASS|RECOVERY_FAIL"
+}
