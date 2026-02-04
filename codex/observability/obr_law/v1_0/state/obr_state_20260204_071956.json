@@ -1,0 +1,160 @@
+{
+  "protocol": "CodexObservabilityOBR",
+  "version": "1.0",
+  "timestamp": "2026-02-04T07:19:58.631704Z",
+  "params": {
+    "N": 4096,
+    "K": 128,
+    "lambda_sweep": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.65,
+      0.8,
+      1.0
+    ]
+  },
+  "H7": 0.7,
+  "instruments": {
+    "cutoff_renorm": [
+      1.0,
+      0.9998835843381301,
+      0.9997551618515569,
+      0.9996127740193709,
+      0.9994540118728373,
+      0.9990745985636401,
+      0.9985340680736131,
+      0.9978499093756318,
+      0.9961998293706583,
+      0.9926550417117123,
+      0.9544450928855975
+    ],
+    "eft_decimation": [
+      0.9999999999999998,
+      0.9965848739765112,
+      0.9935173444241105,
+      0.9908166969132317,
+      0.9877842991807158,
+      0.9812625700667437,
+      0.975047284652366,
+      0.9685138595694417,
+      0.959909061036364,
+      0.9504969210055201,
+      0.7186112201300953
+    ],
+    "horizon_mask": [
+      0.9845809977277151,
+      0.9677717541682234,
+      0.9451071010192754,
+      0.9184897573308535,
+      0.8877099666949426,
+      0.8200713781524583,
+      0.7383817640808584,
+      0.6597307704433021,
+      0.5375957322731144,
+      0.4237507975029732,
+      0.28246579195369037
+    ],
+    "trace_reduction": [
+      1.0,
+      0.950000000210329,
+      0.9000000004326428,
+      0.8500000006690561,
+      0.8000000009222125,
+      0.7000000014931058,
+      0.600000002185985,
+      0.5000000030740415,
+      0.3500000051380406,
+      0.2000000098369323,
+      6.402126147634027e-05
+    ]
+  },
+  "ensemble": {
+    "mean": [
+      0.9961452494319287,
+      0.9785600531732983,
+      0.9595949019318963,
+      0.939729807233128,
+      0.9187370696676771,
+      0.875102137068987,
+      0.8279907797482056,
+      0.7815236356156042,
+      0.7109261569545444,
+      0.6417256925142845,
+      0.4888965315577149
+    ],
+    "min": [
+      0.9845809977277151,
+      0.950000000210329,
+      0.9000000004326428,
+      0.8500000006690561,
+      0.8000000009222125,
+      0.7000000014931058,
+      0.600000002185985,
+      0.5000000030740415,
+      0.3500000051380406,
+      0.2000000098369323,
+      6.402126147634027e-05
+    ],
+    "max": [
+      1.0,
+      0.9998835843381301,
+      0.9997551618515569,
+      0.9996127740193709,
+      0.9994540118728373,
+      0.9990745985636401,
+      0.9985340680736131,
+      0.9978499093756318,
+      0.9961998293706583,
+      0.9926550417117123,
+      0.9544450928855975
+    ]
+  },
+  "audits": {
+    "cutoff_renorm": {
+      "monotone_decreasing": true,
+      "sharp_drop_index": null,
+      "sharp_drop_lambda": null,
+      "H7_cross_index": -1
+    },
+    "eft_decimation": {
+      "monotone_decreasing": true,
+      "sharp_drop_index": 10,
+      "sharp_drop_lambda": 1.0,
+      "H7_cross_index": -1
+    },
+    "horizon_mask": {
+      "monotone_decreasing": true,
+      "sharp_drop_index": 9,
+      "sharp_drop_lambda": 0.8,
+      "H7_cross_index": 7
+    },
+    "trace_reduction": {
+      "monotone_decreasing": true,
+      "sharp_drop_index": 8,
+      "sharp_drop_lambda": 0.65,
+      "H7_cross_index": 6
+    }
+  },
+  "visuals": {
+    "cutoff_renorm": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\observability\\obr_law\\v1_0\\visuals\\obr_O_lambda_cutoff_renorm_20260204_071956.png",
+    "eft_decimation": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\observability\\obr_law\\v1_0\\visuals\\obr_O_lambda_eft_decimation_20260204_071956.png",
+    "horizon_mask": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\observability\\obr_law\\v1_0\\visuals\\obr_O_lambda_horizon_mask_20260204_071956.png",
+    "trace_reduction": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\observability\\obr_law\\v1_0\\visuals\\obr_O_lambda_trace_reduction_20260204_071956.png",
+    "ensemble": "C:\\Users\\jacks\\OneDrive\\Desktop\\Codex Web\\codex\\observability\\obr_law\\v1_0\\visuals\\obr_O_lambda_ensemble_20260204_071956.png"
+  },
+  "codex": {
+    "law": "X_obs = Pi_{\u2202,\u03bb}(X_sub)",
+    "observability_functional": "O(\u03bb)=||Pi_{\u2202,\u03bb}(X)||/||X||",
+    "notes": [
+      "Toy instruments: observational only; do not claim new physics.",
+      "Twin-primes discipline: sweep boundaries; audit monotonic survival; detect sharp admissibility drops.",
+      "Geometry-first: outputs are artifacts; narrative downstream."
+    ]
+  }
+}

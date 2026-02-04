@@ -1,0 +1,11 @@
+CODEX–OBSERVABILITY OBR v1.0 starting...
+N            : 4096
+K            : 128
+lambda_sweep  : [0.0, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.65, 0.8, 1.0]
+H7           : 0.7
+cutoff_renorm: monotone=True drop_idx=None H7_cross_idx=-1
+eft_decimation: monotone=True drop_idx=10 H7_cross_idx=-1
+horizon_mask: monotone=True drop_idx=9 H7_cross_idx=7
+trace_reduction: monotone=True drop_idx=8 H7_cross_idx=6
+State -> C:\Users\jacks\OneDrive\Desktop\Codex Web\codex\observability\obr_law\v1_0\state\obr_state_20260204_071956.json
+CODEX–OBSERVABILITY OBR v1.0 complete.
