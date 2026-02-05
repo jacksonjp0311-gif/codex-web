@@ -8,14 +8,14 @@ import logging
 import argparse
 from pathlib import Path
 
-# â”€â”€ Paths â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Paths ---
 LEDGER_FILE   = Path("codex_ledger.json")
 INBOX_DIR     = Path("inbox")
 PROCESSED_DIR = INBOX_DIR / "_processed"
 REJECTED_DIR  = INBOX_DIR / "_rejected"
 LOG_FILE      = Path("codex_watcher.log")
 
-# â”€â”€ Genesis constants â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Genesis constants ---
 GENESIS_DIGEST = "716ca6878eed87c3d4edc5a83a2e4161a109786b7be0f9093745139a6150710b"
 GENESIS_STRING = (
     "seed=codex-web-launch-span4-header;"
@@ -29,10 +29,10 @@ GENESIS_STRING = (
     "author=system"
 )
 
-# â”€â”€ Policy settings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Policy settings ---
 BANNED_TERMS = {"password", "secret", "ssn", "private"}
 
-# â”€â”€ Logging setup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Logging setup ---
 logging.basicConfig(
     filename=str(LOG_FILE),
     level=logging.INFO,
@@ -41,23 +41,13 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# â”€â”€ Core functions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Core functions ---
 def ensure_dirs():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     INBOX_DIR.mkdir(exist_ok=True)
     PROCESSED_DIR.mkdir(exist_ok=True)
     REJECTED_DIR.mkdir(exist_ok=True)
 
 def load_ledger():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     if LEDGER_FILE.exists():
         return json.loads(LEDGER_FILE.read_text(encoding="utf-8"))
     ledger = [{"canonical": GENESIS_STRING, "digest": GENESIS_DIGEST}]
@@ -65,19 +55,9 @@ def load_ledger():
     return ledger
 
 def save_ledger(ledger):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     LEDGER_FILE.write_text(json.dumps(ledger, indent=2), encoding="utf-8")
 
 def parse_inbox_file(path: Path):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     text = path.read_text(encoding="utf-8").strip()
     if path.suffix.lower() == ".json":
         obj = json.loads(text)
@@ -88,11 +68,6 @@ def parse_inbox_file(path: Path):
     return canon, digest
 
 def validate_stone(canonical: str, digest: str, tip_digest: str):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     if not canonical or not digest:
         return False, "missing canonical or digest"
     fields = dict(part.split("=",1) for part in canonical.split(";") if "=" in part)
@@ -111,11 +86,6 @@ def validate_stone(canonical: str, digest: str, tip_digest: str):
     return True, "ok"
 
 def process_inbox_once():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     ensure_dirs()
     ledger = load_ledger()
     tip = ledger[-1]["digest"]
@@ -133,48 +103,38 @@ def process_inbox_once():
                 save_ledger(ledger)
                 tip = digest
                 f.rename(PROCESSED_DIR / f.name)
-                msg = f"âœ… appended: {f.name} | new tip={tip}"
+                msg = f"✅ appended: {f.name} | new tip={tip}"
                 print(msg); logger.info(msg)
                 added += 1
             else:
                 f.rename(REJECTED_DIR / f.name)
-                msg = f"âŒ rejected: {f.name} | {reason}"
+                msg = f"❌ rejected: {f.name} | {reason}"
                 print(msg); logger.warning(msg)
         except Exception as e:
             f.rename(REJECTED_DIR / f.name)
-            msg = f"âŒ error: {f.name} | {e}"
+            msg = f"❌ error: {f.name} | {e}"
             print(msg); logger.error(msg)
     status = f"Ledger length: {len(ledger)} | current tip: {tip} | added: {added}"
     print(status); logger.info(status)
     return added
 
 def duty_cycle_watch(active_seconds=15, rest_seconds=15, interval=3, max_cycles=None):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     cycle = 0
     while True:
         cycle += 1
-        print(f"â–¶ï¸ Active scan ({active_seconds}s) â€” cycle {cycle}")
+        print(f"▶️ Active scan ({active_seconds}s) — cycle {cycle}")
         start = time.time()
         while time.time() - start < active_seconds:
             process_inbox_once()
             time.sleep(interval)
-        print(f"â¸ Resting ({rest_seconds}s)")
+        print(f"⏸ Resting ({rest_seconds}s)")
         time.sleep(rest_seconds)
         if max_cycles and cycle >= max_cycles:
-            print("âœ… Max cycles reached â€” stopping watcher.")
+            print("✅ Max cycles reached — stopping watcher.")
             break
 
-# â”€â”€ CLI Entrypoint â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- CLI entrypoint ---
 def main():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--watch",
