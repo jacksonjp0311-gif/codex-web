@@ -210,7 +210,7 @@ Recommended starting points for new contributors:
 - Keep local env/cache artifacts untracked.
 - Prefer redacted/synthetic data in samples and tests.
 
----
+To keep the root clean and navigable:
 
 ## 9) Roadmap (repo quality)
 
