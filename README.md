@@ -210,9 +210,29 @@ Recommended starting points for new contributors:
 - Keep local env/cache artifacts untracked.
 - Prefer redacted/synthetic data in samples and tests.
 
-To keep the root clean and navigable:
+---
 
 ## 9) Roadmap (repo quality)
+
+1. Expand Python unit coverage for watcher and ledger edges.
+2. Add app-level lint/test/build scripts consistency.
+3. Add CI workflow for core quality gates.
+4. Continue reducing tracked generated/vendor noise.
+
+---
+
+
+## 10) Repository health audit
+
+Generate a structural health report at any time:
+
+```bash
+python scripts/repo_health_audit.py
+```
+
+This writes a markdown report to:
+
+- `docs/reports/repo_health_report.md`
 
 1. Expand Python unit coverage for watcher and ledger edges.
 2. Add app-level lint/test/build scripts consistency.

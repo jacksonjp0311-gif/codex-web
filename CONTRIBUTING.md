@@ -23,6 +23,7 @@ Run these from repository root before opening a PR:
 python -m py_compile codex_watcher/cli.py
 python -m compileall -q codex_watcher
 python -m unittest discover -s tests/python -p 'test_*.py'
+python scripts/repo_health_audit.py
 ```
 
 If you changed a UI app, also run the app-specific checks where possible.
