@@ -1,56 +1,175 @@
 # codex-web
 
-A multi-runtime research workspace for the Codex project, combining orchestration scripts, Python automation, and web interfaces in a single repository.
+`codex-web` is a multi-runtime monorepo for the Codex project.
+It combines:
 
-## Repository Goals
+- a large **Codex knowledge/runtime tree** (`codex/`),
+- **automation and ingestion tooling** (Python + PowerShell),
+- and **UI/feedback surfaces** (React/Node-based apps).
 
-- Provide a home for Codex orchestration and automation tooling.
-- Track operational state and ledger workflows.
-- Host supporting web UIs and integration utilities.
-- Preserve historical artifacts while keeping active code maintainable.
+This repository is intentionally broad: it stores active runtime code, operational scripts, state artifacts, and historical archives.
 
-## Current Stack
+---
 
-- **PowerShell** for orchestration and operational workflows.
-- **Python** for data processing, watcher automation, and ledger logic.
-- **JavaScript/TypeScript (React)** for UI surfaces and feedback tools.
+## What this repo is
 
-## Top-Level Layout
+At a practical level, this repo is used to:
 
-> Note: the `codex/` directory remains untouched in this cleanup pass by request.
+1. Run Codex orchestration and symbolic workflows.
+2. Process ledger/inbox data with watcher tooling.
+3. Develop web interfaces (`approval-ui`, `copilot-feedback`).
+4. Keep historical project artifacts in version control.
 
-- `approval-ui/` — React-based approval interface.
-- `codex/` — core Codex module tree (intentionally unchanged in this pass).
-- `codex_watcher/` — Python watcher CLI for inbox validation and ledger append flow.
-- `copilot-feedback/` — feedback ingestion/orchestration and UI components.
-- `core/` — foundational policy/law/handoff assets.
-- `data/root-state/` — root-level JSON/state artifacts that were previously loose in `/`.
-- `docs/archive/` — archived textual artifacts moved out of root.
-- `interface/` — connector and protocol integration layer.
-- `scripts/root-utilities/` — root utility scripts moved out of `/` for cleaner structure.
-- `src/` — PowerShell module source.
-- `tests/` — PowerShell unit/integration tests.
-- `tools/` — analysis and coverage utilities.
+---
 
-## Root Cleanup (This Pass)
+## Clone the repo
 
-To reduce clutter in the repository root, the following files were relocated:
+### Bash (Linux/macOS/Git Bash)
 
-- `codex_chain.py` → `scripts/root-utilities/codex_chain.py`
-- `codex_sync.ps1` → `scripts/root-utilities/codex_sync.ps1`
-- `codex_all_one_quantum_imaging_v1_1.ps1` → `scripts/root-utilities/codex_all_one_quantum_imaging_v1_1.ps1`
-- `codex_memory_core_v1_2.json` → `data/root-state/codex_memory_core_v1_2.json`
-- `giza_v5_0_block_copy.txt` → `docs/archive/giza_v5_0_block_copy.txt`
-- Removed Windows metadata file: `desktop.ini`
+```bash
+git clone https://github.com/jacksonjp0311-gif/codex-web.git
+cd codex-web
+```
 
-## Quick Validation Commands
+### PowerShell (Windows)
+
+```powershell
+git clone https://github.com/jacksonjp0311-gif/codex-web.git
+Set-Location codex-web
+```
+
+---
+
+## Quick start
+
+### 1) Python watcher tooling
+
+The watcher CLI lives in `codex_watcher/cli.py` and processes inbox files into a ledger.
 
 ```bash
 python -m py_compile codex_watcher/cli.py
 python -m compileall -q codex_watcher
+python codex_watcher/cli.py
 ```
 
-## Contribution Notes
+Optional watch mode:
+
+```bash
+python codex_watcher/cli.py --watch --active 15 --rest 15 --interval 3
+```
+
+### 2) Approval UI (React)
+
+```bash
+cd approval-ui
+npm install
+npm start
+```
+
+### 3) PowerShell tests (if `pwsh` available)
+
+```bash
+pwsh -File tests/Codex.Ledger.Tests.ps1
+pwsh -File tests/Unit/Parse-CodexDsl.Tests.ps1
+```
+
+---
+
+## Repository layout (top level)
+
+- `codex/` — core Codex module tree (largest and primary project domain).
+- `codex_watcher/` — Python watcher CLI for inbox → ledger processing.
+- `approval-ui/` — React approval UI.
+- `copilot-feedback/` — feedback orchestration/UI.
+- `interface/` — connector and protocol integration layer.
+- `src/`, `tests/`, `tools/` — source modules, tests, and analyzers.
+- `scripts/root-utilities/` — operational scripts previously stored in root.
+- `data/root-state/` — root-level state artifacts moved out of `/`.
+- `docs/archive/` and `archive/root-legacy/` — archived legacy artifacts and folders.
+
+---
+
+## `codex/` directory map
+
+The core project content is inside `codex/`. First-level directories currently include:
+
+```text
+align_pulse
+analyses
+ancient
+archive
+automation
+baryogenesis
+bio_resonance
+black_horizon
+bridge
+cgl
+codex_emergence
+codex_glyph_synthesis_v1
+codex_module_generator
+config
+core
+dashboard
+data
+dna
+evolution
+feedback
+finance_resonance
+glyphs
+guardian
+handoff
+hypertokens
+logs
+memory
+mirror_temp
+observability
+orchestrator
+primes
+quantum
+quantum.crystal
+quantum_imaging
+quantum_tunneling
+rootmirror
+signal_density
+solar_resonance
+spiral
+state
+system
+system_dumps
+telemetry
+third_eye
+thoth
+tools
+truthfield
+utils
+v0.5
+v2
+v3
+visuals
+voice
+voicebox
+voynich
+web
+```
+
+If you are new to this repo, start with these areas first:
+
+- `codex/core`
+- `codex/orchestrator`
+- `codex/spiral`
+- `codex/handoff`
+- `codex/observability`
+
+---
+
+## Root cleanup policy
+
+To keep the root clean and navigable:
+
+- New scripts should go in `scripts/` (or a scoped subfolder).
+- State/data artifacts should go in `data/`.
+- Archival material should go in `docs/archive/` or `archive/`.
+- Avoid introducing new loose files/folders directly under repository root unless required.
 
 - Keep changes scoped and incremental.
 - Avoid modifying `codex/` unless explicitly requested.
