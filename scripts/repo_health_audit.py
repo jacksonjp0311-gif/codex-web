@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Repository health audit for codex-web.
 
-Generates a markdown report with high-level structure metrics and hygiene warnings.
+Generates markdown (and optional JSON) health reports with structural metrics,
+risk flags, and an actionable cleanup roadmap.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import subprocess
 from collections import Counter
@@ -30,7 +32,7 @@ def git_ls_files(root: Path) -> list[str]:
     return [line.strip() for line in out.splitlines() if line.strip()]
 
 
-def generate_report(root: Path, top_n: int = 15, noisy_threshold: int = 1000) -> str:
+def compute_metrics(root: Path, top_n: int = 15, noisy_threshold: int = 1000) -> dict:
     counts = top_level_file_counts(root)
     tracked = git_ls_files(root)
 
@@ -39,68 +41,112 @@ def generate_report(root: Path, top_n: int = 15, noisy_threshold: int = 1000) ->
     tracked_backups = [p for p in tracked if p.startswith("backups_reorg/")]
 
     large_dirs = [(name, cnt) for name, cnt in counts.most_common() if cnt >= noisy_threshold]
+    top_density = [{"directory": name, "file_count": cnt} for name, cnt in counts.most_common(top_n)]
 
+    risk_score = 0
+    risk_score += min(40, len(tracked_node_modules) // 5000)
+    risk_score += min(30, len(tracked_venv) // 1000)
+    risk_score += min(30, len(tracked_backups) // 2000)
+    risk_score = min(100, risk_score)
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "top_level_directories_scanned": len(counts),
+        "tracked_file_count": len(tracked),
+        "tracked_node_modules_files": len(tracked_node_modules),
+        "tracked_venv_files": len(tracked_venv),
+        "tracked_backups_reorg_files": len(tracked_backups),
+        "top_level_file_density": top_density,
+        "high_volume_directories": [{"directory": n, "file_count": c} for n, c in large_dirs],
+        "risk_score_0_to_100": risk_score,
+        "noisy_threshold": noisy_threshold,
+        "recommended_actions": [
+            "Untrack dependency/vendor trees gradually (start with node_modules and .venv) in controlled PRs.",
+            "Move long-term backups to external object storage and keep curated snapshots only.",
+            "Add CI checks for Python tests and selected app checks on each PR.",
+            "Continue modular docs under docs/ and keep README focused on onboarding.",
+        ],
+    }
+
+
+def generate_markdown_report(metrics: dict) -> str:
     lines: list[str] = []
     lines.append("# codex-web Repository Health Report")
     lines.append("")
-    lines.append(f"Generated: {datetime.now(timezone.utc).isoformat()}")
+    lines.append(f"Generated: {metrics['generated_at']}")
     lines.append("")
 
-    lines.append("## Summary")
+    lines.append("## Executive summary")
     lines.append("")
-    lines.append(f"- Top-level directories scanned: **{len(counts)}**")
-    lines.append(f"- Tracked files: **{len(tracked)}**")
-    lines.append(f"- Tracked `node_modules` files: **{len(tracked_node_modules)}**")
-    lines.append(f"- Tracked `.venv` files: **{len(tracked_venv)}**")
-    lines.append(f"- Tracked `backups_reorg` files: **{len(tracked_backups)}**")
+    lines.append(f"- Structural risk score: **{metrics['risk_score_0_to_100']}/100**")
+    lines.append(f"- Tracked files: **{metrics['tracked_file_count']}**")
+    lines.append(f"- Tracked `node_modules` files: **{metrics['tracked_node_modules_files']}**")
+    lines.append(f"- Tracked `.venv` files: **{metrics['tracked_venv_files']}**")
+    lines.append(f"- Tracked `backups_reorg` files: **{metrics['tracked_backups_reorg_files']}**")
     lines.append("")
 
     lines.append("## Top-level file density")
     lines.append("")
     lines.append("| Directory | File count |")
     lines.append("|---|---:|")
-    for name, cnt in counts.most_common(top_n):
-        lines.append(f"| `{name}` | {cnt} |")
+    for row in metrics["top_level_file_density"]:
+        lines.append(f"| `{row['directory']}` | {row['file_count']} |")
     lines.append("")
 
     lines.append("## Risk flags")
     lines.append("")
-    if not large_dirs and not tracked_node_modules and not tracked_venv:
+    hv = metrics["high_volume_directories"]
+    if not hv and metrics["tracked_node_modules_files"] == 0 and metrics["tracked_venv_files"] == 0:
         lines.append("- No high-risk structural flags detected with current thresholds.")
     else:
-        for name, cnt in large_dirs:
-            lines.append(f"- High file volume in `{name}`: {cnt} files (threshold: {noisy_threshold}).")
-        if tracked_node_modules:
-            lines.append("- Tracked `node_modules` content detected. This can create very noisy diffs and large commits.")
-        if tracked_venv:
-            lines.append("- Tracked `.venv` content detected. Virtual environments should typically be untracked.")
-        if tracked_backups:
-            lines.append("- Tracked `backups_reorg` content detected. Consider moving long-term backups to external storage.")
+        for row in hv:
+            lines.append(
+                f"- High file volume in `{row['directory']}`: {row['file_count']} files "
+                f"(threshold: {metrics['noisy_threshold']})."
+            )
+        if metrics["tracked_node_modules_files"]:
+            lines.append("- Tracked `node_modules` content detected. This creates noisy diffs and large commits.")
+        if metrics["tracked_venv_files"]:
+            lines.append("- Tracked `.venv` content detected. Virtual environments should usually be untracked.")
+        if metrics["tracked_backups_reorg_files"]:
+            lines.append("- Tracked `backups_reorg` content detected. Prefer external long-term backup storage.")
     lines.append("")
 
     lines.append("## Recommended next actions")
     lines.append("")
-    lines.append("1. Untrack dependency/vendor trees gradually (start with `node_modules` and `.venv`) in controlled PRs.")
-    lines.append("2. Keep archives in `archive/` or external object storage; retain only curated snapshots in Git.")
-    lines.append("3. Add CI checks that run Python tests and selected app checks on each PR.")
-    lines.append("4. Continue modular documentation under `docs/` to reduce README bloat.")
+    for i, action in enumerate(metrics["recommended_actions"], start=1):
+        lines.append(f"{i}. {action}")
+    lines.append("")
 
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate codex-web repository health report")
     parser.add_argument("--output", default="docs/reports/repo_health_report.md", help="Output markdown path")
+    parser.add_argument(
+        "--json-output",
+        default="docs/reports/repo_health_report.json",
+        help="Output JSON path",
+    )
     parser.add_argument("--top", type=int, default=15, help="Top directory count rows")
     parser.add_argument("--threshold", type=int, default=1000, help="Noisy directory threshold")
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
-    report = generate_report(root=root, top_n=args.top, noisy_threshold=args.threshold)
-    out_path = root / args.output
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(report, encoding="utf-8")
-    print(f"Wrote report: {out_path}")
+    metrics = compute_metrics(root=root, top_n=args.top, noisy_threshold=args.threshold)
+
+    md = generate_markdown_report(metrics)
+    out_md = root / args.output
+    out_md.parent.mkdir(parents=True, exist_ok=True)
+    out_md.write_text(md + "\n", encoding="utf-8")
+
+    out_json = root / args.json_output
+    out_json.parent.mkdir(parents=True, exist_ok=True)
+    out_json.write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
+
+    print(f"Wrote markdown report: {out_md}")
+    print(f"Wrote JSON report: {out_json}")
 
 
 if __name__ == "__main__":

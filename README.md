@@ -185,6 +185,8 @@ voynich
 web
 ```
 
+See also: `codex/README.md` for a focused runtime guide.
+
 Recommended starting points for new contributors:
 
 - `codex/core`
@@ -233,6 +235,8 @@ python scripts/repo_health_audit.py
 This writes a markdown report to:
 
 - `docs/reports/repo_health_report.md`
+- `docs/reports/repo_health_report.json`
+- `docs/reports/repo_deep_review.md`
 
 1. Expand Python unit coverage for watcher and ledger edges.
 2. Add app-level lint/test/build scripts consistency.

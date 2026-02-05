@@ -33,3 +33,13 @@ If you changed a UI app, also run the app-specific checks where possible.
 - Never commit secrets, tokens, or credentials.
 - Keep environment-specific files (`.env`, local logs, caches) untracked.
 - Use synthetic or redacted samples in test fixtures.
+
+
+## Audit artifacts
+
+The repository health audit writes both:
+
+- `docs/reports/repo_health_report.md`
+- `docs/reports/repo_health_report.json`
+
+Use these outputs for trend tracking across cleanup PRs.
