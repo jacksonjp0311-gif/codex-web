@@ -1,7 +1,7 @@
 ﻿# Codex Giza Hologram Suite v3.0 — 5D Harmonic Engine
 
 This external module renders synthetic holographic visualizations for the
-Giza Ancient Harmonic Engine (codex/ancient/giza_engine) while keeping all
+Giza Ancient Harmonic Engine (codex/history/ancient/giza_engine) while keeping all
 visuals outside the engine module itself.
 
 New layers introduced in v3.0:

@@ -31,7 +31,8 @@ It contains symbolic engines, orchestration modules, state/ledger systems, obser
 | `feedback/`, `evolution/`, `logs/` | Feedback loops, evolution history, and runtime logging domains. |
 | `visuals/`, `web/` | Visualization/rendering assets and web-facing runtime pieces. |
 | `tools/`, `utils/`, `config/` | Operational helpers, utilities, and configuration. |
-| `archive/`, `ancient/`, `mirror_temp/` | Historical/legacy and temporary mirror work areas. |
+| `history/` | Grouped historical content (`ancient/`, `archive/`, `system_dumps/`). |
+| `runtime_temp/` | Grouped temporary mirror/transient runtime content. |
 | `v0.5/`, `v2/`, `v3/` | Versioned runtime eras retained for continuity/reference. |
 
 ## Suggested Entry Points
