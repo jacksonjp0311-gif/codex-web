@@ -171,3 +171,6 @@ To keep the root clean and navigable:
 - Archival material should go in `docs/archive/` or `archive/`.
 - Avoid introducing new loose files/folders directly under repository root unless required.
 
+- Keep changes scoped and incremental.
+- Avoid modifying `codex/` unless explicitly requested.
+- Prefer moving root artifacts into purpose-specific folders (`scripts/`, `data/`, `docs/`) instead of adding new loose files.
