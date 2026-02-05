@@ -43,21 +43,11 @@ logger = logging.getLogger(__name__)
 
 # â”€â”€ Core functions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 def ensure_dirs():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     INBOX_DIR.mkdir(exist_ok=True)
     PROCESSED_DIR.mkdir(exist_ok=True)
     REJECTED_DIR.mkdir(exist_ok=True)
 
 def load_ledger():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     if LEDGER_FILE.exists():
         return json.loads(LEDGER_FILE.read_text(encoding="utf-8"))
     ledger = [{"canonical": GENESIS_STRING, "digest": GENESIS_DIGEST}]
@@ -65,19 +55,9 @@ def load_ledger():
     return ledger
 
 def save_ledger(ledger):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     LEDGER_FILE.write_text(json.dumps(ledger, indent=2), encoding="utf-8")
 
 def parse_inbox_file(path: Path):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     text = path.read_text(encoding="utf-8").strip()
     if path.suffix.lower() == ".json":
         obj = json.loads(text)
@@ -88,11 +68,6 @@ def parse_inbox_file(path: Path):
     return canon, digest
 
 def validate_stone(canonical: str, digest: str, tip_digest: str):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     if not canonical or not digest:
         return False, "missing canonical or digest"
     fields = dict(part.split("=",1) for part in canonical.split(";") if "=" in part)
@@ -111,11 +86,6 @@ def validate_stone(canonical: str, digest: str, tip_digest: str):
     return True, "ok"
 
 def process_inbox_once():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     ensure_dirs()
     ledger = load_ledger()
     tip = ledger[-1]["digest"]
@@ -149,11 +119,6 @@ def process_inbox_once():
     return added
 
 def duty_cycle_watch(active_seconds=15, rest_seconds=15, interval=3, max_cycles=None):
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     cycle = 0
     while True:
         cycle += 1
@@ -170,11 +135,6 @@ def duty_cycle_watch(active_seconds=15, rest_seconds=15, interval=3, max_cycles=
 
 # â”€â”€ CLI Entrypoint â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 def main():
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
-@smart_suggest
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--watch",
