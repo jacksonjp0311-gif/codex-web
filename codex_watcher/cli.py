@@ -8,14 +8,14 @@ import logging
 import argparse
 from pathlib import Path
 
-# â”€â”€ Paths â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Paths ---
 LEDGER_FILE   = Path("codex_ledger.json")
 INBOX_DIR     = Path("inbox")
 PROCESSED_DIR = INBOX_DIR / "_processed"
 REJECTED_DIR  = INBOX_DIR / "_rejected"
 LOG_FILE      = Path("codex_watcher.log")
 
-# â”€â”€ Genesis constants â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Genesis constants ---
 GENESIS_DIGEST = "716ca6878eed87c3d4edc5a83a2e4161a109786b7be0f9093745139a6150710b"
 GENESIS_STRING = (
     "seed=codex-web-launch-span4-header;"
@@ -29,10 +29,10 @@ GENESIS_STRING = (
     "author=system"
 )
 
-# â”€â”€ Policy settings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Policy settings ---
 BANNED_TERMS = {"password", "secret", "ssn", "private"}
 
-# â”€â”€ Logging setup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Logging setup ---
 logging.basicConfig(
     filename=str(LOG_FILE),
     level=logging.INFO,
@@ -41,7 +41,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# â”€â”€ Core functions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- Core functions ---
 def ensure_dirs():
     INBOX_DIR.mkdir(exist_ok=True)
     PROCESSED_DIR.mkdir(exist_ok=True)
@@ -103,16 +103,16 @@ def process_inbox_once():
                 save_ledger(ledger)
                 tip = digest
                 f.rename(PROCESSED_DIR / f.name)
-                msg = f"âœ… appended: {f.name} | new tip={tip}"
+                msg = f"✅ appended: {f.name} | new tip={tip}"
                 print(msg); logger.info(msg)
                 added += 1
             else:
                 f.rename(REJECTED_DIR / f.name)
-                msg = f"âŒ rejected: {f.name} | {reason}"
+                msg = f"❌ rejected: {f.name} | {reason}"
                 print(msg); logger.warning(msg)
         except Exception as e:
             f.rename(REJECTED_DIR / f.name)
-            msg = f"âŒ error: {f.name} | {e}"
+            msg = f"❌ error: {f.name} | {e}"
             print(msg); logger.error(msg)
     status = f"Ledger length: {len(ledger)} | current tip: {tip} | added: {added}"
     print(status); logger.info(status)
@@ -122,18 +122,18 @@ def duty_cycle_watch(active_seconds=15, rest_seconds=15, interval=3, max_cycles=
     cycle = 0
     while True:
         cycle += 1
-        print(f"â–¶ï¸ Active scan ({active_seconds}s) â€” cycle {cycle}")
+        print(f"▶️ Active scan ({active_seconds}s) — cycle {cycle}")
         start = time.time()
         while time.time() - start < active_seconds:
             process_inbox_once()
             time.sleep(interval)
-        print(f"â¸ Resting ({rest_seconds}s)")
+        print(f"⏸ Resting ({rest_seconds}s)")
         time.sleep(rest_seconds)
         if max_cycles and cycle >= max_cycles:
-            print("âœ… Max cycles reached â€” stopping watcher.")
+            print("✅ Max cycles reached — stopping watcher.")
             break
 
-# â”€â”€ CLI Entrypoint â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# --- CLI entrypoint ---
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(

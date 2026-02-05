@@ -1,28 +1,47 @@
 # codex-web
 
-`codex-web` is a multi-runtime monorepo for the Codex project.
-It combines:
+A multi-runtime monorepo for Codex orchestration, symbolic runtime modules, ingestion/ledger automation, and supporting web interfaces.
 
-- a large **Codex knowledge/runtime tree** (`codex/`),
-- **automation and ingestion tooling** (Python + PowerShell),
-- and **UI/feedback surfaces** (React/Node-based apps).
+## Table of Contents
 
-This repository is intentionally broad: it stores active runtime code, operational scripts, state artifacts, and historical archives.
-
----
-
-## What this repo is
-
-At a practical level, this repo is used to:
-
-1. Run Codex orchestration and symbolic workflows.
-2. Process ledger/inbox data with watcher tooling.
-3. Develop web interfaces (`approval-ui`, `copilot-feedback`).
-4. Keep historical project artifacts in version control.
+- [1) What this repository is](#1-what-this-repository-is)
+- [2) Architecture at a glance](#2-architecture-at-a-glance)
+- [3) Clone and setup](#3-clone-and-setup)
+- [4) Quick-start workflows](#4-quick-start-workflows)
+- [5) Repository layout](#5-repository-layout)
+- [6) `codex/` directory map](#6-codex-directory-map)
+- [7) Development standards](#7-development-standards)
+- [8) Security and data policy](#8-security-and-data-policy)
+- [9) Roadmap (repo quality)](#9-roadmap-repo-quality)
 
 ---
 
-## Clone the repo
+## 1) What this repository is
+
+`codex-web` is the operational home for:
+
+1. **Core Codex runtime content** in `codex/` (orchestration, state, symbolic modules).
+2. **Automation pipelines** in Python/PowerShell (watchers, ingest, ledger flows).
+3. **Application surfaces** (React/Node apps such as `approval-ui` and `copilot-feedback`).
+4. **Project history** via structured archive/data directories.
+
+This repository is intentionally broad, but the root is being progressively normalized to keep active development fast and predictable.
+
+---
+
+## 2) Architecture at a glance
+
+| Layer | Primary purpose | Key locations |
+|---|---|---|
+| Core runtime | Symbolic and orchestration systems | `codex/` |
+| Ingestion + ledger | Inbox parsing, validation, digest-chain persistence | `codex_watcher/`, `inbox/` |
+| UI surfaces | Human-facing app workflows | `approval-ui/`, `copilot-feedback/` |
+| Tooling + tests | Validation, analyzers, test assets | `tools/`, `tests/`, `src/` |
+| Data + archive | State artifacts and legacy material | `data/`, `docs/archive/`, `archive/` |
+
+---
+
+## 3) Clone and setup
 
 ### Bash (Linux/macOS/Git Bash)
 
@@ -38,13 +57,18 @@ git clone https://github.com/jacksonjp0311-gif/codex-web.git
 Set-Location codex-web
 ```
 
+### Tooling prerequisites
+
+- Python 3.10+
+- Node.js 18+
+- npm 9+
+- PowerShell 7+ (`pwsh`) for PowerShell tests/scripts
+
 ---
 
-## Quick start
+## 4) Quick-start workflows
 
-### 1) Python watcher tooling
-
-The watcher CLI lives in `codex_watcher/cli.py` and processes inbox files into a ledger.
+### A) Watcher pipeline (Python)
 
 ```bash
 python -m py_compile codex_watcher/cli.py
@@ -52,13 +76,13 @@ python -m compileall -q codex_watcher
 python codex_watcher/cli.py
 ```
 
-Optional watch mode:
+Watch mode:
 
 ```bash
 python codex_watcher/cli.py --watch --active 15 --rest 15 --interval 3
 ```
 
-### 2) Approval UI (React)
+### B) Run approval UI
 
 ```bash
 cd approval-ui
@@ -66,32 +90,41 @@ npm install
 npm start
 ```
 
-### 3) PowerShell tests (if `pwsh` available)
+### C) Run feedback orchestrator
 
 ```bash
+cd copilot-feedback
+npm install
+npm start
+```
+
+### D) Run repository quality checks
+
+```bash
+python -m unittest discover -s tests/python -p 'test_*.py'
 pwsh -File tests/Codex.Ledger.Tests.ps1
 pwsh -File tests/Unit/Parse-CodexDsl.Tests.ps1
 ```
 
 ---
 
-## Repository layout (top level)
+## 5) Repository layout
 
-- `codex/` — core Codex module tree (largest and primary project domain).
-- `codex_watcher/` — Python watcher CLI for inbox → ledger processing.
-- `approval-ui/` — React approval UI.
-- `copilot-feedback/` — feedback orchestration/UI.
-- `interface/` — connector and protocol integration layer.
-- `src/`, `tests/`, `tools/` — source modules, tests, and analyzers.
-- `scripts/root-utilities/` — operational scripts previously stored in root.
-- `data/root-state/` — root-level state artifacts moved out of `/`.
-- `docs/archive/` and `archive/root-legacy/` — archived legacy artifacts and folders.
+- `codex/` — core Codex runtime tree (primary domain).
+- `codex_watcher/` — Python watcher CLI for inbox→ledger processing.
+- `approval-ui/` — React UI for approval workflows.
+- `copilot-feedback/` — feedback app + orchestration runtime.
+- `interface/` — connector/protocol integration assets.
+- `src/`, `tests/`, `tools/` — source modules, tests, analyzers.
+- `scripts/root-utilities/` — relocated operational scripts.
+- `data/root-state/` — relocated root state artifact(s).
+- `docs/archive/`, `archive/root-legacy/` — archive and legacy snapshots.
 
 ---
 
-## `codex/` directory map
+## 6) `codex/` directory map
 
-The core project content is inside `codex/`. First-level directories currently include:
+First-level directories currently present in `codex/`:
 
 ```text
 align_pulse
@@ -152,7 +185,7 @@ voynich
 web
 ```
 
-If you are new to this repo, start with these areas first:
+Recommended starting points for new contributors:
 
 - `codex/core`
 - `codex/orchestrator`
@@ -162,15 +195,26 @@ If you are new to this repo, start with these areas first:
 
 ---
 
-## Root cleanup policy
+## 7) Development standards
+
+- Keep PRs scoped.
+- Place new files by purpose (`scripts/`, `data/`, `docs/archive/`, `archive/`).
+- Avoid introducing new loose root files.
+- Follow checks in `CONTRIBUTING.md` before opening a PR.
+
+---
+
+## 8) Security and data policy
+
+- Never commit credentials or secrets.
+- Keep local env/cache artifacts untracked.
+- Prefer redacted/synthetic data in samples and tests.
 
 To keep the root clean and navigable:
 
-- New scripts should go in `scripts/` (or a scoped subfolder).
-- State/data artifacts should go in `data/`.
-- Archival material should go in `docs/archive/` or `archive/`.
-- Avoid introducing new loose files/folders directly under repository root unless required.
+## 9) Roadmap (repo quality)
 
-- Keep changes scoped and incremental.
-- Avoid modifying `codex/` unless explicitly requested.
-- Prefer moving root artifacts into purpose-specific folders (`scripts/`, `data/`, `docs/`) instead of adding new loose files.
+1. Expand Python unit coverage for watcher and ledger edges.
+2. Add app-level lint/test/build scripts consistency.
+3. Add CI workflow for core quality gates.
+4. Continue reducing tracked generated/vendor noise.
