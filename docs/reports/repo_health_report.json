@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-02-05T16:58:06.670791+00:00",
+  "top_level_directories_scanned": 26,
+  "tracked_file_count": 104233,
+  "tracked_node_modules_files": 88089,
+  "tracked_venv_files": 8228,
+  "tracked_backups_reorg_files": 50566,
+  "top_level_file_density": [
+    {
+      "directory": "backups_reorg",
+      "file_count": 50410
+    },
+    {
+      "directory": "approval-ui",
+      "file_count": 38431
+    },
+    {
+      "directory": "copilot-feedback",
+      "file_count": 6566
+    },
+    {
+      "directory": ".venv",
+      "file_count": 4047
+    },
+    {
+      "directory": "codex",
+      "file_count": 2955
+    },
+    {
+      "directory": "smart_feedback",
+      "file_count": 871
+    },
+    {
+      "directory": "interface",
+      "file_count": 665
+    },
+    {
+      "directory": "tools",
+      "file_count": 232
+    },
+    {
+      "directory": "core",
+      "file_count": 63
+    },
+    {
+      "directory": "archive",
+      "file_count": 48
+    },
+    {
+      "directory": ".",
+      "file_count": 7
+    },
+    {
+      "directory": "codex_watcher.egg-info",
+      "file_count": 5
+    },
+    {
+      "directory": "inbox",
+      "file_count": 5
+    },
+    {
+      "directory": "scripts",
+      "file_count": 5
+    },
+    {
+      "directory": "codex_watcher",
+      "file_count": 4
+    }
+  ],
+  "high_volume_directories": [
+    {
+      "directory": "backups_reorg",
+      "file_count": 50410
+    },
+    {
+      "directory": "approval-ui",
+      "file_count": 38431
+    },
+    {
+      "directory": "copilot-feedback",
+      "file_count": 6566
+    },
+    {
+      "directory": ".venv",
+      "file_count": 4047
+    },
+    {
+      "directory": "codex",
+      "file_count": 2955
+    }
+  ],
+  "risk_score_0_to_100": 50,
+  "noisy_threshold": 1000,
+  "recommended_actions": [
+    "Untrack dependency/vendor trees gradually (start with node_modules and .venv) in controlled PRs.",
+    "Move long-term backups to external object storage and keep curated snapshots only.",
+    "Add CI checks for Python tests and selected app checks on each PR.",
+    "Continue modular docs under docs/ and keep README focused on onboarding."
+  ]
+}
