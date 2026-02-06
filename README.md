@@ -238,3 +238,7 @@ This writes a markdown report to:
 - `docs/reports/repo_health_report.json`
 - `docs/reports/repo_deep_review.md`
 
+1. Expand Python unit coverage for watcher and ledger edges.
+2. Add app-level lint/test/build scripts consistency.
+3. Add CI workflow for core quality gates.
+4. Continue reducing tracked generated/vendor noise.
