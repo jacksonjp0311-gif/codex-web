@@ -1,7 +1,7 @@
 ﻿# Codex Giza Visual Suite v2.0
 
 This external module renders visualizations for the Giza Ancient
-Harmonic Engine (codex/ancient/giza_engine) without storing visuals
+Harmonic Engine (codex/history/ancient/giza_engine) without storing visuals
 inside the engine module itself.
 
 Outputs (written to codex/visuals/giza/outputs):

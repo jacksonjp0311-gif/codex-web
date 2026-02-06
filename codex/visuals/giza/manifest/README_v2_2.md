@@ -1,7 +1,7 @@
 ﻿# Codex Giza Visual Suite v2.2 — Macro QIM Harmonic Lattice
 
 This external module renders synthetic visualizations for the Giza Ancient
-Harmonic Engine (codex/ancient/giza_engine) while keeping visuals outside
+Harmonic Engine (codex/history/ancient/giza_engine) while keeping visuals outside
 the engine module.
 
 Outputs (codex/visuals/giza/outputs):
