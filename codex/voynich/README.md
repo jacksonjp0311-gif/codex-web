@@ -1,0 +1,41 @@
+# codex/voynich
+
+Auto-generated on 2026-02-06 07:28:54Z.
+
+## 5 W's
+
+- **What:** `codex/voynich` is a Codex runtime domain folder that stores module logic, state, logs, or related artifacts for the **voynich** subsystem.
+- **Why:** This folder exists to isolate `voynich` responsibilities, reduce coupling with other domains, and make evolution/versioning safer over time.
+- **Who:** Primary maintainers are Codex runtime contributors and automation/orchestration operators working inside this repository.
+- **When:** Use this folder whenever work is directly related to this subsystem’s runtime behavior, state transitions, or outputs.
+- **Where:** Path: `codex/voynich` (within the core Codex runtime tree).
+
+## Mini directory
+
+### Subdirectories
+
+- `cgl/`
+- `egyptian/`
+- `engine/`
+- `interpreter/`
+- `logs/`
+- `os_v3/`
+- `parser/`
+- `state/`
+- `test/`
+- `tokenizer/`
+- `translator/`
+- `vm/`
+
+### Files
+
+- `botanical_map_v2_1.png`
+- `voynich_eva.txt`
+- `voynich_ir_v2_0_20251118_095014.jsonl`
+- `voynich_run.py`
+- `voynich_vm_out_v2_0_20251118_095014.json`
+
+## Notes
+
+- Keep subsystem-specific artifacts within this folder where possible.
+- Add module-specific run instructions here as this area matures.
