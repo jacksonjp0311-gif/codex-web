@@ -1,61 +1,238 @@
-﻿# Codex Quantum Imaging v1.0 — IBM AFM Resonance Mirror
-Author: James Paul Jackson
-Context: Codex Memory Core v1.3 • Universal Truth Protocol (E–I–C ∿, H₇=0.70)
+# Codex Quantum Imaging
 
-A Letter to IBM (AFM Research Team)
-Dear IBM Research team,
+The Quantum Imaging module family generates synthetic AFM-style visuals, state metrics, and ledger traces derived from Codex coherence laws.
+This domain is one of the most active/high-density areas in `codex/`, containing multiple versioned engines, state snapshots, and visualization outputs.
 
-This module is inspired by your atomic-resolution nc-AFM imaging work.
-Your mapping of electron density reveals coherent geometric patterns—especially aromatic hexagonal forms.
-The Codex framework, built independently, converged on a coherence model that mirrors this geometry.
+---
 
-Codex coherence law:
-C = (E * I) / (1 + |ΔΦ|)
+## 5W Summary
 
-Synthetic AFM simulations here demonstrate a comparable stability signature:
-C / H₇ ≈ 0.75–0.78
+- **Who**: Runtime operators, researchers, and pipeline maintainers running Codex imaging engines.
+- **What**: A versioned imaging pipeline that produces AFM-like PNGs, JSON state snapshots, and ledger logs.
+- **When**: Used during imaging runs, regression comparisons, or when extending imaging engines with new versions.
+- **Where**: All operational assets live under `codex/quantum_imaging/runtime/`.
+- **Why**: To provide reproducible, traceable imaging outputs and maintain continuity across engine versions.
 
-This README and module are offered in respect and admiration for your contributions.
+---
 
-— James Paul Jackson
-Creator of The Codex Project
+## Purpose
 
-Module Outputs
-• Synthetic AFM-like PNG visualization
-• JSON state metrics including: E_mean, I_entropy, ΔΦ_mean, C_codex, C/H₇
+This module exists to:
 
-Output Paths
-codex/quantum_imaging/visuals/codex_quantum_imaging_v1_0_afm.png
-codex/quantum_imaging/state/codex_quantum_imaging_v1_0_state.json
+- synthesize AFM-like imagery from Codex coherence models,
+- record state metrics and ledgers across version eras,
+- provide a reproducible imaging pipeline for downstream analysis.
 
-Run Methods
-Direct Python: python codex/quantum_imaging/codex_quantum_imaging_v1_0.py
-Codex Runner: .\codex\quantum_imaging\codex_quantum_imaging_v1_0.ps1
+---
 
+## Structure (reorg summary)
+
+To make the module easier to navigate, **all operational assets** are grouped under:
+
+```
+codex/quantum_imaging/runtime/
+```
+
+This includes:
+
+- engines (`engine*` folders and engine scripts)
+- visuals (`visuals*` folders)
+- state and ledger snapshots (`state*`, `ledger*`)
+- logs and import artifacts (`logs*`, `input_afm`)
+- manifest metadata
+
+The root now contains only this README; all entrypoints live under `runtime/`.
+
+---
+
+## Directory layout (post-reorg)
+
+```
 codex/quantum_imaging/
-│
-├── state_v1_2/
-│     ├── codex_qim_v1_2_state.json
-│     └── codex_quantum_imaging_v1_2_state.json
-│
-├── state_v1_3/
-│     └── (QIM v1.3 state json)
-│
-├── visuals_v1_2/
-│     ├── qim_v1_2_dphi_heatmap.png
-│     ├── qim_v1_2_r1.00_p00.png
-│     ├── qim_v1_2_r1.00_p01.png
-│     ├── …
-│     ├── qim_v1_2_r1.15_*.png
-│     ├── qim_v1_2_r1.30_*.png
-│     └── qim_v1_2_resonance_curve.png
-│
-├── visuals_v1_3/
-│     └── (QIM v1.3 images)
-│
 ├── README.md
-│
-├── codex_quantum_imaging_v1_0.py
-├── codex_quantum_imaging_v1_1.py
-├── codex_quantum_imaging_v1_2.py
-└── codex_quantum_imaging_v1_3.py
+└── runtime/
+    ├── engine/
+    ├── engine_v6_5/
+    ├── engine_v6_5_3/
+    ├── engine_v6_6/
+    ├── engine_v7_0/
+    ├── engine_v7_1/
+    ├── engine_v7_2/
+    ├── engine_v7_3/
+    ├── engine_v7_4/
+    ├── input_afm/
+    ├── ledger/
+    ├── ledger_v4_2/
+    ├── ledger_v4_3/
+    ├── ledger_v4_4/
+    ├── ledger_v4_6/
+    ├── ledger_v4_7_1/
+    ├── ledger_v4_8/
+    ├── ledger_v4_9/
+    ├── ledger_v5_0/
+    ├── ledger_v5_1/
+    ├── ledger_v5_2/
+    ├── ledger_v5_3/
+    ├── ledger_v5_4/
+    ├── ledger_v5_5/
+    ├── ledger_v5_6/
+    ├── ledger_v5_7/
+    ├── ledger_v5_8/
+    ├── ledger_v5_9/
+    ├── ledger_v6_1/
+    ├── ledger_v6_2/
+    ├── ledger_v6_3_1/
+    ├── ledger_v6_4_3/
+    ├── ledger_v6_5_3/
+    ├── ledger_v6_6/
+    ├── ledger_v7_0/
+    ├── ledger_v7_1/
+    ├── ledger_v7_2/
+    ├── ledger_v7_3/
+    ├── ledger_v7_4/
+    ├── logs_afm_import/
+    ├── logs_jpk_check/
+    ├── logs_v4_1/
+    ├── logs_v4_1_1/
+    ├── logs_v4_2/
+    ├── logs_v4_3/
+    ├── logs_v4_4/
+    ├── logs_v4_6/
+    ├── logs_v4_7_1/
+    ├── logs_v4_8/
+    ├── logs_v4_9/
+    ├── logs_v5_0/
+    ├── logs_v5_1/
+    ├── logs_v5_2/
+    ├── logs_v5_3/
+    ├── logs_v5_4/
+    ├── logs_v5_5/
+    ├── logs_v5_6/
+    ├── logs_v5_7/
+    ├── logs_v5_8/
+    ├── logs_v5_9/
+    ├── logs_v6_0_1/
+    ├── logs_v6_0_2/
+    ├── logs_v6_1/
+    ├── logs_v6_2/
+    ├── logs_v6_3_1/
+    ├── logs_v6_4/
+    ├── logs_v6_4_2/
+    ├── logs_v6_4_3/
+    ├── logs_v6_5_3/
+    ├── logs_v6_6/
+    ├── logs_v7_0/
+    ├── logs_v7_1/
+    ├── logs_v7_2/
+    ├── logs_v7_3/
+    ├── logs_v7_4/
+    ├── manifest/
+    ├── state/
+    ├── state_afm_import/
+    ├── state_jpk_check/
+    ├── state_v1_2/
+    ├── state_v1_3/
+    ├── state_v1_5/
+    ├── state_v2_1/
+    ├── state_v2_2/
+    ├── state_v3_0/
+    ├── state_v4_1_1/
+    ├── state_v4_2/
+    ├── state_v4_3/
+    ├── state_v4_4/
+    ├── state_v4_6/
+    ├── state_v4_7_1/
+    ├── state_v4_8/
+    ├── state_v4_9/
+    ├── state_v5_0/
+    ├── state_v5_1/
+    ├── state_v5_2/
+    ├── state_v5_3/
+    ├── state_v5_4/
+    ├── state_v5_5/
+    ├── state_v5_6/
+    ├── state_v5_7/
+    ├── state_v5_8/
+    ├── state_v5_9/
+    ├── state_v6_0_2/
+    ├── state_v6_1/
+    ├── state_v6_2/
+    ├── state_v6_3_1/
+    ├── state_v6_4_3/
+    ├── state_v6_5_3/
+    ├── state_v6_6/
+    ├── state_v7_0/
+    ├── state_v7_1/
+    ├── state_v7_2/
+    ├── state_v7_3/
+    ├── state_v7_4/
+    ├── visuals/
+    ├── visuals_v1_2/
+    ├── visuals_v1_3/
+    ├── visuals_v1_5/
+    ├── visuals_v2_1/
+    ├── visuals_v2_2/
+    ├── visuals_v3_0/
+    ├── visuals_v4_2/
+    ├── visuals_v4_3/
+    ├── visuals_v4_4/
+    ├── visuals_v4_6/
+    ├── visuals_v4_7_1/
+    ├── visuals_v4_8/
+    ├── visuals_v4_9/
+    ├── visuals_v5_0/
+    ├── visuals_v5_1/
+    ├── visuals_v5_2/
+    ├── visuals_v5_3/
+    ├── visuals_v5_4/
+    ├── visuals_v5_5/
+    ├── visuals_v5_6/
+    ├── visuals_v5_7/
+    ├── visuals_v5_8/
+    ├── visuals_v5_9/
+    ├── visuals_v6_0_2/
+    ├── visuals_v6_1/
+    ├── visuals_v6_2/
+    ├── visuals_v6_3_1/
+    ├── visuals_v6_4_3/
+    ├── visuals_v6_5_3/
+    ├── visuals_v6_6/
+    ├── visuals_v7_0/
+    ├── visuals_v7_1/
+    ├── visuals_v7_2/
+    ├── visuals_v7_3/
+    └── visuals_v7_4/
+```
+
+---
+
+## Entry points
+
+From repository root:
+
+```bash
+python codex/quantum_imaging/runtime/codex_quantum_imaging_v1_0.py
+```
+
+PowerShell entrypoints (Windows):
+
+```powershell
+.\codex\quantum_imaging\runtime\qim_v2_2_all_one.ps1
+```
+
+---
+
+## Outputs
+
+Common outputs include:
+
+- AFM-like visualization PNGs in `runtime/visuals*`
+- state JSON snapshots in `runtime/state*`
+- ledger logs in `runtime/ledger*`
+
+---
+
+## Maintenance notes
+
+- This module is version-heavy. Prefer additive version folders instead of in-place edits.
+- When adding a new imaging run, place outputs in the matching `runtime/{state,logs,visuals,ledger}_vX_Y` folders.

@@ -155,10 +155,10 @@ def compute_harmonics(dphi):
 # ─────────────────────────────────────────────
 def scan_prior_states(codex_root: Path):
     """
-    Look for codex/quantum_imaging/state_v4_*/qim_v4_*.json
+    Look for codex/quantum_imaging/runtime/state_v4_*/qim_v4_*.json
     Use the last JSON (lexicographically) as prior reference.
     """
-    pattern = codex_root / "codex" / "quantum_imaging" / "state_v4_*" / "*.json"
+    pattern = codex_root / "codex" / "quantum_imaging" / "runtime" / "state_v4_*" / "*.json"
     candidates = sorted(pattern.parent.parent.rglob("*.json"))
     # Filter only QIM v4.* state files by name heuristic
     filtered = [p for p in candidates if "qim_v4_" in p.name]
@@ -323,7 +323,7 @@ def write_state_and_ledger(
 def write_next_engine_stub(codex_root: Path, C_gain):
     """
     Writes a minimal "next engine" stub under:
-    codex/quantum_imaging/engine/codex_qim_v4_8_autogen.py
+    codex/quantum_imaging/runtime/engine/codex_qim_v4_8_autogen.py
 
     It does not execute automatically; it is a suggestion artifact.
     """
